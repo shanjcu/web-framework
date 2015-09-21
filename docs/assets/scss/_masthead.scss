@@ -1,11 +1,9 @@
 .bd-masthead {
   position: relative;
   padding: 3rem ($grid-gutter-width / 2) 2rem;
-  color: $bd-purple-light;
+  color: $jcu-gradient-color;
   text-align: center;
-  background-image: -webkit-linear-gradient(135deg, darken($bd-purple, 20%), $bd-purple, lighten(saturate($bd-purple, 5%), 15%));
-  background-image:         linear-gradient(135deg, darken($bd-purple, 20%), $bd-purple, lighten(saturate($bd-purple, 5%), 15%));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str(darken($bd-purple, 20%))}', endColorstr='#{ie-hex-str(lighten(saturate($bd-purple, 5%), 15%))}', gradientType='1');   /* For IE9 */
+  background-image: $jcu-gradient;
 
   .bd-booticon {
     margin: 0 auto 2rem;

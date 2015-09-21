@@ -37,13 +37,17 @@ $bd-danger:         #d9534f;
 $bd-warning:        #f0ad4e;
 $bd-info:           #5bc0de;
 
+// JCU customisations
+$jcu-gradient: linear-gradient(to right, #2E3192 0px, #0066B3 100%);
+$jcu-gradient-color: #fff;
+
 // Load docs components
-@import "booticon";
+//@import "booticon";
 @import "nav";
 @import "masthead";
 @import "featurettes";
-@import "featured-sites";
-@import "ads";
+//@import "featured-sites";
+//@import "ads";
 @import "content";
 @import "page-header";
 @import "skiplink";
@@ -62,3 +66,20 @@ $bd-info:           #5bc0de;
 // Load docs dependencies
 @import "syntax";
 @import "anchor";
+
+// Extensions for Bootstrap docs styling
+.bd-example--inverse {
+  background-image: $jcu-gradient;
+  color: $jcu-gradient-color;
+}
+
+// Custom JCU docs styling
+.jcu-overlay-examples {
+  background: url('../img/leaf-curl.jpg') top center / cover;
+  padding: 1rem;
+
+  .jcu-overlay {
+    min-height: 3.5rem;
+  }
+}
+

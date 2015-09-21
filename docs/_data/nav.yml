@@ -55,13 +55,25 @@
 #     - title: Approach
 #     - title: Icon fonts
 
+- title: JCU Customisations
+  pages:
+    - title: Styling
+    - title: Typography
+    - title: Iconography
+    - title: Campus Stack
+    - title: Colophon
+    - title: Accordion
+    - title: Card
+    - title: Overlay
+    - title: Examples
+
 - title: About
   pages:
     - title: History
-    - title: Team
+    #- title: Team
     - title: Accessibility
-    - title: Brand
+    #- title: Brand
     - title: License
-    - title: Translations
+    #- title: Translations
 
 - title: Migration

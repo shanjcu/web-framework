@@ -1,0 +1,771 @@
+// Firefox does not allow relative includes for font-face in CSS
+// See https://bugzilla.mozilla.org/show_bug.cgi?id=760436
+// Use about:config to change security.fileuri.strict_origin_policy
+// temporarily to false
+
+
+// Global Bootstrap settings
+//$enable-flex: true; // See http://v4-alpha.getbootstrap.com/getting-started/flexbox/
+$enable-rounded:            false; // Sharp pointy edges
+$enable-shadows:            false; // TODO Maybe re-enable
+//$enable-gradients:          true;  // No effect at present
+$enable-transitions:        true;  // Fancy transitions for elements
+
+// JCU styling for Bootstrap
+// The details as to where each aspect has come from are highlighted above each
+// setting
+
+// Colour scheme
+$gray-dark:                 #2d2d2d; //Approx 80% black
+$gray:                      #565656;
+$gray-light:                #797979;
+$gray-lighter:              #e7e7e7;
+$gray-lightest:             #f7f7f9 !default;
+
+// From top-level search and buttons
+$brand-primary: #06c;
+// Courses page
+$brand-success: #429306;
+// From #page-wrapper
+$body-bg: $gray-lighter;
+// TODO No style set, uses browser default
+$body-color: $gray-dark;
+// Not actually defined anywhere in theme
+$font-size-root: 16px;
+// From html, body
+$font-family-sans-serif: "Open Sans", sans-serif;
+
+// Not defined in theme; approximately equal to default HTML sizes from Firefox
+$font-size-h1: 1.8rem;
+$font-size-h2: 1.5rem;
+$font-size-h3: 1.2rem;
+$font-size-h4: 1.2rem;
+$font-size-h5: 0.9rem;
+$font-size-h6: 0.7rem;
+
+// From footer margins
+$grid-gutter-width: 1.25rem;
+
+
+
+// From .toolbarmenu*
+$dropdown-bg:                    $gray;
+$dropdown-border:                $dropdown-bg;
+$dropdown-fallback-border:       $dropdown-border;
+$dropdown-divider-bg:            #707070;
+$dropdown-link-color:            #fff;
+$dropdown-link-hover-color:      darken($dropdown-link-color, 5%);
+$dropdown-link-hover-bg:         lighten($dropdown-bg, 20%);
+$dropdown-header-color:          #ababab;
+
+$navbar-dark-color:              rgba(255,255,255,.8);
+$navbar-dark-hover-color:        rgba(255,255,255,.6);
+$navbar-dark-active-color:       rgba(255,255,255,1);
+$navbar-inverse-color:           $gray-dark;
+$navbar-inverse-toggle-hover-bg: $gray;
+$navbar-inverse-link-active-bg:  $gray;
+// Height of search box
+$navbar-height:                  (1.5rem + .375rem * 2);
+
+// From .tabs
+$nav-tabs-active-link-hover-color: #fff;
+$nav-tabs-active-link-hover-bg: $brand-primary;
+$nav-tabs-active-link-hover-border-color: $brand-primary;
+
+// From insidebreadcrumbs
+$breadcrumb-bg:                  $gray-lighter;
+$breadcrumb-padding-vertical:    .5rem;
+
+// From uber-accordion
+$card-cap-bg:                    $gray-dark;
+$card-cap-color:                 #fff;
+
+// Custom JCU settings
+$jcu-gradient-blue: rgb(46, 49, 146), rgb(0, 190, 228);
+$jcu-gradient-orange: rgb(233, 79, 53), rgb(255, 221, 0);
+$jcu-gradient-green: rgb(0, 166, 81), rgb(214, 224, 64);
+$jcu-gradient-red: rgb(157, 22, 25), rgb(236, 0, 140);
+
+$jcu-brand-inverse: #fff;
+$jcu-dropdown-text-color: #fff;
+$jcu-icon-font-family: "webhostinghub-glyphs";
+$jcu-font-size-icon: 1.875rem;
+$jcu-navbar-nav-link-padding: .5rem;
+$jcu-fade-transition-speed: .3s;
+
+@import 'bootstrap';
+@import 'components/open-sans-fontface/open-sans.scss';
+@import 'components/webhostinghub-glyphs/css/webhostinghub-glyphs.css';
+@import 'components/yamm3/yamm/yamm.css';
+
+
+.body--has-fixed-nav {
+  padding-top: $navbar-height;
+}
+
+//
+// Typography
+//
+
+.lead {
+  border-bottom: $border-width dotted $gray-light;
+}
+
+//
+// Lists
+//
+
+.list-bordered {
+  @extend .list-unstyled;
+  li {
+    border-bottom: $border-width solid $gray-light;
+
+    &:last-child {
+      border-bottom: 0 none;
+    }
+  }
+}
+
+//
+// Dropdowns
+//
+
+.dropdown-menu {
+  // Move the dropdown menu upwards to avoid rounding issues
+  margin-top: -$border-width;
+  transition-property: visibility, opacity;
+  transition-duration: $jcu-fade-transition-speed;
+
+  // Override default Bootstrap display: none so we have transitions
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dropdown-toggle::after {
+  width: auto;
+  height: auto;
+  content: '\e39d';
+  font-family: $jcu-icon-font-family;
+  border-top: 0 none;
+  border-right: 0 none;
+  border-left: 0 none;
+  line-height: ($line-height / 2);
+  padding-top: .2em;
+}
+
+// Open dropdown menus on hover by default rather than click
+.dropdown {
+  @include hover-focus {
+    > .dropdown-menu {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity $jcu-fade-transition-speed;
+    }
+  }
+}
+
+//
+// Navbar: navigation elements, including tabbed navigation
+//
+
+// Add suitable padding to links inside navbars
+.navbar-nav .nav-link {
+  padding: $jcu-navbar-nav-link-padding;
+}
+
+.navbar-form--highlight {
+  background-color: $gray;
+}
+
+.nav-tabs {
+  .nav-link {
+    border-top-right-radius: 1em;
+  }
+}
+
+//
+// Toolbar: global actions/links, fixed to the top of a site or application
+//
+
+.jcu-toolbar {
+  font-size: $font-size-sm;
+  padding: 0;
+
+  > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-inline {
+    padding-left: ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+    .form-control {
+      line-height: 1;
+    }
+  }
+
+  .dropdown {
+    @include hover {
+      background-color: $dropdown-bg;
+      transition-property: background-color, color;
+      transition-duration: $jcu-fade-transition-speed;
+    }
+  }
+
+  // Customise dropdown menus
+  .dropdown-item--inverse {
+    background-color: lighten($dropdown-bg, 20%);
+    margin-bottom: 0.75em;
+  }
+
+  .dropdown-item {
+    padding-left: 0.5rem;
+  }
+
+  .dropdown-menu {
+    color: $jcu-dropdown-text-color;
+    padding: ($spacer / 2);
+
+    a {
+      @include hover-focus {
+        color: $jcu-dropdown-text-color;
+        text-decoration: none;
+      }
+    }
+
+    ul {
+      @extend .list-unstyled;
+    }
+
+
+    h3 {
+      font-size: $font-size-base;
+      font-weight: 400;
+      color: $jcu-dropdown-text-color;
+    }
+
+    .media {
+      color: $jcu-dropdown-text-color;
+      padding: ($spacer / 2);
+    }
+
+    .media-left {
+      color: $gray-dark; //navbar-inverse-bg
+      font-size: $jcu-font-size-icon;
+    }
+
+    .media-body {
+      color: #c8c8c8;
+      font-size: $font-size-xs;
+      width: auto; // Prevent extrg-width menus
+    }
+  }
+}
+
+//
+// Explorer: the primary branding and navigation header, featuring the JCU logo
+//
+
+.navbar--jcu-explorer {
+  @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 200%);
+  $navbar-height: 5.5rem;
+  $navbar-color: #fff;
+  $navbar-content-color: #000;
+  background-color: nth($jcu-gradient-blue, 1);
+  border: 0 none;
+  border-top-right-radius: 1.25rem;
+  min-height: $navbar-height;
+  padding-bottom: 0;
+
+  a {
+    color: $navbar-color;
+  }
+
+  .navbar-brand {
+    img {
+      max-height: ($navbar-height - 1.5rem);
+    }
+  }
+
+  .navbar-right {
+    // container-fluid padding-right is already half-gutter
+    margin-right: ($grid-gutter-width / 2);
+  }
+
+  .navbar-nav .nav-link {
+    margin-top: 1rem;
+    padding: .9rem 1.25rem 1.6rem;
+    border-top-right-radius: 1.25em;
+    transition-property: background-color, color;
+    transition-duration: $jcu-fade-transition-speed;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus,
+  .dropdown:hover .nav-link {
+    background-color: $navbar-color;
+    color: $brand-primary;
+  }
+
+  .dropdown-menu {
+    @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 200%);
+    background-color: nth($jcu-gradient-blue, 1);
+    border: 0 none;
+    color: $navbar-color;
+    padding-top: 0;
+  }
+
+  .yamm-content {
+    background-color: $navbar-color;
+    color: $navbar-content-color;
+    // Line up with nav gutter + navbar-padding
+    $margin: ($navbar-padding-horizontal);
+    margin-bottom: $margin;
+    margin-left: $margin;
+    margin-right: $margin;
+  }
+
+  @at-root .jcu-explorer__tagline {
+    text-align: center;
+    a {
+      font-weight: bold;
+    }
+  }
+
+}
+
+//
+// Accordion: a set of headings that reveal content upon interaction
+//
+
+.jcu-accordion {
+  .card-block {
+    background-color: $gray-lighter;
+  }
+
+  .card-header {
+    padding: 0;
+
+    > a {
+      display: block;
+      width: 100%;
+      padding: $card-spacer-y $card-spacer-x;
+      color: #fff;
+      background-color: $brand-primary;
+      transition: background-color $jcu-fade-transition-speed;
+
+      @include hover-focus {
+        text-decoration: none;
+      }
+
+      &.collapsed {
+        background-color: #000;
+      }
+
+      &::before {
+        content: "Hide";
+        position: absolute;
+        // Position to the right of (chevron + chevron width + padding)
+        right: ($font-size-base * (1 + .75 + 1));
+        font-size: $font-size-xs;
+        // Calculate line-height for smaller font to be even with headings
+        line-height: $line-height + .5;
+      }
+
+      &.collapsed::before {
+        content: "Show";
+      }
+
+      &::after {
+        font-family: "WebHostingHub-Glyphs";
+        content: '\e39c';
+        position: absolute;
+        right: $font-size-base;
+        // Calculate line-height for icon font to be even with ::before text
+        line-height: $line-height + .25;
+      }
+
+      &.collapsed::after {
+        content: '\e39d';
+      }
+    }
+  }
+}
+
+//
+// Custom: styles outside of Bootstrap
+//
+
+.input-sm {
+  line-height: 1;
+}
+
+$content-bg-color: #fff;
+
+.jcu-content {
+  background-color: $content-bg-color;
+}
+
+$footer-text-color: $gray-dark;
+$footer-border-color: $gray-dark;
+$footer-border: $border-width dotted $footer-border-color;
+
+.footer {
+  margin-top: $spacer-y;
+
+  h3 {
+    border-bottom: $footer-border;
+    font-size: $font-size-h3 * .8;
+    padding-bottom: ($spacer / 2);
+    padding-top: ($spacer / 2);
+  }
+
+}
+
+.footer-social-legal {
+  border-bottom: $footer-border;
+  border-top: $footer-border;
+  padding-bottom: ($spacer / 2);
+  padding-top: ($spacer / 2);
+
+  a {
+    font-weight: bold;
+  }
+}
+
+.footer-social-legal__social {
+  font-size: $jcu-font-size-icon;
+  li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a {
+    color: #4b4c4e;
+    @include hover-focus {
+      color: $link-hover-color;
+    }
+  }
+}
+
+//
+// Colophon: publication details for display at bottom of pages.
+//
+.jcu-colophon {
+  @extend .small;
+  padding-bottom: ($spacer / 2);
+  padding-top: ($spacer / 2);
+}
+
+
+//
+// Campus Stack: stylised listing of University campuses
+//
+@mixin jcu-campus-stack-colors($color) {
+  li {
+    padding-bottom: .2em;
+    border-color: $color;
+
+    &:first-child {
+      border-top: $border-width solid $color;
+    }
+
+    &:last-child {
+      border-bottom: $border-width solid $color;
+    }
+  }
+
+  a {
+    color: $color;
+  }
+}
+
+.jcu-campus-stack {
+  @extend .list-bordered;
+  display: inline-block;
+  @include jcu-campus-stack-colors($gray-dark);
+}
+
+.jcu-campus-stack--color {
+  // Colour matches the JCU shield
+  @include jcu-campus-stack-colors(#176FC1);
+}
+
+.jcu-campus-stack--inverse {
+  @include jcu-campus-stack-colors($jcu-brand-inverse);
+}
+
+
+
+//
+// Exposition: the background that sets the scene
+//
+
+.jcu-exposition {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-color: #000;
+  max-height: 50em;
+  overflow: hidden;
+  z-index: -1;
+  img {
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+  }
+}
+
+//
+// Section Navigator: sub-section links, menus and breadcrumbs
+//
+
+.jcu-section-navigator {
+  // Calculate complete navbar height for use in positioning
+  $navbar-height: (($font-size-xs * $line-height) + 2 * $jcu-navbar-nav-link-padding);
+  // Rounding may make navbar 1/16th rem higher
+  margin-top: (-$navbar-height - .0625rem);
+  font-size: $font-size-xs;
+
+  .dropdown-menu {
+    font-size: inherit;
+    padding: $spacer;
+
+    .dropdown-item {
+      border-bottom: $border-width solid $gray-light;
+      padding: ($spacer / 4);
+
+      &:last-child {
+        border-bottom: 0 none;
+      }
+    }
+  }
+
+  .navbar {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  // Move the subnavigation items further to the right
+  .navbar-nav .nav-item:nth-child(2) {
+    margin-left: 1.5rem;
+  }
+
+  .navbar-dark {
+    .navbar-nav .active {
+      $navbar-half-padding: ($navbar-padding-horizontal / 2);
+      background-color: $gray;
+      margin-left: -$navbar-padding-horizontal;
+      position: relative; // for arrow
+
+      .nav-link {
+        // Line up with padding for breadcrumbs
+        padding-left: $breadcrumb-padding-horizontal;
+        @include hover-focus {
+          background-color: inherit;
+          border-top-right-radius: 0;
+          color: inherit;
+          text-decoration: underline;
+        }
+      }
+
+      &::after {
+        left: 100%;
+        top: 0;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba($gray, 0);
+        border-left-color: $gray;
+        // Height of border is half element height the 2 borders combine
+        $border-width: ($navbar-height / 2);
+        border-width: $border-width;
+      }
+    }
+
+    .navbar-nav .nav-link {
+      // Replace padding-top with half margin/padding combo for 'tab' look
+      padding-top: ($jcu-navbar-nav-link-padding / 2);
+      margin-top: ($jcu-navbar-nav-link-padding / 2);
+      // Wider links
+      padding-left: ($jcu-navbar-nav-link-padding * 1.5);
+      padding-right: ($jcu-navbar-nav-link-padding * 1.5);
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .dropdown:hover .nav-link {
+      background-color: #fff;
+      border-top-right-radius: .5rem;
+      color: $gray-dark;
+    }
+
+  }
+}
+
+.jcu-section-navigator__breadcrumb {
+  background-color: #fff;
+}
+
+.breadcrumb {
+  text-transform: uppercase;
+}
+
+//
+// Header: to be named better.  The background images.
+//
+
+.jcu-header {
+  background-size: cover;
+  background-position: center center;
+  padding-top: $spacer;
+  height: 17rem;
+}
+
+.jcu-header--leaf-curl {
+  background-image: url('../images/leaf-curl.jpg');
+}
+
+.jcu-header__page-title {
+  position: absolute;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.2em;
+  font-weight: 600;
+  top: (17rem - 5rem);
+  margin-left: $spacer-x * 2;
+}
+
+//
+// Cards: blocks of information; optionally interactive tiles
+//
+
+.card-header {
+  color: $card-cap-color;
+}
+
+$card-overlay-font-color: #fff !default;
+
+.jcu-overlay-card {
+  .jcu-overlay {
+    top: auto;
+    color: $card-overlay-font-color;
+    max-height: 60%;
+    padding: .75rem;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card-subtitle {
+    display: none;
+    font-size: $font-size-sm;
+  }
+
+  @include hover {
+    .jcu-overlay {
+      height: 100%;
+      max-height: 100%;
+      transition: max-height $jcu-fade-transition-speed;
+
+      .card-title {
+        border-bottom: $border-width solid $card-overlay-font-color;
+        padding-bottom: ($card-spacer-y / 4);
+      }
+
+      .card-subtitle {
+        display: block;
+      }
+    }
+  }
+}
+
+
+//
+// Theme: the various JCU theme colours
+//
+
+@mixin jcu-theme-headings($name, $color) {
+  .jcu-theme--#{$name} {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .lead {
+      color: $color;
+    }
+  }
+}
+
+@include jcu-theme-headings('blue', #339);
+@include jcu-theme-headings('orange', #f33);
+@include jcu-theme-headings('green', #096);
+@include jcu-theme-headings('red', #900);
+
+//
+// Overlay: palette of semi-transparent colours used on Cards, etc
+//
+// Colours sourced from https://www.jcu.edu.sg/courses-and-study/courses
+
+.jcu-overlay {
+  background-color: rgba(0, 0, 0, .6);
+  border-top-right-radius: 1.25rem;
+  color: #fff;
+  text-shadow: $gray-dark 0 0 .5em;
+  padding: .75rem;
+}
+
+.jcu-overlay--inverse {
+  color: $gray-dark;
+  text-shadow: #fff 0 0 .5em;
+}
+
+$overlay-opacities: 25, 50, 75, 90, 100;
+$overlay-colors: (
+  'pink': rgb(236, 0, 140),
+  'red': rgb(227, 31, 38),
+  'darkred': rgb(157, 22, 27),
+  'orange': rgb(247, 147, 30),
+  'yellow': rgb(253, 185, 19),
+  'lightgreen': rgb(214, 224, 64),
+  'green': rgb(13, 177, 75),
+  'lightblue': rgb(0, 190, 228),
+  'blue': rgb(0, 102, 179),
+  'darkblue': rgb(46, 49, 146),
+  'black': rgb(0, 0, 0),
+  'white': rgb(255, 255, 255)
+);
+
+@each $name, $color in $overlay-colors {
+  @each $opacity in $overlay-opacities {
+    .jcu-overlay--#{$name}-#{$opacity}pc {
+      background-color: rgba($color, ($opacity / 100));
+    }
+  }
+}
+
+$overlay-gradients: (
+  'gradient-blue': $jcu-gradient-blue,
+  'gradient-orange': $jcu-gradient-orange,
+  'gradient-green': $jcu-gradient-green,
+  'gradient-red': $jcu-gradient-red
+);
+
+// TODO: this could be included as a 45 deg angle gradient
+// TODO: style guide says transparency should be at 90%
+@each $name, $gradient in $overlay-gradients {
+  .jcu-overlay--#{$name} {
+    @include gradient-horizontal(nth($gradient, 1), nth($gradient, 2));
+  }
+  .jcu-overlay--#{$name}-reverse {
+    @include gradient-horizontal(nth($gradient, 2), nth($gradient, 1));
+  }
+}
+

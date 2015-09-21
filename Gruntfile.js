@@ -259,7 +259,7 @@ module.exports = function (grunt) {
         //    and then simplify the fix for https://github.com/twbs/bootstrap/issues/14837 accordingly
         compatibility: 'ie9',
         keepSpecialComments: '*',
-        sourceMap: true,
+        sourceMap: false,
         noAdvanced: true
       },
       core: {
@@ -301,7 +301,16 @@ module.exports = function (grunt) {
       }
     },
 
+    // TODO Fix this so files are correctly configured
     copy: {
+      components: {
+        files: [
+        {expand: true, cwd: 'scss/components/open-sans-fontface', src: ['fonts/**/*'], dest: 'dist/css/'},
+        {expand: true, cwd: 'scss/components/webhostinghub-glyphs', src: ['font/**/*'], dest: 'dist/'},
+        {expand: true, cwd: 'scss/components/', src: ['**/*'], dest: 'dist/css/components'},
+        {expand: true, cwd: '.', src: ['images/**/*'], dest: 'dist/'}
+        ]
+      },
       docs: {
         expand: true,
         cwd: 'dist/',
@@ -402,7 +411,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:twbs/derpstrap.git',
+          remote: 'ssh://git@git.jcu.edu.au/webstyle/jcu-web-framework.git',
           branch: 'gh-pages'
         }
       }
@@ -466,7 +475,7 @@ module.exports = function (grunt) {
   // grunt.registerTask('sass-compile', ['sass:core', 'sass:extras', 'sass:docs']);
   grunt.registerTask('sass-compile', ['sass:core', 'sass:docs']);
 
-  grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'autoprefixer:core', 'csscomb:dist', 'cssmin:core', 'cssmin:docs']);
+  grunt.registerTask('dist-css', ['copy:components', 'sass-compile', 'postcss:core', 'autoprefixer:core', 'csscomb:dist', 'cssmin:core', 'cssmin:docs']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
@@ -515,4 +524,8 @@ module.exports = function (grunt) {
       done();
     });
   });
+
+  // JCU custom tasks
+  // Publish: builds docs, runs Jekyll, and pushes onto Stash
+  grunt.registerTask('jcu-publish', ['docs', 'jekyll:github', 'buildcontrol:pages']);
 };

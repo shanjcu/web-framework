@@ -15,7 +15,8 @@ module.exports = function configureRubySass(grunt) {
       core: {
         options: options,
         files: {
-          'dist/css/<%= pkg.name %>.css': 'scss/<%= pkg.name %>.scss'
+          'dist/css/<%= pkg.name %>.css': 'scss/<%= pkg.name %>.scss',
+          'dist/css/jcu.css': 'scss/jcu.scss'
         }
       },
       extras: {
