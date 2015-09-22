@@ -2,445 +2,445 @@
     
         {
             "title" : "Accessibility",
-            "url"   : "/getting-started/accessibility/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/accessibility/",
             "date"  : ""
         } ,
     
         {
             "title" : "Accordion",
-            "url"   : "/jcu-customisations/accordion/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/accordion/",
             "date"  : ""
         } ,
     
         {
             "title" : "Alerts",
-            "url"   : "/components/alerts/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/alerts/",
             "date"  : ""
         } ,
     
         {
             "title" : "Approach",
-            "url"   : "/extend/approach/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/extend/approach/",
             "date"  : ""
         } ,
     
         {
             "title" : "Best practices",
-            "url"   : "/getting-started/best-practices/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/best-practices/",
             "date"  : ""
         } ,
     
         {
             "title" : "Brand guidelines",
-            "url"   : "/about/brand/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/about/brand/",
             "date"  : ""
         } ,
     
         {
             "title" : "Breadcrumb",
-            "url"   : "/components/breadcrumb/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/breadcrumb/",
             "date"  : ""
         } ,
     
         {
             "title" : "Wall of browser bugs",
-            "url"   : "/browser-bugs/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/browser-bugs/",
             "date"  : ""
         } ,
     
         {
             "title" : "Browsers and devices",
-            "url"   : "/getting-started/browsers-devices/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/browsers-devices/",
             "date"  : ""
         } ,
     
         {
             "title" : "Build tools",
-            "url"   : "/getting-started/build-tools/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/build-tools/",
             "date"  : ""
         } ,
     
         {
             "title" : "Button dropdown",
-            "url"   : "/components/button-dropdown/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/button-dropdown/",
             "date"  : ""
         } ,
     
         {
             "title" : "Button group",
-            "url"   : "/components/button-group/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/button-group/",
             "date"  : ""
         } ,
     
         {
             "title" : "Buttons",
-            "url"   : "/components/buttons/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/buttons/",
             "date"  : ""
         } ,
     
         {
             "title" : "Campus Stack",
-            "url"   : "/jcu-customisations/campus-stack/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/campus-stack/",
             "date"  : ""
         } ,
     
         {
             "title" : "Card",
-            "url"   : "/jcu-customisations/card/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/card/",
             "date"  : ""
         } ,
     
         {
             "title" : "Cards",
-            "url"   : "/components/card/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/card/",
             "date"  : ""
         } ,
     
         {
             "title" : "Carousel",
-            "url"   : "/components/carousel/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/carousel/",
             "date"  : ""
         } ,
     
         {
             "title" : "Code",
-            "url"   : "/content/code/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/content/code/",
             "date"  : ""
         } ,
     
         {
             "title" : "Collapse",
-            "url"   : "/components/collapse/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/collapse/",
             "date"  : ""
         } ,
     
         {
             "title" : "Colophon",
-            "url"   : "/jcu-customisations/colophon/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/colophon/",
             "date"  : ""
         } ,
     
         {
             "title" : "Contents",
-            "url"   : "/getting-started/contents/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/contents/",
             "date"  : ""
         } ,
     
         {
             "title" : "Download",
-            "url"   : "/getting-started/download/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/download/",
             "date"  : ""
         } ,
     
         {
             "title" : "Dropdowns",
-            "url"   : "/components/dropdowns/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/dropdowns/",
             "date"  : ""
         } ,
     
         {
             "title" : "Figures",
-            "url"   : "/content/figures/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/content/figures/",
             "date"  : ""
         } ,
     
         {
             "title" : "Flexbox",
-            "url"   : "/getting-started/flexbox/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/flexbox/",
             "date"  : ""
         } ,
     
         {
             "title" : "Forms",
-            "url"   : "/components/forms/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/forms/",
             "date"  : ""
         } ,
     
         {
             "title" : "Grid system",
-            "url"   : "/layout/grid/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/layout/grid/",
             "date"  : ""
         } ,
     
         {
             "title" : "History",
-            "url"   : "/about/history/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/about/history/",
             "date"  : ""
         } ,
     
         {
             "title" : "Icon fonts",
-            "url"   : "/extend/icon-fonts/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/extend/icon-fonts/",
             "date"  : ""
         } ,
     
         {
             "title" : "Iconography",
-            "url"   : "/jcu-customisations/iconography/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/iconography/",
             "date"  : ""
         } ,
     
         {
             "title" : "Images",
-            "url"   : "/content/images/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/content/images/",
             "date"  : ""
         } ,
     
         {
             "title" : "Bootstrap &amp;middot; The world&#39;s most popular mobile-first and responsive front-end framework.",
-            "url"   : "/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/",
             "date"  : ""
         } ,
     
         {
             "title" : "Extend",
-            "url"   : "/extend/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/extend/",
             "date"  : ""
         } ,
     
         {
             "title" : "Examples",
-            "url"   : "/examples/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/examples/",
             "date"  : ""
         } ,
     
         {
             "title" : "Examples",
-            "url"   : "/jcu-customisations/examples/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/examples/",
             "date"  : ""
         } ,
     
         {
             "title" : "Input group",
-            "url"   : "/components/input-group/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/input-group/",
             "date"  : ""
         } ,
     
         {
             "title" : "Introduction",
-            "url"   : "/getting-started/introduction/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/introduction/",
             "date"  : ""
         } ,
     
         {
             "title" : "JavaScript",
-            "url"   : "/getting-started/javascript/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/javascript/",
             "date"  : ""
         } ,
     
         {
             "title" : "JCU Styling",
-            "url"   : "/jcu-customisations/jcu-component/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/jcu-component/",
             "date"  : ""
         } ,
     
         {
             "title" : "Jumbotron",
-            "url"   : "/components/jumbotron/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/jumbotron/",
             "date"  : ""
         } ,
     
         {
             "title" : "Labels",
-            "url"   : "/components/label/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/label/",
             "date"  : ""
         } ,
     
         {
             "title" : "License FAQs",
-            "url"   : "/about/license/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/about/license/",
             "date"  : ""
         } ,
     
         {
             "title" : "List group",
-            "url"   : "/components/list-group/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/list-group/",
             "date"  : ""
         } ,
     
         {
             "title" : "Media object",
-            "url"   : "/layout/media-object/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/layout/media-object/",
             "date"  : ""
         } ,
     
         {
             "title" : "Migrating to v4",
-            "url"   : "/migration/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/migration/",
             "date"  : ""
         } ,
     
         {
             "title" : "Modal",
-            "url"   : "/components/modal/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/modal/",
             "date"  : ""
         } ,
     
         {
             "title" : "Navbar",
-            "url"   : "/components/navbar/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/navbar/",
             "date"  : ""
         } ,
     
         {
             "title" : "Navs",
-            "url"   : "/components/navs/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/navs/",
             "date"  : ""
         } ,
     
         {
             "title" : "Customization options",
-            "url"   : "/getting-started/options/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/options/",
             "date"  : ""
         } ,
     
         {
             "title" : "Overlay",
-            "url"   : "/jcu-customisations/overlay/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/overlay/",
             "date"  : ""
         } ,
     
         {
             "title" : "Overview",
-            "url"   : "/layout/overview/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/layout/overview/",
             "date"  : ""
         } ,
     
         {
             "title" : "Pagination",
-            "url"   : "/components/pagination/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/pagination/",
             "date"  : ""
         } ,
     
         {
             "title" : "Popovers",
-            "url"   : "/components/popovers/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/popovers/",
             "date"  : ""
         } ,
     
         {
             "title" : "Progress",
-            "url"   : "/components/progress/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/progress/",
             "date"  : ""
         } ,
     
         {
             "title" : "Reboot",
-            "url"   : "/content/reboot/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/content/reboot/",
             "date"  : ""
         } ,
     
         {
             "title" : "Responsive utilities",
-            "url"   : "/layout/responsive-utilities/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/layout/responsive-utilities/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/robots.txt",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/robots.txt",
             "date"  : ""
         } ,
     
         {
             "title" : "Scrollspy",
-            "url"   : "/components/scrollspy/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/scrollspy/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/search.json",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/search.json",
             "date"  : ""
         } ,
     
         {
             "title" : "Styling for JCU",
-            "url"   : "/jcu-customisations/styling/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/styling/",
             "date"  : ""
         } ,
     
         {
             "title" : "Tables",
-            "url"   : "/content/tables/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/content/tables/",
             "date"  : ""
         } ,
     
         {
             "title" : "Team",
-            "url"   : "/about/team/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/about/team/",
             "date"  : ""
         } ,
     
         {
             "title" : "Tooltips",
-            "url"   : "/components/tooltips/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/tooltips/",
             "date"  : ""
         } ,
     
         {
             "title" : "Translations",
-            "url"   : "/about/translations/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/about/translations/",
             "date"  : ""
         } ,
     
         {
             "title" : "Typography customisations",
-            "url"   : "/jcu-customisations/typography/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/typography/",
             "date"  : ""
         } ,
     
         {
             "title" : "Typography",
-            "url"   : "/content/typography/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/content/typography/",
             "date"  : ""
         } ,
     
         {
             "title" : "Utility classes",
-            "url"   : "/components/utilities/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/utilities/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/components/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/components/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/about/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/about/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/getting-started/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/getting-started/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/jcu-customisations/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/layout/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/layout/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/content/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/content/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/jcu-customisations/",
+            "url"   : "/pages/WEBSTYLE/jcu-web-framework/gh-pages/jcu-customisations/",
             "date"  : ""
         } 
     
