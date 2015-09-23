@@ -13,8 +13,8 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-baseurl:          "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse"
-url:              http://getbootstrap.com
+baseurl:          ""
+url:              https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse
 encoding:         UTF-8
 timezone:         Australia/Brisbane
 exclude:          [assets/scss/]
@@ -30,7 +30,7 @@ sass_repo:        https://github.com/twbs/bootstrap-sass
 slack:            ''
 
 download:
-  source:         https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.zip
+  source:         https://git.jcu.edu.au/stash/plugins/servlet/archive/projects/WEBSTYLE/repos/jcu-web-framework
   dist:           https://github.com/twbs/bootstrap/releases/download/v4.0.0-alpha/bootstrap-4.0.0-alpha-dist.zip
 
 blog:             http://blog.getbootstrap.com

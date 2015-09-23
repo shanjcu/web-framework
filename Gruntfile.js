@@ -338,7 +338,8 @@ module.exports = function (grunt) {
       docs: {},
       github: {
         options: {
-          raw: 'github: true'
+          raw: 'github: true\n' +
+               'baseurl: /stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse'
         }
       }
     },
