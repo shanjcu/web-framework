@@ -3,4 +3,4 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: http://getbootstrap.com/sitemap.xml
+Sitemap: https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/sitemap.xml
