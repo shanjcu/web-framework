@@ -1,5 +1,22 @@
-# Todo
+---
+layout: docs
+title: To Do
+group: jcu-customisations
+---
 
+## Contents
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+
+## Known Issues
+
+* dropdown-toggle btn needs to have no border in the search form on courses Page
+* No automatically aligned dropdown menus within the viewport (see
+  https://github.com/twbs/bootstrap/issues/17167)
+
+## To Do List
 
 * Store 'approved' brand images and supporting resources in a Git repository
   (ask Digital Media team)

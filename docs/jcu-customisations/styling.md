@@ -2,7 +2,6 @@
 layout: docs
 title: Styling for JCU
 group: jcu-customisations
-redirect_from: "/jcu-customisations/"
 ---
 
 ## Contents
@@ -33,3 +32,17 @@ Given the complexity and variations between applications, especially those that
 are vendor-supplied, we expect that all projects will require some degree of
 customisation.  If you have suggestions for customisations that should feature
 as part of this core 
+
+## Decisions and theory
+
+* Squiz uses its CMS metadata fields to control background images and colours on
+  pages.  These then are translated into either inline styles on a rendered page.
+  From a structural point-of-view, this isn't a sustainable practice, as styles
+  aren't centrally controlled.  In order to simplify this, all repeatable
+  aspects, such as Overlays, are defined in the main style sheet files.  This
+  makes for consistency across all systems using the framework, and eliminates a
+  potential maintenance burden from application owners.
+
+* Squiz will be delivering a documentation page covering all its various styles
+  and components after the launch in October.
+

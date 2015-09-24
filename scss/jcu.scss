@@ -142,6 +142,13 @@ $jcu-fade-transition-speed: .3s;
   opacity: 0;
 }
 
+.open {
+  > .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .dropdown-toggle::after {
   width: auto;
   height: auto;
@@ -155,12 +162,12 @@ $jcu-fade-transition-speed: .3s;
 }
 
 // Open dropdown menus on hover by default rather than click
-.dropdown {
+.dropdown--open-on-hover {
   @include hover-focus {
     > .dropdown-menu {
-      visibility: visible;
       opacity: 1;
       transition: visibility 0s, opacity $jcu-fade-transition-speed;
+      visibility: visible;
     }
   }
 }

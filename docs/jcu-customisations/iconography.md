@@ -22,8 +22,11 @@ their official documentation.
 `.icon-emailalt`, which you can access as `.icon-email2` in the version JCU is
 using. See the
 [webhostinghub-glyphs.css](https://github.com/gustavohenke/webhostinghub-glyphs/blob/master/css/webhostinghub-glyphs.css)
-file for the correct names.
+file for the correct names.  All icons will be present in each; it's just a case
+of determining the correct class name to use.
 {% endcallout %}
+
+
 
 Icons should be specified using a `<span>` element, in the manner shown.  Other
 examples in some documentation may use an `<i>` element but JCU systems should

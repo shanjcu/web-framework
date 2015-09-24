@@ -1,3 +1,20 @@
+- title: JCU Customisations
+  pages:
+    - title: Introduction
+    - title: Styling
+    - title: Typography
+    - title: Iconography
+    - title: Campus Stack
+    - title: Colophon
+    - title: Accordion
+    - title: Card
+    - title: Dropdowns
+    - title: Overlay
+    - title: Examples
+    - title: Building
+    - title: Coding Guide
+    - title: To Do
+
 - title: Getting started
   pages:
     - title: Introduction
@@ -54,19 +71,6 @@
 #   pages:
 #     - title: Approach
 #     - title: Icon fonts
-
-- title: JCU Customisations
-  pages:
-    - title: Styling
-    - title: Typography
-    - title: Iconography
-    - title: Campus Stack
-    - title: Colophon
-    - title: Accordion
-    - title: Card
-    - title: Overlay
-    - title: Examples
-    - title: Building
 
 - title: About
   pages:

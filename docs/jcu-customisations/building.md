@@ -18,6 +18,11 @@ the purpose of each tool Bootstrap uses and that you have those tools installed
 on your system.
 {% endcallout %}
 
+## Contents
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
 ## Getting started
 
 How you get started depends on your operating system.  The simplest
@@ -26,6 +31,11 @@ have the required tools already present by default -- a Terminal and the ``git``
 command.  If you're on Windows, or otherwise looking for a GUI solution, you'll
 need to install some form Git application (such as [GitHub
 Desktop](https://desktop.github.com/)) to help you manage the code.
+
+1. This project uses [EditorConfig](http://editorconfig.org/) to maintain
+   consistent styling for indenting and line endings.  Ensure your editor of
+   choice is configured with support for EditorConfig; there are many
+   [plugins](http://editorconfig.org/#download) available.
 
 1. Visit the [web framework repository]({{ site.repo }}) repository and clone
    it.  You'll find clone URLs at the top-left side of the page.
@@ -64,6 +74,14 @@ Our Gruntfile adds the following commands and tasks:
 
 All other tasks from the default Bootstrap
 [Gruntfile](../../getting-started/build-tools#using-grunt) are also available
+
+## Branches and structure
+
+* Latest stable version is always located in ``jcu-master`` branch
+* Development changes take place on the ``jcu-develop`` branch
+* Features and developments should branch off ``jcu-develop``
+* Versioning should follow SemVer
+* Fixes can be made via pull request from other users to the ``develop`` branch
 
 ## Making changes
 
