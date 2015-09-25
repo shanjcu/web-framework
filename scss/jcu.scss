@@ -114,6 +114,12 @@ $jcu-fade-transition-speed: .3s;
   border-bottom: $border-width dotted $gray-light;
 }
 
+.jumbotron {
+  .lead {
+    border-bottom: 0 solid;
+  }
+}
+
 //
 // Lists
 //
