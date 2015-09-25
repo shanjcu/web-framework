@@ -37,10 +37,6 @@ $bd-danger:         #d9534f;
 $bd-warning:        #f0ad4e;
 $bd-info:           #5bc0de;
 
-// JCU customisations
-$jcu-gradient: linear-gradient(to right, #2E3192 0px, #0066B3 100%);
-$jcu-gradient-color: #fff;
-
 // Load docs components
 //@import "booticon";
 //@import "nav";
@@ -67,7 +63,13 @@ $jcu-gradient-color: #fff;
 @import "syntax";
 @import "anchor";
 
+// JCU customisations
+$jcu-gradient: linear-gradient(to right, #2E3192 0px, #0066B3 100%);
+$jcu-gradient-color: #fff;
+
 // Extensions for Bootstrap docs styling
+.bd-pageheader,
+.bd-masthead,
 .bd-example--inverse {
   background-image: $jcu-gradient;
   color: $jcu-gradient-color;
