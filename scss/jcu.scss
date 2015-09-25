@@ -81,6 +81,9 @@ $card-cap-bg:                    $gray-dark;
 $card-cap-color:                 #fff;
 
 // Custom JCU settings
+$modal-header-color: #fff;
+$modal-header-bg: $gray-dark;
+
 $jcu-gradient-blue: rgb(46, 49, 146), rgb(0, 190, 228);
 $jcu-gradient-orange: rgb(233, 79, 53), rgb(255, 221, 0);
 $jcu-gradient-green: rgb(0, 166, 81), rgb(214, 224, 64);
@@ -188,6 +191,20 @@ $jcu-fade-transition-speed: .3s;
 .nav-tabs {
   .nav-link {
     border-top-right-radius: 1em;
+  }
+}
+
+//
+// Modal: popup dialog boxes
+//
+
+.modal-header {
+  background-color: $modal-header-bg;
+  color: $modal-header-color;
+
+  .close {
+    color: $modal-header-color;
+    opacity: 1;
   }
 }
 
