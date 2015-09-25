@@ -3,7 +3,39 @@ layout: simple
 title: Examples
 ---
 
-[Download the Bootstrap source code]({{ site.download.source }}) to snag these examples.
+[Clone the JCU Web Framework source code]({{ site.repo }}) to obtain these examples.
+
+## JCU-specific
+
+Examples that illustrate JCU-specific page layouts or otherwise focus on
+implementation of customisations and components.
+
+<div class="row bd-examples">
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-courses/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-courses/screenshot.jpg" alt="">
+    </a>
+    <h4>Courses layout</h4>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-app/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app/screenshot.jpg" alt="">
+    </a>
+    <h4>App layout</h4>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-homepage/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-homepage/screenshot.jpg" alt="">
+    </a>
+    <h4>Homepage layout</h4>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-login/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-login/screenshot.jpg" alt="">
+    </a>
+    <h4>Login screen layout</h4>
+  </div>
+</div>
 
 ## Framework
 

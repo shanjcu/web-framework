@@ -15,15 +15,18 @@ group: jcu-customisations
 * dropdown-toggle btn needs to have no border in the search form on courses Page
 * No automatically aligned dropdown menus within the viewport (see
   https://github.com/twbs/bootstrap/issues/17167)
+* Accordion example in docs uses old v3 Panels (see
+  https://github.com/twbs/bootstrap/pull/17159)
 
 ## To Do List
+
+* Decide on version numbering to distinguish / relate Bootstrap to the JCU web
+  framework
 
 * Store 'approved' brand images and supporting resources in a Git repository
   (ask Digital Media team)
 
 * Build process:
-
-  * Auto-prefixer
 
   * Run base templates and CSS styles through WCAG2AAA / Section508 checker or
     linter
@@ -40,7 +43,6 @@ group: jcu-customisations
 
 ## Decisions
 
-* Best structure for resources
 * Best tool for managing external dependencies (Bower, Grunt, Gulp, Npm...)
 * Follow results of this discussion:
   https://github.com/twbs/bootstrap/issues/17423

@@ -43,7 +43,7 @@ $jcu-gradient-color: #fff;
 
 // Load docs components
 //@import "booticon";
-@import "nav";
+//@import "nav";
 @import "masthead";
 @import "featurettes";
 //@import "featured-sites";
@@ -55,10 +55,10 @@ $jcu-gradient-color: #fff;
 @import "footer";
 @import "component-examples";
 @import "responsive-tests";
-@import "buttons";
+//@import "buttons";
 @import "callouts";
 @import "examples";
-@import "team";
+//@import "team";
 @import "browser-bugs";
 @import "brand";
 @import "zeroclipboard";
@@ -71,6 +71,13 @@ $jcu-gradient-color: #fff;
 .bd-example--inverse {
   background-image: $jcu-gradient;
   color: $jcu-gradient-color;
+}
+
+.bd-example {
+  > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 // Custom JCU docs styling
