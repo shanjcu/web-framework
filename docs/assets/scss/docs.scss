@@ -68,6 +68,29 @@ $jcu-gradient: linear-gradient(to right, #2E3192 0px, #0066B3 100%);
 $jcu-gradient-color: #fff;
 
 // Extensions for Bootstrap docs styling
+.bd-pageheader {
+  margin-bottom: 0;
+  padding-top: ($spacer / 2);
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.bd-title {
+  font-size: $font-size-h1;
+}
+
+.bd-content {
+  > h2:not(:first-child) {
+    margin-top: $spacer;
+  }
+}
+
+.bd-sidebar {
+  padding-top: $spacer;
+}
+
 .bd-pageheader,
 .bd-masthead,
 .bd-example--inverse {
@@ -85,7 +108,7 @@ $jcu-gradient-color: #fff;
 // Custom JCU docs styling
 .jcu-overlay-examples {
   background: url('../img/leaf-curl.jpg') top center / cover;
-  padding: 1rem;
+  padding: $spacer;
 
   .jcu-overlay {
     min-height: 3.5rem;
