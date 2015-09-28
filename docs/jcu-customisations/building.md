@@ -38,11 +38,11 @@ Desktop](https://desktop.github.com/)) to help you manage the code.
    [plugins](http://editorconfig.org/#download) available.
 
 1. Visit the [web framework repository]({{ site.repo }}) repository and clone
-   it.  You'll find clone URLs at the top-left side of the page.
+   it.  You'll find clone URLs at the top-left side of the page.  Ensure that
+   you clone the repository *recursively*, which ensures that third-party
+   submodules are also obtained.  For those using a terminal, run:
 
-   For those using a terminal, run:
-
-       git clone {{ site.repo }}
+       git clone --recursive {{ site.repo }}
 
 1. Ensure all of the [Build tools](../../getting-started/build-tools) needed
    are installed on your system.
@@ -185,3 +185,43 @@ otherwise can change significantly between versions.
 1. Rebuild the main documentation and push to the server in one go by running:
 
        grunt jcu-publish
+
+## Updating third-party components
+
+The JCU Web Framework is built upon several extra components that underpin
+certain aspects such as the dropdown menus and icons.  These are all held within
+the `scss/components` directory and managed as [Git
+submodules](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules).
+
+Firstly, in order to update one of these components, determine the version to
+update to as a Git reference (such as a branch name, tag or commit).  You'll use
+this to `checkout` in the process that follows.  These instructions are for
+those using a terminal; adapt them to your own environment.
+
+1. Change into the component directory:
+
+       cd scss/components/[component-id]
+
+1. Fetch the latest changes for this submodule's repository:
+
+       git fetch
+
+1. Checkout the version you wish to update to that you determined earlier.
+
+       git checkout [version-id]
+
+1. Change back to the main framework directory and pull any nested submodule
+   updates:
+
+       cd ../../..
+       git submodule update --init --recursive
+
+1. Commit the change in component version into the main framework:
+
+       git commit scss/components/[component-id]
+
+   Ensure that you add a suitable commit message explaining what the change was
+   and what effect it has.
+
+It's rare that these components will need to be updated, though bug-fixes and
+new features may be introduced from time to time.
