@@ -101,6 +101,9 @@ $jcu-fade-transition-speed: .3s;
 @import 'components/yamm3/yamm/_yamm.scss';
 @import 'components/webhostinghub-glyphs/css/webhostinghub-glyphs.css';
 
+//
+// Layout: general modifiers to page layout and structure
+//
 
 .body--has-fixed-nav {
   padding-top: $navbar-height;
