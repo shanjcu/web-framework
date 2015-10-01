@@ -91,14 +91,14 @@
         } ,
     
         {
-            "title" : "Card",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/card/",
+            "title" : "Cards",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/card/",
             "date"  : ""
         } ,
     
         {
-            "title" : "Cards",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/card/",
+            "title" : "Card",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/card/",
             "date"  : ""
         } ,
     
@@ -111,6 +111,12 @@
         {
             "title" : "Code",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/code/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Coding Guide",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/coding-guide/",
             "date"  : ""
         } ,
     
@@ -140,7 +146,19 @@
     
         {
             "title" : "Dropdowns",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Dropdowns",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/dropdowns/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Explorer",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/explorer/",
             "date"  : ""
         } ,
     
@@ -199,6 +217,12 @@
         } ,
     
         {
+            "title" : "Extend",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/extend/",
+            "date"  : ""
+        } ,
+    
+        {
             "title" : "Examples",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/",
             "date"  : ""
@@ -211,14 +235,14 @@
         } ,
     
         {
-            "title" : "Extend",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/extend/",
+            "title" : "Input group",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/input-group/",
             "date"  : ""
         } ,
     
         {
-            "title" : "Input group",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/input-group/",
+            "title" : "Introduction",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/introduction/",
             "date"  : ""
         } ,
     
@@ -231,12 +255,6 @@
         {
             "title" : "JavaScript",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/javascript/",
-            "date"  : ""
-        } ,
-    
-        {
-            "title" : "JCU Styling",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/jcu-component/",
             "date"  : ""
         } ,
     
@@ -331,6 +349,12 @@
         } ,
     
         {
+            "title" : "Reading Materials",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/reading/",
+            "date"  : ""
+        } ,
+    
+        {
             "title" : "Reboot",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/reboot/",
             "date"  : ""
@@ -379,6 +403,18 @@
         } ,
     
         {
+            "title" : "To Do",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/todo/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Toolbar",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/toolbar/",
+            "date"  : ""
+        } ,
+    
+        {
             "title" : "Tooltips",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/tooltips/",
             "date"  : ""
@@ -391,14 +427,14 @@
         } ,
     
         {
-            "title" : "Typography customisations",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/typography/",
+            "title" : "Typography",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/typography/",
             "date"  : ""
         } ,
     
         {
-            "title" : "Typography",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/typography/",
+            "title" : "Typography customisations",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/typography/",
             "date"  : ""
         } ,
     
@@ -422,13 +458,13 @@
     
         {
             "title" : "",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/",
             "date"  : ""
         } ,
     
@@ -441,12 +477,6 @@
         {
             "title" : "",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/",
-            "date"  : ""
-        } ,
-    
-        {
-            "title" : "",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/",
             "date"  : ""
         } 
     

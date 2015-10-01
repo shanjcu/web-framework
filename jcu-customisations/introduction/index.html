@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The JCU Web Framework, based on Bootstrap.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="David Beitey and JCU contributors">
+
+<title>
+  
+    Introduction &middot; JCU Web Framework
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/css/jcu.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/assets/css/docs.min.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/images/apple-touch-icon.png">
+<link rel="icon" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/images/favicon.ico">
+
+  </head>
+  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <header class="navbar navbar-light navbar-static-top bd-navbar" role="banner">
+  
+
+  <div class="clearfix">
+    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+      &#9776;
+    </button>
+    <a class="navbar-brand hidden-sm-up" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/">
+      JCU Web Framework
+    </a>
+  </div>
+  <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
+    <nav class="nav navbar-nav">
+      <a class="nav-item nav-link " href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/">JCU Web Framework</a>
+      <a class="nav-item nav-link active" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/introduction/">Documentation</a>
+      <a class="nav-item nav-link " href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/">Examples</a>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="bd-pageheader">
+      <div class="container">
+        
+  <h1>JCU Web Framework</h1>
+  <p class="lead">
+    The <em>living style guide</em> for University web applications.
+  </p>
+
+
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="row jcu-content">
+        <div class="container-fluid">
+          <div class="col-md-3 col-md-push-9 bd-sidebar">
+            <div class="bd-sidebar">
+
+  <form class="bd-search hidden-sm-down">
+    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <div class="dropdown-menu bd-search-results" id="search-results"></div>
+  </form>
+
+  <nav class="bd-links" id="docsNavbarContent">
+    
+      
+      
+      
+
+      
+        
+      
+
+      <div class="bd-toc-item active">
+        
+          <a class="bd-toc-link" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/introduction">
+        
+          JCU Customisations
+        </a>
+
+        <ul class="nav bd-sidenav">
+          
+            
+            
+
+            
+              
+            
+
+            <li class="active bd-sidenav-active">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/introduction">
+                Introduction
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/styling">
+                Styling
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/typography">
+                Typography
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/iconography">
+                Iconography
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/campus-stack">
+                Campus Stack
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/colophon">
+                Colophon
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/card">
+                Card
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
+                Overlay
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
+                Examples
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/building">
+                Building
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/coding-guide">
+                Coding Guide
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/to-do">
+                To Do
+              </a>
+
+              
+            </li>
+          
+        </ul>
+      </div>
+    
+      
+      
+      
+
+      
+
+      <div class="bd-toc-item ">
+        
+          <a class="bd-toc-link" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/introduction">
+        
+          Getting started
+        </a>
+
+        <ul class="nav bd-sidenav">
+          
+            
+            
+
+            
+              
+            
+
+            <li class="active bd-sidenav-active">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/introduction">
+                Introduction
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/download">
+                Download
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/browsers-devices">
+                Browsers & devices
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/options">
+                Options
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/flexbox">
+                Flexbox
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/build-tools">
+                Build tools
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/best-practices">
+                Best practices
+              </a>
+
+              
+            </li>
+          
+        </ul>
+      </div>
+    
+      
+      
+      
+
+      
+
+      <div class="bd-toc-item ">
+        
+          <a class="bd-toc-link" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/layout/overview">
+        
+          Layout
+        </a>
+
+        <ul class="nav bd-sidenav">
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/layout/overview">
+                Overview
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/layout/grid">
+                Grid
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/layout/media-object">
+                Media object
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/layout/responsive-utilities">
+                Responsive utilities
+              </a>
+
+              
+            </li>
+          
+        </ul>
+      </div>
+    
+      
+      
+      
+
+      
+
+      <div class="bd-toc-item ">
+        
+          <a class="bd-toc-link" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/reboot">
+        
+          Content
+        </a>
+
+        <ul class="nav bd-sidenav">
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/reboot">
+                Reboot
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/typography">
+                Typography
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/code">
+                Code
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/images">
+                Images
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/tables">
+                Tables
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/figures">
+                Figures
+              </a>
+
+              
+            </li>
+          
+        </ul>
+      </div>
+    
+      
+      
+      
+
+      
+
+      <div class="bd-toc-item ">
+        
+          <a class="bd-toc-link" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/buttons">
+        
+          Components
+        </a>
+
+        <ul class="nav bd-sidenav">
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/buttons">
+                Buttons
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/button-group">
+                Button group
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/button-dropdown">
+                Button dropdown
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/forms">
+                Forms
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/input-group">
+                Input group
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/jumbotron">
+                Jumbotron
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/label">
+                Label
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/alerts">
+                Alerts
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/card">
+                Card
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/navs">
+                Navs
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/navbar">
+                Navbar
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/breadcrumb">
+                Breadcrumb
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/pagination">
+                Pagination
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/progress">
+                Progress
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/list-group">
+                List group
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/modal">
+                Modal
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/scrollspy">
+                Scrollspy
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/tooltips">
+                Tooltips
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/popovers">
+                Popovers
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/collapse">
+                Collapse
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/carousel">
+                Carousel
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+        </ul>
+      </div>
+    
+      
+      
+      
+
+      
+
+      <div class="bd-toc-item ">
+        
+          <a class="bd-toc-link" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/about/history">
+        
+          About
+        </a>
+
+        <ul class="nav bd-sidenav">
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/about/history">
+                History
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/about/accessibility">
+                Accessibility
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/about/license">
+                License
+              </a>
+
+              
+            </li>
+          
+        </ul>
+      </div>
+    
+      
+      
+      
+
+      
+
+      <div class="bd-toc-item ">
+        
+          <a class="bd-toc-link" href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/migration/">
+        
+          Migration
+        </a>
+
+        <ul class="nav bd-sidenav">
+          
+        </ul>
+      </div>
+    
+  </nav>
+</div>
+
+          </div>
+          <div class="col-md-9 col-md-pull-3 bd-content">
+            <h1 class="bd-title" id="content">Introduction</h1>
+            <p>This is the common web front-end framework for James Cook University and is used
+by the University’s various web applications.  The JCU Web Framework utilises
+<a href="http://getbootstrap.com">Bootstrap</a>, a very popular framework for building
+responsive, mobile-first sites and applications.</p>
+
+<p>This a set of reusable resources for web applications and a fully-documented
+<em>living style guide</em> which aims to provide the simplest starting point for any
+new and existing JCU-themed projects on the web.  The documentation features
+worked examples of the following:</p>
+
+<ul>
+  <li>All Bootstrap standard components</li>
+  <li>Demonstrations of styles fitting in with JCU’s branding guides</li>
+  <li>Customised components</li>
+  <li>Third party libraries (iconography, fonts)</li>
+</ul>
+
+<p>This is a work-in-progress configuration and things may change as better tools
+and processes/workflow are determined.  No two web applications or products are
+the same and how an application owner or vendor themes their app will almost
+always vary.  Bootstrap was selected as the framework as its ubiquitous nature
+means that software products and vendors likely already have a theming story
+involving Bootstrap, if they don’t already use Bootstrap by default.</p>
+
+<p>Here’s how to quickly get started with the assets and a template starter page.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#quick-start" id="markdown-toc-quick-start">Quick start</a></li>
+</ul>
+
+<h2 id="quick-start">Quick start</h2>
+
+<p>In this quick start, we’ll focus on the fundamentals of including the assets in
+a static HTML page.</p>
+
+<ol>
+  <li>
+    <p>Download the source files zip, take note of the version used.</p>
+  </li>
+  <li>
+    <p>Unzip the files.</p>
+  </li>
+  <li>
+    <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your <code>&lt;head&gt;</code> before all other stylesheets to load our CSS.</p>
+  </li>
+</ol>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"./jcu-web-framework/dist/css/jcu.css"</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>Add the JavaScript plugins and jQuery near the end of your pages, right before
+the closing <code>&lt;/body&gt;</code> tag. Be sure to place jQuery first as Bootstrap code
+depends on it.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"./jcu-web-framework/dist/js/vendor/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"./jcu-web-framework/dist/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+
+<p>And that’s it — you’re on your way to a fully Bootstrapped site. If you’re at
+all unsure about the general page structure, HTML5 doctype, or how to make your
+application responsive, see the main <a href="../../getting-started/introduction">Bootstrap
+Introduction</a> for more details.</p>
+
+<p>Your application is likely far more complicated, by the fundamentals remain the
+same – you need to serve CSS/JavaScript/images and link these into your pages.
+For more theming strategies, see <a href="../application-theming">Application Theming</a>.</p>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bd-footer text-muted" role="contentinfo">
+  <div class="container">
+    <ul class="bd-footer-links">
+      <li><a href="https://git.jcu.edu.au/stash/projects/WEBSTYLE/repos/jcu-web-framework">Source Code</a></li>
+      <li><a href="https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse">Hosted Documentation</a></li>
+      <li><a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/">Examples</a></li>
+      <li><a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/about/history/">About</a></li>
+    </ul>
+    <p>Designed and built with on top of Bootstrap for JCU by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
+  </div>
+</footer>
+
+<script src="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/assets/js/vendor/jquery.min.js"></script>
+
+
+  <script src="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/assets/js/docs.min.js"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/assets/js/ie-emulation-modes-warning.js"></script>
+
+
+<script src="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/assets/js/vendor/jekyll-search.js"></script>
+
+<script>
+SimpleJekyllSearch.init({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  searchResultTemplate: '<a class="dropdown-item" href="{url}">{title}</a>',
+  noResultsText: '<div class="dropdown-item no-results">Sorry, there are no results for that search.</div>',
+  json: '/search.json'
+})
+</script>
+
+
+<script>
+Holder.addTheme('gray', {
+  background: '#777',
+  foreground: 'rgba(255,255,255,.75)',
+  font: 'Helvetica',
+  fontweight: 'normal'
+})
+</script>
+
+  </body>
+</html>

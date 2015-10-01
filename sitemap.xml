@@ -46,16 +46,19 @@
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/campus-stack/</loc>
   </url>
   <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/card/</loc>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/card/</loc>
   </url>
   <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/card/</loc>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/card/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/carousel/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/code/</loc>
+  </url>
+  <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/coding-guide/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/collapse/</loc>
@@ -70,7 +73,13 @@
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/download/</loc>
   </url>
   <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns/</loc>
+  </url>
+  <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/dropdowns/</loc>
+  </url>
+  <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/explorer/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/figures/</loc>
@@ -100,25 +109,25 @@
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/</loc>
   </url>
   <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/extend/</loc>
+  </url>
+  <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples/</loc>
   </url>
   <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/extend/</loc>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/input-group/</loc>
   </url>
   <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/input-group/</loc>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/introduction/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/introduction/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/javascript/</loc>
-  </url>
-  <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/jcu-component/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/jumbotron/</loc>
@@ -166,6 +175,9 @@
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/progress/</loc>
   </url>
   <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/reading/</loc>
+  </url>
+  <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/reboot/</loc>
   </url>
   <url>
@@ -184,34 +196,28 @@
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/about/team/</loc>
   </url>
   <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/todo/</loc>
+  </url>
+  <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/toolbar/</loc>
+  </url>
+  <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/tooltips/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/about/translations/</loc>
   </url>
   <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/typography/</loc>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/typography/</loc>
   </url>
   <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/typography/</loc>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/typography/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/utilities/</loc>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples/courses.html</loc>
-    <lastmod>2015-09-22T17:17:08+10:00</lastmod>
-  </url>
-  <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples/courses/index.html</loc>
-    <lastmod>2015-09-22T17:17:08+10:00</lastmod>
-  </url>
-  <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples/app/index.html</loc>
-    <lastmod>2015-09-22T17:17:08+10:00</lastmod>
-  </url>
-  <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples/homepage/index.html</loc>
     <lastmod>2015-09-22T17:17:08+10:00</lastmod>
   </url>
   <url>
@@ -227,7 +233,15 @@
     <lastmod>2015-09-22T17:17:08+10:00</lastmod>
   </url>
   <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/jcu-login/index.html</loc>
+    <lastmod>2015-09-25T11:49:56+10:00</lastmod>
+  </url>
+  <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/carousel/index.html</loc>
+    <lastmod>2015-09-22T17:17:08+10:00</lastmod>
+  </url>
+  <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/jcu-homepage/index.html</loc>
     <lastmod>2015-09-22T17:17:08+10:00</lastmod>
   </url>
   <url>
@@ -236,7 +250,7 @@
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/jumbotron/index.html</loc>
-    <lastmod>2015-09-22T17:17:08+10:00</lastmod>
+    <lastmod>2015-09-25T11:53:09+10:00</lastmod>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/grid/index.html</loc>
@@ -271,6 +285,10 @@
     <lastmod>2015-09-22T17:17:08+10:00</lastmod>
   </url>
   <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/jcu-courses/index.html</loc>
+    <lastmod>2015-09-25T11:12:51+10:00</lastmod>
+  </url>
+  <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/sticky-footer-navbar/index.html</loc>
     <lastmod>2015-09-22T17:17:08+10:00</lastmod>
   </url>
@@ -287,19 +305,23 @@
     <lastmod>2015-09-22T17:17:08+10:00</lastmod>
   </url>
   <url>
-    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/css/components/yamm3/index.html</loc>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/examples/jcu-app/index.html</loc>
     <lastmod>2015-09-22T17:17:08+10:00</lastmod>
+  </url>
+  <url>
+    <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/css/components/yamm3/index.html</loc>
+    <lastmod>2015-09-28T09:33:39+10:00</lastmod>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/css/components/open-sans-fontface/index.html</loc>
-    <lastmod>2015-09-22T17:17:08+10:00</lastmod>
+    <lastmod>2015-09-28T09:38:04+10:00</lastmod>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/css/components/webhostinghub-glyphs/demo.html</loc>
-    <lastmod>2015-09-22T17:17:08+10:00</lastmod>
+    <lastmod>2015-09-28T09:36:30+10:00</lastmod>
   </url>
   <url>
     <loc>https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/dist/css/components/webhostinghub-glyphs/index.html</loc>
-    <lastmod>2015-09-22T17:17:08+10:00</lastmod>
+    <lastmod>2015-09-28T09:36:30+10:00</lastmod>
   </url>
 </urlset>
