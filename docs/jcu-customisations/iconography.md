@@ -20,7 +20,7 @@ their official documentation.
 {% callout warning %}
 **Heads up!** There are some minor differences in naming, such as
 `.icon-emailalt`, which you can access as `.icon-email2` in the version JCU is
-using. See the
+using on its CMS website. See the
 [webhostinghub-glyphs.css](https://github.com/gustavohenke/webhostinghub-glyphs/blob/master/css/webhostinghub-glyphs.css)
 file for the correct names.  All icons will be present in each; it's just a case
 of determining the correct class name to use.
