@@ -37,9 +37,9 @@ Here's how to quickly get started with the assets and a template starter page.
 ## Quick start
 
 In this quick start, we'll focus on the fundamentals of including the assets in
-a static HTML page.  
+a static HTML page.
 
-1. Download the source files zip, take note of the version used.
+1. Download the source files zip, taking note of the version used.
 
 1. Unzip the files.
 
@@ -63,6 +63,6 @@ all unsure about the general page structure, HTML5 doctype, or how to make your
 application responsive, see the main [Bootstrap
 Introduction](../../getting-started/introduction) for more details.
 
-Your application is likely far more complicated, by the fundamentals remain the
+Your application is likely a lot more complicated, by the fundamentals remain the
 same -- you need to serve CSS/JavaScript/images and link these into your pages.
 For more theming strategies, see [Application Theming](../application-theming).
