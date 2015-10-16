@@ -60,7 +60,16 @@ available.  The general guide, if Bootstrap is used, is to:
 Refer to your application vendor for details on what customisations are
 possible.  In some applications, you may be able to upload templates and
 transform the underlying application or consider using a middleware technology
-such as XSLT in front of the given application to transform on-the-fly.
+such as XSLT in front of the given application to transform on-the-fly.  In
+general, you want to ask your vendor for:
+
+* Technologies being used
+* Whether modifying HTML output is possible
+* Any templating or theming documentation
+* How to serve web resources (CSS, JavaScript, images, fonts)
+
+Once you have these details in hand, you can make a well-informed decision about
+the easiest way forward.
 
 In applications where theming options are otherwise limited, you may only be
 able customise specific colours, logos, or so forth, rather than underlying HTML
