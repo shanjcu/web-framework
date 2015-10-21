@@ -18,6 +18,7 @@ module.exports = function (grunt) {
   var fs = require('fs');
   var path = require('path');
   var glob = require('glob');
+  var isTravis = require('is-travis');
   var npmShrinkwrap = require('npm-shrinkwrap');
   var mq4HoverShim = require('mq4-hover-shim');
 
@@ -207,7 +208,7 @@ module.exports = function (grunt) {
     scsslint: {
       options: {
         bundleExec: true,
-        config: 'scss/.scsslint.yml',
+        config: 'scss/.scss-lint.yml',
         reporterOutput: null
       },
       src: ['scss/*.scss', '!scss/_normalize.scss']
@@ -446,7 +447,8 @@ module.exports = function (grunt) {
   }
   // Skip HTML validation if running a different subset of the test suite
   if (runSubset('validate-html') &&
-      // Skip HTML5 validator on Travis when [skip validator] is in the commit message
+      isTravis &&
+      // Skip HTML5 validator when [skip validator] is in the commit message
       isUndefOrNonZero(process.env.TWBS_DO_VALIDATOR)) {
     testSubtasks.push('validate-html');
   }
@@ -519,7 +521,7 @@ module.exports = function (grunt) {
       if (err) {
         grunt.fail.warn(err);
       }
-      var dest = 'test-infra/npm-shrinkwrap.json';
+      var dest = 'grunt/npm-shrinkwrap.json';
       fs.renameSync('npm-shrinkwrap.json', dest);
       grunt.log.writeln('File ' + dest.cyan + ' updated.');
       done();

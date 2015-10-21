@@ -21,9 +21,8 @@ Here are the big ticket items you'll want to be aware of when moving from v3 to 
 
 ### Global changes
 
-- Switched from LESS to SCSS for our source CSS files.
+- Switched from [Less](http://lesscss.org/) to [SCSS](http://sass-lang.com/) for our source CSS files.
 - Switched from `px` to `rem` as our primary CSS unit.
-- Media queries are now in `em`s instead of `px`s.
 - Global font-size increased from `14px` to `16px`.
 - Added a new grid tier for ~`480px` and below.
 - Replaced the separate optional theme with configurable options via SCSS variables (e.g., `$enable-gradients: true`).
@@ -31,8 +30,12 @@ Here are the big ticket items you'll want to be aware of when moving from v3 to 
 ### Components
 
 - Dropped panels, thumbnails, and wells for a new all-encompassing component, cards.
-- Dropped the Glyphicons icon font.
+- Dropped the Glyphicons icon font. If you need icons, some options are:
+  - the upstream version of [Glyphicons](http://glyphicons.com/)
+  - [Octicons](https://octicons.github.com/)
+  - [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 - Dropped the Affix jQuery plugin. We recommend using a `position: sticky` polyfill instead. [See the HTML5 Please entry](http://html5please.com/#sticky) for details and specific polyfill recommendations.
+  - If you were using Affix to apply additional, non-`position` styles, the polyfills might not support your use case. One option for such uses is the third-party [ScrollPos-Styler](https://github.com/acch/scrollpos-styler) library.
 - Refactored nearly all components to use more unnested classes instead of children selectors.
 
 ### Misc
@@ -179,7 +182,7 @@ Note that the changes to the grid breakpoints in v4 means that you'll need to go
 ## Misc notes to prioritize
 
 - Removed the `min--moz-device-pixel-ratio` typo hack for retina media queries
-- Dropped `.hidden` and `.show` because it interferes with jQuery's `$(...).hide()`.
+- Dropped `.hidden` and `.show` because they conflict with jQuery's `$(...).hide()` and `$(...).show()` methods.
 - Change buttons' `[disabled]` to `:disabled` as IE9+ supports `:disabled`. However `fieldset[disabled]` is still necessary because [native disabled fieldsets are still buggy in IE11](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset#Browser_compatibility).
 
 TODO: audit list of stuff in v3 that was marked as deprecated

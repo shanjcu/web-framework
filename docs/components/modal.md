@@ -48,7 +48,6 @@ A rendered modal with header, body, and set of actions in the footer.
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
           </button>
           <h4 class="modal-title">Modal title</h4>
         </div>
@@ -71,7 +70,6 @@ A rendered modal with header, body, and set of actions in the footer.
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title">Modal title</h4>
       </div>
@@ -98,7 +96,6 @@ Toggle a modal via JavaScript by clicking the button below. It will slide down a
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
@@ -153,7 +150,6 @@ Toggle a modal via JavaScript by clicking the button below. It will slide down a
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
@@ -223,7 +219,6 @@ Modals have two optional sizes, available via modifier classes to be placed on a
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
       </div>
@@ -241,7 +236,6 @@ Modals have two optional sizes, available via modifier classes to be placed on a
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
       </div>
@@ -329,7 +323,6 @@ Have a bunch of buttons that all trigger the same modal, just with slightly diff
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
           </button>
           <h4 class="modal-title" id="exampleModalLabel">New message</h4>
         </div>
@@ -428,7 +421,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 ### Methods
 
-#### .modal(options)
+#### `.modal(options)`
 
 Activates your content as a modal. Accepts an optional options `object`.
 
@@ -438,19 +431,19 @@ $('#myModal').modal({
 })
 {% endhighlight %}
 
-#### .modal('toggle')
+#### `.modal('toggle')`
 
 Manually toggles a modal. **Returns to the caller before the modal has actually been shown or hidden** (i.e. before the `shown.bs.modal` or `hidden.bs.modal` event occurs).
 
 {% highlight js %}$('#myModal').modal('toggle'){% endhighlight %}
 
-#### .modal('show')
+#### `.modal('show')`
 
 Manually opens a modal. **Returns to the caller before the modal has actually been shown** (i.e. before the `shown.bs.modal` event occurs).
 
 {% highlight js %}$('#myModal').modal('show'){% endhighlight %}
 
-#### .modal('hide')
+#### `.modal('hide')`
 
 Manually hides a modal. **Returns to the caller before the modal has actually been hidden** (i.e. before the `hidden.bs.modal` event occurs).
 
