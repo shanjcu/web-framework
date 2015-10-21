@@ -24,6 +24,10 @@ using on its CMS website. See the
 [webhostinghub-glyphs.css](https://github.com/gustavohenke/webhostinghub-glyphs/blob/master/css/webhostinghub-glyphs.css)
 file for the correct names.  All icons will be present in each; it's just a case
 of determining the correct class name to use.
+
+You may need to consult the source of the [SVG
+font](https://raw.githubusercontent.com/whhglyphs/webhostinghub-glyphs/master/WebHostingHub-Glyphs.svg)
+(1MB+ download) in order to locate the correct class name.
 {% endcallout %}
 
 
@@ -44,6 +48,7 @@ accessibility devices.
 <span class="icon-cloud" aria-hidden="true"></span>
 <span class="icon-edit" aria-hidden="true"></span>
 <span class="icon-wineglass" aria-hidden="true"></span>
+<span class="icon-grid" aria-hidden="true"></span>
 {% endexample %}
 
 ### Semantic
