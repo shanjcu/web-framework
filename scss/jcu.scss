@@ -73,6 +73,7 @@ $card-cap-bg:                    $gray-dark;
 $card-cap-color:                 #fff;
 
 // Custom JCU settings
+$font-size-xxs: .65rem;
 $modal-header-color: #fff;
 $modal-header-bg: $gray-dark;
 
@@ -250,7 +251,7 @@ $jcu-fade-transition-speed: .3s;
 
   .dropdown-menu {
     color: $jcu-dropdown-text-color;
-    padding: ($spacer / 2);
+    padding: $spacer;
 
     a {
       @include hover-focus {
@@ -272,7 +273,7 @@ $jcu-fade-transition-speed: .3s;
 
     .media {
       color: $jcu-dropdown-text-color;
-      padding: ($spacer / 2);
+      padding: $spacer;
     }
 
     .media-left {
@@ -282,7 +283,7 @@ $jcu-fade-transition-speed: .3s;
 
     .media-body {
       color: #c8c8c8;
-      font-size: $font-size-xs;
+      font-size: $font-size-xxs;
       width: auto; // Prevent extrg-width menus
     }
   }
