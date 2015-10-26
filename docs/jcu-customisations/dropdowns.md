@@ -32,23 +32,27 @@ and menus won't shoot out everywhere as they move their cursor across a page.
 Compare the two:
 
 {% example html %}
-<div class="dropdown dropdown--open-on-hover">
-  <a class="btn btn-secondary dropdown-toggle" aria-haspopup="true" aria-expanded="false">JCU Campuses</a>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Townsville</a>
-    <a class="dropdown-item" href="#">Cairns</a>
-    <a class="dropdown-item" href="#">Singapore</a>
+<div class="btn-group">
+  <div class="btn-group">
+    <div class="dropdown dropdown--open-on-hover">
+      <a class="btn btn-secondary dropdown-toggle" aria-haspopup="true" aria-expanded="false">JCU Campuses (hover)</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Townsville</a>
+        <a class="dropdown-item" href="#">Cairns</a>
+        <a class="dropdown-item" href="#">Singapore</a>
+      </div>
+    </div>
   </div>
-</div>
-{% endexample %}
 
-{% example html %}
-<div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">JCU Campuses</a>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Townsville</a>
-    <a class="dropdown-item" href="#">Cairns</a>
-    <a class="dropdown-item" href="#">Singapore</a>
+  <div class="btn-group">
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">JCU Campuses (click)</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Townsville</a>
+        <a class="dropdown-item" href="#">Cairns</a>
+        <a class="dropdown-item" href="#">Singapore</a>
+      </div>
+    </div>
   </div>
 </div>
 {% endexample %}
