@@ -12,7 +12,8 @@ group: jcu-customisations
 ## Overlay Cards
 
 Overlay Cards are customised Bootstrap Cards with specialised styling and
-animation.  They rely upon [Overlay]({{ site.baseurl }}/jcu/overlay), another JCU component, for
+animation.  They rely upon [Overlay](
+{{ site.baseurl }}/jcu-customisations/overlay), another JCU component, for
 colouring and design of short content that's placed on top of something else
 (typically an image).
 
@@ -23,7 +24,8 @@ documentation about these and other aspects to Cards.
 
 The `.jcu-overlay-card` modifier adjusts positioning and adds transition
 effects, as the examples show. The `.jcu-overlay` classes, sourced from
-[Overlay]({{ site.baseurl }}/jcu/overlay), style and colourise just the overlay inside the cards.
+[Overlay]({{ site.baseurl }}/jcu-customisations/overlay), style and colourise
+just the overlay inside the cards.
 
 {% callout warning %}
 **Heads up!** Any images placed within a `.card` must be configured to be
@@ -77,7 +79,24 @@ suitable background colour using the [backgrounds utilities](
   <a href="https://jcu.edu.au">
     <div class="card-img-overlay jcu-overlay jcu-overlay--white-25pc">
       <div class="card-title">White, 25% opacity, subtitle</div>
-      <div class="card-subtitle">This is a short subtitle.</div>
+      <div class="card-subtitle">This is a short, optional subtitle.</div>
+    </div>
+  </a>
+</div>
+{% endexample %}
+
+## 'Fixed' variation
+
+By using the `.jcu-overlay-card--fixed` modifier together with an Overlay Card,
+any animations and interactivity with the card are suppressed.
+
+{% example html %}
+<div class="card jcu-overlay-card jcu-overlay-card--fixed">
+  <a href="https://jcu.edu.au">
+    <img class="card-img img-fluid" src="../images/card.jpg" alt="Test">
+    <div class="card-img-overlay jcu-overlay jcu-overlay--plain-border">
+      <div class="card-title">Fixed overlay, no animation</div>
+      <div class="card-subtitle">This is a short, optional subtitle.</div>
     </div>
   </a>
 </div>
