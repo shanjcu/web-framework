@@ -8,7 +8,7 @@
 //$enable-flex: true; // See http://v4-alpha.getbootstrap.com/getting-started/flexbox/
 $enable-rounded:            false; // Sharp pointy edges
 $enable-shadows:            false; // TODO Maybe re-enable
-//$enable-gradients:          true;  // No effect at present
+//$enable-gradients:          true;  // Has no effect at present in Bootstrap
 $enable-transitions:        true;  // Fancy transitions for elements
 
 // JCU styling for Bootstrap
@@ -88,6 +88,8 @@ $jcu-icon-font-family: 'webhostinghub-glyphs';
 $jcu-font-size-icon: 1.875rem;
 $jcu-navbar-nav-link-padding: .5rem;
 $jcu-fade-transition-speed: .3s;
+$jcu-exposition-max-height: 50rem;
+$jcu-header-height: 17rem;
 
 @import 'bootstrap';
 @import 'components/open-sans-fontface/open-sans.scss';
@@ -477,10 +479,15 @@ $jcu-fade-transition-speed: .3s;
   line-height: 1;
 }
 
-$content-bg-color: #fff;
+$jcu-content-bg-color: #fff;
 
 .jcu-content {
-  background-color: $content-bg-color;
+  background-color: $jcu-content-bg-color;
+  padding-bottom: $spacer-y;
+}
+
+.jcu-content--short-content {
+  min-height: ($jcu-exposition-max-height - $jcu-header-height);
 }
 
 $footer-text-color: $gray-dark;
@@ -488,7 +495,7 @@ $footer-border-color: $gray-dark;
 $footer-border: $border-width dotted $footer-border-color;
 
 .footer {
-  margin-top: $spacer-y;
+  background-color: $gray-lighter;
 
   h3 {
     border-bottom: $footer-border;
@@ -590,7 +597,7 @@ $footer-border: $border-width dotted $footer-border-color;
   position: absolute;
   display: block;
   background-color: #000;
-  max-height: 50em;
+  max-height: $jcu-exposition-max-height;
   overflow: hidden;
   z-index: -1;
   img {
@@ -706,7 +713,7 @@ $footer-border: $border-width dotted $footer-border-color;
   background-size: cover;
   background-position: center center;
   padding-top: $spacer;
-  height: 17rem;
+  height: $jcu-header-height;
 }
 
 .jcu-header--leaf-curl {
