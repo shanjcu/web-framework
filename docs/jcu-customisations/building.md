@@ -179,7 +179,9 @@ otherwise can change significantly between versions.
    JCU-specific changes so make sure you don't run this until you're *absolutely
    sure* no remaining files contain JCU changes.
 
-1. Once all conflicts are resolved, build and test the framework:
+1. Once all conflicts are resolved, build and test the framework.  You'll need
+   to re-run the `npm` and `bundle` installation in case of any dependency
+   changes.
 
        npm install
        bundle
