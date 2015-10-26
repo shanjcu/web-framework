@@ -120,15 +120,26 @@ $jcu-fade-transition-speed: .3s;
 // Lists
 //
 
-.list-bordered {
+@mixin list-bordered($padding-y) {
   @extend .list-unstyled;
   li {
     border-bottom: $border-width solid $gray-light;
+    padding-top: $padding-y;
+    padding-bottom: $padding-y;
+
+    &:first-child {
+      padding-top: 0;
+    }
 
     &:last-child {
       border-bottom: 0 none;
+      padding-bottom: 0;
     }
   }
+}
+
+.list-bordered {
+  @include list-bordered(.25em);
 }
 
 //
@@ -510,9 +521,8 @@ $footer-border: $border-width dotted $footer-border-color;
 //
 // Campus Stack: stylised listing of University campuses
 //
-@mixin jcu-campus-stack-colors($color) {
+@mixin jcu-campus-stack($color) {
   li {
-    padding-bottom: .2em;
     border-color: $color;
 
     &:first-child {
@@ -530,18 +540,24 @@ $footer-border: $border-width dotted $footer-border-color;
 }
 
 .jcu-campus-stack {
-  @extend .list-bordered;
+  @include list-bordered(.25em);
+  @include jcu-campus-stack($gray-dark);
+
   display: inline-block;
-  @include jcu-campus-stack-colors($gray-dark);
+
+  li {
+    padding-top: 0;
+  }
+
 }
 
 .jcu-campus-stack--color {
   // Colour matches the JCU shield
-  @include jcu-campus-stack-colors(#176FC1);
+  @include jcu-campus-stack(#176FC1);
 }
 
 .jcu-campus-stack--inverse {
-  @include jcu-campus-stack-colors($jcu-brand-inverse);
+  @include jcu-campus-stack($jcu-brand-inverse);
 }
 
 
