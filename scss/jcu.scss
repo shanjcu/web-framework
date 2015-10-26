@@ -326,20 +326,22 @@ $jcu-fade-transition-speed: .3s;
 // Explorer: the primary branding and navigation header, featuring the JCU logo
 //
 
+@mixin jcu-explorer-gradient {
+  @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 175%);
+  background-color: nth($jcu-gradient-blue, 1);
+}
+
 .navbar--jcu-explorer {
-  @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 200%);
+  @include jcu-explorer-gradient;
   $navbar-height: 5.5rem;
   $navbar-color: #fff;
   $navbar-content-color: #000;
-  background-color: nth($jcu-gradient-blue, 1);
+
   border: 0 none;
   border-top-right-radius: 1.25rem;
-  min-height: $navbar-height;
+  //min-height: $navbar-height;
+  padding-top: ($navbar-padding-vertical / 2);
   padding-bottom: 0;
-
-  a {
-    color: $navbar-color;
-  }
 
   .navbar-brand {
     img {
@@ -352,12 +354,17 @@ $jcu-fade-transition-speed: .3s;
     margin-right: ($grid-gutter-width / 2);
   }
 
-  .navbar-nav .nav-link {
-    margin-top: 1rem;
-    padding: .9rem 1.25rem 1.6rem;
-    border-top-right-radius: 1.25em;
-    transition-property: background-color, color;
-    transition-duration: $jcu-fade-transition-speed;
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-color;
+      margin-top: ($spacer-y * .75);
+      padding: $spacer-y ($spacer-x * 1.5) ($spacer-y * 1.75);
+      border-top-right-radius: 1.25em;
+    }
+
+    .nav-item + .nav-item {
+      margin-left: 0;
+    }
   }
 
   .nav-link:hover,
@@ -368,11 +375,20 @@ $jcu-fade-transition-speed: .3s;
   }
 
   .dropdown-menu {
-    @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 200%);
-    background-color: nth($jcu-gradient-blue, 1);
+    @include jcu-explorer-gradient;
     border: 0 none;
     color: $navbar-color;
     padding-top: 0;
+    transition-property: none;
+  }
+
+  // Disable transitions for dropdowns
+  .dropdown--open-on-hover {
+    @include hover-focus {
+      > .dropdown-menu {
+        transition: none;
+      }
+    }
   }
 
   .yamm-content {
@@ -380,14 +396,15 @@ $jcu-fade-transition-speed: .3s;
     color: $navbar-content-color;
     // Line up with nav gutter + navbar-padding
     $margin: ($navbar-padding-horizontal);
-    margin-bottom: $margin;
     margin-left: $margin;
     margin-right: $margin;
   }
 
   @at-root .jcu-explorer__tagline {
+    margin-top: 0.5rem;
     text-align: center;
     a {
+      color: $navbar-color;
       font-weight: bold;
     }
   }
