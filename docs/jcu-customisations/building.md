@@ -156,25 +156,28 @@ otherwise can change significantly between versions.
    where the changes in JCU's framework are at odds with changes in the official
    Bootstrap code.
 
-   Go through each file (except those in `dist/` or `docs/dist/`) that's
+   Go through each file (except those in `dist/` or `docs/dist/`) that is
    conflicted and resolve the merge.  See [this
    page](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)
    from GitHub on how to resolve conflicts on the command line.  Your Git
-   application likely offers similar functionality.
+   application likely offers similar functionality.  In essence, you'll edit
+   each conflicted file, merge changes together, and stage (`git add …`) the
+   files.
 
    For any files located in `dist/` or `docs/dist`, you can simply accept
    Bootstrap's version from the merge by using:
 
-       git checkout --theirs path/to/file.html
+       git reset path/to/file.css
+       git checkout --theirs path/to/file.css
 
    To make this easier, you could leave all files you're planning to accept
-   from core Bootstrap until the end and then use the command:
+   from core Bootstrap until the end of your merge and then use the command:
 
        git checkout --theirs .
 
    at the top level directory.  Take care as this will overwrite any
-   JCU-specific changes so make sure you don't run this until you're absolutely
-   sure no remaining files contain JCU changes.
+   JCU-specific changes so make sure you don't run this until you're *absolutely
+   sure* no remaining files contain JCU changes.
 
 1. Once all conflicts are resolved, build and test the framework:
 
