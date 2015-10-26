@@ -694,12 +694,12 @@ $footer-border: $border-width dotted $footer-border-color;
 // Cards: blocks of information; optionally interactive tiles
 //
 
+$card-overlay-font-color: #fff !default;
+$card-overlay-min-height: 5rem !default;
+
 .card-header {
   color: $card-cap-color;
 }
-
-$card-overlay-font-color: #fff !default;
-$card-overlay-min-height: 5rem !default;
 
 .jcu-overlay-card {
   min-height: $card-overlay-min-height;
@@ -736,7 +736,6 @@ $card-overlay-min-height: 5rem !default;
     }
   }
 }
-
 
 //
 // Theme: the various JCU theme colours

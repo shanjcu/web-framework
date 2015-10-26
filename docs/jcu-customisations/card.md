@@ -83,15 +83,27 @@ suitable background colour using the [backgrounds utilities](
 </div>
 {% endexample %}
 
-You can utilise the [Spacing Utility](
-{{ site.baseurl }}/components/utilities/#spacing) to introduce more padding
-inside the card.
+## Sizes
+
+Card sizing is dictated by the image or other background content that you place
+inside the card and the container in which the card is placed, such as the
+grid or layout system.  For empty cards, such as those with just a plain
+background colour, you get a default minimum height and for larger sizes,
+specify an inline style for `min-height`.
 
 {% example html %}
-<div class="card jcu-overlay-card bg-primary p-t-lg">
+<div class="card jcu-overlay-card bg-primary">
   <a href="https://jcu.edu.au">
     <div class="card-img-overlay jcu-overlay jcu-overlay--yellow-50pc">
-      <div class="card-title">Yellow, 50% opacity, no subtitle</div>
+      <div class="card-title">Yellow, 50% opacity, standard height</div>
+    </div>
+  </a>
+</div>
+
+<div class="card jcu-overlay-card bg-success" style="min-height: 10rem;">
+  <a href="https://jcu.edu.au">
+    <div class="card-img-overlay jcu-overlay jcu-overlay--blue-90pc">
+      <div class="card-title">Blue, 90% opacity; 10rem min-height</div>
     </div>
   </a>
 </div>
