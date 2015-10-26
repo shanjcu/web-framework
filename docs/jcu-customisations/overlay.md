@@ -13,8 +13,8 @@ group: jcu-customisations
 
 Overlays are a custom JCU component for colouring and design of
 content that's designed to be placed on top of something else.  This may be a
-[JCU Card]({{ site.baseurl}}/jcu/card), a coloured background, anything other situation where you
-need to distinguish between layers of content.
+[JCU Card]({{ site.baseurl}}/jcu-customisations/card), a coloured background,
+or a situation where you need to distinguish between layers of content.
 
 ## Examples
 
@@ -52,6 +52,23 @@ difficult-to-read overlays.
 <div class="jcu-overlay jcu-overlay--white-50pc jcu-overlay--inverse">
   <h2>White, 50% opacity overlay</h2>
   <p>This uses the inverted text colour for readability.</p>
+</div>
+{% endhighlight %}
+
+### Plain styling
+
+Use the `.jcu-overlay--plain` class to remove the rounded corner and shrink the
+padding for a more *plain* appearance.
+
+<div class="jcu-overlay-examples">
+  <div class="jcu-overlay jcu-overlay--plain">
+    <p>Plain border styled overlay</p>
+  </div>
+</div>
+
+{% highlight html %}
+<div class="jcu-overlay jcu-overlay--plain">
+  <p>Plain border styled overlay</p>
 </div>
 {% endhighlight %}
 
