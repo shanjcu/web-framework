@@ -178,7 +178,35 @@ $jcu-fade-transition-speed: .3s;
 }
 
 //
-// Navbar: navigation elements, including tabbed navigation
+// Navs
+//
+
+.nav-tabs {
+  .nav-link {
+    border-top-right-radius: 1em;
+  }
+}
+
+// Re-use colours from dark navbars for dark nav
+.nav-dark {
+  .nav-link {
+    color: $navbar-dark-color;
+
+    @include hover-focus {
+      color: $navbar-dark-hover-color;
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.open .nav-link {
+    @include plain-hover-focus {
+      color: $navbar-dark-active-color;
+    }
+  }
+}
+
+//
+// Navbar
 //
 
 // Add suitable padding to links inside navbars
@@ -188,12 +216,6 @@ $jcu-fade-transition-speed: .3s;
 
 .navbar-form--highlight {
   background-color: $gray;
-}
-
-.nav-tabs {
-  .nav-link {
-    border-top-right-radius: 1em;
-  }
 }
 
 //
