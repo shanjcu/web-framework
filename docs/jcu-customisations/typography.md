@@ -15,7 +15,7 @@ group: jcu-customisations
 
 A border is present between each list item, and not present on the first or last
 item in a list.  This is built upon to create the [Campus
-Stack](../campus-stack.md).
+Stack]({{ site.url }}/jcu/campus-stack).
 
 {% example html %}
 <ul class="list-bordered">

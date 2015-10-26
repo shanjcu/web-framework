@@ -12,7 +12,7 @@ group: jcu-customisations
 ## About
 
 These are minor customisations that can be applied to Bootstrap's
-[Dropdowns](../../components/dropdowns) to achieve various outcomes.
+[Dropdowns]({{ site.baseurl }}/components/dropdowns) to achieve various outcomes.
 
 ## Examples
 

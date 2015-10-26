@@ -61,8 +61,8 @@ depends on it.
 And that's it — you're on your way to a fully Bootstrapped site. If you're at
 all unsure about the general page structure, HTML5 doctype, or how to make your
 application responsive, see the main [Bootstrap
-Introduction](../../getting-started/introduction) for more details.
+Introduction]({{ site.baseurl }}/getting-started/introduction) for more details.
 
 Your application is likely a lot more complicated, by the fundamentals remain the
 same -- you need to serve CSS/JavaScript/images and link these into your pages.
-For more theming strategies, see [Application Theming](../application-theming).
+For more theming strategies, see [Application Theming]({{ site.baseurl }}/application-theming).

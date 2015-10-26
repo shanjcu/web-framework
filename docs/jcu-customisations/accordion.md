@@ -12,7 +12,7 @@ group: jcu-customisations
 ## About
 
 This is a customisation of the standard Bootstrap
-[Collapse](../components/collapse.md) component from its core, integrating
+[Collapse]({{ site.baseurl }}/components/collapse) component from its core, integrating
 brand-specific colours and animations.  Refer to the main documentation for full
 documentation and other types of collapsibles.
 

@@ -13,7 +13,7 @@ group: jcu-customisations
 
 Overlays are a custom JCU component for colouring and design of
 content that's designed to be placed on top of something else.  This may be a
-[JCU Card](card.md), a coloured background, anything other situation where you
+[JCU Card]({{ site.baseurl}}/jcu/card), a coloured background, anything other situation where you
 need to distinguish between layers of content.
 
 ## Examples

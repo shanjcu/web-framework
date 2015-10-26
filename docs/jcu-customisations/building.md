@@ -12,7 +12,7 @@ Web Framework further then read on.
 
 {% callout warning %}
 **First things first!** If you haven't read the documentation on Bootstrap's
-[Build tools](../../getting-started/build-tools), head over there and go through
+[Build tools]({{ site.baseurl }}/getting-started/build-tools), head over there and go through
 that first.  Everything here will make a lot more sense once you also understand
 the purpose of each tool Bootstrap uses and that you have those tools installed
 on your system.
@@ -44,7 +44,7 @@ Desktop](https://desktop.github.com/)) to help you manage the code.
 
        git clone --recursive {{ site.repo }}
 
-1. Ensure all of the [Build tools](../../getting-started/build-tools) needed
+1. Ensure all of the [Build tools]({{ site.baseurl }}/getting-started/build-tools) needed
    are installed on your system.
 
 1. Install any Node.js dependencies with:
@@ -73,7 +73,7 @@ Our Gruntfile adds the following commands and tasks:
 | `grunt jcu-publish` | Builds all dist and docs CSS/JS/assets, builds documentation via Jekyll for hosting, and uploads to the `gh-pages` branch in the repo. |
 
 All other tasks from the default Bootstrap
-[Gruntfile](../../getting-started/build-tools#using-grunt) are also available
+[Gruntfile]({{ site.baseurl }}/getting-started/build-tools#using-grunt) are also available
 
 ## Branches and structure
 
