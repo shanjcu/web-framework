@@ -14,14 +14,14 @@ group: jcu-customisations
 ### Bordered List (inside borders)
 
 A border is present between each list item, and not present on the first or last
-item in a list.  This is built upon to create the [Campus
-Stack]({{ site.url }}/jcu/campus-stack).
+item in a list.  This is extended to create the [Campus
+Stack]({{ site.baseurl }}/jcu-customisations/campus-stack).
 
 {% example html %}
 <ul class="list-bordered">
   <li>How do I apply at JCU?</li>
   <li>Where can I get support on campus?</li>
-  <li>What is a supplementary exame?</li>
+  <li>What is a supplementary exam?</li>
 </ul>
 {% endexample %}
 
@@ -33,7 +33,7 @@ The border reflects the width of the list block, rather than the content:
     <ul class="list-bordered">
       <li>How do I apply at JCU?</li>
       <li>Where can I get support on campus?</li>
-      <li>What is a supplementary exame?</li>
+      <li>What is a supplementary exam?</li>
     </ul>
   </div>
 </div>
