@@ -9,21 +9,21 @@ group: jcu-customisations
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## About
+## Overlay Cards
 
 Overlay Cards are customised Bootstrap Cards with specialised styling and
-animation.  They rely upon [Overlay](./overlay.md), another JCU component, for
+animation.  They rely upon [Overlay]({{ site.baseurl }}/jcu/overlay), another JCU component, for
 colouring and design of short content that's placed on top of something else
 (typically an image).
 
-Refer to [Card](../components/card.md) from Bootstrap's core for full
+Refer to [Card]({{ site.baseurl }}/components/card) from Bootstrap's core for full
 documentation about these and other aspects to Cards.
 
-## Examples
+### Examples
 
 The `.jcu-overlay-card` modifier adjusts positioning and adds transition
 effects, as the examples show. The `.jcu-overlay` classes, sourced from
-[Overlay](./overlay.md), style and colourise just the overlay inside the cards.
+[Overlay]({{ site.baseurl }}/jcu/overlay), style and colourise just the overlay inside the cards.
 
 {% callout warning %}
 **Heads up!** Any images placed within a `.card` must be configured to be
@@ -63,6 +63,35 @@ different devices.
     <img class="card-img img-fluid" src="../images/card.jpg" alt="Test">
     <div class="card-img-overlay jcu-overlay jcu-overlay--green-75pc">
       <div class="card-title">Green, 75% opacity, no subtitle</div>
+    </div>
+  </a>
+</div>
+{% endexample %}
+
+It's also possible to display an *empty* card with just the overlay. Select a
+suitable background colour using the [backgrounds utilities](
+{{ site.baseurl }}/components/utilities/#contextual-colors-and-backgrounds).
+
+{% example html %}
+<div class="card jcu-overlay-card bg-inverse">
+  <a href="https://jcu.edu.au">
+    <div class="card-img-overlay jcu-overlay jcu-overlay--white-25pc">
+      <div class="card-title">White, 25% opacity, subtitle</div>
+      <div class="card-subtitle">This is a short subtitle.</div>
+    </div>
+  </a>
+</div>
+{% endexample %}
+
+You can utilise the [Spacing Utility](
+{{ site.baseurl }}/components/utilities/#spacing) to introduce more padding
+inside the card.
+
+{% example html %}
+<div class="card jcu-overlay-card bg-primary p-t-lg">
+  <a href="https://jcu.edu.au">
+    <div class="card-img-overlay jcu-overlay jcu-overlay--yellow-50pc">
+      <div class="card-title">Yellow, 50% opacity, no subtitle</div>
     </div>
   </a>
 </div>

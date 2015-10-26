@@ -677,13 +677,16 @@ $footer-border: $border-width dotted $footer-border-color;
 }
 
 $card-overlay-font-color: #fff !default;
+$card-overlay-min-height: 5rem !default;
 
 .jcu-overlay-card {
+  min-height: $card-overlay-min-height;
+
   .jcu-overlay {
     top: auto;
     color: $card-overlay-font-color;
     max-height: 60%;
-    padding: .75rem;
+    padding: $spacer * .75;
     position: absolute;
     width: 100%;
     overflow: hidden;
@@ -702,7 +705,7 @@ $card-overlay-font-color: #fff !default;
 
       .card-title {
         border-bottom: $border-width solid $card-overlay-font-color;
-        padding-bottom: ($card-spacer-y / 4);
+        padding-bottom: ($spacer * .25);
       }
 
       .card-subtitle {
