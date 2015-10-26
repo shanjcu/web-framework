@@ -31,24 +31,20 @@ group: jcu-customisations
   * Run base templates and CSS styles through WCAG2AAA / Section508 checker or
     linter
 
+  * Accessibility:
+
+    * Ensure ARIA labels and standards are met by *all* examples.
+    * Checker/linter: https://github.com/Khan/tota11y or Squiz's accessibility checker for webpages
+
   * Workflow for converting vectorised content into raster on build (SVG ->
     jpg/png).  This may not be possible given file formats (eg .ai etc)
 
   * Workflow for removing certain components from the framework.  Perhaps just a
     have a bare-bones "JCU" framework for just the core components.
 
-  * Accessibility checker/linter:
-
-    * https://github.com/Khan/tota11y
-
-## Decisions
-
-* Best tool for managing external dependencies (Bower, Grunt, Gulp, Npm...)
-* Follow results of this discussion:
-  https://github.com/twbs/bootstrap/issues/17423
-
 ## To resolve
 
+* Best tool for managing external dependencies (Bower, Grunt, Gulp, Npm...)
 * Ensure there's a distinction between an application and the CMS.  Have to
   clearly highlight which application it is in some manner.
 
