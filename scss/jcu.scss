@@ -809,30 +809,30 @@ $card-overlay-min-height: 5rem !default;
 @include jcu-theme-headings('red', #900);
 
 //
-// Overlay: palette of semi-transparent colours used on Cards, etc
+// Background: utilities for specifying backgrounds
 //
-// Colours sourced from https://www.jcu.edu.sg/courses-and-study/courses
+// Colours were sourced from https://www.jcu.edu.sg/courses-and-study/courses
+// (September 2015)
 
-.jcu-overlay {
-  background-color: rgba(0, 0, 0, .6);
-  border-top-right-radius: 1.25rem;
-  color: #fff;
-  text-shadow: $gray-dark 0 0 .5em;
-  padding: .5rem .75rem;
+@mixin jcu-bg-variant($background-color) {
+  $color: #fff;
+  $text-shadow-color: $body-color;
+  @if lightness($background-color) > 70% {
+    $color: #000;
+    $text-shadow-color: #fff;
+  }
+  background-color: $background-color;
+  color: $color;
+  text-shadow: $text-shadow-color 0 0 .5em;
 }
 
 .jcu-overlay--inverse {
-  color: $gray-dark;
+  color: $body-color;
   text-shadow: #fff 0 0 .5em;
 }
 
-.jcu-overlay--plain {
-  border-top-right-radius: 0;
-  padding: .25rem;
-}
-
-$overlay-opacities: 25, 50, 75, 90, 100;
-$overlay-colors: (
+$bg-opacities: 25, 50, 75, 90, 100;
+$bg-colors: (
   'pink': rgb(236, 0, 140),
   'red': rgb(227, 31, 38),
   'darkred': rgb(157, 22, 27),
@@ -847,15 +847,20 @@ $overlay-colors: (
   'white': rgb(255, 255, 255)
 );
 
-@each $name, $color in $overlay-colors {
-  @each $opacity in $overlay-opacities {
-    .jcu-overlay--#{$name}-#{$opacity}pc {
-      background-color: rgba($color, ($opacity / 100));
+.jcu-bg--transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@each $name, $color in $bg-colors {
+  @each $opacity in $bg-opacities {
+    .jcu-bg--#{$name}-#{$opacity}pc {
+      // #fff needs to be colour-specific
+      @include jcu-bg-variant(rgba($color, ($opacity / 100)));
     }
   }
 }
 
-$overlay-gradients: (
+$bg-gradients: (
   'gradient-blue': $jcu-gradient-blue,
   'gradient-orange': $jcu-gradient-orange,
   'gradient-green': $jcu-gradient-green,
@@ -864,12 +869,26 @@ $overlay-gradients: (
 
 // TODO: this could be included as a 45 deg angle gradient
 // TODO: style guide says transparency should be at 90%
-@each $name, $gradient in $overlay-gradients {
-  .jcu-overlay--#{$name} {
+@each $name, $gradient in $bg-gradients {
+  .jcu-bg--#{$name} {
     @include gradient-horizontal(nth($gradient, 1), nth($gradient, 2));
   }
-  .jcu-overlay--#{$name}-reverse {
+  .jcu-bg--#{$name}-reverse {
     @include gradient-horizontal(nth($gradient, 2), nth($gradient, 1));
   }
+}
+
+//
+// Overlay: palette of semi-transparent colours used on Cards, etc
+//
+.jcu-overlay {
+  padding: .5rem .75rem;
+  border-top-right-radius: 1.25rem;
+  @include jcu-bg-variant(rgba(0, 0, 0, .7));
+}
+
+.jcu-overlay--plain {
+  padding: .25rem;
+  border-top-right-radius: 0;
 }
 

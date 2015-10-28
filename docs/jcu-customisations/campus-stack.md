@@ -45,7 +45,7 @@ The colour stack:
 
 The inverted stack, for use on coloured backgrounds:
 
-<div class="bd-example jcu-overlay--gradient-blue">
+<div class="bd-example jcu-bg--gradient-blue">
   <ul class="jcu-campus-stack jcu-campus-stack--inverse">
     <li><a href="#">Cairns</a></li>
     <li><a href="#">Singapore</a></li>

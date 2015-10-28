@@ -51,7 +51,7 @@ different devices.
 <div class="card jcu-overlay-card">
   <a href="https://jcu.edu.au">
     <img class="card-img img-fluid" src="../images/card.jpg" alt="Test">
-    <div class="card-img-overlay jcu-overlay jcu-overlay--red-25pc">
+    <div class="card-img-overlay jcu-overlay jcu-bg--red-25pc">
       <div class="card-title">Red, 25% opacity, subtitle</div>
       <div class="card-subtitle">Subtitle</div>
     </div>
@@ -63,7 +63,7 @@ different devices.
 <div class="card jcu-overlay-card">
   <a href="https://jcu.edu.au">
     <img class="card-img img-fluid" src="../images/card.jpg" alt="Test">
-    <div class="card-img-overlay jcu-overlay jcu-overlay--green-75pc">
+    <div class="card-img-overlay jcu-overlay jcu-bg--green-75pc">
       <div class="card-title">Green, 75% opacity, no subtitle</div>
     </div>
   </a>
@@ -77,7 +77,7 @@ suitable background colour using the [backgrounds utilities](
 {% example html %}
 <div class="card jcu-overlay-card bg-inverse">
   <a href="https://jcu.edu.au">
-    <div class="card-img-overlay jcu-overlay jcu-overlay--white-25pc">
+    <div class="card-img-overlay jcu-overlay jcu-bg--white-25pc">
       <div class="card-title">White, 25% opacity, subtitle</div>
       <div class="card-subtitle">This is a short, optional subtitle.</div>
     </div>
@@ -94,7 +94,7 @@ any animations and interactivity with the card are suppressed.
 <div class="card jcu-overlay-card jcu-overlay-card--fixed">
   <a href="https://jcu.edu.au">
     <img class="card-img img-fluid" src="../images/card.jpg" alt="Test">
-    <div class="card-img-overlay jcu-overlay jcu-overlay--plain-border">
+    <div class="card-img-overlay jcu-overlay jcu-bg--plain-border">
       <div class="card-title">Fixed overlay, no animation</div>
       <div class="card-subtitle">This is a short, optional subtitle.</div>
     </div>
@@ -113,7 +113,7 @@ specify an inline style for `min-height`.
 {% example html %}
 <div class="card jcu-overlay-card bg-primary">
   <a href="https://jcu.edu.au">
-    <div class="card-img-overlay jcu-overlay jcu-overlay--yellow-50pc">
+    <div class="card-img-overlay jcu-overlay jcu-bg--yellow-50pc">
       <div class="card-title">Yellow, 50% opacity, standard height</div>
     </div>
   </a>
@@ -121,7 +121,7 @@ specify an inline style for `min-height`.
 
 <div class="card jcu-overlay-card bg-success" style="min-height: 10rem;">
   <a href="https://jcu.edu.au">
-    <div class="card-img-overlay jcu-overlay jcu-overlay--blue-90pc">
+    <div class="card-img-overlay jcu-overlay jcu-bg--blue-90pc">
       <div class="card-title">Blue, 90% opacity; 10rem min-height</div>
     </div>
   </a>
