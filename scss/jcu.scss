@@ -157,15 +157,15 @@ abbr[title] {
 //
 
 .dropdown-menu {
-  // Move the dropdown menu upwards to avoid rounding issues
-  margin-top: -$border-width;
-  transition-property: visibility, opacity;
-  transition-duration: $jcu-fade-transition-speed;
-
   // Override default Bootstrap display: none so we have transitions
   display: block;
   visibility: hidden;
   opacity: 0;
+
+  // Move the dropdown menu upwards to avoid rounding issues
+  margin-top: (-$border-width * 2);
+  transition-property: visibility, opacity;
+  transition-duration: $jcu-fade-transition-speed;
 }
 
 .open {
@@ -178,22 +178,22 @@ abbr[title] {
 .dropdown-toggle::after {
   width: auto;
   height: auto;
-  content: '\e39d';
+  padding-top: .2em;
   font-family: $jcu-icon-font-family;
+  line-height: ($line-height / 2);
+  content: "\e39d";
   border-top: 0 none;
   border-right: 0 none;
   border-left: 0 none;
-  line-height: ($line-height / 2);
-  padding-top: .2em;
 }
 
 // Open dropdown menus on hover by default rather than click
 .dropdown--open-on-hover {
   @include hover-focus {
     > .dropdown-menu {
-      opacity: 1;
-      transition: visibility 0s, opacity $jcu-fade-transition-speed;
       visibility: visible;
+      transition: visibility 0s, opacity $jcu-fade-transition-speed;
+      opacity: 1;
     }
   }
 }
@@ -411,7 +411,6 @@ abbr[title] {
   }
 
   @at-root .jcu-explorer__tagline {
-    margin-top: 0.5rem;
     text-align: center;
     a {
       color: $navbar-color;
@@ -507,11 +506,12 @@ $footer-border: $border-width dotted $footer-border-color;
   font-size: $font-size-sm;
   background-color: $gray-lighter;
 
-  h3 {
-    border-bottom: $footer-border;
-    font-size: $font-size-h3 * .8;
-    padding-bottom: ($spacer / 2);
+  h1 {
     padding-top: ($spacer / 2);
+    padding-bottom: ($spacer / 2);
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom: $footer-border;
   }
 
 }
