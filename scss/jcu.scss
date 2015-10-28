@@ -531,17 +531,30 @@ $footer-border: $border-width dotted $footer-border-color;
     font-weight: $jcu-semi-bold;
   }
 
-.footer-social-legal__social {
-  font-size: $jcu-font-size-icon;
-  li {
-    padding-left: 0;
-    padding-right: 0;
+  @at-root .footer-social-legal__social {
+    @include list-unstyled;
+    margin-left: ($spacer-x / 2);
+    font-size: $jcu-font-size-icon;
+
+    > li {
+      display: inline-block;
+    }
+
+    a {
+      color: #4b4c4e;
+      @include hover-focus {
+        color: $link-hover-color;
+      }
+    }
   }
 
-  a {
-    color: #4b4c4e;
-    @include hover-focus {
-      color: $link-hover-color;
+  @at-root .footer-social-legal__legal {
+    @extend .list-inline;
+
+    > li:not(:last-child)::after {
+      margin-left: $spacer-x;
+      content: "";
+      border-left: $border-width solid $gray-light;
     }
   }
 }
