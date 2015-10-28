@@ -1,47 +1,55 @@
-// Firefox does not allow relative includes for font-face in CSS
-// See https://bugzilla.mozilla.org/show_bug.cgi?id=760436
-// Use about:config to change security.fileuri.strict_origin_policy
-// temporarily to false
-
 
 // Global Bootstrap settings
-//$enable-flex: true; // See http://v4-alpha.getbootstrap.com/getting-started/flexbox/
-$enable-rounded:            false; // Sharp pointy edges
-$enable-shadows:            false; // TODO Maybe re-enable
-//$enable-gradients:          true;  // Has no effect at present in Bootstrap
-$enable-transitions:        true;  // Fancy transitions for elements
+//$enable-flex:                  true; // See http://v4-alpha.getbootstrap.com/getting-started/flexbox/
+$enable-rounded:                 false; // Sharp pointy edges
+$enable-shadows:                 false; // TODO Consider re-enabling for theme
+//$enable-gradients:             true; // Has no effect at present in Bootstrap
+$enable-transitions:             true; // Fancy transitions for elements
+
+// JCU settings, defined for use within stock Bootstrap
+$jcu-semi-bold:                  600; // OpenSans has no 500 semi-bold
 
 // JCU styling for Bootstrap
 // The details as to where each aspect has come from are highlighted above each
 // setting
 
 // Colour scheme
-$gray-dark:                 #2d2d2d; //Approx 80% black
-$gray:                      #565656;
-$gray-light:                #797979;
-$gray-lighter:              #e7e7e7;
-$gray-lightest:             #f7f7f9 !default;
+$gray-dark:                      #2d2d2d; //Approx 80% black
+$gray:                           #565656;
+$gray-light:                     #797979;
+$gray-lighter:                   #e7e7e7;
+$gray-lightest:                  #f7f7f9 !default;
 
-$brand-primary:             #06c;    // From top-level search and buttons
-$brand-success:             #429306; // Courses page
-$body-bg:                   $gray-lighter; // From #page-wrapper
-$body-color:                $gray-dark; // TODO No style set, uses browser default
-$font-size-root:            16px; // Not actually defined anywhere in theme
-$font-family-sans-serif:    "Open Sans", sans-serif; // From html, body
+$brand-primary:                  #06c;    // From top-level search and buttons
+$brand-success:                  #429306; // Courses page
+$body-bg:                        $gray-lighter; // From #page-wrapper
+$body-color:                     $gray-dark; // TODO No style set, uses browser default
+$font-size-root:                 16px; // Not actually defined anywhere in theme
+$font-family-sans-serif:         "Open Sans", sans-serif; // From html, body
 
-// Not defined in theme; approximately equal to default HTML sizes from Firefox
-$font-size-h1: 1.8rem;
-$font-size-h2: 1.5rem;
-$font-size-h3: 1.2rem;
-$font-size-h4: 1.2rem;
-$font-size-h5: 0.9rem;
-$font-size-h6: 0.7rem;
+// Typography styles
+// Not defined in original theme; approximately equal to defaults from Firefox
+$font-size-h1:                   1.8rem;
+$font-size-h2:                   1.5rem;
+$font-size-h3:                   1.2rem;
+$font-size-h4:                   1.2rem;
+$font-size-h5:                   .9rem;
+$font-size-h6:                   .7rem;
+
+$display1-weight:                400;
+$display2-weight:                400;
+$display3-weight:                400;
+$display4-weight:                400;
+
+$headings-margin-bottom:         1rem;
+$headings-font-weight:           $jcu-semi-bold; // OpenSans has no 500 semi-bold
+$lead-font-weight:               400;
 
 // From footer margins
-$grid-gutter-width: 1.25rem;
+$grid-gutter-width:              1.25rem;
 
 // From .toolbarmenu*
-$dropdown-bg:                    $gray;
+$dropdown-bg:                    #3f3f3f;
 $dropdown-border:                $dropdown-bg;
 $dropdown-fallback-border:       $dropdown-border;
 $dropdown-divider-bg:            #707070;
@@ -84,17 +92,17 @@ $jcu-gradient-red: rgb(157, 22, 25), rgb(236, 0, 140);
 
 $jcu-brand-inverse: #fff;
 $jcu-dropdown-text-color: #fff;
-$jcu-icon-font-family: 'webhostinghub-glyphs';
+$jcu-icon-font-family: "webhostinghub-glyphs";
 $jcu-font-size-icon: 1.875rem;
 $jcu-navbar-nav-link-padding: .5rem;
 $jcu-fade-transition-speed: .3s;
 $jcu-exposition-max-height: 50rem;
 $jcu-header-height: 17rem;
 
-@import 'bootstrap';
-@import 'components/open-sans-fontface/open-sans.scss';
-@import 'components/yamm3/yamm/_yamm.scss';
-@import 'components/webhostinghub-glyphs/css/webhostinghub-glyphs.css';
+@import "bootstrap";
+@import "components/open-sans-fontface/open-sans.scss";
+@import "components/yamm3/yamm/_yamm.scss";
+@import "components/webhostinghub-glyphs/css/webhostinghub-glyphs.css";
 
 //
 // Layout: general modifiers to page layout and structure
@@ -105,22 +113,22 @@ $jcu-header-height: 17rem;
 }
 
 //
-// Typography
+// Typography: customised text-centric components
 //
+
+// Workaround for Firefox double-underline
+// See https://github.com/necolas/normalize.css/pull/451
+abbr[title] {
+  text-decoration: none;
+}
+
+.text-primary a {
+  border-bottom: $border-width dotted $body-color;
+}
 
 .lead {
-  border-bottom: $border-width dotted $gray-light;
+  margin-bottom: ($spacer-y * 2);
 }
-
-.jumbotron {
-  .lead {
-    border-bottom: 0 solid;
-  }
-}
-
-//
-// Lists
-//
 
 @mixin list-bordered($padding-y) {
   @extend .list-unstyled;
@@ -329,12 +337,11 @@ $jcu-header-height: 17rem;
 //
 
 @mixin jcu-explorer-gradient {
-  @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 175%);
   background-color: nth($jcu-gradient-blue, 1);
+  @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 175%);
 }
 
 .navbar--jcu-explorer {
-  @include jcu-explorer-gradient;
   $navbar-height: 5.5rem;
   $navbar-color: #fff;
   $navbar-content-color: #000;
@@ -344,6 +351,7 @@ $jcu-header-height: 17rem;
   //min-height: $navbar-height;
   padding-top: ($navbar-padding-vertical / 2);
   padding-bottom: 0;
+  @include jcu-explorer-gradient;
 
   .navbar-brand {
     img {
@@ -377,11 +385,11 @@ $jcu-header-height: 17rem;
   }
 
   .dropdown-menu {
-    @include jcu-explorer-gradient;
     border: 0 none;
     color: $navbar-color;
     padding-top: 0;
     transition-property: none;
+    @include jcu-explorer-gradient;
   }
 
   // Disable transitions for dropdowns
@@ -482,19 +490,21 @@ $jcu-header-height: 17rem;
 $jcu-content-bg-color: #fff;
 
 .jcu-content {
-  background-color: $jcu-content-bg-color;
   padding-bottom: $spacer-y;
+  margin-bottom: $spacer-y;
+  background-color: $jcu-content-bg-color;
 }
 
 .jcu-content--short-content {
   min-height: ($jcu-exposition-max-height - $jcu-header-height);
 }
 
-$footer-text-color: $gray-dark;
-$footer-border-color: $gray-dark;
+$footer-text-color: $body-color;
+$footer-border-color: $footer-text-color;
 $footer-border: $border-width dotted $footer-border-color;
 
 .footer {
+  font-size: $font-size-sm;
   background-color: $gray-lighter;
 
   h3 {
@@ -507,15 +517,14 @@ $footer-border: $border-width dotted $footer-border-color;
 }
 
 .footer-social-legal {
-  border-bottom: $footer-border;
+  padding-top: ($spacer-y / 2);
+  padding-bottom: ($spacer-y / 2);
   border-top: $footer-border;
-  padding-bottom: ($spacer / 2);
-  padding-top: ($spacer / 2);
+  border-bottom: $footer-border;
 
   a {
-    font-weight: bold;
+    font-weight: $jcu-semi-bold;
   }
-}
 
 .footer-social-legal__social {
   font-size: $jcu-font-size-icon;
@@ -531,6 +540,7 @@ $footer-border: $border-width dotted $footer-border-color;
     }
   }
 }
+
 
 //
 // Colophon: publication details for display at bottom of pages.
@@ -564,10 +574,9 @@ $footer-border: $border-width dotted $footer-border-color;
 }
 
 .jcu-campus-stack {
+  display: inline-block;
   @include list-bordered(.25em);
   @include jcu-campus-stack($gray-dark);
-
-  display: inline-block;
 
   li {
     padding-top: 0;
@@ -691,7 +700,7 @@ $footer-border: $border-width dotted $footer-border-color;
     .dropdown:hover .nav-link {
       background-color: #fff;
       border-top-right-radius: .5rem;
-      color: $gray-dark;
+      color: $body-color;
     }
 
   }
