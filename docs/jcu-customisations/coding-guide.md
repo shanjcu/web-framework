@@ -20,6 +20,9 @@ to the standards set by this framework.
 
 * Follow the Code Guide for HTML and CSS standards: http://codeguide.co/
 
+* Use http://caniuse.com to determine if a browser feature is widely available
+  across user agents.
+
 * All templates must be accessible and pass standards Section 508 and WCAG2AA.
 
 * Name all components with a easily-identifiable and discussable name.  For

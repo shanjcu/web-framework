@@ -16,6 +16,12 @@ time and copyright information about current resource.
 
 ## Examples
 
+{% callout info %}
+**Heads up!** Examples provides may use `<section>` rather than `<div>` for
+semantic reasons. Use an appropriate HTML5 section element to suit your
+application and structure.
+{% endcallout %}
+
 ### With publishing date
 
 Suitable for use on CMS or other content-centric pages that require the

@@ -75,3 +75,19 @@ In applications where theming options are otherwise limited, you may only be
 able customise specific colours, logos, or so forth, rather than underlying HTML
 templates.  In this case, use your best judgement to reach a compromise that
 looks as close to JCU as possible.
+
+### Using CDN-hosted resources
+
+At this stage, we do not have a CDN system available for theming resources.
+
+It is possible to utilise fonts from [Google
+Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans), however.
+If utlising this over the standard font inclusions, ensure you include all fonts
+from `400` to `700`.
+
+### Notes
+
+* Firefox does not allow relative includes for font-face in CSS.
+  See https://bugzilla.mozilla.org/show_bug.cgi?id=760436 for details.
+  Use `about:config` to change `security.fileuri.strict_origin_policy`
+  temporarily to `false`.

@@ -24,9 +24,11 @@ element from needing a ID on the element marked with the ``.dropdown-toggle``
 class and from needing to specify any ``data-*`` attributes at all.
 
 {% callout warning %}
-Use this sparingly because users tend to expect that they can click on things
-and menus won't shoot out everywhere as they move their cursor across a page.
-(Citation needed)
+Use this sparingly because users expect that they can interact explicitly with
+page components, such as dropdowns, rather than having interaction happen
+automatically. See [Bootstrap explained:
+Dropdowns](http://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/) for
+more information.
 {% endcallout %}
 
 Compare the two:
