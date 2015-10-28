@@ -258,17 +258,17 @@ abbr[title] {
 //
 
 .jcu-toolbar {
-  font-size: $font-size-sm;
   padding: 0;
+  font-size: $font-size-sm;
 
   > .container {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .form-inline {
-    padding-left: ($grid-gutter-width / 2);
     padding-right: ($grid-gutter-width / 2);
+    padding-left: ($grid-gutter-width / 2);
     .form-control {
       line-height: 1;
     }
@@ -277,59 +277,66 @@ abbr[title] {
   .dropdown {
     @include hover {
       background-color: $dropdown-bg;
-      transition-property: background-color, color;
       transition-duration: $jcu-fade-transition-speed;
+      transition-property: background-color, color;
     }
-  }
-
-  // Customise dropdown menus
-  .dropdown-item--inverse {
-    background-color: lighten($dropdown-bg, 20%);
-    margin-bottom: 0.75em;
-  }
-
-  .dropdown-item {
-    padding-left: 0.5rem;
   }
 
   .dropdown-menu {
-    color: $jcu-dropdown-text-color;
     padding: $spacer;
+    color: $jcu-dropdown-text-color;
 
-    a {
+    .nav {
+      margin-bottom: $spacer-y;
+    }
+
+    .nav a {
+      color: $jcu-dropdown-text-color;
+
       @include hover-focus {
-        color: $jcu-dropdown-text-color;
-        text-decoration: none;
+        color: $dropdown-link-hover-color;
       }
     }
+  }
 
-    ul {
-      @extend .list-unstyled;
-    }
+  h1 {
+    padding-bottom: ($spacer-y / 2);
+    margin-bottom: ($spacer-y / 2);
+    font-size: 1rem;
+    border-bottom: $border-width solid $dropdown-header-color;
 
-
-    h3 {
-      font-size: $font-size-base;
-      font-weight: 400;
-      color: $jcu-dropdown-text-color;
-    }
-
-    .media {
-      color: $jcu-dropdown-text-color;
-      padding: $spacer;
-    }
-
-    .media-left {
-      color: $gray-dark; //navbar-inverse-bg
-      font-size: $jcu-font-size-icon;
-    }
-
-    .media-body {
-      color: #c8c8c8;
-      font-size: $font-size-xxs;
-      width: auto; // Prevent extrg-width menus
+    a {
+      color: $dropdown-header-color;
     }
   }
+
+  .card {
+    padding: ($spacer * .75);
+    color: $jcu-dropdown-text-color;
+    background-color: $gray-light;
+    border: 0 none;
+    @include clearfix;
+
+    &:hover .card-title {
+      text-decoration: underline;
+    }
+  }
+
+  .card-title {
+    font-size: $font-size-base;
+    color: $jcu-dropdown-text-color;
+  }
+
+  .card-icon {
+    font-size: $jcu-font-size-icon;
+    color: $gray-dark; //navbar-inverse-bg
+  }
+
+  .card-subtitle {
+    font-size: $font-size-xxs;
+    color: $gray-lighter;
+  }
+
 }
 
 //
@@ -405,9 +412,7 @@ abbr[title] {
     background-color: $navbar-color;
     color: $navbar-content-color;
     // Line up with nav gutter + navbar-padding
-    $margin: ($navbar-padding-horizontal);
-    margin-left: $margin;
-    margin-right: $margin;
+    margin: 0 $navbar-padding-horizontal ($navbar-padding-vertical / 2);
   }
 
   @at-root .jcu-explorer__tagline {
