@@ -27,6 +27,14 @@ $body-color:                     $gray-dark; // TODO No style set, uses browser 
 $font-size-root:                 16px; // Not actually defined anywhere in theme
 $font-family-sans-serif:         "Open Sans", sans-serif; // From html, body
 
+// Grid settings
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1050px
+);
+
 // Typography styles
 // Not defined in original theme; approximately equal to defaults from Firefox
 $font-size-h1:                   1.8rem;
@@ -98,6 +106,7 @@ $jcu-navbar-nav-link-padding: .5rem;
 $jcu-fade-transition-speed: .3s;
 $jcu-exposition-max-height: 50rem;
 $jcu-header-height: 17rem;
+$jcu-container-fluid-max-width: 1050px;
 
 @import "bootstrap";
 @import "components/open-sans-fontface/open-sans.scss";
@@ -112,18 +121,19 @@ $jcu-header-height: 17rem;
   padding-top: $navbar-height;
 }
 
-//
-// Typography: customised text-centric components
-//
-
-// Workaround for Firefox double-underline
-// See https://github.com/necolas/normalize.css/pull/451
-abbr[title] {
-  text-decoration: none;
+// Fluid-width container, but only until max-width
+.container-fluid--max-width {
+  max-width: $jcu-container-fluid-max-width;
 }
 
-.text-primary a {
-  border-bottom: $border-width dotted $body-color;
+// Ensure dropdown fluid container is shown with max-width applied
+.yamm > .container-fluid--max-width {
+  position: relative;
+}
+
+// Fixed width container, no gutter
+.container--no-gutter {
+  @include make-container($gutter: 0);
 }
 
 //
