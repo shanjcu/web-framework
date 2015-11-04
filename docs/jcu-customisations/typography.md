@@ -41,14 +41,15 @@ The border reflects the width of the list block, rather than the content:
 
 ### Themes
 
-These are  overarching colour schemes which can be applied to content
+These are overarching colour schemes which can be applied to content
 on any given page.  These may be expanded to influence other aspects of colour
 across a page, but presently encompass just headings.
 
 {% callout info %}
 The given classes, such as `.jcu-theme--blue`, can be applied at any level of
-your document to influence the content within -- they don't just have be on the
-immediate parent container.
+your document to influence the styling contents.  If you experience issues with
+specificity, you can apply (or re-apply the class) at a more specific element on
+your page.
 {% endcallout %}
 
 {% example html %}
