@@ -871,6 +871,7 @@ $bg-colors: (
   'blue': rgb(0, 102, 179),
   'darkblue': rgb(46, 49, 146),
   'black': rgb(0, 0, 0),
+  'gray': $gray,
   'white': rgb(255, 255, 255)
 );
 
@@ -880,7 +881,11 @@ $bg-colors: (
 
 @each $name, $color in $bg-colors {
   @each $opacity in $bg-opacities {
-    .jcu-bg--#{$name}-#{$opacity}pc {
+    $class-name: ".jcu-bg--#{$name}-#{$opacity}pc";
+    @if $opacity == 100 {
+      $class-name: ".jcu-bg--#{$name}";
+    }
+    #{$class-name} {
       // #fff needs to be colour-specific
       @include jcu-bg-variant(rgba($color, ($opacity / 100)));
     }

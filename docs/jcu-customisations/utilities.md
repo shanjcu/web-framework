@@ -21,7 +21,8 @@ other block elements to provide a coloured semi-transparent background.
 {% callout warning %}
 #### Conveying meaning to assistive technologies
 
-Ensure that any meaning conveyed through color is also conveyed in a format that is not purely presentational.
+Ensure that any meaning conveyed through color is also conveyed in a format that
+is not purely presentational.
 {% endcallout %}
 
 For details on dealing with selector specificity, refer the [Contextual Colors
@@ -37,84 +38,91 @@ documentation from Bootstrap.
     <div class="jcu-bg--pink-50pc">.jcu-bg--pink-50pc</div>
     <div class="jcu-bg--pink-75pc">.jcu-bg--pink-75pc</div>
     <div class="jcu-bg--pink-90pc">.jcu-bg--pink-90pc</div>
-    <div class="jcu-bg--pink-100pc">.jcu-bg--pink-100pc</div>
+    <div class="jcu-bg--pink">.jcu-bg--pink</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--red-25pc">.jcu-bg--red-25pc</div>
     <div class="jcu-bg--red-50pc">.jcu-bg--red-50pc</div>
     <div class="jcu-bg--red-75pc">.jcu-bg--red-75pc</div>
     <div class="jcu-bg--red-90pc">.jcu-bg--red-90pc</div>
-    <div class="jcu-bg--red-100pc">.jcu-bg--red-100pc</div>
+    <div class="jcu-bg--red">.jcu-bg--red</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--darkred-25pc">.jcu-bg--darkred-25pc</div>
     <div class="jcu-bg--darkred-50pc">.jcu-bg--darkred-50pc</div>
     <div class="jcu-bg--darkred-75pc">.jcu-bg--darkred-75pc</div>
     <div class="jcu-bg--darkred-90pc">.jcu-bg--darkred-90pc</div>
-    <div class="jcu-bg--darkred-100pc">.jcu-bg--darkred-100pc</div>
+    <div class="jcu-bg--darkred">.jcu-bg--darkred</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--orange-25pc">.jcu-bg---orange-25pc</div>
     <div class="jcu-bg--orange-50pc">.jcu-bg---orange-50pc</div>
     <div class="jcu-bg--orange-75pc">.jcu-bg---orange-75pc</div>
     <div class="jcu-bg--orange-90pc">.jcu-bg---orange-90pc</div>
-    <div class="jcu-bg--orange-100pc">.jcu-bg---orange-100pc</div>
+    <div class="jcu-bg--orange">.jcu-bg---orange</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--yellow-25pc">.jcu-bg---yellow-25pc</div>
     <div class="jcu-bg--yellow-50pc">.jcu-bg--yellow-50pc</div>
     <div class="jcu-bg--yellow-75pc">.jcu-bg--yellow-75pc</div>
     <div class="jcu-bg--yellow-90pc">.jcu-bg--yellow-90pc</div>
-    <div class="jcu-bg--yellow-100pc">.jcu-bg--yellow-100pc</div>
+    <div class="jcu-bg--yellow">.jcu-bg--yellow</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--lightgreen-25pc">.jcu-bg--lightgreen-25pc</div>
     <div class="jcu-bg--lightgreen-50pc">.jcu-bg--lightgreen-50pc</div>
     <div class="jcu-bg--lightgreen-75pc">.jcu-bg--lightgreen-75pc</div>
     <div class="jcu-bg--lightgreen-90pc">.jcu-bg--lightgreen-90pc</div>
-    <div class="jcu-bg--lightgreen-100pc">.jcu-bg--lightgreen-100pc</div>
+    <div class="jcu-bg--lightgreen">.jcu-bg--lightgreen</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--green-25pc">.jcu-bg--green-25pc</div>
     <div class="jcu-bg--green-50pc">.jcu-bg--green-50pc</div>
     <div class="jcu-bg--green-75pc">.jcu-bg--green-75pc</div>
     <div class="jcu-bg--green-90pc">.jcu-bg--green-90pc</div>
-    <div class="jcu-bg--green-100pc">.jcu-bg--green-100pc</div>
+    <div class="jcu-bg--green">.jcu-bg--green</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--lightblue-25pc">.jcu-bg--lightblue-25pc</div>
     <div class="jcu-bg--lightblue-50pc">.jcu-bg--lightblue-50pc</div>
     <div class="jcu-bg--lightblue-75pc">.jcu-bg--lightblue-75pc</div>
     <div class="jcu-bg--lightblue-90pc">.jcu-bg--lightblue-90pc</div>
-    <div class="jcu-bg--lightblue-100pc">.jcu-bg--lightblue-100pc</div>
+    <div class="jcu-bg--lightblue">.jcu-bg--lightblue</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--blue-25pc">.jcu-bg--blue-25pc</div>
     <div class="jcu-bg--blue-50pc">.jcu-bg--blue-50pc</div>
     <div class="jcu-bg--blue-75pc">.jcu-bg--blue-75pc</div>
     <div class="jcu-bg--blue-90pc">.jcu-bg--blue-90pc</div>
-    <div class="jcu-bg--blue-100pc">.jcu-bg--blue-100pc</div>
+    <div class="jcu-bg--blue">.jcu-bg--blue</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--darkblue-25pc">.jcu-bg--darkblue-25pc</div>
     <div class="jcu-bg--darkblue-50pc">.jcu-bg--darkblue-50pc</div>
     <div class="jcu-bg--darkblue-75pc">.jcu-bg--darkblue-75pc</div>
     <div class="jcu-bg--darkblue-90pc">.jcu-bg--darkblue-90pc</div>
-    <div class="jcu-bg--darkblue-100pc">.jcu-bg--darkblue-100pc</div>
+    <div class="jcu-bg--darkblue">.jcu-bg--darkblue</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--black-25pc">.jcu-bg--black-25pc</div>
     <div class="jcu-bg--black-50pc">.jcu-bg--black-50pc</div>
     <div class="jcu-bg--black-75pc">.jcu-bg--black-75pc</div>
     <div class="jcu-bg--black-90pc">.jcu-bg--black-90pc</div>
-    <div class="jcu-bg--black-100pc">.jcu-bg--black-100pc</div>
+    <div class="jcu-bg--black">.jcu-bg--black</div>
+  </div>
+  <div class="col-xs-3">
+    <div class="jcu-bg--gray-25pc">.jcu-bg--gray-25pc</div>
+    <div class="jcu-bg--gray-50pc">.jcu-bg--gray-50pc</div>
+    <div class="jcu-bg--gray-75pc">.jcu-bg--gray-75pc</div>
+    <div class="jcu-bg--gray-90pc">.jcu-bg--gray-90pc</div>
+    <div class="jcu-bg--gray">.jcu-bg--gray</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--white-25pc">.jcu-bg--white-25pc</div>
     <div class="jcu-bg--white-50pc">.jcu-bg--white-50pc</div>
     <div class="jcu-bg--white-75pc jcu-bg--inverse">.jcu-bg--white-75pc</div>
     <div class="jcu-bg--white-90pc jcu-bg--inverse">.jcu-bg--white-90pc</div>
-    <div class="jcu-bg--white-100pc jcu-bg--inverse">.jcu-bg--white-100pc</div>
+    <div class="jcu-bg--white jcu-bg--inverse">.jcu-bg--white</div>
   </div>
 </div>
 
