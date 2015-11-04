@@ -101,7 +101,7 @@ $jcu-gradient-red: rgb(157, 22, 25), rgb(236, 0, 140);
 $jcu-brand-inverse: #fff;
 $jcu-dropdown-text-color: #fff;
 $jcu-icon-font-family: "webhostinghub-glyphs";
-$jcu-font-size-icon: 1.875rem;
+$jcu-font-size-icon: 1.5rem;
 $jcu-navbar-nav-link-padding: .5rem;
 $jcu-fade-transition-speed: .3s;
 $jcu-exposition-max-height: 50rem;
@@ -557,6 +557,11 @@ $footer-border: $border-width dotted $footer-border-color;
     @include list-unstyled;
     margin-left: ($spacer-x / 2);
     font-size: $jcu-font-size-icon;
+
+    @include media-breakpoint-down(sm) {
+      font-size: ($jcu-font-size-icon * 2);
+      text-align: center;
+    }
 
     > li {
       display: inline-block;
