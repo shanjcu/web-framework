@@ -126,8 +126,20 @@ abbr[title] {
   border-bottom: $border-width dotted $body-color;
 }
 
+//
+// Typography: customised text-centric components
+//
+
 .lead {
   margin-bottom: ($spacer-y * 2);
+}
+
+.block--dotted {
+  margin-bottom: $spacer-y;
+  padding-top: $spacer-y;
+  padding-bottom: $spacer-y;
+  border-top: $border-width dotted $gray-light;
+  border-bottom: $border-width dotted $gray-light;
 }
 
 @mixin list-bordered($padding-y) {
