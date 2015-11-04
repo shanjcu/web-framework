@@ -58,11 +58,11 @@ documentation from Bootstrap.
     <div class="jcu-bg--red">.jcu-bg--red</div>
   </div>
   <div class="col-xs-3">
-    <div class="jcu-bg--darkred-25pc">.jcu-bg--darkred-25pc</div>
-    <div class="jcu-bg--darkred-50pc">.jcu-bg--darkred-50pc</div>
-    <div class="jcu-bg--darkred-75pc">.jcu-bg--darkred-75pc</div>
-    <div class="jcu-bg--darkred-90pc">.jcu-bg--darkred-90pc</div>
-    <div class="jcu-bg--darkred">.jcu-bg--darkred</div>
+    <div class="jcu-bg--red-dark-25pc">.jcu-bg--red-dark-25pc</div>
+    <div class="jcu-bg--red-dark-50pc">.jcu-bg--red-dark-50pc</div>
+    <div class="jcu-bg--red-dark-75pc">.jcu-bg--red-dark-75pc</div>
+    <div class="jcu-bg--red-dark-90pc">.jcu-bg--red-dark-90pc</div>
+    <div class="jcu-bg--red-dark">.jcu-bg--red-dark</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--orange-25pc">.jcu-bg---orange-25pc</div>
@@ -79,11 +79,11 @@ documentation from Bootstrap.
     <div class="jcu-bg--yellow">.jcu-bg--yellow</div>
   </div>
   <div class="col-xs-3">
-    <div class="jcu-bg--lightgreen-25pc">.jcu-bg--lightgreen-25pc</div>
-    <div class="jcu-bg--lightgreen-50pc">.jcu-bg--lightgreen-50pc</div>
-    <div class="jcu-bg--lightgreen-75pc">.jcu-bg--lightgreen-75pc</div>
-    <div class="jcu-bg--lightgreen-90pc">.jcu-bg--lightgreen-90pc</div>
-    <div class="jcu-bg--lightgreen">.jcu-bg--lightgreen</div>
+    <div class="jcu-bg--green-light-25pc">.jcu-bg--green-light-25pc</div>
+    <div class="jcu-bg--green-light-50pc">.jcu-bg--green-light-50pc</div>
+    <div class="jcu-bg--green-light-75pc">.jcu-bg--green-light-75pc</div>
+    <div class="jcu-bg--green-light-90pc">.jcu-bg--green-light-90pc</div>
+    <div class="jcu-bg--green-light">.jcu-bg--green-light</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--green-25pc">.jcu-bg--green-25pc</div>
@@ -93,11 +93,11 @@ documentation from Bootstrap.
     <div class="jcu-bg--green">.jcu-bg--green</div>
   </div>
   <div class="col-xs-3">
-    <div class="jcu-bg--lightblue-25pc">.jcu-bg--lightblue-25pc</div>
-    <div class="jcu-bg--lightblue-50pc">.jcu-bg--lightblue-50pc</div>
-    <div class="jcu-bg--lightblue-75pc">.jcu-bg--lightblue-75pc</div>
-    <div class="jcu-bg--lightblue-90pc">.jcu-bg--lightblue-90pc</div>
-    <div class="jcu-bg--lightblue">.jcu-bg--lightblue</div>
+    <div class="jcu-bg--blue-light-25pc">.jcu-bg--blue-light-25pc</div>
+    <div class="jcu-bg--blue-light-50pc">.jcu-bg--blue-light-50pc</div>
+    <div class="jcu-bg--blue-light-75pc">.jcu-bg--blue-light-75pc</div>
+    <div class="jcu-bg--blue-light-90pc">.jcu-bg--blue-light-90pc</div>
+    <div class="jcu-bg--blue-light">.jcu-bg--blue-light</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--blue-25pc">.jcu-bg--blue-25pc</div>
@@ -107,11 +107,11 @@ documentation from Bootstrap.
     <div class="jcu-bg--blue">.jcu-bg--blue</div>
   </div>
   <div class="col-xs-3">
-    <div class="jcu-bg--darkblue-25pc">.jcu-bg--darkblue-25pc</div>
-    <div class="jcu-bg--darkblue-50pc">.jcu-bg--darkblue-50pc</div>
-    <div class="jcu-bg--darkblue-75pc">.jcu-bg--darkblue-75pc</div>
-    <div class="jcu-bg--darkblue-90pc">.jcu-bg--darkblue-90pc</div>
-    <div class="jcu-bg--darkblue">.jcu-bg--darkblue</div>
+    <div class="jcu-bg--blue-dark-25pc">.jcu-bg--blue-dark-25pc</div>
+    <div class="jcu-bg--blue-dark-50pc">.jcu-bg--blue-dark-50pc</div>
+    <div class="jcu-bg--blue-dark-75pc">.jcu-bg--blue-dark-75pc</div>
+    <div class="jcu-bg--blue-dark-90pc">.jcu-bg--blue-dark-90pc</div>
+    <div class="jcu-bg--blue-dark">.jcu-bg--blue-dark</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--black-25pc">.jcu-bg--black-25pc</div>
@@ -126,6 +126,20 @@ documentation from Bootstrap.
     <div class="jcu-bg--gray-75pc">.jcu-bg--gray-75pc</div>
     <div class="jcu-bg--gray-90pc">.jcu-bg--gray-90pc</div>
     <div class="jcu-bg--gray">.jcu-bg--gray</div>
+  </div>
+  <div class="col-xs-3">
+    <div class="jcu-bg--gray-light-25pc">.jcu-bg--gray-light-25pc</div>
+    <div class="jcu-bg--gray-light-50pc">.jcu-bg--gray-light-50pc</div>
+    <div class="jcu-bg--gray-light-75pc">.jcu-bg--gray-light-75pc</div>
+    <div class="jcu-bg--gray-light-90pc">.jcu-bg--gray-light-90pc</div>
+    <div class="jcu-bg--gray-light">.jcu-bg--gray-light</div>
+  </div>
+  <div class="col-xs-3">
+    <div class="jcu-bg--gray-lighter-25pc">.jcu-bg--gray-lighter-25pc</div>
+    <div class="jcu-bg--gray-lighter-50pc">.jcu-bg--gray-lighter-50pc</div>
+    <div class="jcu-bg--gray-lighter-75pc">.jcu-bg--gray-lighter-75pc</div>
+    <div class="jcu-bg--gray-lighter-90pc">.jcu-bg--gray-lighter-90pc</div>
+    <div class="jcu-bg--gray-lighter">.jcu-bg--gray-lighter</div>
   </div>
   <div class="col-xs-3">
     <div class="jcu-bg--white-25pc">.jcu-bg--white-25pc</div>
