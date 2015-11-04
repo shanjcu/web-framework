@@ -52,6 +52,14 @@ issue at {{ site.repo }}.
   groupings.  It may look like a `<h1>` is out of place in some examples, but
   the sectioning ensures the context is correct.
 
+* The main drop-down menu for choosing what type of search to run was omitted
+  for simplicity. The main JCU search aggregates pages and courses, and the
+  course search only works once (the search page points to the jcua-web
+  collection anyway).
+
+* Multi-level dropdown menus were removed from Bootstrap for usability reasons
+  and this remains the case for this framework.
+
 * Squiz uses its CMS metadata fields to control background images and colours on
   pages.  These then are translated into either inline styles on a rendered page.
   From a structural point-of-view, this isn't a sustainable practice, as styles
@@ -59,7 +67,4 @@ issue at {{ site.repo }}.
   aspects, such as Overlays, are defined in the main style sheet files.  This
   makes for consistency across all systems using the framework, and eliminates a
   potential maintenance burden from application owners.
-
-* Squiz will be delivering a documentation page covering all its various styles
-  and components after the launch in October.
 
