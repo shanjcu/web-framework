@@ -41,7 +41,19 @@ different devices.
     <img class="card-img img-fluid" src="../images/card.jpg" alt="Test">
     <div class="card-img-overlay jcu-overlay">
       <div class="card-title">Card, default</div>
-      <div class="card-subtitle">Black, 60% opacity</div>
+      <div class="card-subtitle">Transparent</div>
+    </div>
+  </a>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="card jcu-overlay-card">
+  <a href="https://jcu.edu.au">
+    <img class="card-img img-fluid" src="../images/card.jpg" alt="Test">
+    <div class="card-img-overlay jcu-overlay jcu-bg--black-75pc">
+      <div class="card-title">Black, 75% opacity, subtitle</div>
+      <div class="card-subtitle">Subtitle</div>
     </div>
   </a>
 </div>
