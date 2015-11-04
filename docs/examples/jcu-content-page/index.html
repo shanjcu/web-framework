@@ -29,12 +29,12 @@
         <div class="container-fluid container-fluid--max-width container--no-gutter">
           <ul class="nav navbar-nav">
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link dropdown-toggle" href="https://jcu.edu.au/students">Students</a>
+              <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/students">Students</a>
               <div class="dropdown-menu">
-                <div class="row">
+                <div class="row jcu-toolbar__students">
                   <div class="col-sm-3">
                     <div class="card card-inverse">
-                      <a href="https://jcu.edu.au/students">
+                      <a href="https://www.jcu.edu.au/students">
                         <div class="col-xs-3">
                           <span class="card-icon icon-grid"></span>
                         </div>
@@ -179,10 +179,10 @@
               </div><!-- /.dropdown-menu -->
             </li>
             <li class="nav-item dropdown dropdown--open-on-hover">
-              <a class="nav-link dropdown-toggle" href="https://jcu.edu.au/staff">Staff</a>
+              <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/staff">Staff</a>
                 <div class="dropdown-menu col-xs-3">
                   <div class="card card-inverse">
-                    <a href="https://jcu.edu.au/staff">
+                    <a href="https://www.jcu.edu.au/staff">
                       <div class="col-xs-3">
                         <span class="card-icon icon-grid"></span>
                       </div>
@@ -211,6 +211,20 @@
                       <div class="col-xs-9">
                         <div class="card-title">HR Online</div>
                         <div class="card-subtitle">Pay, leave, timesheets and personal details</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card card-inverse">
+                    <a href="https://learnjcu.jcu.edu.au">
+                      <div class="col-xs-3">
+                        <span class="card-icon icon-student"></span>
+                      </div>
+                      <div class="col-xs-9">
+                        <div class="card-title">LearnJCU</div>
+                        <div class="card-subtitle">
+                          Subject outlines and materials, assessment
+                          information, lecturer announcements
+                        </div>
                       </div>
                     </a>
                   </div>
@@ -247,24 +261,12 @@
             </li>
           </ul>
 
-          <form class="form-inline navbar-form navbar-nav navbar-form--highlight p-x-sm pull-right" role="search">
-            <div class="form-group">
-              <div class="input-group input-group-sm">
-                <input type="text" class="form-control" placeholder="Search">
-                <div class="input-group-btn">
-                  <div class="dropdown dropdown-menu-right">
-                    <a class="btn btn-sm dropdown-toggle nav-link" data-toggle="dropdown">Site</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Site</a>
-                      <a class="dropdown-item" href="#">Courses</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="input-group-btn">
-                  <button type="submit" class="btn btn-primary" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
-                </div>
-              </div>
-            </div>
+          <form class="form-inline pull-right jcu-bg--gray" action="https://www.jcu.edu.au/search" method="get" role="search">
+            <input name="Search" value="Search" type="submit" hidden>
+            <input name="collection" value="jcua-web" type="hidden" hidden>
+            <label class="sr-only" for="jcu-search__query">Search</label>
+            <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
+            <button class="btn btn-primary" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
           </form>
 
           <ul class="nav navbar-nav pull-right">
@@ -281,25 +283,25 @@
           </a>
           <ul class="nav navbar-nav pull-right">
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link" href="https://jcu.edu.au/courses-and-study">Courses and Study</a>
+              <a class="nav-link" href="https://www.jcu.edu.au/courses-and-study">Courses and Study</a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
                     <div class="col-xs-3">
                       <p>Find a course</p>
-                      <form action="https://jcu.edu.au/search" method="get">
-                        <label class="sr-only" for="jcu-search__query">Search</label>
-                        <input name="Search" value="Search" type="submit" hidden>
-                        <input name="collection" value="jcua-courses" type="hidden" hidden>
+                      <form action="https://www.jcu.edu.au/search" method="get">
+                        <input name="Search" type="submit" value="Search" hidden>
+                        <input name="collection" type="hidden" value="jcua-courses" hidden>
 
                         <div class="input-group">
-                          <input id="jcu-search__query" class="form-control form-control-sm" title="Search text" value="" name="query" placeholder="Course name or keyword" type="text">
+                          <label class="sr-only" for="jcu-search--course__query">Search</label>
+                          <input class="form-control form-control-sm" id="jcu-search--course__query" name="query" type="text" title="Search text" placeholder="Course name or keyword">
                           <span class="input-group-btn">
                             <button class="btn btn-primary btn-sm" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
                           </span>
                         </div>
                       </form>
-                      <p class="m-t-md">
+                      <p class="m-t">
                         Or by
                         <a class="btn btn-primary btn-sm" href="https://www.jcu.edu.au/courses-and-study/study-areas">Study Area</a>
                         <a class="btn btn-primary btn-sm" href="https://www.jcu.edu.au/courses-and-study/cities-campuses-and-study-centres">City</a>
@@ -321,7 +323,7 @@
                       </ul>
                     </div>
                     <div class="col-xs-3">
-                      <div class="card jcu-overlay-card jcu-overlay-card--fixed">
+                      <div class="card jcu-overlay-card jcu-overlay-card--fixed jcu-bg--black-75pc">
                         <a href="https://www.jcu.edu.au/diploma-of-higher-education/not-sure-if-youre-ready-for-university">
                           <img class="card-img img-fluid" src="images/teamwork.jpg" alt="Teamwork">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain">
@@ -342,32 +344,32 @@
               </div>
             </li>
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link" href="https://jcu.edu.au/student-life">Student Life</a>
+              <a class="nav-link" href="https://www.jcu.edu.au/student-life">Student Life</a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
                     <div class="col-xs-3">
                       <p>Find a course</p>
-                      <form action="https://jcu.edu.au/search" method="get">
-                        <label class="sr-only" for="jcu-search__query">Search</label>
-                        <input name="Search" value="Search" type="submit" hidden>
-                        <input name="collection" value="jcua-courses" type="hidden" hidden>
+                      <form action="https://www.jcu.edu.au/search" method="get">
+                        <input name="Search" type="submit" value="Search" hidden>
+                        <input name="collection" type="hidden" value="jcua-courses" hidden>
 
                         <div class="input-group">
-                          <input id="jcu-search__query" class="form-control form-control-sm" title="Search text" value="" name="query" placeholder="Course name or keyword" type="text">
+                          <label class="sr-only" for="jcu-search-course2__query">Search</label>
+                          <input class="form-control form-control-sm" id="jcu-search--course2__query" name="query" type="text" title="Search text" placeholder="Course name or keyword">
                           <span class="input-group-btn">
                             <button class="btn btn-primary btn-sm" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
                           </span>
                         </div>
                       </form>
-                      <p class="m-t-md">
+                      <p class="m-t">
                         Or by
                         <a class="btn btn-primary btn-sm" href="https://www.jcu.edu.au/courses-and-study/study-areas">Study Area</a>
                         <a class="btn btn-primary btn-sm" href="https://www.jcu.edu.au/courses-and-study/cities-campuses-and-study-centres">City</a>
                       </p>
                     </div>
                     <div class="col-xs-3">
-                      <div class="card jcu-overlay-card jcu-overlay-card--fixed">
+                      <div class="card jcu-overlay-card jcu-overlay-card--fixed jcu-bg--black-75pc">
                         <a href="http://www.jcusa.edu.au/campus_life/clubs_&_socieities/list_of_clubs_&_societies.php">
                           <img class="card-img img-fluid" src="images/dive-club.jpg" alt="Dive Club">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain">
@@ -388,7 +390,7 @@
                       </ul>
                     </div>
                     <div class="col-xs-3">
-                      <div class="card jcu-overlay-card jcu-overlay-card--fixed">
+                      <div class="card jcu-overlay-card jcu-overlay-card--fixed jcu-bg--black-75pc">
                         <a href="https://www.jcu.edu.au/students/learning-skills/student-mentor-program">
                           <img class="card-img img-fluid" src="images/student-mentor.jpg" alt="Student Mentors">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain">
@@ -409,12 +411,12 @@
               </div>
             </li>
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link" href="https://jcu.edu.au/about-us">About JCU</a>
+              <a class="nav-link" href="https://www.jcu.edu.au/about-jcu">About JCU</a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
                     <div class="col-xs-3">
-                      <div class="card jcu-overlay-card jcu-overlay-card--fixed">
+                      <div class="card jcu-overlay-card jcu-overlay-card--fixed jcu-bg--black-75pc">
                         <a href="https://www.jcu.edu.au/about-jcu/campuses">
                           <img class="card-img img-fluid" src="images/campus-directions-promo.jpg" alt="Campuses and locations">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain">
@@ -442,7 +444,7 @@
                       </ul>
                     </div>
                     <div class="col-xs-3">
-                      <div class="card jcu-overlay-card jcu-overlay-card--fixed">
+                      <div class="card jcu-overlay-card jcu-overlay-card--fixed jcu-bg--black-75pc">
                         <a href="https://www.jcu.edu.au/about-jcu/reconciliation-at-jcu">
                           <img class="card-img img-fluid" src="images/reconciliation-promo.jpg" alt="Reconciliation">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain">
@@ -463,7 +465,7 @@
               </div>
             </li>
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link" href="https://jcu.edu.au/research">Research</a>
+              <a class="nav-link" href="https://www.jcu.edu.au/research">Research</a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
@@ -475,7 +477,7 @@
                       </ul>
                     </div>
                     <div class="col-xs-3">
-                       <div class="card jcu-overlay-card jcu-overlay-card--fixed">
+                       <div class="card jcu-overlay-card jcu-overlay-card--fixed jcu-bg--black-75pc">
                         <a href="https://research.jcu.edu.au/portfolio/find-an-advisor">
                           <img class="card-img img-fluid" src="images/find-an-advisor-promo.jpg" alt="Find an Advisor">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain">
@@ -494,7 +496,7 @@
                       </ul>
                     </div>
                     <div class="col-xs-3">
-                      <div class="card jcu-overlay-card jcu-overlay-card--fixed">
+                      <div class="card jcu-overlay-card jcu-overlay-card--fixed jcu-bg--black-75pc">
                         <a href="https://research.jcu.edu.au/portfolio/">
                           <img class="card-img img-fluid" src="images/dro-research-portfolio.jpg" alt="Research Portfolio">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain">

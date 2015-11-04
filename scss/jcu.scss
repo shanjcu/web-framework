@@ -72,8 +72,6 @@ $navbar-dark-active-color:       rgba(255,255,255,1);
 $navbar-inverse-color:           $gray-dark;
 $navbar-inverse-toggle-hover-bg: $gray;
 $navbar-inverse-link-active-bg:  $gray;
-// Height of search box
-$navbar-height:                  (1.5rem + .375rem * 2);
 
 // From .tabs
 $nav-tabs-active-link-hover-color: #fff;
@@ -118,7 +116,9 @@ $jcu-container-fluid-max-width: 1050px;
 //
 
 .body--has-fixed-nav {
-  padding-top: $navbar-height;
+  // Height of the search form (2 * padding + 2 * margin + font-size)
+  // TODO Clean this up
+  padding-top: ($input-padding-y * 2) + (.2rem * 2) + .75rem;
 }
 
 // Fluid-width container, but only until max-width
@@ -185,7 +185,7 @@ $jcu-container-fluid-max-width: 1050px;
   opacity: 0;
 
   // Move the dropdown menu upwards to avoid rounding issues
-  margin-top: (-$border-width * 2);
+  margin-top: -$border-width;
   transition-property: visibility, opacity;
   transition-duration: $jcu-fade-transition-speed;
 }
@@ -257,10 +257,6 @@ $jcu-container-fluid-max-width: 1050px;
   padding: $jcu-navbar-nav-link-padding;
 }
 
-.navbar-form--highlight {
-  background-color: $gray;
-}
-
 //
 // Modal: popup dialog boxes
 //
@@ -282,17 +278,19 @@ $jcu-container-fluid-max-width: 1050px;
 .jcu-toolbar {
   padding: 0;
   font-size: $font-size-sm;
-
-  > .container {
-    padding-right: 0;
-    padding-left: 0;
-  }
+  line-height: 1.1;
 
   .form-inline {
     padding-right: ($grid-gutter-width / 2);
     padding-left: ($grid-gutter-width / 2);
-    .form-control {
-      line-height: 1;
+
+    .form-control,
+    .btn {
+      margin-top: .2rem;
+      margin-bottom: .2rem;
+      font-size: .6rem;
+      // TODO Reduce padding here
+      line-height: 1.2;
     }
   }
 
@@ -314,6 +312,7 @@ $jcu-container-fluid-max-width: 1050px;
 
     .nav a {
       color: $jcu-dropdown-text-color;
+      font-size: $font-size-sm;
 
       @include hover-focus {
         color: $dropdown-link-hover-color;
@@ -333,7 +332,8 @@ $jcu-container-fluid-max-width: 1050px;
   }
 
   .card {
-    padding: ($spacer * .75);
+    padding-top: ($spacer * .75);
+    padding-bottom: ($spacer * .75);
     color: $jcu-dropdown-text-color;
     background-color: $gray-light;
     border: 0 none;
@@ -341,6 +341,11 @@ $jcu-container-fluid-max-width: 1050px;
 
     &:hover .card-title {
       text-decoration: underline;
+    }
+
+    > a {
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -359,6 +364,11 @@ $jcu-container-fluid-max-width: 1050px;
     color: $gray-lighter;
   }
 
+  @at-root .jcu-toolbar__students {
+    display: flex;
+    align-items: center;
+  }
+
 }
 
 //
@@ -371,20 +381,18 @@ $jcu-container-fluid-max-width: 1050px;
 }
 
 .navbar--jcu-explorer {
-  $navbar-height: 5.5rem;
   $navbar-color: #fff;
   $navbar-content-color: #000;
 
   border: 0 none;
   border-top-right-radius: 1.25rem;
-  //min-height: $navbar-height;
   padding-top: ($navbar-padding-vertical / 2);
   padding-bottom: 0;
   @include jcu-explorer-gradient;
 
   .navbar-brand {
     img {
-      max-height: ($navbar-height - 1.5rem);
+      max-height: 4rem;
     }
   }
 
@@ -409,14 +417,15 @@ $jcu-container-fluid-max-width: 1050px;
   .nav-link:hover,
   .nav-link:focus,
   .dropdown:hover .nav-link {
-    background-color: $navbar-color;
     color: $brand-primary;
+    background-color: $navbar-color;
   }
 
   .dropdown-menu {
-    border: 0 none;
-    color: $navbar-color;
     padding-top: 0;
+    font-size: $font-size-sm;
+    color: $navbar-color;
+    border: 0 none;
     transition-property: none;
     @include jcu-explorer-gradient;
   }
@@ -431,17 +440,22 @@ $jcu-container-fluid-max-width: 1050px;
   }
 
   .yamm-content {
-    background-color: $navbar-color;
-    color: $navbar-content-color;
     // Line up with nav gutter + navbar-padding
     margin: 0 $navbar-padding-horizontal ($navbar-padding-vertical / 2);
+    color: $navbar-content-color;
+    background-color: $navbar-color;
+  }
+
+  .jcu-overlay-card {
+    max-height: 8rem;
+    overflow: hidden;
   }
 
   @at-root .jcu-explorer__tagline {
     text-align: center;
     a {
-      color: $navbar-color;
       font-weight: bold;
+      color: $navbar-color;
     }
   }
 
