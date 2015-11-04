@@ -242,6 +242,15 @@ abbr[title] {
   .nav-link {
     border-top-right-radius: 1em;
   }
+
+  &.bg-inverse {
+    padding: .5rem .25rem 0;
+    border-bottom: 0 none;
+
+    .nav-item {
+      margin-bottom: 0;
+    }
+  }
 }
 
 // Re-use colours from dark navbars for dark nav
