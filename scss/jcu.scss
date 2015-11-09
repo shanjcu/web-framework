@@ -244,11 +244,16 @@ abbr[title] {
   }
 
   &.bg-inverse {
-    padding: .5rem .25rem 0;
+    padding: ($spacer-y / 2) ($spacer-x / 2) 0;
     border-bottom: 0 none;
 
     .nav-item {
       margin-bottom: 0;
+    }
+    .nav-link {
+      @include plain-hover-focus {
+        border-bottom: 0 none;
+      }
     }
   }
 }
@@ -269,6 +274,10 @@ abbr[title] {
       color: $navbar-dark-active-color;
     }
   }
+}
+
+.tab-pane {
+  @extend .p-a;
 }
 
 //
