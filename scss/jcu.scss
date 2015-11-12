@@ -278,7 +278,7 @@ abbr[title] {
 }
 
 .tab-pane {
-  @extend .p-a;
+  padding: ($spacer / 2);
 }
 
 //
