@@ -106,11 +106,12 @@ $jcu-gradient-color: #fff;
 }
 
 // Custom JCU docs styling
-.jcu-overlay-examples {
+.jcu-bg-examples {
   background: url('../img/leaf-curl.jpg') top center / cover;
   padding: $spacer;
 
-  .jcu-overlay {
+  .jcu-overlay,
+  *[class^='jcu-bg--'] {
     min-height: 3.5rem;
   }
 }
