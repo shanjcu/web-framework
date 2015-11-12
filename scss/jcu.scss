@@ -676,6 +676,7 @@ abbr[title] {
 $jcu-content-bg-color: #fff;
 
 .jcu-content {
+  padding-top: $spacer-y;
   padding-bottom: $spacer-y;
   margin-bottom: $spacer-y;
   background-color: $jcu-content-bg-color;
