@@ -453,19 +453,43 @@ abbr[title] {
 .navbar--jcu-explorer {
   $navbar-color: #fff;
   $navbar-content-color: #000;
+  $navbar-interaction-color: $brand-primary;
 
-  border: 0 none;
-  border-top-right-radius: 1.25rem;
+  z-index: $jcu-zindex-explorer;
   padding-top: ($navbar-padding-vertical / 2);
-  padding-bottom: 0;
-  @include jcu-explorer-gradient;
+  padding-bottom: ($navbar-padding-vertical / 2);
+  background-color: $brand-primary;
 
-  .navbar-brand {
-    img {
-      max-height: 4rem;
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+    top: $jcu-toolbar-height-sm;
+    width: 100%;
+    padding: 0;
+    border-bottom: $border-width solid $brand-primary;
+
+    // Simulate navbar padding on smaller devices for a full-width navbar
+    .navbar-brand {
+      margin-left: $navbar-padding-horizontal;
+    }
+
+    .navbar-toggler {
+      margin-right: $navbar-padding-horizontal;
     }
   }
 
+  @include media-breakpoint-up(md) {
+    // Padding is 0 so that dropdowns are flush
+    padding-bottom: 0;
+    border: 0 none;
+    border-top-right-radius: 1.25rem;
+    @include jcu-explorer-gradient;
+  }
+
+  .navbar-brand img {
+    max-height: 4rem;
+  }
+
+  // Larger device-centric display elements
   .navbar-right {
     // container-fluid padding-right is already half-gutter
     margin-right: ($grid-gutter-width / 2);
@@ -473,10 +497,15 @@ abbr[title] {
 
   .navbar-nav {
     .nav-link {
-      color: $navbar-color;
-      margin-top: ($spacer-y * .75);
       padding: $spacer-y ($spacer-x * 1.5) ($spacer-y * 1.75);
+      margin-top: ($spacer-y * .75);
+      color: $navbar-color;
       border-top-right-radius: 1.25em;
+
+      @include media-breakpoint-only(md) {
+        padding-right: ($spacer-x * 1.25);
+        padding-left: ($spacer-x * 1.25);
+      }
     }
 
     .nav-item + .nav-item {
@@ -487,7 +516,7 @@ abbr[title] {
   .nav-link:hover,
   .nav-link:focus,
   .dropdown:hover .nav-link {
-    color: $brand-primary;
+    color: $navbar-interaction-color;
     background-color: $navbar-color;
   }
 
@@ -527,6 +556,53 @@ abbr[title] {
       font-weight: bold;
       color: $navbar-color;
     }
+  }
+
+  // Smaller device-centric display elements
+  .navbar-toggler {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: $jcu-icon-font-size-lg;
+    line-height: 1.5;
+    color: $navbar-color;
+  }
+
+  @at-root .jcu-explorer__toggleable {
+    clear: both;
+    font-size: 1.5rem;
+
+    .nav-link {
+      color: $navbar-color;
+      @include hover-focus {
+        color: $navbar-interaction-color;
+      }
+    }
+
+    .nav-item {
+      margin-top: 0;
+      border-bottom: $border-width solid $navbar-color;
+
+      &:last-child {
+        border-bottom: 0 none;
+      }
+    }
+
+    // Nested navs
+    .nav .nav {
+      padding-left: $navbar-padding-horizontal;
+      font-size: 1.2rem;
+      background-color: $gray-dark;
+
+      .nav-item {
+        margin-left: $navbar-padding-horizontal;
+        border-bottom-color: $gray-light;
+      }
+
+      .nav-link {
+        padding-left: ($navbar-padding-horizontal / 2);
+      }
+    }
+
   }
 
 }

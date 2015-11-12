@@ -277,11 +277,66 @@
       </nav>
 
       <div class="container-fluid container-fluid--max-width jcu-header jcu-header--leaf-curl">
-        <nav class="navbar yamm navbar--jcu-explorer">
+        <nav class="navbar navbar--jcu-explorer yamm">
           <a class="navbar-brand" href="https://www.jcu.edu.au">
             <img src="images/jcua-logo.png" alt="JCU Australia logo">
           </a>
-          <ul class="nav navbar-nav pull-right">
+          <div class="hidden-md-up">
+            <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#jcu-explorer__collapsible" aria-label="Expand navigation">
+              <span class="icon-search" aria-hidden="true"></span><span class="icon-menu" aria-hidden="true"></span>
+            </button>
+            <div class="jcu-explorer__toggleable collapse" id="jcu-explorer__collapsible">
+              <form class="container" action="https://www.jcu.edu.au/search" method="get" role="search">
+                <input name="Search" value="Search" type="submit" hidden>
+                <input name="collection" value="jcua-web" type="hidden" hidden>
+                <label class="sr-only" for="jcu-explorer__search-query">Search</label>
+                <div class="input-group">
+                  <input class="form-control form-control-lg" id="jcu-explorer__search-query" name="query" type="text" title="Search text" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary btn-lg active" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
+                  </span>
+                </div>
+              </form>
+              <ul class="nav nav-pills nav-stacked">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.jcu.edu.au/courses-and-study">Courses and Study</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.jcu.edu.au/student-life">Student Life</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.jcu.edu.au/about-jcu">About JCU</a>
+                  <ul class="nav nav-pills nav-stacked">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">University Plan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">History</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#campusesCollapsible" href="#">Campuses</a>
+                      <ul class="nav nav-pills nav-stacked collapse" id="campusesCollapsible">
+                        <li class="nav-item"><a class="nav-link" href="#">Townsville</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cairns</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Singapore</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Brisbane</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Mackay</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Mount Isa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thursday Island</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Statistics</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.jcu.edu.au/research">Research</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="nav navbar-nav pull-right hidden-sm-down">
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
               <a class="nav-link" href="https://www.jcu.edu.au/courses-and-study">Courses and Study</a>
               <div class="dropdown-menu">
