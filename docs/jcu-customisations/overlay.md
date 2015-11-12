@@ -20,21 +20,46 @@ or a situation where you need to distinguish between layers of content.
 
 ### Standard
 
-Define an overlay with `.jcu-overlay`:
+Define an overlay with `.jcu-overlay` and colourise with `.jcu-bg--black-75pc`:
+
+<div class="jcu-bg-examples">
+  <div class="jcu-overlay jcu-bg--black-75pc">
+    <h2>Standard, black, 75% opacity overlay</h2>
+    <p>The overlay will expand to fit the contents, since it's just a block element.</p>
+  </div>
+</div>
+
+{% highlight html %}
+<div class="jcu-overlay jcu-bg--black-75pc">
+  <h2>Standard, black, 75% opacity overlay</h2>
+  <p>The overlay will expand to fit the contents, since it's just a block element.</p>
+</div>
+{% endhighlight %}
+
+### Transparent
+
+If you'd like an overlay without any background, you can simply omit the
+colourisation.
+
+{% callout warning %}
+**Heads up!** Take care with accessibility and that colours have sufficient
+contrast, especially against multicoloured backgrounds or background images.
+{% endcallout %}
 
 <div class="jcu-bg-examples">
   <div class="jcu-overlay">
-    <h2>Standard, black, 70% opacity overlay</h2>
+    <h2>Transparent overlay</h2>
     <p>The overlay will expand to fit the contents, since it's just a block element.</p>
   </div>
 </div>
 
 {% highlight html %}
 <div class="jcu-overlay">
-  <h2>Standard, black, 70% opacity overlay</h2>
+  <h2>Transparent overlay</h2>
   <p>The overlay will expand to fit the contents, since it's just a block element.</p>
 </div>
 {% endhighlight %}
+
 
 ### Coloured
 
@@ -63,13 +88,13 @@ Use the `.jcu-overlay--plain` class as a mix-in to remove the rounded corner and
 shrink the padding for a simpler appearance.
 
 <div class="jcu-bg-examples">
-  <div class="jcu-overlay jcu-overlay--plain">
+  <div class="jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
     <p>Plain border styled overlay</p>
   </div>
 </div>
 
 {% highlight html %}
-<div class="jcu-overlay jcu-overlay--plain">
+<div class="jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
   <p>Plain border styled overlay</p>
 </div>
 {% endhighlight %}
