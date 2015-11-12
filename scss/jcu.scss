@@ -105,21 +105,38 @@ $jcu-navbar-nav-link-padding: .5rem;
 $jcu-fade-transition-speed: .3s;
 $jcu-exposition-max-height: 50rem;
 $jcu-header-height: 17rem;
+$jcu-header-height-sm: 14rem;
 $jcu-container-fluid-max-width: 1050px;
+$jcu-zindex-base: 1000;
+$jcu-zindex-page-title: 1010;
+$jcu-zindex-explorer: 1020;
+$jcu-zindex-exposition: -1000;
 
 @import "bootstrap";
 @import "components/open-sans-fontface/open-sans.scss";
 @import "components/yamm3/yamm/_yamm.scss";
 @import "components/webhostinghub-glyphs/css/webhostinghub-glyphs.css";
 
+// TODO Cleanup; Height of the search form (2 * padding + 2 * margin + font-size)
+//($input-padding-y * 2) + (.2rem * 2) + .75rem;
+$jcu-toolbar-height: 2.0625rem;
+$jcu-toolbar-height-sm: 2.8698rem;
+$jcu-explorer-height-sm: 5.0625rem;
+// Shorter height as the explorer has fixed positioning
+$jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm);
+
 //
 // Layout: general modifiers to page layout and structure
 //
 
-.body--has-fixed-nav {
-  // Height of the search form (2 * padding + 2 * margin + font-size)
-  // TODO Clean this up
-  padding-top: ($input-padding-y * 2) + (.2rem * 2) + .75rem;
+.body--has-toolbar {
+  padding-top: $jcu-toolbar-height;
+}
+
+.body--has-toolbar.body--has-explorer {
+  @include media-breakpoint-down(sm) {
+    padding-top: ($jcu-toolbar-height-sm + $jcu-explorer-height-sm);
+  }
 }
 
 // Fluid-width container, but only until max-width
@@ -816,7 +833,7 @@ $footer-border: $border-width dotted $footer-border-color;
   background-color: #000;
   max-height: $jcu-exposition-max-height;
   overflow: hidden;
-  z-index: -1;
+  z-index: $jcu-zindex-exposition;
   img {
     width: 100%;
     height: auto;
@@ -933,13 +950,20 @@ $footer-border: $border-width dotted $footer-border-color;
   background-size: cover;
 }
 
+@include media-breakpoint-down(sm) {
+  .body--has-explorer .jcu-header {
+    height: $jcu-header-height-explorer-sm;
+  }
+}
+
 .jcu-header--leaf-curl {
   background-image: url("../images/leaf-curl.jpg");
 }
 
 .jcu-header__page-title {
   position: absolute;
-  top: (17rem - 5rem);
+  top: ($jcu-header-height * .7);
+  z-index: $jcu-zindex-base;
   padding: 0.2em;
   margin-left: $spacer-x * 2;
   font-weight: 600;
