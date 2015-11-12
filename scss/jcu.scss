@@ -940,7 +940,7 @@ $footer-border: $border-width dotted $footer-border-color;
 }
 
 //
-// Header: to be named better.  The background images.
+// Header: to be named better.  The background images displayed across pages.
 //
 
 .jcu-header {
@@ -948,6 +948,12 @@ $footer-border: $border-width dotted $footer-border-color;
   padding-top: $spacer;
   background-position: center center;
   background-size: cover;
+
+  @include media-breakpoint-down(sm) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
 }
 
 @include media-breakpoint-down(sm) {
@@ -969,6 +975,10 @@ $footer-border: $border-width dotted $footer-border-color;
   font-weight: 600;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-h3;
+  }
 }
 
 //
