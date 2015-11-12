@@ -136,6 +136,13 @@ $jcu-container-fluid-max-width: 1050px;
   @include make-container($gutter: 0);
 }
 
+// Only pull-right on medium-and-up displays
+@include media-breakpoint-up(md) {
+  .pull-right-md-up {
+    @include pull-right;
+  }
+}
+
 //
 // Typography: customised text-centric components
 //
@@ -325,13 +332,10 @@ abbr[title] {
       // TODO Reduce padding here
       line-height: 1.2;
     }
-  }
 
-  .dropdown {
-    @include hover {
-      background-color: $dropdown-bg;
-      transition-duration: $jcu-fade-transition-speed;
-      transition-property: background-color, color;
+    .c-select {
+      background-color: transparent;
+      border: 0 none;
     }
   }
 
@@ -350,6 +354,39 @@ abbr[title] {
       @include hover-focus {
         color: $dropdown-link-hover-color;
       }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .dropdown {
+      @include hover {
+        background-color: $dropdown-bg;
+        transition-duration: $jcu-fade-transition-speed;
+        transition-property: background-color, color;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    line-height: 2.2;
+
+    .dropdown-menu,
+    .dropdown-toggle::after {
+      display: none !important;
+    }
+    .nav-item {
+      width: 16.66%;
+      text-align: center;
+    }
+    .navbar-nav .nav-item + .nav-item {
+      margin-left: 0;
+    }
+  }
+
+  @include media-breakpoint-only(md) {
+    .nav-link {
+      padding-right: ($spacer / 4);
+      padding-left: ($spacer / 4);
     }
   }
 
@@ -388,7 +425,7 @@ abbr[title] {
   }
 
   .card-icon {
-    font-size: $jcu-font-size-icon;
+    font-size: $jcu-icon-font-size;
     color: $gray-dark; //navbar-inverse-bg
   }
 

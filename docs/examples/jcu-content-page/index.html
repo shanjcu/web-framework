@@ -27,6 +27,16 @@
       <!-- Toolbar -->
       <nav class="jcu-toolbar navbar navbar-dark bg-inverse navbar-fixed-top yamm" role="navigation">
         <div class="container-fluid container-fluid--max-width container--no-gutter">
+          <form class="form-inline pull-right jcu-bg--gray hidden-sm-down" action="https://www.jcu.edu.au/search" method="get" role="search">
+            <input name="Search" value="Search" type="submit" hidden>
+            <label class="sr-only" for="jcu-search__query">Search</label>
+            <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
+            <select class="c-select" name="collection">
+              <option value="jcua-web" selected>Site</option>
+              <option value="jcua-courses">Courses</option>
+            </select>
+            <button class="btn btn-primary" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
+          </form>
           <ul class="nav navbar-nav">
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
               <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/students">Students</a>
@@ -256,26 +266,16 @@
                   </div>
                 </div><!-- /.dropdown-menu -->
               </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://alumni.jcu.edu.au">Alumni</a>
-            </li>
-          </ul>
-
-          <form class="form-inline pull-right jcu-bg--gray" action="https://www.jcu.edu.au/search" method="get" role="search">
-            <input name="Search" value="Search" type="submit" hidden>
-            <input name="collection" value="jcua-web" type="hidden" hidden>
-            <label class="sr-only" for="jcu-search__query">Search</label>
-            <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
-            <button class="btn btn-primary" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
-          </form>
-
-          <ul class="nav navbar-nav pull-right">
-            <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/library">Library</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://maps.jcu.edu.au/">Maps</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/jcu-contact-information">Contacts</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://alumni.jcu.edu.au">Alumni</a></li>
+            <div class="pull-right-md-up">
+              <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/library">Library</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://maps.jcu.edu.au/">Maps</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/jcu-contact-information">Contacts</a></li>
+            </div>
           </ul>
         </div>
       </nav>
+
       <div class="container-fluid container-fluid--max-width jcu-header jcu-header--leaf-curl">
         <nav class="navbar yamm navbar--jcu-explorer">
           <a class="navbar-brand" href="https://www.jcu.edu.au">
