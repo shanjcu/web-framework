@@ -90,6 +90,8 @@ $card-cap-color:                 #fff;
 $font-size-xxs: .65rem;
 $modal-header-color: #fff;
 $modal-header-bg: $gray-dark;
+$jcu-container-fluid-max-width: 1050px;
+$jcu-base-zindex: 990;
 
 $jcu-gradient-blue: rgb(46, 49, 146), rgb(0, 190, 228);
 $jcu-gradient-orange: rgb(233, 79, 53), rgb(255, 221, 0);
@@ -103,26 +105,31 @@ $jcu-icon-font-size: 1.5rem;
 $jcu-icon-font-size-lg: ($jcu-icon-font-size * 1.75);
 $jcu-navbar-nav-link-padding: .5rem;
 $jcu-fade-transition-speed: .3s;
+
+$jcu-toolbar-font-size: .85rem; //$font-size-sm
+$jcu-toolbar-line-height: 1.1;
+$jcu-toolbar-line-height-sm: 2.2;
 $jcu-exposition-max-height: 50rem;
+$jcu-exposition-zindex: -1000;
 $jcu-header-height: 17rem;
 $jcu-header-height-sm: 14rem;
-$jcu-container-fluid-max-width: 1050px;
-$jcu-zindex-base: 1000;
-$jcu-zindex-page-title: 1010;
-$jcu-zindex-explorer: 1020;
-$jcu-zindex-exposition: -1000;
+$jcu-page-title-zindex: 1010;
+$jcu-explorer-zindex: 1020;
 
 @import "bootstrap";
 @import "components/open-sans-fontface/open-sans.scss";
 @import "components/yamm3/yamm/_yamm.scss";
 @import "components/webhostinghub-glyphs/css/webhostinghub-glyphs.css";
 
-// TODO Cleanup; Height of the search form (2 * padding + 2 * margin + font-size)
-//($input-padding-y * 2) + (.2rem * 2) + .75rem;
-$jcu-toolbar-height: 2.0625rem;
-$jcu-toolbar-height-sm: 2.8698rem;
-$jcu-explorer-height-sm: 5.0625rem;
-// Shorter height as the explorer has fixed positioning
+// Master height calculations for fixed elements (Toolbar, Explorer)
+// Note that inconsistency in browser rounding may add/remove pixels
+$border-width-rem: ($border-width / $font-size-root) * 1rem;
+$c-select-padding-vertical: .375rem;
+$jcu-toolbar-height: (($c-select-padding-vertical * 2) + ($jcu-toolbar-font-size * $line-height));
+$jcu-toolbar-height-sm: (($navbar-padding-vertical * 2) + ($jcu-toolbar-font-size * $jcu-toolbar-line-height-sm));
+// Toggler height plus bottom border width
+$jcu-explorer-height-sm: (((.5rem + $border-width-rem) * 2 + $jcu-icon-font-size-lg * $line-height) + $border-width-rem);
+// Shorter height as the Explorer has fixed positioning
 $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm);
 
 //
@@ -134,8 +141,14 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 }
 
 .body--has-toolbar.body--has-explorer {
+  $toolbar-explorer-offset: ($jcu-toolbar-height-sm + $jcu-explorer-height-sm);
+
   @include media-breakpoint-down(sm) {
-    padding-top: ($jcu-toolbar-height-sm + $jcu-explorer-height-sm);
+    padding-top: $toolbar-explorer-offset;
+  }
+
+  .jcu-explorer__toggleable.in {
+    height: calc(100vh - #{$toolbar-explorer-offset});
   }
 }
 
@@ -335,8 +348,8 @@ abbr[title] {
 
 .jcu-toolbar {
   padding: 0;
-  font-size: $font-size-sm;
-  line-height: 1.1;
+  font-size: $jcu-toolbar-font-size;
+  line-height: $jcu-toolbar-line-height;
 
   .form-inline {
     padding-right: ($grid-gutter-width / 2);
@@ -386,7 +399,7 @@ abbr[title] {
   }
 
   @include media-breakpoint-down(sm) {
-    line-height: 2.2;
+    line-height: $jcu-toolbar-line-height-sm;
 
     .dropdown-menu,
     .dropdown-toggle::after {
@@ -473,7 +486,7 @@ abbr[title] {
   $navbar-content-color: #000;
   $navbar-interaction-color: $brand-primary;
 
-  z-index: $jcu-zindex-explorer;
+  z-index: $jcu-explorer-zindex;
   padding-top: ($navbar-padding-vertical / 2);
   padding-bottom: ($navbar-padding-vertical / 2);
   background-color: $brand-primary;
@@ -581,13 +594,18 @@ abbr[title] {
     padding-right: 0;
     padding-left: 0;
     font-size: $jcu-icon-font-size-lg;
-    line-height: 1.5;
+    line-height: $line-height;
     color: $navbar-color;
   }
 
   @at-root .jcu-explorer__toggleable {
     clear: both;
     font-size: 1.5rem;
+
+    &.in {
+      height: calc(100vh - #{$jcu-explorer-height-sm});
+      overflow-y: auto;
+    }
 
     .nav-link {
       color: $navbar-color;
@@ -833,7 +851,7 @@ $footer-border: $border-width dotted $footer-border-color;
   background-color: #000;
   max-height: $jcu-exposition-max-height;
   overflow: hidden;
-  z-index: $jcu-zindex-exposition;
+  z-index: $jcu-exposition-zindex;
   img {
     width: 100%;
     height: auto;
@@ -969,7 +987,7 @@ $footer-border: $border-width dotted $footer-border-color;
 .jcu-header__page-title {
   position: absolute;
   top: ($jcu-header-height * .7);
-  z-index: $jcu-zindex-base;
+  z-index: $jcu-base-zindex;
   padding: 0.2em;
   margin-left: $spacer-x * 2;
   font-weight: 600;
