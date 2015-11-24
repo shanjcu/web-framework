@@ -42,16 +42,15 @@ group: jcu-customisations
   * Workflow for removing certain components from the framework.  Perhaps just a
     have a bare-bones "JCU" framework for just the core components.
 
+* 
+
 ## To resolve
 
 * Best tool for managing external dependencies (Bower, Grunt, Gulp, Npm...)
 * Ensure there's a distinction between an application and the CMS.  Have to
   clearly highlight which application it is in some manner.
 
-* Top-right Search menu direction needs to change
-* Decide on colour (not blue) for lead text -- confusing, looks like a link
-* Print layout
-* Mobile layout
+* Test across browsers
 * Accessibility standards
 * What type of templates to be constructing:
 

@@ -25,6 +25,15 @@
       <img src="../../../dist/images/leaf-curl.jpg" alt="Leaf background image">
     </div>
     <header>
+      <!-- Print features -->
+      <div class="container visible-print-flex flex-items-end">
+        <div class="col-md-6 text-left">
+          <img class="jcu-header__print-campus-stack" src="../../../dist/images/jcua-campus-stack-colour.svg" alt="JCU Campus Stack" />
+        </div>
+        <div class="col-md-6 text-right">
+          <img class="jcu-header__print-logo" src="../../../dist/images/jcua-logo-colour.svg" alt="JCU Australia logo" />
+        </div>
+      </div>
       <!-- Toolbar -->
       <nav class="jcu-toolbar navbar navbar-dark bg-inverse navbar-fixed-top yamm" role="navigation">
         <div class="container-fluid container-fluid--max-width container--no-gutter">
@@ -579,7 +588,7 @@
         </h1>
       </div>
       <div class="jcu-section-navigator hidden-sm-down">
-        <div class="container-fluid container-fluid--max-width">
+        <div class="container-fluid container-fluid--max-width hidden-print">
           <nav class="navbar navbar-dark bg-inverse">
             <ul class="nav navbar-nav">
               <li class="nav-item active">
@@ -636,7 +645,7 @@
           <h2>Relevant to our region</h2>
           <p>We also recognise our special obligation to be relevant to our own region and have forged close linkages into the economy and social fabric of the northern Queensland. We are dedicated to ensuring that our teaching, learning and research is not only of high quality, but also delivers practical benefits to the peoples and industries of the region.</p>
         </div><!-- /.col-md-9 -->
-        <div class="col-md-3 p-x-md">
+        <div class="col-md-3 p-x-md hidden-print">
           <div class="card jcu-overlay-card">
             <a href="https://jcu.edu.au">
               <img class="card-img img-fluid" src="images/card-blue.jpg" alt="Card image">
@@ -668,7 +677,7 @@
       </div>
     </main>
 
-    <footer class="container-fluid container-fluid--max-width footer">
+    <footer class="container-fluid container-fluid--max-width jcu-footer hidden-print">
       <div class="row">
         <section class="col-sm-12 col-md-5">
           <h1>James Cook University Memberships</h1>

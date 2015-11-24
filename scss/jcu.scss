@@ -136,8 +136,18 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 // Layout: general modifiers to page layout and structure
 //
 
+body {
+  @media print {
+    background-color: transparent;
+  }
+}
+
 .body--has-toolbar {
   padding-top: $jcu-toolbar-height;
+
+  @media print {
+    padding-top: 0;
+  }
 }
 
 .body--has-toolbar.body--has-explorer {
@@ -892,6 +902,10 @@ $footer-border: $border-width dotted $footer-border-color;
   margin-top: (-$jcu-section-navigator-height - .0625rem);
   font-size: $font-size-xs;
 
+  @media print {
+    margin-top: 0;
+  }
+
   .dropdown-menu {
     font-size: inherit;
     padding: $spacer;
@@ -994,6 +1008,11 @@ $footer-border: $border-width dotted $footer-border-color;
     padding-left: 0;
   }
 
+  @media print {
+    height: auto;
+    background-image: none !important;
+  }
+
 }
 
 @include media-breakpoint-down(sm) {
@@ -1018,6 +1037,13 @@ $footer-border: $border-width dotted $footer-border-color;
 
   @include media-breakpoint-down(sm) {
     font-size: $font-size-h3;
+  }
+
+  @media print {
+    position: relative;
+    top: auto;
+    color: $gray-dark;
+    background-color: transparent;
   }
 }
 
