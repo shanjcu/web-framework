@@ -741,6 +741,9 @@ abbr[title] {
   line-height: 1;
 }
 
+//
+// Content: body content with features and styles befitting a CMS
+//
 $jcu-content-bg-color: #fff;
 
 .jcu-content {
@@ -748,17 +751,34 @@ $jcu-content-bg-color: #fff;
   padding-bottom: $spacer-y;
   margin-bottom: $spacer-y;
   background-color: $jcu-content-bg-color;
+
+  > .col-md-9 {
+    @media print {
+      width: 100%;
+    }
+  }
+
+  @media print {
+    a:link:after,
+    a:visited:after {
+      content: " (" attr(href) ") ";
+      font-size: 90%;
+    }
+  }
 }
 
 .jcu-content--short-content {
   min-height: ($jcu-exposition-max-height - $jcu-header-height);
 }
 
-$footer-text-color: $body-color;
-$footer-border-color: $footer-text-color;
-$footer-border: $border-width dotted $footer-border-color;
+//
+// Footer: jump lists, navigation, and end-of-page matter
+//
+$jcu-footer-text-color: $body-color;
+$jcu-footer-border-color: $jcu-footer-text-color;
+$jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 
-.footer {
+.jcu-footer {
   font-size: $font-size-sm;
   background-color: $gray-lighter;
 
@@ -767,22 +787,22 @@ $footer-border: $border-width dotted $footer-border-color;
     padding-bottom: ($spacer / 2);
     font-size: 1rem;
     font-weight: 400;
-    border-bottom: $footer-border;
+    border-bottom: $jcu-footer-border;
   }
 
 }
 
-.footer-social-legal {
+.jcu-footer__social-legal {
   padding-top: ($spacer-y / 2);
   padding-bottom: ($spacer-y / 2);
-  border-top: $footer-border;
-  border-bottom: $footer-border;
+  border-top: $jcu-footer-border;
+  border-bottom: $jcu-footer-border;
 
   a {
     font-weight: $jcu-semi-bold;
   }
 
-  @at-root .footer-social-legal__social {
+  @at-root .jcu-footer__social {
     @include list-unstyled;
     margin-left: ($spacer-x / 2);
     font-size: $jcu-icon-font-size-lg;
@@ -805,7 +825,7 @@ $footer-border: $border-width dotted $footer-border-color;
     }
   }
 
-  @at-root .footer-social-legal__legal {
+  @at-root .jcu-footer__legal {
     @extend .list-inline;
 
     > li:not(:last-child)::after {
@@ -1021,6 +1041,7 @@ $footer-border: $border-width dotted $footer-border-color;
   }
 }
 
+// TODO: Add other background images here
 .jcu-header--leaf-curl {
   background-image: url("../images/leaf-curl.jpg");
 }
