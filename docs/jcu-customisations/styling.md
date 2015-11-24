@@ -12,12 +12,13 @@ group: jcu-customisations
 ## Where from?
 
 The styles in this web front-end framework are a mixture of those provided by
-the original Squiz CMS layouts, JCU Brand Manual, and Bootstrap's original
+the original Squiz CMS layouts, [JCU Brand
+Manual](https://www.jcu.edu.au/marketing-toolkit), and Bootstrap's original
 designs.  This documentation, forked from the original Bootstrap project,
 illustrates all available styles for use within projects associated with JCU.
 
 In a number of circumstances, the Squiz CMS layouts use browser defaults (such
-as font sizes, weights, some spacing and so forth).  Defaults from Firefox
+as font sizes, weights, spacing, margins and so forth).  Defaults from Firefox
 (version 43) have been used to fill this gap and ensure the theme remains
 consistent across browsers.
 

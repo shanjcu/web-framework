@@ -45,3 +45,4 @@ to the standards set by this framework.
   * Note that BEM only applies if styling is DOM-dependent (eg heading or list
     is styled *because* it's within another class).
 
+* Consistently name files: [suggestion coming]

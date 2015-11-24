@@ -12,7 +12,6 @@ group: jcu-customisations
 
 ## Known Issues
 
-* dropdown-toggle btn needs to have no border in the search form on courses Page
 * No automatically aligned dropdown menus within the viewport (see
   https://github.com/twbs/bootstrap/issues/17167)
 * Accordion example in docs uses old v3 Panels (see
@@ -25,6 +24,10 @@ group: jcu-customisations
 
 * Store 'approved' brand images and supporting resources in a Git repository
   (ask Digital Media team)
+
+* Document these as components:
+
+  * jcu-content
 
 * Build process:
 
