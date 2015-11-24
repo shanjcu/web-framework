@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
 
 <title>
   
-    To Do &middot; JCU Web Framework
+    Navs &middot; JCU Web Framework
   
 </title>
 
@@ -179,8 +179,23 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+              
+            
+
+            <li class="active bd-sidenav-active">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -205,19 +220,6 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
                 Overlay
               </a>
@@ -231,8 +233,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -704,8 +732,10 @@
             
 
             
+              
+            
 
-            <li class="">
+            <li class="active bd-sidenav-active">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/navs">
                 Navs
               </a>
@@ -952,107 +982,159 @@
 
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
-            <h1 class="bd-title" id="content">To Do</h1>
-            <h2 id="contents">Contents</h2>
+            <h1 class="bd-title" id="content">Navs</h1>
+            <p>Navigation component customisations that are built upon the standard
+<a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/navs">Navs</a> from the core of Bootstrap.</p>
+
+<h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#known-issues" id="markdown-toc-known-issues">Known Issues</a></li>
-  <li><a href="#to-do-list" id="markdown-toc-to-do-list">To Do List</a></li>
-  <li><a href="#decisions" id="markdown-toc-decisions">Decisions</a></li>
-  <li><a href="#to-resolve" id="markdown-toc-to-resolve">To resolve</a></li>
-  <li><a href="#bugs" id="markdown-toc-bugs">Bugs</a></li>
+  <li><a href="#inverse-tabs" id="markdown-toc-inverse-tabs">Inverse Tabs</a></li>
+  <li><a href="#inverse-tabs-with-dropdowns" id="markdown-toc-inverse-tabs-with-dropdowns">Inverse tabs with dropdowns</a></li>
+  <li><a href="#inverse-interactive-tabs" id="markdown-toc-inverse-interactive-tabs">Inverse interactive tabs</a></li>
 </ul>
 
-<h2 id="known-issues">Known Issues</h2>
+<h2 id="inverse-tabs">Inverse Tabs</h2>
 
-<ul>
-  <li>dropdown-toggle btn needs to have no border in the search form on courses Page</li>
-  <li>No automatically aligned dropdown menus within the viewport (see
-https://github.com/twbs/bootstrap/issues/17167)</li>
-  <li>Accordion example in docs uses old v3 Panels (see
-https://github.com/twbs/bootstrap/pull/17159)</li>
-</ul>
+<p>This is a simple example that applies the dark styling to the tabs component.
+The <code>.nav-dark</code> sets the colour of the elements and <code>.bg-inverse</code> configures the
+specific background colour.  The latter is adjustable</p>
 
-<h2 id="to-do-list">To Do List</h2>
-
-<ul>
-  <li>
-    <p>Decide on version numbering to distinguish / relate Bootstrap to the JCU web
-framework</p>
+<div class="bd-example" data-example-id="">
+<ul class="nav nav-tabs nav-dark bg-inverse">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
   </li>
-  <li>
-    <p>Store ‘approved’ brand images and supporting resources in a Git repository
-(ask Digital Media team)</p>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
   </li>
-  <li>
-    <p>Build process:</p>
-
-    <ul>
-      <li>
-        <p>Run base templates and CSS styles through WCAG2AAA / Section508 checker or
-linter</p>
-      </li>
-      <li>
-        <p>Workflow for converting vectorised content into raster on build (SVG -&gt;
-jpg/png).  This may not be possible given file formats (eg .ai etc)</p>
-      </li>
-      <li>
-        <p>Workflow for removing certain components from the framework.  Perhaps just a
-have a bare-bones “JCU” framework for just the core components.</p>
-      </li>
-      <li>
-        <p>Accessibility checker/linter:</p>
-
-        <ul>
-          <li>https://github.com/Khan/tota11y</li>
-        </ul>
-      </li>
-    </ul>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Another link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs nav-dark bg-inverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
-<h2 id="decisions">Decisions</h2>
+<h2 id="inverse-tabs-with-dropdowns">Inverse tabs with dropdowns</h2>
 
-<ul>
-  <li>Best tool for managing external dependencies (Bower, Grunt, Gulp, Npm…)</li>
-  <li>Follow results of this discussion:
-https://github.com/twbs/bootstrap/issues/17423</li>
-</ul>
-
-<h2 id="to-resolve">To resolve</h2>
-
-<ul>
-  <li>
-    <p>Ensure there’s a distinction between an application and the CMS.  Have to
-clearly highlight which application it is in some manner.</p>
+<div class="bd-example" data-example-id="">
+<ul class="nav nav-tabs nav-dark bg-inverse">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
   </li>
-  <li>Top-right Search menu direction needs to change</li>
-  <li>Decide on colour (not blue) for lead text – confusing, looks like a link</li>
-  <li>Print layout</li>
-  <li>Mobile layout</li>
-  <li>Accessibility standards</li>
-  <li>
-    <p>What type of templates to be constructing:</p>
-
-    <ul>
-      <li>Content page (courses.html)</li>
-      <li>Carousel (carousel.html) – based on JCU homepage</li>
-      <li>Dashboard (dashboard.html)</li>
-      <li>Cover (cover.html)</li>
-      <li>Application (app.html, similar to Dashboard but with more interactivity</li>
-    </ul>
-
-    <p>Just get examples from http://v4-alpha.getbootstrap.com/examples/, which
-aren’t compatible with v4 yet.</p>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Another link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs nav-dark bg-inverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Dropdown<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
-<h2 id="bugs">Bugs</h2>
+<h2 id="inverse-interactive-tabs">Inverse interactive tabs</h2>
 
-<ul>
-  <li>abbr double-underline in Firefox: https://github.com/twbs/bootstrap/issues/16574</li>
-</ul>
+<p>Use the tab JavaScript plugin—include it individually or through the compiled <code>bootstrap.js</code> file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.</p>
+
+<div role="tabpanel">
+  <ul class="nav nav-tabs nav-dark bg-inverse" id="myTabsIdentifier" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" id="dropdown1-tab" data-toggle="tab" href="#dropdown1" role="tab" aria-controls="dropdown1">Staff</a>
+        <a class="dropdown-item" id="dropdown2-tab" data-toggle="tab" href="#dropdown2" role="tab" aria-controls="dropdown2">Students</a>
+      </div>
+    </li>
+  </ul>
+  <div class="tab-content jcu-bg--gray-lighter" id="myTabContent">
+    <div class="tab-pane fade in active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <h2>Main tab</h2>
+      <p>Our students come from many backgrounds, promoting a rich cultural and
+      experiential diversity on campus. Our undergraduate and postgraduate courses
+      span the Arts, Biomedical Sciences, Business, Creative Media, Dentistry,
+      Education, Engineering, Healthcare Sciences, Information Technology, Law,
+      Medicine, Nursing and Midwifery, Pharmacy, Planning, Psychological Science,
+      Science, Social Work, Sustainability and Veterinary Science. We aim to give
+      graduates the qualifications and skills they need for the global workforce.</p>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <h2>Profile panel</h2>
+      <p>We also recognise our special obligation to be relevant to our own
+      region and have forged close linkages into the economy and social fabric of the
+      northern Queensland. We are dedicated to ensuring that our teaching, learning
+      and research is not only of high quality, but also delivers practical benefits
+      to the peoples and industries of the region.</p>
+    </div>
+    <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">
+      <h2>Staff panel</h2>
+      <p>The University conducts nationally significant and internationally
+      recognised research in areas such as marine sciences, biodiversity, tropical
+      ecology and environments, global warming, tourism, and tropical medicine and
+      public health care in under-served populations.</p>
+    </div>
+    <div class="tab-pane fade" id="dropdown2" role="tabpanel" aria-labelledby="dropdown2-tab">
+      <h2>Students panel</h2>
+      <p>
+    
+  
+
+
+</p></div></div></div>
 
           </div>
         </div>

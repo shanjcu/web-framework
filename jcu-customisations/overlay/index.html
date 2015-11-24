@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
@@ -179,8 +179,21 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -194,19 +207,6 @@
             <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/card">
                 Card
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
               </a>
 
               
@@ -233,8 +233,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -961,9 +987,10 @@
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
   <li><a href="#about" id="markdown-toc-about">About</a></li>
   <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
-      <li><a href="#inverting-text" id="markdown-toc-inverting-text">Inverting text</a></li>
-      <li><a href="#complete-palette" id="markdown-toc-complete-palette">Complete palette</a></li>
-      <li><a href="#gradients" id="markdown-toc-gradients">Gradients</a></li>
+      <li><a href="#standard" id="markdown-toc-standard">Standard</a></li>
+      <li><a href="#transparent" id="markdown-toc-transparent">Transparent</a></li>
+      <li><a href="#coloured" id="markdown-toc-coloured">Coloured</a></li>
+      <li><a href="#plain-styling" id="markdown-toc-plain-styling">Plain styling</a></li>
     </ul>
   </li>
 </ul>
@@ -972,160 +999,82 @@
 
 <p>Overlays are a custom JCU component for colouring and design of
 content that’s designed to be placed on top of something else.  This may be a
-<a href="card.md">JCU Card</a>, a coloured background, anything other situation where you
-need to distinguish between layers of content.</p>
+<a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/card">JCU Card</a>, a coloured background,
+or a situation where you need to distinguish between layers of content.</p>
 
 <h2 id="examples">Examples</h2>
 
-<p>Define an overlay with <code>.jcu-overlay</code> as a class and then modify 
-You can use any of the following colours and opacities and mixed them into any
-other block elements to provide a coloured semi-transparent background.</p>
+<h3 id="standard">Standard</h3>
 
-<div class="jcu-overlay-examples">
-  <div class="jcu-overlay jcu-overlay--red-50pc">
+<p>Define an overlay with <code>.jcu-overlay</code> and colourise with <code>.jcu-bg--black-75pc</code>:</p>
+
+<div class="jcu-bg-examples">
+  <div class="jcu-overlay jcu-bg--black-75pc">
+    <h2>Standard, black, 75% opacity overlay</h2>
+    <p>The overlay will expand to fit the contents, since it's just a block element.</p>
+  </div>
+</div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-bg--black-75pc"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Standard, black, 75% opacity overlay<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>The overlay will expand to fit the contents, since it's just a block element.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="transparent">Transparent</h3>
+
+<p>If you’d like an overlay without any background, you can simply omit the
+colourisation.</p>
+
+<div class="bd-callout bd-callout-warning">
+<p><strong>Heads up!</strong> Take care with accessibility and that colours have sufficient
+contrast, especially against multicoloured backgrounds or background images.</p>
+</div>
+
+<div class="jcu-bg-examples">
+  <div class="jcu-overlay">
+    <h2>Transparent overlay</h2>
+    <p>The overlay will expand to fit the contents, since it's just a block element.</p>
+  </div>
+</div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Transparent overlay<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>The overlay will expand to fit the contents, since it's just a block element.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="coloured">Coloured</h3>
+
+<p>Once you have an overlay, then add mix-in classes
+accordingly to change the style of overlay or colour and opacity.
+For full details about the colour palette, see
+<a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities/#backgrounds">Backgrounds</a>.</p>
+
+<div class="jcu-bg-examples">
+  <div class="jcu-overlay jcu-bg--red-50pc">
     <h2>Red, 50% opacity overlay</h2>
     <p>Use different opacities or colours depending on the background.</p>
   </div>
 </div>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--green-50pc"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h2&gt;</span>Green, 50% opacity overlay<span class="nt">&lt;/h2&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-bg--red-50pc"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Red, 50% opacity overlay<span class="nt">&lt;/h2&gt;</span>
   <span class="nt">&lt;p&gt;</span>Use different opacities or colours depending on the background.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h3 id="inverting-text">Inverting text</h3>
+<h3 id="plain-styling">Plain styling</h3>
 
-<p>Use the <code>.jcu-overlay--inverse</code> class to invert the text colour within
-difficult-to-read overlays.</p>
+<p>Use the <code>.jcu-overlay--plain</code> class as a mix-in to remove the rounded corner and
+shrink the padding for a simpler appearance.</p>
 
-<div class="jcu-overlay-examples">
-  <div class="jcu-overlay jcu-overlay--white-50pc jcu-overlay--inverse">
-    <h2>White, 50% opacity overlay</h2>
-    <p>This uses the inverted text colour for readability.</p>
+<div class="jcu-bg-examples">
+  <div class="jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
+    <p>Plain border styled overlay</p>
   </div>
 </div>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--white-50pc jcu-overlay--inverse"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h2&gt;</span>White, 50% opacity overlay<span class="nt">&lt;/h2&gt;</span>
-  <span class="nt">&lt;p&gt;</span>This uses the inverted text colour for readability.<span class="nt">&lt;/p&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--plain jcu-bg--black-75pc"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Plain border styled overlay<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<h3 id="complete-palette">Complete palette</h3>
-
-<div class="row jcu-overlay-examples">
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--pink-25pc">.jcu-overlay--pink-25pc</div>
-    <div class="jcu-overlay jcu-overlay--pink-50pc">.jcu-overlay--pink-50pc</div>
-    <div class="jcu-overlay jcu-overlay--pink-75pc">.jcu-overlay--pink-75pc</div>
-    <div class="jcu-overlay jcu-overlay--pink-90pc">.jcu-overlay--pink-90pc</div>
-    <div class="jcu-overlay jcu-overlay--pink-100pc">.jcu-overlay--pink-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--red-25pc">.jcu-overlay--red-25pc</div>
-    <div class="jcu-overlay jcu-overlay--red-50pc">.jcu-overlay--red-50pc</div>
-    <div class="jcu-overlay jcu-overlay--red-75pc">.jcu-overlay--red-75pc</div>
-    <div class="jcu-overlay jcu-overlay--red-90pc">.jcu-overlay--red-90pc</div>
-    <div class="jcu-overlay jcu-overlay--red-100pc">.jcu-overlay--red-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--darkred-25pc">.jcu-overlay--darkred-25pc</div>
-    <div class="jcu-overlay jcu-overlay--darkred-50pc">.jcu-overlay--darkred-50pc</div>
-    <div class="jcu-overlay jcu-overlay--darkred-75pc">.jcu-overlay--darkred-75pc</div>
-    <div class="jcu-overlay jcu-overlay--darkred-90pc">.jcu-overlay--darkred-90pc</div>
-    <div class="jcu-overlay jcu-overlay--darkred-100pc">.jcu-overlay--darkred-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--orange-25pc">.jcu-overlay---orange-25pc</div>
-    <div class="jcu-overlay jcu-overlay--orange-50pc">.jcu-overlay---orange-50pc</div>
-    <div class="jcu-overlay jcu-overlay--orange-75pc">.jcu-overlay---orange-75pc</div>
-    <div class="jcu-overlay jcu-overlay--orange-90pc">.jcu-overlay---orange-90pc</div>
-    <div class="jcu-overlay jcu-overlay--orange-100pc">.jcu-overlay---orange-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--yellow-25pc">.jcu-overlay---yellow-25pc</div>
-    <div class="jcu-overlay jcu-overlay--yellow-50pc">.jcu-overlay--yellow-50pc</div>
-    <div class="jcu-overlay jcu-overlay--yellow-75pc">.jcu-overlay--yellow-75pc</div>
-    <div class="jcu-overlay jcu-overlay--yellow-90pc">.jcu-overlay--yellow-90pc</div>
-    <div class="jcu-overlay jcu-overlay--yellow-100pc">.jcu-overlay--yellow-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--lightgreen-25pc">.jcu-overlay--lightgreen-25pc</div>
-    <div class="jcu-overlay jcu-overlay--lightgreen-50pc">.jcu-overlay--lightgreen-50pc</div>
-    <div class="jcu-overlay jcu-overlay--lightgreen-75pc">.jcu-overlay--lightgreen-75pc</div>
-    <div class="jcu-overlay jcu-overlay--lightgreen-90pc">.jcu-overlay--lightgreen-90pc</div>
-    <div class="jcu-overlay jcu-overlay--lightgreen-100pc">.jcu-overlay--lightgreen-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--green-25pc">.jcu-overlay--green-25pc</div>
-    <div class="jcu-overlay jcu-overlay--green-50pc">.jcu-overlay--green-50pc</div>
-    <div class="jcu-overlay jcu-overlay--green-75pc">.jcu-overlay--green-75pc</div>
-    <div class="jcu-overlay jcu-overlay--green-90pc">.jcu-overlay--green-90pc</div>
-    <div class="jcu-overlay jcu-overlay--green-100pc">.jcu-overlay--green-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--lightblue-25pc">.jcu-overlay--lightblue-25pc</div>
-    <div class="jcu-overlay jcu-overlay--lightblue-50pc">.jcu-overlay--lightblue-50pc</div>
-    <div class="jcu-overlay jcu-overlay--lightblue-75pc">.jcu-overlay--lightblue-75pc</div>
-    <div class="jcu-overlay jcu-overlay--lightblue-90pc">.jcu-overlay--lightblue-90pc</div>
-    <div class="jcu-overlay jcu-overlay--lightblue-100pc">.jcu-overlay--lightblue-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--blue-25pc">.jcu-overlay--blue-25pc</div>
-    <div class="jcu-overlay jcu-overlay--blue-50pc">.jcu-overlay--blue-50pc</div>
-    <div class="jcu-overlay jcu-overlay--blue-75pc">.jcu-overlay--blue-75pc</div>
-    <div class="jcu-overlay jcu-overlay--blue-90pc">.jcu-overlay--blue-90pc</div>
-    <div class="jcu-overlay jcu-overlay--blue-100pc">.jcu-overlay--blue-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--darkblue-25pc">.jcu-overlay--darkblue-25pc</div>
-    <div class="jcu-overlay jcu-overlay--darkblue-50pc">.jcu-overlay--darkblue-50pc</div>
-    <div class="jcu-overlay jcu-overlay--darkblue-75pc">.jcu-overlay--darkblue-75pc</div>
-    <div class="jcu-overlay jcu-overlay--darkblue-90pc">.jcu-overlay--darkblue-90pc</div>
-    <div class="jcu-overlay jcu-overlay--darkblue-100pc">.jcu-overlay--darkblue-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--black-25pc">.jcu-overlay--black-25pc</div>
-    <div class="jcu-overlay jcu-overlay--black-50pc">.jcu-overlay--black-50pc</div>
-    <div class="jcu-overlay jcu-overlay--black-75pc">.jcu-overlay--black-75pc</div>
-    <div class="jcu-overlay jcu-overlay--black-90pc">.jcu-overlay--black-90pc</div>
-    <div class="jcu-overlay jcu-overlay--black-100pc">.jcu-overlay--black-100pc</div>
-  </div>
-  <div class="col-xs-3">
-    <div class="jcu-overlay jcu-overlay--white-25pc">.jcu-overlay--white-25pc</div>
-    <div class="jcu-overlay jcu-overlay--white-50pc">.jcu-overlay--white-50pc</div>
-    <div class="jcu-overlay jcu-overlay--white-75pc jcu-overlay--inverse">.jcu-overlay--white-75pc</div>
-    <div class="jcu-overlay jcu-overlay--white-90pc jcu-overlay--inverse">.jcu-overlay--white-90pc</div>
-    <div class="jcu-overlay jcu-overlay--white-100pc jcu-overlay--inverse">.jcu-overlay--white-100pc</div>
-  </div>
-</div>
-
-<h3 id="gradients">Gradients</h3>
-
-<div class="bd-callout bd-callout-info">
-<p>If you want just the gradient as a background on a non-overlay element, simply
-use the modifier class on its own, for example <code>.jcu-overlay--gradient-blue</code> and
-omit the <code>.jcu-overlay</code> class.  This will likely be cleaned up and refactored at
-some point.</p>
-</div>
-
-<div class="bd-example" data-example-id="">
-<div class="jcu-overlay jcu-overlay--gradient-blue">.jcu-overlay--gradient-blue</div>
-<div class="jcu-overlay jcu-overlay--gradient-blue-reverse">.jcu-overlay--gradient-blue-reverse</div>
-<div class="jcu-overlay jcu-overlay--gradient-orange">.jcu-overlay--gradient-orange</div>
-<div class="jcu-overlay jcu-overlay--gradient-orange-reverse">.jcu-overlay--gradient-orange-reverse</div>
-<div class="jcu-overlay jcu-overlay--gradient-green">.jcu-overlay--gradient-green</div>
-<div class="jcu-overlay jcu-overlay--gradient-green-reverse">.jcu-overlay--gradient-green-reverse</div>
-<div class="jcu-overlay jcu-overlay--gradient-red">.jcu-overlay--gradient-red</div>
-<div class="jcu-overlay jcu-overlay--gradient-red-reverse">.jcu-overlay--gradient-red-reverse</div>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--gradient-blue"</span><span class="nt">&gt;</span>.jcu-overlay--gradient-blue<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--gradient-blue-reverse"</span><span class="nt">&gt;</span>.jcu-overlay--gradient-blue-reverse<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--gradient-orange"</span><span class="nt">&gt;</span>.jcu-overlay--gradient-orange<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--gradient-orange-reverse"</span><span class="nt">&gt;</span>.jcu-overlay--gradient-orange-reverse<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--gradient-green"</span><span class="nt">&gt;</span>.jcu-overlay--gradient-green<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--gradient-green-reverse"</span><span class="nt">&gt;</span>.jcu-overlay--gradient-green-reverse<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--gradient-red"</span><span class="nt">&gt;</span>.jcu-overlay--gradient-red<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-overlay jcu-overlay--gradient-red-reverse"</span><span class="nt">&gt;</span>.jcu-overlay--gradient-red-reverse<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 
           </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
@@ -181,8 +181,21 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -207,19 +220,6 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
                 Overlay
               </a>
@@ -233,8 +233,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -961,6 +987,7 @@
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
   <li><a href="#where-from" id="markdown-toc-where-from">Where from?</a></li>
   <li><a href="#inclusions" id="markdown-toc-inclusions">Inclusions</a></li>
+  <li><a href="#theming-an-application" id="markdown-toc-theming-an-application">Theming an application</a></li>
   <li><a href="#extending-or-reusing" id="markdown-toc-extending-or-reusing">Extending or reusing</a></li>
   <li><a href="#decisions-and-theory" id="markdown-toc-decisions-and-theory">Decisions and theory</a></li>
 </ul>
@@ -968,9 +995,15 @@
 <h2 id="where-from">Where from?</h2>
 
 <p>The styles in this web front-end framework are a mixture of those provided by
-the Squiz CMS and Bootstrap’s original designs.  This documentation, forked from
-the original Bootstrap project, illustrates all available styles for use within
-a project at JCU.</p>
+the original Squiz CMS layouts, <a href="https://www.jcu.edu.au/marketing-toolkit">JCU Brand
+Manual</a>, and Bootstrap’s original
+designs.  This documentation, forked from the original Bootstrap project,
+illustrates all available styles for use within projects associated with JCU.</p>
+
+<p>In a number of circumstances, the Squiz CMS layouts use browser defaults (such
+as font sizes, weights, spacing, margins and so forth).  Defaults from Firefox
+(version 43) have been used to fill this gap and ensure the theme remains
+consistent across browsers.</p>
 
 <h2 id="inclusions">Inclusions</h2>
 
@@ -980,20 +1013,43 @@ a project at JCU.</p>
   <li>jQuery</li>
 </ul>
 
+<h2 id="theming-an-application">Theming an application</h2>
+
+<p>See <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming.md">Application
+Theming</a> for
+details on how to apply these styles to your own projects.</p>
+
 <h2 id="extending-or-reusing">Extending or reusing</h2>
 
-<p>For projects with extra requirements, this framework can be extended in the same
-way that Bootstrap itself can.  The original base SASS files can be included in
-an extension project and customised further.</p>
+<p>For projects with additional requirements, this framework can be extended in the
+same way that Bootstrap itself can.  The original base SCSS files can be
+included in an extension project and customised further.</p>
 
 <p>Given the complexity and variations between applications, especially those that
 are vendor-supplied, we expect that all projects will require some degree of
 customisation.  If you have suggestions for customisations that should feature
-as part of this core</p>
+as part of this core framework, contact the web and marketing team, or create an
+issue at https://git.jcu.edu.au/stash/projects/WEBSTYLE/repos/jcu-web-framework.</p>
 
 <h2 id="decisions-and-theory">Decisions and theory</h2>
 
 <ul>
+  <li>
+    <p>Semantic markup is used where possible to for aspects such as header and
+footer, groups of links with headings (<code>nav</code> + <code>h1</code>), and logical section
+groupings.  It may look like a <code>&lt;h1&gt;</code> is out of place in some examples, but
+the sectioning ensures the context is correct.</p>
+  </li>
+  <li>
+    <p>The main drop-down menu for choosing what type of search to run was omitted
+for simplicity. The main JCU search aggregates pages and courses, and the
+course search only works once (the search page points to the jcua-web
+collection anyway).</p>
+  </li>
+  <li>
+    <p>Multi-level dropdown menus were removed from Bootstrap for usability reasons
+and this remains the case for this framework.</p>
+  </li>
   <li>
     <p>Squiz uses its CMS metadata fields to control background images and colours on
 pages.  These then are translated into either inline styles on a rendered page.
@@ -1002,10 +1058,6 @@ aren’t centrally controlled.  In order to simplify this, all repeatable
 aspects, such as Overlays, are defined in the main style sheet files.  This
 makes for consistency across all systems using the framework, and eliminates a
 potential maintenance burden from application owners.</p>
-  </li>
-  <li>
-    <p>Squiz will be delivering a documentation page covering all its various styles
-and components after the launch in October.</p>
   </li>
 </ul>
 

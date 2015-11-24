@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
@@ -177,8 +177,21 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -203,19 +216,6 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
                 Overlay
               </a>
@@ -229,8 +229,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -955,7 +981,7 @@
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
             <h1 class="bd-title" id="content">Carousel</h1>
-            <p>A slideshow component for cycling through elements—images or slides of text—like a carousel. <strong>Nested carousels are not supported.</strong></p>
+            <p>A slideshow component for cycling through elements—images or slides of text—like a carousel. In browsers where the <a href="http://www.w3.org/TR/page-visibility/">Page Visibility API</a> is supported, the carousel will avoid sliding when the webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized, etc.). <strong>Nested carousels are not supported.</strong></p>
 
 <h2 id="contents">Contents</h2>
 
@@ -971,12 +997,12 @@
       <li><a href="#via-javascript" id="markdown-toc-via-javascript">Via JavaScript</a></li>
       <li><a href="#options" id="markdown-toc-options">Options</a></li>
       <li><a href="#methods" id="markdown-toc-methods">Methods</a>        <ul>
-          <li><a href="#carouseloptions" id="markdown-toc-carouseloptions">.carousel(options)</a></li>
-          <li><a href="#carouselcycle" id="markdown-toc-carouselcycle">.carousel(‘cycle’)</a></li>
-          <li><a href="#carouselpause" id="markdown-toc-carouselpause">.carousel(‘pause’)</a></li>
-          <li><a href="#carouselnumber" id="markdown-toc-carouselnumber">.carousel(number)</a></li>
-          <li><a href="#carouselprev" id="markdown-toc-carouselprev">.carousel(‘prev’)</a></li>
-          <li><a href="#carouselnext" id="markdown-toc-carouselnext">.carousel(‘next’)</a></li>
+          <li><a href="#carouseloptions" id="markdown-toc-carouseloptions"><code>.carousel(options)</code></a></li>
+          <li><a href="#carouselcycle" id="markdown-toc-carouselcycle"><code>.carousel('cycle')</code></a></li>
+          <li><a href="#carouselpause" id="markdown-toc-carouselpause"><code>.carousel('pause')</code></a></li>
+          <li><a href="#carouselnumber" id="markdown-toc-carouselnumber"><code>.carousel(number)</code></a></li>
+          <li><a href="#carouselprev" id="markdown-toc-carouselprev"><code>.carousel('prev')</code></a></li>
+          <li><a href="#carouselnext" id="markdown-toc-carouselnext"><code>.carousel('next')</code></a></li>
         </ul>
       </li>
       <li><a href="#events" id="markdown-toc-events">Events</a></li>
@@ -1175,7 +1201,7 @@
 
 <h3 id="methods">Methods</h3>
 
-<h4 id="carouseloptions">.carousel(options)</h4>
+<h4 id="carouseloptions"><code>.carousel(options)</code></h4>
 
 <p>Initializes the carousel with an optional options <code>object</code> and starts cycling through items.</p>
 
@@ -1183,23 +1209,23 @@
   <span class="na">interval</span><span class="p">:</span> <span class="mi">2000</span>
 <span class="p">})</span></code></pre></div>
 
-<h4 id="carouselcycle">.carousel(‘cycle’)</h4>
+<h4 id="carouselcycle"><code>.carousel('cycle')</code></h4>
 
 <p>Cycles through the carousel items from left to right.</p>
 
-<h4 id="carouselpause">.carousel(‘pause’)</h4>
+<h4 id="carouselpause"><code>.carousel('pause')</code></h4>
 
 <p>Stops the carousel from cycling through items.</p>
 
-<h4 id="carouselnumber">.carousel(number)</h4>
+<h4 id="carouselnumber"><code>.carousel(number)</code></h4>
 
 <p>Cycles the carousel to a particular frame (0 based, similar to an array).</p>
 
-<h4 id="carouselprev">.carousel(‘prev’)</h4>
+<h4 id="carouselprev"><code>.carousel('prev')</code></h4>
 
 <p>Cycles to the previous item.</p>
 
-<h4 id="carouselnext">.carousel(‘next’)</h4>
+<h4 id="carouselnext"><code>.carousel('next')</code></h4>
 
 <p>Cycles to the next item.</p>
 

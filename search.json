@@ -19,6 +19,12 @@
         } ,
     
         {
+            "title" : "Application Theming",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming/",
+            "date"  : ""
+        } ,
+    
+        {
             "title" : "Approach",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/extend/approach/",
             "date"  : ""
@@ -146,13 +152,13 @@
     
         {
             "title" : "Dropdowns",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/dropdowns/",
             "date"  : ""
         } ,
     
         {
             "title" : "Dropdowns",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/dropdowns/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns/",
             "date"  : ""
         } ,
     
@@ -211,14 +217,8 @@
         } ,
     
         {
-            "title" : "Bootstrap &amp;middot; The world&#39;s most popular mobile-first and responsive front-end framework.",
+            "title" : "JCU Web Framework: powered by Bootstrap &amp;middot; The world&#39;s most popular mobile-first and responsive front-end framework.",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/",
-            "date"  : ""
-        } ,
-    
-        {
-            "title" : "Extend",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/extend/",
             "date"  : ""
         } ,
     
@@ -229,8 +229,8 @@
         } ,
     
         {
-            "title" : "Examples",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples/",
+            "title" : "Extend",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/extend/",
             "date"  : ""
         } ,
     
@@ -242,13 +242,13 @@
     
         {
             "title" : "Introduction",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/introduction/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/introduction/",
             "date"  : ""
         } ,
     
         {
             "title" : "Introduction",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/introduction/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/introduction/",
             "date"  : ""
         } ,
     
@@ -303,6 +303,12 @@
         {
             "title" : "Navbar",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/navbar/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Navs",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs/",
             "date"  : ""
         } ,
     
@@ -404,7 +410,7 @@
     
         {
             "title" : "To Do",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/todo/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/to-do/",
             "date"  : ""
         } ,
     
@@ -427,20 +433,32 @@
         } ,
     
         {
-            "title" : "Typography",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/typography/",
-            "date"  : ""
-        } ,
-    
-        {
             "title" : "Typography customisations",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/typography/",
             "date"  : ""
         } ,
     
         {
+            "title" : "Typography",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/content/typography/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Utility classes",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities/",
+            "date"  : ""
+        } ,
+    
+        {
             "title" : "Utility classes",
             "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/components/utilities/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/",
             "date"  : ""
         } ,
     
@@ -458,13 +476,13 @@
     
         {
             "title" : "",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/",
+            "url"   : "/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/",
             "date"  : ""
         } ,
     

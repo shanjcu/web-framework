@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
@@ -177,8 +177,21 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -203,19 +216,6 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
                 Overlay
               </a>
@@ -229,8 +229,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -975,10 +1001,10 @@
       <li><a href="#via-javascript" id="markdown-toc-via-javascript">Via JavaScript</a></li>
       <li><a href="#options" id="markdown-toc-options">Options</a></li>
       <li><a href="#methods" id="markdown-toc-methods">Methods</a>        <ul>
-          <li><a href="#modaloptions" id="markdown-toc-modaloptions">.modal(options)</a></li>
-          <li><a href="#modaltoggle" id="markdown-toc-modaltoggle">.modal(‘toggle’)</a></li>
-          <li><a href="#modalshow" id="markdown-toc-modalshow">.modal(‘show’)</a></li>
-          <li><a href="#modalhide" id="markdown-toc-modalhide">.modal(‘hide’)</a></li>
+          <li><a href="#modaloptions" id="markdown-toc-modaloptions"><code>.modal(options)</code></a></li>
+          <li><a href="#modaltoggle" id="markdown-toc-modaltoggle"><code>.modal('toggle')</code></a></li>
+          <li><a href="#modalshow" id="markdown-toc-modalshow"><code>.modal('show')</code></a></li>
+          <li><a href="#modalhide" id="markdown-toc-modalhide"><code>.modal('hide')</code></a></li>
         </ul>
       </li>
       <li><a href="#events" id="markdown-toc-events">Events</a></li>
@@ -1021,7 +1047,6 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
           </button>
           <h4 class="modal-title">Modal title</h4>
         </div>
@@ -1043,7 +1068,6 @@
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h4&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -1069,7 +1093,6 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
@@ -1123,7 +1146,6 @@
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h4&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -1190,7 +1212,6 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
       </div>
@@ -1208,7 +1229,6 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-          <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
       </div>
@@ -1339,7 +1359,6 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
           </button>
           <h4 class="modal-title" id="exampleModalLabel">New message</h4>
         </div>
@@ -1374,7 +1393,6 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
           <span class="nt">&lt;/button&gt;</span>
           <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalLabel"</span><span class="nt">&gt;</span>New message<span class="nt">&lt;/h4&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
@@ -1468,7 +1486,7 @@
 
 <h3 id="methods">Methods</h3>
 
-<h4 id="modaloptions">.modal(options)</h4>
+<h4 id="modaloptions"><code>.modal(options)</code></h4>
 
 <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
 
@@ -1476,19 +1494,19 @@
   <span class="na">keyboard</span><span class="p">:</span> <span class="kc">false</span>
 <span class="p">})</span></code></pre></div>
 
-<h4 id="modaltoggle">.modal(‘toggle’)</h4>
+<h4 id="modaltoggle"><code>.modal('toggle')</code></h4>
 
 <p>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</p>
 
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'toggle'</span><span class="p">)</span></code></pre></div>
 
-<h4 id="modalshow">.modal(‘show’)</h4>
+<h4 id="modalshow"><code>.modal('show')</code></h4>
 
 <p>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs).</p>
 
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'show'</span><span class="p">)</span></code></pre></div>
 
-<h4 id="modalhide">.modal(‘hide’)</h4>
+<h4 id="modalhide"><code>.modal('hide')</code></h4>
 
 <p>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
@@ -177,8 +177,21 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -203,19 +216,6 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
                 Overlay
               </a>
@@ -229,8 +229,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -973,9 +999,8 @@
 <h3 id="global-changes">Global changes</h3>
 
 <ul>
-  <li>Switched from LESS to SCSS for our source CSS files.</li>
+  <li>Switched from <a href="http://lesscss.org/">Less</a> to <a href="http://sass-lang.com/">SCSS</a> for our source CSS files.</li>
   <li>Switched from <code>px</code> to <code>rem</code> as our primary CSS unit.</li>
-  <li>Media queries are now in <code>em</code>s instead of <code>px</code>s.</li>
   <li>Global font-size increased from <code>14px</code> to <code>16px</code>.</li>
   <li>Added a new grid tier for ~<code>480px</code> and below.</li>
   <li>Replaced the separate optional theme with configurable options via SCSS variables (e.g., <code>$enable-gradients: true</code>).</li>
@@ -985,8 +1010,18 @@
 
 <ul>
   <li>Dropped panels, thumbnails, and wells for a new all-encompassing component, cards.</li>
-  <li>Dropped the Glyphicons icon font.</li>
-  <li>Dropped the Affix jQuery plugin. We recommend using a <code>position: sticky</code> polyfill instead. <a href="http://html5please.com/#sticky">See the HTML5 Please entry</a> for details and specific polyfill recommendations.</li>
+  <li>Dropped the Glyphicons icon font. If you need icons, some options are:
+    <ul>
+      <li>the upstream version of <a href="http://glyphicons.com/">Glyphicons</a></li>
+      <li><a href="https://octicons.github.com/">Octicons</a></li>
+      <li><a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+    </ul>
+  </li>
+  <li>Dropped the Affix jQuery plugin. We recommend using a <code>position: sticky</code> polyfill instead. <a href="http://html5please.com/#sticky">See the HTML5 Please entry</a> for details and specific polyfill recommendations.
+    <ul>
+      <li>If you were using Affix to apply additional, non-<code>position</code> styles, the polyfills might not support your use case. One option for such uses is the third-party <a href="https://github.com/acch/scrollpos-styler">ScrollPos-Styler</a> library.</li>
+    </ul>
+  </li>
   <li>Refactored nearly all components to use more unnested classes instead of children selectors.</li>
 </ul>
 
@@ -1219,7 +1254,7 @@
 
 <ul>
   <li>Removed the <code>min--moz-device-pixel-ratio</code> typo hack for retina media queries</li>
-  <li>Dropped <code>.hidden</code> and <code>.show</code> because it interferes with jQuery’s <code>$(...).hide()</code>.</li>
+  <li>Dropped <code>.hidden</code> and <code>.show</code> because they conflict with jQuery’s <code>$(...).hide()</code> and <code>$(...).show()</code> methods.</li>
   <li>Change buttons’ <code>[disabled]</code> to <code>:disabled</code> as IE9+ supports <code>:disabled</code>. However <code>fieldset[disabled]</code> is still necessary because <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset#Browser_compatibility">native disabled fieldsets are still buggy in IE11</a>.</li>
 </ul>
 

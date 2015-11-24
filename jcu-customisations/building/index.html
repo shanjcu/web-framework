@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
@@ -179,8 +179,21 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -205,19 +218,6 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
                 Overlay
               </a>
@@ -231,8 +231,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -963,7 +989,7 @@ Web Framework further then read on.</p>
 
 <div class="bd-callout bd-callout-warning">
 <p><strong>First things first!</strong> If you haven’t read the documentation on Bootstrap’s
-<a href="../../getting-started/build-tools">Build tools</a>, head over there and go through
+<a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/build-tools">Build tools</a>, head over there and go through
 that first.  Everything here will make a lot more sense once you also understand
 the purpose of each tool Bootstrap uses and that you have those tools installed
 on your system.</p>
@@ -1007,7 +1033,7 @@ submodules are also obtained.  For those using a terminal, run:</p>
 </code></pre>
   </li>
   <li>
-    <p>Ensure all of the <a href="../../getting-started/build-tools">Build tools</a> needed
+    <p>Ensure all of the <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/build-tools">Build tools</a> needed
 are installed on your system.</p>
   </li>
   <li>
@@ -1054,7 +1080,7 @@ install the required gems in your system path.</p>
 </table>
 
 <p>All other tasks from the default Bootstrap
-<a href="../../getting-started/build-tools#using-grunt">Gruntfile</a> are also available</p>
+<a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/getting-started/build-tools#using-grunt">Gruntfile</a> are also available</p>
 
 <h2 id="branches-and-structure">Branches and structure</h2>
 
@@ -1157,13 +1183,35 @@ be a branch name or commit hash.</p>
 where the changes in JCU’s framework are at odds with changes in the official
 Bootstrap code.</p>
 
-    <p>Go through each file that’s conflicted and resolve the merge.  See <a href="https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/">this
+    <p>Go through each file (except those in <code>dist/</code> or <code>docs/dist/</code>) that is
+conflicted and resolve the merge.  See <a href="https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/">this
 page</a>
 from GitHub on how to resolve conflicts on the command line.  Your Git
-application likely offers similar functionality.</p>
+application likely offers similar functionality.  In essence, you’ll edit
+each conflicted file, merge changes together, and stage (<code>git add …</code>) the
+files.</p>
+
+    <p>For any files located in <code>dist/</code> or <code>docs/dist</code>, you can simply accept
+Bootstrap’s version from the merge by using:</p>
+
+    <pre><code>git reset path/to/file.css
+git checkout --theirs path/to/file.css
+</code></pre>
+
+    <p>To make this easier, you could leave all files you’re planning to accept
+from core Bootstrap until the end of your merge and then use the command:</p>
+
+    <pre><code>git checkout --theirs .
+</code></pre>
+
+    <p>at the top level directory.  Take care as this will overwrite any
+JCU-specific changes so make sure you don’t run this until you’re <em>absolutely
+sure</em> no remaining files contain JCU changes.</p>
   </li>
   <li>
-    <p>Once all conflicts are resolved, build and test the framework:</p>
+    <p>Once all conflicts are resolved, build and test the framework.  You’ll need
+to re-run the <code>npm</code> and <code>bundle</code> installation in case of any dependency
+changes.</p>
 
     <pre><code>npm install
 bundle

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
@@ -181,8 +181,21 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -207,19 +220,6 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
                 Overlay
               </a>
@@ -233,8 +233,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -973,20 +999,20 @@
 <h3 id="bordered-list-inside-borders">Bordered List (inside borders)</h3>
 
 <p>A border is present between each list item, and not present on the first or last
-item in a list.  This is built upon to create the <a href="../campus-stack.md">Campus
+item in a list.  This is extended to create the <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/campus-stack">Campus
 Stack</a>.</p>
 
 <div class="bd-example" data-example-id="">
 <ul class="list-bordered">
   <li>How do I apply at JCU?</li>
   <li>Where can I get support on campus?</li>
-  <li>What is a supplementary exame?</li>
+  <li>What is a supplementary exam?</li>
 </ul>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-bordered"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li&gt;</span>How do I apply at JCU?<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>Where can I get support on campus?<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>What is a supplementary exame?<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>What is a supplementary exam?<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
 <p>The border reflects the width of the list block, rather than the content:</p>
@@ -997,7 +1023,7 @@ Stack</a>.</p>
     <ul class="list-bordered">
       <li>How do I apply at JCU?</li>
       <li>Where can I get support on campus?</li>
-      <li>What is a supplementary exame?</li>
+      <li>What is a supplementary exam?</li>
     </ul>
   </div>
 </div>
@@ -1007,21 +1033,22 @@ Stack</a>.</p>
     <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-bordered"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;li&gt;</span>How do I apply at JCU?<span class="nt">&lt;/li&gt;</span>
       <span class="nt">&lt;li&gt;</span>Where can I get support on campus?<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>What is a supplementary exame?<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>What is a supplementary exam?<span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h3 id="themes">Themes</h3>
 
-<p>These are  overarching colour schemes which can be applied to content
+<p>These are overarching colour schemes which can be applied to content
 on any given page.  These may be expanded to influence other aspects of colour
 across a page, but presently encompass just headings.</p>
 
 <div class="bd-callout bd-callout-info">
 <p>The given classes, such as <code>.jcu-theme--blue</code>, can be applied at any level of
-your document to influence the content within – they don’t just have be on the
-immediate parent container.</p>
+your document to influence the styling contents.  If you experience issues with
+specificity, you can apply (or re-apply the class) at a more specific element on
+your page.</p>
 </div>
 
 <div class="bd-example" data-example-id="">

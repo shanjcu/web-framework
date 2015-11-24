@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The JCU Web Framework, based on Bootstrap.">
 <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="David Beitey and JCU contributors">
@@ -177,8 +177,21 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
-                Accordion
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
+                Dropdowns
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/navs">
+                Navs
               </a>
 
               
@@ -203,19 +216,6 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
-          
-            
-            
-
-            
-
-            <li class="">
               <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/overlay">
                 Overlay
               </a>
@@ -229,8 +229,34 @@
             
 
             <li class="">
-              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/examples">
-                Examples
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/accordion">
+                Accordion
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/utilities">
+                Utilities
+              </a>
+
+              
+            </li>
+          
+            
+            
+
+            
+
+            <li class="">
+              <a href="/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/jcu-customisations/application-theming">
+                Application Theming
               </a>
 
               
@@ -1039,6 +1065,9 @@
 
 <h2 id="grid-options">Grid options</h2>
 
+<p>While Bootstrap uses <code>em</code>s or <code>rem</code>s for defining most sizes, <code>px</code>s are used for grid breakpoints and container widths.
+This is because the viewport width is in pixels and does not change with the <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
+
 <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
 
 <div class="table-responsive">
@@ -1048,23 +1077,23 @@
         <th></th>
         <th class="text-center">
           Extra small<br />
-          <small>&lt;34em / 480px</small>
+          <small>&lt;544px</small>
         </th>
         <th class="text-center">
           Small<br />
-          <small>&ge;34em / 480px</small>
+          <small>&ge;544px</small>
         </th>
         <th class="text-center">
           Medium<br />
-          <small>&ge;45em / 720px</small>
+          <small>&ge;768px</small>
         </th>
         <th class="text-center">
           Large<br />
-          <small>&ge;62em / 992px</small>
+          <small>&ge;992px</small>
         </th>
         <th class="text-center">
           Extra large<br />
-          <small>&ge;75em / 1200px</small>
+          <small>&ge;1200px</small>
         </th>
       </tr>
     </thead>
@@ -1077,10 +1106,10 @@
       <tr>
         <th class="text-nowrap" scope="row">Container width</th>
         <td>None (auto)</td>
-        <td>34rem / 480px</td>
-        <td>45rem / 720px</td>
-        <td>60rem / 960px</td>
-        <td>72.25rem / 1156px</td>
+        <td>576px</td>
+        <td>720px</td>
+        <td>940px</td>
+        <td>1140px</td>
       </tr>
       <tr>
         <th class="text-nowrap" scope="row">Class prefix</th>
@@ -1096,7 +1125,7 @@
       </tr>
       <tr>
         <th class="text-nowrap" scope="row">Gutter width</th>
-        <td colspan="5">30px (15px on each side of a column)</td>
+        <td colspan="5">1.875rem / 30px (15px on each side of a column)</td>
       </tr>
       <tr>
         <th class="text-nowrap" scope="row">Nestable</th>
@@ -1126,17 +1155,18 @@
   <span class="o">//</span> <span class="n">Extra</span> <span class="n">small</span> <span class="n">screen</span> <span class="o">/</span> <span class="n">phone</span>
   <span class="n">xs</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span>
   <span class="o">//</span> <span class="n">Small</span> <span class="n">screen</span> <span class="o">/</span> <span class="n">phone</span>
-  <span class="n">sm</span><span class="o">:</span> <span class="m">34em</span><span class="o">,</span>    <span class="o">//</span> <span class="m">480px</span>
+  <span class="n">sm</span><span class="o">:</span> <span class="m">544px</span><span class="o">,</span>
   <span class="o">//</span> <span class="n">Medium</span> <span class="n">screen</span> <span class="o">/</span> <span class="n">tablet</span>
-  <span class="n">md</span><span class="o">:</span> <span class="m">48em</span><span class="o">,</span>    <span class="o">//</span> <span class="m">768px</span>
+  <span class="n">md</span><span class="o">:</span> <span class="m">768px</span><span class="o">,</span>
   <span class="o">//</span> <span class="n">Large</span> <span class="n">screen</span> <span class="o">/</span> <span class="n">desktop</span>
-  <span class="n">lg</span><span class="o">:</span> <span class="m">62em</span><span class="o">,</span>    <span class="o">//</span> <span class="m">992px</span>
+  <span class="n">lg</span><span class="o">:</span> <span class="m">992px</span><span class="o">,</span>
   <span class="o">//</span> <span class="n">Extra</span> <span class="nb">large</span> <span class="n">screen</span> <span class="o">/</span> <span class="n">wide</span> <span class="n">desktop</span>
-  <span class="n">xl</span><span class="o">:</span> <span class="m">75em</span>     <span class="o">//</span> <span class="m">1200px</span>
+  <span class="n">xl</span><span class="o">:</span> <span class="m">1200px</span>
 <span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
 
+
 <span class="nv">$grid-columns</span><span class="p">:</span>      <span class="m">12</span><span class="p">;</span>
-<span class="nv">$grid-gutter-width</span><span class="p">:</span> <span class="m">1</span><span class="mi">.5rem</span><span class="p">;</span></code></pre></div>
+<span class="nv">$grid-gutter-width</span><span class="p">:</span> <span class="m">1</span><span class="mi">.875rem</span><span class="p">;</span></code></pre></div>
 
 <h3 id="mixins">Mixins</h3>
 
