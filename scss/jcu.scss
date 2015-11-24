@@ -174,6 +174,34 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
   }
 }
 
+// Flexbox: simple alignment for block items in containers
+@mixin flex-items($align) {
+  display: flex;
+  align-items: $align;
+}
+
+.flex-items-start {
+  @include flex-items(flex-start);
+}
+
+.flex-items-center {
+  @include flex-items(center);
+}
+
+.flex-items-end {
+  @include flex-items(flex-end);
+}
+
+// Print utilities
+.visible-print-flex {
+  display: none !important;
+
+  @media print {
+    display: flex !important;
+  }
+}
+
+
 //
 // Typography: customised text-centric components
 //
@@ -445,8 +473,7 @@ abbr[title] {
     }
 
     > a {
-      display: flex;
-      align-items: center;
+      @include flex-items(center);
     }
   }
 
@@ -463,11 +490,6 @@ abbr[title] {
   .card-subtitle {
     font-size: $font-size-xxs;
     color: $gray-lighter;
-  }
-
-  @at-root .jcu-toolbar__students {
-    display: flex;
-    align-items: center;
   }
 
 }
@@ -958,7 +980,7 @@ $footer-border: $border-width dotted $footer-border-color;
 }
 
 //
-// Header: to be named better.  The background images displayed across pages.
+// Header: to be named better.  The background images displayed across pages
 //
 
 .jcu-header {
