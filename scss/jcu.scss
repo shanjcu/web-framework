@@ -209,6 +209,10 @@ body {
   }
 }
 
+.img-fluid[src$=".svg"] {
+  height: 100%;
+}
+
 
 //
 // Typography: customised text-centric components
