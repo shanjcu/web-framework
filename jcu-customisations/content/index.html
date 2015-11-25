@@ -10,7 +10,7 @@
 
 <title>
   
-    Reboot &middot; JCU Web Framework
+    Content &middot; JCU Web Framework
   
 </title>
 
@@ -56,9 +56,9 @@
     <div class="bd-pageheader">
       <div class="container">
         
-  <h1>Content</h1>
+  <h1>JCU Web Framework</h1>
   <p class="lead">
-    Styles for displaying content with some of the most commonly used HTML elements, including normalization, typography, images, tables, and more.
+    The <em>living style guide</em> for University web applications.
   </p>
 
 
@@ -83,8 +83,10 @@
       
 
       
+        
+      
 
-      <div class="bd-toc-item ">
+      <div class="bd-toc-item active">
         
           <a class="bd-toc-link" href="/jcu-customisations/introduction">
         
@@ -532,10 +534,8 @@
             
 
             
-              
-            
 
-            <li class="active bd-sidenav-active">
+            <li class="">
               <a href="/content/reboot">
                 Reboot
               </a>
@@ -1008,314 +1008,98 @@
 
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
-            <h1 class="bd-title" id="content">Reboot</h1>
-            <p>Part of Bootstrap’s job is to provide an elegant, consistent, and simple baseline to build upon. We use Reboot, a collection of element-specific CSS changes in a single file, to kickstart that.</p>
-
-<p>Reboot builds upon Normalize, providing many HTML elements with somewhat opinionated styles using only element selectors. Additional styling is done only with classes. For example, we reboot some <code>&lt;table&gt;</code> styles for a simpler baseline and later provide <code>.table</code>, <code>.table-bordered</code>, and more.</p>
-
-<h2 id="contents">Contents</h2>
+            <h1 class="bd-title" id="content">Content</h1>
+            <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#approach" id="markdown-toc-approach">Approach</a></li>
-  <li><a href="#page-defaults" id="markdown-toc-page-defaults">Page defaults</a></li>
-  <li><a href="#headings-and-paragraphs" id="markdown-toc-headings-and-paragraphs">Headings and paragraphs</a></li>
-  <li><a href="#lists" id="markdown-toc-lists">Lists</a></li>
-  <li><a href="#preformatted-text" id="markdown-toc-preformatted-text">Preformatted text</a></li>
-  <li><a href="#tables" id="markdown-toc-tables">Tables</a></li>
-  <li><a href="#forms" id="markdown-toc-forms">Forms</a></li>
-  <li><a href="#misc-elements" id="markdown-toc-misc-elements">Misc elements</a>    <ul>
-      <li><a href="#address" id="markdown-toc-address">Address</a></li>
-      <li><a href="#blockquote" id="markdown-toc-blockquote">Blockquote</a></li>
-      <li><a href="#inline-elements" id="markdown-toc-inline-elements">Inline elements</a></li>
+  <li><a href="#about" id="markdown-toc-about">About</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
+      <li><a href="#standard" id="markdown-toc-standard">Standard</a></li>
+      <li><a href="#short-content" id="markdown-toc-short-content">Short Content</a></li>
+      <li><a href="#printing" id="markdown-toc-printing">Printing</a></li>
     </ul>
   </li>
 </ul>
 
-<h2 id="approach">Approach</h2>
+<h2 id="about">About</h2>
 
-<p>Here are our guidelines and reasons for choosing what to override in Reboot:</p>
+<p>The <em>Content</em> is a specific JCU component for the display and representation of
+the main section of information on a given page.  This is typically centric on
+details that are to be displayed to users, rather than to be interactive.</p>
 
-<ul>
-  <li>Update some browser default values to use <code>rem</code>s instead of <code>em</code>s for scalable component spacing.</li>
-  <li>Avoid <code>margin-top</code>. Vertical margins can collapse, yielding unexpected results. More importantly though, a single direction of <code>margin</code> is a simpler mental model.</li>
-  <li>For easier scaling across device sizes, block elements should use <code>rem</code>s for <code>margin</code>s.</li>
-  <li>Keep declarations of <code>font</code>-related properties to a minimum, using <code>inherit</code> whenever possible.</li>
-</ul>
+<h2 id="examples">Examples</h2>
 
-<h2 id="page-defaults">Page defaults</h2>
+<h3 id="standard">Standard</h3>
 
-<p>The <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> elements are updated to provide better page-wide defaults. More specifically:</p>
+<p>Define a <em>Content</em> element with <code>.jcu-content</code> and add anything you’d like to into
+it:</p>
 
-<ul>
-  <li>The <code>box-sizing</code> is globally set on every element—including <code>*:before</code> and <code>*:after</code>, to <code>border-box</code>. This ensures that the declared width of element is never exceeded due to padding or border.</li>
-  <li>A base <code>font-size: 16px</code> is declared on the <code>&lt;html&gt;</code> and <code>font-size: 1rem</code> on the <code>&lt;body&gt;</code> for easy responsive type-scaling via media queryies.</li>
-  <li>The <code>&lt;body&gt;</code> also sets a global <code>font-family</code> and <code>line-height</code>. This is inherited later by some form elements to prevent font inconsistencies.</li>
-  <li>For safety, the <code>&lt;body&gt;</code> has a declared <code>background-color</code>, defaulting to <code>#fff</code>.</li>
-</ul>
-
-<h2 id="headings-and-paragraphs">Headings and paragraphs</h2>
-
-<p>All heading elements—e.g., <code>&lt;h1&gt;</code>—and <code>&lt;p&gt;</code> are reset to have their <code>margin-top</code> removed. Headings have <code>margin-bottom: .5rem</code> added and paragraphs <code>margin-bottom: 1rem</code> for easy spacing.</p>
-
-<div class="bd-example">
-
-<h1 id="h1-heading">h1 heading</h1>
-<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-
-<h2 id="h2-heading">h2 heading</h2>
-<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-
-<h3 id="h3-heading">h3 heading</h3>
-<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-
-<h4 id="h4-heading">h4 heading</h4>
-<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-
-<h5 id="h5-heading">h5 heading</h5>
-<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-
-<h6 id="h6-heading">h6 heading</h6>
-<p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-
+<div class="bd-example" data-example-id="">
+<div class="jcu-content">
+  <p class="lead text-primary">
+    One of the world's leading institutions focusing on the tropics,
+    Australia's James Cook University is surrounded by the spectacular ecosystems of
+    the rainforests of the Wet tropics, the dry savannahs, and the iconic <a href="#">Great Barrier Reef</a>.
+  </p>
+  <h2>Born for the tropics</h2>
+  <p>
+    Ranked in the <a href="https://www.jcu.edu.au/world-rankings">top four
+    percent</a> of the world's tertiary institutions by the respected Academic
+    Ranking of World Universities produced by the Shanghai Jiao Tong University,
+    James Cook University is dedicated to creating a brighter future for life in the
+    tropics world-wide, through graduates and discoveries that make a
+    difference.
+  </p>
 </div>
-
-<h2 id="lists">Lists</h2>
-
-<p>All lists—<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;dl&gt;</code>—have their <code>margin-top</code> removed and a <code>margin-bottom: 1rem</code>. Nested lists have no <code>margin-bottom</code>.</p>
-
-<div class="bd-example">
-
-<ul>
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Integer molestie lorem at massa</li>
-  <li>Facilisis in pretium nisl aliquet</li>
-  <li>Nulla volutpat aliquam velit
-    <ul>
-      <li>Phasellus iaculis neque</li>
-      <li>Purus sodales ultricies</li>
-      <li>Vestibulum laoreet porttitor sem</li>
-      <li>Ac tristique libero volutpat at</li>
-    </ul>
-  </li>
-  <li>Faucibus porta lacus fringilla vel</li>
-  <li>Aenean sit amet erat nunc</li>
-  <li>Eget porttitor lorem</li>
-</ul>
-
-<ol>
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Integer molestie lorem at massa</li>
-  <li>Facilisis in pretium nisl aliquet</li>
-  <li>Nulla volutpat aliquam velit</li>
-  <li>Faucibus porta lacus fringilla vel</li>
-  <li>Aenean sit amet erat nunc</li>
-  <li>Eget porttitor lorem</li>
-</ol>
-
 </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead text-primary"</span><span class="nt">&gt;</span>
+    One of the world's leading institutions focusing on the tropics,
+    Australia's James Cook University is surrounded by the spectacular ecosystems of
+    the rainforests of the Wet tropics, the dry savannahs, and the iconic <span class="nt">&lt;a</span>
+    <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Great Barrier Reef<span class="nt">&lt;/a&gt;</span>.
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Born for the tropics<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    Ranked in the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.jcu.edu.au/world-rankings"</span><span class="nt">&gt;</span>top four
+    percent<span class="nt">&lt;/a&gt;</span> of the world's tertiary institutions by the respected Academic
+    Ranking of World Universities produced by the Shanghai Jiao Tong University,
+    James Cook University is dedicated to creating a brighter future for life in the
+    tropics world-wide, through graduates and discoveries that make a
+    difference.
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<p>For simpler styling, clear hierarchy, and better spacing, description lists have updated <code>margin</code>s. <code>&lt;dd&gt;</code>s reset <code>margin-left</code> to <code>0</code> and add <code>margin-bottom: .5rem</code>. <code>&lt;dt&gt;</code>s are <strong>bolded</strong>.</p>
+<h3 id="short-content">Short Content</h3>
 
-<div class="bd-example">
+<p>If you’re working on a page with a very short amount of content, and displaying
+an Exposition, you may need the <em>Content</em> component to cover a certain minimum
+height such that the final page looks correct.  To achieve this, add
+<code>.jcu-content--short-content</code>:</p>
 
-<dl>
-  <dt>Description lists</dt>
-  <dd>A description list is perfect for defining terms.</dd>
-  <dt>Euismod</dt>
-  <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
-  <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-  <dt>Malesuada porta</dt>
-  <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-</dl>
-
+<div class="bd-example" data-example-id="">
+<div class="jcu-content jcu-content--short-content">
+  <p>This is just one line of content.</p>
 </div>
-
-<h2 id="preformatted-text">Preformatted text</h2>
-
-<p>The <code>&lt;pre&gt;</code> element is reset to remove its <code>margin-top</code> and use <code>rem</code> units for its <code>margin-bottom</code>.</p>
-
-<div class="bd-example">
-
-<pre>
-.example-element {
-  margin-bottom: 1rem;
-}
-</pre>
-
 </div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-content jcu-content--short-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is just one line of content.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h2 id="tables">Tables</h2>
+<h3 id="printing">Printing</h3>
 
-<p>Tables are slightly adjusted to style <code>&lt;caption&gt;</code>s and ensure consistent <code>text-align</code> throughout. Additional changes for borders, padding, and more come with <a href="/content/tables/">the <code>.table</code> class</a>.</p>
+<p><em>Content</em> will automatically add the URL after any links within the content during
+printing.  For any absolute URLs (such as <code>https://jcu.io/web</code>), they will be
+written to the printed page as is.  For any relative URLs (such as
+<code>/web/framework.html</code> or <code>../framework.html</code>), they will be written as-is.
+Root-relative URLs can be prefixed for easier understanding by using CSS code
+such as this, adjusting the prefix to fit your system:</p>
 
-<div class="bd-example">
-  <table>
-    <caption>
-      This is an example table, and this is its caption to describe the contents.
-    </caption>
-    <thead>
-      <tr>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.jcu-content</span> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="err">"</span><span class="o">/</span><span class="err">"</span><span class="o">]</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">" (https://www.jcu.edu.au"</span> <span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="s1">") "</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
 
-<h2 id="forms">Forms</h2>
-
-<p>Various form elements have been rebooted for simpler base styles. Here are some of the most notable changes:</p>
-
-<ul>
-  <li><code>&lt;fieldset&gt;</code>s have no borders, padding, or margin so they can be easily used as wrappers for individual inputs or groups of inputs.</li>
-  <li><code>&lt;legend&gt;</code>s, like fieldsets, have also been restyled to be displayed as a heading of sorts.</li>
-  <li><code>&lt;label&gt;</code>s are set to <code>display: inline-block</code> to allow <code>margin</code> to be applied.</li>
-  <li><code>&lt;input&gt;</code>s, <code>&lt;selects&gt;</code>s, <code>&lt;textareas&gt;</code>s, and <code>&lt;buttons&gt;</code>s are mostly addressed by Normalize, but Reboot removes their <code>margin</code> and sets <code>line-height: inherit</code>, too.</li>
-  <li><code>&lt;textarea&gt;</code>s are modified to only be resizable vertically as horizontal resizing often “breaks” page layout.</li>
-</ul>
-
-<p>These changes, and more, are demonstrated below.</p>
-
-<form class="bd-example">
-  <fieldset>
-    <legend>Example legend</legend>
-
-    <p>
-      <label for="input">Example input</label>
-      <input type="text" id="input" placeholder="Example input" />
-    </p>
-
-    <p>
-      <label for="select">Example select</label>
-      <select id="select">
-        <option value="">Choose...</option>
-        <optgroup label="Option group 1">
-          <option value="">Option 1</option>
-          <option value="">Option 2</option>
-          <option value="">Option 3</option>
-        </optgroup>
-        <optgroup label="Option group 2">
-          <option value="">Option 4</option>
-          <option value="">Option 5</option>
-          <option value="">Option 6</option>
-        </optgroup>
-      </select>
-    </p>
-
-    <p>
-      <label>
-        <input type="checkbox" value="" />
-        Check this checkbox
-      </label>
-    </p>
-
-    <p>
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" />
-        Option one is this and that
-      </label>
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
-        Option two is something else that's also super long to demonstrate the wrapping of these fancy form controls.
-      </label>
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="" />
-        Option three is disabled
-      </label>
-    </p>
-
-    <p>
-      <label for="textarea">Example textarea</label>
-      <textarea id="textarea" rows="3"></textarea>
-    </p>
-
-    <p>
-      <label for="time">Example temporal</label>
-      <input type="datetime" id="time" />
-    </p>
-
-    <p>
-      <label for="output">Example output</label>
-      <output name="result" id="output">100</output>
-    </p>
-
-    <p>
-      <button type="submit">Button submit</button>
-      <input type="submit" value="Input submit button" />
-      <input type="button" value="Input button" />
-    </p>
-
-    <p>
-      <button type="submit" disabled="">Button submit</button>
-      <input type="submit" value="Input submit button" disabled="" />
-      <input type="button" value="Input button" disabled="" />
-    </p>
-  </fieldset>
-</form>
-
-<h2 id="misc-elements">Misc elements</h2>
-
-<h3 id="address">Address</h3>
-
-<p>The <code>&lt;address&gt;</code> element is updated to reset the browser default <code>font-style</code> from <code>italic</code> to <code>normal</code>. <code>line-height</code> is also now inherited, and <code>margin-bottom: 1rem</code> has been added. <code>&lt;address&gt;</code>s are for presenting contact information for the nearest ancestor (or an entire body of work). Preserve formatting by ending lines with <code>&lt;br&gt;</code>.</p>
-
-<div class="bd-example">
-  <address>
-    <strong>Twitter, Inc.</strong><br />
-    1355 Market St, Suite 900<br />
-    San Francisco, CA 94103<br />
-    <abbr title="Phone">P:</abbr> (123) 456-7890
-  </address>
-
-  <address>
-    <strong>Full Name</strong><br />
-    <a href="mailto:#">first.last@example.com</a>
-  </address>
-</div>
-
-<h3 id="blockquote">Blockquote</h3>
-
-<p>The default <code>margin</code> on blockquotes is <code>1em 40px</code>, so we reset that to <code>0 0 1rem</code> for something more consistent with other elements.</p>
-
-<div class="bd-example">
-  <blockquote class="blockquote">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-  </blockquote>
-</div>
-
-<h3 id="inline-elements">Inline elements</h3>
-
-<p>The <code>&lt;abbr&gt;</code> element receives basic styling to make it stand out amongst paragraph text.</p>
-
-<div class="bd-example">
-  Nulla <abbr title="attribute">attr</abbr> vitae elit libero, a pharetra augue.
-</div>
 
           </div>
         </div>
