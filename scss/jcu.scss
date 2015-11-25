@@ -135,7 +135,6 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 //
 // Layout: general modifiers to page layout and structure
 //
-
 body {
   @media print {
     background-color: transparent;
@@ -202,7 +201,6 @@ body {
   @include flex-items(flex-end);
 }
 
-// Print utilities
 .visible-print-flex {
   display: none !important;
 
@@ -215,7 +213,6 @@ body {
 //
 // Typography: customised text-centric components
 //
-
 .lead {
   margin-bottom: ($spacer-y * 2);
   line-height: 1.3;
@@ -268,7 +265,6 @@ abbr[title] {
 //
 // Dropdowns
 //
-
 .dropdown-menu {
   // Override default Bootstrap display: none so we have transitions
   display: block;
@@ -313,7 +309,6 @@ abbr[title] {
 //
 // Navs
 //
-
 .nav-tabs {
   .nav-link {
     border-top-right-radius: 1em;
@@ -359,7 +354,6 @@ abbr[title] {
 //
 // Navbar
 //
-
 // Add suitable padding to links inside navbars
 .navbar-nav .nav-link {
   padding: $jcu-navbar-nav-link-padding;
@@ -368,7 +362,6 @@ abbr[title] {
 //
 // Modal: popup dialog boxes
 //
-
 .modal-header {
   color: $modal-header-color;
   background-color: $modal-header-bg;
@@ -382,7 +375,6 @@ abbr[title] {
 //
 // Toolbar: global actions/links, fixed to the top of a site or application
 //
-
 .jcu-toolbar {
   padding: 0;
   font-size: $jcu-toolbar-font-size;
@@ -506,7 +498,6 @@ abbr[title] {
 //
 // Explorer: the primary branding and navigation header, featuring the JCU logo
 //
-
 @mixin jcu-explorer-gradient {
   background-color: nth($jcu-gradient-blue, 1);
   @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 175%);
@@ -677,7 +668,6 @@ abbr[title] {
 //
 // Accordion: a set of headings that reveal content upon interaction
 //
-
 .jcu-accordion {
   .card-block {
     background-color: $gray-lighter;
@@ -733,15 +723,7 @@ abbr[title] {
 }
 
 //
-// Custom: styles outside of Bootstrap
-//
-
-.input-sm {
-  line-height: 1;
-}
-
-//
-// Content: body content with features and styles befitting a CMS
+// Content: body content with features and styles befitting the CMS block
 //
 $jcu-content-bg-color: #fff;
 
@@ -896,7 +878,6 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 //
 // Exposition: the background that sets the scene
 //
-
 .jcu-exposition {
   position: absolute;
   top: 0;
@@ -918,7 +899,6 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 //
 // Section Navigator: sub-section links, menus and breadcrumbs
 //
-
 .jcu-section-navigator {
   // Calculate complete navbar height for use in positioning
   $jcu-section-navigator-height: (($font-size-xs * $line-height) + 2 * $jcu-navbar-nav-link-padding);
@@ -1020,7 +1000,6 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 //
 // Header: to be named better.  The background images displayed across pages
 //
-
 .jcu-header {
   height: $jcu-header-height;
   padding-top: $spacer;
@@ -1075,7 +1054,6 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 //
 // Cards: blocks of information; optionally interactive tiles
 //
-
 $card-overlay-font-color: #fff !default;
 $card-overlay-min-height: 6rem !default;
 
@@ -1131,7 +1109,6 @@ $card-overlay-min-height: 6rem !default;
 //
 // Theme: the various JCU theme colours
 //
-
 @mixin jcu-theme-headings($name, $color) {
   .jcu-theme--#{$name} {
     h2,
@@ -1155,7 +1132,6 @@ $card-overlay-min-height: 6rem !default;
 //
 // Colours were sourced from https://www.jcu.edu.sg/courses-and-study/courses
 // (September 2015)
-
 @mixin jcu-bg-variant($background-color) {
   $color: #fff;
   $text-shadow-color: $body-color;
@@ -1240,3 +1216,9 @@ $bg-gradients: (
   border-top-right-radius: 0;
 }
 
+//
+// Custom: non-component styles outside of Bootstrap
+//
+.input-sm {
+  line-height: 1;
+}
