@@ -763,6 +763,10 @@ $jcu-content-bg-color: #fff;
       font-size: 90%;
       content: " (" attr(href) ") ";
     }
+
+    a[href^="/"]:after {
+      content: " (https://www.jcu.edu.au" attr(href) ") ";
+    }
   }
 }
 
