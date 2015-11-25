@@ -11,8 +11,8 @@ group: jcu-customisations
 
 ## About
 
-The Explorer is the heading menu which allows visitors to interactively examine and
-jump to different areas of a site.
+The *Explorer* is the heading menu which allows visitors to interactively
+examine and jump to different areas of a site.
 
 ## Examples
 
