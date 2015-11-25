@@ -156,6 +156,10 @@ body {
     padding-top: $toolbar-explorer-offset;
   }
 
+  @media print {
+    padding-top: 0;
+  }
+
   .jcu-explorer__toggleable.in {
     height: calc(100vh - #{$toolbar-explorer-offset});
   }
@@ -1018,7 +1022,7 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
   }
 
   @media print {
-    height: auto;
+    height: auto !important;
     background-image: none !important;
   }
 
@@ -1054,6 +1058,7 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
     top: auto;
     color: $gray-dark;
     background-color: transparent;
+    font-size: $font-size-h1;
   }
 }
 
