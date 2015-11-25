@@ -6577,11 +6577,11 @@ abbr[title] {
   right: 1rem;
   font-family: "WebHostingHub-Glyphs";
   line-height: 1.75;
-  content: '\e39c';
+  content: "\e39c";
 }
 
 .jcu-accordion .card-header > a.collapsed::after {
-  content: '\e39d';
+  content: "\e39d";
 }
 
 .input-sm {
@@ -6606,6 +6606,9 @@ abbr[title] {
   .jcu-content a:visited:after {
     font-size: 90%;
     content: " (" attr(href) ") ";
+  }
+  .jcu-content a[href^="/"]:after {
+    content: " (https://www.jcu.edu.au" attr(href) ") ";
   }
 }
 
