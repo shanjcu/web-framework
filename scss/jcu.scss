@@ -502,9 +502,11 @@ abbr[title] {
 //
 // Explorer: the primary branding and navigation header, featuring the JCU logo
 //
+// Solution to http://sevenspark.com/diagnosis/submenus-hidden-in-internet-explorer-with-filter-gradient
 @mixin jcu-explorer-gradient {
   background-color: nth($jcu-gradient-blue, 1);
-  @include gradient-horizontal(nth($jcu-gradient-blue, 1), nth($jcu-gradient-blue, 2), $end-percent: 175%);
+  background-image: linear-gradient(to right, nth($jcu-gradient-blue, 1) 0%, nth($jcu-gradient-blue, 2) 175%);
+  background-repeat: repeat-x;
 }
 
 .navbar--jcu-explorer {
