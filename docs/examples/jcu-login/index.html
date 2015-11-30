@@ -1,1 +1,93 @@
-Login!
+<!-- All filepaths are relative for sub-folder serving on Bitbucket Server. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>JCU Web Framework: Signin Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/jcu.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="signin.css" rel="stylesheet">-->
+  </head>
+
+  <body>
+
+    <div class="container p-y-lg jcu-header jcu-bg--green-rainforest">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 p-y jcu-bg--black-75pc">
+          <div class="col-xs-6 text-left">
+            <img class="img-fluid" src="../../dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo">
+          </div>
+          <div class="col-xs-6 text-right">
+            <h1 class="text-inverse">Sign in</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container jcu-content">
+      <div class="row m-y">
+        <div class="col-md-6 col-md-offset-3">
+          <form class="m-y" action="#" method="post">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="sr-only" for="inputUsername">Username</label>
+                <input class="form-control form-control-lg" id="inputUsername" type="text" placeholder="Username" required autofocus>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input class="form-control form-control-lg" id="inputPassword" type="password" placeholder="Password" required>
+              </div>
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block m-y" type="submit">Sign in</button>
+
+            <div class="form-group text-center">
+              <a href="#">Forgot your password?</a>
+            </div>
+
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="warn-me"> Warn me before automatically logging into other sites
+                </label>
+              </div>
+            </div>
+          </form>
+
+          <div class="alert alert-warning" role="alert">
+            As a security precaution, please <strong>exit your web
+            browser</strong> when you have finished accessing services that
+            require authentication.
+          </div>
+
+        </div> <!-- /col-xs-6 -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+    <footer class="container jcu-footer">
+      <section class="row jcu-colophon">
+        <div class="container-fluid">
+          <ul class="list-inline">
+            <li>Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>
+            <li>ABN 46253211955</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+  </body>
+</html>
