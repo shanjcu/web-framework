@@ -206,6 +206,11 @@ otherwise can change significantly between versions.
 
        grunt jcu-publish
 
+   This may complain about uncommitted changes in the working directory, even if
+   there are none.  In this case, you can run the final commit manually:
+
+       grunt buildcontrol:pages
+
 ## Updating third-party components
 
 The JCU Web Framework is built upon several extra components that underpin
