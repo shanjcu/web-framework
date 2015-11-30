@@ -6026,6 +6026,12 @@ a.bg-danger:focus, a.bg-danger:hover {
   }
 }
 
+@media print {
+  .body--has-toolbar.body--has-explorer {
+    padding-top: 0;
+  }
+}
+
 .body--has-toolbar.body--has-explorer .jcu-explorer__toggleable.in {
   height: calc(100vh - 7.995rem);
 }
@@ -6106,9 +6112,18 @@ a.bg-danger:focus, a.bg-danger:hover {
   }
 }
 
+.img-fluid[src$=".svg"], .figure > img[src$=".svg"], .carousel-inner > .carousel-item > img[src$=".svg"],
+.carousel-inner > .carousel-item > a > img[src$=".svg"] {
+  height: 100%;
+}
+
 .lead {
   margin-bottom: 2rem;
   line-height: 1.3;
+}
+
+.text-inverse {
+  color: #f7f7f9;
 }
 
 .block--dotted {
@@ -6400,7 +6415,6 @@ abbr[title] {
     background-image: -webkit-linear-gradient(left, #2e3192 0%, #00bee4 175%);
     background-image:      -o-linear-gradient(left, #2e3192 0%, #00bee4 175%);
     background-image:         linear-gradient(to right, #2e3192 0%, #00bee4 175%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2E3192', endColorstr='#FF00BEE4', GradientType=1);
     background-repeat: repeat-x;
     border: 0 none;
     border-top-right-radius: 1.25rem;
@@ -6449,7 +6463,6 @@ abbr[title] {
   background-image: -webkit-linear-gradient(left, #2e3192 0%, #00bee4 175%);
   background-image:      -o-linear-gradient(left, #2e3192 0%, #00bee4 175%);
   background-image:         linear-gradient(to right, #2e3192 0%, #00bee4 175%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2E3192', endColorstr='#FF00BEE4', GradientType=1);
   background-repeat: repeat-x;
   border: 0 none;
   -webkit-transition-property: none;
@@ -6582,10 +6595,6 @@ abbr[title] {
 
 .jcu-accordion .card-header > a.collapsed::after {
   content: "\e39d";
-}
-
-.input-sm {
-  line-height: 1;
 }
 
 .jcu-content {
@@ -6856,35 +6865,29 @@ abbr[title] {
 }
 
 .jcu-header {
-  height: 17rem;
   padding-top: 1rem;
   background-position: center center;
   -webkit-background-size: cover;
           background-size: cover;
 }
 
-@media (max-width: 767px) {
-  .jcu-header {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
 @media print {
   .jcu-header {
-    height: auto;
+    height: auto !important;
     background-image: none !important;
   }
 }
 
-@media (max-width: 767px) {
-  .body--has-explorer .jcu-header {
-    height: 8.875rem;
-  }
+.jcu-header--lg {
+  height: 17rem;
 }
 
-.jcu-header--leaf-curl {
-  background-image: url("../images/leaf-curl.jpg");
+@media (max-width: 767px) {
+  .body--has-explorer .jcu-header--lg {
+    height: 8.875rem;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .jcu-header__page-title {
@@ -6908,6 +6911,7 @@ abbr[title] {
   .jcu-header__page-title {
     position: relative;
     top: auto;
+    font-size: 1.8rem;
     color: #2d2d2d;
     background-color: transparent;
   }
@@ -7527,6 +7531,158 @@ abbr[title] {
   background-repeat: repeat-x;
 }
 
+.jcu-bg--blue-buildings {
+  background-image: url("../images/backgrounds/BlueBuildings.jpg");
+}
+
+.jcu-bg--blue-fish {
+  background-image: url("../images/backgrounds/BlueFish.jpg");
+}
+
+.jcu-bg--blue-globe {
+  background-image: url("../images/backgrounds/BlueGlobe.jpg");
+}
+
+.jcu-bg--blue-molecules {
+  background-image: url("../images/backgrounds/BlueMolecules.jpg");
+}
+
+.jcu-bg--blue-purple-fibre-optic {
+  background-image: url("../images/backgrounds/BluePurpleFibreOptic.jpg");
+}
+
+.jcu-bg--blue-skyscraper {
+  background-image: url("../images/backgrounds/BlueSkyscraper.jpg");
+}
+
+.jcu-bg--fossil {
+  background-image: url("../images/backgrounds/BrownFossil.jpg");
+}
+
+.jcu-bg--brown-green-yellow-grass {
+  background-image: url("../images/backgrounds/BrownGreenYellowGrass.jpg");
+}
+
+.jcu-bg--brown-outback-road {
+  background-image: url("../images/backgrounds/BrownOutbackRoad.jpg");
+}
+
+.jcu-bg--didgeridoo {
+  background-image: url("../images/backgrounds/Didgeridoo.jpg");
+}
+
+.jcu-bg--eucalyptus-flower {
+  background-image: url("../images/backgrounds/EucalyptusFlower.jpg");
+}
+
+.jcu-bg--green-fern {
+  background-image: url("../images/backgrounds/GreenFern.jpg");
+}
+
+.jcu-bg--green-grass {
+  background-image: url("../images/backgrounds/GreenGrass.jpg");
+}
+
+.jcu-bg--green-leaf-swirl {
+  background-image: url("../images/backgrounds/GreenLeafSwirl.jpg");
+}
+
+.jcu-bg--green-rainforest {
+  background-image: url("../images/backgrounds/GreenRainforest.jpg");
+}
+
+.jcu-bg--green-outback {
+  background-image: url("../images/backgrounds/GreenOutback.jpg");
+}
+
+.jcu-bg--green-yellow-fibre-optic {
+  background-image: url("../images/backgrounds/GreenYellowFibreOptic.jpg");
+}
+
+.jcu-bg--iot-circuit-board {
+  background-image: url("../images/backgrounds/IOTCircuitBoard.jpg");
+}
+
+.jcu-bg--jigsaw {
+  background-image: url("../images/backgrounds/Jigsaw.jpg");
+}
+
+.jcu-bg--law-books {
+  background-image: url("../images/backgrounds/LawBooks.jpg");
+}
+
+.jcu-bg--multicolor-fibre-optic {
+  background-image: url("../images/backgrounds/MultiColourFibreOptic.jpg");
+}
+
+.jcu-bg--multicolor-fabric {
+  background-image: url("../images/backgrounds/MulticolouredFabric.jpg");
+}
+
+.jcu-bg--orange-flower {
+  background-image: url("../images/backgrounds/OrangeFlower.jpg");
+}
+
+.jcu-bg--pink-sunset {
+  background-image: url("../images/backgrounds/PinkSunset.jpg");
+}
+
+.jcu-bg--pink-waterdrops {
+  background-image: url("../images/backgrounds/PinkWaterdrops.jpg");
+}
+
+.jcu-bg--rv-james-kirby {
+  background-image: url("../images/backgrounds/RVJamesKirby.jpg");
+}
+
+.jcu-bg--red-blood-cells {
+  background-image: url("../images/backgrounds/RedBloodCells.jpg");
+}
+
+.jcu-bg--red-fibre-optic {
+  background-image: url("../images/backgrounds/RedFibreOptic.jpg");
+}
+
+.jcu-bg--red-flower {
+  background-image: url("../images/backgrounds/RedFlower.jpg");
+}
+
+.jcu-bg--red-sand {
+  background-image: url("../images/backgrounds/RedSand.jpg");
+}
+
+.jcu-bg--silver-gears {
+  background-image: url("../images/backgrounds/SilverGears.jpg");
+}
+
+.jcu-bg--sunset-windmill {
+  background-image: url("../images/backgrounds/SunsetWindmill.jpg");
+}
+
+.jcu-bg--tropics-map {
+  background-image: url("../images/backgrounds/TropicsMap.jpg");
+}
+
+.jcu-bg--turtle-and-reef {
+  background-image: url("../images/backgrounds/TurtleandReef.jpg");
+}
+
+.jcu-bg--vet-horses {
+  background-image: url("../images/backgrounds/VetHorses.jpg");
+}
+
+.jcu-bg--yellow-savannah {
+  background-image: url("../images/backgrounds/YellowSavannah.jpg");
+}
+
+.jcu-bg--yellow-shell {
+  background-image: url("../images/backgrounds/YellowShell.jpg");
+}
+
+.jcu-bg--yellow-sunflower {
+  background-image: url("../images/backgrounds/YellowSunflower.jpg");
+}
+
 .jcu-overlay {
   padding: .5rem .75rem;
   border-top-right-radius: 1.25rem;
@@ -7535,5 +7691,9 @@ abbr[title] {
 .jcu-overlay--plain {
   padding: .25rem;
   border-top-right-radius: 0;
+}
+
+.input-sm {
+  line-height: 1;
 }
 /*# sourceMappingURL=jcu.css.map */

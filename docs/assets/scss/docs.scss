@@ -107,12 +107,24 @@ $jcu-gradient-color: #fff;
 
 // Custom JCU docs styling
 .jcu-bg-examples {
-  background: url('../img/GreenLeafSwirl.jpg') top center / cover;
   padding: $spacer;
+  text-shadow: 0 0 2px #000, 0 0 0.3em #000;
 
   .jcu-overlay,
   *[class^='jcu-bg--'] {
     min-height: 3.5rem;
   }
+}
+
+.jcu-bg-examples--expanding {
+
+  *[class^='jcu-bg--'] {
+    transition: min-height 0.3s;
+  }
+
+  *[class^='jcu-bg--']:hover {
+    min-height: 15rem;
+  }
+
 }
 
