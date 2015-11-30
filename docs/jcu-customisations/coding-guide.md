@@ -45,4 +45,8 @@ to the standards set by this framework.
   * Note that BEM only applies if styling is DOM-dependent (eg heading or list
     is styled *because* it's within another class).
 
+* Internet Explorer's print layouts adhere to the `sm` sized media queries.  In
+  order to combat this, ensure print layouts are not affected (or specifically
+  excluded in the `@include media-breakpoint-down` queries).
+
 * Consistently name files: [suggestion coming]
