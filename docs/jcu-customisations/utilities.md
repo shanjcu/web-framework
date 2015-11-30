@@ -23,6 +23,14 @@ down while allowing for quick and easy development.
 </div>
 {% endexample %}
 
+## Text
+
+{% example html %}
+<div class="bg-inverse text-inverse">
+ <p>.text-inverse inverts text for dark backgrounds</p>
+</div>
+{% endexample %}
+
 ## Backgrounds
 
 You can use any of the following colours and opacities and mix them into any
@@ -42,7 +50,7 @@ documentation from Bootstrap.
 
 ### Complete palette
 
-<div class="row jcu-bg-examples jcu-bg--inverse">
+<div class="row jcu-bg-examples jcu-bg--green-leaf-swirl jcu-bg--inverse">
   <div class="col-xs-3">
     <div class="jcu-bg--pink-25pc">.jcu-bg--pink-25pc</div>
     <div class="jcu-bg--pink-50pc">.jcu-bg--pink-50pc</div>
@@ -157,32 +165,58 @@ At this stage, the gradient backgrounds do not feature transparencies for
 accessibility reasons.
 {% endcallout %}
 
-{% example html %}
-<div class="jcu-bg--gradient-blue">.jcu-bg--gradient-blue</div>
-<div class="jcu-bg--gradient-blue-reverse">.jcu-bg--gradient-blue-reverse</div>
-<div class="jcu-bg--gradient-orange">.jcu-bg--gradient-orange</div>
-<div class="jcu-bg--gradient-orange-reverse">.jcu-bg--gradient-orange-reverse</div>
-<div class="jcu-bg--gradient-green">.jcu-bg--gradient-green</div>
-<div class="jcu-bg--gradient-green-reverse">.jcu-bg--gradient-green-reverse</div>
-<div class="jcu-bg--gradient-red">.jcu-bg--gradient-red</div>
-<div class="jcu-bg--gradient-red-reverse">.jcu-bg--gradient-red-reverse</div>
-{% endexample %}
-
-### Inverting text
-
-Use the `.jcu-bg--inverse` class to invert the text colour within
-difficult-to-read overlays.
-
-<div class="jcu-bg-examples">
-  <div class="jcu-bg--white-50pc jcu-bg--inverse">
-    <h2>White, 50% opacity</h2>
-    <p>This uses the inverted text colour for readability.</p>
-  </div>
+<div class="jcu-bg-examples text-inverse">
+  <div class="jcu-bg--gradient-blue">.jcu-bg--gradient-blue</div>
+  <div class="jcu-bg--gradient-blue-reverse">.jcu-bg--gradient-blue-reverse</div>
+  <div class="jcu-bg--gradient-orange">.jcu-bg--gradient-orange</div>
+  <div class="jcu-bg--gradient-orange-reverse">.jcu-bg--gradient-orange-reverse</div>
+  <div class="jcu-bg--gradient-green">.jcu-bg--gradient-green</div>
+  <div class="jcu-bg--gradient-green-reverse">.jcu-bg--gradient-green-reverse</div>
+  <div class="jcu-bg--gradient-red">.jcu-bg--gradient-red</div>
+  <div class="jcu-bg--gradient-red-reverse">.jcu-bg--gradient-red-reverse</div>
 </div>
 
-{% highlight html %}
-<div class="jcu-bg--white-50pc jcu-bg--inverse">
-  <h2>White, 50% opacity</h2>
-  <p>This uses the inverted text colour for readability.</p>
+### Images
+
+There are a number of approved brand images that can be used as backgrounds as
+well.
+
+<div class="jcu-bg-examples jcu-bg-examples--expanding text-inverse">
+  <div class="jcu-bg--blue-buildings">.jcu-bg--blue-buildings</div>
+  <div class="jcu-bg--blue-fish">.jcu-bg--blue-fish</div>
+  <div class="jcu-bg--blue-globe">.jcu-bg--blue-globe</div>
+  <div class="jcu-bg--blue-purple-fibre-optic">.jcu-bg--blue-purple-fibre-optic</div>
+  <div class="jcu-bg--blue-skyscraper">.jcu-bg--blue-skyscraper</div>
+  <div class="jcu-bg--fossil">.jcu-bg--fossil</div>
+  <div class="jcu-bg--brown-green-yellow-grass">.jcu-bg--brown-green-yellow-grass</div>
+  <div class="jcu-bg--brown-outback-road">.jcu-bg--brown-outback-road</div>
+  <div class="jcu-bg--didgeridoo">.jcu-bg--didgeridoo</div>
+  <div class="jcu-bg--eucalyptus-flower">.jcu-bg--eucalyptus-flower</div>
+  <div class="jcu-bg--green-fern">.jcu-bg--green-fern</div>
+  <div class="jcu-bg--green-grass">.jcu-bg--green-grass</div>
+  <div class="jcu-bg--green-leaf-swirl">.jcu-bg--green-leaf-swirl</div>
+  <div class="jcu-bg--green-rainforest">.jcu-bg--green-rainforest</div>
+  <div class="jcu-bg--green-outback">.jcu-bg--green-outback</div>
+  <div class="jcu-bg--green-yellow-fibre-optic">.jcu-bg--green-yellow-fibre-optic</div>
+  <div class="jcu-bg--iot-circuit-board">.jcu-bg--iot-circuit-board</div>
+  <div class="jcu-bg--jigsaw">.jcu-bg--jigsaw</div>
+  <div class="jcu-bg--law-books">.jcu-bg--law-books</div>
+  <div class="jcu-bg--multicolor-fibre-optic">.jcu-bg--multicolor-fibre-optic</div>
+  <div class="jcu-bg--multicolor-fabric">.jcu-bg--multicolor-fabric</div>
+  <div class="jcu-bg--orange-flower">.jcu-bg--orange-flower</div>
+  <div class="jcu-bg--pink-sunset">.jcu-bg--pink-sunset</div>
+  <div class="jcu-bg--pink-waterdrops">.jcu-bg--pink-waterdrops</div>
+  <div class="jcu-bg--rv-james-kirby">.jcu-bg--rv-james-kirby</div>
+  <div class="jcu-bg--red-blood-cells">.jcu-bg--red-blood-cells</div>
+  <div class="jcu-bg--red-fibre-optic">.jcu-bg--red-fibre-optic</div>
+  <div class="jcu-bg--red-flower">.jcu-bg--red-flower</div>
+  <div class="jcu-bg--red-sand">.jcu-bg--red-sand</div>
+  <div class="jcu-bg--silver-gears">.jcu-bg--silver-gears</div>
+  <div class="jcu-bg--sunset-windmill">.jcu-bg--sunset-windmill</div>
+  <div class="jcu-bg--tropics-map">.jcu-bg--tropics-map</div>
+  <div class="jcu-bg--turtle-and-reef">.jcu-bg--turtle-and-reef</div>
+  <div class="jcu-bg--vet-horses">.jcu-bg--vet-horses</div>
+  <div class="jcu-bg--yellow-savannah">.jcu-bg--yellow-savannah</div>
+  <div class="jcu-bg--yellow-shell">.jcu-bg--yellow-shell</div>
+  <div class="jcu-bg--yellow-sunflower">.jcu-bg--yellow-sunflower</div>
 </div>
-{% endhighlight %}

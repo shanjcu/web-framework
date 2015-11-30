@@ -1,8 +1,0 @@
-.jcu-overlay-examples {
-  color: #fff;
-  background: url('images/leaf-curl.jpg') top center / cover;
-}
-
-.jcu-overlay-examples div[class^='overlay-'] {
-  height: 2.5rem;
-}

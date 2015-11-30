@@ -226,6 +226,10 @@ body {
   line-height: 1.3;
 }
 
+.text-inverse {
+  color: $gray-lightest;
+}
+
 .block--dotted {
   padding-top: $spacer-y;
   padding-bottom: $spacer-y;
@@ -1011,32 +1015,26 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 // Header: to be named better.  The background images displayed across pages
 //
 .jcu-header {
-  height: $jcu-header-height;
   padding-top: $spacer;
   background-position: center center;
   background-size: cover;
-
-  @include media-breakpoint-down(sm) {
-    padding-right: 0;
-    padding-left: 0;
-  }
 
   @media print {
     height: auto !important;
     background-image: none !important;
   }
+}
 
+.jcu-header--lg {
+  height: $jcu-header-height;
 }
 
 @include media-breakpoint-down(sm) {
-  .body--has-explorer .jcu-header {
+  .body--has-explorer .jcu-header--lg {
     height: $jcu-header-height-explorer-sm;
+    padding-right: 0;
+    padding-left: 0;
   }
-}
-
-// TODO: Add other background images here
-.jcu-header--leaf-curl {
-  background-image: url("../images/leaf-curl.jpg");
 }
 
 .jcu-header__page-title {
@@ -1213,6 +1211,123 @@ $bg-gradients: (
     @include gradient-horizontal(nth($gradient, 2), nth($gradient, 1));
   }
 }
+
+.jcu-bg--blue-buildings {
+   background-image: url("../images/backgrounds/BlueBuildings.jpg");
+}
+.jcu-bg--blue-fish {
+  background-image: url("../images/backgrounds/BlueFish.jpg");
+}
+.jcu-bg--blue-globe {
+  background-image: url("../images/backgrounds/BlueGlobe.jpg");
+}
+.jcu-bg--blue-molecules {
+  background-image: url("../images/backgrounds/BlueMolecules.jpg");
+}
+.jcu-bg--blue-purple-fibre-optic {
+  background-image: url("../images/backgrounds/BluePurpleFibreOptic.jpg");
+}
+.jcu-bg--blue-skyscraper {
+  background-image: url("../images/backgrounds/BlueSkyscraper.jpg");
+}
+.jcu-bg--fossil {
+  background-image: url("../images/backgrounds/BrownFossil.jpg");
+}
+.jcu-bg--brown-green-yellow-grass {
+  background-image: url("../images/backgrounds/BrownGreenYellowGrass.jpg");
+}
+.jcu-bg--brown-outback-road {
+  background-image: url("../images/backgrounds/BrownOutbackRoad.jpg");
+}
+.jcu-bg--didgeridoo {
+  background-image: url("../images/backgrounds/Didgeridoo.jpg");
+}
+.jcu-bg--eucalyptus-flower {
+  background-image: url("../images/backgrounds/EucalyptusFlower.jpg");
+}
+.jcu-bg--green-fern {
+  background-image: url("../images/backgrounds/GreenFern.jpg");
+}
+.jcu-bg--green-grass {
+  background-image: url("../images/backgrounds/GreenGrass.jpg");
+}
+.jcu-bg--green-leaf-swirl {
+  background-image: url("../images/backgrounds/GreenLeafSwirl.jpg");
+}
+.jcu-bg--green-rainforest {
+  background-image: url("../images/backgrounds/GreenRainforest.jpg");
+}
+.jcu-bg--green-outback {
+  background-image: url("../images/backgrounds/GreenOutback.jpg");
+}
+.jcu-bg--green-yellow-fibre-optic {
+  background-image: url("../images/backgrounds/GreenYellowFibreOptic.jpg");
+}
+.jcu-bg--iot-circuit-board {
+  background-image: url("../images/backgrounds/IOTCircuitBoard.jpg");
+}
+.jcu-bg--jigsaw {
+  background-image: url("../images/backgrounds/Jigsaw.jpg");
+}
+.jcu-bg--law-books {
+  background-image: url("../images/backgrounds/LawBooks.jpg");
+}
+.jcu-bg--multicolor-fibre-optic {
+  background-image: url("../images/backgrounds/MultiColourFibreOptic.jpg");
+}
+.jcu-bg--multicolor-fabric {
+  background-image: url("../images/backgrounds/MulticolouredFabric.jpg");
+}
+.jcu-bg--orange-flower {
+  background-image: url("../images/backgrounds/OrangeFlower.jpg");
+}
+.jcu-bg--pink-sunset {
+  background-image: url("../images/backgrounds/PinkSunset.jpg");
+}
+.jcu-bg--pink-waterdrops {
+  background-image: url("../images/backgrounds/PinkWaterdrops.jpg");
+}
+.jcu-bg--rv-james-kirby {
+  background-image: url("../images/backgrounds/RVJamesKirby.jpg");
+}
+.jcu-bg--red-blood-cells {
+  background-image: url("../images/backgrounds/RedBloodCells.jpg");
+}
+.jcu-bg--red-fibre-optic {
+  background-image: url("../images/backgrounds/RedFibreOptic.jpg");
+}
+.jcu-bg--red-flower {
+  background-image: url("../images/backgrounds/RedFlower.jpg");
+}
+.jcu-bg--red-sand {
+  background-image: url("../images/backgrounds/RedSand.jpg");
+}
+.jcu-bg--silver-gears {
+   background-image: url("../images/backgrounds/SilverGears.jpg");
+}
+.jcu-bg--sunset-windmill {
+   background-image: url("../images/backgrounds/SunsetWindmill.jpg");
+}
+.jcu-bg--tropics-map {
+   background-image: url("../images/backgrounds/TropicsMap.jpg");
+}
+.jcu-bg--turtle-and-reef {
+   background-image: url("../images/backgrounds/TurtleandReef.jpg");
+}
+.jcu-bg--vet-horses {
+   background-image: url("../images/backgrounds/VetHorses.jpg");
+}
+.jcu-bg--yellow-savannah {
+   background-image: url("../images/backgrounds/YellowSavannah.jpg");
+}
+.jcu-bg--yellow-shell {
+   background-image: url("../images/backgrounds/YellowShell.jpg");
+}
+.jcu-bg--yellow-sunflower {
+   background-image: url("../images/backgrounds/YellowSunflower.jpg");
+}
+
+
 
 //
 // Overlay: palette of semi-transparent colours used on Cards, etc
