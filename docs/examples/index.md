@@ -13,27 +13,21 @@ implementation of customisations and components.
 <div class="row bd-examples">
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-content-page/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-content-page/screenshot.jpg" alt="">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-content-page/screenshot.png" alt="">
     </a>
     <h4>Content page layout</h4>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-login/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-login/screenshot.png" alt="">
+    </a>
+    <h4>Login screen layout</h4>
   </div>
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-app/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app/screenshot.jpg" alt="">
     </a>
     <h4>App layout</h4>
-  </div>
-  <div class="col-xs-6 col-md-4">
-    <a href="{{ site.baseurl }}/examples/jcu-homepage/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-homepage/screenshot.jpg" alt="">
-    </a>
-    <h4>Homepage layout</h4>
-  </div>
-  <div class="col-xs-6 col-md-4">
-    <a href="{{ site.baseurl }}/examples/jcu-login/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-login/screenshot.jpg" alt="">
-    </a>
-    <h4>Login screen layout</h4>
   </div>
 </div>
 
