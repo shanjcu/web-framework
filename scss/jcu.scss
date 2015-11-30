@@ -922,6 +922,7 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 
   @media print {
     margin-top: 0;
+    display: block;
   }
 
   .dropdown-menu {
@@ -1005,6 +1006,10 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 
 .jcu-section-navigator__breadcrumb {
   background-color: #fff;
+
+  @media print {
+    display: block;
+  }
 }
 
 .breadcrumb {
