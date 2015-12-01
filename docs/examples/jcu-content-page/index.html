@@ -27,180 +27,183 @@
     </div>
     <header>
       <!-- Print features -->
-      <div class="container-fluid container-fluid--max-width container--no-gutter visible-print-flex flex-items-end">
-        <div class="col-xs-6 text-left">
-          <img src="../../dist/images/jcua-campus-stack-colour.svg" alt="JCU Campus Stack" />
-        </div>
-        <div class="col-xs-6 text-right">
-          <img src="../../dist/images/jcua-logo-colour.svg" alt="JCU Australia logo" />
+      <div class="container-fluid container-fluid--max-width visible-print-flex flex-items-end">
+        <div class="row">
+          <div class="col-xs-6 text-left">
+            <img src="../../dist/images/jcua-campus-stack-colour.svg" alt="JCU Campus Stack" />
+          </div>
+          <div class="col-xs-6 text-right">
+            <img src="../../dist/images/jcua-logo-colour.svg" alt="JCU Australia logo" />
+          </div>
         </div>
       </div>
       <!-- Toolbar -->
       <nav class="jcu-toolbar navbar navbar-dark bg-inverse navbar-fixed-top yamm" role="navigation">
-        <div class="container-fluid container-fluid--max-width container--no-gutter">
-          <form class="form-inline pull-right jcu-bg--gray hidden-sm-down" action="https://www.jcu.edu.au/search" method="get" role="search">
-            <input name="Search" value="Search" type="submit" hidden>
-            <label class="sr-only" for="jcu-search__query">Search</label>
-            <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
-            <select class="c-select" name="collection">
-              <option value="jcua-web" selected>Site</option>
-              <option value="jcua-courses">Courses</option>
-            </select>
-            <button class="btn btn-primary" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
-          </form>
-          <ul class="nav navbar-nav">
-            <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/students">Students</a>
-              <div class="dropdown-menu">
-                <div class="row jcu-toolbar__students flex-items-center">
-                  <div class="col-sm-3">
-                    <div class="card card-inverse">
-                      <a href="https://www.jcu.edu.au/students">
-                        <div class="col-xs-3">
-                          <span class="card-icon icon-grid"></span>
-                        </div>
-                        <div class="col-xs-9">
-                          <div class="card-title">Students Homepage</div>
-                          <div class="card-subtitle">Portal to access all online services</div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="card card-inverse">
-                      <a href="https://my.jcu.edu.au">
-                        <div class="col-xs-3">
-                          <span class="card-icon icon-email2"></span>
-                        </div>
-                        <div class="col-xs-9">
-                          <div class="card-title">Student Email</div>
-                          <div class="card-subtitle">Access your student email</div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="card card-inverse">
-                      <a href="https://learnjcu.jcu.edu.au">
-                        <div class="col-xs-3">
-                          <span class="card-icon icon-student"></span>
-                        </div>
-                        <div class="col-xs-9">
-                          <div class="card-title">LearnJCU</div>
-                          <div class="card-subtitle">
-                            Subject outlines and materials, assessment
-                            information, lecturer announcements
+        <div class="container-fluid container-fluid--max-width">
+          <div class="row">
+            <form class="form-inline pull-right jcu-bg--gray hidden-sm-down" action="https://www.jcu.edu.au/search" method="get" role="search">
+              <input name="Search" value="Search" type="submit" hidden>
+              <label class="sr-only" for="jcu-search__query">Search</label>
+              <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
+              <select class="c-select" name="collection">
+                <option value="jcua-web" selected>Site</option>
+                <option value="jcua-courses">Courses</option>
+              </select>
+              <button class="btn btn-primary" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
+            </form>
+            <ul class="nav navbar-nav">
+              <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
+                <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/students">Students</a>
+                <div class="dropdown-menu">
+                  <div class="row jcu-toolbar__students flex-items-center">
+                    <div class="col-sm-3">
+                      <div class="card card-inverse">
+                        <a href="https://www.jcu.edu.au/students">
+                          <div class="col-xs-3">
+                            <span class="card-icon icon-grid"></span>
                           </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="card card-inverse">
-                      <a href="https://secure.jcu.edu.au/eStudent/">
-                        <div class="col-xs-3">
-                          <span class="card-icon icon-contact"></span>
-                        </div>
-                        <div class="col-xs-9">
-                          <div class="card-title">eStudent</div>
-                          <div class="card-subtitle">
-                            Course applications, subject enrolment, finances,
-                            results and graduation
+                          <div class="col-xs-9">
+                            <div class="card-title">Students Homepage</div>
+                            <div class="card-subtitle">Portal to access all online services</div>
                           </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="card card-inverse">
-                      <a href="https://secure.jcu.edu.au/studentsonline">
-                        <div class="col-xs-3">
-                          <span class="card-icon icon-user"></span>
-                        </div>
-                        <div class="col-xs-9">
-                          <div class="card-title">Students Online</div>
-                          <div class="card-subtitle">
-                            Textbook lists, example timetables and printing
-                            payments
+                        </a>
+                      </div>
+                      <div class="card card-inverse">
+                        <a href="https://my.jcu.edu.au">
+                          <div class="col-xs-3">
+                            <span class="card-icon icon-email2"></span>
                           </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div><!-- /.col-sm-3 -->
-                  <div class="col-sm-9">
-                    <div class="row">
-                      <nav class="col-sm-4">
-                        <h1><a href="https://www.jcu.edu.au/students/enrolment">Enrolment and course planning</a></h1>
-                        <ul class="nav">
-                          <li><a href="https://www.jcu.edu.au/students/enrolment/re-enrol-online">Re-enrol</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/enrolment">Change your enrolment</a></li>
-                          <li><a href="https://www.jcu.edu.au/new-students">New students</a></li>
-                        </ul>
-                      </nav>
-                      <nav class="col-sm-4">
-                        <h1><a href="https://www.jcu.edu.au/students/fees-and-financial-support">Fees and financial assistance</a></h1>
-                        <ul class="nav">
-                          <li><a href="https://www.jcu.edu.au/students/fees-and-financial-support/undergraduate-subject-fees">Undergraduate fees</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/fees-and-financial-support/defer-your-fees">Defer your fees</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/fees-and-financial-support/financial-support">Financial support</a></li>
-                        </ul>
-                      </nav>
-                      <nav class="col-sm-4">
-                        <h1><a href="https://www.jcu.edu.au/students/important-dates">Timetable and important dates</a></h1>
-                        <ul class="nav">
-                          <li><a href="https://www.jcu.edu.au/lecture-timetables">Class timetables</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/important-dates">Important dates</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/exams-and-results/exam-timetables">Exam timetables</a></li>
-                        </ul>
-                      </nav>
-                    </div><!-- /.row -->
-                    <div class="row">
-                      <nav class="col-sm-4">
-                        <h1><a href="https://www.jcu.edu.au/students/exams-and-results">Assessment and results</a></h1>
-                        <ul class="nav">
-                          <li><a href="https://www.jcu.edu.au/students/exams-and-results">Exams</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/exams-and-results">Results</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/exams-and-results/academic-standards">Academic standards</a></li>
-                        </ul>
-                      </nav>
-                      <nav class="col-sm-4">
-                        <h1><a href="https://www.jcu.edu.au/students/support/study-smarter">Study smarter</a></h1>
-                        <ul class="nav">
-                          <li><a href="https://www.jcu.edu.au/students/learning-skills/workshops-and-short-courses">Workshops</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/learning-skills/learning-skills-online">Online resources</a></li>
-                          <li><a href="https://www.jcu.edu.au/students/learning-skills/student-mentor-program">Student mentor program</a></li>
-                        </ul>
-                      </nav>
-                      <nav class="col-sm-3">
-                        <h1><a href="https://www.jcu.edu.au/students/support/student-support">Student support services</a></h1>
-                        <ul class="nav">
-                          <li><a href="https://jcu.custhelp.com/">Ask Us</a></li>
-                          <li><a href="https://www.jcu.edu.au/accessability-services">AccessAbility</a></li>
-                          <li><a href="https://www.jcu.edu.au/counselling">Counselling</a></li>
-                        </ul>
-                      </nav>
-                    </div><!-- /.row -->
-                    <div class="row">
-                      <nav class="col-sm-4">
-                        <h1><a href="https://www.jcu.edu.au/graduation">Graduation and beyond</a></h1>
-                        <ul class="nav">
-                          <li><a href="https://www.jcu.edu.au/students/forms/online-graduation-application">Apply to graduate</a></li>
-                          <li><a href="https://www.jcu.edu.au/careers-and-employment">Careers and employment</a></li>
-                          <li><a href="https://alumni.jcu.edu.au/">Graduates and Alumni</a></li>
-                        </ul>
-                      </nav>
-                      <nav class="col-sm-4">
-                        <h1><a href="https://www.jcu.edu.au/off-campus-students">Off-campus students</a></h1>
-                        <ul class="nav">
-                        </ul>
-                      </nav>
-                      <nav class="col-sm-4">
-                        <h1><a href="https://www.jcu.edu.au/work-health-and-safety">Health and safety</a></h1>
-                        <ul class="nav">
-                          <li><a href="https://www.jcu.edu.au/work-health-and-safety/safe-work-and-study-@-jcu">Report an incident</a></li>
-                          <li><a href="https://www.jcu.edu.au/estate-directorate/campus-services/security/security-on-jcu-campuses-townsville-and-cairns">Contact security</a></li>
-                          <li><a href="https://www.jcu.edu.au/work-health-and-safety/safety/emergency">Emergencies</a></li>
-                        </ul>
-                      </nav>
-                    </div><!-- /.row -->
-                  </div><!-- /.col-sm-9 -->
-                </div><!-- /.row -->
-              </div><!-- /.dropdown-menu -->
-            </li>
-            <li class="nav-item dropdown dropdown--open-on-hover">
-              <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/staff">Staff</a>
+                          <div class="col-xs-9">
+                            <div class="card-title">Student Email</div>
+                            <div class="card-subtitle">Access your student email</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card card-inverse">
+                        <a href="https://learnjcu.jcu.edu.au">
+                          <div class="col-xs-3">
+                            <span class="card-icon icon-student"></span>
+                          </div>
+                          <div class="col-xs-9">
+                            <div class="card-title">LearnJCU</div>
+                            <div class="card-subtitle">
+                              Subject outlines and materials, assessment
+                              information, lecturer announcements
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card card-inverse">
+                        <a href="https://secure.jcu.edu.au/eStudent/">
+                          <div class="col-xs-3">
+                            <span class="card-icon icon-contact"></span>
+                          </div>
+                          <div class="col-xs-9">
+                            <div class="card-title">eStudent</div>
+                            <div class="card-subtitle">
+                              Course applications, subject enrolment, finances,
+                              results and graduation
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card card-inverse">
+                        <a href="https://secure.jcu.edu.au/studentsonline">
+                          <div class="col-xs-3">
+                            <span class="card-icon icon-user"></span>
+                          </div>
+                          <div class="col-xs-9">
+                            <div class="card-title">Students Online</div>
+                            <div class="card-subtitle">
+                              Textbook lists, example timetables and printing
+                              payments
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div><!-- /.col-sm-3 -->
+                    <div class="col-sm-9">
+                      <div class="row">
+                        <nav class="col-sm-4">
+                          <h1><a href="https://www.jcu.edu.au/students/enrolment">Enrolment and course planning</a></h1>
+                          <ul class="nav">
+                            <li><a href="https://www.jcu.edu.au/students/enrolment/re-enrol-online">Re-enrol</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/enrolment">Change your enrolment</a></li>
+                            <li><a href="https://www.jcu.edu.au/new-students">New students</a></li>
+                          </ul>
+                        </nav>
+                        <nav class="col-sm-4">
+                          <h1><a href="https://www.jcu.edu.au/students/fees-and-financial-support">Fees and financial assistance</a></h1>
+                          <ul class="nav">
+                            <li><a href="https://www.jcu.edu.au/students/fees-and-financial-support/undergraduate-subject-fees">Undergraduate fees</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/fees-and-financial-support/defer-your-fees">Defer your fees</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/fees-and-financial-support/financial-support">Financial support</a></li>
+                          </ul>
+                        </nav>
+                        <nav class="col-sm-4">
+                          <h1><a href="https://www.jcu.edu.au/students/important-dates">Timetable and important dates</a></h1>
+                          <ul class="nav">
+                            <li><a href="https://www.jcu.edu.au/lecture-timetables">Class timetables</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/important-dates">Important dates</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/exams-and-results/exam-timetables">Exam timetables</a></li>
+                          </ul>
+                        </nav>
+                      </div><!-- /.row -->
+                      <div class="row">
+                        <nav class="col-sm-4">
+                          <h1><a href="https://www.jcu.edu.au/students/exams-and-results">Assessment and results</a></h1>
+                          <ul class="nav">
+                            <li><a href="https://www.jcu.edu.au/students/exams-and-results">Exams</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/exams-and-results">Results</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/exams-and-results/academic-standards">Academic standards</a></li>
+                          </ul>
+                        </nav>
+                        <nav class="col-sm-4">
+                          <h1><a href="https://www.jcu.edu.au/students/support/study-smarter">Study smarter</a></h1>
+                          <ul class="nav">
+                            <li><a href="https://www.jcu.edu.au/students/learning-skills/workshops-and-short-courses">Workshops</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/learning-skills/learning-skills-online">Online resources</a></li>
+                            <li><a href="https://www.jcu.edu.au/students/learning-skills/student-mentor-program">Student mentor program</a></li>
+                          </ul>
+                        </nav>
+                        <nav class="col-sm-3">
+                          <h1><a href="https://www.jcu.edu.au/students/support/student-support">Student support services</a></h1>
+                          <ul class="nav">
+                            <li><a href="https://jcu.custhelp.com/">Ask Us</a></li>
+                            <li><a href="https://www.jcu.edu.au/accessability-services">AccessAbility</a></li>
+                            <li><a href="https://www.jcu.edu.au/counselling">Counselling</a></li>
+                          </ul>
+                        </nav>
+                      </div><!-- /.row -->
+                      <div class="row">
+                        <nav class="col-sm-4">
+                          <h1><a href="https://www.jcu.edu.au/graduation">Graduation and beyond</a></h1>
+                          <ul class="nav">
+                            <li><a href="https://www.jcu.edu.au/students/forms/online-graduation-application">Apply to graduate</a></li>
+                            <li><a href="https://www.jcu.edu.au/careers-and-employment">Careers and employment</a></li>
+                            <li><a href="https://alumni.jcu.edu.au/">Graduates and Alumni</a></li>
+                          </ul>
+                        </nav>
+                        <nav class="col-sm-4">
+                          <h1><a href="https://www.jcu.edu.au/off-campus-students">Off-campus students</a></h1>
+                          <ul class="nav">
+                          </ul>
+                        </nav>
+                        <nav class="col-sm-4">
+                          <h1><a href="https://www.jcu.edu.au/work-health-and-safety">Health and safety</a></h1>
+                          <ul class="nav">
+                            <li><a href="https://www.jcu.edu.au/work-health-and-safety/safe-work-and-study-@-jcu">Report an incident</a></li>
+                            <li><a href="https://www.jcu.edu.au/estate-directorate/campus-services/security/security-on-jcu-campuses-townsville-and-cairns">Contact security</a></li>
+                            <li><a href="https://www.jcu.edu.au/work-health-and-safety/safety/emergency">Emergencies</a></li>
+                          </ul>
+                        </nav>
+                      </div><!-- /.row -->
+                    </div><!-- /.col-sm-9 -->
+                  </div><!-- /.row -->
+                </div><!-- /.dropdown-menu -->
+              </li>
+              <li class="nav-item dropdown dropdown--open-on-hover">
+                <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/staff">Staff</a>
                 <div class="dropdown-menu col-xs-3">
                   <div class="card card-inverse">
                     <a href="https://www.jcu.edu.au/staff">
@@ -277,13 +280,14 @@
                   </div>
                 </div><!-- /.dropdown-menu -->
               </li>
-            <li class="nav-item"><a class="nav-link" href="https://alumni.jcu.edu.au">Alumni</a></li>
-            <div class="pull-right-md-up">
-              <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/library">Library</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://maps.jcu.edu.au/">Maps</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/jcu-contact-information">Contacts</a></li>
-            </div>
-          </ul>
+              <li class="nav-item"><a class="nav-link" href="https://alumni.jcu.edu.au">Alumni</a></li>
+              <div class="pull-right-md-up">
+                <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/library">Library</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://maps.jcu.edu.au/">Maps</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/jcu-contact-information">Contacts</a></li>
+              </div>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -361,7 +365,7 @@
 
                         <div class="input-group">
                           <label class="sr-only" for="jcu-search--course__query">Search</label>
-                          <input class="form-control form-control-sm" id="jcu-search--course__query" name="query" type="text" title="Search text" placeholder="Course name or keyword">
+                          <input class="form-control form-control-sm" id="jcu-search--course__query" name="query" type="text" title="Search text" placeholder="Course or keyword">
                           <span class="input-group-btn">
                             <button class="btn btn-primary btn-sm" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
                           </span>
@@ -422,7 +426,7 @@
 
                         <div class="input-group">
                           <label class="sr-only" for="jcu-search-course2__query">Search</label>
-                          <input class="form-control form-control-sm" id="jcu-search--course2__query" name="query" type="text" title="Search text" placeholder="Course name or keyword">
+                          <input class="form-control form-control-sm" id="jcu-search--course2__query" name="query" type="text" title="Search text" placeholder="Course or keyword">
                           <span class="input-group-btn">
                             <button class="btn btn-primary btn-sm" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
                           </span>
@@ -825,7 +829,7 @@
       </div>
 
       <section class="row jcu-colophon">
-        <div class="container-fluid">
+        <div class="col-xs-12">
           <ul class="list-inline">
             <li>Last published Sun, 20 Sep 2015 15:00</li>
             <li>Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>

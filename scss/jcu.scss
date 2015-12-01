@@ -175,11 +175,6 @@ body {
   position: relative;
 }
 
-// Fixed width container, no gutter
-.container--no-gutter {
-  @include make-container($gutter: 0);
-}
-
 // Only pull-right on medium-and-up displays
 @include media-breakpoint-up(md) {
   .pull-right-md-up {
