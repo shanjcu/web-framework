@@ -3496,7 +3496,7 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
-.navbar-brand {
+.navbar-brand, .jcu-brand {
   float: left;
   padding-top: .25rem;
   padding-bottom: .25rem;
@@ -3504,11 +3504,11 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
 }
 
-.navbar-brand:focus, .navbar-brand:hover {
+.navbar-brand:focus, .jcu-brand:focus, .navbar-brand:hover, .jcu-brand:hover {
   text-decoration: none;
 }
 
-.navbar-brand > img {
+.navbar-brand > img, .jcu-brand > img {
   display: block;
 }
 
@@ -3574,11 +3574,11 @@ input[type="button"].btn-block {
   margin-left: 1rem;
 }
 
-.navbar-light .navbar-brand {
+.navbar-light .navbar-brand, .navbar-light .jcu-brand {
   color: rgba(0, 0, 0, .8);
 }
 
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand:focus, .navbar-light .jcu-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .jcu-brand:hover {
   color: rgba(0, 0, 0, .8);
 }
 
@@ -3607,11 +3607,11 @@ input[type="button"].btn-block {
   background-color: rgba(0, 0, 0, .075);
 }
 
-.navbar-dark .navbar-brand {
+.navbar-dark .navbar-brand, .navbar-dark .jcu-brand {
   color: white;
 }
 
-.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+.navbar-dark .navbar-brand:focus, .navbar-dark .jcu-brand:focus, .navbar-dark .navbar-brand:hover, .navbar-dark .jcu-brand:hover {
   color: white;
 }
 
@@ -6044,19 +6044,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   position: relative;
 }
 
-.container--no-gutter {
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.container--no-gutter::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
 @media (min-width: 768px) {
   .pull-right-md-up {
     float: right !important;
@@ -6276,6 +6263,7 @@ abbr[title] {
 
 .jcu-toolbar .dropdown-menu {
   padding: 1rem;
+  margin-top: -2px;
   color: #fff;
 }
 
@@ -6399,7 +6387,7 @@ abbr[title] {
     padding: 0;
     border-bottom: 1px solid #06c;
   }
-  .navbar--jcu-explorer .navbar-brand {
+  .navbar--jcu-explorer .navbar-brand, .navbar--jcu-explorer .jcu-brand {
     margin-left: 1rem;
   }
   .navbar--jcu-explorer .navbar-toggler {
@@ -6421,7 +6409,7 @@ abbr[title] {
   }
 }
 
-.navbar--jcu-explorer .navbar-brand img {
+.navbar--jcu-explorer .navbar-brand img, .navbar--jcu-explorer .jcu-brand img {
   height: 4rem;
 }
 
@@ -6783,6 +6771,7 @@ abbr[title] {
 
 @media print {
   .jcu-section-navigator {
+    display: block;
     margin-top: 0;
   }
 }
@@ -6860,12 +6849,18 @@ abbr[title] {
   background-color: #fff;
 }
 
+@media print {
+  .jcu-section-navigator__breadcrumb {
+    display: block;
+  }
+}
+
 .breadcrumb {
   text-transform: uppercase;
 }
 
 .jcu-header {
-  padding-top: 1rem;
+  background-color: #2d2d2d;
   background-position: center center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -6878,12 +6873,50 @@ abbr[title] {
   }
 }
 
-.jcu-header--lg {
+.jcu-header--banner .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .jcu-header--banner {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 1rem;
+  }
+}
+
+.jcu-header--marketing {
   height: 17rem;
+  padding-top: 1rem;
+}
+
+.jcu-header--marketing .jcu-header__page-title {
+  position: absolute;
+  top: 11.9rem;
+  z-index: 990;
+  padding: .2em;
+  margin-left: 2rem;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+@media print {
+  .jcu-header--marketing .jcu-header__page-title {
+    position: relative;
+    top: auto;
+    background-color: transparent;
+  }
 }
 
 @media (max-width: 767px) {
-  .body--has-explorer .jcu-header--lg {
+  .body--has-explorer .jcu-header--marketing {
     height: 8.875rem;
     padding-right: 0;
     padding-left: 0;
@@ -6891,29 +6924,23 @@ abbr[title] {
 }
 
 .jcu-header__page-title {
-  position: absolute;
-  top: 11.9rem;
-  z-index: 990;
-  padding: .2em;
-  margin-left: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
-  background-color: rgba(0, 0, 0, .2);
+  text-shadow: 0 0 .5em #000;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .jcu-header__page-title {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 
 @media print {
   .jcu-header__page-title {
-    position: relative;
-    top: auto;
     font-size: 1.8rem;
     color: #2d2d2d;
-    background-color: transparent;
+    background-color: #fff;
   }
 }
 
