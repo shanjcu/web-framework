@@ -407,6 +407,7 @@ abbr[title] {
   }
 
   .dropdown-menu {
+    margin-top: -2px; // Avoid rounding issues with dropdown menus
     padding: $spacer;
     color: $jcu-dropdown-text-color;
 
