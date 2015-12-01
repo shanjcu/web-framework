@@ -1017,10 +1017,14 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 }
 
 //
-// Header: to be named better.  The background images displayed across pages
+// Header: upper portion of page layouts (branding, navigation, title)
 //
+.jcu-brand {
+  @extend .navbar-brand;
+}
+
 .jcu-header {
-  padding-top: $spacer;
+  background-color: $gray-dark;
   background-position: center center;
   background-size: cover;
 
@@ -1030,40 +1034,66 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
   }
 }
 
-.jcu-header--lg {
+// Banner-style contents are vertically centred & expand on larger displays
+.jcu-header--banner {
+  .row {
+    @include flex-items(center);
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: ($spacer-y * 3);
+    padding-bottom: ($spacer-y * 3);
+    margin-top: $spacer-y;
+  }
+}
+
+// Marketing-style headers are larger; commonly used on CMS-style pages
+.jcu-header--marketing {
   height: $jcu-header-height;
+  padding-top: $spacer;
+
+  .jcu-header__page-title {
+    position: absolute;
+    top: ($jcu-header-height * .7);
+    z-index: $jcu-base-zindex;
+    padding: 0.2em;
+    margin-left: $spacer-x * 2;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    @media print {
+      position: relative;
+      top: auto;
+      background-color: transparent;
+    }
+  }
 }
 
 @include media-breakpoint-down(sm) {
-  .body--has-explorer .jcu-header--lg {
+  .body--has-explorer .jcu-header--marketing {
     height: $jcu-header-height-explorer-sm;
     padding-right: 0;
     padding-left: 0;
   }
 }
 
+// Page title has responsive font sizing
 .jcu-header__page-title {
-  position: absolute;
-  top: ($jcu-header-height * .7);
-  z-index: $jcu-base-zindex;
-  padding: 0.2em;
-  margin-left: $spacer-x * 2;
+  font-size: $font-size-h3;
   font-weight: 600;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 0.5em #000;
 
-  @include media-breakpoint-down(sm) {
-    font-size: $font-size-h3;
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-h1;
   }
 
   @media print {
-    position: relative;
-    top: auto;
+    background-color: #fff;
     color: $gray-dark;
-    background-color: transparent;
     font-size: $font-size-h1;
   }
 }
+
 
 //
 // Cards: blocks of information; optionally interactive tiles
