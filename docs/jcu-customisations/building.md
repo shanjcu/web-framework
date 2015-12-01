@@ -206,8 +206,9 @@ otherwise can change significantly between versions.
 
        grunt jcu-publish
 
-   This may complain about uncommitted changes in the working directory, even if
-   there are none.  In this case, you can run the final commit manually:
+   If this happens to complain about uncommitted changes in the working
+   directory, even if there are none.  In this case, you can run the final commit
+   manually:
 
        grunt buildcontrol:pages
 
