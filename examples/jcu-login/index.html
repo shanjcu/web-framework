@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>JCU Web Framework: Signin Template</title>
+    <title>JCU Web Framework: Sign In Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/jcu.min.css" rel="stylesheet">
@@ -21,14 +21,20 @@
 
   <body>
 
-    <div class="container p-y-lg jcu-header jcu-bg--green-rainforest">
+    <div class="container jcu-header jcu-header--banner jcu-bg--green-rainforest">
       <div class="row">
         <div class="col-xs-12 col-md-8 col-md-offset-2 p-y jcu-bg--black-75pc">
-          <div class="col-xs-6 text-left">
-            <img class="img-fluid" src="../../dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo">
-          </div>
-          <div class="col-xs-6 text-right">
-            <h1 class="text-inverse">Sign in</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                <a href="https://www.jcu.edu.au">
+                  <img class="img-fluid" src="../../dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo">
+                </a>
+              </div>
+              <div class="col-xs-6 text-right">
+                <h1 class="jcu-header__page-title">Sign in</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +86,7 @@
 
     <footer class="container jcu-footer">
       <section class="row jcu-colophon">
-        <div class="container-fluid">
+        <div class="col-xs-12">
           <ul class="list-inline">
             <li>Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>
             <li>ABN 46253211955</li>
