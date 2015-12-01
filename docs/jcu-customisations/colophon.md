@@ -17,9 +17,9 @@ time and copyright information about current resource.
 ## Examples
 
 {% callout info %}
-**Heads up!** Examples provides may use `<section>` rather than `<div>` for
-semantic reasons. Use an appropriate HTML5 section element to suit your
-application and structure.
+**Heads up!** Examples provided in templates may use `<section>` rather than
+`<div>` for semantic reasons. Use an appropriate HTML5 section element to suit
+your application and structure.
 {% endcallout %}
 
 ### With publishing date

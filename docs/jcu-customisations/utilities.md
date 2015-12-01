@@ -79,6 +79,7 @@ documentation from Bootstrap.
     <div class="jcu-bg--orange-90pc">.jcu-bg---orange-90pc</div>
     <div class="jcu-bg--orange">.jcu-bg---orange</div>
   </div>
+  <div class="clearfix hidden-sm-up"></div>
   <div class="col-xs-3">
     <div class="jcu-bg--yellow-25pc">.jcu-bg---yellow-25pc</div>
     <div class="jcu-bg--yellow-50pc">.jcu-bg--yellow-50pc</div>
@@ -107,6 +108,7 @@ documentation from Bootstrap.
     <div class="jcu-bg--blue-light-90pc">.jcu-bg--blue-light-90pc</div>
     <div class="jcu-bg--blue-light">.jcu-bg--blue-light</div>
   </div>
+  <div class="clearfix hidden-sm-up"></div>
   <div class="col-xs-3">
     <div class="jcu-bg--blue-25pc">.jcu-bg--blue-25pc</div>
     <div class="jcu-bg--blue-50pc">.jcu-bg--blue-50pc</div>
@@ -135,6 +137,7 @@ documentation from Bootstrap.
     <div class="jcu-bg--gray-90pc">.jcu-bg--gray-90pc</div>
     <div class="jcu-bg--gray">.jcu-bg--gray</div>
   </div>
+  <div class="clearfix hidden-sm-up"></div>
   <div class="col-xs-3">
     <div class="jcu-bg--gray-light-25pc">.jcu-bg--gray-light-25pc</div>
     <div class="jcu-bg--gray-light-50pc">.jcu-bg--gray-light-50pc</div>
