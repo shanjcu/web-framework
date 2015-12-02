@@ -1,0 +1,117 @@
+
+// Global Bootstrap settings
+//$enable-flex:                  true; // See http://v4-alpha.getbootstrap.com/getting-started/flexbox/
+$enable-rounded:                 false; // Sharp pointy edges
+$enable-shadows:                 false; // TODO Consider re-enabling for theme
+//$enable-gradients:             true; // Has no effect at present in Bootstrap
+$enable-transitions:             true; // Fancy transitions for elements
+
+// JCU settings, defined for use within stock Bootstrap
+$jcu-semi-bold:                  600; // OpenSans has no 500 semi-bold
+
+// JCU styling for Bootstrap
+// The details as to where each aspect has come from are highlighted above each
+// setting
+
+// Colour scheme
+$gray-dark:                      #2d2d2d; //Approx 80% black
+$gray:                           #565656;
+$gray-light:                     #797979;
+$gray-lighter:                   #e7e7e7;
+$gray-lightest:                  #f7f7f9 !default;
+
+$brand-primary:                  #06c;    // From top-level search and buttons
+$brand-success:                  #429306; // Courses page
+$body-bg:                        $gray-lighter; // From #page-wrapper
+$body-color:                     $gray-dark; // TODO No style set, uses browser default
+$font-size-root:                 16px; // Not actually defined anywhere in theme
+$font-family-sans-serif:         "Open Sans", sans-serif; // From html, body
+
+// Grid settings
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1050px
+);
+
+// Typography styles
+// Not defined in original theme; approximately equal to defaults from Firefox
+$font-size-h1:                   1.8rem;
+$font-size-h2:                   1.5rem;
+$font-size-h3:                   1.2rem;
+$font-size-h4:                   1.2rem;
+$font-size-h5:                   .9rem;
+$font-size-h6:                   .7rem;
+
+$display1-weight:                400;
+$display2-weight:                400;
+$display3-weight:                400;
+$display4-weight:                400;
+
+$headings-margin-bottom:         1rem;
+$headings-font-weight:           $jcu-semi-bold; // OpenSans has no 500 semi-bold
+$lead-font-weight:               400;
+
+// From footer margins
+$grid-gutter-width:              1.25rem;
+
+// From .toolbarmenu*
+$dropdown-bg:                    #3f3f3f;
+$dropdown-border:                $dropdown-bg;
+$dropdown-fallback-border:       $dropdown-border;
+$dropdown-divider-bg:            #707070;
+$dropdown-link-color:            #fff;
+$dropdown-link-hover-color:      darken($dropdown-link-color, 5%);
+$dropdown-link-hover-bg:         lighten($dropdown-bg, 20%);
+$dropdown-header-color:          #ababab;
+
+$navbar-dark-color:              rgba(255,255,255,.8);
+$navbar-dark-hover-color:        rgba(255,255,255,.6);
+$navbar-dark-active-color:       rgba(255,255,255,1);
+$navbar-inverse-color:           $gray-dark;
+$navbar-inverse-toggle-hover-bg: $gray;
+$navbar-inverse-link-active-bg:  $gray;
+
+// From .tabs
+$nav-tabs-active-link-hover-color: #fff;
+$nav-tabs-active-link-hover-bg: $brand-primary;
+$nav-tabs-active-link-hover-border-color: $brand-primary;
+
+// From insidebreadcrumbs
+$breadcrumb-bg:                  $gray-lighter;
+$breadcrumb-padding-vertical:    .5rem;
+
+// From uber-accordion
+$card-cap-bg:                    $gray-dark;
+$card-cap-color:                 #fff;
+
+// Custom JCU settings
+$font-size-xxs: .65rem;
+$modal-header-color: #fff;
+$modal-header-bg: $gray-dark;
+$jcu-container-fluid-max-width: 1050px;
+$jcu-base-zindex: 990;
+
+$jcu-gradient-blue: rgb(46, 49, 146), rgb(0, 190, 228);
+$jcu-gradient-orange: rgb(233, 79, 53), rgb(255, 221, 0);
+$jcu-gradient-green: rgb(0, 166, 81), rgb(214, 224, 64);
+$jcu-gradient-red: rgb(157, 22, 25), rgb(236, 0, 140);
+
+$jcu-brand-inverse: #fff;
+$jcu-dropdown-text-color: #fff;
+$jcu-icon-font-family: "webhostinghub-glyphs";
+$jcu-icon-font-size: 1.5rem;
+$jcu-icon-font-size-lg: ($jcu-icon-font-size * 1.75);
+$jcu-navbar-nav-link-padding: .5rem;
+$jcu-fade-transition-speed: .3s;
+
+$jcu-toolbar-font-size: .85rem; //$font-size-sm
+$jcu-toolbar-line-height: 1.1;
+$jcu-toolbar-line-height-sm: 2.2;
+$jcu-exposition-max-height: 50rem;
+$jcu-exposition-zindex: -1000;
+$jcu-header-height: 17rem;
+$jcu-header-height-sm: 14rem;
+$jcu-page-title-zindex: 1010;
+$jcu-explorer-zindex: 1020;

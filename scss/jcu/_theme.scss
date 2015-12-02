@@ -1,0 +1,20 @@
+//
+// Theme: the various JCU theme colours
+//
+@mixin jcu-theme-headings($name, $color) {
+  .jcu-theme--#{$name} {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .lead {
+      color: $color;
+    }
+  }
+}
+
+@include jcu-theme-headings('blue', #339);
+@include jcu-theme-headings('orange', #f33);
+@include jcu-theme-headings('green', #096);
+@include jcu-theme-headings('red', #900);

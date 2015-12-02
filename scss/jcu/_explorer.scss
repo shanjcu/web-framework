@@ -1,0 +1,172 @@
+//
+// Explorer: the primary branding and navigation header, featuring the JCU logo
+//
+// Solution to http://sevenspark.com/diagnosis/submenus-hidden-in-internet-explorer-with-filter-gradient
+@mixin jcu-explorer-gradient {
+  background-color: nth($jcu-gradient-blue, 1);
+  background-image: linear-gradient(to right, nth($jcu-gradient-blue, 1) 0%, nth($jcu-gradient-blue, 2) 175%);
+  background-repeat: repeat-x;
+}
+
+.navbar--jcu-explorer {
+  $navbar-color: #fff;
+  $navbar-content-color: #000;
+  $navbar-interaction-color: $brand-primary;
+
+  z-index: $jcu-explorer-zindex;
+  padding-top: ($navbar-padding-vertical / 2);
+  padding-bottom: ($navbar-padding-vertical / 2);
+  background-color: $brand-primary;
+
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+    top: $jcu-toolbar-height-sm;
+    width: 100%;
+    padding: 0;
+    border-bottom: $border-width solid $brand-primary;
+
+    // Simulate navbar padding on smaller devices for a full-width navbar
+    .navbar-brand {
+      margin-left: $navbar-padding-horizontal;
+    }
+
+    .navbar-toggler {
+      margin-right: $navbar-padding-horizontal;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    // Padding is 0 so that dropdowns are flush
+    padding-bottom: 0;
+    border: 0 none;
+    border-top-right-radius: 1.25rem;
+    @include jcu-explorer-gradient;
+  }
+
+  .navbar-brand img {
+    height: 4rem;
+  }
+
+  // Larger device-centric display elements
+  .navbar-right {
+    // container-fluid padding-right is already half-gutter
+    margin-right: ($grid-gutter-width / 2);
+  }
+
+  .navbar-nav {
+    .nav-link {
+      padding: $spacer-y ($spacer-x * 1.5) ($spacer-y * 1.75);
+      margin-top: ($spacer-y * .75);
+      color: $navbar-color;
+      border-top-right-radius: 1.25em;
+
+      @include media-breakpoint-only(md) {
+        padding-right: ($spacer-x * 1.25);
+        padding-left: ($spacer-x * 1.25);
+      }
+    }
+
+    .nav-item + .nav-item {
+      margin-left: 0;
+    }
+  }
+
+  .nav-link:hover,
+  .nav-link:focus,
+  .dropdown:hover .nav-link {
+    color: $navbar-interaction-color;
+    background-color: $navbar-color;
+  }
+
+  .dropdown-menu {
+    padding-top: 0;
+    font-size: $font-size-sm;
+    color: $navbar-color;
+    border: 0 none;
+    transition-property: none;
+    @include jcu-explorer-gradient;
+  }
+
+  // Disable transitions for dropdowns
+  .dropdown--open-on-hover {
+    @include hover-focus {
+      > .dropdown-menu {
+        transition: none;
+      }
+    }
+  }
+
+  .yamm-content {
+    // Line up with nav gutter + navbar-padding
+    margin: 0 $navbar-padding-horizontal ($navbar-padding-vertical / 2);
+    color: $navbar-content-color;
+    background-color: $navbar-color;
+  }
+
+  .jcu-overlay-card {
+    max-height: 8rem;
+    overflow: hidden;
+  }
+
+  @at-root .jcu-explorer__tagline {
+    text-align: center;
+    a {
+      font-weight: bold;
+      color: $navbar-color;
+    }
+  }
+
+  // Smaller device-centric display elements
+  .navbar-toggler {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: $jcu-icon-font-size-lg;
+    line-height: $line-height;
+    color: $navbar-color;
+  }
+
+  @at-root .jcu-explorer__toggleable {
+    clear: both;
+    font-size: 1.5rem;
+
+    &.in {
+      height: calc(100vh - #{$jcu-explorer-height-sm});
+      overflow-y: auto;
+    }
+
+    .nav-link {
+      color: $navbar-color;
+      @include hover-focus {
+        color: $navbar-interaction-color;
+      }
+    }
+
+    .nav-item {
+      margin-top: 0;
+      border-bottom: $border-width solid $navbar-color;
+
+      &:last-child {
+        border-bottom: 0 none;
+      }
+    }
+
+    // Nested navs
+    .nav .nav {
+      padding-left: $navbar-padding-horizontal;
+      font-size: 1.2rem;
+      background-color: $gray-dark;
+
+      .nav-item {
+        margin-left: $navbar-padding-horizontal;
+        border-bottom-color: $gray-light;
+      }
+
+      .nav-link {
+        padding-left: ($navbar-padding-horizontal / 2);
+      }
+    }
+
+  }
+
+}
+

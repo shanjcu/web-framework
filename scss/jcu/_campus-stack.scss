@@ -1,0 +1,42 @@
+//
+// Campus Stack: stylised listing of University campuses
+//
+@mixin jcu-campus-stack($color) {
+  li {
+    border-color: $color;
+
+    &:first-child {
+      border-top: $border-width solid $color;
+    }
+
+    &:last-child {
+      border-bottom: $border-width solid $color;
+    }
+  }
+
+  a {
+    color: $color;
+  }
+}
+
+.jcu-campus-stack {
+  display: inline-block;
+  @include list-bordered(.25em);
+  @include jcu-campus-stack($gray-dark);
+
+  li {
+    padding-top: 0;
+  }
+
+}
+
+.jcu-campus-stack--color {
+  // Colour matches the JCU shield
+  @include jcu-campus-stack(#176fc1);
+}
+
+.jcu-campus-stack--inverse {
+  @include jcu-campus-stack($jcu-brand-inverse);
+}
+
+

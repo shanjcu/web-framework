@@ -1,0 +1,12 @@
+//
+// Modal: popup dialog boxes
+//
+.modal-header {
+  color: $modal-header-color;
+  background-color: $modal-header-bg;
+
+  .close {
+    color: $modal-header-color;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,213 @@
+//
+// Theme: the various JCU theme colours
+//
+@mixin jcu-theme-headings($name, $color) {
+  .jcu-theme--#{$name} {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .lead {
+      color: $color;
+    }
+  }
+}
+
+@include jcu-theme-headings('blue', #339);
+@include jcu-theme-headings('orange', #f33);
+@include jcu-theme-headings('green', #096);
+@include jcu-theme-headings('red', #900);
+
+//
+// Background: utilities for specifying backgrounds
+//
+// Colours were sourced from https://www.jcu.edu.sg/courses-and-study/courses
+// (September 2015)
+@mixin jcu-bg-variant($background-color) {
+  $color: #fff;
+  $text-shadow-color: $body-color;
+  @if lightness($background-color) > 70% {
+    $color: #000;
+    $text-shadow-color: #fff;
+  }
+  background-color: $background-color;
+  color: $color;
+  text-shadow: $text-shadow-color 0 0 .5em;
+}
+
+.jcu-overlay--inverse {
+  color: $body-color;
+  text-shadow: #fff 0 0 .5em;
+}
+
+$bg-opacities: 25, 50, 75, 90, 100;
+$bg-colors: (
+  'pink': rgb(236, 0, 140),
+  'red': rgb(227, 31, 38),
+  'red-dark': rgb(157, 22, 27),
+  'orange': rgb(247, 147, 30),
+  'yellow': rgb(253, 185, 19),
+  'green-light': rgb(214, 224, 64),
+  'green': rgb(13, 177, 75),
+  'blue-light': rgb(0, 190, 228),
+  'blue': rgb(0, 102, 179),
+  'blue-dark': rgb(46, 49, 146),
+  'black': rgb(0, 0, 0),
+  'gray': $gray,
+  'gray-light': $gray-light,
+  'gray-lighter': $gray-lighter,
+  'white': rgb(255, 255, 255)
+);
+
+.jcu-bg--transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@each $name, $color in $bg-colors {
+  @each $opacity in $bg-opacities {
+    $class-name: ".jcu-bg--#{$name}-#{$opacity}pc";
+    @if $opacity == 100 {
+      $class-name: ".jcu-bg--#{$name}";
+    }
+    #{$class-name} {
+      // #fff needs to be colour-specific
+      @include jcu-bg-variant(rgba($color, ($opacity / 100)));
+    }
+  }
+}
+
+$bg-gradients: (
+  'gradient-blue': $jcu-gradient-blue,
+  'gradient-orange': $jcu-gradient-orange,
+  'gradient-green': $jcu-gradient-green,
+  'gradient-red': $jcu-gradient-red
+);
+
+// TODO: this could be included as a 45 deg angle gradient
+// TODO: style guide says transparency should be at 90%
+@each $name, $gradient in $bg-gradients {
+  .jcu-bg--#{$name} {
+    @include gradient-horizontal(nth($gradient, 1), nth($gradient, 2));
+  }
+  .jcu-bg--#{$name}-reverse {
+    @include gradient-horizontal(nth($gradient, 2), nth($gradient, 1));
+  }
+}
+
+// Image paths are relative to the
+.jcu-bg--blue-buildings {
+   background-image: url("../images/backgrounds/BlueBuildings.jpg");
+}
+.jcu-bg--blue-fish {
+  background-image: url("../images/backgrounds/BlueFish.jpg");
+}
+.jcu-bg--blue-globe {
+  background-image: url("../images/backgrounds/BlueGlobe.jpg");
+}
+.jcu-bg--blue-molecules {
+  background-image: url("../images/backgrounds/BlueMolecules.jpg");
+}
+.jcu-bg--blue-purple-fibre-optic {
+  background-image: url("../images/backgrounds/BluePurpleFibreOptic.jpg");
+}
+.jcu-bg--blue-skyscraper {
+  background-image: url("../images/backgrounds/BlueSkyscraper.jpg");
+}
+.jcu-bg--fossil {
+  background-image: url("../images/backgrounds/BrownFossil.jpg");
+}
+.jcu-bg--brown-green-yellow-grass {
+  background-image: url("../images/backgrounds/BrownGreenYellowGrass.jpg");
+}
+.jcu-bg--brown-outback-road {
+  background-image: url("../images/backgrounds/BrownOutbackRoad.jpg");
+}
+.jcu-bg--didgeridoo {
+  background-image: url("../images/backgrounds/Didgeridoo.jpg");
+}
+.jcu-bg--eucalyptus-flower {
+  background-image: url("../images/backgrounds/EucalyptusFlower.jpg");
+}
+.jcu-bg--green-fern {
+  background-image: url("../images/backgrounds/GreenFern.jpg");
+}
+.jcu-bg--green-grass {
+  background-image: url("../images/backgrounds/GreenGrass.jpg");
+}
+.jcu-bg--green-leaf-swirl {
+  background-image: url("../images/backgrounds/GreenLeafSwirl.jpg");
+}
+.jcu-bg--green-rainforest {
+  background-image: url("../images/backgrounds/GreenRainforest.jpg");
+}
+.jcu-bg--green-outback {
+  background-image: url("../images/backgrounds/GreenOutback.jpg");
+}
+.jcu-bg--green-yellow-fibre-optic {
+  background-image: url("../images/backgrounds/GreenYellowFibreOptic.jpg");
+}
+.jcu-bg--iot-circuit-board {
+  background-image: url("../images/backgrounds/IOTCircuitBoard.jpg");
+}
+.jcu-bg--jigsaw {
+  background-image: url("../images/backgrounds/Jigsaw.jpg");
+}
+.jcu-bg--law-books {
+  background-image: url("../images/backgrounds/LawBooks.jpg");
+}
+.jcu-bg--multicolor-fibre-optic {
+  background-image: url("../images/backgrounds/MultiColourFibreOptic.jpg");
+}
+.jcu-bg--multicolor-fabric {
+  background-image: url("../images/backgrounds/MulticolouredFabric.jpg");
+}
+.jcu-bg--orange-flower {
+  background-image: url("../images/backgrounds/OrangeFlower.jpg");
+}
+.jcu-bg--pink-sunset {
+  background-image: url("../images/backgrounds/PinkSunset.jpg");
+}
+.jcu-bg--pink-waterdrops {
+  background-image: url("../images/backgrounds/PinkWaterdrops.jpg");
+}
+.jcu-bg--rv-james-kirby {
+  background-image: url("../images/backgrounds/RVJamesKirby.jpg");
+}
+.jcu-bg--red-blood-cells {
+  background-image: url("../images/backgrounds/RedBloodCells.jpg");
+}
+.jcu-bg--red-fibre-optic {
+  background-image: url("../images/backgrounds/RedFibreOptic.jpg");
+}
+.jcu-bg--red-flower {
+  background-image: url("../images/backgrounds/RedFlower.jpg");
+}
+.jcu-bg--red-sand {
+  background-image: url("../images/backgrounds/RedSand.jpg");
+}
+.jcu-bg--silver-gears {
+   background-image: url("../images/backgrounds/SilverGears.jpg");
+}
+.jcu-bg--sunset-windmill {
+   background-image: url("../images/backgrounds/SunsetWindmill.jpg");
+}
+.jcu-bg--tropics-map {
+   background-image: url("../images/backgrounds/TropicsMap.jpg");
+}
+.jcu-bg--turtle-and-reef {
+   background-image: url("../images/backgrounds/TurtleandReef.jpg");
+}
+.jcu-bg--vet-horses {
+   background-image: url("../images/backgrounds/VetHorses.jpg");
+}
+.jcu-bg--yellow-savannah {
+   background-image: url("../images/backgrounds/YellowSavannah.jpg");
+}
+.jcu-bg--yellow-shell {
+   background-image: url("../images/backgrounds/YellowShell.jpg");
+}
+.jcu-bg--yellow-sunflower {
+   background-image: url("../images/backgrounds/YellowSunflower.jpg");
+}
+

@@ -1,0 +1,66 @@
+//
+// Footer: jump lists, navigation, and end-of-page matter
+//
+$jcu-footer-text-color: $body-color;
+$jcu-footer-border-color: $jcu-footer-text-color;
+$jcu-footer-border: $border-width dotted $jcu-footer-border-color;
+
+.jcu-footer {
+  font-size: $font-size-sm;
+  background-color: $gray-lighter;
+
+  h1 {
+    padding-top: ($spacer / 2);
+    padding-bottom: ($spacer / 2);
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom: $jcu-footer-border;
+  }
+
+}
+
+.jcu-footer__social-legal {
+  padding-top: ($spacer-y / 2);
+  padding-bottom: ($spacer-y / 2);
+  border-top: $jcu-footer-border;
+  border-bottom: $jcu-footer-border;
+
+  a {
+    font-weight: $jcu-semi-bold;
+  }
+
+  @at-root .jcu-footer__social {
+    @include list-unstyled;
+    margin-left: ($spacer-x / 2);
+    font-size: $jcu-icon-font-size-lg;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      font-size: $jcu-icon-font-size;
+      text-align: left;
+    }
+
+    > li {
+      display: inline-block;
+    }
+
+    a {
+      color: #4b4c4e;
+      @include hover-focus {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+  @at-root .jcu-footer__legal {
+    @extend .list-inline;
+
+    > li:not(:last-child)::after {
+      margin-left: $spacer-x;
+      content: "";
+      border-left: $border-width solid $gray-light;
+    }
+  }
+}
+
+
