@@ -10,7 +10,7 @@
 
 <title>
   
-    Content &middot; JCU Web Framework
+    Layout &middot; JCU Web Framework
   
 </title>
 
@@ -138,8 +138,10 @@
             
 
             
+              
+            
 
-            <li class="">
+            <li class="active bd-sidenav-active">
               <a href="/jcu-customisations/layout">
                 Layout
               </a>
@@ -281,10 +283,8 @@
             
 
             
-              
-            
 
-            <li class="active bd-sidenav-active">
+            <li class="">
               <a href="/jcu-customisations/header">
                 Header
               </a>
@@ -539,8 +539,10 @@
       
 
       
+        
+      
 
-      <div class="bd-toc-item ">
+      <div class="bd-toc-item active">
         
           <a class="bd-toc-link" href="/layout/overview">
         
@@ -1097,89 +1099,100 @@
 
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
-            <h1 class="bd-title" id="content">Content</h1>
-            <p><em>Header</em> is a specific JCU component for the display and representation of
-the upper portion of a given page or layout.  This is typically centric on
-branding, navigation, and titular details.</p>
+            <h1 class="bd-title" id="content">Layout</h1>
+            <p>In order to achieve the page layouts and designs, the framework implements
+several additional layout aspects.</p>
 
 <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
   <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
-      <li><a href="#standard" id="markdown-toc-standard">Standard</a></li>
-      <li><a href="#banner" id="markdown-toc-banner">Banner</a></li>
-      <li><a href="#marketing" id="markdown-toc-marketing">Marketing</a></li>
+      <li><a href="#maximum-width-fluid-container" id="markdown-toc-maximum-width-fluid-container">Maximum-width fluid container</a></li>
+      <li><a href="#flexbox" id="markdown-toc-flexbox">Flexbox</a></li>
+      <li><a href="#flexbox-and-print" id="markdown-toc-flexbox-and-print">Flexbox and print</a></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="examples">Examples</h2>
 
-<h3 id="standard">Standard</h3>
+<h3 id="maximum-width-fluid-container">Maximum-width fluid container</h3>
 
-<p>Define a <em>Header</em> element with <code>.jcu-header</code> and add anything you’d like to into
-it:</p>
-
-<div class="bd-example" data-example-id="">
-<div class="container jcu-header">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1 class="jcu-header__page-title">ResearchOnline@JCU</h1>
-    </div>
-  </div>
-</div>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container jcu-header"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"jcu-header__page-title"</span><span class="nt">&gt;</span>ResearchOnline@JCU<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-<h3 id="banner">Banner</h3>
-
-<p>A <em>banner</em> style header is primarily utilitarian in that it presents the brand
-and clearly identifies the page or site.  On larger displays, the banner will
-add a top margin and padding.</p>
-
-<p>This example shows adding a background image for additional context or vibrancy
-to a given site or page.</p>
+<p>This differs from a nested <code>.container</code> and <code>.container-fluid</code> approach as that
+results in just a fixed-width container at different breakpoints.  This is a
+fluid container that possesses a specific maximum width.</p>
 
 <div class="bd-example" data-example-id="">
-<div class="container jcu-header jcu-header--banner jcu-bg--blue-fish">
-  <div class="row jcu-bg--black-50pc">
-    <div class="col-xs-6 text-left">
-      <a class="jcu-brand" href="https://www.jcu.edu.au">
-        <img class="img-fluid" src="/dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo" />
-      </a>
-    </div>
-    <div class="col-xs-6 text-right">
-      <a href="#"><h1 class="jcu-header__page-title">Site title</h1></a>
-    </div>
-  </div>
+<div class="container-fluid container-fluid--max-width">
+  <p>This container is fluid, but only until the max-width limit.  You probably
+  won't see any effect in this example.</p>
 </div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container jcu-header jcu-header--banner jcu-bg--blue-fish"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row jcu-bg--black-50pc"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 text-left"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"jcu-brand"</span> <span class="na">href=</span><span class="s">"https://www.jcu.edu.au"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"img-fluid"</span> <span class="na">src=</span><span class="s">"/dist/images/jcua-logo-mono-reversed.svg"</span> <span class="na">alt=</span><span class="s">"JCU Australia logo"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 text-right"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;h1</span> <span class="na">class=</span><span class="s">"jcu-header__page-title"</span><span class="nt">&gt;</span>Site title<span class="nt">&lt;/h1&gt;&lt;/a&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid container-fluid--max-width"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This container is fluid, but only until the max-width limit.  You probably
+  won't see any effect in this example.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h3 id="marketing">Marketing</h3>
+<h3 id="flexbox">Flexbox</h3>
 
-<p>The <em>marketing</em> style header is utilised for content of such a nature - general
-information that users would utilise to form their opinion of our brand.</p>
+<p>Flexbox, or the Flexible Box Layout Module, is a method of positioning elements
+in horizontal or vertical stacks.  This positioning module resolves many issues
+around floating elements, absolute positioning and scripting hacks to achieve
+its results.  Browser support is <a href="http://caniuse.com/#search=flexbox">steadily
+increasing</a>, and in most cases, degrades
+reasonably well into older browsers.</p>
 
-<p>TODO: add details</p>
+<p>These convenience classes allow easy alignment of content, particularly within
+the grid system:</p>
+
+<div class="bd-example" data-example-id="">
+<div class="row flex-items-start">
+  <div class="col-xs-4 jcu-bg--black"><h1>Aligned</h1></div>
+  <div class="col-xs-4 jcu-bg--blue"><h3>to the</h3></div>
+  <div class="col-xs-4 jcu-bg--green"><h6>top</h6></div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row flex-items-start"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--black"</span><span class="nt">&gt;&lt;h1&gt;</span>Aligned<span class="nt">&lt;/h1&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--blue"</span><span class="nt">&gt;&lt;h3&gt;</span>to the<span class="nt">&lt;/h3&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--green"</span><span class="nt">&gt;&lt;h6&gt;</span>top<span class="nt">&lt;/h6&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<div class="row flex-items-center">
+  <div class="col-xs-4 jcu-bg--black"><h1>Containers</h1></div>
+  <div class="col-xs-4 jcu-bg--blue"><h3>are vertically</h3></div>
+  <div class="col-xs-4 jcu-bg--green"><h6>centred</h6></div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row flex-items-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--black"</span><span class="nt">&gt;&lt;h1&gt;</span>Containers<span class="nt">&lt;/h1&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--blue"</span><span class="nt">&gt;&lt;h3&gt;</span>are vertically<span class="nt">&lt;/h3&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--green"</span><span class="nt">&gt;&lt;h6&gt;</span>centred<span class="nt">&lt;/h6&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<div class="row flex-items-end">
+  <div class="col-xs-4 jcu-bg--black"><h1>Algined</h1></div>
+  <div class="col-xs-4 jcu-bg--blue"><h3>to the</h3></div>
+  <div class="col-xs-4 jcu-bg--green"><h6>bottom</h6></div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row flex-items-end"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--black"</span><span class="nt">&gt;&lt;h1&gt;</span>Algined<span class="nt">&lt;/h1&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--blue"</span><span class="nt">&gt;&lt;h3&gt;</span>to the<span class="nt">&lt;/h3&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-4 jcu-bg--green"</span><span class="nt">&gt;&lt;h6&gt;</span>bottom<span class="nt">&lt;/h6&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="flexbox-and-print">Flexbox and print</h3>
+
+<ul>
+  <li><code>.visible-print-flex</code> provides a useful class to hide an element from display
+on a screen, but set its display to be <code>flex</code> on print.  This is essentially
+the same as <code>.visible-print-block</code> from Bootstrap core, just for Flexbox
+instead.</li>
+</ul>
 
           </div>
         </div>

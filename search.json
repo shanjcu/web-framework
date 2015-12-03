@@ -97,14 +97,14 @@
         } ,
     
         {
-            "title" : "Card",
-            "url"   : "/jcu-customisations/card/",
+            "title" : "Cards",
+            "url"   : "/components/card/",
             "date"  : ""
         } ,
     
         {
-            "title" : "Cards",
-            "url"   : "/components/card/",
+            "title" : "Card",
+            "url"   : "/jcu-customisations/card/",
             "date"  : ""
         } ,
     
@@ -139,7 +139,7 @@
         } ,
     
         {
-            "title" : "Content",
+            "title" : "JCU Content",
             "url"   : "/jcu-customisations/content/",
             "date"  : ""
         } ,
@@ -175,6 +175,12 @@
         } ,
     
         {
+            "title" : "Exposition",
+            "url"   : "/jcu-customisations/exposition/",
+            "date"  : ""
+        } ,
+    
+        {
             "title" : "Figures",
             "url"   : "/content/figures/",
             "date"  : ""
@@ -183,6 +189,12 @@
         {
             "title" : "Flexbox",
             "url"   : "/getting-started/flexbox/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Footer",
+            "url"   : "/jcu-customisations/footer/",
             "date"  : ""
         } ,
     
@@ -279,6 +291,12 @@
         {
             "title" : "Labels",
             "url"   : "/components/label/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Layout",
+            "url"   : "/jcu-customisations/layout/",
             "date"  : ""
         } ,
     
@@ -403,6 +421,12 @@
         } ,
     
         {
+            "title" : "Section Navigator",
+            "url"   : "/jcu-customisations/section-navigator/",
+            "date"  : ""
+        } ,
+    
+        {
             "title" : "Styling for JCU",
             "url"   : "/jcu-customisations/styling/",
             "date"  : ""
@@ -417,6 +441,12 @@
         {
             "title" : "Team",
             "url"   : "/about/team/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Themes",
+            "url"   : "/jcu-customisations/themes/",
             "date"  : ""
         } ,
     
@@ -458,13 +488,13 @@
     
         {
             "title" : "Utility classes",
-            "url"   : "/components/utilities/",
+            "url"   : "/jcu-customisations/utilities/",
             "date"  : ""
         } ,
     
         {
             "title" : "Utility classes",
-            "url"   : "/jcu-customisations/utilities/",
+            "url"   : "/components/utilities/",
             "date"  : ""
         } ,
     

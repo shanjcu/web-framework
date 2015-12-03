@@ -49,10 +49,10 @@
     <loc>https://web.jcu.io/jcu-customisations/campus-stack/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/card/</loc>
+    <loc>https://web.jcu.io/components/card/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/components/card/</loc>
+    <loc>https://web.jcu.io/jcu-customisations/card/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/carousel/</loc>
@@ -88,10 +88,16 @@
     <loc>https://web.jcu.io/jcu-customisations/explorer/</loc>
   </url>
   <url>
+    <loc>https://web.jcu.io/jcu-customisations/exposition/</loc>
+  </url>
+  <url>
     <loc>https://web.jcu.io/content/figures/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/getting-started/flexbox/</loc>
+  </url>
+  <url>
+    <loc>https://web.jcu.io/jcu-customisations/footer/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/forms/</loc>
@@ -140,6 +146,9 @@
   </url>
   <url>
     <loc>https://web.jcu.io/components/label/</loc>
+  </url>
+  <url>
+    <loc>https://web.jcu.io/jcu-customisations/layout/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/about/license/</loc>
@@ -196,6 +205,9 @@
     <loc>https://web.jcu.io/components/scrollspy/</loc>
   </url>
   <url>
+    <loc>https://web.jcu.io/jcu-customisations/section-navigator/</loc>
+  </url>
+  <url>
     <loc>https://web.jcu.io/jcu-customisations/styling/</loc>
   </url>
   <url>
@@ -203,6 +215,9 @@
   </url>
   <url>
     <loc>https://web.jcu.io/about/team/</loc>
+  </url>
+  <url>
+    <loc>https://web.jcu.io/jcu-customisations/themes/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/jcu-customisations/to-do/</loc>
@@ -223,10 +238,10 @@
     <loc>https://web.jcu.io/jcu-customisations/typography/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/components/utilities/</loc>
+    <loc>https://web.jcu.io/jcu-customisations/utilities/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/utilities/</loc>
+    <loc>https://web.jcu.io/components/utilities/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/navbar-top/index.html</loc>
