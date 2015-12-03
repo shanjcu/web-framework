@@ -1098,19 +1098,62 @@
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
             <h1 class="bd-title" id="content">Exposition</h1>
-            <p><em>Toolbar</em> is a is the top-level navigation bar that is fixed to the top of all
-CMS-style pages.</p>
+            <p><em>Exposition</em> sets the tone and describes the content or intent of the given page
+or site through background imagery.  It is designed to sit behind all other
+content on a page and typically used on a CMS-style pages.</p>
 
 <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
+      <li><a href="#worked-example" id="markdown-toc-worked-example">Worked example</a></li>
+    </ul>
+  </li>
+  <li><a href="#basic-demonstration" id="markdown-toc-basic-demonstration">Basic demonstration</a></li>
 </ul>
 
 <h2 id="examples">Examples</h2>
 
-<p>TODO Coming soon.</p>
+<h3 id="worked-example">Worked example</h3>
+
+<p>See the <a href="/examples/jcu-content-page/">Content Page example</a>
+for a fully-worked, living example.</p>
+
+<h2 id="basic-demonstration">Basic demonstration</h2>
+
+<p>This is a simple example of how this component can express the topic area and
+theme of the page.  By default, <em>Exposition</em> is positioned behind all other
+elements on a page using a negative <em>z-index</em>.</p>
+
+<style type="text/css">
+/* Workarounds for z-index not showing in examples */
+.bd-example .jcu-exposition {
+  z-index: 0;
+}
+.bd-example {
+  overflow: hidden;
+}
+</style>
+
+<div class="bd-example">
+  <div class="jcu-exposition hidden-print">
+    <img src="/dist/images/backgrounds/GreenLeafSwirl.jpg" alt="Leaf curl image" />
+  </div>
+  <div class="jcu-content col-xs-6 col-xs-offset-3">
+    <h1>This text sits atop the Exposition</h1>
+    <p>This is content.</p>
+  </div>
+</div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-exposition hidden-print"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/dist/images/backgrounds/GreenLeafSwirl.jpg"</span> <span class="na">alt=</span><span class="s">"Leaf curl image"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jcu-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>This text sits atop the Exposition<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is content.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
 
           </div>
         </div>
