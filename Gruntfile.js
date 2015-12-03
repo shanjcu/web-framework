@@ -340,7 +340,7 @@ module.exports = function (grunt) {
       github: {
         options: {
           raw: 'github: true\n' +
-               'baseurl: /stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse'
+               'baseurl: ""'
         }
       }
     },
@@ -529,6 +529,6 @@ module.exports = function (grunt) {
   });
 
   // JCU custom tasks
-  // Publish: builds docs, runs Jekyll, and pushes onto Stash
+  // Publish: builds docs, runs Jekyll, and pushes onto Bitbucket Server
   grunt.registerTask('jcu-publish', ['dist', 'docs', 'jekyll:github', 'buildcontrol:pages']);
 };
