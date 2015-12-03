@@ -50,7 +50,7 @@ documentation from Bootstrap.
 
 ### Complete palette
 
-<div class="row jcu-bg-examples jcu-bg--green-leaf-swirl jcu-bg--inverse">
+<div class="row jcu-bg-examples jcu-bg--green-leaf-swirl">
   <div class="col-xs-3">
     <div class="jcu-bg--pink-25pc">.jcu-bg--pink-25pc</div>
     <div class="jcu-bg--pink-50pc">.jcu-bg--pink-50pc</div>
@@ -168,7 +168,7 @@ At this stage, the gradient backgrounds do not feature transparencies for
 accessibility reasons.
 {% endcallout %}
 
-<div class="jcu-bg-examples text-inverse">
+<div class="jcu-bg-examples jcu-bg-examples--inverse">
   <div class="jcu-bg--gradient-blue">.jcu-bg--gradient-blue</div>
   <div class="jcu-bg--gradient-blue-reverse">.jcu-bg--gradient-blue-reverse</div>
   <div class="jcu-bg--gradient-orange">.jcu-bg--gradient-orange</div>
@@ -184,7 +184,7 @@ accessibility reasons.
 There are a number of approved brand images that can be used as backgrounds as
 well.
 
-<div class="jcu-bg-examples jcu-bg-examples--expanding text-inverse">
+<div class="jcu-bg-examples jcu-bg-examples--expanding jcu-bg-examples--inverse">
   <div class="jcu-bg--blue-buildings">.jcu-bg--blue-buildings</div>
   <div class="jcu-bg--blue-fish">.jcu-bg--blue-fish</div>
   <div class="jcu-bg--blue-globe">.jcu-bg--blue-globe</div>

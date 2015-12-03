@@ -108,12 +108,16 @@ $jcu-gradient-color: #fff;
 // Custom JCU docs styling
 .jcu-bg-examples {
   padding: $spacer;
-  text-shadow: 0 0 2px #000, 0 0 .3em #000;
 
   .jcu-overlay,
   [class^='jcu-bg--'] {
     min-height: 3.5rem;
   }
+}
+
+.jcu-bg-examples--inverse {
+  color: #fff;
+  text-shadow: 0 0 2px #000, 0 0 .3em #000;
 }
 
 .jcu-bg-examples--expanding {
