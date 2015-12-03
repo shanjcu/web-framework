@@ -18,7 +18,7 @@ content on a page and typically used on a CMS-style pages.
 ### Worked example
 
 See the [Content Page example]({{ site.baseurl }}/examples/jcu-content-page/)
-for a fully-worked and living example of *Exposition*.
+for a fully-worked, living example.
 
 ## Basic demonstration
 
@@ -26,8 +26,8 @@ This is a simple example of how this component can express the topic area and
 theme of the page.  By default, *Exposition* is positioned behind all other
 elements on a page using a negative *z-index*.
 
-<style>
-// Workarounds for z-index not showing in examples
+<style type="text/css">
+/* Workarounds for z-index not showing in examples */
 .bd-example .jcu-exposition {
   z-index: 0;
 }
