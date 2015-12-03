@@ -1,23 +1,9 @@
 //
-// Theme: the various JCU theme colours
+// Fixes: resolve SVG scaling issue on IE and Edge
 //
-@mixin jcu-theme-headings($name, $color) {
-  .jcu-theme--#{$name} {
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .lead {
-      color: $color;
-    }
-  }
+.img-fluid[src$=".svg"] {
+  height: 100%;
 }
-
-@include jcu-theme-headings('blue', #339);
-@include jcu-theme-headings('orange', #f33);
-@include jcu-theme-headings('green', #096);
-@include jcu-theme-headings('red', #900);
 
 //
 // Background: utilities for specifying backgrounds

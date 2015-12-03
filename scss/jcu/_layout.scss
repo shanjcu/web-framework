@@ -7,30 +7,6 @@ body {
   }
 }
 
-.body--has-toolbar {
-  padding-top: $jcu-toolbar-height;
-
-  @media print {
-    padding-top: 0;
-  }
-}
-
-.body--has-toolbar.body--has-explorer {
-  $toolbar-explorer-offset: ($jcu-toolbar-height-sm + $jcu-explorer-height-sm);
-
-  @include media-breakpoint-down(sm) {
-    padding-top: $toolbar-explorer-offset;
-  }
-
-  @media print {
-    padding-top: 0;
-  }
-
-  .jcu-explorer__toggleable.in {
-    height: calc(100vh - #{$toolbar-explorer-offset});
-  }
-}
-
 // Fluid-width container, but only until max-width
 .container-fluid--max-width {
   max-width: $jcu-container-fluid-max-width;
@@ -73,8 +49,3 @@ body {
     display: flex !important;
   }
 }
-
-.img-fluid[src$=".svg"] {
-  height: 100%;
-}
-

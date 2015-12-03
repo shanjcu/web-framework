@@ -4,16 +4,14 @@ title: Campus Stack
 group: jcu-customisations
 ---
 
+*Campus Stack* is a simple component for visually listing the JCU campuses,
+and is featured in the Brand Manual.  Its primary purpose is to feature in the
+footer of the main website, but can be re-used if necessary.
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
-
-## About
-
-The Campus Stack is a simple component for visually listing the JCU campuses,
-and is featured in the Brand Manual.  Its primary purpose is to feature in the
-footer of the main website, but can be re-used if necessary.
 
 ## Examples
 

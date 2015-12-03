@@ -1,19 +1,18 @@
 ---
 layout: docs
-title: Content
+title: JCU Content
 group: jcu-customisations
 ---
+
+*Content* is a specific JCU component for the display and representation of
+the main section of information on a given page.  This is typically centric on
+details that are to be displayed to users, rather than to be interactive.
 
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## About
-
-The *Content* is a specific JCU component for the display and representation of
-the main section of information on a given page.  This is typically centric on
-details that are to be displayed to users, rather than to be interactive.
 
 ## Examples
 

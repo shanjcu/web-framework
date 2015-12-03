@@ -4,17 +4,15 @@ title: Accordion
 group: jcu-customisations
 ---
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
-
-## About
-
 This is a customisation of the standard Bootstrap
 [Collapse]({{ site.baseurl }}/components/collapse) component from its core, integrating
 brand-specific colours and animations.  Refer to the main documentation for full
 documentation and other types of collapsibles.
+
+## Contents
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
 
 ## Example
 

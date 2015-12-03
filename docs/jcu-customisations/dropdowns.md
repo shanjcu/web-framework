@@ -4,15 +4,13 @@ title: Dropdowns
 group: jcu-customisations
 ---
 
+These are minor customisations that can be applied to Bootstrap's
+[Dropdowns]({{ site.baseurl }}/components/dropdowns) to achieve various outcomes.
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
-
-## About
-
-These are minor customisations that can be applied to Bootstrap's
-[Dropdowns]({{ site.baseurl }}/components/dropdowns) to achieve various outcomes.
 
 ## Examples
 

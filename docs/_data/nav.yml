@@ -1,23 +1,32 @@
 - title: JCU Customisations
   pages:
     - title: Introduction
-    - title: Styling
+    - title: Application Theming
+    - title: Coding Guide
+    - title: Layout
     - title: Typography
+    - title: Themes
     - title: Iconography
-    - title: Campus Stack
-    - title: Content
-    - title: Header
-    - title: Explorer
-    - title: Colophon
+
     - title: Dropdowns
     - title: Navs
-    - title: Card
-    - title: Overlay
     - title: Accordion
+    - title: Overlay
+    - title: Card
     - title: Utilities
-    - title: Application Theming
+
+    - title: Campus Stack
+    - title: Header
+    - title: Exposition
+    - title: Toolbar
+    - title: Explorer
+    - title: Section Navigator
+    - title: Content
+    - title: Footer
+    - title: Colophon
+
+    - title: Styling
     - title: Building
-    - title: Coding Guide
     - title: To Do
 
 - title: Getting started

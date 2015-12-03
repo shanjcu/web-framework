@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: Explorer
+title: Section Navigator
 group: jcu-customisations
 ---
 
-*Explorer* is the heading menu which allows visitors to interactively
-examine and jump to different areas of a site.
+*Toolbar* is a is the top-level navigation bar that is fixed to the top of all
+CMS-style pages.
 
 ## Contents
 
@@ -14,4 +14,4 @@ examine and jump to different areas of a site.
 
 ## Examples
 
-Coming soon.
+TODO Coming soon.

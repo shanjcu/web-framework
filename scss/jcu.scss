@@ -1,6 +1,12 @@
+// Core variables, customise core theme
 @import "jcu/variables";
+
+// Extend basic theme
 @import "bootstrap";
 
+//
+// Bootstrap-dependant variables
+//
 // Master height calculations for fixed elements (Toolbar, Explorer)
 // Note that inconsistency in browser rounding may add/remove pixels
 $border-width-rem: ($border-width / $font-size-root) * 1rem;
@@ -10,24 +16,31 @@ $jcu-toolbar-height-sm: (($navbar-padding-vertical * 2) + ($jcu-toolbar-font-siz
 // Toggler height plus bottom border width
 $jcu-explorer-height-sm: (((.5rem + $border-width-rem) * 2 + $jcu-icon-font-size-lg * $line-height) + $border-width-rem);
 
+// Core CSS and layout
 @import "jcu/layout";
 @import "jcu/typography";
+@import "jcu/themes";
+
+// Generic components
 @import "jcu/dropdowns";
 @import "jcu/navs";
 @import "jcu/navbar";
 @import "jcu/modal";
+@import "jcu/accordion";
+@import "jcu/overlay";
+@import "jcu/card";
+@import "jcu/utility";
+
+// Parts of pages
+@import "jcu/campus-stack";
+@import "jcu/header";
+@import "jcu/exposition";
 @import "jcu/toolbar";
 @import "jcu/explorer";
-@import "jcu/accordion";
+@import "jcu/section-navigator";
 @import "jcu/content";
 @import "jcu/footer";
 @import "jcu/colophon";
-@import "jcu/campus-stack";
-@import "jcu/exposition";
-@import "jcu/section-navigator";
-@import "jcu/header";
-@import "jcu/cards";
-@import "jcu/utility";
 
 // Third party components
 @import "components/open-sans-fontface/open-sans.scss";

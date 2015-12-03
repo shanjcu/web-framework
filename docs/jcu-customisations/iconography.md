@@ -4,16 +4,14 @@ title: Iconography
 group: jcu-customisations
 ---
 
+Iconography is provided care of the [WebHostingHub
+Glyphs](http://www.webhostinghub.com/glyphs/) and full details can be found on
+their official documentation.
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
-
-## About
-
-Iconography is provided care of the [WebHostingHub
-Glyphs](http://www.webhostinghub.com/glyphs/) and full details can be found on
-their official documentation.
 
 ## Examples
 

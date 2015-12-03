@@ -4,6 +4,9 @@ title: To Do
 group: jcu-customisations
 ---
 
+This is a *living style guide* and as such will always be a work-in-progress.
+If you have suggestions, please get in touch.
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
@@ -16,6 +19,7 @@ group: jcu-customisations
   https://github.com/twbs/bootstrap/issues/17167)
 * Accordion example in docs uses old v3 Panels (see
   https://github.com/twbs/bootstrap/pull/17159)
+* abbr double-underline in Firefox: https://github.com/twbs/bootstrap/issues/16574
 
 ## To Do List
 
@@ -24,10 +28,6 @@ group: jcu-customisations
 
 * Store 'approved' brand images and supporting resources in a Git repository
   (ask Digital Media team)
-
-* Document these as components:
-
-  * jcu-content
 
 * Build process:
 
@@ -39,13 +39,10 @@ group: jcu-customisations
     * Ensure ARIA labels and standards are met by *all* examples.
     * Checker/linter: https://github.com/Khan/tota11y or Squiz's accessibility checker for webpages
 
-  * Workflow for converting vectorised content into raster on build (SVG ->
-    jpg/png).  This may not be possible given file formats (eg .ai etc)
+  * Workflow for converting content into SVG (or raster).
 
   * Workflow for removing certain components from the framework.  Perhaps just a
     have a bare-bones "JCU" framework for just the core components.
-
-* 
 
 ## To resolve
 
@@ -66,6 +63,3 @@ group: jcu-customisations
   Just get examples from http://v4-alpha.getbootstrap.com/examples/, which
   aren't compatible with v4 yet.
 
-## Bugs
-
-* abbr double-underline in Firefox: https://github.com/twbs/bootstrap/issues/16574

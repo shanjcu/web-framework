@@ -1,11 +1,10 @@
 ---
 layout: docs
-title: Explorer
+title: Footer
 group: jcu-customisations
 ---
 
-*Explorer* is the heading menu which allows visitors to interactively
-examine and jump to different areas of a site.
+*Footer* is a JCU specific component.
 
 ## Contents
 
@@ -14,4 +13,4 @@ examine and jump to different areas of a site.
 
 ## Examples
 
-Coming soon.
+TODO Coming soon.

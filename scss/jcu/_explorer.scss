@@ -1,6 +1,24 @@
 //
 // Explorer: the primary branding and navigation header, featuring the JCU logo
 //
+
+// Special offset and configuration for pages with both Toolbar and Explorer
+.body--has-toolbar.body--has-explorer {
+  $toolbar-explorer-offset: ($jcu-toolbar-height-sm + $jcu-explorer-height-sm);
+
+  @include media-breakpoint-down(sm) {
+    padding-top: $toolbar-explorer-offset;
+  }
+
+  @media print {
+    padding-top: 0;
+  }
+
+  .jcu-explorer__toggleable.in {
+    height: calc(100vh - #{$toolbar-explorer-offset});
+  }
+}
+
 // Solution to http://sevenspark.com/diagnosis/submenus-hidden-in-internet-explorer-with-filter-gradient
 @mixin jcu-explorer-gradient {
   background-color: nth($jcu-gradient-blue, 1);

@@ -4,15 +4,13 @@ title: Colophon
 group: jcu-customisations
 ---
 
+*Colophon*, as it is in publishing, is a way of conveying the publication
+date and time and copyright information about current resource.
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
-
-## About
-
-Colophon, as it is in publishing, is a way of conveying the publication date and
-time and copyright information about current resource.
 
 ## Examples
 

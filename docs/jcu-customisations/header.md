@@ -4,16 +4,14 @@ title: Content
 group: jcu-customisations
 ---
 
+*Header* is a specific JCU component for the display and representation of
+the upper portion of a given page or layout.  This is typically centric on
+branding, navigation, and titular details.
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
-
-## About
-
-The *Header* is a specific JCU component for the display and representation of
-the upper portion of a given page or layout.  This is typically centric on
-branding, navigation, and titular details.
 
 ## Examples
 
@@ -60,3 +58,5 @@ to a given site or page.
 
 The *marketing* style header is utilised for content of such a nature - general
 information that users would utilise to form their opinion of our brand.
+
+TODO: add details

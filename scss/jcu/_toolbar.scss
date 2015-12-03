@@ -1,6 +1,16 @@
 //
 // Toolbar: global actions/links, fixed to the top of a site or application
 //
+
+// Special offset for pages with the toolbar
+.body--has-toolbar {
+  padding-top: $jcu-toolbar-height;
+
+  @media print {
+    padding-top: 0;
+  }
+}
+
 .jcu-toolbar {
   padding: 0;
   font-size: $jcu-toolbar-font-size;
