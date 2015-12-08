@@ -29,7 +29,7 @@ for a fully-worked, living example.
 </style>
 
 {% example html %}
-<div class="jcu-section-navigator hidden-sm-down">
+<div class="jcu-section-navigator">
   <div class="container-fluid container-fluid--max-width hidden-print">
     <nav class="navbar navbar-dark bg-inverse">
       <ul class="nav navbar-nav">
