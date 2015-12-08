@@ -31,7 +31,7 @@ consistent across browsers.
 ## Theming an application
 
 See [Application
-Theming]({{ site.baseurl }}/jcu-customisations/application-theming.md) for
+Theming]({{ site.baseurl }}/jcu-customisations/application-theming) for
 details on how to apply these styles to your own projects.
 
 ## Extending or reusing
