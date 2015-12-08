@@ -14,6 +14,19 @@ These are minor customisations that can be applied to Bootstrap's
 
 ## Examples
 
+### YAMM
+
+[YAMM (Yet Another Megamenu)](https://github.com/geedmo/yamm3) for Bootstrap is
+a small add-on to the Bootstrap framework that adds the ability to use the
+standard grid layout without dropdown menus.
+
+For the most up-to-date examples, consult the [official YAMM
+documentation](https://geedmo.github.io/yamm3/).
+
+See the [Content Page example]({{ site.baseurl }}/examples/jcu-content-page/)
+for a fully-worked, living example in the context of this framework; the
+Students and Staff dropdown menus use YAMM.
+
 ### Open on Hover
 
 Add the `.dropdown--open-on-hover` class to any given `.dropdown` element and
@@ -56,3 +69,4 @@ Compare the two:
   </div>
 </div>
 {% endexample %}
+

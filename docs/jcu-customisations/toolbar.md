@@ -20,7 +20,8 @@ the key JCU systems, but can be re-purposed in other types of internal systems.
 ### Worked example
 
 See the [Content Page example]({{ site.baseurl }}/examples/jcu-content-page/)
-for a fully-worked, living example.
+for a fully-worked, living example. The toolbar uses the YAMM (Yet Another
+Megamenu) Bootstrap add-on to allow grid layouts within the dropdown menus.
 
 ### Basic example
 
