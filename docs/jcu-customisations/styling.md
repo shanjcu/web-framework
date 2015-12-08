@@ -53,13 +53,10 @@ issue at {{ site.repo }}.
   groupings.  It may look like a `<h1>` is out of place in some examples, but
   the sectioning ensures the context is correct.
 
-* The main drop-down menu for choosing what type of search to run was omitted
-  for simplicity. The main JCU search aggregates pages and courses, and the
-  course search only works once (the search page points to the jcua-web
-  collection anyway).
-
 * Multi-level dropdown menus were removed from Bootstrap for usability reasons
-  and this remains the case for this framework.
+  and this remains the case for this framework.  In cases where multi-level
+  menus might feel required, try simplifying the situation and thinking of
+  another way to get people to the pages or actions you want them to do.
 
 * Squiz uses its CMS metadata fields to control background images and colours on
   pages.  These then are translated into either inline styles on a rendered page.
