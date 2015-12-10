@@ -29,10 +29,14 @@ to the standards set by this framework.
 
   In order to test accessibility, we use a number of different tools:
 
+  * [tota11y](https://khan.github.io/tota11y/): in-browser testing of elements
+    within actual pages.  Follow the instructions on the project page to use
+    `tota11y` on live application or any other pages. `tota11y` is also included
+    on all documentation pages for additional testing—look for the glasses in the
+    bottom-left corner!
+
   * pa11y: command-line and server driven testing of a rendered pages.  This
     uses the HTML5 CodeSniffer.
-
-  * tota11y: in-browser testing of visual elements
 
 ### Coding guide
 
