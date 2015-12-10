@@ -40,9 +40,9 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 
   .jcu-header__page-title {
     position: absolute;
-    top: ($jcu-header-height * .7);
+    top: ($jcu-header-height * .65);
     z-index: $jcu-base-zindex;
-    padding: 0.2em;
+    padding: .4em;
     margin-left: $spacer-x * 2;
     background-color: rgba(0, 0, 0, .2);
 
