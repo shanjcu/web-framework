@@ -17,6 +17,12 @@
       @include plain-hover-focus {
         border-bottom: 0 none;
       }
+
+      &.disabled {
+        @include plain-hover-focus {
+          color: #999;
+        }
+      }
     }
   }
 }
@@ -28,6 +34,12 @@
 
     @include hover-focus {
       color: $navbar-dark-hover-color;
+    }
+
+    &.disabled {
+      @include plain-hover-focus {
+        color: #999;
+      }
     }
   }
 
