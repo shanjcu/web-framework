@@ -497,27 +497,27 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 h2, .h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 h3, .h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 h4, .h4 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 h5, .h5 {
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 h6, .h6 {
-  font-size: .7rem;
+  font-size: .9rem;
 }
 
 .lead {
@@ -3819,7 +3819,7 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb > .active {
-  color: #797979;
+  color: #565656;
 }
 
 .pagination {
@@ -6072,12 +6072,20 @@ abbr[title] {
   border-bottom: 0 none;
 }
 
+.nav-tabs.bg-inverse .nav-link.disabled, .nav-tabs.bg-inverse .nav-link.disabled:focus, .nav-tabs.bg-inverse .nav-link.disabled:hover {
+  color: #999;
+}
+
 .nav-dark .nav-link {
   color: rgba(255, 255, 255, .8);
 }
 
 .nav-dark .nav-link:focus, .nav-dark .nav-link:hover {
   color: rgba(255, 255, 255, .6);
+}
+
+.nav-dark .nav-link.disabled, .nav-dark .nav-link.disabled:focus, .nav-dark .nav-link.disabled:hover {
+  color: #999;
 }
 
 .nav-dark .nav-link.active, .nav-dark .nav-link.active:focus, .nav-dark .nav-link.active:hover,
@@ -6986,6 +6994,14 @@ abbr[title] {
   }
 }
 
+@media (min-width: 768px) {
+  .jcu-header--banner {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 1rem;
+  }
+}
+
 .jcu-header--banner .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6998,14 +7014,6 @@ abbr[title] {
           align-items: center;
 }
 
-@media (min-width: 768px) {
-  .jcu-header--banner {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin-top: 1rem;
-  }
-}
-
 .jcu-header--marketing {
   height: 17rem;
   padding-top: 1rem;
@@ -7013,9 +7021,9 @@ abbr[title] {
 
 .jcu-header--marketing .jcu-header__page-title {
   position: absolute;
-  top: 11.9rem;
+  top: 11.05rem;
   z-index: 990;
-  padding: .2em;
+  padding: .3em;
   margin-left: 2rem;
   background-color: rgba(0, 0, 0, .2);
 }
@@ -7037,21 +7045,21 @@ abbr[title] {
 }
 
 .jcu-header__page-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
-  text-shadow: 0 0 .5em #000;
+  text-shadow: 0 0 .5em #2d2d2d;
 }
 
 @media (min-width: 768px) {
   .jcu-header__page-title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
 @media print {
   .jcu-header__page-title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: #2d2d2d;
     background-color: #fff;
   }
