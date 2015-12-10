@@ -42,7 +42,7 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
     position: absolute;
     top: ($jcu-header-height * .65);
     z-index: $jcu-base-zindex;
-    padding: .4em;
+    padding: .3em;
     margin-left: $spacer-x * 2;
     background-color: rgba(0, 0, 0, .2);
 
@@ -67,7 +67,7 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
   color: #fff;
   font-size: $font-size-h3;
   font-weight: 600;
-  text-shadow: 0 0 .5em #000;
+  text-shadow: 0 0 .5em $gray-dark;
 
   @include media-breakpoint-up(md) {
     font-size: $font-size-h1;
