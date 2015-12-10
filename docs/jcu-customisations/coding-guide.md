@@ -18,35 +18,55 @@ to the standards set by this framework.
 
 ## Recommended practices
 
-* Follow the Code Guide for HTML and CSS standards: http://codeguide.co/
+### New technologies
 
 * Use http://caniuse.com to determine if a browser feature is widely available
   across user agents.
 
+### Accessibility
+
 * All templates must be accessible and pass standards Section 508 and WCAG2AA.
 
-* Name all components with a easily-identifiable and discussable name.  For
-  example, the ``Explorer`` component is the main page header menu.
+  In order to test accessibility, we use a number of different tools:
 
-* All custom variables and classes in code should follow Bootstrap's lead
-  and use American English (eg ``color`` over ``colour``).  This decision is
-  for consistency only when mixing stock and custom variables.  Comments and
-  content in pages should follow standard Australian English (``colour``).
+  * pa11y: command-line and server driven testing of a rendered pages.  This
+    uses the HTML5 CodeSniffer.
+
+  * tota11y: in-browser testing of visual elements
+
+### Coding guide
+
+* Follow the [Code Guide](http://codeguide.co) HTML and CSS standards; these
+  guidelines are what Bootstrap strives to abide by.  In terms of specific class
+  names, follow BEM (Block, Element, Modifier) semantic syntax, where possible.
+
+  * Note that BEM only applies if styling is DOM-dependent, for instance a
+    heading or list that is styled *because* it is within another class.
 
 * Use only CSS classes for selectors in styling; do not use IDs.  Note that this
   only applies to styling and does not apply JavaScript-based components that
   require IDs for operation.
 
-* Avoid all use of inline styles.  This is a framework and should provide
-  reusable classes.
 
-* Follow BEM (Block, Element, Modifier) semantic syntax, where possible.
+* All components are given names that describe their purpose, rather than being
+  arbitrary or specifically dictating their position.  This also has the added
+  benefit of making components easily identifiable and discussable.  For
+  example, the [Exposition]({{ site.baseurl }}/jcu-customisations/exposition)
+  component sets the theme for the page with a background image and the
+  [Explorer]({{ site.baseurl }}/jcu-customisations/explorer) component consists of
+  the way in which users can navigate and *explore* a content-rich site.
 
-  * Note that BEM only applies if styling is DOM-dependent (eg heading or list
-    is styled *because* it's within another class).
+* All custom variables and classes in code should follow Bootstrap's lead
+  and use American English (for example, ``color`` over ``colour``).  This
+  decision is for consistency when mixing stock and custom variables.  Comments
+  and content in documentation pages should follow standard Australian English
+  spelling and grammar (``colour``).
 
-* Internet Explorer's print layouts adhere to the `sm` sized media queries.  In
-  order to combat this, ensure print layouts are not affected (or specifically
-  excluded in the `@include media-breakpoint-down` queries).
+* Avoid all use of inline styles within the framework; reusable classes should
+  be provided instead.
 
 * Consistently name files: [suggestion coming]
+
+* Internet Explorer's print layouts for A4 adhere to `sm` (small) sized media
+  queries.  In order to combat this, ensure print layouts are not affected or
+  are specifically excluded in `@include media-breakpoint-down` styles.
