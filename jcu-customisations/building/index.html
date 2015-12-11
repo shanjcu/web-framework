@@ -1116,12 +1116,53 @@ on your system.</p>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#key-info" id="markdown-toc-key-info">Key info</a>    <ul>
+      <li><a href="#grunt-tasks" id="markdown-toc-grunt-tasks">Grunt tasks</a></li>
+      <li><a href="#repository-branches-and-structure" id="markdown-toc-repository-branches-and-structure">Repository branches and structure</a></li>
+    </ul>
+  </li>
   <li><a href="#getting-started" id="markdown-toc-getting-started">Getting started</a></li>
-  <li><a href="#grunt-tasks" id="markdown-toc-grunt-tasks">Grunt tasks</a></li>
-  <li><a href="#branches-and-structure" id="markdown-toc-branches-and-structure">Branches and structure</a></li>
-  <li><a href="#making-changes" id="markdown-toc-making-changes">Making changes</a></li>
+  <li><a href="#building-and-making-changes" id="markdown-toc-building-and-making-changes">Building and making changes</a></li>
   <li><a href="#updating-bootstrap-versions" id="markdown-toc-updating-bootstrap-versions">Updating Bootstrap versions</a></li>
   <li><a href="#updating-third-party-components" id="markdown-toc-updating-third-party-components">Updating third-party components</a></li>
+  <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a>    <ul>
+      <li><a href="#missing-files-and-submodules" id="markdown-toc-missing-files-and-submodules">Missing files and submodules</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="key-info">Key info</h2>
+
+<h3 id="grunt-tasks">Grunt tasks</h3>
+
+<p>Our Gruntfile adds the following commands and tasks:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>grunt jcu-publish</code></td>
+      <td>Builds all dist and docs CSS/JS/assets, builds documentation via Jekyll for hosting, and uploads to the <code>gh-pages</code> branch in the repo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All other tasks from the default Bootstrap
+<a href="/getting-started/build-tools#using-grunt">Gruntfile</a> are also available</p>
+
+<h3 id="repository-branches-and-structure">Repository branches and structure</h3>
+
+<ul>
+  <li>Latest stable version is always located in <code>jcu-master</code> branch</li>
+  <li>Development changes take place on the <code>jcu-develop</code> branch</li>
+  <li>Features and developments should branch off <code>jcu-develop</code></li>
+  <li>Versioning should follow <a href="http://semver.org">SemVer</a></li>
+  <li>Fixes can be made via pull request from other users to the <code>develop</code> branch</li>
 </ul>
 
 <h2 id="getting-started">Getting started</h2>
@@ -1177,39 +1218,7 @@ install the required gems in your system path.</p>
   </li>
 </ol>
 
-<h2 id="grunt-tasks">Grunt tasks</h2>
-
-<p>Our Gruntfile adds the following commands and tasks:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Task</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>grunt jcu-publish</code></td>
-      <td>Builds all dist and docs CSS/JS/assets, builds documentation via Jekyll for hosting, and uploads to the <code>gh-pages</code> branch in the repo.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>All other tasks from the default Bootstrap
-<a href="/getting-started/build-tools#using-grunt">Gruntfile</a> are also available</p>
-
-<h2 id="branches-and-structure">Branches and structure</h2>
-
-<ul>
-  <li>Latest stable version is always located in <code>jcu-master</code> branch</li>
-  <li>Development changes take place on the <code>jcu-develop</code> branch</li>
-  <li>Features and developments should branch off <code>jcu-develop</code></li>
-  <li>Versioning should follow SemVer</li>
-  <li>Fixes can be made via pull request from other users to the <code>develop</code> branch</li>
-</ul>
-
-<h2 id="making-changes">Making changes</h2>
+<h2 id="building-and-making-changes">Building and making changes</h2>
 
 <ol>
   <li>
@@ -1418,6 +1427,28 @@ and what effect it has.</p>
 
 <p>It’s rare that these components will need to be updated, though bug-fixes and
 new features may be introduced from time to time.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="missing-files-and-submodules">Missing files and submodules</h3>
+
+<p>If you’ve hit an error complaining about missing <code>components</code> files, then you
+likely didn’t recursively clone the repository initially.  The error will look
+like this:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Running <span class="s2">"sass:core"</span> <span class="o">(</span>sass<span class="o">)</span> task
+<span class="gp">&gt;&gt; </span>File to import not found or unreadable:
+<span class="gp">&gt;&gt; </span>components/open-sans-fontface/open-sans.scss
+<span class="gp">&gt;&gt; </span>Parent style sheet: /home/david/dev/jcu-web-framework/scss/jcu.scss
+<span class="gp">&gt;&gt;   </span>Line 46  Column 1  scss/jcu.scss
+Warning:  Use --force to <span class="k">continue</span>.
+
+Aborted due to warnings.</code></pre></div>
+
+<p>To fix this, <code>cd</code> into your repository directory and run the following:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git submodule update --init --recursive</code></pre></div>
+
 
           </div>
         </div>
