@@ -45,12 +45,12 @@
           <form class="m-y" action="#" method="post">
             <div class="form-group">
               <div class="form-group">
-                <label class="sr-only" for="inputUsername">Username</label>
-                <input class="form-control form-control-lg" id="inputUsername" type="text" placeholder="Username" required autofocus>
+                <label class="sr-only" for="inputUsername">Enter your username</label>
+                <input class="form-control form-control-lg" id="inputUsername" name="username" type="text" placeholder="Username" required autofocus>
               </div>
               <div class="form-group">
-                <label for="inputPassword" class="sr-only">Password</label>
-                <input class="form-control form-control-lg" id="inputPassword" type="password" placeholder="Password" required>
+                <label class="sr-only" for="inputPassword">Enter your password</label>
+                <input class="form-control form-control-lg" id="inputPassword" name="password" type="password" placeholder="Password" required>
               </div>
             </div>
 
@@ -62,13 +62,13 @@
 
             <div class="form-group">
               <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="remember-me"> Remember me
+                <label for="rememberMeInput">
+                  <input id="rememberMeInput" name="remember-me" type="checkbox" value="remember-me"> Remember me
                 </label>
               </div>
               <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="warn-me"> Warn me before automatically logging into other sites
+                <label for="warnMeInput">
+                  <input id="warnMeInput" name="warn-me" type="checkbox" value="warn-me"> Warn me before automatically logging into other sites
                 </label>
               </div>
             </div>
