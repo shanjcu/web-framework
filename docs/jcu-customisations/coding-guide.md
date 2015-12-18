@@ -20,8 +20,9 @@ to the standards set by this framework.
 
 ### New technologies
 
-* Use http://caniuse.com to determine if a browser feature is widely available
-  across user agents.
+* Use [Can I use](http://caniuse.com) to determine if a browser feature is
+  widely available across user agents and what, if any, workarounds are
+  available or caveats should be noted.
 
 ### Accessibility
 
@@ -35,8 +36,9 @@ to the standards set by this framework.
     on all documentation pages for additional testing—look for the glasses in the
     bottom-left corner!
 
-  * pa11y: command-line and server driven testing of a rendered pages.  This
-    uses the HTML5 CodeSniffer.
+  * [pa11y](http://pa11y.org): command-line and server driven testing of
+    rendered pages using a local browser instance.  This uses the HTML5
+    CodeSniffer and is capable of Section508 and WCAG2 testing.
 
 ### Coding guide
 
@@ -50,7 +52,6 @@ to the standards set by this framework.
 * Use only CSS classes for selectors in styling; do not use IDs.  Note that this
   only applies to styling and does not apply JavaScript-based components that
   require IDs for operation.
-
 
 * All components are given names that describe their purpose, rather than being
   arbitrary or specifically dictating their position.  This also has the added
