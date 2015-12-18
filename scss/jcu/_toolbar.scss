@@ -30,8 +30,21 @@
     }
 
     .c-select {
-      background-color: transparent;
+      background: none;
       border: 0 none;
+
+      option {
+        color: $gray-dark;
+      }
+
+      + .icon-chevrondown {
+        margin-left: -2rem;
+        pointer-events: none;
+
+        &::before {
+          vertical-align: sub;
+        }
+      }
     }
   }
 

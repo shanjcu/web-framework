@@ -52,6 +52,12 @@ Desktop](https://desktop.github.com/)) to help you manage the code.
        cd jcu-web-framework
        npm install
 
+   Optionally, if you'd like to carry out accessibility testing, install these
+   additional tools (noting that administrative or `sudo` access may be
+   required):
+
+       npm install -g pa11y phantomjs
+
 1. Your system may already have a Ruby environment configured. As such, it is
    easier and cleaner to have Bundler install its resources locally to the
    `jcu-web-framework` directory with:
