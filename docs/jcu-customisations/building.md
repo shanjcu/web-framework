@@ -42,44 +42,51 @@ Desktop](https://desktop.github.com/)) to help you manage the code.
    you clone the repository *recursively*, which ensures that third-party
    submodules are also obtained.  For those using a terminal, run:
 
-       git clone --recursive {{ site.repo }}
+   ```
+   git clone --recursive {{ site.repo }}
+   ```
 
 1. Ensure all of the [Build tools]({{ site.baseurl }}/getting-started/build-tools) needed
    are installed on your system.
 
 1. Install any Node.js dependencies with:
 
-       cd jcu-web-framework
-       npm install
+   ```
+   cd jcu-web-framework
+   npm install
+   ```
 
-   Optionally, if you'd like to carry out accessibility testing, install these
-   additional tools (noting that administrative or `sudo` access may be
-   required):
+   <a name="a11y-install"></a>Optionally, if you'd like to carry out
+   accessibility testing, install these additional tools (noting that
+   administrative or `sudo` access may be required):
 
-       npm install -g pa11y phantomjs
+   ```
+   npm install -g pa11y phantomjs
+   ```
 
 1. Your system may already have a Ruby environment configured. As such, it is
    easier and cleaner to have Bundler install its resources locally to the
    `jcu-web-framework` directory with:
 
-       bundle install --path vendor/bundle
+   ```
+   bundle install --path vendor/bundle
+   ```
 
    Once you've run this once, you don't need to specify the path if you re-run
    `bundle`.  If just run `bundle` or `bundle install`, Bundler will try and
    install the required gems in your system path.
 
-1. Now you're ready to build!
+1. Now you're ready to build and test!
 
 ## Grunt tasks
 
-Our Gruntfile adds the following commands and tasks:
+All tasks from the default Bootstrap
+[Gruntfile]({{ site.baseurl }}/getting-started/build-tools#using-grunt) are
+automatically available.  Our Gruntfile adds the following commands and tasks:
 
 | Task | Description |
 | --- | --- |
 | `grunt jcu-publish` | Builds all dist and docs CSS/JS/assets, builds documentation via Jekyll for hosting, and uploads to the `gh-pages` branch in the repo. |
-
-All other tasks from the default Bootstrap
-[Gruntfile]({{ site.baseurl }}/getting-started/build-tools#using-grunt) are also available
 
 ## Branches and structure
 
@@ -97,11 +104,15 @@ All other tasks from the default Bootstrap
 
 1. Test and build the framework (`dist`) and the documentation (`docs`):
 
-       grunt dist docs
+   ```
+   grunt dist docs
+   ```
 
    Once you've done this the first time, you can run:
 
-       grunt watch
+   ```
+   grunt watch
+   ```
 
    to continue watching for further changes.  This is a lot faster than having
    to re-run the above commands manually and particularly helpful if
@@ -109,9 +120,11 @@ All other tasks from the default Bootstrap
 
 1. Build and serve the documentation:
 
-       bundler exec jekyll serve
+   ```
+   bundler exec jekyll serve
+   ```
 
-1. Load and inspect the documentation at http://localhost:9001 in your browser.
+1. Load and inspect the documentation at <http://localhost:9001> in your browser.
    There are a number of JCU customisation pages, which you must add to or
    expand if you are adding a new web component.  There are a number of example
    layouts which are used by downstream web applications for theming; you can use
@@ -141,18 +154,24 @@ otherwise can change significantly between versions.
 1. Add the official Bootstrap repository as a remote called `upstream` in your
    cloned repository and fetch its contents.  For those using a terminal, run:
 
-       cd jcu-web-framework
-       git remote add upstream https://github.com/twbs/bootstrap.git
-       git fetch upstream
+   ```
+   cd jcu-web-framework
+   git remote add upstream https://github.com/twbs/bootstrap.git
+   git fetch upstream
+   ```
 
 1. Fetch the latest changes from the `upstream` remote.  In a terminal, this is:
 
-       git fetch upstream
+   ```
+   git fetch upstream
+   ```
 
 1. Determine the version you wish to update to and attempt the merge,
    substituting in your version number:
 
-       git merge v4.1.1
+   ```
+   git merge v4.1.1
+   ```
 
    The merge can be specified as anything that Git recognises as a reference; in
    this case, we use a tag for a specific version, but can, if the need arises,
@@ -173,13 +192,17 @@ otherwise can change significantly between versions.
    For any files located in `dist/` or `docs/dist`, you can simply accept
    Bootstrap's version from the merge by using:
 
-       git reset path/to/file.css
-       git checkout --theirs path/to/file.css
+   ```
+   git reset path/to/file.css
+   git checkout --theirs path/to/file.css
+   ```
 
    To make this easier, you could leave all files you're planning to accept
    from core Bootstrap until the end of your merge and then use the command:
 
-       git checkout --theirs .
+   ```
+   git checkout --theirs .
+   ```
 
    at the top level directory.  Take care as this will overwrite any
    JCU-specific changes so make sure you don't run this until you're *absolutely
@@ -189,11 +212,12 @@ otherwise can change significantly between versions.
    to re-run the `npm` and `bundle` installation in case of any dependency
    changes.
 
-       npm install
-       bundle
-
-       grunt dist docs
-       bundler exec jekyll serve
+   ```
+   npm install
+   bundle
+   grunt dist docs
+   bundler exec jekyll serve
+   ```
 
    and load http://localhost:9001 in your browser.
 
@@ -210,13 +234,17 @@ otherwise can change significantly between versions.
 
 1. Rebuild the main documentation and push to the server in one go by running:
 
-       grunt jcu-publish
+   ```
+   grunt jcu-publish
+   ```
 
    If this happens to complain about uncommitted changes in the working
    directory, even if there are none.  In this case, you can run the final commit
    manually:
 
-       grunt buildcontrol:pages
+   ```
+   grunt buildcontrol:pages
+   ```
 
 ## Updating third-party components
 
@@ -232,28 +260,38 @@ those using a terminal; adapt them to your own environment.
 
 1. Change into the component directory:
 
-       cd scss/components/[component-id]
+   ```
+   cd scss/components/[component-id]
+   ```
 
 1. Fetch the latest changes for this submodule's repository:
 
-       git fetch
+   ```
+   git fetch
+   ```
 
 1. Checkout the version you wish to update to that you determined earlier.
 
-       git checkout [version-id]
+   ```
+   git checkout [version-id]
+   ```
 
 1. Change back to the main framework directory and pull any nested submodule
    updates:
 
-       cd ../../..
-       git submodule update --init --recursive
+   ```
+   cd ../../..
+   git submodule update --init --recursive
+   ```
 
 1. Commit the change in component version into the main framework:
 
-       git commit scss/components/[component-id]
+   ```
+   git commit scss/components/[component-id]
+   ```
 
    Ensure that you add a suitable commit message explaining what the change was
    and what effect it has.
 
-It's rare that these components will need to be updated, though bug-fixes and
-new features may be introduced from time to time.
+It is rare that these components will need to be updated, though bug fixes and
+new features will need to be drawn in from time to time.
