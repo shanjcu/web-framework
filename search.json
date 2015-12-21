@@ -97,14 +97,14 @@
         } ,
     
         {
-            "title" : "Card",
-            "url"   : "/jcu-customisations/card/",
+            "title" : "Cards",
+            "url"   : "/components/card/",
             "date"  : ""
         } ,
     
         {
-            "title" : "Cards",
-            "url"   : "/components/card/",
+            "title" : "Card",
+            "url"   : "/jcu-customisations/card/",
             "date"  : ""
         } ,
     
@@ -266,13 +266,13 @@
     
         {
             "title" : "Introduction",
-            "url"   : "/getting-started/introduction/",
+            "url"   : "/jcu-customisations/introduction/",
             "date"  : ""
         } ,
     
         {
             "title" : "Introduction",
-            "url"   : "/jcu-customisations/introduction/",
+            "url"   : "/getting-started/introduction/",
             "date"  : ""
         } ,
     
@@ -475,26 +475,26 @@
         } ,
     
         {
-            "title" : "Typography customisations",
-            "url"   : "/jcu-customisations/typography/",
-            "date"  : ""
-        } ,
-    
-        {
             "title" : "Typography",
             "url"   : "/content/typography/",
             "date"  : ""
         } ,
     
         {
-            "title" : "Utility classes",
-            "url"   : "/components/utilities/",
+            "title" : "Typography customisations",
+            "url"   : "/jcu-customisations/typography/",
             "date"  : ""
         } ,
     
         {
             "title" : "Utility classes",
             "url"   : "/jcu-customisations/utilities/",
+            "date"  : ""
+        } ,
+    
+        {
+            "title" : "Utility classes",
+            "url"   : "/components/utilities/",
             "date"  : ""
         } ,
     
@@ -518,13 +518,13 @@
     
         {
             "title" : "",
-            "url"   : "/getting-started/",
+            "url"   : "/jcu-customisations/",
             "date"  : ""
         } ,
     
         {
             "title" : "",
-            "url"   : "/jcu-customisations/",
+            "url"   : "/getting-started/",
             "date"  : ""
         } ,
     

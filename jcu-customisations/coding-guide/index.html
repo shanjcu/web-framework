@@ -1122,33 +1122,36 @@ to the standards set by this framework.</p>
 <h3 id="new-technologies">New technologies</h3>
 
 <ul>
-  <li>Use http://caniuse.com to determine if a browser feature is widely available
-across user agents.</li>
+  <li>Use <a href="http://caniuse.com">Can I use</a> to determine if a browser feature is
+widely available across user agents and what, if any, workarounds are
+available or caveats should be noted.</li>
 </ul>
 
 <h3 id="accessibility">Accessibility</h3>
 
+<p>All templates must be accessible and pass standards Section 508 and WCAG2AA.
+In order to test accessibility, we use a number of different tools:</p>
+
 <ul>
   <li>
-    <p>All templates must be accessible and pass standards Section 508 and WCAG2AA.</p>
-
-    <p>In order to test accessibility, we use a number of different tools:</p>
-
-    <ul>
-      <li>
-        <p><a href="https://khan.github.io/tota11y/">tota11y</a>: in-browser testing of elements
+    <p><a href="http://pa11y.org">pa11y</a>: command-line and server driven testing of
+rendered pages using a local browser instance.  This uses the HTML5
+CodeSniffer and is capable of Section508 and WCAG2 testing.</p>
+  </li>
+  <li>
+    <p><a href="https://khan.github.io/tota11y/">tota11y</a>: in-browser testing of elements
 within actual pages.  Follow the instructions on the project page to use
 <code>tota11y</code> on live application or any other pages. <code>tota11y</code> is also included
 on all documentation pages for additional testing—look for the glasses in the
 bottom-left corner!</p>
-      </li>
-      <li>
-        <p>pa11y: command-line and server driven testing of a rendered pages.  This
-uses the HTML5 CodeSniffer.</p>
-      </li>
-    </ul>
+
+    <p>Use <code>tota11y</code> to determine contrast ratios for absolutely positioned
+elements where <code>pa11y</code> reports warnings.</p>
   </li>
 </ul>
+
+<p>For how to use these tools in practice, see
+<a href="/jcu-customisations/building/#accessibility-testing">Accessibility testing</a>.</p>
 
 <h3 id="coding-guide">Coding guide</h3>
 
