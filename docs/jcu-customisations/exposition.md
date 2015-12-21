@@ -38,7 +38,7 @@ elements on a page using a negative *z-index*.
 
 <div class="bd-example">
   <div class="jcu-exposition hidden-print">
-    <img src="{{ site.baseurl }}/dist/images/backgrounds/GreenLeafSwirl.jpg" alt="Leaf curl image">
+    <img src="{{ site.baseurl }}/dist/images/backgrounds/GreenLeafSwirl.jpg" alt="Leaf curl image" role="presentation">
   </div>
   <div class="jcu-content col-xs-6 col-xs-offset-3">
     <h1>This text sits atop the Exposition</h1>
@@ -48,7 +48,7 @@ elements on a page using a negative *z-index*.
 
 {% highlight html %}
 <div class="jcu-exposition hidden-print">
-  <img src="{{ site.baseurl }}/dist/images/backgrounds/GreenLeafSwirl.jpg" alt="Leaf curl image">
+  <img src="{{ site.baseurl }}/dist/images/backgrounds/GreenLeafSwirl.jpg" alt="Leaf curl image" role="presentation">
 </div>
 <div class="jcu-content">
   <h1>This text sits atop the Exposition</h1>

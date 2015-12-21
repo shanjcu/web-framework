@@ -37,7 +37,7 @@ screen readers interpret the latter as readable).
 
 ### Decorative
 
-Icons that are purely decorative and add no meaning can be hidden from
+Icons that are *purely* decorative and add no meaning can be hidden from
 accessibility devices.
 
 {% example html %}
@@ -51,14 +51,15 @@ accessibility devices.
 
 ### Semantic
 
-Icons that convey some sort of meaning on the page should be labelled
-accordingly.  Think of `aria-label` like `title` or `alt` for `img` tags.
+Icons that convey meaning on the page should be labelled accordingly.  Think of
+`aria-label` like `title` or `alt` for `img` tags.
 
 In this example, the icons are being used in place of the name of the social
 media service and need to be labelled to aid accessibility.
 
 {% example html %}
-<a href="http://fb.me/jamescookuniversity"><span class="icon-circlefacebook" aria-label="Facebook icon"></span></a>
-<a href="https://twitter.com/jcu"><span class="icon-circletwitter" aria-label="Twitter icon"></span></a>
-<a href="https://www.youtube.com/user/jamescookuniversity"><span class="icon-youtube" aria-label="YouTube icon"></span></a>
+<a href="https://www.facebook.com/jamescookuniversity"><span class="sr-only">Facebook</span><span class="icon-circlefacebook" aria-label="Facebook icon"></span></a>
+<a href="https://twitter.com/jcu"><span class="sr-only">Twitter</span><span class="icon-circletwitter" aria-label="Twitter icon"></span></a>
+<a href="https://www.youtube.com/jamescookuniversity"><span class="sr-only">YouTube</span><span class="icon-youtube" aria-label="YouTube icon"></span></a>
+<a href="https://plus.google.com/+jamescookuniversity"><span class="sr-only">Google+</span><span class="icon-circlegoogleplus" aria-label="Google+ icon"></span></a>
 {% endexample %}
