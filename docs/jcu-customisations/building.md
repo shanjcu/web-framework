@@ -160,7 +160,10 @@ test via its `Contrast` toggle.
 ### pa11y
 
 `pa11y` is a command-line tool that can be used to test pages against Section508
-and WCAG2.  To do so:
+and WCAG2. For an in-depth introduction, consule [Accessibility Testing with
+pa11y](http://cruft.io/posts/accessibility-testing-with-pa11y/).
+
+To test the framework's pages:
 
 1. Ensure that you've followed the instructions for [Getting
    started](#getting-started) and that you have installed the [accessibility
@@ -192,6 +195,7 @@ and WCAG2.  To do so:
    page structure or corresponding CSS.
 
 1. When complete, commit the results to the framework.
+
 
 ## Updating Bootstrap versions
 
