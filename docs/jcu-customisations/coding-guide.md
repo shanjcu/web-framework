@@ -16,6 +16,11 @@ to the standards set by this framework.
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
+## Tools
+
+* [W3C default element ARIA semantics](http://www.w3.org/TR/html5/dom.html#ariusage-notea)
+* [W3C Nu HTML checker](https://validator.w3.org/nu/)
+
 ## Recommended practices
 
 ### New technologies
