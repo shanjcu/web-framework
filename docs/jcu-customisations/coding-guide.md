@@ -26,19 +26,24 @@ to the standards set by this framework.
 
 ### Accessibility
 
-* All templates must be accessible and pass standards Section 508 and WCAG2AA.
+All templates must be accessible and pass standards Section 508 and WCAG2AA.
+In order to test accessibility, we use a number of different tools:
 
-  In order to test accessibility, we use a number of different tools:
+* [pa11y](http://pa11y.org): command-line and server driven testing of
+  rendered pages using a local browser instance.  This uses the HTML5
+  CodeSniffer and is capable of Section508 and WCAG2 testing.
 
-  * [tota11y](https://khan.github.io/tota11y/): in-browser testing of elements
-    within actual pages.  Follow the instructions on the project page to use
-    `tota11y` on live application or any other pages. `tota11y` is also included
-    on all documentation pages for additional testing—look for the glasses in the
-    bottom-left corner!
+* [tota11y](https://khan.github.io/tota11y/): in-browser testing of elements
+  within actual pages.  Follow the instructions on the project page to use
+  `tota11y` on live application or any other pages. `tota11y` is also included
+  on all documentation pages for additional testing—look for the glasses in the
+  bottom-left corner!
 
-  * [pa11y](http://pa11y.org): command-line and server driven testing of
-    rendered pages using a local browser instance.  This uses the HTML5
-    CodeSniffer and is capable of Section508 and WCAG2 testing.
+  Use `tota11y` to determine contrast ratios for absolutely positioned
+  elements where `pa11y` reports warnings.
+
+For how to use these tools in practice, see
+[Accessibility testing]({{ site.baseurl }}/jcu-customisations/building/#accessibility-testing).
 
 ### Coding guide
 

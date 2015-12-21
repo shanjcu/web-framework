@@ -137,6 +137,62 @@ automatically detect all changes to the main SCSS files and documentation and
 rebuild everything automagically.
 {% endcallout %}
 
+## Accessibility testing
+
+### tota11y
+
+To test with `tota11y`, the in-browser visualisation toolkit, use the glasses
+icon at the bottom-left of any documentation page or custom JCU examples. For
+any non-JCU examples, install and use the Bookmarklet, available on the [tota11y
+project page](https://khan.github.io/tota11y/#Installation).
+
+Click the glasses now and see how you can toggle heading markers, colour
+contrast, link text testing, and more.
+
+{% callout info %}
+`pa11y`, with its Section508 and WCAG2 tests, is limited in its ability to test
+absolutely positioned elements within a web page and produces warnings to this
+effect (`Warning: This element is absolutely positioned and the background color
+can not be determined [...]`).  `tota11y` should be used in these situations to
+test via its `Contrast` toggle.
+{% endcallout %}
+
+### pa11y
+
+`pa11y` is a command-line tool that can be used to test pages against Section508
+and WCAG2.  To do so:
+
+1. Ensure that you've followed the instructions for [Getting
+   started](#getting-started) and that you have installed the [accessibility
+   tools](#a11y-install).
+
+1. Start a documentation server running with:
+
+   ```
+   bundler exec jekyll serve
+   ```
+
+1. In another terminal, test individual pages, one at a time, with:
+
+   ```
+   pa11y <url>
+   pa11y --standard Section508 <url>
+   ```
+
+   If not specified, the `--standard` defaults to `WCAG2AA`.
+
+   So, to test the Content Page example:
+
+   ```
+   pa11y http://localhost:9001/examples/jcu-content-page
+   pa11y --standard Section508 http://localhost:9001/examples/jcu-content-page
+   ```
+
+1. Consult the report and follow its suggestions to improve and fix the given
+   page structure or corresponding CSS.
+
+1. When complete, commit the results to the framework.
+
 ## Updating Bootstrap versions
 
 The JCU Web Framework is built upon Bootstrap and adds a number of *commits*
