@@ -7113,8 +7113,22 @@ abbr[title] {
 }
 
 .jcu-toolbar .form-inline .c-select {
-  background-color: transparent;
+  background: none;
   border: 0 none;
+}
+
+.jcu-toolbar .form-inline .c-select option {
+  color: #2d2d2d;
+  background-color: #fff;
+}
+
+.jcu-toolbar .form-inline .c-select + .icon-chevrondown {
+  margin-left: -2rem;
+  pointer-events: none;
+}
+
+.jcu-toolbar .form-inline .c-select + .icon-chevrondown::before {
+  vertical-align: sub;
 }
 
 .jcu-toolbar .dropdown-menu {
