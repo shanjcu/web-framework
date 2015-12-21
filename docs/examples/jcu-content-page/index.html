@@ -38,19 +38,19 @@
         </div>
       </div>
       <!-- Toolbar -->
-      <nav class="jcu-toolbar navbar navbar-fixed-top navbar-dark bg-inverse yamm" role="navigation">
+      <nav class="jcu-toolbar navbar navbar-fixed-top navbar-dark bg-inverse yamm">
         <div class="container-fluid container-fluid--max-width">
           <div class="row">
             <form class="form-inline pull-right jcu-bg--gray hidden-sm-down" action="https://www.jcu.edu.au/search" method="get" role="search">
               <input name="Search" value="Search" type="submit" hidden>
               <label class="sr-only" for="jcu-search__query">Search</label>
               <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
-              <select class="c-select" name="collection">
+              <select class="c-select" name="collection" aria-label="Search type">
                 <option value="jcua-web" selected>Site</option>
                 <option value="jcua-courses">Courses</option>
               </select>
               <span class="icon-chevrondown" aria-hidden="true"></span>
-              <button class="btn btn-primary" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
+              <button class="btn btn-primary" type="submit" title="Search"><span class="icon-search" aria-hidden="true"></span></button>
             </form>
             <ul class="nav navbar-nav">
               <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
@@ -298,7 +298,8 @@
             <img src="../../dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo">
           </a>
           <div class="hidden-md-up">
-            <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#jcu-explorer__collapsible" aria-label="Expand navigation">
+            <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#jcu-explorer__collapsible">
+              <span class="sr-only">Expand navigation</span>
               <span class="icon-search" aria-hidden="true"></span><span class="icon-menu" aria-hidden="true"></span>
             </button>
             <div class="jcu-explorer__toggleable collapse" id="jcu-explorer__collapsible">
@@ -309,7 +310,7 @@
                 <div class="input-group">
                   <input class="form-control form-control-lg" id="jcu-explorer__search-query" name="query" type="text" title="Search text" placeholder="Search">
                   <span class="input-group-btn">
-                    <button class="btn btn-secondary btn-lg active" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
+                    <button class="btn btn-secondary btn-lg active" type="submit" title="Search"><span class="icon-search" aria-hidden="true"></span></button>
                   </span>
                 </div>
               </form>
@@ -330,8 +331,8 @@
                       <a class="nav-link" href="#">History</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#campusesCollapsible" href="#">Campuses</a>
-                      <ul class="nav nav-pills nav-stacked collapse" id="campusesCollapsible">
+                      <a class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#jcu-explorer__campus-collapsible" href="#">Campuses</a>
+                      <ul class="nav nav-pills nav-stacked collapse" id="jcu-explorer__campus-collapsible">
                         <li class="nav-item"><a class="nav-link" href="#">Townsville</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Cairns</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Singapore</a></li>
@@ -365,10 +366,10 @@
                         <input name="collection" type="hidden" value="jcua-courses" hidden>
 
                         <div class="input-group">
-                          <label class="sr-only" for="jcu-search--course__query">Search</label>
-                          <input class="form-control form-control-sm" id="jcu-search--course__query" name="query" type="text" title="Search text" placeholder="Course or keyword">
+                          <label class="sr-only" for="jcu-explorer__search-course-query">Search</label>
+                          <input class="form-control form-control-sm" id="jcu-explorer__search-course-query" name="query" type="text" title="Search text" placeholder="Course or keyword">
                           <span class="input-group-btn">
-                            <button class="btn btn-primary btn-sm" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
+                            <button class="btn btn-primary btn-sm" type="submit" title="Search"><span class="icon-search" aria-hidden="true"></span></button>
                           </span>
                         </div>
                       </form>
@@ -396,7 +397,7 @@
                     <div class="col-xs-3">
                       <div class="card jcu-overlay-card jcu-overlay-card--fixed">
                         <a href="https://www.jcu.edu.au/diploma-of-higher-education/not-sure-if-youre-ready-for-university">
-                          <img class="card-img img-fluid" src="../../dist/images/teamwork.jpg" alt="Teamwork">
+                          <img class="card-img img-fluid" src="../../dist/images/teamwork.jpg" alt="Students at university">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
                             <div class="card-title text-center">
                               Looking to try university? Assess your readiness here.
@@ -426,10 +427,10 @@
                         <input name="collection" type="hidden" value="jcua-courses" hidden>
 
                         <div class="input-group">
-                          <label class="sr-only" for="jcu-search-course2__query">Search</label>
-                          <input class="form-control form-control-sm" id="jcu-search--course2__query" name="query" type="text" title="Search text" placeholder="Course or keyword">
+                          <label class="sr-only" for="jcu-explorer__search-course2-query">Search</label>
+                          <input class="form-control form-control-sm" id="jcu-explorer__search-course2-query" name="query" type="text" title="Search text" placeholder="Course or keyword">
                           <span class="input-group-btn">
-                            <button class="btn btn-primary btn-sm" type="submit" aria-label="Search"><span class="icon-search" aria-hidden="true"></span></button>
+                            <button class="btn btn-primary btn-sm" type="submit" title="Search"><span class="icon-search" aria-hidden="true"></span></button>
                           </span>
                         </div>
                       </form>
@@ -442,7 +443,7 @@
                     <div class="col-xs-3">
                       <div class="card jcu-overlay-card jcu-overlay-card--fixed">
                         <a href="http://www.jcusa.edu.au/campus_life/clubs_&_socieities/list_of_clubs_&_societies.php">
-                          <img class="card-img img-fluid" src="../../dist/images/dive-club.jpg" alt="Dive Club">
+                          <img class="card-img img-fluid" src="../../dist/images/dive-club.jpg" alt="Dive Club in the ocean">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
                             <div class="card-title text-center">
                               Clubs and Societies
@@ -463,7 +464,7 @@
                     <div class="col-xs-3">
                       <div class="card jcu-overlay-card jcu-overlay-card--fixed">
                         <a href="https://www.jcu.edu.au/students/learning-skills/student-mentor-program">
-                          <img class="card-img img-fluid" src="../../dist/images/student-mentor.jpg" alt="Student Mentors">
+                          <img class="card-img img-fluid" src="../../dist/images/student-mentor.jpg" alt="Mentor t-shirt label">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
                             <div class="card-title text-center">
                               Student Mentors
@@ -489,7 +490,7 @@
                     <div class="col-xs-3">
                       <div class="card jcu-overlay-card jcu-overlay-card--fixed">
                         <a href="https://www.jcu.edu.au/about-jcu/campuses">
-                          <img class="card-img img-fluid" src="../../dist/images/campus-directions-promo.jpg" alt="Campuses and locations">
+                          <img class="card-img img-fluid" src="../../dist/images/campus-directions-promo.jpg" alt="University signposts">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
                             <div class="card-title text-center">
                               Campuses and Locations
@@ -517,7 +518,7 @@
                     <div class="col-xs-3">
                       <div class="card jcu-overlay-card jcu-overlay-card--fixed">
                         <a href="https://www.jcu.edu.au/about-jcu/reconciliation-at-jcu">
-                          <img class="card-img img-fluid" src="../../dist/images/reconciliation-promo.jpg" alt="Reconciliation">
+                          <img class="card-img img-fluid" src="../../dist/images/reconciliation-promo.jpg" alt="Stylised hands artwork">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
                             <div class="card-title text-center">
                               Reconciliation
@@ -550,7 +551,7 @@
                     <div class="col-xs-3">
                        <div class="card jcu-overlay-card jcu-overlay-card--fixed">
                         <a href="https://research.jcu.edu.au/portfolio/find-an-advisor">
-                          <img class="card-img img-fluid" src="../../dist/images/find-an-advisor-promo.jpg" alt="Find an Advisor">
+                          <img class="card-img img-fluid" src="../../dist/images/find-an-advisor-promo.jpg" alt="Researcher with students">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
                             <div class="card-title text-center">
                               Find an Advisor
@@ -569,7 +570,7 @@
                     <div class="col-xs-3">
                       <div class="card jcu-overlay-card jcu-overlay-card--fixed">
                         <a href="https://research.jcu.edu.au/portfolio/">
-                          <img class="card-img img-fluid" src="../../dist/images/dro-research-portfolio.jpg" alt="Research Portfolio">
+                          <img class="card-img img-fluid" src="../../dist/images/dro-research-portfolio.jpg" alt="Daintree Rainforest Observatory researchers">
                           <div class="card-img-overlay jcu-overlay jcu-overlay--plain jcu-bg--black-75pc">
                             <div class="card-title text-center">
                               Research Portfolio
@@ -634,7 +635,7 @@
       </div>
     </header>
 
-    <main class="container-fluid container-fluid--max-width" id="main" role="main">
+    <main class="container-fluid container-fluid--max-width" id="main">
       <!-- Body content -->
       <div class="row jcu-content">
         <div class="col-md-9 p-x-lg">
@@ -656,8 +657,8 @@
             <a href="https://jcu.edu.au">
               <img class="card-img img-fluid" src="images/card-blue.jpg" alt="Card image">
               <div class="card-img-overlay jcu-overlay jcu-bg--black-75pc">
-                <div class="card-title">Top 4% of universities</div>
-                <div class="card-subtitle">With a focus on the tropics.</div>
+                <div class="card-title" id="promo-card__title">Top 4% of universities</div>
+                <div class="card-subtitle" id="promo-card__subtitle">With a focus on the tropics.</div>
               </div>
             </a>
           </div>
@@ -811,11 +812,11 @@
       <div class="row jcu-footer__social-legal">
         <nav class="col-sm-4 col-md-3">
           <ul class="nav jcu-footer__social">
-            <li><a href="https://www.facebook.com/jamescookuniversity"><span class="icon-circlefacebook"></span></a></li>
-            <li><a href="https://twitter.com/jcu"><span class="icon-circletwitter"></span></a></li>
-            <li><a href="https://www.youtube.com/jamescookuniversity"><span class="icon-youtube"></span></a></li>
-            <li><a href="https://plus.google.com/+jamescookuniversity"><span class="icon-circlegoogleplus"></span></a></li>
-            <li><a href="https://www.jcu.edu.au/_design/page/news-rss-feeds/media-releases-rss"><span class="icon-rss"></span></a></li>
+            <li><a href="https://www.facebook.com/jamescookuniversity"><span class="sr-only">Facebook</span><span class="icon-circlefacebook" aria-label="Facebook icon"></span></a></li>
+            <li><a href="https://twitter.com/jcu"><span class="sr-only">Twitter</span><span class="icon-circletwitter" aria-label="Twitter icon"></span></a></li>
+            <li><a href="https://www.youtube.com/jamescookuniversity"><span class="sr-only">YouTube</span><span class="icon-youtube" aria-label="YouTube icon"></span></a></li>
+            <li><a href="https://plus.google.com/+jamescookuniversity"><span class="sr-only">Google+</span><span class="icon-circlegoogleplus" aria-label="Google+ icon"></span></a></li>
+            <li><a href="https://www.jcu.edu.au/_design/page/news-rss-feeds/media-releases-rss"><span class="sr-only">Media Releases RSS feed</span><span class="icon-rss" aria-label="RSS icon"></span></a></li>
           </ul>
         </nav>
         <nav class="col-sm-7 col-md-7">
