@@ -26,7 +26,7 @@ Megamenu) Bootstrap add-on to allow grid layouts within the dropdown menus.
 ### Basic example
 
 {% example html %}
-<nav class="jcu-toolbar navbar navbar-fixed-top navbar-dark bg-inverse" role="navigation">
+<nav class="jcu-toolbar navbar navbar-fixed-top navbar-dark bg-inverse">
   <div class="container-fluid">
     <div class="row">
       <ul class="nav navbar-nav">

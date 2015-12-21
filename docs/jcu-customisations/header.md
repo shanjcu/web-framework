@@ -16,10 +16,10 @@ branding, navigation, and titular details.
 ## Examples
 
 {% callout info %}
-**Heads up!** The examples are defined using the ARIA role of `banner`. If using
-this accessibility role, ensure that your header is including site-oriented
-content such as a logo and site-specific search tool.  Consider adjusting the
-role if the content in your Header contain page-specific information.
+**Heads up!** The examples are defined using the `<header>` element which
+implies the ARIA role of `banner`. Consider adjusting the element to `<div>` or
+otherwise if you want the display of a Header but want to avoid the semantics
+imposed.
 {% endcallout %}
 
 ### Standard
@@ -28,13 +28,13 @@ Define a *Header* element with `.jcu-header` and add anything you'd like to into
 it:
 
 {% example html %}
-<div class="container jcu-header" role="banner" aria-labelledby="page-title">
+<header class="container jcu-header">
   <div class="row">
     <div class="col-xs-12">
-      <h1 class="jcu-header__page-title" id="page-title">ResearchOnline@JCU</h1>
+      <h1 class="jcu-header__page-title">ResearchOnline@JCU</h1>
     </div>
   </div>
-</div>
+</header>
 {% endexample %}
 
 ### Banner
@@ -47,7 +47,7 @@ This example shows adding a background image for additional context or vibrancy
 to a given site or page.
 
 {% example html %}
-<div class="container jcu-header jcu-header--banner jcu-bg--blue-fish" role="banner" aria-labelledby="page-title2">
+<header class="container jcu-header jcu-header--banner jcu-bg--blue-fish">
   <div class="row jcu-bg--black-50pc">
     <div class="col-xs-6 text-left">
       <a class="jcu-brand" href="https://www.jcu.edu.au">
@@ -58,7 +58,7 @@ to a given site or page.
       <a href="#"><h1 class="jcu-header__page-title" id="page-title2">Site title</h1></a>
     </div>
   </div>
-</div>
+</header>
 {% endexample %}
 
 ### Marketing

@@ -60,7 +60,7 @@ Compare the two:
   <div class="btn-group">
     <div class="dropdown">
       <a class="btn btn-secondary dropdown-toggle" id="dropdownmenu-button2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">JCU Campuses (click)</a>
-      <div class="dropdown-menu" role="menu" aria-labelledby="dropDownMenuButton2">
+      <div class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu-button2">
         <a class="dropdown-item" href="#" role="menuitem">Townsville</a>
         <a class="dropdown-item" href="#" role="menuitem">Cairns</a>
         <a class="dropdown-item" href="#" role="menuitem">Singapore</a>

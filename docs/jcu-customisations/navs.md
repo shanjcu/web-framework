@@ -66,7 +66,7 @@ specific background colour.  The latter is adjustable
 Use the tab JavaScript plugin—include it individually or through the compiled `bootstrap.js` file—to extend our navigational tabs and pills to create tabbable panes of local content, even via dropdown menus.
 
 <div role="tabpanel">
-  <ul class="nav nav-tabs nav-dark bg-inverse" id="myTabsIdentifier" role="tablist">
+  <ul class="nav nav-tabs nav-dark bg-inverse" id="inverse-tabs" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
     </li>
