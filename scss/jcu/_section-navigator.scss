@@ -81,6 +81,7 @@
       padding-right: ($jcu-navbar-nav-link-padding * 1.5);
     }
 
+    .open > .nav-link:focus,
     .nav-link:hover,
     .nav-link:focus,
     .dropdown:hover .nav-link {

@@ -48,7 +48,7 @@ Compare the two:
 <div class="btn-group">
   <div class="btn-group">
     <div class="dropdown dropdown--open-on-hover">
-      <a class="btn btn-secondary dropdown-toggle" id="dropdownmenu-button1" aria-haspopup="true" aria-expanded="false">JCU Campuses (hover)</a>
+      <a class="btn btn-secondary dropdown-toggle" id="dropdownmenu-button1" data-target="dropdown" aria-haspopup="true" aria-expanded="false">JCU Campuses (hover)</a>
       <div class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu-button1">
         <a class="dropdown-item" href="#" role="menuitem">Townsville</a>
         <a class="dropdown-item" href="#" role="menuitem">Cairns</a>
