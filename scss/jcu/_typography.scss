@@ -8,6 +8,10 @@
 
 .text-inverse {
   color: $gray-lightest;
+
+  @include hover-focus {
+    color: $gray-lightest;
+  }
 }
 
 .block--dotted {

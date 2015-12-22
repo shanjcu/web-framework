@@ -9,14 +9,13 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
   font-size: $font-size-sm;
   background-color: $gray-lighter;
 
-  h1 {
+  .jcu-footer__heading {
     padding-top: ($spacer / 2);
     padding-bottom: ($spacer / 2);
     font-size: 1rem;
     font-weight: 400;
     border-bottom: $jcu-footer-border;
   }
-
 }
 
 .jcu-footer__social-legal {
