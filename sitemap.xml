@@ -169,10 +169,10 @@
     <loc>https://web.jcu.io/components/navbar/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/navs/</loc>
+    <loc>https://web.jcu.io/components/navs/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/components/navs/</loc>
+    <loc>https://web.jcu.io/jcu-customisations/navs/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/getting-started/options/</loc>
@@ -191,9 +191,6 @@
   </url>
   <url>
     <loc>https://web.jcu.io/components/progress/</loc>
-  </url>
-  <url>
-    <loc>https://web.jcu.io/jcu-customisations/reading/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/content/reboot/</loc>
@@ -232,10 +229,13 @@
     <loc>https://web.jcu.io/about/translations/</loc>
   </url>
   <url>
+    <loc>https://web.jcu.io/jcu-customisations/typography/</loc>
+  </url>
+  <url>
     <loc>https://web.jcu.io/content/typography/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/typography/</loc>
+    <loc>https://web.jcu.io/jcu-customisations/useful-resources/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/jcu-customisations/utilities/</loc>
@@ -257,7 +257,7 @@
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-login/index.html</loc>
-    <lastmod>2015-12-22T13:16:26+10:00</lastmod>
+    <lastmod>2015-12-22T16:55:28+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/carousel/index.html</loc>
@@ -305,7 +305,7 @@
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-content-page/index.html</loc>
-    <lastmod>2015-12-22T12:59:17+10:00</lastmod>
+    <lastmod>2015-12-22T17:29:16+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/sticky-footer-navbar/index.html</loc>

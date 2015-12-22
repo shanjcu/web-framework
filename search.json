@@ -338,13 +338,13 @@
     
         {
             "title" : "Navs",
-            "url"   : "/jcu-customisations/navs/",
+            "url"   : "/components/navs/",
             "date"  : ""
         } ,
     
         {
             "title" : "Navs",
-            "url"   : "/components/navs/",
+            "url"   : "/jcu-customisations/navs/",
             "date"  : ""
         } ,
     
@@ -381,12 +381,6 @@
         {
             "title" : "Progress",
             "url"   : "/components/progress/",
-            "date"  : ""
-        } ,
-    
-        {
-            "title" : "Reading Materials",
-            "url"   : "/jcu-customisations/reading/",
             "date"  : ""
         } ,
     
@@ -475,14 +469,20 @@
         } ,
     
         {
+            "title" : "Typography customisations",
+            "url"   : "/jcu-customisations/typography/",
+            "date"  : ""
+        } ,
+    
+        {
             "title" : "Typography",
             "url"   : "/content/typography/",
             "date"  : ""
         } ,
     
         {
-            "title" : "Typography customisations",
-            "url"   : "/jcu-customisations/typography/",
+            "title" : "Useful Resources",
+            "url"   : "/jcu-customisations/useful-resources/",
             "date"  : ""
         } ,
     

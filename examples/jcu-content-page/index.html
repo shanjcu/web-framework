@@ -25,7 +25,7 @@
       <img src="../../dist/images/backgrounds/GreenLeafSwirl.jpg" alt="Leaf background image">
     </div>
     <header>
-      <a class="sr-only" href="#main">Skip to main content</a>
+      <a class="sr-only sr-only-focusable bg-inverse text-inverse" href="#main">Skip to main content</a>
       <!-- Print features -->
       <div class="container-fluid container-fluid--max-width visible-print-flex flex-items-end">
         <div class="row">
@@ -39,23 +39,13 @@
       </div>
       <!-- Toolbar -->
       <nav class="jcu-toolbar navbar navbar-fixed-top navbar-dark bg-inverse yamm">
+        <h2 class="sr-only">JCU Toolbar</h2>
         <div class="container-fluid container-fluid--max-width">
           <div class="row">
-            <form class="form-inline pull-right jcu-bg--gray hidden-sm-down" action="https://www.jcu.edu.au/search" method="get" role="search">
-              <input name="Search" value="Search" type="submit" hidden>
-              <label class="sr-only" for="jcu-search__query">Search</label>
-              <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
-              <select class="c-select" name="collection" aria-label="Search type">
-                <option value="jcua-web" selected>Site</option>
-                <option value="jcua-courses">Courses</option>
-              </select>
-              <span class="icon-chevrondown" aria-hidden="true"></span>
-              <button class="btn btn-primary" type="submit" title="Search"><span class="icon-search" aria-hidden="true"></span></button>
-            </form>
             <ul class="nav navbar-nav">
               <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-                <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/students">Students</a>
-                <div class="dropdown-menu">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="https://www.jcu.edu.au/students" role="button" aria-haspopup="true" aria-expanded="false">Students</a>
+                <div class="dropdown-menu" role="menu">
                   <div class="row jcu-toolbar__students flex-items-center">
                     <div class="col-sm-3">
                       <div class="card card-inverse">
@@ -126,7 +116,7 @@
                     <div class="col-sm-9">
                       <div class="row">
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/students/enrolment">Enrolment and course planning</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/students/enrolment">Enrolment and course planning</a></h3>
                           <ul class="nav">
                             <li><a href="https://www.jcu.edu.au/students/enrolment/re-enrol-online">Re-enrol</a></li>
                             <li><a href="https://www.jcu.edu.au/students/enrolment">Change your enrolment</a></li>
@@ -134,7 +124,7 @@
                           </ul>
                         </section>
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/students/fees-and-financial-support">Fees and financial assistance</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/students/fees-and-financial-support">Fees and financial assistance</a></h3>
                           <ul class="nav">
                             <li><a href="https://www.jcu.edu.au/students/fees-and-financial-support/undergraduate-subject-fees">Undergraduate fees</a></li>
                             <li><a href="https://www.jcu.edu.au/students/fees-and-financial-support/defer-your-fees">Defer your fees</a></li>
@@ -142,7 +132,7 @@
                           </ul>
                         </section>
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/students/important-dates">Timetable and important dates</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/students/important-dates">Timetable and important dates</a></h3>
                           <ul class="nav">
                             <li><a href="https://www.jcu.edu.au/lecture-timetables">Class timetables</a></li>
                             <li><a href="https://www.jcu.edu.au/students/important-dates">Important dates</a></li>
@@ -152,7 +142,7 @@
                       </div><!-- /.row -->
                       <div class="row">
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/students/exams-and-results">Assessment and results</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/students/exams-and-results">Assessment and results</a></h3>
                           <ul class="nav">
                             <li><a href="https://www.jcu.edu.au/students/exams-and-results">Exams</a></li>
                             <li><a href="https://www.jcu.edu.au/students/exams-and-results">Results</a></li>
@@ -160,7 +150,7 @@
                           </ul>
                         </section>
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/students/support/study-smarter">Study smarter</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/students/support/study-smarter">Study smarter</a></h3>
                           <ul class="nav">
                             <li><a href="https://www.jcu.edu.au/students/learning-skills/workshops-and-short-courses">Workshops</a></li>
                             <li><a href="https://www.jcu.edu.au/students/learning-skills/learning-skills-online">Online resources</a></li>
@@ -168,7 +158,7 @@
                           </ul>
                         </section>
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/students/support/student-support">Student support services</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/students/support/student-support">Student support services</a></h3>
                           <ul class="nav">
                             <li><a href="https://jcu.custhelp.com/">Ask Us</a></li>
                             <li><a href="https://www.jcu.edu.au/accessability-services">AccessAbility</a></li>
@@ -178,7 +168,7 @@
                       </div><!-- /.row -->
                       <div class="row">
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/graduation">Graduation and beyond</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/graduation">Graduation and beyond</a></h3>
                           <ul class="nav">
                             <li><a href="https://www.jcu.edu.au/students/forms/online-graduation-application">Apply to graduate</a></li>
                             <li><a href="https://www.jcu.edu.au/careers-and-employment">Careers and employment</a></li>
@@ -186,12 +176,12 @@
                           </ul>
                         </section>
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/off-campus-students">Off-campus students</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/off-campus-students">Off-campus students</a></h3>
                           <ul class="nav">
                           </ul>
                         </section>
                         <section class="col-sm-4">
-                          <h1><a href="https://www.jcu.edu.au/work-health-and-safety">Health and safety</a></h1>
+                          <h3 class="jcu-toolbar__heading"><a href="https://www.jcu.edu.au/work-health-and-safety">Health and safety</a></h3>
                           <ul class="nav">
                             <li><a href="https://www.jcu.edu.au/work-health-and-safety/safe-work-and-study-@-jcu">Report an incident</a></li>
                             <li><a href="https://www.jcu.edu.au/estate-directorate/campus-services/security/security-on-jcu-campuses-townsville-and-cairns">Contact security</a></li>
@@ -204,8 +194,8 @@
                 </div><!-- /.dropdown-menu -->
               </li>
               <li class="nav-item dropdown dropdown--open-on-hover">
-                <a class="nav-link dropdown-toggle" href="https://www.jcu.edu.au/staff">Staff</a>
-                <div class="dropdown-menu col-xs-3">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="https://www.jcu.edu.au/staff" role="button" aria-haspopup="true" aria-expanded="false">Staff</a>
+                <div class="dropdown-menu col-xs-3" role="menu">
                   <div class="card card-inverse">
                     <a href="https://www.jcu.edu.au/staff">
                       <div class="col-xs-3">
@@ -282,18 +272,28 @@
                 </div><!-- /.dropdown-menu -->
               </li>
               <li class="nav-item"><a class="nav-link" href="https://alumni.jcu.edu.au">Alumni</a></li>
-              <div class="pull-right-md-up">
-                <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/library">Library</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://maps.jcu.edu.au/">Maps</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/jcu-contact-information">Contacts</a></li>
-              </div>
+              <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/library">Library</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://maps.jcu.edu.au/">Maps</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.jcu.edu.au/jcu-contact-information">Contacts</a></li>
             </ul>
+            <form class="form-inline pull-right jcu-bg--gray hidden-sm-down" action="https://www.jcu.edu.au/search" method="get" role="search">
+              <input name="Search" value="Search" type="submit" hidden>
+              <label class="sr-only" for="jcu-search__query">Search</label>
+              <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
+              <select class="c-select" name="collection" aria-label="Search type">
+                <option value="jcua-web" selected>Site</option>
+                <option value="jcua-courses">Courses</option>
+              </select>
+              <span class="icon-chevrondown" aria-hidden="true"></span>
+              <button class="btn btn-primary" type="submit" title="Search"><span class="icon-search" aria-hidden="true"></span></button>
+            </form>
           </div>
         </div>
       </nav>
 
       <div class="container-fluid container-fluid--max-width jcu-header jcu-header--marketing jcu-bg--green-leaf-swirl">
         <nav class="navbar navbar--jcu-explorer yamm">
+          <h2 class="sr-only">JCU Explorer</h2>
           <a class="navbar-brand" href="https://www.jcu.edu.au">
             <img src="../../dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo">
           </a>
@@ -331,7 +331,7 @@
                       <a class="nav-link" href="#">History</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#jcu-explorer__campus-collapsible" href="#">Campuses</a>
+                      <a class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#jcu-explorer__campus-collapsible" href="#" role="button">Campuses</a>
                       <ul class="nav nav-pills nav-stacked collapse" id="jcu-explorer__campus-collapsible">
                         <li class="nav-item"><a class="nav-link" href="#">Townsville</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Cairns</a></li>
@@ -354,9 +354,9 @@
             </div>
           </div>
           <ul class="nav navbar-nav pull-right hidden-sm-down">
-            <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link" href="https://www.jcu.edu.au/courses-and-study">Courses and Study</a>
-              <div class="dropdown-menu">
+            <li class="nav-item dropdown dropdown--open-on-hover yamm-fw" >
+              <a class="nav-link" data-toggle="dropdown" href="https://www.jcu.edu.au/courses-and-study" role="button" aria-haspopup="true" aria-expanded="false">Courses and Study</a>
+              <div class="dropdown-menu" role="menu">
                 <div class="yamm-content">
                   <div class="row">
                     <div class="col-xs-3">
@@ -410,14 +410,14 @@
                 </div><!-- /.yamm-content -->
                 <div class="row">
                   <div class="col-xs-12 jcu-explorer__tagline">
-                    For more information, contact <a href="tel:1800 246 446">1800 246 446</a> or <a href="mailto:study@jcu.edu.au">study@jcu.edu.au</a>
+                    For more information, contact <a href="tel:1800246446">1800 246 446</a> or <a href="mailto:study@jcu.edu.au">study@jcu.edu.au</a>
                   </div>
                 </div>
               </div>
             </li>
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link" href="https://www.jcu.edu.au/student-life">Student Life</a>
-              <div class="dropdown-menu">
+              <a class="nav-link" data-toggle="dropdown" href="https://www.jcu.edu.au/student-life" role="button" aria-haspopup="true" aria-expanded="false">Student Life</a>
+              <div class="dropdown-menu" role="menu">
                 <div class="yamm-content">
                   <div class="row">
                     <div class="col-xs-3">
@@ -483,8 +483,8 @@
               </div>
             </li>
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link" href="https://www.jcu.edu.au/about-jcu">About JCU</a>
-              <div class="dropdown-menu">
+              <a class="nav-link" data-toggle="dropdown" href="https://www.jcu.edu.au/about-jcu" role="button" aria-haspopup="true" aria-expanded="false">About JCU</a>
+              <div class="dropdown-menu" role="menu">
                 <div class="yamm-content">
                   <div class="row">
                     <div class="col-xs-3">
@@ -537,8 +537,8 @@
               </div>
             </li>
             <li class="nav-item dropdown dropdown--open-on-hover yamm-fw">
-              <a class="nav-link" href="https://www.jcu.edu.au/research">Research</a>
-              <div class="dropdown-menu">
+              <a class="nav-link" data-toggle="dropdown" href="https://www.jcu.edu.au/research" role="button" aria-haspopup="true" aria-expanded="false">Research</a>
+              <div class="dropdown-menu" role="menu">
                 <div class="yamm-content">
                   <div class="row">
                     <div class="col-xs-3">
@@ -597,6 +597,7 @@
       <div class="jcu-section-navigator hidden-sm-down">
         <div class="container-fluid container-fluid--max-width hidden-print">
           <nav class="navbar navbar-dark bg-inverse">
+            <h2 class="sr-only">Section navigator</h2>
             <ul class="nav navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link" href="#">About JCU</a>
@@ -608,8 +609,8 @@
                 <a class="nav-link" href="#">History</a>
               </li>
               <li class="nav-item dropdown dropdown--open-on-hover">
-                <a class="nav-link dropdown-toggle" href="#">Campuses</a>
-                <div class="dropdown-menu">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Campuses</a>
+                <div class="dropdown-menu" role="menu">
                   <a class="dropdown-item" href="#">Townsville</a>
                   <a class="dropdown-item" href="#">Cairns</a>
                   <a class="dropdown-item" href="#">Singapore</a>
@@ -626,6 +627,7 @@
           </nav>
         </div>
         <nav class="container-fluid container-fluid--max-width jcu-section-navigator__breadcrumb">
+          <h2 class="sr-only">Breadcrumbs</h2>
           <ol class="breadcrumb">
             <li><a href="#">About JCU</a></li>
             <li><a href="#">History and Information</a></li>
@@ -657,6 +659,7 @@
         <!-- Semantics: ensure contents in the sidebar relate to the content,
              or choose <div> instead -->
         <aside class="col-md-3 p-x-md hidden-print">
+          <h2 class="sr-only">Sidebar</h2>
           <div class="card jcu-overlay-card">
             <a href="https://jcu.edu.au">
               <img class="card-img img-fluid" src="images/card-blue.jpg" alt="Card image">
@@ -690,9 +693,10 @@
 
     <footer class="container-fluid container-fluid--max-width jcu-footer hidden-print">
       <nav>
+        <h2 class="sr-only">Footer</h2>
         <div class="row">
           <section class="col-sm-12 col-md-5">
-            <h1>James Cook University Memberships</h1>
+            <h3 class="jcu-footer__heading">James Cook University Memberships</h3>
             <div class="row flex-items-center">
               <div class="col-xs-4">
                 <a href="http://www.studyinaustralia.gov.au/global/why-australia"><img class="img-fluid" src="../../dist/images/australia-future-unlimited.svg" alt="Australia Future Unlimited Logo"></a>
@@ -706,7 +710,7 @@
             </div>
           </section>
           <section class="col-sm-8 col-md-4">
-            <h1>Traditional Owners</h1>
+            <h3 class="jcu-footer__heading">Traditional Owners</h3>
             <div class="row">
               <div class="col-xs-8">
                 <p>
@@ -722,7 +726,7 @@
             </div>
           </section>
           <section class="col-sm-4 col-md-3">
-            <h1>Our Tropical Campuses</h1>
+            <h3 class="jcu-footer__heading">Our Tropical Campuses</h3>
             <div class="row">
               <div class="col-xs-12 col-sm-offset-1">
                 <ul class="jcu-campus-stack">
@@ -736,7 +740,7 @@
         </div>
         <div class="row">
           <section class="col-xs-6 col-sm-4 col-lg-2">
-            <h1>Study</h1>
+            <h3 class="jcu-footer__heading">Study</h3>
             <ul class="list-unstyled">
               <li><a href="https://www.jcu.edu.au/courses-and-study">Courses and degrees</a></li>
               <li><a href="https://www.jcu.edu.au/courses-and-study/cities-campuses-and-study-centres">Courses by campus</a></li>
@@ -750,7 +754,7 @@
             </ul>
           </section>
           <section class="col-xs-6 col-sm-4 col-lg-2">
-            <h1>About</h1>
+            <h3 class="jcu-footer__heading">About</h3>
             <ul class="list-unstyled">
               <li><a href="https://www.jcu.edu.au/about-jcu">James Cook University</a></li>
               <li><a href="https://www.jcu.edu.au/discover-nature-at-jcu">Flora and fauna at JCU</a></li>
@@ -764,7 +768,7 @@
           </section>
           <div class="clearfix hidden-sm-up"></div>
           <section class="col-xs-6 col-sm-4 col-lg-2">
-            <h1>Research</h1>
+            <h3 class="jcu-footer__heading">Research</h3>
             <ul class="list-unstyled">
               <li><a href="https://www.jcu.edu.au/research">Our research</a></li>
               <li><a href="https://www.jcu.edu.au/graduate-research-school">Research students</a></li>
@@ -777,7 +781,7 @@
           </section>
           <div class="clearfix hidden-xs-down hidden-lg-up"></div>
           <section class="col-xs-6 col-sm-4 col-lg-2">
-            <h1>Information For</h1>
+            <h3 class="jcu-footer__heading">Information For</h3>
             <ul class="list-unstyled">
               <li><a href="https://www.jcu.edu.au/courses-and-study">Future students</a></li>
               <li><a href="https://www.jcu.edu.au/international-students">International students</a></li>
@@ -791,7 +795,7 @@
           </section>
           <div class="clearfix hidden-sm-up"></div>
           <section class="col-xs-6 col-sm-4 col-lg-2">
-            <h1>Locations</h1>
+            <h3 class="jcu-footer__heading">Locations</h3>
             <ul class="list-unstyled">
               <li><a href="https://www.jcu.edu.au/about-jcu/campuses/townsville">Townsville</a></li>
               <li><a href="https://www.jcu.edu.au/about-jcu/campuses/cairns">Cairns</a></li>
@@ -804,7 +808,7 @@
             </ul>
           </section>
           <section class="col-xs-6 col-sm-4 col-lg-2">
-            <h1>News</h1>
+            <h3 class="jcu-footer__heading">News</h3>
             <ul class="list-unstyled">
               <li><a href="https://www.jcu.edu.au/news">News</a></li>
               <li><a href="https://www.jcu.edu.au/events">Events</a></li>
@@ -817,7 +821,7 @@
         <div class="row jcu-footer__social-legal">
           <!-- Semantics: key navigation for site; select <div> otherwise -->
           <section class="col-sm-4 col-md-3">
-            <h1 class="sr-only">Social media</h1>
+            <h3 class="sr-only">Social media</h3>
             <ul class="nav jcu-footer__social">
               <li><a href="https://www.facebook.com/jamescookuniversity"><span class="sr-only">Facebook</span><span class="icon-circlefacebook" aria-label="Facebook icon"></span></a></li>
               <li><a href="https://twitter.com/jcu"><span class="sr-only">Twitter</span><span class="icon-circletwitter" aria-label="Twitter icon"></span></a></li>
@@ -828,7 +832,7 @@
           </section>
           <!-- Semantics: key navigation for site; select <div> otherwise -->
           <section class="col-sm-7 col-md-7">
-            <h1 class="sr-only">Key information</h1>
+            <h3 class="sr-only">Key information</h3>
             <ul class="nav jcu-footer__legal">
               <li><a href="https://secure.jcu.edu.au/app/feedback/">Feedback</a></li>
               <li><a href="https://www.jcu.edu.au/copyright-and-terms-of-use">Terms of use</a></li>
