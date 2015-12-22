@@ -5881,12 +5881,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   position: relative;
 }
 
-@media (min-width: 768px) {
-  .pull-right-md-up {
-    float: right !important;
-  }
-}
-
 .flex-items-start {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5942,6 +5936,10 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 
 .text-inverse {
+  color: #f7f7f9;
+}
+
+.text-inverse:focus, .text-inverse:hover {
   color: #f7f7f9;
 }
 
@@ -7186,14 +7184,14 @@ abbr[title] {
   }
 }
 
-.jcu-toolbar h1 {
+.jcu-toolbar .jcu-toolbar__heading {
   padding-bottom: .5rem;
   margin-bottom: .5rem;
   font-size: 1rem;
   border-bottom: 1px solid #ababab;
 }
 
-.jcu-toolbar h1 a {
+.jcu-toolbar .jcu-toolbar__heading a {
   color: #ababab;
 }
 
@@ -7493,6 +7491,7 @@ abbr[title] {
   margin-top: .25rem;
 }
 
+.jcu-section-navigator .navbar-dark .open > .nav-link:focus,
 .jcu-section-navigator .navbar-dark .nav-link:hover,
 .jcu-section-navigator .navbar-dark .nav-link:focus,
 .jcu-section-navigator .navbar-dark .dropdown:hover .nav-link {
@@ -7548,7 +7547,7 @@ abbr[title] {
   background-color: #e7e7e7;
 }
 
-.jcu-footer h1 {
+.jcu-footer .jcu-footer__heading {
   padding-top: .5rem;
   padding-bottom: .5rem;
   font-size: 1rem;
