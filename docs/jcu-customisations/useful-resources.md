@@ -28,11 +28,16 @@ the JCU Web Framework.
 * W3C:
 
   * ARIA Roles documentation: <http://www.w3.org/TR/wai-aria/roles>
+  * HTML 5.1 ARIA roles, states and properties: <http://www.w3.org/html/wg/drafts/html/master/single-page.html#allowed-aria-roles,-states-and-properties>
   * HTML5 sectioning: <http://www.w3.org/TR/html5/sections.html>
-  * Markup Validation Service: <https://validator.w3.org/>
+  * Markup Validation Service: <https://validator.w3.org/> - select `Document
+    Outline` to check the accessibility of a document's outline.
 
 * A11Y Project: <http://a11yproject.com/> (Excellent patterns library for
   widgets and more)
+
+* WebAIM: <http://webaim.org/> (Accessibility resources, patterns, and
+  checklists)
 
 * Git tutorial: <https://www.atlassian.com/git/tutorials/>
 
