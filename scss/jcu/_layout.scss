@@ -17,13 +17,6 @@ body {
   position: relative;
 }
 
-// Only pull-right on medium-and-up displays
-@include media-breakpoint-up(md) {
-  .pull-right-md-up {
-    @include pull-right;
-  }
-}
-
 // Flexbox: simple alignment for block items in containers
 @mixin flex-items($align) {
   display: flex;
