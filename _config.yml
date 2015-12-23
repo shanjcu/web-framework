@@ -24,13 +24,13 @@ gems:
   - jekyll-sitemap
 
 # Custom vars
-current_version:  4.0.0-alpha
+current_version:  4.0.0-alpha.2
 repo:             https://git.jcu.edu.au/stash/projects/WEBSTYLE/repos/jcu-web-framework
 slack:            https://bootstrap-slack.herokuapp.com
 
 download:
   source:         https://git.jcu.edu.au/stash/plugins/servlet/archive/projects/WEBSTYLE/repos/jcu-web-framework
-  dist:           https://github.com/twbs/bootstrap/releases/download/v4.0.0-alpha/bootstrap-4.0.0-alpha-dist.zip
+  dist:           https://github.com/twbs/bootstrap/releases/download/v4.0.0-alpha.2/bootstrap-4.0.0-alpha.2-dist.zip
 
 blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com

@@ -23,7 +23,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.0.0): modal.js
+   * Bootstrap (v4.0.0-alpha.2): modal.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -37,7 +37,7 @@
      */
 
     var NAME = 'modal';
-    var VERSION = '4.0.0';
+    var VERSION = '4.0.0-alpha';
     var DATA_KEY = 'bs.modal';
     var EVENT_KEY = '.' + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -155,7 +155,7 @@
           $(this._dialog).on(Event.MOUSEDOWN_DISMISS, function () {
             $(_this._element).one(Event.MOUSEUP_DISMISS, function (event) {
               if ($(event.target).is(_this._element)) {
-                that._ignoreBackdropClick = true;
+                _this._ignoreBackdropClick = true;
               }
             });
           });

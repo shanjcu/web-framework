@@ -181,7 +181,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       '@-ms-viewport{width:auto!important}'
     )
   )
-  document.querySelector('head').appendChild(msViewportStyle)
+  document.head.appendChild(msViewportStyle)
 }
 {% endhighlight %}
 
@@ -210,7 +210,7 @@ Page zooming inevitably presents rendering artifacts in some components, both in
 ## Sticky `:hover`/`:focus` on mobile
 Even though real hovering isn't possible on most touchscreens, most mobile browsers emulate hovering support and make `:hover` "sticky". In other words, `:hover` styles start applying after tapping an element and only stop applying after the user taps some other element. On mobile-first sites, this behavior is normally undesirable.
 
-Bootstrap includes a workaround for this, although it is disabled by default. By setting `$use-hover-media-query` to `true` when compiling from Sass, Bootstrap will use [mq4-hover-shim](https://github.com/twbs/mq4-hover-shim) to disable `:hover` styles in browsers that emulate hovering, thus preventing sticky `:hover` styles. There are some caveats to this workaround; see the shim's documentation for details.
+Bootstrap includes a workaround for this, although it is disabled by default. By setting `$enable-hover-media-query` to `true` when compiling from Sass, Bootstrap will use [mq4-hover-shim](https://github.com/twbs/mq4-hover-shim) to disable `:hover` styles in browsers that emulate hovering, thus preventing sticky `:hover` styles. There are some caveats to this workaround; see the shim's documentation for details.
 
 ## Printing
 
@@ -218,7 +218,7 @@ Even in some modern browsers, printing can be quirky.
 
 In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. [See #12078 for some details.](https://github.com/twbs/bootstrap/issues/12078) Suggested workarounds:
 
-Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:</p>
+Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:
 
 {% highlight css %}
 @media print {
