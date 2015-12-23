@@ -37,15 +37,16 @@ for a fully-worked, living example.
           <a class="nav-link" href="#">About JCU</a>
         </li>
         <li class="nav-item dropdown dropdown--open-on-hover">
-          <a class="nav-link dropdown-toggle" href="#">Campuses</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Townsville</a>
-            <a class="dropdown-item" href="#">Cairns</a>
-            <a class="dropdown-item" href="#">Singapore</a>
-            <a class="dropdown-item" href="#">Brisbane</a>
-            <a class="dropdown-item" href="#">Mackay</a>
-            <a class="dropdown-item" href="#">Mount Isa</a>
-            <a class="dropdown-item" href="#">Thursday Island</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Campuses</a>
+
+          <div class="dropdown-menu" role="menu">
+            <a class="dropdown-item" href="#" role="menuitem">Townsville</a>
+            <a class="dropdown-item" href="#" role="menuitem">Cairns</a>
+            <a class="dropdown-item" href="#" role="menuitem">Singapore</a>
+            <a class="dropdown-item" href="#" role="menuitem">Brisbane</a>
+            <a class="dropdown-item" href="#" role="menuitem">Mackay</a>
+            <a class="dropdown-item" href="#" role="menuitem">Mount Isa</a>
+            <a class="dropdown-item" href="#" role="menuitem">Thursday Island</a>
           </div>
         </li>
         <li class="nav-item">
