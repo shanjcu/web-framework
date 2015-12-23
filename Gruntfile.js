@@ -435,7 +435,7 @@ module.exports = function (grunt) {
     compress: {
       main: {
         options: {
-          archive: 'bootstrap-<%= pkg.version %>-dist.zip',
+          archive: 'jcu-web-framework-<%= pkg.version %>-dist.zip',
           mode: 'zip',
           level: 9,
           pretty: true
@@ -445,7 +445,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'dist/',
             src: ['**'],
-            dest: 'bootstrap-<%= pkg.version %>-dist'
+            dest: 'jcu-web-framework-<%= pkg.version %>-dist'
           }
         ]
       }
