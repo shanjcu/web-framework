@@ -27,9 +27,9 @@
 @import "../../../scss/mixins";
 
 // Local docs variables
-$bd-purple:         #563d7c;
+$bd-purple:         $brand-primary;
 $bd-purple-bright:  lighten(saturate($bd-purple, 5%), 15%);
-$bd-purple-light:   #cdbfe3;
+$bd-purple-light:   lighten($brand-primary, 15%);
 $bd-graphite:       #2a2730;
 $bd-graphite-light: lighten($bd-graphite, 40%);
 $bd-yellow:         #ffe484;
@@ -70,10 +70,15 @@ $jcu-gradient-color: #fff;
 // Extensions for Bootstrap docs styling
 .bd-pageheader {
   margin-bottom: 0;
-  padding-top: ($spacer / 2);
+  padding-top: ($spacer-y * 2);
+  padding-bottom: ($spacer-y * 3);
 
   h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
   }
 }
 

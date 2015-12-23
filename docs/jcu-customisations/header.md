@@ -49,13 +49,13 @@ to a given site or page.
 {% example html %}
 <header class="container jcu-header jcu-header--banner jcu-bg--blue-fish">
   <div class="row jcu-bg--black-50pc">
-    <div class="col-xs-6 text-left">
+    <div class="col-xs-6">
       <a class="jcu-brand" href="https://www.jcu.edu.au">
         <img class="img-fluid" src="{{ site.baseurl }}/dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo">
       </a>
     </div>
-    <div class="col-xs-6 text-right">
-      <a href="#"><h1 class="jcu-header__page-title" id="page-title2">Site title</h1></a>
+    <div class="col-xs-6 text-xs-right">
+      <h1 class="jcu-header__page-title" id="page-title2"><a href="#">Site title</a></h1>
     </div>
   </div>
 </header>

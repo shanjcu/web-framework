@@ -28,9 +28,9 @@ publishing date to be shown.
 {% example html %}
 <div class="jcu-colophon">
   <ul class="list-inline">
-    <li>Published Sunday, 20 Sep 2015 15:00</li>
-    <li>Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>
-    <li>ABN 46253211955</li>
+    <li class="list-inline-item">Published Sunday, 20 Sep 2015 15:00</li>
+    <li class="list-inline-item">Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>
+    <li class="list-inline-item">ABN 46253211955</li>
   </ul>
 </div>
 {% endexample %}
@@ -43,8 +43,8 @@ is inapplicable or inappropriate.
 {% example html %}
 <div class="jcu-colophon">
   <ul class="list-inline">
-    <li>Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>
-    <li>ABN 46253211955</li>
+    <li class="list-inline-item">Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>
+    <li class="list-inline-item">ABN 46253211955</li>
   </ul>
 </div>
 {% endexample %}

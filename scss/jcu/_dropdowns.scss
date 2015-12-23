@@ -22,6 +22,8 @@
 .dropdown-toggle::after {
   width: auto;
   height: auto;
+  margin-right: 0;
+  margin-left: .25rem;
   padding-top: .2em;
   font-family: $jcu-icon-font-family;
   line-height: ($line-height / 2);

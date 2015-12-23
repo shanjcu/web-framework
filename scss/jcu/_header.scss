@@ -64,6 +64,8 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 
 // Page title has responsive font sizing
 .jcu-header__page-title {
+  margin-top: $spacer-y;
+  margin-bottom: $spacer-y;
   color: #fff;
   font-size: $font-size-h3;
   font-weight: 600;

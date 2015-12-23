@@ -8,14 +8,14 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
 .jcu-footer {
   font-size: $font-size-sm;
   background-color: $gray-lighter;
+}
 
-  .jcu-footer__heading {
-    padding-top: ($spacer / 2);
-    padding-bottom: ($spacer / 2);
-    font-size: 1rem;
-    font-weight: 400;
-    border-bottom: $jcu-footer-border;
-  }
+.jcu-footer__heading {
+  padding-top: ($spacer / 2);
+  padding-bottom: ($spacer / 2);
+  font-size: 1rem;
+  font-weight: 400;
+  border-bottom: $jcu-footer-border;
 }
 
 .jcu-footer__social-legal {
@@ -28,38 +28,28 @@ $jcu-footer-border: $border-width dotted $jcu-footer-border-color;
     font-weight: $jcu-semi-bold;
   }
 
-  @at-root .jcu-footer__social {
-    @include list-unstyled;
-    margin-left: ($spacer-x / 2);
-    font-size: $jcu-icon-font-size-lg;
-    text-align: center;
+}
 
-    @include media-breakpoint-up(md) {
-      font-size: $jcu-icon-font-size;
-      text-align: left;
-    }
+.jcu-footer__social {
+  margin-left: ($spacer-x / 2);
+  font-size: $jcu-icon-font-size-lg;
+  text-align: center;
 
-    > li {
-      display: inline-block;
-    }
-
-    a {
-      color: #4b4c4e;
-      @include hover-focus {
-        color: $link-hover-color;
-      }
-    }
+  @include media-breakpoint-up(md) {
+    font-size: $jcu-icon-font-size;
+    text-align: left;
   }
 
-  @at-root .jcu-footer__legal {
-    @extend .list-inline;
-
-    > li:not(:last-child)::after {
-      margin-left: $spacer-x;
-      content: "";
-      border-left: $border-width solid $gray-light;
+  a {
+    color: #4b4c4e;
+    @include hover-focus {
+      color: $link-hover-color;
     }
   }
 }
 
-
+.jcu-footer__legal .list-inline-item:not(:last-child)::after {
+  margin-left: $spacer-x;
+  content: "";
+  border-left: $border-width solid $gray-light;
+}
