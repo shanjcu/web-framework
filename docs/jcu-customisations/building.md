@@ -86,7 +86,7 @@ automatically available.  Our Gruntfile adds the following commands and tasks:
 
 | Task | Description |
 | --- | --- |
-| `grunt jcu-publish` | Builds all dist and docs CSS/JS/assets, builds documentation via Jekyll for hosting, and uploads to the `gh-pages` branch in the repo. |
+| `grunt jcu-publish` | Builds documentation via Jekyll for hosting, and uploads to the `gh-pages` branch in the repo. |
 
 ## Branches and structure
 
@@ -271,6 +271,9 @@ otherwise can change significantly between versions.
      grunt dist docs
      ```
 
+     If you're continuing to work on the framework, use `grunt watch` to
+     automatically rebuild on changes.
+
   1. Visually inspect and test the components and documentation via your web
      browser.  Start a documentation server with:
 
@@ -298,12 +301,12 @@ otherwise can change significantly between versions.
 1. Rebuild the main documentation and push to the server in one go by running:
 
    ```
-   grunt jcu-publish
+   grunt prep-release jcu-publish
    ```
 
    If this happens to complain about uncommitted changes in the working
    directory, even if there are none.  In this case, you can run the final commit
-   manually:
+   task manually:
 
    ```
    grunt buildcontrol:pages

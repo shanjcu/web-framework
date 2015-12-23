@@ -559,5 +559,5 @@ module.exports = function (grunt) {
 
   // JCU custom tasks
   // Publish: builds docs, runs Jekyll, and pushes onto Bitbucket Server
-  grunt.registerTask('jcu-publish', ['dist', 'docs', 'jekyll:github', 'buildcontrol:pages']);
+  grunt.registerTask('jcu-publish', ['jekyll:github', 'buildcontrol:pages']);
 };
