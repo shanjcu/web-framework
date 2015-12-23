@@ -1192,7 +1192,7 @@ easier and cleaner to have Bundler install its resources locally to the
 <code class="highlighter-rouge">jcu-web-framework</code> directory with:</p>
 
     <p><code class="highlighter-rouge">
-bundle install --path vendor/bundle
+bundler install --path vendor/bundle
 </code></p>
 
     <p>Once you’ve run this once, you don’t need to specify the path if you re-run
@@ -1414,57 +1414,57 @@ you’ll run in the next step.</p>
   <li>
     <p>Once all non <code class="highlighter-rouge">dist/</code> and <code class="highlighter-rouge">docs/dist</code> conflicts are resolved, build and test
 the framework.</p>
-  </li>
-  <li>
-    <p>You <em>must</em> re-run the installation steps in order to update any
+
+    <ol>
+      <li>
+        <p>You <em>must</em> re-run the installation steps in order to update any
 dependencies for changes between Bootstrap versions:</p>
 
-    <p><code class="highlighter-rouge">
+        <p><code class="highlighter-rouge">
 npm install
 bundle
 </code></p>
-  </li>
-  <li>
-    <p>Now build the framework. Most technical issues (such as changes to
+      </li>
+      <li>
+        <p>Now build the framework. Most technical issues (such as changes to
 variable names and classes) will show at this point.</p>
 
-    <p><code class="highlighter-rouge">
+        <p><code class="highlighter-rouge">
 grunt dist docs
 </code></p>
 
-    <p>If you’re continuing to work on the framework, use <code class="highlighter-rouge">grunt watch</code> to
+        <p>If you’re continuing to work on the framework, use <code class="highlighter-rouge">grunt watch</code> to
 automatically rebuild on changes.</p>
-  </li>
-  <li>
-    <p>Visually inspect and test the components and documentation via your web
+      </li>
+      <li>
+        <p>Visually inspect and test the components and documentation via your web
 browser.  Start a documentation server with:</p>
+
+        <p><code class="highlighter-rouge">
+bundler exec jekyll serve
+</code></p>
+
+        <p>and load <a href="http://localhost:9001">http://localhost:9001</a> in your browser.  Visual and accessibility
+issues need to be inspected by loading the examples and style guide in your
+browser to ensure things appear correctly.  To resolve issues, ensure you
+check:</p>
+
+        <ul>
+          <li><a href="/migration">Official migration documentation</a></li>
+          <li><code class="highlighter-rouge">git blame</code> or Git version control history for the upstream repository</li>
+          <li>Existing classes being renamed or extended (such as <code class="highlighter-rouge">text-right</code> to
+<code class="highlighter-rouge">test-[size]-right</code>)</li>
+          <li>Core variables that have been added or adjusted (such as
+<code class="highlighter-rouge">$font-size-base</code> to <code class="highlighter-rouge">16px</code> )</li>
+          <li>Modification to existing classes or structure (such as addition of extra
+padding to <code class="highlighter-rouge">.dropdown-menu</code>)</li>
+        </ul>
+      </li>
+    </ol>
   </li>
-</ol>
-
-<p><code class="highlighter-rouge">
-   bundler exec jekyll serve
-  </code></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code> and load http://localhost:9001 in your browser.  Visual and accessibility
- issues need to be inspected by loading the examples and style guide in your
- browser to ensure things appear correctly.  To resolve issues, ensure you
- check:
-
- * [Official migration documentation](/migration)
- * `git blame` or Git version control history for the upstream repository
- * Existing classes being renamed or extended (such as `text-right` to
-   `test-[size]-right`)
- * Core variables that have been added or adjusted (such as
-   `$font-size-base` to `16px` )
- * Modification to existing classes or structure (such as addition of extra
-   padding to `.dropdown-menu`)
-</code></pre>
-</div>
-
-<ol>
   <li>
-    <p>Once fully tested, make a note in the change log, commit the results and push to
-the server.</p>
+    <p>Once fully tested, make a note in the change log, commit the results and push
+to the server.</p>
   </li>
   <li>
     <p>Rebuild the main documentation and push to the server in one go by running:</p>

@@ -6143,39 +6143,19 @@ abbr[title] {
   border-bottom-color: #004080;
 }
 
-.jcu-theme--blue h2,
-.jcu-theme--blue h3,
-.jcu-theme--blue h4,
-.jcu-theme--blue h5,
-.jcu-theme--blue h6,
-.jcu-theme--blue .lead {
+.jcu-theme--blue h2, .jcu-theme--blue h3, .jcu-theme--blue h4, .jcu-theme--blue h5, .jcu-theme--blue h6, .jcu-theme--blue .lead {
   color: #339;
 }
 
-.jcu-theme--orange h2,
-.jcu-theme--orange h3,
-.jcu-theme--orange h4,
-.jcu-theme--orange h5,
-.jcu-theme--orange h6,
-.jcu-theme--orange .lead {
+.jcu-theme--orange h2, .jcu-theme--orange h3, .jcu-theme--orange h4, .jcu-theme--orange h5, .jcu-theme--orange h6, .jcu-theme--orange .lead {
   color: #f33;
 }
 
-.jcu-theme--green h2,
-.jcu-theme--green h3,
-.jcu-theme--green h4,
-.jcu-theme--green h5,
-.jcu-theme--green h6,
-.jcu-theme--green .lead {
+.jcu-theme--green h2, .jcu-theme--green h3, .jcu-theme--green h4, .jcu-theme--green h5, .jcu-theme--green h6, .jcu-theme--green .lead {
   color: #096;
 }
 
-.jcu-theme--red h2,
-.jcu-theme--red h3,
-.jcu-theme--red h4,
-.jcu-theme--red h5,
-.jcu-theme--red h6,
-.jcu-theme--red .lead {
+.jcu-theme--red h2, .jcu-theme--red h3, .jcu-theme--red h4, .jcu-theme--red h5, .jcu-theme--red h6, .jcu-theme--red .lead {
   color: #900;
 }
 
@@ -7405,7 +7385,7 @@ abbr[title] {
 }
 
 .jcu-toolbar .card-subtitle {
-  font-size: .65rem;
+  font-size: .75rem;
   color: #e7e7e7;
 }
 
@@ -7519,7 +7499,7 @@ abbr[title] {
 
 .navbar--jcu-explorer .yamm-content {
   margin: 0 1rem .25rem;
-  color: #000;
+  color: #2d2d2d;
   background-color: #fff;
 }
 
