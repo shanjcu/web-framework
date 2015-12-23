@@ -249,47 +249,50 @@ otherwise can change significantly between versions.
    each conflicted file, merge changes together, and stage (`git add …`) the
    files.
 
-   For any files located in `dist/` or `docs/dist`, you can simply accept
-   Bootstrap's version from the merge by using:
+   For any files located in `dist/` or `docs/dist`, you can leave these until
+   rebuilding the framework as they are generated from the `grunt` build tasks
+   you'll run in the next step.
+
+1. Once all non `dist/` and `docs/dist` conflicts are resolved, build and test
+   the framework.
+
+  1. You *must* re-run the installation steps in order to update any
+     dependencies for changes between Bootstrap versions:
+
+     ```
+     npm install
+     bundle
+     ```
+
+  1. Now build the framework. Most technical issues (such as changes to
+     variable names and classes) will show at this point.
+
+     ```
+     grunt dist docs
+     ```
+
+  1. Visually inspect and test the components and documentation via your web
+     browser.  Start a documentation server with:
 
    ```
-   git reset path/to/file.css
-   git checkout --theirs path/to/file.css
-   ```
-
-   To make this easier, you could leave all files you're planning to accept
-   from core Bootstrap until the end of your merge and then use the command:
-
-   ```
-   git checkout --theirs .
-   ```
-
-   at the top level directory.  Take care as this will overwrite any
-   JCU-specific changes so make sure you don't run this until you're *absolutely
-   sure* no remaining files contain JCU changes.
-
-1. Once all conflicts are resolved, build and test the framework.  You'll need
-   to re-run the `npm` and `bundle` installation in case of any dependency
-   changes.
-
-   ```
-   npm install
-   bundle
-   grunt dist docs
    bundler exec jekyll serve
    ```
 
-   and load http://localhost:9001 in your browser.
+     and load http://localhost:9001 in your browser.  Visual and accessibility
+     issues need to be inspected by loading the examples and style guide in your
+     browser to ensure things appear correctly.  To resolve issues, ensure you
+     check:
 
-   The first two commands will update any dependencies, should anything change
-   between Bootstrap versions.
+     * [Official migration documentation]({{ site.baseurl }}/migration)
+     * `git blame` or Git version control history for the upstream repository
+     * Existing classes being renamed or extended (such as `text-right` to
+       `test-[size]-right`)
+     * Core variables that have been added or adjusted (such as
+       `$font-size-base` to `16px` )
+     * Modification to existing classes or structure (such as addition of extra
+       padding to `.dropdown-menu`)
 
-   Most technical issues (such as changes to variable names and classes) will be
-   caught during the third command - the rebuild.  Visual and other issues need
-   to be inspected by loading the examples and style guide in your browser to
-   ensure nothing has broken.
-
-1. When satisfied, make a note in the change log, commit the results and push to
+1. Once fully tested, make a note in the change log, commit the results and push to
    the server.
 
 1. Rebuild the main documentation and push to the server in one go by running:
