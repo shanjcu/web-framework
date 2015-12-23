@@ -4445,20 +4445,22 @@ a.label:focus, a.label:hover {
 
 .progress[value] {
   -webkit-appearance: none;
-  color: #0074d9;
+  background-color: #eee;
   border: 0;
+  border-radius: .25rem;
 
      -moz-appearance: none;
           appearance: none;
 }
 
+.progress[value]::-ms-fill {
+  background-color: #0074d9;
+  border: 0;
+}
+
 .progress[value]::-webkit-progress-bar {
   background-color: #eee;
   border-radius: .25rem;
-}
-
-.progress[value]::-webkit-progress-value::before {
-  content: attr(value);
 }
 
 .progress[value]::-webkit-progress-value {
@@ -4509,6 +4511,11 @@ a.label:focus, a.label:hover {
   background-size: 1rem 1rem;
 }
 
+.progress-striped[value]::-ms-fill {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
 @media screen and (min-width: 0\0) {
   .progress-bar-striped {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -4544,6 +4551,10 @@ a.label:focus, a.label:hover {
   background-color: #5cb85c;
 }
 
+.progress-success[value]::-ms-fill {
+  background-color: #5cb85c;
+}
+
 @media screen and (min-width: 0\0) {
   .progress-success .progress-bar {
     background-color: #5cb85c;
@@ -4555,6 +4566,10 @@ a.label:focus, a.label:hover {
 }
 
 .progress-info[value]::-moz-progress-bar {
+  background-color: #5bc0de;
+}
+
+.progress-info[value]::-ms-fill {
   background-color: #5bc0de;
 }
 
@@ -4572,6 +4587,10 @@ a.label:focus, a.label:hover {
   background-color: #f0ad4e;
 }
 
+.progress-warning[value]::-ms-fill {
+  background-color: #f0ad4e;
+}
+
 @media screen and (min-width: 0\0) {
   .progress-warning .progress-bar {
     background-color: #f0ad4e;
@@ -4583,6 +4602,10 @@ a.label:focus, a.label:hover {
 }
 
 .progress-danger[value]::-moz-progress-bar {
+  background-color: #d9534f;
+}
+
+.progress-danger[value]::-ms-fill {
   background-color: #d9534f;
 }
 
