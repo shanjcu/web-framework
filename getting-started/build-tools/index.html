@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -439,8 +441,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -519,8 +519,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1119,9 +1117,13 @@
 
 <ol>
   <li><a href="https://nodejs.org/download">Download and install Node</a>, which we use to manage our dependencies.</li>
-  <li>Install the Grunt command line tools, <code>grunt-cli</code>, with <code>npm install -g grunt-cli</code>.</li>
-  <li>Navigate to the root <code>/bootstrap</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="https://github.com/twbs/bootstrap/blob/master/package.json">package.json</a>.</li>
-  <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Install Ruby</a>, install <a href="http://bundler.io/">Bundler</a> with <code>gem install bundler</code>, and finally run <code>bundle</code>. This will install all Ruby dependencies, such as Jekyll and Sass linter.</li>
+  <li>Install the Grunt command line tools, <code class="highlighter-rouge">grunt-cli</code>, with <code class="highlighter-rouge">npm install -g grunt-cli</code>.</li>
+  <li>Navigate to the root <code class="highlighter-rouge">/bootstrap</code> directory and run <code class="highlighter-rouge">npm install</code> to install our local dependencies listed in <a href="https://github.com/twbs/bootstrap/blob/master/package.json">package.json</a>.</li>
+  <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Install Ruby</a>, install <a href="http://bundler.io/">Bundler</a> with <code class="highlighter-rouge">gem install bundler</code>, and finally run <code class="highlighter-rouge">bundle install</code>. This will install all Ruby dependencies, such as Jekyll and plugins.
+    <ul>
+      <li><strong>Windows users:</strong> Read <a href="http://jekyll-windows.juthilo.com/">this unofficial guide</a> to get Jekyll up and running without problems.</li>
+    </ul>
+  </li>
 </ol>
 
 <p>When completed, you’ll be able to run the various Grunt commands provided from the command line.</p>
@@ -1139,23 +1141,23 @@
   </thead>
   <tbody>
     <tr>
-      <td><code>grunt</code></td>
-      <td>Run <code>grunt</code> to run tests locally and compile the CSS and JavaScript into <code>/dist</code>. <strong>Uses <a href="http://sass-lang.com/">Sass</a> and <a href="http://lisperator.net/uglifyjs/">UglifyJS</a>.</strong></td>
+      <td><code class="highlighter-rouge">grunt</code></td>
+      <td>Run <code class="highlighter-rouge">grunt</code> to run tests locally and compile the CSS and JavaScript into <code class="highlighter-rouge">/dist</code>. <strong>Uses <a href="http://sass-lang.com/">Sass</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, and <a href="http://lisperator.net/uglifyjs/">UglifyJS</a>.</strong></td>
     </tr>
     <tr>
-      <td><code>grunt dist</code></td>
-      <td><code>grunt dist</code> creates the <code>/dist</code> directory with compiled files. <strong>Uses <a href="http://sass-lang.com/">Sass</a> and <a href="http://lisperator.net/uglifyjs/">UglifyJS</a>.</strong></td>
+      <td><code class="highlighter-rouge">grunt dist</code></td>
+      <td><code class="highlighter-rouge">grunt dist</code> creates the <code class="highlighter-rouge">/dist</code> directory with compiled files. <strong>Uses <a href="http://sass-lang.com/">Sass</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, and <a href="http://lisperator.net/uglifyjs/">UglifyJS</a>.</strong></td>
     </tr>
     <tr>
-      <td><code>grunt test</code></td>
+      <td><code class="highlighter-rouge">grunt test</code></td>
       <td>Runs <a href="https://github.com/brigade/scss-lint">scss-lint</a>, <a href="http://eslint.org/">ESLint</a> and <a href="http://qunitjs.com/">QUnit</a> tests headlessly in <a href="http://phantomjs.org/">PhantomJS</a> (used for CI).</td>
     </tr>
     <tr>
-      <td><code>grunt docs</code></td>
-      <td>Builds and tests CSS, JavaScript, and other assets which are used when running the documentation locally via <code>jekyll serve</code>.</td>
+      <td><code class="highlighter-rouge">grunt docs</code></td>
+      <td>Builds and tests CSS, JavaScript, and other assets which are used when running the documentation locally via <code class="highlighter-rouge">jekyll serve</code>.</td>
     </tr>
     <tr>
-      <td><code>grunt watch</code></td>
+      <td><code class="highlighter-rouge">grunt watch</code></td>
       <td>This is a convenience method for watching just Sass files and automatically building them whenever you save.</td>
     </tr>
   </tbody>
@@ -1163,26 +1165,26 @@
 
 <h2 id="switching-sass-compilers">Switching Sass compilers</h2>
 
-<p>Bootstrap will be compiled with <a href="https://github.com/sass/libsass">libsass</a> by default, but you can opt into traditional Ruby Sass by setting the <code>TWBS_SASS</code> environment variable. Two options are supported:</p>
+<p>Bootstrap will be compiled with <a href="https://github.com/sass/libsass">libsass</a> by default, but you can opt into traditional Ruby Sass by setting the <code class="highlighter-rouge">TWBS_SASS</code> environment variable. Two options are supported:</p>
 
 <ul>
-  <li><code>libsass</code> (default) to use <a href="https://github.com/sass/libsass">libsass</a> via <a href="https://github.com/sindresorhus/grunt-sass">grunt-sass</a>.</li>
-  <li><code>sass</code> to use <a href="https://github.com/sass/sass">Ruby Sass</a> via <a href="https://github.com/gruntjs/grunt-contrib-sass">grunt-contrib-sass</a>.</li>
+  <li><code class="highlighter-rouge">libsass</code> (default) to use <a href="https://github.com/sass/libsass">libsass</a> via <a href="https://github.com/sindresorhus/grunt-sass">grunt-sass</a>.</li>
+  <li><code class="highlighter-rouge">sass</code> to use <a href="https://github.com/sass/sass">Ruby Sass</a> via <a href="https://github.com/gruntjs/grunt-contrib-sass">grunt-contrib-sass</a>.</li>
 </ul>
 
-<p>For example, run <code>TWBS_SASS=sass grunt</code> to test and build Bootstrap with Ruby Sass.</p>
+<p>For example, run <code class="highlighter-rouge">TWBS_SASS=sass grunt</code> to test and build Bootstrap with Ruby Sass.</p>
+
+<h2 id="autoprefixer">Autoprefixer</h2>
+
+<p>Bootstrap uses <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> (included in our Gruntfile and build process) to automatically add vendor prefixes to some CSS properties at build time. Doing so saves us time and code by allowing us to write key parts of our CSS a single time while eliminating the need for vendor mixins like those found in v3.</p>
 
 <h2 id="local-documentation">Local documentation</h2>
 
 <p>Running our documentation locally requires the use of Jekyll, a decently flexible static site generator that provides us basic includes, Markdown-based files, templates, and more. Here’s how to get it started:</p>
 
 <ol>
-  <li>Run through the <a href="#tooling-setup">tooling setup</a> above to install Jekyll (the site builder) and Rouge (our syntax highlighter).
-    <ul>
-      <li><strong>Windows users:</strong> Read <a href="http://jekyll-windows.juthilo.com/">this unofficial guide</a> to get Jekyll up and running without problems.</li>
-    </ul>
-  </li>
-  <li>From the root <code>/bootstrap</code> directory, run <code>jekyll serve</code> in the command line.</li>
+  <li>Run through the <a href="#tooling-setup">tooling setup</a> above to install Jekyll (the site builder) and other Ruby dependencies with <code class="highlighter-rouge">bundle install</code>.</li>
+  <li>From the root <code class="highlighter-rouge">/bootstrap</code> directory, run <code class="highlighter-rouge">bundle exec jekyll serve</code> in the command line.</li>
   <li>Open <a href="http://localhost:9001">http://localhost:9001</a> in your browser, and voilà.</li>
 </ol>
 
@@ -1190,7 +1192,8 @@
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
-<p>Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
+<p>Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun <code class="highlighter-rouge">npm install</code>.</p>
+
 
           </div>
         </div>
@@ -1206,29 +1209,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1236,7 +1231,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

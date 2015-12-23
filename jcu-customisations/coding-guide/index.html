@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -82,8 +84,6 @@
       
       
 
-      
-        
       
 
       <div class="bd-toc-item active">
@@ -124,8 +124,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1162,12 +1160,12 @@ CodeSniffer and is capable of Section508 and WCAG2 testing.</p>
   <li>
     <p><a href="https://khan.github.io/tota11y/">tota11y</a>: in-browser testing of elements
 within actual pages.  Follow the instructions on the project page to use
-<code>tota11y</code> on live application or any other pages. <code>tota11y</code> is also included
+<code class="highlighter-rouge">tota11y</code> on live application or any other pages. <code class="highlighter-rouge">tota11y</code> is also included
 on all documentation pages for additional testing—look for the glasses in the
 bottom-left corner!</p>
 
-    <p>Use <code>tota11y</code> to determine contrast ratios for absolutely positioned
-elements where <code>pa11y</code> reports warnings.</p>
+    <p>Use <code class="highlighter-rouge">tota11y</code> to determine contrast ratios for absolutely positioned
+elements where <code class="highlighter-rouge">pa11y</code> reports warnings.</p>
   </li>
 </ul>
 
@@ -1203,10 +1201,10 @@ the way in which users can navigate and <em>explore</em> a content-rich site.</p
   </li>
   <li>
     <p>All custom variables and classes in code should follow Bootstrap’s lead
-and use American English (for example, <code>color</code> over <code>colour</code>).  This
+and use American English (for example, <code class="highlighter-rouge">color</code> over <code class="highlighter-rouge">colour</code>).  This
 decision is for consistency when mixing stock and custom variables.  Comments
 and content in documentation pages should follow standard Australian English
-spelling and grammar (<code>colour</code>).</p>
+spelling and grammar (<code class="highlighter-rouge">colour</code>).</p>
   </li>
   <li>
     <p>Avoid all use of inline styles within the framework; reusable classes should
@@ -1216,9 +1214,9 @@ be provided instead.</p>
     <p>Consistently name files: [suggestion coming]</p>
   </li>
   <li>
-    <p>Internet Explorer’s print layouts for A4 adhere to <code>sm</code> (small) sized media
+    <p>Internet Explorer’s print layouts for A4 adhere to <code class="highlighter-rouge">sm</code> (small) sized media
 queries.  In order to combat this, ensure print layouts are not affected or
-are specifically excluded in <code>@include media-breakpoint-down</code> styles.</p>
+are specifically excluded in <code class="highlighter-rouge">@include media-breakpoint-down</code> styles.</p>
   </li>
 </ul>
 
@@ -1236,29 +1234,21 @@ are specifically excluded in <code>@include media-breakpoint-down</code> styles.
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1266,7 +1256,7 @@ are specifically excluded in <code>@include media-breakpoint-down</code> styles.
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

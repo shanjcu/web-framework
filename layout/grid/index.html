@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -135,8 +137,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -550,8 +550,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -578,8 +576,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1147,14 +1143,14 @@
 
 <ul>
   <li>There are three major components—containers, rows, and columns.</li>
-  <li>Containers—<code>.container</code> for fixed width or <code>.container-fluid</code> for full width—center your site’s contents and help align your grid content.</li>
+  <li>Containers—<code class="highlighter-rouge">.container</code> for fixed width or <code class="highlighter-rouge">.container-fluid</code> for full width—center your site’s contents and help align your grid content.</li>
   <li>Rows are horizontal groups of columns that ensure your columns are lined up properly.</li>
   <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
-  <li>Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So if you want three equal-width columns, you’d use <code>.col-sm-4</code>.</li>
-  <li>Column <code>width</code>s are set in percentages, so they’re always fluid and sized relative to their parent element.</li>
-  <li>Columns have horizontal <code>padding</code> to create the gutters between individual columns.</li>
+  <li>Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So if you want three equal-width columns, you’d use <code class="highlighter-rouge">.col-sm-4</code>.</li>
+  <li>Column <code class="highlighter-rouge">width</code>s are set in percentages, so they’re always fluid and sized relative to their parent element.</li>
+  <li>Columns have horizontal <code class="highlighter-rouge">padding</code> to create the gutters between individual columns.</li>
   <li>There are five grid tiers, one for each <a href="/layout/overview/#responsive-breakpoints">responsive breakpoint</a>: extra small, small, medium, large, and extra large.</li>
-  <li>Grid tiers are based on minimum widths, meaning they apply to that one tier and all those above it (e.g., <code>.col-sm-4</code> applies to small, medium, large, and extra large devices).</li>
+  <li>Grid tiers are based on minimum widths, meaning they apply to that one tier and all those above it (e.g., <code class="highlighter-rouge">.col-sm-4</code> applies to small, medium, large, and extra large devices).</li>
   <li>You can use predefined grid classes or Sass mixins for more semantic markup.</li>
 </ul>
 
@@ -1193,11 +1189,11 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<p>The above example creates three equal-width columns on small, medium, large, and extra large devices using our <a href="#predefined-classes">predefined grid classes</a>. Those columns are centered in the page with the parent <code>.container</code>.</p>
+<p>The above example creates three equal-width columns on small, medium, large, and extra large devices using our <a href="#predefined-classes">predefined grid classes</a>. Those columns are centered in the page with the parent <code class="highlighter-rouge">.container</code>.</p>
 
 <h2 id="grid-options">Grid options</h2>
 
-<p>While Bootstrap uses <code>em</code>s or <code>rem</code>s for defining most sizes, <code>px</code>s are used for grid breakpoints and container widths.
+<p>While Bootstrap uses <code class="highlighter-rouge">em</code>s or <code class="highlighter-rouge">rem</code>s for defining most sizes, <code class="highlighter-rouge">px</code>s are used for grid breakpoints and container widths.
 This is because the viewport width is in pixels and does not change with the <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
 
 <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
@@ -1207,23 +1203,23 @@ This is because the viewport width is in pixels and does not change with the <a 
     <thead>
       <tr>
         <th></th>
-        <th class="text-center">
+        <th class="text-xs-center">
           Extra small<br />
           <small>&lt;544px</small>
         </th>
-        <th class="text-center">
+        <th class="text-xs-center">
           Small<br />
           <small>&ge;544px</small>
         </th>
-        <th class="text-center">
+        <th class="text-xs-center">
           Medium<br />
           <small>&ge;768px</small>
         </th>
-        <th class="text-center">
+        <th class="text-xs-center">
           Large<br />
           <small>&ge;992px</small>
         </th>
-        <th class="text-center">
+        <th class="text-xs-center">
           Extra large<br />
           <small>&ge;1200px</small>
         </th>
@@ -1283,7 +1279,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <p>Variables determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.</p>
 
-<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$grid-breakpoints</span><span class="p">:</span> <span class="p">(</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$grid-breakpoints</span><span class="p">:</span> <span class="p">(</span>
   <span class="o">//</span> <span class="n">Extra</span> <span class="n">small</span> <span class="n">screen</span> <span class="o">/</span> <span class="n">phone</span>
   <span class="n">xs</span><span class="o">:</span> <span class="m">0</span><span class="o">,</span>
   <span class="o">//</span> <span class="n">Small</span> <span class="n">screen</span> <span class="o">/</span> <span class="n">phone</span>
@@ -1294,17 +1290,17 @@ This is because the viewport width is in pixels and does not change with the <a 
   <span class="n">lg</span><span class="o">:</span> <span class="m">992px</span><span class="o">,</span>
   <span class="o">//</span> <span class="n">Extra</span> <span class="nb">large</span> <span class="n">screen</span> <span class="o">/</span> <span class="n">wide</span> <span class="n">desktop</span>
   <span class="n">xl</span><span class="o">:</span> <span class="m">1200px</span>
-<span class="p">)</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="p">);</span>
 
 
 <span class="nv">$grid-columns</span><span class="p">:</span>      <span class="m">12</span><span class="p">;</span>
-<span class="nv">$grid-gutter-width</span><span class="p">:</span> <span class="m">1</span><span class="mi">.875rem</span><span class="p">;</span></code></pre></div>
+<span class="nv">$grid-gutter-width</span><span class="p">:</span> <span class="m">1</span><span class="mi">.875rem</span><span class="p">;</span></code></pre></figure>
 
 <h3 id="mixins">Mixins</h3>
 
 <p>Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.</p>
 
-<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Creates a wrapper for a series of columns
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Creates a wrapper for a series of columns
 </span><span class="k">@mixin</span> <span class="nf">make-row</span><span class="p">(</span><span class="nv">$gutter</span><span class="o">:</span> <span class="nv">$grid-gutter-width</span><span class="p">)</span> <span class="p">{</span>
   <span class="nl">margin-left</span><span class="p">:</span>  <span class="p">(</span><span class="nv">$gutter</span> <span class="o">/</span> <span class="m">-2</span><span class="p">);</span>
   <span class="nl">margin-right</span><span class="p">:</span> <span class="p">(</span><span class="nv">$gutter</span> <span class="o">/</span> <span class="m">-2</span><span class="p">);</span>
@@ -1334,7 +1330,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 <span class="p">}</span>
 <span class="k">@mixin</span> <span class="nf">make-col-pull</span><span class="p">(</span><span class="nv">$columns</span><span class="p">)</span> <span class="p">{</span>
   <span class="nl">right</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">((</span><span class="nv">$columns</span> <span class="o">/</span> <span class="nv">$grid-columns</span><span class="p">));</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <h3 id="example-usage">Example usage</h3>
 
@@ -1342,7 +1338,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <p>See it in action in <a href="http://jsbin.com/ruxona/edit">this rendered example</a>.</p>
 
-<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.container</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.container</span> <span class="p">{</span>
   <span class="nl">max-width</span><span class="p">:</span> <span class="m">60em</span><span class="p">;</span>
   <span class="k">@include</span> <span class="nd">make-container</span><span class="p">();</span>
 <span class="p">}</span>
@@ -1368,14 +1364,14 @@ This is because the viewport width is in pixels and does not change with the <a 
   <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">32</span><span class="mi">.1em</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">@include</span> <span class="nd">make-col-span</span><span class="p">(</span><span class="m">4</span><span class="p">);</span>
   <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-main"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-secondary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h2 id="predefined-classes">Predefined classes</h2>
 
@@ -1383,7 +1379,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <h3 id="example-stacked-to-horizontal">Example: Stacked-to-horizontal</h3>
 
-<p>Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
+<p>Using a single set of <code class="highlighter-rouge">.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code class="highlighter-rouge">.row</code>.</p>
 
 <div class="bd-example-row">
 
@@ -1447,7 +1443,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <h3 id="example-mobile-and-desktop">Example: Mobile and desktop</h3>
 
-<p>Don’t want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> and <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.</p>
+<p>Don’t want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code class="highlighter-rouge">.col-xs-*</code> and <code class="highlighter-rouge">.col-md-*</code> to your columns. See the example below for a better idea of how it all works.</p>
 
 <div class="bd-example-row">
 
@@ -1493,7 +1489,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <h3 id="example-mobile-tablet-desktop">Example: Mobile, tablet, desktop</h3>
 
-<p>Build on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.</p>
+<p>Build on the previous example by creating even more dynamic and powerful layouts with tablet <code class="highlighter-rouge">.col-sm-*</code> classes.</p>
 
 <div class="bd-example-row">
 
@@ -1545,7 +1541,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <h3 id="example-responsive-column-resets">Example: Responsive column resets</h3>
 
-<p>With the four tiers of grids available you’re bound to run into issues where, at certain breakpoints, your columns don’t clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our <a href="/layout/responsive-utilities/">responsive utility classes</a>.</p>
+<p>With the four tiers of grids available you’re bound to run into issues where, at certain breakpoints, your columns don’t clear quite right as one is taller than the other. To fix that, use a combination of a <code class="highlighter-rouge">.clearfix</code> and our <a href="/layout/responsive-utilities/">responsive utility classes</a>.</p>
 
 <div class="bd-example-row">
 
@@ -1601,7 +1597,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <h3 id="example-offsetting-columns">Example: Offsetting columns</h3>
 
-<p>Move columns to the right using <code>.col-md-offset-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.col-md-offset-4</code> moves <code>.col-md-4</code> over four columns.</p>
+<p>Move columns to the right using <code class="highlighter-rouge">.col-md-offset-*</code> classes. These classes increase the left margin of a column by <code class="highlighter-rouge">*</code> columns. For example, <code class="highlighter-rouge">.col-md-offset-4</code> moves <code class="highlighter-rouge">.col-md-4</code> over four columns.</p>
 
 <div class="bd-example-row">
 
@@ -1633,7 +1629,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <h3 id="example-nesting-columns">Example: Nesting columns</h3>
 
-<p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p>
+<p>To nest your content with the default grid, add a new <code class="highlighter-rouge">.row</code> and set of <code class="highlighter-rouge">.col-sm-*</code> columns within an existing <code class="highlighter-rouge">.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p>
 
 <div class="bd-example-row">
 
@@ -1669,7 +1665,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 
 <h3 id="example-column-ordering">Example: Column ordering</h3>
 
-<p>Easily change the order of our built-in grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> modifier classes.</p>
+<p>Easily change the order of our built-in grid columns with <code class="highlighter-rouge">.col-md-push-*</code> and <code class="highlighter-rouge">.col-md-pull-*</code> modifier classes.</p>
 
 <div class="bd-example-row">
 
@@ -1699,29 +1695,21 @@ This is because the viewport width is in pixels and does not change with the <a 
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1729,7 +1717,7 @@ This is because the viewport width is in pixels and does not change with the <a 
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

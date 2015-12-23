@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -714,8 +716,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -820,8 +820,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1115,7 +1113,7 @@
 
 <h2 id="example">Example</h2>
 
-<p>Labels scale to match the size of the immediate parent element by using relative font sizing and <code>em</code> units.</p>
+<p>Labels scale to match the size of the immediate parent element by using relative font sizing and <code class="highlighter-rouge">em</code> units.</p>
 
 <div class="bd-example" data-example-id="">
 <h1>Example heading <span class="label label-default">New</span></h1>
@@ -1153,7 +1151,7 @@
 
 <h2 id="pill-labels">Pill labels</h2>
 
-<p>Use the <code>.label-pill</code> modifier class to make labels more rounded (with a larger <code>border-radius</code> and additional horizontal <code>padding</code>). Useful if you miss the badges from v3.</p>
+<p>Use the <code class="highlighter-rouge">.label-pill</code> modifier class to make labels more rounded (with a larger <code class="highlighter-rouge">border-radius</code> and additional horizontal <code class="highlighter-rouge">padding</code>). Useful if you miss the badges from v3.</p>
 
 <div class="bd-example" data-example-id="">
 <span class="label label-pill label-default">Default</span>
@@ -1185,29 +1183,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1215,7 +1205,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

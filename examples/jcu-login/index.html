@@ -21,18 +21,23 @@
 
   <body role="application">
 
+    <a class="sr-only sr-only-focusable" href="#main">
+      <div class="container bg-primary p-y-1">
+        Skip to main content
+      </div>
+    </a>
+
     <header class="container jcu-header jcu-header--banner jcu-bg--green-rainforest">
-      <a class="sr-only sr-only-focusable bg-inverse text-inverse" href="#main">Skip to main content</a>
       <div class="row">
-        <div class="col-xs-12 col-md-8 col-md-offset-2 p-y jcu-bg--black-75pc">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 p-y-1 jcu-bg--black-75pc">
           <div class="container">
             <div class="row">
-              <div class="col-xs-6 text-left">
+              <div class="col-xs-6">
                 <a href="https://www.jcu.edu.au">
                   <img class="img-fluid" src="../../dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo">
                 </a>
               </div>
-              <div class="col-xs-6 text-right">
+              <div class="col-xs-6 text-xs-right">
                 <h1 class="jcu-header__page-title" id="page-title"><span class="sr-only">James Cook University </span>Sign in</h1>
               </div>
             </div>
@@ -42,9 +47,9 @@
     </header>
 
     <main class="container jcu-content" id="main" role="main" aria-labelledby="page-title">
-      <div class="row m-y">
+      <div class="row m-y-1">
         <div class="col-md-6 col-md-offset-3">
-          <form class="m-y" action="#" method="post">
+          <form class="m-y-1" action="#" method="post">
             <div class="form-group">
               <div class="form-group">
                 <label class="sr-only" for="login-form__username">Enter your username</label>
@@ -56,9 +61,9 @@
               </div>
             </div>
 
-            <button class="btn btn-lg btn-primary btn-block m-y" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-primary btn-block m-y-1" type="submit">Sign in</button>
 
-            <div class="form-group text-center">
+            <div class="form-group text-xs-center">
               <a href="#">Forgot your password?</a>
             </div>
 
@@ -90,8 +95,8 @@
       <div class="row jcu-colophon">
         <div class="col-xs-12">
           <ul class="list-inline">
-            <li>Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>
-            <li>ABN 46253211955</li>
+            <li class="list-inline-item">Copyright &copy; 1995 to 2015 James Cook University.  All rights reserved.</li>
+            <li class="list-inline-item">ABN 46253211955</li>
           </ul>
         </div>
       </div>

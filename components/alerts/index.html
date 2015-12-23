@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -714,8 +716,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -833,8 +833,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1132,7 +1130,7 @@
 
 <h2 id="examples">Examples</h2>
 
-<p>Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the four <strong>required</strong> contextual classes (e.g., <code>.alert-success</code>). For inline dismissal, use the <a href="#dismissing">alerts jQuery plugin</a>.</p>
+<p>Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the four <strong>required</strong> contextual classes (e.g., <code class="highlighter-rouge">.alert-success</code>). For inline dismissal, use the <a href="#dismissing">alerts jQuery plugin</a>.</p>
 
 <div class="bd-example" data-example-id="">
 <div class="alert alert-success" role="alert">
@@ -1163,7 +1161,7 @@
 
 <h3 id="link-color">Link color</h3>
 
-<p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+<p>Use the <code class="highlighter-rouge">.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
 
 <div class="bd-example" data-example-id="">
 <div class="alert alert-success" role="alert">
@@ -1198,9 +1196,9 @@
 
 <ul>
   <li>Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.</li>
-  <li>Add a dismiss button and the <code>.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions the <code>.close</code> button.</li>
-  <li>On the dismiss button, add the <code>data-dismiss="alert"</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code>&lt;button&gt;</code> element with it for proper behavior across all devices.</li>
-  <li>To animate alerts when dismissing them, be sure to add the <code>.fade</code> and <code>.in</code> classes.</li>
+  <li>Add a dismiss button and the <code class="highlighter-rouge">.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions the <code class="highlighter-rouge">.close</code> button.</li>
+  <li>On the dismiss button, add the <code class="highlighter-rouge">data-dismiss="alert"</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code class="highlighter-rouge">&lt;button&gt;</code> element with it for proper behavior across all devices.</li>
+  <li>To animate alerts when dismissing them, be sure to add the <code class="highlighter-rouge">.fade</code> and <code class="highlighter-rouge">.in</code> classes.</li>
 </ul>
 
 <p>You can see this in action with a live demo:</p>
@@ -1226,13 +1224,13 @@
 
 <p>Enable dismissal of an alert via JavaScript:</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s2">".alert"</span><span class="p">).</span><span class="nx">alert</span><span class="p">()</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s2">".alert"</span><span class="p">).</span><span class="nx">alert</span><span class="p">()</span></code></pre></figure>
 
-<p>Or with <code>data</code> attributes on a button <strong>within the alert</strong>, as demonstrated above:</p>
+<p>Or with <code class="highlighter-rouge">data</code> attributes on a button <strong>within the alert</strong>, as demonstrated above:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 <p>Note that closing an alert will remove it from the DOM.</p>
 
@@ -1247,17 +1245,17 @@
   </thead>
   <tbody>
     <tr>
-      <td><code>$().alert()</code></td>
-      <td>Makes an alert listen for click events on descendant elements which have the <code>data-dismiss="alert"</code> attribute. (Not necessary when using the data-api’s auto-initialization.)</td>
+      <td><code class="highlighter-rouge">$().alert()</code></td>
+      <td>Makes an alert listen for click events on descendant elements which have the <code class="highlighter-rouge">data-dismiss="alert"</code> attribute. (Not necessary when using the data-api’s auto-initialization.)</td>
     </tr>
     <tr>
-      <td><code>$().alert('close')</code></td>
-      <td>Closes an alert by removing it from the DOM. If the <code>.fade</code> and <code>.in</code> classes are present on the element, the alert will fade out before it is removed.</td>
+      <td><code class="highlighter-rouge">$().alert('close')</code></td>
+      <td>Closes an alert by removing it from the DOM. If the <code class="highlighter-rouge">.fade</code> and <code class="highlighter-rouge">.in</code> classes are present on the element, the alert will fade out before it is removed.</td>
     </tr>
   </tbody>
 </table>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s2">".alert"</span><span class="p">).</span><span class="nx">alert</span><span class="p">(</span><span class="s1">'close'</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s2">".alert"</span><span class="p">).</span><span class="nx">alert</span><span class="p">(</span><span class="s1">'close'</span><span class="p">)</span></code></pre></figure>
 
 <h3 id="events">Events</h3>
 
@@ -1272,19 +1270,19 @@
   </thead>
   <tbody>
     <tr>
-      <td><code>close.bs.alert</code></td>
+      <td><code class="highlighter-rouge">close.bs.alert</code></td>
       <td>This event fires immediately when the <code>close</code> instance method is called.</td>
     </tr>
     <tr>
-      <td><code>closed.bs.alert</code></td>
+      <td><code class="highlighter-rouge">closed.bs.alert</code></td>
       <td>This event is fired when the alert has been closed (will wait for CSS transitions to complete).</td>
     </tr>
   </tbody>
 </table>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myAlert'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'closed.bs.alert'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myAlert'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'closed.bs.alert'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something…</span>
-<span class="p">})</span></code></pre></div>
+<span class="p">})</span></code></pre></figure>
 
 
           </div>
@@ -1301,29 +1299,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1331,7 +1321,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

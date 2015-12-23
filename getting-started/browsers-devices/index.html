@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -439,8 +441,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -480,8 +480,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1122,7 +1120,7 @@
       <li><a href="#desktop-browsers" id="markdown-toc-desktop-browsers">Desktop browsers</a></li>
     </ul>
   </li>
-  <li><a href="#internet-explorer-9" id="markdown-toc-internet-explorer-9">Internet Explorer 9</a></li>
+  <li><a href="#internet-explorer-9--10" id="markdown-toc-internet-explorer-9--10">Internet Explorer 9 &amp; 10</a></li>
   <li><a href="#supporting-internet-explorer-8" id="markdown-toc-supporting-internet-explorer-8">Supporting Internet Explorer 8</a></li>
   <li><a href="#ie-compatibility-modes" id="markdown-toc-ie-compatibility-modes">IE Compatibility modes</a></li>
   <li><a href="#internet-explorer-10-in-windows-phone-8" id="markdown-toc-internet-explorer-10-in-windows-phone-8">Internet Explorer 10 in Windows Phone 8</a></li>
@@ -1133,7 +1131,7 @@
     </ul>
   </li>
   <li><a href="#browser-zooming" id="markdown-toc-browser-zooming">Browser zooming</a></li>
-  <li><a href="#sticky-hoverfocus-on-mobile" id="markdown-toc-sticky-hoverfocus-on-mobile">Sticky <code>:hover</code>/<code>:focus</code> on mobile</a></li>
+  <li><a href="#sticky-hoverfocus-on-mobile" id="markdown-toc-sticky-hoverfocus-on-mobile">Sticky <code class="highlighter-rouge">:hover</code>/<code class="highlighter-rouge">:focus</code> on mobile</a></li>
   <li><a href="#printing" id="markdown-toc-printing">Printing</a></li>
   <li><a href="#android-stock-browser" id="markdown-toc-android-stock-browser">Android stock browser</a>    <ul>
       <li><a href="#select-menu" id="markdown-toc-select-menu">Select menu</a></li>
@@ -1229,42 +1227,34 @@
 
 <p>For a list of some of the browser bugs that Bootstrap has to grapple with, see our <a href="/browser-bugs/">Wall of browser bugs</a>.</p>
 
-<h2 id="internet-explorer-9">Internet Explorer 9</h2>
+<h2 id="internet-explorer-9--10">Internet Explorer 9 &amp; 10</h2>
 
-<p>Internet Explorer 9 is also supported, however, please be aware that some CSS3 properties and HTML5 elements are not fully supported.</p>
+<p>Internet Explorer 9 &amp; 10 are also supported, however, please be aware that some CSS3 properties and HTML5 elements are not fully supported.</p>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <thead>
       <tr>
         <th scope="col">Feature</th>
-        <th scope="col">Status</th>
+        <th scope="col">Internet Explorer 9</th>
+        <th scope="col">Internet Explorer 10</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"><code>border-radius</code></a></th>
-        <td class="text-success">Supported</td>
-      </tr>
-      <tr>
-        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"><code>box-shadow</code></a></th>
-        <td class="text-success">Supported</td>
-      </tr>
-      <tr>
-        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform"><code>transform</code></a></th>
-        <td class="text-success">Supported, with <code>-ms</code> prefix</td>
-      </tr>
-      <tr>
         <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"><code>transition</code></a></th>
         <td class="text-danger">Not supported</td>
+        <td class="text-success">Supported</td>
       </tr>
       <tr>
         <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#attr-placeholder"><code>placeholder</code></a></th>
         <td class="text-danger">Not supported</td>
+        <td class="text-success">Supported</td>
       </tr>
       <tr>
         <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Flexbox</a></th>
         <td class="text-danger">Not supported</td>
+        <td class="text-warning">Partially supported, with <code>-ms</code> prefix<br /><a href="http://caniuse.com/#feat=flexbox">See <em>Can I use</em> for details</a></td>
       </tr>
     </tbody>
   </table>
@@ -1288,9 +1278,9 @@
 
 <h2 id="ie-compatibility-modes">IE Compatibility modes</h2>
 
-<p>Bootstrap is not supported in the old Internet Explorer compatibility modes. To be sure you’re using the latest rendering mode for IE, consider including the appropriate <code>&lt;meta&gt;</code> tag in your pages:</p>
+<p>Bootstrap is not supported in the old Internet Explorer compatibility modes. To be sure you’re using the latest rendering mode for IE, consider including the appropriate <code class="highlighter-rouge">&lt;meta&gt;</code> tag in your pages:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <p>Confirm the document mode by opening the debugging tools: press <kbd>F12</kbd> and check the “Document Mode”.</p>
 
@@ -1300,9 +1290,9 @@
 
 <h2 id="internet-explorer-10-in-windows-phone-8">Internet Explorer 10 in Windows Phone 8</h2>
 
-<p>Internet Explorer 10 in Windows Phone 8 versions older than <a href="http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/14/introducing-windows-phone-preview-for-developers.aspx">Update 3 (a.k.a. GDR3)</a> doesn’t differentiate <strong>device width</strong> from <strong>viewport width</strong> in <code>@-ms-viewport</code> at-rules, and thus doesn’t properly apply the media queries in Bootstrap’s CSS. To address this, you’ll need to <strong>include the following JavaScript to work around the bug</strong>.</p>
+<p>Internet Explorer 10 in Windows Phone 8 versions older than <a href="http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/14/introducing-windows-phone-preview-for-developers.aspx">Update 3 (a.k.a. GDR3)</a> doesn’t differentiate <strong>device width</strong> from <strong>viewport width</strong> in <code class="highlighter-rouge">@-ms-viewport</code> at-rules, and thus doesn’t properly apply the media queries in Bootstrap’s CSS. To address this, you’ll need to <strong>include the following JavaScript to work around the bug</strong>.</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Copyright 2014-2015 Twitter, Inc.</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Copyright 2014-2015 Twitter, Inc.</span>
 <span class="c1">// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)</span>
 <span class="k">if</span> <span class="p">(</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/IEMobile</span><span class="se">\/</span><span class="sr">10</span><span class="se">\.</span><span class="sr">0/</span><span class="p">))</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">msViewportStyle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'style'</span><span class="p">)</span>
@@ -1311,8 +1301,8 @@
       <span class="s1">'@-ms-viewport{width:auto!important}'</span>
     <span class="p">)</span>
   <span class="p">)</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'head'</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">msViewportStyle</span><span class="p">)</span>
-<span class="p">}</span></code></pre></div>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">head</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">msViewportStyle</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
 
 <p>For more information and usage guidelines, read <a href="http://timkadlec.com/2013/01/windows-phone-8-and-device-width/">Windows Phone 8 and Device-Width</a>.</p>
 
@@ -1322,24 +1312,24 @@
 
 <h3 id="overflow-and-scrolling">Overflow and scrolling</h3>
 
-<p>Support for <code>overflow: hidden;</code> on the <code>&lt;body&gt;</code> element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices’ browsers, the <code>&lt;body&gt;</code> content will begin to scroll.</p>
+<p>Support for <code class="highlighter-rouge">overflow: hidden;</code> on the <code class="highlighter-rouge">&lt;body&gt;</code> element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices’ browsers, the <code class="highlighter-rouge">&lt;body&gt;</code> content will begin to scroll.</p>
 
 <h3 id="virtual-keyboards">Virtual keyboards</h3>
 
-<p>Also, note that if you’re using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn’t update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to <code>position: absolute;</code> or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.</p>
+<p>Also, note that if you’re using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn’t update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to <code class="highlighter-rouge">position: absolute;</code> or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.</p>
 
 <h3 id="navbar-dropdowns">Navbar Dropdowns</h3>
 
-<p>The <code>.dropdown-backdrop</code> element isn’t used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or <a href="https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile">any other element which will fire a click event in iOS</a>).</p>
+<p>The <code class="highlighter-rouge">.dropdown-backdrop</code> element isn’t used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or <a href="https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile">any other element which will fire a click event in iOS</a>).</p>
 
 <h2 id="browser-zooming">Browser zooming</h2>
 
 <p>Page zooming inevitably presents rendering artifacts in some components, both in Bootstrap and the rest of the web. Depending on the issue, we may be able to fix it (search first and then open an issue if need be). However, we tend to ignore these as they often have no direct solution other than hacky workarounds.</p>
 
-<h2 id="sticky-hoverfocus-on-mobile">Sticky <code>:hover</code>/<code>:focus</code> on mobile</h2>
-<p>Even though real hovering isn’t possible on most touchscreens, most mobile browsers emulate hovering support and make <code>:hover</code> “sticky”. In other words, <code>:hover</code> styles start applying after tapping an element and only stop applying after the user taps some other element. On mobile-first sites, this behavior is normally undesirable.</p>
+<h2 id="sticky-hoverfocus-on-mobile">Sticky <code class="highlighter-rouge">:hover</code>/<code class="highlighter-rouge">:focus</code> on mobile</h2>
+<p>Even though real hovering isn’t possible on most touchscreens, most mobile browsers emulate hovering support and make <code class="highlighter-rouge">:hover</code> “sticky”. In other words, <code class="highlighter-rouge">:hover</code> styles start applying after tapping an element and only stop applying after the user taps some other element. On mobile-first sites, this behavior is normally undesirable.</p>
 
-<p>Bootstrap includes a workaround for this, although it is disabled by default. By setting <code>$use-hover-media-query</code> to <code>true</code> when compiling from Sass, Bootstrap will use <a href="https://github.com/twbs/mq4-hover-shim">mq4-hover-shim</a> to disable <code>:hover</code> styles in browsers that emulate hovering, thus preventing sticky <code>:hover</code> styles. There are some caveats to this workaround; see the shim’s documentation for details.</p>
+<p>Bootstrap includes a workaround for this, although it is disabled by default. By setting <code class="highlighter-rouge">$enable-hover-media-query</code> to <code class="highlighter-rouge">true</code> when compiling from Sass, Bootstrap will use <a href="https://github.com/twbs/mq4-hover-shim">mq4-hover-shim</a> to disable <code class="highlighter-rouge">:hover</code> styles in browsers that emulate hovering, thus preventing sticky <code class="highlighter-rouge">:hover</code> styles. There are some caveats to this workaround; see the shim’s documentation for details.</p>
 
 <h2 id="printing">Printing</h2>
 
@@ -1347,13 +1337,13 @@
 
 <p>In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap’s extra-small grid being unexpectedly activated when printing. <a href="https://github.com/twbs/bootstrap/issues/12078">See #12078 for some details.</a> Suggested workarounds:</p>
 
-<p>Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:&lt;/p&gt;</p>
+<p>Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:</p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="n">print</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="n">print</span> <span class="p">{</span>
   <span class="nc">.container</span> <span class="p">{</span>
     <span class="nl">width</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
   <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <h2 id="android-stock-browser">Android stock browser</h2>
 
@@ -1361,9 +1351,9 @@
 
 <h4 id="select-menu">Select menu</h4>
 
-<p>On <code>&lt;select&gt;</code> elements, the Android stock browser will not display the side controls if there is a <code>border-radius</code> and/or <code>border</code> applied. (See <a href="https://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with">this StackOverflow question</a> for details.) Use the snippet of code below to remove the offending CSS and render the <code>&lt;select&gt;</code> as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers.</p>
+<p>On <code class="highlighter-rouge">&lt;select&gt;</code> elements, the Android stock browser will not display the side controls if there is a <code class="highlighter-rouge">border-radius</code> and/or <code class="highlighter-rouge">border</code> applied. (See <a href="https://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with">this StackOverflow question</a> for details.) Use the snippet of code below to remove the offending CSS and render the <code class="highlighter-rouge">&lt;select&gt;</code> as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
 <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">nua</span> <span class="o">=</span> <span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span>
   <span class="kd">var</span> <span class="nx">isAndroid</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Mozilla/5.0'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Android '</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'AppleWebKit'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Chrome'</span><span class="p">)</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
@@ -1371,7 +1361,7 @@
     <span class="nx">$</span><span class="p">(</span><span class="s1">'select.form-control'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'form-control'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'width'</span><span class="p">,</span> <span class="s1">'100%'</span><span class="p">)</span>
   <span class="p">}</span>
 <span class="p">})</span>
-<span class="nt">&lt;/script&gt;</span></code></pre></div>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
 <p>Want to see an example? <a href="http://jsbin.com/OyaqoDO/2">Check out this JS Bin demo.</a></p>
 
@@ -1397,29 +1387,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1427,7 +1409,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

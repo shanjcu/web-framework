@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -82,8 +84,6 @@
       
       
 
-      
-        
       
 
       <div class="bd-toc-item active">
@@ -397,8 +397,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1146,7 +1144,7 @@ on your system.</p>
 
 <p>How you get started depends on your operating system.  The simplest
 option is to use a terminal and if you are on a Mac or Linux computer, you’ll
-have the required tools already present by default – a Terminal and the <code>git</code>
+have the required tools already present by default – a Terminal and the <code class="highlighter-rouge">git</code>
 command.  If you’re on Windows, or otherwise looking for a GUI solution, you’ll
 need to install some form Git application (such as <a href="https://desktop.github.com/">GitHub
 Desktop</a>) to help you manage the code.</p>
@@ -1164,7 +1162,7 @@ it.  You’ll find clone URLs at the top-left side of the page.  Ensure that
 you clone the repository <em>recursively</em>, which ensures that third-party
 submodules are also obtained.  For those using a terminal, run:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 git clone --recursive https://git.jcu.edu.au/stash/projects/WEBSTYLE/repos/jcu-web-framework
 </code></p>
   </li>
@@ -1175,30 +1173,30 @@ are installed on your system.</p>
   <li>
     <p>Install any Node.js dependencies with:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 cd jcu-web-framework
 npm install
 </code></p>
 
     <p><a name="a11y-install"></a>Optionally, if you’d like to carry out
 accessibility testing, install these additional tools (noting that
-administrative or <code>sudo</code> access may be required):</p>
+administrative or <code class="highlighter-rouge">sudo</code> access may be required):</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 npm install -g pa11y phantomjs
 </code></p>
   </li>
   <li>
     <p>Your system may already have a Ruby environment configured. As such, it is
 easier and cleaner to have Bundler install its resources locally to the
-<code>jcu-web-framework</code> directory with:</p>
+<code class="highlighter-rouge">jcu-web-framework</code> directory with:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 bundle install --path vendor/bundle
 </code></p>
 
     <p>Once you’ve run this once, you don’t need to specify the path if you re-run
-<code>bundle</code>.  If just run <code>bundle</code> or <code>bundle install</code>, Bundler will try and
+<code class="highlighter-rouge">bundle</code>.  If just run <code class="highlighter-rouge">bundle</code> or <code class="highlighter-rouge">bundle install</code>, Bundler will try and
 install the required gems in your system path.</p>
   </li>
   <li>
@@ -1221,8 +1219,8 @@ automatically available.  Our Gruntfile adds the following commands and tasks:</
   </thead>
   <tbody>
     <tr>
-      <td><code>grunt jcu-publish</code></td>
-      <td>Builds all dist and docs CSS/JS/assets, builds documentation via Jekyll for hosting, and uploads to the <code>gh-pages</code> branch in the repo.</td>
+      <td><code class="highlighter-rouge">grunt jcu-publish</code></td>
+      <td>Builds documentation via Jekyll for hosting, and uploads to the <code class="highlighter-rouge">gh-pages</code> branch in the repo.</td>
     </tr>
   </tbody>
 </table>
@@ -1230,11 +1228,11 @@ automatically available.  Our Gruntfile adds the following commands and tasks:</
 <h2 id="branches-and-structure">Branches and structure</h2>
 
 <ul>
-  <li>Latest stable version is always located in <code>jcu-master</code> branch</li>
-  <li>Development changes take place on the <code>jcu-develop</code> branch</li>
-  <li>Features and developments should branch off <code>jcu-develop</code></li>
+  <li>Latest stable version is always located in <code class="highlighter-rouge">jcu-master</code> branch</li>
+  <li>Development changes take place on the <code class="highlighter-rouge">jcu-develop</code> branch</li>
+  <li>Features and developments should branch off <code class="highlighter-rouge">jcu-develop</code></li>
   <li>Versioning should follow SemVer</li>
-  <li>Fixes can be made via pull request from other users to the <code>develop</code> branch</li>
+  <li>Fixes can be made via pull request from other users to the <code class="highlighter-rouge">develop</code> branch</li>
 </ul>
 
 <h2 id="making-changes">Making changes</h2>
@@ -1246,15 +1244,15 @@ editor.  Ensure that your editor is compatible with EditorConfig to ensure
 that file formats and line endings are correct and stay that way.</p>
   </li>
   <li>
-    <p>Test and build the framework (<code>dist</code>) and the documentation (<code>docs</code>):</p>
+    <p>Test and build the framework (<code class="highlighter-rouge">dist</code>) and the documentation (<code class="highlighter-rouge">docs</code>):</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 grunt dist docs
 </code></p>
 
     <p>Once you’ve done this the first time, you can run:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 grunt watch
 </code></p>
 
@@ -1265,7 +1263,7 @@ you’re trying out a few different changes at once.</p>
   <li>
     <p>Build and serve the documentation:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 bundler exec jekyll serve
 </code></p>
   </li>
@@ -1289,7 +1287,7 @@ rebuild everything automagically.</p>
 
 <h3 id="tota11y">tota11y</h3>
 
-<p>To test with <code>tota11y</code>, the in-browser visualisation toolkit, use the glasses
+<p>To test with <code class="highlighter-rouge">tota11y</code>, the in-browser visualisation toolkit, use the glasses
 icon at the bottom-left of any documentation page or custom JCU examples. For
 any non-JCU examples, install and use the Bookmarklet, available on the <a href="https://khan.github.io/tota11y/#Installation">tota11y
 project page</a>.</p>
@@ -1298,16 +1296,16 @@ project page</a>.</p>
 contrast, link text testing, and more.</p>
 
 <div class="bd-callout bd-callout-info">
-<p><code>pa11y</code>, with its Section508 and WCAG2 tests, is limited in its ability to test
+<p><code class="highlighter-rouge">pa11y</code>, with its Section508 and WCAG2 tests, is limited in its ability to test
 absolutely positioned elements within a web page and produces warnings to this
-effect (<code>Warning: This element is absolutely positioned and the background color
-can not be determined [...]</code>).  <code>tota11y</code> should be used in these situations to
-test via its <code>Contrast</code> toggle.</p>
+effect (<code class="highlighter-rouge">Warning: This element is absolutely positioned and the background color
+can not be determined [...]</code>).  <code class="highlighter-rouge">tota11y</code> should be used in these situations to
+test via its <code class="highlighter-rouge">Contrast</code> toggle.</p>
 </div>
 
 <h3 id="pa11y">pa11y</h3>
 
-<p><code>pa11y</code> is a command-line tool that can be used to test pages against Section508
+<p><code class="highlighter-rouge">pa11y</code> is a command-line tool that can be used to test pages against Section508
 and WCAG2. For an in-depth introduction, consule <a href="http://cruft.io/posts/accessibility-testing-with-pa11y/">Accessibility Testing with
 pa11y</a>.</p>
 
@@ -1322,23 +1320,23 @@ tools</a>.</p>
   <li>
     <p>Start a documentation server running with:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 bundler exec jekyll serve
 </code></p>
   </li>
   <li>
     <p>In another terminal, test individual pages, one at a time, with:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 pa11y &lt;url&gt;
 pa11y --standard Section508 &lt;url&gt;
 </code></p>
 
-    <p>If not specified, the <code>--standard</code> defaults to <code>WCAG2AA</code>.</p>
+    <p>If not specified, the <code class="highlighter-rouge">--standard</code> defaults to <code class="highlighter-rouge">WCAG2AA</code>.</p>
 
     <p>So, to test the Content Page example:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 pa11y http://localhost:9001/examples/jcu-content-page
 pa11y --standard Section508 http://localhost:9001/examples/jcu-content-page
 </code></p>
@@ -1368,19 +1366,19 @@ otherwise can change significantly between versions.</p>
 
 <ol>
   <li>
-    <p>Add the official Bootstrap repository as a remote called <code>upstream</code> in your
+    <p>Add the official Bootstrap repository as a remote called <code class="highlighter-rouge">upstream</code> in your
 cloned repository and fetch its contents.  For those using a terminal, run:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 cd jcu-web-framework
 git remote add upstream https://github.com/twbs/bootstrap.git
 git fetch upstream
 </code></p>
   </li>
   <li>
-    <p>Fetch the latest changes from the <code>upstream</code> remote.  In a terminal, this is:</p>
+    <p>Fetch the latest changes from the <code class="highlighter-rouge">upstream</code> remote.  In a terminal, this is:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 git fetch upstream
 </code></p>
   </li>
@@ -1388,7 +1386,7 @@ git fetch upstream
     <p>Determine the version you wish to update to and attempt the merge,
 substituting in your version number:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 git merge v4.1.1
 </code></p>
 
@@ -1401,71 +1399,85 @@ be a branch name or commit hash.</p>
 where the changes in JCU’s framework are at odds with changes in the official
 Bootstrap code.</p>
 
-    <p>Go through each file (except those in <code>dist/</code> or <code>docs/dist/</code>) that is
+    <p>Go through each file (except those in <code class="highlighter-rouge">dist/</code> or <code class="highlighter-rouge">docs/dist/</code>) that is
 conflicted and resolve the merge.  See <a href="https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/">this
 page</a>
 from GitHub on how to resolve conflicts on the command line.  Your Git
 application likely offers similar functionality.  In essence, you’ll edit
-each conflicted file, merge changes together, and stage (<code>git add …</code>) the
+each conflicted file, merge changes together, and stage (<code class="highlighter-rouge">git add …</code>) the
 files.</p>
 
-    <p>For any files located in <code>dist/</code> or <code>docs/dist</code>, you can simply accept
-Bootstrap’s version from the merge by using:</p>
-
-    <p><code>
-git reset path/to/file.css
-git checkout --theirs path/to/file.css
-</code></p>
-
-    <p>To make this easier, you could leave all files you’re planning to accept
-from core Bootstrap until the end of your merge and then use the command:</p>
-
-    <p><code>
-git checkout --theirs .
-</code></p>
-
-    <p>at the top level directory.  Take care as this will overwrite any
-JCU-specific changes so make sure you don’t run this until you’re <em>absolutely
-sure</em> no remaining files contain JCU changes.</p>
+    <p>For any files located in <code class="highlighter-rouge">dist/</code> or <code class="highlighter-rouge">docs/dist</code>, you can leave these until
+rebuilding the framework as they are generated from the <code class="highlighter-rouge">grunt</code> build tasks
+you’ll run in the next step.</p>
   </li>
   <li>
-    <p>Once all conflicts are resolved, build and test the framework.  You’ll need
-to re-run the <code>npm</code> and <code>bundle</code> installation in case of any dependency
-changes.</p>
+    <p>Once all non <code class="highlighter-rouge">dist/</code> and <code class="highlighter-rouge">docs/dist</code> conflicts are resolved, build and test
+the framework.</p>
+  </li>
+  <li>
+    <p>You <em>must</em> re-run the installation steps in order to update any
+dependencies for changes between Bootstrap versions:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 npm install
 bundle
-grunt dist docs
-bundler exec jekyll serve
 </code></p>
-
-    <p>and load http://localhost:9001 in your browser.</p>
-
-    <p>The first two commands will update any dependencies, should anything change
-between Bootstrap versions.</p>
-
-    <p>Most technical issues (such as changes to variable names and classes) will be
-caught during the third command - the rebuild.  Visual and other issues need
-to be inspected by loading the examples and style guide in your browser to
-ensure nothing has broken.</p>
   </li>
   <li>
-    <p>When satisfied, make a note in the change log, commit the results and push to
+    <p>Now build the framework. Most technical issues (such as changes to
+variable names and classes) will show at this point.</p>
+
+    <p><code class="highlighter-rouge">
+grunt dist docs
+</code></p>
+
+    <p>If you’re continuing to work on the framework, use <code class="highlighter-rouge">grunt watch</code> to
+automatically rebuild on changes.</p>
+  </li>
+  <li>
+    <p>Visually inspect and test the components and documentation via your web
+browser.  Start a documentation server with:</p>
+  </li>
+</ol>
+
+<p><code class="highlighter-rouge">
+   bundler exec jekyll serve
+  </code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> and load http://localhost:9001 in your browser.  Visual and accessibility
+ issues need to be inspected by loading the examples and style guide in your
+ browser to ensure things appear correctly.  To resolve issues, ensure you
+ check:
+
+ * [Official migration documentation](/migration)
+ * `git blame` or Git version control history for the upstream repository
+ * Existing classes being renamed or extended (such as `text-right` to
+   `test-[size]-right`)
+ * Core variables that have been added or adjusted (such as
+   `$font-size-base` to `16px` )
+ * Modification to existing classes or structure (such as addition of extra
+   padding to `.dropdown-menu`)
+</code></pre>
+</div>
+
+<ol>
+  <li>
+    <p>Once fully tested, make a note in the change log, commit the results and push to
 the server.</p>
   </li>
   <li>
     <p>Rebuild the main documentation and push to the server in one go by running:</p>
 
-    <p><code>
-grunt jcu-publish
+    <p><code class="highlighter-rouge">
+grunt prep-release jcu-publish
 </code></p>
 
     <p>If this happens to complain about uncommitted changes in the working
 directory, even if there are none.  In this case, you can run the final commit
-manually:</p>
+task manually:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 grunt buildcontrol:pages
 </code></p>
   </li>
@@ -1475,33 +1487,33 @@ grunt buildcontrol:pages
 
 <p>The JCU Web Framework is built upon several extra components that underpin
 certain aspects such as the dropdown menus and icons.  These are all held within
-the <code>scss/components</code> directory and managed as <a href="https://www.git-scm.com/book/en/v2/Git-Tools-Submodules">Git
+the <code class="highlighter-rouge">scss/components</code> directory and managed as <a href="https://www.git-scm.com/book/en/v2/Git-Tools-Submodules">Git
 submodules</a>.</p>
 
 <p>Firstly, in order to update one of these components, determine the version to
 update to as a Git reference (such as a branch name, tag or commit).  You’ll use
-this to <code>checkout</code> in the process that follows.  These instructions are for
+this to <code class="highlighter-rouge">checkout</code> in the process that follows.  These instructions are for
 those using a terminal; adapt them to your own environment.</p>
 
 <ol>
   <li>
     <p>Change into the component directory:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 cd scss/components/[component-id]
 </code></p>
   </li>
   <li>
     <p>Fetch the latest changes for this submodule’s repository:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 git fetch
 </code></p>
   </li>
   <li>
     <p>Checkout the version you wish to update to that you determined earlier.</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 git checkout [version-id]
 </code></p>
   </li>
@@ -1509,7 +1521,7 @@ git checkout [version-id]
     <p>Change back to the main framework directory and pull any nested submodule
 updates:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 cd ../../..
 git submodule update --init --recursive
 </code></p>
@@ -1517,7 +1529,7 @@ git submodule update --init --recursive
   <li>
     <p>Commit the change in component version into the main framework:</p>
 
-    <p><code>
+    <p><code class="highlighter-rouge">
 git commit scss/components/[component-id]
 </code></p>
 
@@ -1543,29 +1555,21 @@ new features will need to be drawn in from time to time.</p>
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1573,7 +1577,7 @@ new features will need to be drawn in from time to time.</p>
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

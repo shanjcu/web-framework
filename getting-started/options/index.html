@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -439,8 +441,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -493,8 +493,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1115,7 +1113,7 @@
 
 <h2 id="available-variables">Available variables</h2>
 
-<p>You can find and customize these variables in our <code>_variables.scss</code> file.</p>
+<p>You can find and customize these variables in our <code class="highlighter-rouge">_variables.scss</code> file.</p>
 
 <table>
   <thead>
@@ -1127,38 +1125,38 @@
   </thead>
   <tbody>
     <tr>
-      <td><code>$spacer</code></td>
-      <td><code>1rem</code> (default), or any value &gt; 0</td>
+      <td><code class="highlighter-rouge">$spacer</code></td>
+      <td><code class="highlighter-rouge">1rem</code> (default), or any value &gt; 0</td>
       <td>Specifies the default spacer value for our spacer utilities.</td>
     </tr>
     <tr>
-      <td><code>$enable-flex</code></td>
-      <td><code>true</code> or <code>false</code> (default)</td>
-      <td>Swaps <code>float</code> and <code>display: table</code> styles for <code>display: flex</code>.</td>
+      <td><code class="highlighter-rouge">$enable-flex</code></td>
+      <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
+      <td>Swaps <code class="highlighter-rouge">float</code> and <code class="highlighter-rouge">display: table</code> styles for <code class="highlighter-rouge">display: flex</code>.</td>
     </tr>
     <tr>
-      <td><code>$enable-rounded</code></td>
-      <td><code>true</code> (default) or <code>false</code></td>
-      <td>Enables predefined <code>border-radius</code> styles on various components.</td>
+      <td><code class="highlighter-rouge">$enable-rounded</code></td>
+      <td><code class="highlighter-rouge">true</code> (default) or <code class="highlighter-rouge">false</code></td>
+      <td>Enables predefined <code class="highlighter-rouge">border-radius</code> styles on various components.</td>
     </tr>
     <tr>
-      <td><code>$enable-shadows</code></td>
-      <td><code>true</code> or <code>false</code> (default)</td>
-      <td>Enables predefined <code>box-shadow</code> styles on various components.</td>
+      <td><code class="highlighter-rouge">$enable-shadows</code></td>
+      <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
+      <td>Enables predefined <code class="highlighter-rouge">box-shadow</code> styles on various components.</td>
     </tr>
     <tr>
-      <td><code>$enable-gradients</code></td>
-      <td><code>true</code> or <code>false</code> (default)</td>
-      <td>Enables predefined gradients via <code>background-image</code> various components.</td>
+      <td><code class="highlighter-rouge">$enable-gradients</code></td>
+      <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
+      <td>Enables predefined gradients via <code class="highlighter-rouge">background-image</code> various components.</td>
     </tr>
     <tr>
-      <td><code>$enable-transitions</code></td>
-      <td><code>true</code> (default) or <code>false</code></td>
-      <td>Enables predefined <code>transition</code>s on various components.</td>
+      <td><code class="highlighter-rouge">$enable-transitions</code></td>
+      <td><code class="highlighter-rouge">true</code> (default) or <code class="highlighter-rouge">false</code></td>
+      <td>Enables predefined <code class="highlighter-rouge">transition</code>s on various components.</td>
     </tr>
     <tr>
-      <td><code>$enable-hover-media-query</code></td>
-      <td><code>true</code> or <code>false</code> (default)</td>
+      <td><code class="highlighter-rouge">$enable-hover-media-query</code></td>
+      <td><code class="highlighter-rouge">true</code> or <code class="highlighter-rouge">false</code> (default)</td>
       <td>…</td>
     </tr>
   </tbody>
@@ -1178,29 +1176,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1208,7 +1198,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

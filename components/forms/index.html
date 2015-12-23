@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -714,8 +716,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -768,8 +768,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1158,7 +1156,7 @@
 
 <p>Bootstrap’s form controls expand on <a href="/content/reboot/#forms">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices. The example form below demonstrates common HTML form elements that receive updated styles from Bootstrap with additional classes.</p>
 
-<p>Remember, since Bootstrap utilizes the HTML5 doctype, <strong>all inputs must have a <code>type</code> attribute</strong>.</p>
+<p>Remember, since Bootstrap utilizes the HTML5 doctype, <strong>all inputs must have a <code class="highlighter-rouge">type</code> attribute</strong>.</p>
 
 <div class="bd-example" data-example-id="">
 <form>
@@ -1304,27 +1302,27 @@
   <tbody>
     <tr>
       <td>
-        <p><code>.form-group</code></p>
+        <p><code class="highlighter-rouge">.form-group</code></p>
 
       </td>
       <td class="text-nowrap">
         Any group of form controls
       </td>
       <td>
-        <p>Use with any block-level element like <code>&lt;fieldset&gt;</code> or <code>&lt;div&gt;</code></p>
+        <p>Use with any block-level element like <code class="highlighter-rouge">&lt;fieldset&gt;</code> or <code class="highlighter-rouge">&lt;div&gt;</code></p>
 
       </td>
     </tr>
     <tr>
       <td rowspan="3">
-        <p><code>.form-control</code></p>
+        <p><code class="highlighter-rouge">.form-control</code></p>
 
       </td>
       <td>
         Textual inputs
       </td>
       <td>
-        <p><code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, <code>color</code></p>
+        <p><code class="highlighter-rouge">text</code>, <code class="highlighter-rouge">password</code>, <code class="highlighter-rouge">datetime</code>, <code class="highlighter-rouge">datetime-local</code>, <code class="highlighter-rouge">date</code>, <code class="highlighter-rouge">month</code>, <code class="highlighter-rouge">time</code>, <code class="highlighter-rouge">week</code>, <code class="highlighter-rouge">number</code>, <code class="highlighter-rouge">email</code>, <code class="highlighter-rouge">url</code>, <code class="highlighter-rouge">search</code>, <code class="highlighter-rouge">tel</code>, <code class="highlighter-rouge">color</code></p>
 
       </td>
     </tr>
@@ -1333,7 +1331,7 @@
         Select menus
       </td>
       <td>
-        <p><code>multiple</code>, <code>size</code></p>
+        <p><code class="highlighter-rouge">multiple</code>, <code class="highlighter-rouge">size</code></p>
 
       </td>
     </tr>
@@ -1347,24 +1345,24 @@
     </tr>
     <tr>
       <td class="text-nowrap">
-        <p><code>.form-control-file</code></p>
+        <p><code class="highlighter-rouge">.form-control-file</code></p>
 
       </td>
       <td>
         File inputs
       </td>
       <td>
-        <p><code>file</code></p>
+        <p><code class="highlighter-rouge">file</code></p>
 
       </td>
     </tr>
     <tr>
       <td class="text-nowrap">
 
-<p><code>.radio</code><br />
-<code>.radio-inline</code><br />
-<code>.checkbox</code><br />
-<code>.checkbox-inline</code></p>
+<p><code class="highlighter-rouge">.radio</code><br />
+<code class="highlighter-rouge">.radio-inline</code><br />
+<code class="highlighter-rouge">.checkbox</code><br />
+<code class="highlighter-rouge">.checkbox-inline</code></p>
 
       </td>
       <td class="text-nowrap">
@@ -1379,11 +1377,11 @@
 
 <h2 id="form-layouts">Form layouts</h2>
 
-<p>Since Bootstrap applies <code>display: block</code> and <code>width: 100%</code> to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.</p>
+<p>Since Bootstrap applies <code class="highlighter-rouge">display: block</code> and <code class="highlighter-rouge">width: 100%</code> to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.</p>
 
 <h3 id="form-groups">Form groups</h3>
 
-<p>The <code>.form-group</code> class is the easiest way to add some structure to forms. Its only purpose is to provide <code>margin-bottom</code> around a label and control pairing. As a bonus, since it’s a class you can use it with <code>&lt;fieldset&gt;</code>s, <code>&lt;div&gt;</code>s, or nearly any other element.</p>
+<p>The <code class="highlighter-rouge">.form-group</code> class is the easiest way to add some structure to forms. Its only purpose is to provide <code class="highlighter-rouge">margin-bottom</code> around a label and control pairing. As a bonus, since it’s a class you can use it with <code class="highlighter-rouge">&lt;fieldset&gt;</code>s, <code class="highlighter-rouge">&lt;div&gt;</code>s, or nearly any other element.</p>
 
 <div class="bd-example" data-example-id="">
 <form>
@@ -1410,15 +1408,15 @@
 
 <h3 id="inline-forms">Inline forms</h3>
 
-<p>Use the <code>.form-inline</code> class to to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms behave differently:</p>
+<p>Use the <code class="highlighter-rouge">.form-inline</code> class to to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms behave differently:</p>
 
 <ul>
-  <li>Controls are <code>display: inline-block</code> to provide alignment control via <code>vertical-align</code> and <code>margin</code>.</li>
-  <li>Controls receive <code>width: auto</code> to override the Bootstrap default <code>width: 100%</code>.</li>
+  <li>Controls are <code class="highlighter-rouge">display: inline-block</code> to provide alignment control via <code class="highlighter-rouge">vertical-align</code> and <code class="highlighter-rouge">margin</code>.</li>
+  <li>Controls receive <code class="highlighter-rouge">width: auto</code> to override the Bootstrap default <code class="highlighter-rouge">width: 100%</code>.</li>
   <li>Controls <strong>only appear inline in viewports that are at least 768px wide</strong> to account for narrow viewports on mobile devices.</li>
 </ul>
 
-<p>Because of this, you may need to manually address the width and alignment of individual form controls. Lastly, as shown below, you should always include a <code>&lt;label&gt;</code> with each form control.</p>
+<p>Because of this, you may need to manually address the width and alignment of individual form controls. Lastly, as shown below, you should always include a <code class="highlighter-rouge">&lt;label&gt;</code> with each form control.</p>
 
 <h4 id="visible-labels">Visible labels</h4>
 
@@ -1511,7 +1509,7 @@
 
 <h3 id="using-the-grid">Using the Grid</h3>
 
-<p>For more structured form layouts, you can utilize Bootstrap’s predefined grid classes (or mixins). Add the <code>.row</code> class to form groups and use the <code>.col-*</code> classes to specify the width of your labels and controls. To vertically center the labels with the textual inputs—nearly anything with <code>.form-control</code>—use the <code>.form-control-label</code> class.</p>
+<p>For more structured form layouts, you can utilize Bootstrap’s predefined grid classes (or mixins). Add the <code class="highlighter-rouge">.row</code> class to form groups and use the <code class="highlighter-rouge">.col-*</code> classes to specify the width of your labels and controls. To vertically center the labels with the textual inputs—nearly anything with <code class="highlighter-rouge">.form-control</code>—use the <code class="highlighter-rouge">.form-control-label</code> class.</p>
 
 <div class="bd-example" data-example-id="">
 <form>
@@ -1624,7 +1622,7 @@
 
 <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
 
-<p>Disabled checkboxes and radios are supported, but to provide a “not-allowed” cursor on hover of the parent <code>&lt;label&gt;</code>, you’ll need to add the <code>.disabled</code> class to the parent <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
+<p>Disabled checkboxes and radios are supported, but to provide a “not-allowed” cursor on hover of the parent <code class="highlighter-rouge">&lt;label&gt;</code>, you’ll need to add the <code>.disabled</code> class to the parent <code class="highlighter-rouge">.radio</code>, <code class="highlighter-rouge">.radio-inline</code>, <code class="highlighter-rouge">.checkbox</code>, or <code class="highlighter-rouge">.checkbox-inline</code>.</p>
 
 <h3 id="default-stacked">Default (stacked)</h3>
 
@@ -1695,7 +1693,7 @@
 
 <h3 id="inline">Inline</h3>
 
-<p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
+<p>Use the <code class="highlighter-rouge">.checkbox-inline</code> or <code class="highlighter-rouge">.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
 
 <div class="bd-example" data-example-id="">
 <label class="checkbox-inline">
@@ -1741,7 +1739,7 @@
 
 <h3 id="without-labels">Without labels</h3>
 
-<p>Should you have no text within the <code>&lt;label&gt;</code>, the input is positioned as you’d expect. <strong>Currently only works on non-inline checkboxes and radios.</strong></p>
+<p>Should you have no text within the <code class="highlighter-rouge">&lt;label&gt;</code>, the input is positioned as you’d expect. <strong>Currently only works on non-inline checkboxes and radios.</strong></p>
 
 <div class="bd-example" data-example-id="">
 <div class="checkbox">
@@ -1768,7 +1766,7 @@
 
 <h2 id="static-controls">Static controls</h2>
 
-<p>When you need to place plain text next to a form label within a form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
+<p>When you need to place plain text next to a form label within a form, use the <code class="highlighter-rouge">.form-control-static</code> class on a <code class="highlighter-rouge">&lt;p&gt;</code>.</p>
 
 <div class="bd-example" data-example-id="">
 <form>
@@ -1828,11 +1826,11 @@
 
 <h2 id="disabled-states">Disabled states</h2>
 
-<p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a <code>not-allowed</code> cursor.</p>
+<p>Add the <code class="highlighter-rouge">disabled</code> boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a <code class="highlighter-rouge">not-allowed</code> cursor.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"disabledInput"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Disabled input here..."</span> <span class="na">disabled</span><span class="nt">&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"disabledInput"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Disabled input here..."</span> <span class="na">disabled</span><span class="nt">&gt;</span></code></pre></figure>
 
-<p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within.</p>
+<p>Add the <code class="highlighter-rouge">disabled</code> attribute to a <code class="highlighter-rouge">&lt;fieldset&gt;</code> to disable all the controls within.</p>
 
 <div class="bd-example" data-example-id="">
 <form>
@@ -1878,20 +1876,20 @@
 <span class="nt">&lt;/form&gt;</span></code></pre></div>
 
 <div class="bd-callout bd-callout-warning">
-<h4 id="caveat-about-link-functionality-of-a">Caveat about link functionality of <code>&lt;a&gt;</code></h4>
+<h4 id="caveat-about-link-functionality-of-a">Caveat about link functionality of <code class="highlighter-rouge">&lt;a&gt;</code></h4>
 
-<p>By default, browsers will treat all native form controls (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code>&lt;a ... class="btn btn-*"&gt;</code> elements, these will only be given a style of <code>pointer-events: none</code>. As noted in the section about <a href="../buttons/#disabled-state">disabled state for buttons</a> (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn’t fully supported in Opera 18 and below, or in Internet Explorer 11, and won’t prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.</p>
+<p>By default, browsers will treat all native form controls (<code class="highlighter-rouge">&lt;input&gt;</code>, <code class="highlighter-rouge">&lt;select&gt;</code> and <code class="highlighter-rouge">&lt;button&gt;</code> elements) inside a <code class="highlighter-rouge">&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code class="highlighter-rouge">&lt;a ... class="btn btn-*"&gt;</code> elements, these will only be given a style of <code class="highlighter-rouge">pointer-events: none</code>. As noted in the section about <a href="../buttons/#disabled-state">disabled state for buttons</a> (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn’t fully supported in Opera 18 and below, or in Internet Explorer 11, and won’t prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.</p>
 </div>
 
 <div class="bd-callout bd-callout-danger">
 <h4 id="cross-browser-compatibility">Cross-browser compatibility</h4>
 
-<p>While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don’t fully support the <code>disabled</code> attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
+<p>While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don’t fully support the <code class="highlighter-rouge">disabled</code> attribute on a <code class="highlighter-rouge">&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
 </div>
 
 <h2 id="readonly-inputs">Readonly inputs</h2>
 
-<p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
+<p>Add the <code class="highlighter-rouge">readonly</code> boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
 
 <div class="bd-example" data-example-id="">
 <input class="form-control" type="text" placeholder="Readonly input here…" readonly="" />
@@ -1900,7 +1898,7 @@
 
 <h2 id="control-sizing">Control sizing</h2>
 
-<p>Set heights using classes like <code>.form-control-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
+<p>Set heights using classes like <code class="highlighter-rouge">.form-control-lg</code>, and set widths using grid column classes like <code class="highlighter-rouge">.col-lg-*</code>.</p>
 
 <div class="bd-example" data-example-id="">
 <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" />
@@ -1951,9 +1949,9 @@
 
 <h2 id="help-text">Help text</h2>
 
-<p>No official help text classes exist in Bootstrap 4 (previously we had <code>.help-block</code> in v3), but thanks to our utility classes like <code>.text-muted</code>, you can create much more flexible help text as you need it.</p>
+<p>No official help text classes exist in Bootstrap 4 (previously we had <code class="highlighter-rouge">.help-block</code> in v3), but thanks to our utility classes like <code class="highlighter-rouge">.text-muted</code>, you can create much more flexible help text as you need it.</p>
 
-<p>Inline text can use any typical inline HTML element (be it a <code>&lt;small&gt;</code>, <code>&lt;span&gt;</code>, or something else).</p>
+<p>Inline text can use any typical inline HTML element (be it a <code class="highlighter-rouge">&lt;small&gt;</code>, <code class="highlighter-rouge">&lt;span&gt;</code>, or something else).</p>
 
 <div class="bd-example" data-example-id="">
 <small class="text-muted">
@@ -1964,7 +1962,7 @@
   Some inline text with a small tag looks like this.
 <span class="nt">&lt;/small&gt;</span></code></pre></div>
 
-<p>Block help text—for below inputs or for longer lines of help text—can be easily achieved with a <code>&lt;p&gt;</code>.</p>
+<p>Block help text—for below inputs or for longer lines of help text—can be easily achieved with a <code class="highlighter-rouge">&lt;p&gt;</code>.</p>
 
 <div class="bd-example" data-example-id="">
 <p class="text-muted">
@@ -1977,7 +1975,7 @@
 
 <h2 id="validation">Validation</h2>
 
-<p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.form-control-label</code>, <code>.form-control</code>, and <code>.text-help</code> within that element will receive the validation styles.</p>
+<p>Bootstrap includes validation styles for danger, warning, and success states on form controls. To use, add <code class="highlighter-rouge">.has-warning</code>, <code class="highlighter-rouge">.has-danger</code>, or <code class="highlighter-rouge">.has-success</code> to the parent element. Any <code class="highlighter-rouge">.form-control-label</code>, <code class="highlighter-rouge">.form-control</code>, and <code class="highlighter-rouge">.text-help</code> within that element will receive the validation styles.</p>
 
 <div class="bd-example" data-example-id="">
 <div class="form-group has-success">
@@ -1988,34 +1986,28 @@
   <label class="form-control-label" for="inputWarning1">Input with warning</label>
   <input type="text" class="form-control form-control-warning" id="inputWarning1" />
 </div>
-<div class="form-group has-error">
-  <label class="form-control-label" for="inputError1">Input with error</label>
-  <input type="text" class="form-control form-control-error" id="inputError1" />
+<div class="form-group has-danger">
+  <label class="form-control-label" for="inputDanger1">Input with danger</label>
+  <input type="text" class="form-control form-control-danger" id="inputDanger1" />
 </div>
 
-<div class="has-success">
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" id="checkboxSuccess" value="option1" />
-      Checkbox with success
-    </label>
-  </div>
+<div class="checkbox has-success">
+  <label>
+    <input type="checkbox" id="checkboxSuccess" value="option1" />
+    Checkbox with success
+  </label>
 </div>
-<div class="has-warning">
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" id="checkboxWarning" value="option1" />
-      Checkbox with warning
-    </label>
-  </div>
+<div class="checkbox has-warning">
+  <label>
+    <input type="checkbox" id="checkboxWarning" value="option1" />
+    Checkbox with warning
+  </label>
 </div>
-<div class="has-error">
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" id="checkboxError" value="option1" />
-      Checkbox with error
-    </label>
-  </div>
+<div class="checkbox has-danger">
+  <label>
+    <input type="checkbox" id="checkboxDanger" value="option1" />
+    Checkbox with danger
+  </label>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
@@ -2026,53 +2018,47 @@
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-control-label"</span> <span class="na">for=</span><span class="s">"inputWarning1"</span><span class="nt">&gt;</span>Input with warning<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control form-control-warning"</span> <span class="na">id=</span><span class="s">"inputWarning1"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-error"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-control-label"</span> <span class="na">for=</span><span class="s">"inputError1"</span><span class="nt">&gt;</span>Input with error<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control form-control-error"</span> <span class="na">id=</span><span class="s">"inputError1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-control-label"</span> <span class="na">for=</span><span class="s">"inputDanger1"</span><span class="nt">&gt;</span>Input with danger<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control form-control-danger"</span> <span class="na">id=</span><span class="s">"inputDanger1"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"has-success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkboxSuccess"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>
-      Checkbox with success
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox has-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkboxSuccess"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>
+    Checkbox with success
+  <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"has-warning"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkboxWarning"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>
-      Checkbox with warning
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox has-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkboxWarning"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>
+    Checkbox with warning
+  <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"has-error"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkboxError"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>
-      Checkbox with error
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox has-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkboxDanger"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>
+    Checkbox with danger
+  <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="custom-forms">Custom forms</h2>
 
-<p>For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements any default form control.</p>
+<p>For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control.</p>
 
 <h3 id="checkboxes-and-radios-1">Checkboxes and radios</h3>
 
-<p>Each checkbox and radio is wrapped in a <code>&lt;label&gt;</code> for three reasons:</p>
+<p>Each checkbox and radio is wrapped in a <code class="highlighter-rouge">&lt;label&gt;</code> for three reasons:</p>
 
 <ul>
   <li>It provides a larger hit areas for checking the control.</li>
-  <li>It provides a helpful and semantic wrapper to help us replace the default <code>&lt;input&gt;</code>s.</li>
-  <li>It triggers the state of the <code>&lt;input&gt;</code> automatically, meaning no JavaScript is required.</li>
+  <li>It provides a helpful and semantic wrapper to help us replace the default <code class="highlighter-rouge">&lt;input&gt;</code>s.</li>
+  <li>It triggers the state of the <code class="highlighter-rouge">&lt;input&gt;</code> automatically, meaning no JavaScript is required.</li>
 </ul>
 
-<p>We hide the default <code>&lt;input&gt;</code> with <code>opacity</code> and use the <code>.c-indicator</code> to build a new custom form control. We can’t build a custom one from just the <code>&lt;input&gt;</code> because CSS’s <code>content</code> doesn’t work on that element.</p>
+<p>We hide the default <code class="highlighter-rouge">&lt;input&gt;</code> with <code class="highlighter-rouge">opacity</code> and use the <code class="highlighter-rouge">.c-indicator</code> to build a new custom form control. We can’t build a custom one from just the <code class="highlighter-rouge">&lt;input&gt;</code> because CSS’s <code class="highlighter-rouge">content</code> doesn’t work on that element.</p>
 
-<p>With the sibling selector (<code>~</code>), we use the <code>:checked</code> state to trigger a makeshift checked state on the custom control.</p>
+<p>With the sibling selector (<code class="highlighter-rouge">~</code>), we use the <code class="highlighter-rouge">:checked</code> state to trigger a makeshift checked state on the custom control.</p>
 
 <p>In the checked states, we use <strong>base64 embedded SVG icons</strong> from <a href="https://useiconic.com/open">Open Iconic</a>. This provides us the best control for styling and positioning across browsers and devices.</p>
 
@@ -2091,7 +2077,7 @@
   Check this custom checkbox
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
 
-<p>Custom checkboxes can also utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
+<p>Custom checkboxes can also utilize the <code class="highlighter-rouge">:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
 
 <div class="bd-example bd-example-indeterminate">
   <label class="c-input c-checkbox">
@@ -2103,7 +2089,7 @@
 
 <p>If you’re using jQuery, something like this should suffice:</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'.your-checkbox'</span><span class="p">).</span><span class="nx">prop</span><span class="p">(</span><span class="s1">'indeterminate'</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'.your-checkbox'</span><span class="p">).</span><span class="nx">prop</span><span class="p">(</span><span class="s1">'indeterminate'</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span></code></pre></figure>
 
 <h4 id="radios">Radios</h4>
 
@@ -2132,7 +2118,7 @@
 
 <h4 id="stacked">Stacked</h4>
 
-<p>Custom checkboxes and radios are inline to start. Add a parent with class <code>.c-inputs-stacked</code> to ensure each form control is on separate lines.</p>
+<p>Custom checkboxes and radios are inline to start. Add a parent with class <code class="highlighter-rouge">.c-inputs-stacked</code> to ensure each form control is on separate lines.</p>
 
 <div class="bd-example" data-example-id="">
 <div class="c-inputs-stacked">
@@ -2163,7 +2149,7 @@
 
 <h3 id="select-menu">Select menu</h3>
 
-<p>Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.c-select</code> to trigger the custom styles.</p>
+<p>Custom <code class="highlighter-rouge">&lt;select&gt;</code> menus need only a custom class, <code class="highlighter-rouge">.c-select</code> to trigger the custom styles.</p>
 
 <div class="bd-example" data-example-id="">
 <select class="c-select">
@@ -2180,7 +2166,7 @@
   <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/option&gt;</span>
 <span class="nt">&lt;/select&gt;</span></code></pre></div>
 
-<p>Custom selects degrade nicely in IE9, receiving only a handful of overrides to remove the custom <code>background-image</code>. <strong>Multiple selects (e.g., <code>&lt;select multiple&gt;</code>) are not currently supported.</strong></p>
+<p>Custom selects degrade nicely in IE9, receiving only a handful of overrides to remove the custom <code class="highlighter-rouge">background-image</code>. <strong>Multiple selects (e.g., <code class="highlighter-rouge">&lt;select multiple&gt;</code>) are not currently supported.</strong></p>
 
 <h3 id="file-browser">File browser</h3>
 
@@ -2198,11 +2184,11 @@
 <p>The file input is the most gnarly of the bunch. Here’s how it works:</p>
 
 <ul>
-  <li>We wrap the <code>&lt;input&gt;</code> in a <code>&lt;label&gt;</code> so the custom control properly triggers the file browser.</li>
-  <li>We hide the default file <code>&lt;input&gt;</code> via <code>opacity</code>.</li>
-  <li>We use <code>:after</code> to generate a custom background and directive (<em>Choose file…</em>).</li>
-  <li>We use <code>:before</code> to generate and position the <em>Browse</em> button.</li>
-  <li>We declare a <code>height</code> on the <code>&lt;input&gt;</code> for proper spacing for surrounding content.</li>
+  <li>We wrap the <code class="highlighter-rouge">&lt;input&gt;</code> in a <code class="highlighter-rouge">&lt;label&gt;</code> so the custom control properly triggers the file browser.</li>
+  <li>We hide the default file <code class="highlighter-rouge">&lt;input&gt;</code> via <code class="highlighter-rouge">opacity</code>.</li>
+  <li>We use <code class="highlighter-rouge">:after</code> to generate a custom background and directive (<em>Choose file…</em>).</li>
+  <li>We use <code class="highlighter-rouge">:before</code> to generate and position the <em>Browse</em> button.</li>
+  <li>We declare a <code class="highlighter-rouge">height</code> on the <code class="highlighter-rouge">&lt;input&gt;</code> for proper spacing for surrounding content.</li>
 </ul>
 
 <p>In other words, it’s an entirely custom element, all generated via CSS.</p>
@@ -2223,29 +2209,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -2253,7 +2231,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

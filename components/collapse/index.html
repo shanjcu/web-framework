@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -714,8 +716,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -990,8 +990,6 @@
             
 
             
-              
-            
 
             <li class="active bd-sidenav-active">
               <a href="/components/collapse">
@@ -1125,10 +1123,10 @@
       <li><a href="#via-javascript" id="markdown-toc-via-javascript">Via JavaScript</a></li>
       <li><a href="#options" id="markdown-toc-options">Options</a></li>
       <li><a href="#methods" id="markdown-toc-methods">Methods</a>        <ul>
-          <li><a href="#collapseoptions" id="markdown-toc-collapseoptions"><code>.collapse(options)</code></a></li>
-          <li><a href="#collapsetoggle" id="markdown-toc-collapsetoggle"><code>.collapse('toggle')</code></a></li>
-          <li><a href="#collapseshow" id="markdown-toc-collapseshow"><code>.collapse('show')</code></a></li>
-          <li><a href="#collapsehide" id="markdown-toc-collapsehide"><code>.collapse('hide')</code></a></li>
+          <li><a href="#collapseoptions" id="markdown-toc-collapseoptions"><code class="highlighter-rouge">.collapse(options)</code></a></li>
+          <li><a href="#collapsetoggle" id="markdown-toc-collapsetoggle"><code class="highlighter-rouge">.collapse('toggle')</code></a></li>
+          <li><a href="#collapseshow" id="markdown-toc-collapseshow"><code class="highlighter-rouge">.collapse('show')</code></a></li>
+          <li><a href="#collapsehide" id="markdown-toc-collapsehide"><code class="highlighter-rouge">.collapse('hide')</code></a></li>
         </ul>
       </li>
       <li><a href="#events" id="markdown-toc-events">Events</a></li>
@@ -1141,12 +1139,12 @@
 <p>Click the buttons below to show and hide another element via class changes:</p>
 
 <ul>
-  <li><code>.collapse</code> hides content</li>
-  <li><code>.collapsing</code> is applied during transitions</li>
-  <li><code>.collapse.in</code> shows content</li>
+  <li><code class="highlighter-rouge">.collapse</code> hides content</li>
+  <li><code class="highlighter-rouge">.collapsing</code> is applied during transitions</li>
+  <li><code class="highlighter-rouge">.collapse.in</code> shows content</li>
 </ul>
 
-<p>You can use a link with the <code>href</code> attribute, or a button with the <code>data-target</code> attribute. In both cases, the <code>data-toggle="collapse"</code> is required.</p>
+<p>You can use a link with the <code class="highlighter-rouge">href</code> attribute, or a button with the <code class="highlighter-rouge">data-target</code> attribute. In both cases, the <code class="highlighter-rouge">data-toggle="collapse"</code> is required.</p>
 
 <div class="bd-example" data-example-id="">
 <p>
@@ -1262,46 +1260,46 @@
 
 <h2 id="accessibility">Accessibility</h2>
 
-<p>Be sure to add <code>aria-expanded</code> to the control element. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of <code>aria-expanded="false"</code>. If you’ve set the collapsible element to be open by default using the <code>in</code> class, set <code>aria-expanded="true"</code> on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed.</p>
+<p>Be sure to add <code class="highlighter-rouge">aria-expanded</code> to the control element. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of <code class="highlighter-rouge">aria-expanded="false"</code>. If you’ve set the collapsible element to be open by default using the <code class="highlighter-rouge">in</code> class, set <code class="highlighter-rouge">aria-expanded="true"</code> on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed.</p>
 
-<p>Additionally, if your control element is targetting a single collapsible element – i.e. the <code>data-target</code> attribute is pointing to an <code>id</code> selector – you may add an additional <code>aria-controls</code> attribute to the control element, containing the <code>id</code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
+<p>Additionally, if your control element is targetting a single collapsible element – i.e. the <code class="highlighter-rouge">data-target</code> attribute is pointing to an <code class="highlighter-rouge">id</code> selector – you may add an additional <code class="highlighter-rouge">aria-controls</code> attribute to the control element, containing the <code class="highlighter-rouge">id</code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
 
 <h2 id="usage">Usage</h2>
 
 <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
 
 <ul>
-  <li><code>.collapse</code> hides the content</li>
-  <li><code>.collapse.in</code> shows the content</li>
-  <li><code>.collapsing</code> is added when the transition starts, and removed when it finishes</li>
+  <li><code class="highlighter-rouge">.collapse</code> hides the content</li>
+  <li><code class="highlighter-rouge">.collapse.in</code> shows the content</li>
+  <li><code class="highlighter-rouge">.collapsing</code> is added when the transition starts, and removed when it finishes</li>
 </ul>
 
-<p>These classes can be found in <code>_animation.scss</code>.</p>
+<p>These classes can be found in <code class="highlighter-rouge">_animation.scss</code>.</p>
 
 <h3 id="via-data-attributes">Via data attributes</h3>
 
-<p>Just add <code>data-toggle="collapse"</code> and a <code>data-target</code> to the element to automatically assign control of a collapsible element. The <code>data-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If you’d like it to default open, add the additional class <code>in</code>.</p>
+<p>Just add <code class="highlighter-rouge">data-toggle="collapse"</code> and a <code class="highlighter-rouge">data-target</code> to the element to automatically assign control of a collapsible element. The <code class="highlighter-rouge">data-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code class="highlighter-rouge">collapse</code> to the collapsible element. If you’d like it to default open, add the additional class <code class="highlighter-rouge">in</code>.</p>
 
-<p>To add accordion-like group management to a collapsible control, add the data attribute <code>data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
+<p>To add accordion-like group management to a collapsible control, add the data attribute <code class="highlighter-rouge">data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
 
 <h3 id="via-javascript">Via JavaScript</h3>
 
 <p>Enable manually with:</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'.collapse'</span><span class="p">).</span><span class="nx">collapse</span><span class="p">()</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'.collapse'</span><span class="p">).</span><span class="nx">collapse</span><span class="p">()</span></code></pre></figure>
 
 <h3 id="options">Options</h3>
 
-<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-parent=""</code>.</p>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code class="highlighter-rouge">data-</code>, as in <code class="highlighter-rouge">data-parent=""</code>.</p>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <thead>
      <tr>
        <th style="width: 100px;">Name</th>
-       <th style="width: 50px;">type</th>
-       <th style="width: 50px;">default</th>
-       <th>description</th>
+       <th style="width: 50px;">Type</th>
+       <th style="width: 50px;">Default</th>
+       <th>Description</th>
      </tr>
     </thead>
     <tbody>
@@ -1323,23 +1321,23 @@
 
 <h3 id="methods">Methods</h3>
 
-<h4 id="collapseoptions"><code>.collapse(options)</code></h4>
+<h4 id="collapseoptions"><code class="highlighter-rouge">.collapse(options)</code></h4>
 
-<p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
+<p>Activates your content as a collapsible element. Accepts an optional options <code class="highlighter-rouge">object</code>.</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myCollapsible'</span><span class="p">).</span><span class="nx">collapse</span><span class="p">({</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myCollapsible'</span><span class="p">).</span><span class="nx">collapse</span><span class="p">({</span>
   <span class="na">toggle</span><span class="p">:</span> <span class="kc">false</span>
-<span class="p">})</span></code></pre></div>
+<span class="p">})</span></code></pre></figure>
 
-<h4 id="collapsetoggle"><code>.collapse('toggle')</code></h4>
+<h4 id="collapsetoggle"><code class="highlighter-rouge">.collapse('toggle')</code></h4>
 
 <p>Toggles a collapsible element to shown or hidden.</p>
 
-<h4 id="collapseshow"><code>.collapse('show')</code></h4>
+<h4 id="collapseshow"><code class="highlighter-rouge">.collapse('show')</code></h4>
 
 <p>Shows a collapsible element.</p>
 
-<h4 id="collapsehide"><code>.collapse('hide')</code></h4>
+<h4 id="collapsehide"><code class="highlighter-rouge">.collapse('hide')</code></h4>
 
 <p>Hides a collapsible element.</p>
 
@@ -1378,9 +1376,9 @@
   </table>
 </div>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myCollapsible'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'hidden.bs.collapse'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myCollapsible'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'hidden.bs.collapse'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something…</span>
-<span class="p">})</span></code></pre></div>
+<span class="p">})</span></code></pre></figure>
 
 
           </div>
@@ -1397,29 +1395,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1427,7 +1417,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

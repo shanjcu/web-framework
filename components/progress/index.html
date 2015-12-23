@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -714,8 +716,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -911,8 +911,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1111,7 +1109,7 @@
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
             <h1 class="bd-title" id="content">Progress</h1>
-            <p>Stylize <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code>&lt;progress&gt;</code> element</a> with a few extra classes and some crafty browser-specific CSS. Be sure to read up on the browser support.</p>
+            <p>Stylize <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code class="highlighter-rouge">&lt;progress&gt;</code> element</a> with a few extra classes and some crafty browser-specific CSS. Be sure to read up on the browser support.</p>
 
 <h2 id="contents">Contents</h2>
 
@@ -1143,7 +1141,7 @@
 
 <h3 id="ie9-support">IE9 support</h3>
 
-<p>Internet Explorer 9 doesn’t support the HTML5 <code>&lt;progress&gt;</code> element, but we can work around that.</p>
+<p>Internet Explorer 9 doesn’t support the HTML5 <code class="highlighter-rouge">&lt;progress&gt;</code> element, but we can work around that.</p>
 
 <div class="bd-example" data-example-id="">
 <progress class="progress" value="25" max="100">
@@ -1192,9 +1190,9 @@
 
 <h3 id="animated-stripes">Animated stripes</h3>
 
-<p>The striped gradient can also be animated. Add <code>.progress-animated</code> to <code>.progress</code> to animate the stripes right to left via CSS3 animations.</p>
+<p>The striped gradient can also be animated. Add <code class="highlighter-rouge">.progress-animated</code> to <code class="highlighter-rouge">.progress</code> to animate the stripes right to left via CSS3 animations.</p>
 
-<p><strong>Animated progress bars do not work in IE9 and Opera 12</strong> as they don’t support CSS3 animations.</p>
+<p><strong>Animated progress bars do not work in IE9 and Opera 12</strong> – as they don’t support CSS3 animations – <strong>nor in IE10+ and Microsoft Edge</strong> – as they currently don’t support CSS3 animations on the <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465757.aspx"><code class="highlighter-rouge">::-ms-fill</code> pseudo-element</a>.</p>
 
 <div class="bd-example">
   <progress class="progress progress-striped" value="25" max="100">25%</progress>
@@ -1203,7 +1201,7 @@
   </button>
 </div>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress progress-striped progress-animated"</span> <span class="na">value=</span><span class="s">"25"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>25%<span class="nt">&lt;/progress&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;progress</span> <span class="na">class=</span><span class="s">"progress progress-striped progress-animated"</span> <span class="na">value=</span><span class="s">"25"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>25%<span class="nt">&lt;/progress&gt;</span></code></pre></figure>
 
 
           </div>
@@ -1220,29 +1218,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1250,7 +1240,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({

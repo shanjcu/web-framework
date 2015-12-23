@@ -15,7 +15,9 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/dist/css/jcu.min.css" rel="stylesheet">
+
+  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+
 
 <!-- Documentation extras -->
 <link href="/assets/css/docs.min.css" rel="stylesheet">
@@ -36,7 +38,7 @@
   
 
   <div class="clearfix">
-    <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
     </button>
     <a class="navbar-brand hidden-sm-up" href="/">
@@ -72,7 +74,7 @@
             <div class="bd-sidebar">
 
   <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
     <div class="dropdown-menu bd-search-results" id="search-results"></div>
   </form>
 
@@ -439,8 +441,6 @@
       
 
       
-        
-      
 
       <div class="bd-toc-item active">
         
@@ -467,8 +467,6 @@
             
             
 
-            
-              
             
 
             <li class="active bd-sidenav-active">
@@ -1111,9 +1109,9 @@
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
             <h1 class="bd-title" id="content">Download</h1>
-            <p><strong>Bootstrap v4.0.0-alpha</strong> is available for download in several ways, including some of your favorite package managers. Choose from the options below to snag just what you need.</p>
+            <p><strong>Bootstrap v4.0.0-alpha.2</strong> is available for download in several ways, including some of your favorite package managers. Choose from the options below to snag just what you need.</p>
 
-<div class="row m-t-md">
+<div class="row m-t-2">
   <div class="col-sm-6">
 
 <h3 id="compiled">Compiled</h3>
@@ -1140,45 +1138,57 @@
 <p><strong>Heads up!</strong> Not all package managers have the v4 alpha published yet, but we should have them up shortly!</p>
 </div>
 
-<h3 id="bower">Bower</h3>
-
-<p>Install and manage Bootstrap’s Sass and JavaScript using <a href="http://bower.io">Bower</a>.</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>bower install bootstrap#v4.0.0-alpha</code></pre></div>
-
 <h3 id="npm">npm</h3>
 
 <p>Install Bootstrap in your Node powered apps with <a href="https://www.npmjs.org/package/bootstrap">the npm package</a>:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>npm install bootstrap@4.0.0-alpha</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>npm install bootstrap@4.0.0-alpha.2</code></pre></figure>
 
-<p><code>require('bootstrap')</code> will load all of Bootstrap’s jQuery plugins onto the jQuery object. The <code>bootstrap</code> module itself does not export anything. You can manually load Bootstrap’s jQuery plugins individually by loading the <code>/js/*.js</code> files under the package’s top-level directory.</p>
+<p><code class="highlighter-rouge">require('bootstrap')</code> will load all of Bootstrap’s jQuery plugins onto the jQuery object. The <code class="highlighter-rouge">bootstrap</code> module itself does not export anything. You can manually load Bootstrap’s jQuery plugins individually by loading the <code class="highlighter-rouge">/js/*.js</code> files under the package’s top-level directory.</p>
 
-<p>Bootstrap’s <code>package.json</code> contains some additional metadata under the following keys:</p>
+<p>Bootstrap’s <code class="highlighter-rouge">package.json</code> contains some additional metadata under the following keys:</p>
 
 <ul>
-  <li><code>sass</code> - path to Bootstrap’s main <a href="http://sass-lang.com/">Sass</a> source file</li>
-  <li><code>style</code> - path to Bootstrap’s non-minified CSS that’s been precompiled using the default settings (no customization)</li>
+  <li><code class="highlighter-rouge">sass</code> - path to Bootstrap’s main <a href="http://sass-lang.com/">Sass</a> source file</li>
+  <li><code class="highlighter-rouge">style</code> - path to Bootstrap’s non-minified CSS that’s been precompiled using the default settings (no customization)</li>
 </ul>
+
+<h3 id="rubygems">RubyGems</h3>
+
+<p>Install Bootstrap in your Ruby apps using <a href="http://bundler.io/">Bundler</a> (<strong>recommended</strong>) and <a href="https://rubygems.org/">RubyGems</a> by adding the following line to your <a href="http://bundler.io/gemfile.html"><code class="highlighter-rouge">Gemfile</code></a>:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="s1">'bootstrap'</span><span class="p">,</span> <span class="s1">'~&gt; 4.0.0.alpha3'</span></code></pre></figure>
+
+<p>Alternatively, if you’re not using Bundler, you can install the gem by running this command:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>gem install bootstrap -v 4.0.0.alpha3</code></pre></figure>
+
+<p><a href="https://github.com/twbs/bootstrap-rubygem/blob/master/README.md">See the gem’s README</a> for further details.</p>
 
 <h3 id="meteor">Meteor</h3>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>meteor add twbs:bootstrap@<span class="o">=</span>4.0.0-alpha</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>meteor add twbs:bootstrap@<span class="o">=</span>4.0.0-alpha.2</code></pre></figure>
 
 <h3 id="composer">Composer</h3>
 
 <p>You can also install and manage Bootstrap’s Sass and JavaScript using <a href="https://getcomposer.org">Composer</a>:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>composer require twbs/bootstrap</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>composer require twbs/bootstrap</code></pre></figure>
+
+<h3 id="bower">Bower</h3>
+
+<p>Install and manage Bootstrap’s Sass and JavaScript using <a href="http://bower.io">Bower</a>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>bower install bootstrap#v4.0.0-alpha.2</code></pre></figure>
 
 <h3 id="nuget">NuGet</h3>
 
 <p>If you develop in .NET, you can also install and manage Bootstrap’s <a href="https://www.nuget.org/packages/bootstrap/">CSS</a> or <a href="https://www.nuget.org/packages/bootstrap.sass/">Sass</a> and JavaScript using <a href="https://www.nuget.org">NuGet</a>:</p>
 
-<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="gp">PM&gt; </span>Install-Package bootstrap -Pre
-<span class="gp">PM&gt; </span>Install-Package bootstrap.sass -Pre</code></pre></div>
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="gp">PM&gt; </span>Install-Package bootstrap -Pre
+<span class="gp">PM&gt; </span>Install-Package bootstrap.sass -Pre</code></pre></figure>
 
-<p>The <code>-Pre</code> is required until Bootstrap v4 has a stable release.</p>
+<p>The <code class="highlighter-rouge">-Pre</code> is required until Bootstrap v4 has a stable release.</p>
 
 <h2 id="custom-builds">Custom builds</h2>
 
@@ -1217,29 +1227,21 @@
       <li><a href="/about/history/">About</a></li>
     </ul>
     <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.</p>
+    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
     <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
   </div>
 </footer>
 
 <script src="/assets/js/vendor/jquery.min.js"></script>
 
-
-  <script src="/dist/js/bootstrap.js"></script>
-
+<script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  
-    <script src="/../assets/js/vendor/anchor.min.js"></script>
-  
-    <script src="/../assets/js/vendor/clipboard.min.js"></script>
-  
-    <script src="/../assets/js/vendor/holder.min.js"></script>
-  
-    <script src="/../assets/js/vendor/tether.min.js"></script>
-  
-    <script src="/../assets/js/src/application.js"></script>
-  
+  <script src="/dist/js/bootstrap.min.js"></script>
+
+
+
+  <script src="/assets/js/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -1247,7 +1249,7 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 
 
-<script src="/assets/js/vendor/jekyll-search.js"></script>
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch.init({
