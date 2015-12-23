@@ -3,12 +3,7 @@
 //
 @mixin jcu-theme-headings($name, $color) {
   .jcu-theme--#{$name} {
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .lead {
+    h2, h3, h4, h5, h6, .lead {
       color: $color;
     }
   }

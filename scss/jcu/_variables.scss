@@ -1,118 +1,255 @@
+// Variables
 
-// Global Bootstrap settings
-//$enable-flex:                  true; // See http://v4-alpha.getbootstrap.com/getting-started/flexbox/
-$enable-rounded:                 false; // Sharp pointy edges
-$enable-shadows:                 false; // TODO Consider re-enabling for theme
-//$enable-gradients:             true; // Has no effect at present in Bootstrap
-$enable-transitions:             true; // Fancy transitions for elements
 
-// JCU settings, defined for use within stock Bootstrap
-$jcu-semi-bold:                  600; // OpenSans has no 500 semi-bold
+// Table of Contents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Grid containers
+// Grid columns
+// Typography
+// Bootstrap Component Customisations
+// JCU Custom Components
 
-// JCU styling for Bootstrap
-// The details as to where each aspect has come from are highlighted above each
-// setting
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+// Custom JCU variables should be prefixed with `$jcu-*`.
 
-// Colour scheme
-$gray-dark:                      #2d2d2d; //Approx 80% black
-$gray:                           #565656;
-$gray-light:                     #797979;
-$gray-lighter:                   #e7e7e7;
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:                      #2d2d2d !default; //Approx 80% black
+$gray:                           #565656 !default;
+$gray-light:                     #797979 !default;
+$gray-lighter:                   #e7e7e7 !default;
 $gray-lightest:                  #f7f7f9 !default;
 
-$brand-primary:                  #06c;    // From top-level search and buttons
-$brand-success:                  #429306; // Courses page
-$body-bg:                        $gray-lighter; // From #page-wrapper
-$body-color:                     $gray-dark; // TODO No style set, uses browser default
-$font-size-root:                 16px; // Not actually defined anywhere in theme
-$font-family-sans-serif:         "Open Sans", sans-serif; // From html, body
+$brand-primary:                  #06c !default;    // From top-level search and buttons
+$brand-success:                  #429306 !default; // Courses page
 
-// Grid settings
+$jcu-brand-primary-inverse:      #fff !default;
+$jcu-gradient-blue:              rgb(46,49,146), rgb(0,190,228) !default;
+$jcu-gradient-orange:            rgb(233,79,53), rgb(255,221,0) !default;
+$jcu-gradient-green:             rgb(0,166,81), rgb(214,224,64) !default;
+$jcu-gradient-red:               rgb(157,22,25), rgb(236,0,140) !default;
+
+$jcu-bg-opacities:               (25, 50, 75, 90, 100) !default;
+$jcu-bg-colors: (
+  'pink': rgb(236, 0, 140),
+  'red': rgb(227, 31, 38),
+  'red-dark': rgb(157, 22, 27),
+  'orange': rgb(247, 147, 30),
+  'yellow': rgb(253, 185, 19),
+  'green-light': rgb(214, 224, 64),
+  'green': rgb(13, 177, 75),
+  'blue-light': rgb(0, 190, 228),
+  'blue': rgb(0, 102, 179),
+  'blue-dark': rgb(46, 49, 146),
+  'black': rgb(0, 0, 0),
+  'gray': $gray,
+  'gray-light': $gray-light,
+  'gray-lighter': $gray-lighter,
+  'white': rgb(255, 255, 255)
+) !default;
+$jcu-bg-gradients: (
+  'gradient-blue':   $jcu-gradient-blue,
+  'gradient-orange': $jcu-gradient-orange,
+  'gradient-green':  $jcu-gradient-green,
+  'gradient-red':    $jcu-gradient-red
+) !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+//$enable-flex:                  true !default; // See http://v4-alpha.getbootstrap.com/getting-started/flexbox/
+$enable-rounded:                 false !default; // Sharp pointy edges
+$enable-shadows:                 false !default; // TODO Consider re-enabling for theme
+//$enable-gradients:             true !default; // Has no effect at present in Bootstrap
+$enable-transitions:             true !default; // Fancy transitions for elements
+
+
+// Spacing
+//
+// Control the defautl styling of most Bootstrap elements by modifying these
+// variables.
+
+$border-width:                   1px !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                        $gray-lighter !default;
+$body-color:                     $gray-dark !default; // Squiz uses browser default
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$jcu-container-fluid-max-width:  1050px !default;
 $container-max-widths: (
   sm: 576px,
   md: 720px,
   lg: 940px,
-  xl: 1050px
-);
+  xl: $jcu-container-fluid-max-width
+) !default;
 
-// Typography styles
-// Not defined in original theme; approximately equal to defaults from Firefox
-$font-size-h1:                   1.9rem;
-$font-size-h2:                   1.7rem;
-$font-size-h3:                   1.5rem;
-$font-size-h4:                   1.25rem;
-$font-size-h5:                   1rem;
-$font-size-h6:                   .9rem;
 
-$display1-weight:                400;
-$display2-weight:                400;
-$display3-weight:                400;
-$display4-weight:                400;
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+$grid-gutter-width:              1.25rem !default; // TODO Adjust?
 
-$headings-margin-bottom:         1rem;
-$headings-font-weight:           $jcu-semi-bold; // OpenSans has no 500 semi-bold
-$lead-font-weight:               400;
 
-// From footer margins
-$grid-gutter-width:              1.25rem;
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+// Most were not defined in original Squiz theme; approximately equal to
+// defaults from Firefox
 
+$font-family-sans-serif:         "Open Sans", sans-serif !default;
+
+$font-size-root:                 16px !default;
+
+$font-size-h1:                   1.9rem !default;
+$font-size-h2:                   1.7rem !default;
+$font-size-h3:                   1.5rem !default;
+$font-size-h4:                   1.25rem !default;
+$font-size-h5:                   1rem !default;
+$font-size-h6:                   .9rem !default;
+
+$display1-weight:                400 !default;
+$display2-weight:                400 !default;
+$display3-weight:                400 !default;
+$display4-weight:                400 !default;
+
+$headings-margin-bottom:         1rem !default;
+$headings-font-weight:           600 !default; // OpenSans has no 500 semi-bold
+
+$lead-font-weight:               400 !default;
+
+$jcu-icon-font-family:           "webhostinghub-glyphs" !default;
+$jcu-icon-font-size:             1.5rem !default;
+$jcu-icon-font-size-lg:          ($jcu-icon-font-size * 1.75) !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
 // From .toolbarmenu*
-$dropdown-bg:                    #3f3f3f;
-$dropdown-border-color:          transparent;
-$dropdown-border-width:          0;
-$dropdown-divider-bg:            #707070;
-$dropdown-link-color:            #fff;
-$dropdown-link-hover-color:      darken($dropdown-link-color, 5%);
-$dropdown-link-hover-bg:         lighten($dropdown-bg, 20%);
-$dropdown-header-color:          #ababab;
 
-$navbar-dark-color:              rgba(255,255,255,.8);
-$navbar-dark-hover-color:        rgba(255,255,255,.6);
-$navbar-dark-active-color:       rgba(255,255,255,1);
-$navbar-inverse-color:           $gray-dark;
-$navbar-inverse-toggle-hover-bg: $gray;
-$navbar-inverse-link-active-bg:  $gray;
+$dropdown-bg:                    #3f3f3f !default;
+$dropdown-border-color:          transparent !default;
+$dropdown-border-width:          0 !default;
+$dropdown-divider-bg:            #707070 !default;
+$dropdown-link-color:            #fff !default;
+$dropdown-link-hover-color:      darken($dropdown-link-color, 5%) !default;
+$dropdown-link-hover-bg:         lighten($dropdown-bg, 20%) !default;
+$dropdown-header-color:          #ababab !default;
+$jcu-dropdown-text-color:        #fff !default;
 
+// Z-index master list
+//
+// Warning: Avoid customising these values. They extend upon Bootstrap's
+// defaults and are designed to all work together.
+$jcu-zindex-base:                990 !default;
+$jcu-zindex-exposition:          -1000 !default;
+$jcu-zindex-page-title:          1010 !default;
+$jcu-zindex-explorer:            1020 !default;
+
+
+// Navbar
+
+$navbar-dark-color:              rgba(255,255,255,.8) !default;
+$navbar-dark-hover-color:        rgba(255,255,255,.6) !default;
+$navbar-dark-active-color:       rgba(255,255,255,1) !default;
+$navbar-inverse-color:           $gray-dark !default;
+$navbar-inverse-toggle-hover-bg: $gray !default;
+$navbar-inverse-link-active-bg:  $gray !default;
+
+$jcu-navbar-nav-link-padding:    .5rem !default;
+
+
+// Navs
+//
 // From .tabs
-$nav-tabs-active-link-hover-color: #fff;
-$nav-tabs-active-link-hover-bg: $brand-primary;
-$nav-tabs-active-link-hover-border-color: $brand-primary;
 
-// From insidebreadcrumbs
-$breadcrumb-bg:                  $gray-lighter;
-$breadcrumb-padding-vertical:    .5rem;
-$breadcrumb-active-color:        $gray;
+$nav-tabs-active-link-hover-color:        #fff !default;
+$nav-tabs-active-link-hover-bg:           $brand-primary !default;
+$nav-tabs-active-link-hover-border-color: $brand-primary !default;
 
+// Cards
+//
 // From uber-accordion
-$card-cap-bg:                    $gray-dark;
-$card-cap-color:                 #fff;
 
-// Custom JCU settings
-$font-size-xxs: .65rem;
-$modal-header-color: #fff;
-$modal-header-bg: $gray-dark;
-$jcu-container-fluid-max-width: 1050px;
-$jcu-base-zindex: 990;
+$card-cap-bg:                    $gray-dark !default;
 
-$jcu-gradient-blue: rgb(46, 49, 146), rgb(0, 190, 228);
-$jcu-gradient-orange: rgb(233, 79, 53), rgb(255, 221, 0);
-$jcu-gradient-green: rgb(0, 166, 81), rgb(214, 224, 64);
-$jcu-gradient-red: rgb(157, 22, 25), rgb(236, 0, 140);
+$jcu-card-cap-color:             #fff !default;
+$jcu-card-overlay-font-color:    #fff !default;
+$jcu-card-overlay-min-height:    6rem !default;
 
-$jcu-brand-inverse: #fff;
-$jcu-dropdown-text-color: #fff;
-$jcu-icon-font-family: "webhostinghub-glyphs";
-$jcu-icon-font-size: 1.5rem;
-$jcu-icon-font-size-lg: ($jcu-icon-font-size * 1.75);
-$jcu-navbar-nav-link-padding: .5rem;
-$jcu-fade-transition-speed: .3s;
 
-$jcu-toolbar-font-size: .85rem; //$font-size-sm
-$jcu-toolbar-line-height: 1.1;
-$jcu-toolbar-line-height-sm: 2.2;
-$jcu-exposition-max-height: 50rem;
-$jcu-exposition-zindex: -1000;
-$jcu-header-height: 17rem;
-$jcu-header-height-sm: 14rem;
-$jcu-page-title-zindex: 1010;
-$jcu-explorer-zindex: 1020;
+// Modals
+
+$jcu-modal-header-color:         #fff !default;
+$jcu-modal-header-bg:            $gray-dark !default;
+
+
+// Breadcrumbs
+//
+// From .insidebreadcrumbs
+
+$breadcrumb-bg:                  $gray-lighter !default;
+$breadcrumb-padding-vertical:    .5rem !default;
+$breadcrumb-active-color:        $gray !default;
+
+
+// Custom JCU components
+
+// Transitions
+$jcu-fade-transition-speed:      .3s !default;
+
+
+// Toolbar
+
+$jcu-toolbar-font-size:          .85rem !default; //Replicate $font-size-sm
+$jcu-toolbar-line-height:        1.1 !default;
+$jcu-toolbar-line-height-sm:     2.2 !default;
+
+
+// Exposition
+
+$jcu-exposition-max-height:      50rem !default;
+
+
+// Header
+
+$jcu-header-height:              17rem !default;
+$jcu-header-height-sm:           14rem !default;
+
+
+// Explorer
+
+$jcu-explorer-color:             $jcu-brand-primary-inverse !default;
+$jcu-explorer-active-color:      $brand-primary !default;
+$jcu-explorer-content-color:     $body-color !default;
+
+// Content
+
+$jcu-content-bg-color:           #fff !default;
+$jcu-content-link-print-prefix:  "https://www.jcu.edu.au" !default;
+
+// Footer
+$jcu-footer-text-color:          $body-color !default;
+$jcu-footer-border-color:        $jcu-footer-text-color !default;
+$jcu-footer-border-width:        $border-width !default;
+$jcu-footer-border:              $jcu-footer-border-width dotted $jcu-footer-border-color !default;

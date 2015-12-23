@@ -1,8 +1,6 @@
 //
 // Content: body content with features and styles befitting the CMS block
 //
-$jcu-content-bg-color: #fff;
-
 .jcu-content {
   padding-top: $spacer-y;
   padding-bottom: $spacer-y;
@@ -23,7 +21,7 @@ $jcu-content-bg-color: #fff;
     }
 
     a[href^="/"]:after {
-      content: " (https://www.jcu.edu.au" attr(href) ") ";
+      content: " (#{$jcu-content-link-print-prefix}" attr(href) ") ";
     }
   }
 }

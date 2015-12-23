@@ -27,31 +27,12 @@
   text-shadow: #fff 0 0 .5em;
 }
 
-$bg-opacities: 25, 50, 75, 90, 100;
-$bg-colors: (
-  'pink': rgb(236, 0, 140),
-  'red': rgb(227, 31, 38),
-  'red-dark': rgb(157, 22, 27),
-  'orange': rgb(247, 147, 30),
-  'yellow': rgb(253, 185, 19),
-  'green-light': rgb(214, 224, 64),
-  'green': rgb(13, 177, 75),
-  'blue-light': rgb(0, 190, 228),
-  'blue': rgb(0, 102, 179),
-  'blue-dark': rgb(46, 49, 146),
-  'black': rgb(0, 0, 0),
-  'gray': $gray,
-  'gray-light': $gray-light,
-  'gray-lighter': $gray-lighter,
-  'white': rgb(255, 255, 255)
-);
-
 .jcu-bg--transparent {
   background-color: rgba(0, 0, 0, 0);
 }
 
-@each $name, $color in $bg-colors {
-  @each $opacity in $bg-opacities {
+@each $name, $color in $jcu-bg-colors {
+  @each $opacity in $jcu-bg-opacities {
     $class-name: ".jcu-bg--#{$name}-#{$opacity}pc";
     @if $opacity == 100 {
       $class-name: ".jcu-bg--#{$name}";
@@ -63,16 +44,9 @@ $bg-colors: (
   }
 }
 
-$bg-gradients: (
-  'gradient-blue': $jcu-gradient-blue,
-  'gradient-orange': $jcu-gradient-orange,
-  'gradient-green': $jcu-gradient-green,
-  'gradient-red': $jcu-gradient-red
-);
-
 // TODO: this could be included as a 45 deg angle gradient
-// TODO: style guide says transparency should be at 90%
-@each $name, $gradient in $bg-gradients {
+// TODO: style guide says transparency should be at 90 deg
+@each $name, $gradient in $jcu-bg-gradients {
   .jcu-bg--#{$name} {
     @include gradient-horizontal(nth($gradient, 1), nth($gradient, 2));
   }
@@ -81,7 +55,8 @@ $bg-gradients: (
   }
 }
 
-// Image paths are relative to the
+// TODO Create a mapping and turn into variables
+// Image paths are relative to the base SCSS file
 .jcu-bg--blue-buildings {
    background-image: url("../images/backgrounds/BlueBuildings.jpg");
 }

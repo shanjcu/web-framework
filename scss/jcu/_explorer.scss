@@ -27,11 +27,7 @@
 }
 
 .navbar--jcu-explorer {
-  $navbar-color: #fff;
-  $navbar-content-color: #000;
-  $navbar-interaction-color: $brand-primary;
-
-  z-index: $jcu-explorer-zindex;
+  z-index: $jcu-zindex-explorer;
   padding-top: ($navbar-padding-y / 2);
   padding-bottom: ($navbar-padding-y / 2);
   background-color: $brand-primary;
@@ -54,11 +50,12 @@
   }
 
   @include media-breakpoint-up(md) {
+    @include jcu-explorer-gradient;
+
     // Padding is 0 so that dropdowns are flush
     padding-bottom: 0;
     border: 0 none;
     border-top-right-radius: 1.25rem;
-    @include jcu-explorer-gradient;
   }
 
   .navbar-brand img {
@@ -75,7 +72,7 @@
     .nav-link {
       padding: $spacer-y ($spacer-x * 1.5) ($spacer-y * 1.75);
       margin-top: ($spacer-y * .75);
-      color: $navbar-color;
+      color: $jcu-explorer-color;
       border-top-right-radius: 1.25em;
 
       @include media-breakpoint-only(md) {
@@ -92,14 +89,14 @@
   .nav-link:hover,
   .nav-link:focus,
   .dropdown:hover .nav-link {
-    color: $navbar-interaction-color;
-    background-color: $navbar-color;
+    color: $jcu-explorer-active-color;
+    background-color: $jcu-explorer-color;
   }
 
   .dropdown-menu {
     padding-top: 0;
     font-size: $font-size-sm;
-    color: $navbar-color;
+    color: $jcu-explorer-color;
     border: 0 none;
     transition-property: none;
     @include jcu-explorer-gradient;
@@ -117,8 +114,8 @@
   .yamm-content {
     // Line up with nav gutter + navbar-padding
     margin: 0 $navbar-padding-x ($navbar-padding-y / 2);
-    color: $navbar-content-color;
-    background-color: $navbar-color;
+    color: $jcu-explorer-content-color;
+    background-color: $jcu-explorer-color;
   }
 
   .jcu-overlay-card {
@@ -130,7 +127,7 @@
     text-align: center;
     a {
       font-weight: bold;
-      color: $navbar-color;
+      color: $jcu-explorer-color;
     }
   }
 
@@ -140,7 +137,7 @@
     padding-left: 0;
     font-size: $jcu-icon-font-size-lg;
     line-height: $line-height;
-    color: $navbar-color;
+    color: $jcu-explorer-color;
   }
 
   @at-root .jcu-explorer__toggleable {
@@ -153,15 +150,15 @@
     }
 
     .nav-link {
-      color: $navbar-color;
+      color: $jcu-explorer-color;
       @include hover-focus {
-        color: $navbar-interaction-color;
+        color: $jcu-explorer-active-color;
       }
     }
 
     .nav-item {
       margin-top: 0;
-      border-bottom: $border-width solid $navbar-color;
+      border-bottom: $border-width solid $jcu-explorer-color;
 
       &:last-child {
         border-bottom: 0 none;
