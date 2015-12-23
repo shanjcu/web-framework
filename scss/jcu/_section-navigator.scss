@@ -39,9 +39,9 @@
 
   .navbar-dark {
     .navbar-nav .active {
-      $navbar-half-padding: ($navbar-padding-horizontal / 2);
+      $navbar-half-padding: ($navbar-padding-x / 2);
       position: relative; // for arrow
-      margin-left: -$navbar-padding-horizontal;
+      margin-left: -$navbar-padding-x;
       background-color: $gray;
 
       .nav-link {
