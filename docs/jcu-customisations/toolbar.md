@@ -31,23 +31,21 @@ Megamenu) Bootstrap add-on to allow grid layouts within the dropdown menus.
     <div class="row">
       <ul class="nav navbar-nav">
         <li class="nav-item dropdown dropdown--open-on-hover">
-          <a class="nav-link dropdown-toggle" href="#">Students</a>
-          <div class="dropdown-menu">
-            <h1>Dropdown contents go here</h1>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Students</a>
+          <div class="dropdown-menu" role="menu">
+            <div class=".h1">Dropdown contents go here</div>
           </div>
         </li>
         <li class="nav-item dropdown dropdown--open-on-hover">
-          <a class="nav-link dropdown-toggle" href="#">Staff</a>
-          <div class="dropdown-menu">
-            <h1>Dropdown contents go here</h1>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Staff</a>
+          <div class="dropdown-menu" role="menu">
+            <div class=".h1">Dropdown contents go here</div>
           </div>
         </li>
         <li class="nav-item"><a class="nav-link" href="#">Alumni</a></li>
-        <div class="pull-right-md-up">
-          <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Maps</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-        </div>
+        <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Maps</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
       </ul>
     </div>
   </div>
