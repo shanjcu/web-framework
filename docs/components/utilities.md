@@ -37,7 +37,8 @@ Where *size* is one of:
 * `3` - (by default) for classes that set the `margin` or `padding` to `$spacer-x * 3` or `$spacer-y * 3`
 
 Here are some representative examples of these classes:
-```scss
+
+{% highlight scss %}
 .m-t-0 {
   margin-top: 0 !important;
 }
@@ -54,7 +55,7 @@ Here are some representative examples of these classes:
 .p-a-3 {
   padding: ($spacer-y * 3) ($spacer-x * 3) !important;
 }
-```
+{% endhighlight %}
 
 Additionally, Bootstrap also includes an `.m-x-auto` class which sets the horizontal margins to `auto`.
 
@@ -165,14 +166,14 @@ These utility classes float an element to the left or right, or disable floating
 Two similar non-responsive mixins (`pull-left` and `pull-right`) are also available.
 
 {% example html %}
-<div class="pull-xs-left">Float left on all viewport sizes</div>
-<div class="pull-xs-right">Float right on all viewport sizes</div>
-<div class="pull-xs-none">Don't float on all viewport sizes</div>
+<div class="pull-xs-left">Float left on all viewport sizes</div><br>
+<div class="pull-xs-right">Float right on all viewport sizes</div><br>
+<div class="pull-xs-none">Don't float on all viewport sizes</div><br>
 
-<div class="pull-sm-left">Float left on viewports sized SM (small) or wider</div>
-<div class="pull-md-left">Float left on viewports sized MD (medium) or wider</div>
-<div class="pull-lg-left">Float left on viewports sized LG (large) or wider</div>
-<div class="pull-xl-left">Float left on viewports sized XL (extra-large) or wider</div>
+<div class="pull-sm-left">Float left on viewports sized SM (small) or wider</div><br>
+<div class="pull-md-left">Float left on viewports sized MD (medium) or wider</div><br>
+<div class="pull-lg-left">Float left on viewports sized LG (large) or wider</div><br>
+<div class="pull-xl-left">Float left on viewports sized XL (extra-large) or wider</div><br>
 {% endexample %}
 
 {% highlight scss %}
