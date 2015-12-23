@@ -69,7 +69,7 @@ Desktop](https://desktop.github.com/)) to help you manage the code.
    `jcu-web-framework` directory with:
 
    ```
-   bundle install --path vendor/bundle
+   bundler install --path vendor/bundle
    ```
 
    Once you've run this once, you don't need to specify the path if you re-run
@@ -256,47 +256,47 @@ otherwise can change significantly between versions.
 1. Once all non `dist/` and `docs/dist` conflicts are resolved, build and test
    the framework.
 
-  1. You *must* re-run the installation steps in order to update any
-     dependencies for changes between Bootstrap versions:
+   1. You *must* re-run the installation steps in order to update any
+      dependencies for changes between Bootstrap versions:
 
-     ```
-     npm install
-     bundle
-     ```
+      ```
+      npm install
+      bundle
+      ```
 
-  1. Now build the framework. Most technical issues (such as changes to
-     variable names and classes) will show at this point.
+   1. Now build the framework. Most technical issues (such as changes to
+      variable names and classes) will show at this point.
 
-     ```
-     grunt dist docs
-     ```
+      ```
+      grunt dist docs
+      ```
 
-     If you're continuing to work on the framework, use `grunt watch` to
-     automatically rebuild on changes.
+      If you're continuing to work on the framework, use `grunt watch` to
+      automatically rebuild on changes.
 
-  1. Visually inspect and test the components and documentation via your web
-     browser.  Start a documentation server with:
+   1. Visually inspect and test the components and documentation via your web
+      browser.  Start a documentation server with:
 
-   ```
-   bundler exec jekyll serve
-   ```
+      ```
+      bundler exec jekyll serve
+      ```
 
-     and load http://localhost:9001 in your browser.  Visual and accessibility
-     issues need to be inspected by loading the examples and style guide in your
-     browser to ensure things appear correctly.  To resolve issues, ensure you
-     check:
+      and load <http://localhost:9001> in your browser.  Visual and accessibility
+      issues need to be inspected by loading the examples and style guide in your
+      browser to ensure things appear correctly.  To resolve issues, ensure you
+      check:
 
-     * [Official migration documentation]({{ site.baseurl }}/migration)
-     * `git blame` or Git version control history for the upstream repository
-     * Existing classes being renamed or extended (such as `text-right` to
-       `test-[size]-right`)
-     * Core variables that have been added or adjusted (such as
-       `$font-size-base` to `16px` )
-     * Modification to existing classes or structure (such as addition of extra
-       padding to `.dropdown-menu`)
+      * [Official migration documentation]({{ site.baseurl }}/migration)
+      * `git blame` or Git version control history for the upstream repository
+      * Existing classes being renamed or extended (such as `text-right` to
+        `test-[size]-right`)
+      * Core variables that have been added or adjusted (such as
+        `$font-size-base` to `16px` )
+      * Modification to existing classes or structure (such as addition of extra
+        padding to `.dropdown-menu`)
 
-1. Once fully tested, make a note in the change log, commit the results and push to
-   the server.
+1. Once fully tested, make a note in the change log, commit the results and push
+   to the server.
 
 1. Rebuild the main documentation and push to the server in one go by running:
 
