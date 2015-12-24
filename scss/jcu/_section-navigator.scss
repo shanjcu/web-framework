@@ -19,7 +19,7 @@
 
     .dropdown-item {
       padding: ($spacer / 4);
-      border-bottom: $border-width solid $gray-light;
+      border-bottom: $dropdown-border-width solid $gray-light;
 
       &:last-child {
         border-bottom: 0 none;

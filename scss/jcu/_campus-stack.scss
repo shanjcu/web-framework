@@ -6,11 +6,11 @@
     border-color: $color;
 
     &:first-child {
-      border-top: $border-width solid $color;
+      border-top: 1px solid $color;
     }
 
     &:last-child {
-      border-bottom: $border-width solid $color;
+      border-bottom: 1px solid $color;
     }
   }
 

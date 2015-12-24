@@ -37,7 +37,8 @@
   }
 
   a {
-    color: #4b4c4e;
+    color: $gray;
+
     @include hover-focus {
       color: $link-hover-color;
     }

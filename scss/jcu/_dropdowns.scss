@@ -5,7 +5,7 @@
   // Override default Bootstrap display: none so we have transitions
   display: block;
   // Move the dropdown menu upwards to avoid rounding issues
-  margin-top: -$border-width;
+  margin-top: -$dropdown-border-width;
   visibility: hidden;
   opacity: 0;
   transition-duration: $jcu-fade-transition-speed;
