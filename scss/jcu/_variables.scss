@@ -56,11 +56,54 @@ $jcu-bg-colors: (
   'gray-lighter': $gray-lighter,
   'white': rgb(255, 255, 255)
 ) !default;
+
 $jcu-bg-gradients: (
   'gradient-blue':   $jcu-gradient-blue,
   'gradient-orange': $jcu-gradient-orange,
   'gradient-green':  $jcu-gradient-green,
-  'gradient-red':    $jcu-gradient-red
+  'gradient-red':    $jcu-gradient-red,
+) !default;
+
+// Image paths are relative to the base SCSS file
+$jcu-bg-images: (
+  'blue-buildings': 'BlueBuildings.jpg',
+  'blue-fish': 'BlueFish.jpg',
+  'blue-globe': 'BlueGlobe.jpg',
+  'blue-molecules': 'BlueMolecules.jpg',
+  'blue-purple-fibre-optic': 'BluePurpleFibreOptic.jpg',
+  'blue-skyscraper': 'BlueSkyscraper.jpg',
+  'fossil': 'BrownFossil.jpg',
+  'brown-green-yellow-grass': 'BrownGreenYellowGrass.jpg',
+  'brown-outback-road': 'BrownOutbackRoad.jpg',
+  'didgeridoo': 'Didgeridoo.jpg',
+  'eucalyptus-flower': 'EucalyptusFlower.jpg',
+  'green-fern': 'GreenFern.jpg',
+  'green-grass': 'GreenGrass.jpg',
+  'green-leaf-swirl': 'GreenLeafSwirl.jpg',
+  'green-rainforest': 'GreenRainforest.jpg',
+  'green-outback': 'GreenOutback.jpg',
+  'green-yellow-fibre-optic': 'GreenYellowFibreOptic.jpg',
+  'iot-circuit-board': 'IOTCircuitBoard.jpg',
+  'jigsaw': 'Jigsaw.jpg',
+  'law-books': 'LawBooks.jpg',
+  'multicolor-fibre-optic': 'MultiColourFibreOptic.jpg',
+  'multicolor-fabric': 'MulticolouredFabric.jpg',
+  'orange-flower': 'OrangeFlower.jpg',
+  'pink-sunset': 'PinkSunset.jpg',
+  'pink-waterdrops': 'PinkWaterdrops.jpg',
+  'rv-james-kirby': 'RVJamesKirby.jpg',
+  'red-blood-cells': 'RedBloodCells.jpg',
+  'red-fibre-optic': 'RedFibreOptic.jpg',
+  'red-flower': 'RedFlower.jpg',
+  'red-sand': 'RedSand.jpg',
+  'silver-gears': 'SilverGears.jpg',
+  'sunset-windmill': 'SunsetWindmill.jpg',
+  'tropics-map': 'TropicsMap.jpg',
+  'turtle-and-reef': 'TurtleandReef.jpg',
+  'vet-horses': 'VetHorses.jpg',
+  'yellow-savannah': 'YellowSavannah.jpg',
+  'yellow-shell': 'YellowShell.jpg',
+  'yellow-sunflower': 'YellowSunflower.jpg',
 ) !default;
 
 
