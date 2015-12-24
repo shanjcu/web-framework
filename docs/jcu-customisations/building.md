@@ -12,10 +12,10 @@ Web Framework further then read on.
 
 {% callout warning %}
 **First things first!** If you haven't read the documentation on Bootstrap's
-[Build tools]({{ site.baseurl }}/getting-started/build-tools), head over there and go through
-that first.  Everything here will make a lot more sense once you also understand
-the purpose of each tool Bootstrap uses and that you have those tools installed
-on your system.
+[Build tools]({{ site.baseurl }}/getting-started/build-tools), head over there
+and go through that first.  Everything here will make a lot more sense once you
+also understand the purpose of each tool Bootstrap uses and that you have those
+tools installed on your system.
 {% endcallout %}
 
 ## Contents
@@ -42,35 +42,36 @@ Desktop](https://desktop.github.com/)) to help you manage the code.
    you clone the repository *recursively*, which ensures that third-party
    submodules are also obtained.  For those using a terminal, run:
 
-   ```
+   ~~~ shell
    git clone --recursive {{ site.repo }}
-   ```
+   ~~~
 
-1. Ensure all of the [Build tools]({{ site.baseurl }}/getting-started/build-tools) needed
+1. Ensure all of the
+   [Build tools]({{ site.baseurl }}/getting-started/build-tools) needed
    are installed on your system.
 
 1. Install any Node.js dependencies with:
 
-   ```
+   ~~~ shell
    cd jcu-web-framework
    npm install
-   ```
+   ~~~
 
    <a name="a11y-install"></a>Optionally, if you'd like to carry out
    accessibility testing, install these additional tools (noting that
    administrative or `sudo` access may be required):
 
-   ```
+   ~~~ shell
    npm install -g pa11y phantomjs
-   ```
+   ~~~
 
 1. Your system may already have a Ruby environment configured. As such, it is
    easier and cleaner to have Bundler install its resources locally to the
    `jcu-web-framework` directory with:
 
-   ```
+   ~~~ shell
    bundler install --path vendor/bundle
-   ```
+   ~~~
 
    Once you've run this once, you don't need to specify the path if you re-run
    `bundle`.  If just run `bundle` or `bundle install`, Bundler will try and
@@ -104,15 +105,15 @@ automatically available.  Our Gruntfile adds the following commands and tasks:
 
 1. Test and build the framework (`dist`) and the documentation (`docs`):
 
-   ```
+   ~~~ shell
    grunt dist docs
-   ```
+   ~~~
 
    Once you've done this the first time, you can run:
 
-   ```
+   ~~~ shell
    grunt watch
-   ```
+   ~~~
 
    to continue watching for further changes.  This is a lot faster than having
    to re-run the above commands manually and particularly helpful if
@@ -120,9 +121,9 @@ automatically available.  Our Gruntfile adds the following commands and tasks:
 
 1. Build and serve the documentation:
 
-   ```
+   ~~~ shell
    bundler exec jekyll serve
-   ```
+   ~~~
 
 1. Load and inspect the documentation at <http://localhost:9001> in your browser.
    There are a number of JCU customisation pages, which you must add to or
@@ -171,25 +172,25 @@ To test the framework's pages:
 
 1. Start a documentation server running with:
 
-   ```
+   ~~~ shell
    bundler exec jekyll serve
-   ```
+   ~~~
 
 1. In another terminal, test individual pages, one at a time, with:
 
-   ```
+   ~~~ shell
    pa11y <url>
    pa11y --standard Section508 <url>
-   ```
+   ~~~
 
    If not specified, the `--standard` defaults to `WCAG2AA`.
 
    So, to test the Content Page example:
 
-   ```
+   ~~~ shell
    pa11y http://localhost:9001/examples/jcu-content-page
    pa11y --standard Section508 http://localhost:9001/examples/jcu-content-page
-   ```
+   ~~~
 
 1. Consult the report and follow its suggestions to improve and fix the given
    page structure or corresponding CSS.
@@ -214,24 +215,24 @@ otherwise can change significantly between versions.
 1. Add the official Bootstrap repository as a remote called `upstream` in your
    cloned repository and fetch its contents.  For those using a terminal, run:
 
-   ```
+   ~~~ shell
    cd jcu-web-framework
    git remote add upstream https://github.com/twbs/bootstrap.git
    git fetch upstream
-   ```
+   ~~~
 
 1. Fetch the latest changes from the `upstream` remote.  In a terminal, this is:
 
-   ```
+   ~~~ shell
    git fetch upstream
-   ```
+   ~~~
 
 1. Determine the version you wish to update to and attempt the merge,
    substituting in your version number:
 
-   ```
+   ~~~ shell
    git merge v4.1.1
-   ```
+   ~~~
 
    The merge can be specified as anything that Git recognises as a reference; in
    this case, we use a tag for a specific version, but can, if the need arises,
@@ -259,17 +260,17 @@ otherwise can change significantly between versions.
    1. You *must* re-run the installation steps in order to update any
       dependencies for changes between Bootstrap versions:
 
-      ```
+      ~~~ shell
       npm install
       bundle
-      ```
+      ~~~
 
    1. Now build the framework. Most technical issues (such as changes to
       variable names and classes) will show at this point.
 
-      ```
+      ~~~ shell
       grunt dist docs
-      ```
+      ~~~
 
       If you're continuing to work on the framework, use `grunt watch` to
       automatically rebuild on changes.
@@ -277,9 +278,9 @@ otherwise can change significantly between versions.
    1. Visually inspect and test the components and documentation via your web
       browser.  Start a documentation server with:
 
-      ```
+      ~~~ shell
       bundler exec jekyll serve
-      ```
+      ~~~
 
       and load <http://localhost:9001> in your browser.  Visual and accessibility
       issues need to be inspected by loading the examples and style guide in your
@@ -300,17 +301,17 @@ otherwise can change significantly between versions.
 
 1. Rebuild the main documentation and push to the server in one go by running:
 
-   ```
+   ~~~ shell
    grunt prep-release jcu-publish
-   ```
+   ~~~
 
    If this happens to complain about uncommitted changes in the working
    directory, even if there are none.  In this case, you can run the final commit
    task manually:
 
-   ```
+   ~~~ shell
    grunt buildcontrol:pages
-   ```
+   ~~~
 
 ## Updating third-party components
 
@@ -326,35 +327,35 @@ those using a terminal; adapt them to your own environment.
 
 1. Change into the component directory:
 
-   ```
+   ~~~ shell
    cd scss/components/[component-id]
-   ```
+   ~~~
 
 1. Fetch the latest changes for this submodule's repository:
 
-   ```
+   ~~~ shell
    git fetch
-   ```
+   ~~~
 
 1. Checkout the version you wish to update to that you determined earlier.
 
-   ```
+   ~~~ shell
    git checkout [version-id]
-   ```
+   ~~~
 
 1. Change back to the main framework directory and pull any nested submodule
    updates:
 
-   ```
+   ~~~ shell
    cd ../../..
    git submodule update --init --recursive
-   ```
+   ~~~
 
 1. Commit the change in component version into the main framework:
 
-   ```
+   ~~~ shell
    git commit scss/components/[component-id]
-   ```
+   ~~~
 
    Ensure that you add a suitable commit message explaining what the change was
    and what effect it has.

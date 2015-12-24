@@ -43,20 +43,24 @@ a static HTML page.
 
 1. Unzip the files.
 
-1. Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
+1. Copy-paste the stylesheet `<link>` into your `<head>` to load our CSS.
+   It is recommended that you place this before all other stylesheets.
 
-{% highlight html %}
-<link rel="stylesheet" href="./jcu-web-framework/dist/css/jcu.css">
-{% endhighlight %}
+   ~~~ html
+   <link rel="stylesheet" href="css/jcu.min.css">
+   ~~~
 
-Add the JavaScript plugins and jQuery near the end of your pages, right before
-the closing `</body>` tag. Be sure to place jQuery first as Bootstrap code
-depends on it.
+1. Ensure that your site or application has jQuery available. Consult the
+   [JavaScript]({{ site.baseurl}}/getting-started/javascript) documentation to
+   determine which versions are compatible.
 
-{% highlight html %}
-<script src="./jcu-web-framework/dist/js/vendor/jquery.min.js"></script>
-<script src="./jcu-web-framework/dist/js/bootstrap.min.js"></script>
-{% endhighlight %}
+1. Add the web framework JavaScript plugins near the end of your pages, right before
+   the closing `</body>` tag. Be sure to place jQuery first as Bootstrap code
+   depends on it:
+
+   ~~~ html
+   <script src="js/bootstrap.min.js"></script>
+   ~~~
 
 And that's it — you're on your way to a fully Bootstrapped site. If you're at
 all unsure about the general page structure, HTML5 doctype, or how to make your
