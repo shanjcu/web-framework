@@ -6161,7 +6161,7 @@ abbr[title] {
 
 .dropdown-menu {
   display: block;
-  margin-top: -1px;
+  margin-top: 0;
   visibility: hidden;
   opacity: 0;
   -webkit-transition-duration: .3s;
@@ -7586,7 +7586,7 @@ abbr[title] {
 
 .jcu-section-navigator .dropdown-menu .dropdown-item {
   padding: .25rem;
-  border-bottom: 1px solid #797979;
+  border-bottom: 0 solid #797979;
 }
 
 .jcu-section-navigator .dropdown-menu .dropdown-item:last-child {
@@ -7729,7 +7729,7 @@ abbr[title] {
 }
 
 .jcu-footer__social a {
-  color: #4b4c4e;
+  color: #565656;
 }
 
 .jcu-footer__social a:focus, .jcu-footer__social a:hover {

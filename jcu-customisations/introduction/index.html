@@ -1155,18 +1155,28 @@ a static HTML page.</p>
     <p>Unzip the files.</p>
   </li>
   <li>
-    <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets to load our CSS.</p>
+    <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> to load our CSS.
+It is recommended that you place this before all other stylesheets.</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/jcu.min.css"</span><span class="nt">&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Ensure that your site or application has jQuery available. Consult the
+<a href="/getting-started/javascript">JavaScript</a> documentation to
+determine which versions are compatible.</p>
+  </li>
+  <li>
+    <p>Add the web framework JavaScript plugins near the end of your pages, right before
+the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag. Be sure to place jQuery first as Bootstrap code
+depends on it:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre>
+    </div>
   </li>
 </ol>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"./jcu-web-framework/dist/css/jcu.css"</span><span class="nt">&gt;</span></code></pre></figure>
-
-<p>Add the JavaScript plugins and jQuery near the end of your pages, right before
-the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag. Be sure to place jQuery first as Bootstrap code
-depends on it.</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"./jcu-web-framework/dist/js/vendor/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"./jcu-web-framework/dist/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
 <p>And that’s it — you’re on your way to a fully Bootstrapped site. If you’re at
 all unsure about the general page structure, HTML5 doctype, or how to make your

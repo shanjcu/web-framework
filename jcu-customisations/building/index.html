@@ -1117,10 +1117,10 @@ Web Framework further then read on.</p>
 
 <div class="bd-callout bd-callout-warning">
 <p><strong>First things first!</strong> If you haven’t read the documentation on Bootstrap’s
-<a href="/getting-started/build-tools">Build tools</a>, head over there and go through
-that first.  Everything here will make a lot more sense once you also understand
-the purpose of each tool Bootstrap uses and that you have those tools installed
-on your system.</p>
+<a href="/getting-started/build-tools">Build tools</a>, head over there
+and go through that first.  Everything here will make a lot more sense once you
+also understand the purpose of each tool Bootstrap uses and that you have those
+tools installed on your system.</p>
 </div>
 
 <h2 id="contents">Contents</h2>
@@ -1162,38 +1162,39 @@ it.  You’ll find clone URLs at the top-left side of the page.  Ensure that
 you clone the repository <em>recursively</em>, which ensures that third-party
 submodules are also obtained.  For those using a terminal, run:</p>
 
-    <p><code class="highlighter-rouge">
-git clone --recursive https://git.jcu.edu.au/stash/projects/WEBSTYLE/repos/jcu-web-framework
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>git clone --recursive https://git.jcu.edu.au/stash/projects/WEBSTYLE/repos/jcu-web-framework
+</code></pre>
+    </div>
   </li>
   <li>
-    <p>Ensure all of the <a href="/getting-started/build-tools">Build tools</a> needed
+    <p>Ensure all of the
+<a href="/getting-started/build-tools">Build tools</a> needed
 are installed on your system.</p>
   </li>
   <li>
     <p>Install any Node.js dependencies with:</p>
 
-    <p><code class="highlighter-rouge">
-cd jcu-web-framework
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">cd </span>jcu-web-framework
 npm install
-</code></p>
+</code></pre>
+    </div>
 
     <p><a name="a11y-install"></a>Optionally, if you’d like to carry out
 accessibility testing, install these additional tools (noting that
 administrative or <code class="highlighter-rouge">sudo</code> access may be required):</p>
 
-    <p><code class="highlighter-rouge">
-npm install -g pa11y phantomjs
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>npm install -g pa11y phantomjs
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Your system may already have a Ruby environment configured. As such, it is
 easier and cleaner to have Bundler install its resources locally to the
 <code class="highlighter-rouge">jcu-web-framework</code> directory with:</p>
 
-    <p><code class="highlighter-rouge">
-bundler install --path vendor/bundle
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>bundler install --path vendor/bundle
+</code></pre>
+    </div>
 
     <p>Once you’ve run this once, you don’t need to specify the path if you re-run
 <code class="highlighter-rouge">bundle</code>.  If just run <code class="highlighter-rouge">bundle</code> or <code class="highlighter-rouge">bundle install</code>, Bundler will try and
@@ -1246,15 +1247,15 @@ that file formats and line endings are correct and stay that way.</p>
   <li>
     <p>Test and build the framework (<code class="highlighter-rouge">dist</code>) and the documentation (<code class="highlighter-rouge">docs</code>):</p>
 
-    <p><code class="highlighter-rouge">
-grunt dist docs
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>grunt dist docs
+</code></pre>
+    </div>
 
     <p>Once you’ve done this the first time, you can run:</p>
 
-    <p><code class="highlighter-rouge">
-grunt watch
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>grunt watch
+</code></pre>
+    </div>
 
     <p>to continue watching for further changes.  This is a lot faster than having
 to re-run the above commands manually and particularly helpful if
@@ -1263,9 +1264,9 @@ you’re trying out a few different changes at once.</p>
   <li>
     <p>Build and serve the documentation:</p>
 
-    <p><code class="highlighter-rouge">
-bundler exec jekyll serve
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>bundler <span class="nb">exec </span>jekyll serve
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Load and inspect the documentation at <a href="http://localhost:9001">http://localhost:9001</a> in your browser.
@@ -1320,26 +1321,26 @@ tools</a>.</p>
   <li>
     <p>Start a documentation server running with:</p>
 
-    <p><code class="highlighter-rouge">
-bundler exec jekyll serve
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>bundler <span class="nb">exec </span>jekyll serve
+</code></pre>
+    </div>
   </li>
   <li>
     <p>In another terminal, test individual pages, one at a time, with:</p>
 
-    <p><code class="highlighter-rouge">
-pa11y &lt;url&gt;
+    <div class="highlighter-rouge"><pre class="highlight"><code>pa11y &lt;url&gt;
 pa11y --standard Section508 &lt;url&gt;
-</code></p>
+</code></pre>
+    </div>
 
     <p>If not specified, the <code class="highlighter-rouge">--standard</code> defaults to <code class="highlighter-rouge">WCAG2AA</code>.</p>
 
     <p>So, to test the Content Page example:</p>
 
-    <p><code class="highlighter-rouge">
-pa11y http://localhost:9001/examples/jcu-content-page
+    <div class="highlighter-rouge"><pre class="highlight"><code>pa11y http://localhost:9001/examples/jcu-content-page
 pa11y --standard Section508 http://localhost:9001/examples/jcu-content-page
-</code></p>
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Consult the report and follow its suggestions to improve and fix the given
@@ -1369,26 +1370,26 @@ otherwise can change significantly between versions.</p>
     <p>Add the official Bootstrap repository as a remote called <code class="highlighter-rouge">upstream</code> in your
 cloned repository and fetch its contents.  For those using a terminal, run:</p>
 
-    <p><code class="highlighter-rouge">
-cd jcu-web-framework
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">cd </span>jcu-web-framework
 git remote add upstream https://github.com/twbs/bootstrap.git
 git fetch upstream
-</code></p>
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Fetch the latest changes from the <code class="highlighter-rouge">upstream</code> remote.  In a terminal, this is:</p>
 
-    <p><code class="highlighter-rouge">
-git fetch upstream
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>git fetch upstream
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Determine the version you wish to update to and attempt the merge,
 substituting in your version number:</p>
 
-    <p><code class="highlighter-rouge">
-git merge v4.1.1
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>git merge v4.1.1
+</code></pre>
+    </div>
 
     <p>The merge can be specified as anything that Git recognises as a reference; in
 this case, we use a tag for a specific version, but can, if the need arises,
@@ -1420,18 +1421,18 @@ the framework.</p>
         <p>You <em>must</em> re-run the installation steps in order to update any
 dependencies for changes between Bootstrap versions:</p>
 
-        <p><code class="highlighter-rouge">
-npm install
+        <div class="highlighter-rouge"><pre class="highlight"><code>npm install
 bundle
-</code></p>
+</code></pre>
+        </div>
       </li>
       <li>
         <p>Now build the framework. Most technical issues (such as changes to
 variable names and classes) will show at this point.</p>
 
-        <p><code class="highlighter-rouge">
-grunt dist docs
-</code></p>
+        <div class="highlighter-rouge"><pre class="highlight"><code>grunt dist docs
+</code></pre>
+        </div>
 
         <p>If you’re continuing to work on the framework, use <code class="highlighter-rouge">grunt watch</code> to
 automatically rebuild on changes.</p>
@@ -1440,9 +1441,9 @@ automatically rebuild on changes.</p>
         <p>Visually inspect and test the components and documentation via your web
 browser.  Start a documentation server with:</p>
 
-        <p><code class="highlighter-rouge">
-bundler exec jekyll serve
-</code></p>
+        <div class="highlighter-rouge"><pre class="highlight"><code>bundler <span class="nb">exec </span>jekyll serve
+</code></pre>
+        </div>
 
         <p>and load <a href="http://localhost:9001">http://localhost:9001</a> in your browser.  Visual and accessibility
 issues need to be inspected by loading the examples and style guide in your
@@ -1469,17 +1470,17 @@ to the server.</p>
   <li>
     <p>Rebuild the main documentation and push to the server in one go by running:</p>
 
-    <p><code class="highlighter-rouge">
-grunt prep-release jcu-publish
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>grunt prep-release jcu-publish
+</code></pre>
+    </div>
 
     <p>If this happens to complain about uncommitted changes in the working
 directory, even if there are none.  In this case, you can run the final commit
 task manually:</p>
 
-    <p><code class="highlighter-rouge">
-grunt buildcontrol:pages
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>grunt buildcontrol:pages
+</code></pre>
+    </div>
   </li>
 </ol>
 
@@ -1499,39 +1500,39 @@ those using a terminal; adapt them to your own environment.</p>
   <li>
     <p>Change into the component directory:</p>
 
-    <p><code class="highlighter-rouge">
-cd scss/components/[component-id]
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">cd </span>scss/components/[component-id]
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Fetch the latest changes for this submodule’s repository:</p>
 
-    <p><code class="highlighter-rouge">
-git fetch
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>git fetch
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Checkout the version you wish to update to that you determined earlier.</p>
 
-    <p><code class="highlighter-rouge">
-git checkout [version-id]
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>git checkout <span class="o">[</span>version-id]
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Change back to the main framework directory and pull any nested submodule
 updates:</p>
 
-    <p><code class="highlighter-rouge">
-cd ../../..
+    <div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> ../../..
 git submodule update --init --recursive
-</code></p>
+</code></pre>
+    </div>
   </li>
   <li>
     <p>Commit the change in component version into the main framework:</p>
 
-    <p><code class="highlighter-rouge">
-git commit scss/components/[component-id]
-</code></p>
+    <div class="highlighter-rouge"><pre class="highlight"><code>git commit scss/components/[component-id]
+</code></pre>
+    </div>
 
     <p>Ensure that you add a suitable commit message explaining what the change was
 and what effect it has.</p>
