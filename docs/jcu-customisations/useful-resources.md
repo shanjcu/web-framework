@@ -40,6 +40,8 @@ the JCU Web Framework.
 * [WebAIM](http://webaim.org/) (Accessibility resources, patterns, and
   checklists)
 
+* [HTML5 Accessibility Compatibility Guide](http://www.html5accessibility.com/)
+
 * [Atlassian Git tutorial](https://www.atlassian.com/git/tutorials/)
 
 ## Style guides
