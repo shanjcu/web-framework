@@ -7,7 +7,7 @@ redirect_from: "/jcu-customisations/"
 
 This is the common web front-end framework for James Cook University and is used
 by the University's various web applications.  The JCU Web Framework utilises
-[Bootstrap](http://getbootstrap.com), a very popular framework for building
+[Bootstrap](http://getbootstrap.com), a popular framework for building
 responsive, mobile-first sites and applications.
 
 This a set of reusable resources for web applications and a fully-documented
