@@ -39,9 +39,6 @@ If you have suggestions, please get in touch.
   * Accessibility:
 
     * Ensure ARIA labels and standards are met by *all* examples.
-    * Checker/linter: https://github.com/Khan/tota11y or Squiz's accessibility checker for webpages
-
-  * Workflow for converting content into SVG (or raster).
 
   * Workflow for removing certain components from the framework.  Perhaps just a
     have a bare-bones "JCU" framework for just the core components.
@@ -51,17 +48,6 @@ If you have suggestions, please get in touch.
 * Best tool for managing external dependencies (Bower, Grunt, Gulp, Npm...)
 * Ensure there's a distinction between an application and the CMS.  Have to
   clearly highlight which application it is in some manner.
-
 * Test across browsers
 * Accessibility standards
-* What type of templates to be constructing:
-
-  * Content page (courses.html)
-  * Carousel (carousel.html) -- based on JCU homepage
-  * Dashboard (dashboard.html)
-  * Cover (cover.html)
-  * Application (app.html, similar to Dashboard but with more interactivity
-
-  Just get examples from http://v4-alpha.getbootstrap.com/examples/, which
-  aren't compatible with v4 yet.
 
