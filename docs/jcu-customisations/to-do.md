@@ -15,11 +15,13 @@ If you have suggestions, please get in touch.
 
 ## Known Issues
 
-* No automatically aligned dropdown menus within the viewport (see
-  https://github.com/twbs/bootstrap/issues/17167)
-* Accordion example in docs uses old v3 Panels (see
-  https://github.com/twbs/bootstrap/pull/17159)
-* abbr double-underline in Firefox: https://github.com/twbs/bootstrap/issues/16574
+* No automatically aligned dropdown menus within the viewport:
+  <https://github.com/twbs/bootstrap/issues/17167>
+* Accordion example in docs uses old v3 Panels:
+  <https://github.com/twbs/bootstrap/pull/17159>
+* abbr double-underline in Firefox:
+  <https://github.com/twbs/bootstrap/issues/16574>
+* Print grid columns: <https://github.com/twbs/bootstrap/issues/16800>
 
 ## To Do List
 

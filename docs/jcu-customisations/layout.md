@@ -14,6 +14,13 @@ several additional layout aspects.
 
 ## Examples
 
+### Print grid layout
+
+* `.col-pr-12` forces a grid layout container to using `100%` width when
+  printed. This is the only print grid layout class provided as a workaround
+  until [this feature](https://github.com/twbs/bootstrap/issues/16800) is
+  implemented.
+
 ### Maximum-width fluid container
 
 This differs from a nested `.container` and `.container-fluid` approach as that

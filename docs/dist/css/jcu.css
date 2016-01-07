@@ -6035,6 +6035,9 @@ a.bg-danger:focus, a.bg-danger:hover {
   body {
     background-color: transparent;
   }
+  .col-pr-12 {
+    width: 100%;
+  }
 }
 
 .container-fluid--max-width {
@@ -7134,6 +7137,7 @@ abbr[title] {
 @media print {
   .jcu-header {
     height: auto !important;
+    background-color: transparent;
     background-image: none !important;
   }
 }
@@ -7176,6 +7180,7 @@ abbr[title] {
   .jcu-header--marketing .jcu-header__page-title {
     position: relative;
     top: auto;
+    margin-left: 0;
     background-color: transparent;
   }
 }
@@ -7668,12 +7673,6 @@ abbr[title] {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   background-color: #fff;
-}
-
-@media print {
-  .jcu-content > .col-md-9 {
-    width: 100%;
-  }
 }
 
 @media print {

@@ -7,12 +7,6 @@
   margin-bottom: $spacer-y;
   background-color: $jcu-content-bg-color;
 
-  > .col-md-9 {
-    @media print {
-      width: 100%;
-    }
-  }
-
   @media print {
     a:link:after,
     a:visited:after {

@@ -16,6 +16,7 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 
   @media print {
     height: auto !important;
+    background-color: transparent;
     background-image: none !important;
   }
 }
@@ -50,6 +51,7 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
       position: relative;
       top: auto;
       background-color: transparent;
+      margin-left: 0;
     }
   }
 }
