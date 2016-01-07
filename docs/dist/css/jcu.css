@@ -6036,7 +6036,11 @@ a.bg-danger:focus, a.bg-danger:hover {
     background-color: transparent;
   }
   .col-pr-12 {
+    position: relative;
     width: 100%;
+    min-height: 1px;
+    padding-right: .625rem;
+    padding-left: .625rem;
   }
 }
 
@@ -6268,7 +6272,7 @@ abbr[title] {
   padding: 0;
 }
 
-.jcu-accordion .card-header > a {
+.jcu-accordion .jcu-accordion__toggle {
   display: block;
   width: 100%;
   padding: .75rem 1.25rem;
@@ -6279,15 +6283,15 @@ abbr[title] {
           transition: background-color .3s;
 }
 
-.jcu-accordion .card-header > a:focus, .jcu-accordion .card-header > a:hover {
+.jcu-accordion .jcu-accordion__toggle:focus, .jcu-accordion .jcu-accordion__toggle:hover {
   text-decoration: none;
 }
 
-.jcu-accordion .card-header > a.collapsed {
+.jcu-accordion .jcu-accordion__toggle.collapsed {
   background-color: #000;
 }
 
-.jcu-accordion .card-header > a::before {
+.jcu-accordion .jcu-accordion__toggle::before {
   position: absolute;
   right: 2.75rem;
   font-size: .75rem;
@@ -6295,11 +6299,11 @@ abbr[title] {
   content: "Hide";
 }
 
-.jcu-accordion .card-header > a.collapsed::before {
+.jcu-accordion .jcu-accordion__toggle.collapsed::before {
   content: "Show";
 }
 
-.jcu-accordion .card-header > a::after {
+.jcu-accordion .jcu-accordion__toggle::after {
   position: absolute;
   right: 1rem;
   font-family: "WebHostingHub-Glyphs";
@@ -6307,7 +6311,7 @@ abbr[title] {
   content: "\e39c";
 }
 
-.jcu-accordion .card-header > a.collapsed::after {
+.jcu-accordion .jcu-accordion__toggle.collapsed::after {
   content: "\e39d";
 }
 
@@ -7365,18 +7369,6 @@ abbr[title] {
 
 .jcu-toolbar .card:hover .card-title {
   text-decoration: underline;
-}
-
-.jcu-toolbar .card > a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-          align-items: center;
 }
 
 .jcu-toolbar .card-title {
