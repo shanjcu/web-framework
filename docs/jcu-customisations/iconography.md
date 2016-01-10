@@ -15,25 +15,30 @@ their official documentation.
 
 ## Examples
 
-{% callout warning %}
-**Heads up!** There are some minor differences in naming, such as
-`.icon-emailalt`, which you can access as `.icon-email2` in the version JCU is
-using on its CMS website. See the
-[webhostinghub-glyphs.css](https://github.com/gustavohenke/webhostinghub-glyphs/blob/master/css/webhostinghub-glyphs.css)
-file for the correct names.  All icons will be present in each; it's just a case
-of determining the correct class name to use.
-
-You may need to consult the source of the [SVG
-font](https://raw.githubusercontent.com/whhglyphs/webhostinghub-glyphs/master/WebHostingHub-Glyphs.svg)
-(1MB+ download) in order to locate the correct class name.
-{% endcallout %}
-
 
 
 Icons should be specified using a `<span>` element, in the manner shown.  Other
 examples in some documentation may use an `<i>` element but JCU systems should
 use `<span>` where possible for consistency and accessibility (some testers show
 screen readers interpret the latter as readable).
+
+
+### Reference
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="../../dist/css/components/webhostinghub-glyphs/demo.html"></iframe>
+</div>
+
+[View the reference]({{ site.baseurl
+}}/dist/css/components/webhostinghub-glyphs/demo.html){:target="_blank"} (opens
+in new window)
+
+{% callout warning %}
+**Heads up!** There are some minor differences in icon naming from the original
+official version of WebHostingHub Glyphs.  Once example that JCU is using on the
+CMS website is `.icon-emailalt` for an envelope icon; this is called
+`.icon-email2` in the framework's version.
+{% endcallout %}
 
 ### Decorative
 
