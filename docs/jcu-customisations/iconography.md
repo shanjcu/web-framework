@@ -15,13 +15,10 @@ their official documentation.
 
 ## Examples
 
-
-
 Icons should be specified using a `<span>` element, in the manner shown.  Other
 examples in some documentation may use an `<i>` element but JCU systems should
 use `<span>` where possible for consistency and accessibility (some testers show
 screen readers interpret the latter as readable).
-
 
 ### Reference
 
