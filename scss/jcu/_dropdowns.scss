@@ -12,6 +12,12 @@
   transition-property: visibility, opacity;
 }
 
+// Hide dropdown menus within transitionining collapsibles
+// This prevents an incorrect scrollHeight on open
+.collapsing .dropdown-menu {
+  display: none;
+}
+
 .open {
   > .dropdown-menu {
     visibility: visible;
