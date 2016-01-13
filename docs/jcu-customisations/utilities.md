@@ -13,24 +13,6 @@ down while allowing for quick and easy development.
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Blocks
-
-{% example html %}
-<div class="block--dotted">
-  <h3>Contact details</h3>
-  <p>To RSVP, please visit <a href="http://web.jcu.io">http://web.jcu.io</a>.</p>
-  <p>For further information, please contact <a href="mailto:example@jcu.edu.au">example@jcu.edu.au</a>.</p>
-</div>
-{% endexample %}
-
-## Text
-
-{% example html %}
-<div class="bg-inverse text-inverse">
- <p>.text-inverse inverts text for dark backgrounds</p>
-</div>
-{% endexample %}
-
 ## Backgrounds
 
 You can use any of the following colours and opacities and mix them into any

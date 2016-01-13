@@ -11,6 +11,24 @@ group: jcu-customisations
 
 ## Examples
 
+### Text
+
+{% example html %}
+<div class="bg-inverse text-inverse">
+ <p>.text-inverse inverts text for dark backgrounds</p>
+</div>
+{% endexample %}
+
+### Blocks
+
+{% example html %}
+<div class="block--dotted">
+  <h3>Contact details</h3>
+  <p>To RSVP, please visit <a href="http://web.jcu.io">http://web.jcu.io</a>.</p>
+  <p>For further information, please contact <a href="mailto:example@jcu.edu.au">example@jcu.edu.au</a>.</p>
+</div>
+{% endexample %}
+
 ### Bordered List (inside borders)
 
 A border is present between each list item, and not present on the first or last

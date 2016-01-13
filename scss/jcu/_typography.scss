@@ -6,6 +6,22 @@
   line-height: 1.3;
 }
 
+// Workaround for Firefox double-underline
+// See https://github.com/necolas/normalize.css/pull/451
+abbr[title] {
+  text-decoration: none;
+}
+
+// Links default to primary colour so ensure distinct styling
+.text-primary a {
+  border-bottom: $border-width dotted $body-color;
+  @include hover-focus {
+    text-decoration: none;
+    border-bottom-color: $link-hover-color;
+  }
+}
+
+// Bootstrap-flavoured typography extensions
 .text-inverse {
   color: $gray-lightest;
 
@@ -42,18 +58,4 @@
 
 .list-bordered {
   @include list-bordered(.25em);
-}
-
-// Workaround for Firefox double-underline
-// See https://github.com/necolas/normalize.css/pull/451
-abbr[title] {
-  text-decoration: none;
-}
-
-.text-primary a {
-  border-bottom: $border-width dotted $body-color;
-  @include hover-focus {
-    text-decoration: none;
-    border-bottom-color: $link-hover-color;
-  }
 }
