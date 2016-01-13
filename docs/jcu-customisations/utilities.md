@@ -155,9 +155,12 @@ documentation from Bootstrap.
   <div class="col-xs-3">
     <div class="jcu-bg--white-25pc">.jcu-bg--white-25pc</div>
     <div class="jcu-bg--white-50pc">.jcu-bg--white-50pc</div>
-    <div class="jcu-bg--white-75pc jcu-bg--inverse">.jcu-bg--white-75pc</div>
-    <div class="jcu-bg--white-90pc jcu-bg--inverse">.jcu-bg--white-90pc</div>
-    <div class="jcu-bg--white jcu-bg--inverse">.jcu-bg--white</div>
+    <div class="jcu-bg--white-75pc">.jcu-bg--white-75pc</div>
+    <div class="jcu-bg--white-90pc">.jcu-bg--white-90pc</div>
+    <div class="jcu-bg--white">.jcu-bg--white</div>
+  </div>
+  <div class="col-xs-3">
+    <div class="jcu-bg--transparent">.jcu-bg--transparent</div>
   </div>
 </div>
 
