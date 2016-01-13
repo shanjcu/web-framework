@@ -284,7 +284,7 @@
               <input name="Search" value="Search" type="submit" hidden>
               <label class="sr-only" for="jcu-search__query">Search</label>
               <input class="form-control" id="jcu-search__query" name="query" type="text" title="Search text" placeholder="Search">
-              <select class="c-select" name="collection" aria-label="Search type">
+              <select class="custom-select" name="collection" aria-label="Search type">
                 <option value="jcua-web" selected>Site</option>
                 <option value="jcua-courses">Courses</option>
               </select>
@@ -622,13 +622,13 @@
             </ul>
           </nav>
         </div>
-        <nav class="container-fluid container-fluid--max-width jcu-section-navigator__breadcrumb" aria-label="Breadcrumbs">
-          <ol class="breadcrumb">
-            <li><a href="#">About JCU</a></li>
-            <li><a href="#">History and Information</a></li>
-            <li class="active">About</li>
-          </ol>
-        </nav>
+        <div class="container-fluid container-fluid--max-width jcu-section-navigator__breadcrumb">
+          <nav class="breadcrumb" aria-label="Breadcrumbs">
+            <a class="breadcrumb-item" href="#">About JCU</a>
+            <a class="breadcrumb-item" href="#">History and Information</a>
+            <span class="breadcrumb-item active">About</span>
+          </nav>
+        </div>
       </div>
     </header>
 

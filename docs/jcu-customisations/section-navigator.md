@@ -30,7 +30,7 @@ for a fully-worked, living example.
 
 {% example html %}
 <div class="jcu-section-navigator">
-  <div class="container-fluid container-fluid--max-width hidden-print">
+  <div class="container-fluid hidden-print">
     <nav class="navbar navbar-dark bg-inverse">
       <ul class="nav navbar-nav">
         <li class="nav-item active">
@@ -55,12 +55,12 @@ for a fully-worked, living example.
       </ul>
     </nav>
   </div>
-  <nav class="container-fluid jcu-section-navigator__breadcrumb">
-    <ol class="breadcrumb">
-      <li><a href="#">About JCU</a></li>
-      <li><a href="#">History and Information</a></li>
-      <li class="active">About</li>
-    </ol>
-  </nav>
+  <div class="container-fluid jcu-section-navigator__breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumbs">
+      <a class="breadcrumb-item" href="#">About JCU</a>
+      <a class="breadcrumb-item" href="#">History and Information</a>
+      <span class="breadcrumb-item active">About</span>
+    </nav>
+  </div>
 </div>
 {% endexample %}

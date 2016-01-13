@@ -46,7 +46,7 @@
 
       .nav-link {
         // Line up with padding for breadcrumbs
-        padding-left: $breadcrumb-padding-horizontal;
+        padding-left: $breadcrumb-padding-x;
         @include hover-focus {
           color: inherit;
           text-decoration: underline;
@@ -95,12 +95,10 @@
 
 .jcu-section-navigator__breadcrumb {
   background-color: #fff;
+  text-transform: uppercase;
 
   @media print {
     display: block;
   }
 }
 
-.breadcrumb {
-  text-transform: uppercase;
-}
