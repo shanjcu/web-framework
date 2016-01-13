@@ -31,6 +31,11 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
+.jcu-bg--cover {
+  background-size: cover;
+  background-position: center;
+}
+
 @each $name, $color in $jcu-bg-colors {
   @each $opacity in $jcu-bg-opacities {
     $class-name: ".jcu-bg--#{$name}-#{$opacity}pc";

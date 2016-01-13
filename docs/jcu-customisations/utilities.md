@@ -226,3 +226,17 @@ well.
   <div class="jcu-bg--yellow-shell">.jcu-bg--yellow-shell</div>
   <div class="jcu-bg--yellow-sunflower">.jcu-bg--yellow-sunflower</div>
 </div>
+
+#### Covers
+
+Use `.jcu-bg--cover` to configure an image background to scale as large as
+possible, whilst maintaining the aspect ratio, *covering* the entire width or
+height of the container.  Compare the two different examples below and note how
+the cover example resizes the image and may clip the edges to maintain aspect
+ratio.
+
+<div class="jcu-bg-examples jcu-bg-examples--inverse">
+  <div class="jcu-bg--blue-fish jcu-bg--cover" style="height: 10em">.jcu-bg--blue-buildings .jcu-bg--cover</div>
+  <hr>
+  <div class="jcu-bg--blue-fish" style="height: 10em">.jcu-bg--blue-buildings (no cover class)</div>
+</div>
