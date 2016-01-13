@@ -37,6 +37,9 @@ the JCU Web Framework.
 * [A11Y Project](http://a11yproject.com/) (Excellent patterns library for
   widgets and more)
 
+  * [Getting started with ARIA](http://a11yproject.com/posts/getting-started-aa/ri)
+  * [Web Accessibility Checklist](http://a11yproject.com/checklist.html)
+
 * [WebAIM](http://webaim.org/) (Accessibility resources, patterns, and
   checklists)
 

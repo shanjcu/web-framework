@@ -8,6 +8,13 @@ Iconography is provided care of the [WebHostingHub
 Glyphs](http://www.webhostinghub.com/glyphs/) and full details can be found on
 their official documentation.
 
+{% callout warning %}
+**Heads up!** There are potential issues that arise with using an icon font.
+Take a read of [Seriously, Don't Use Icon
+Fonts](http://blog.cloudfour.com/seriously-dont-use-icon-fonts/).  We may
+adapt our use towards SVGs in the near future.
+{% endcallout %}
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
