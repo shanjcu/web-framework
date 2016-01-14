@@ -155,13 +155,20 @@ accessibility reasons.
 
 <div class="jcu-bg-examples jcu-bg-examples--inverse">
   <div class="jcu-bg--gradient-blue">.jcu-bg--gradient-blue</div>
-  <div class="jcu-bg--gradient-blue-reverse">.jcu-bg--gradient-blue-reverse</div>
+  <div class="jcu-bg--gradient-blue-rev">.jcu-bg--gradient-blue-rev</div>
   <div class="jcu-bg--gradient-orange">.jcu-bg--gradient-orange</div>
-  <div class="jcu-bg--gradient-orange-reverse">.jcu-bg--gradient-orange-reverse</div>
+  <div class="jcu-bg--gradient-orange-rev">.jcu-bg--gradient-orange-rev</div>
   <div class="jcu-bg--gradient-green">.jcu-bg--gradient-green</div>
-  <div class="jcu-bg--gradient-green-reverse">.jcu-bg--gradient-green-reverse</div>
+  <div class="jcu-bg--gradient-green-rev">.jcu-bg--gradient-green-rev</div>
   <div class="jcu-bg--gradient-red">.jcu-bg--gradient-red</div>
-  <div class="jcu-bg--gradient-red-reverse">.jcu-bg--gradient-red-reverse</div>
+  <div class="jcu-bg--gradient-red-rev">.jcu-bg--gradient-red-rev</div>
+</div>
+
+<div class="row jcu-bg-examples jcu-bg-examples--inverse">
+  <div class="col-md-3 jcu-bg--gradient-blue-45deg">.jcu-bg--gradient-blue-45deg</div>
+  <div class="col-sm-3 jcu-bg--gradient-orange-45deg">.jcu-bg--gradient-orange-45deg</div>
+  <div class="col-sm-3 jcu-bg--gradient-green-45deg">.jcu-bg--gradient-green-45deg</div>
+  <div class="col-sm-3 jcu-bg--gradient-red-45deg">.jcu-bg--gradient-red-45deg</div>
 </div>
 
 ### Images
