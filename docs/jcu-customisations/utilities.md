@@ -13,6 +13,15 @@ down while allowing for quick and easy development.
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
+## Borders
+
+This small utility follows on the [spacing
+utilities]({{ site.baseurl }}/components/utilities/#spacing) provided by the
+core framework.
+
+* `.b-a-0`: configure all borders (indicated by the `a`) to be none (indicated
+  the `0`)
+
 ## Backgrounds
 
 You can use any of the following colours and opacities and mix them into any
