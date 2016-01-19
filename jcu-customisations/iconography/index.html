@@ -1118,6 +1118,7 @@ their official documentation.</p>
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
   <li><a href="#examples" id="markdown-toc-examples">Examples</a>    <ul>
+      <li><a href="#reference" id="markdown-toc-reference">Reference</a></li>
       <li><a href="#decorative" id="markdown-toc-decorative">Decorative</a></li>
       <li><a href="#semantic" id="markdown-toc-semantic">Semantic</a></li>
     </ul>
@@ -1126,23 +1127,26 @@ their official documentation.</p>
 
 <h2 id="examples">Examples</h2>
 
-<div class="bd-callout bd-callout-warning">
-<p><strong>Heads up!</strong> There are some minor differences in naming, such as
-<code class="highlighter-rouge">.icon-emailalt</code>, which you can access as <code class="highlighter-rouge">.icon-email2</code> in the version JCU is
-using on its CMS website. See the
-<a href="https://github.com/gustavohenke/webhostinghub-glyphs/blob/master/css/webhostinghub-glyphs.css">webhostinghub-glyphs.css</a>
-file for the correct names.  All icons will be present in each; it’s just a case
-of determining the correct class name to use.</p>
-
-<p>You may need to consult the source of the <a href="https://raw.githubusercontent.com/whhglyphs/webhostinghub-glyphs/master/WebHostingHub-Glyphs.svg">SVG
-font</a>
-(1MB+ download) in order to locate the correct class name.</p>
-</div>
-
 <p>Icons should be specified using a <code class="highlighter-rouge">&lt;span&gt;</code> element, in the manner shown.  Other
 examples in some documentation may use an <code class="highlighter-rouge">&lt;i&gt;</code> element but JCU systems should
 use <code class="highlighter-rouge">&lt;span&gt;</code> where possible for consistency and accessibility (some testers show
 screen readers interpret the latter as readable).</p>
+
+<h3 id="reference">Reference</h3>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="../../dist/css/components/webhostinghub-glyphs/demo.html"></iframe>
+</div>
+
+<p><a href="/dist/css/components/webhostinghub-glyphs/demo.html" target="_blank">View the reference</a> (opens
+in new window)</p>
+
+<div class="bd-callout bd-callout-warning">
+<p><strong>Heads up!</strong> There are some minor differences in icon naming from the original
+official version of WebHostingHub Glyphs.  Once example that JCU is using on the
+CMS website is <code class="highlighter-rouge">.icon-emailalt</code> for an envelope icon; this is called
+<code class="highlighter-rouge">.icon-email2</code> in the framework’s version.</p>
+</div>
 
 <h3 id="decorative">Decorative</h3>
 
