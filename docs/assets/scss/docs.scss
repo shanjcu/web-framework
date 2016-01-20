@@ -115,7 +115,7 @@ $jcu-gradient-color: #fff;
   padding: $spacer;
 
   .jcu-overlay,
-  [class^='jcu-bg--'] {
+  [class*='jcu-bg--'] {
     min-height: 3.5rem;
   }
 }
