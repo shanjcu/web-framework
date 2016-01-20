@@ -27,7 +27,13 @@ implementation of customisations and components.
     <a href="{{ site.baseurl }}/examples/jcu-app-cover/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app-cover/screenshot.jpg" alt="">
     </a>
-    <h4>App Cover layout</h4>
+    <h4>App cover layout</h4>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-app-page/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app-page/screenshot.jpg" alt="">
+    </a>
+    <h4>App page layout</h4>
   </div>
 </div>
 
