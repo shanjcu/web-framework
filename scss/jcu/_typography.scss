@@ -22,6 +22,10 @@ abbr[title] {
 }
 
 // Bootstrap-flavoured typography extensions
+.text-wrap {
+  white-space: normal !important
+}
+
 .text-inverse {
   color: $gray-lightest;
 
