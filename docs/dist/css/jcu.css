@@ -6078,6 +6078,10 @@ abbr[title] {
   border-bottom-color: #004080;
 }
 
+.text-wrap {
+  white-space: normal !important;
+}
+
 .text-inverse {
   color: #f7f7f9;
 }
@@ -6338,6 +6342,10 @@ abbr[title] {
 .img-fluid[src$=".svg"], .carousel-inner > .carousel-item > img[src$=".svg"],
 .carousel-inner > .carousel-item > a > img[src$=".svg"] {
   height: 100%;
+}
+
+.b-a-0 {
+  border: 0 none !important;
 }
 
 .jcu-overlay--inverse {
@@ -6814,7 +6822,14 @@ abbr[title] {
   background-repeat: repeat-x;
 }
 
-.jcu-bg--gradient-blue-reverse {
+.jcu-bg--gradient-blue-45deg {
+  background-image: -webkit-linear-gradient(45deg, #00bee4, #2e3192);
+  background-image:      -o-linear-gradient(45deg, #00bee4, #2e3192);
+  background-image:         linear-gradient(45deg, #00bee4, #2e3192);
+  background-repeat: repeat-x;
+}
+
+.jcu-bg--gradient-blue-rev {
   background-image: -webkit-gradient(linear, left top, right top, from(#00bee4), to(#2e3192));
   background-image: -webkit-linear-gradient(left, #00bee4 0%, #2e3192 100%);
   background-image:      -o-linear-gradient(left, #00bee4 0%, #2e3192 100%);
@@ -6832,7 +6847,14 @@ abbr[title] {
   background-repeat: repeat-x;
 }
 
-.jcu-bg--gradient-orange-reverse {
+.jcu-bg--gradient-orange-45deg {
+  background-image: -webkit-linear-gradient(45deg, #fd0, #e94f35);
+  background-image:      -o-linear-gradient(45deg, #fd0, #e94f35);
+  background-image:         linear-gradient(45deg, #fd0, #e94f35);
+  background-repeat: repeat-x;
+}
+
+.jcu-bg--gradient-orange-rev {
   background-image: -webkit-gradient(linear, left top, right top, from(#fd0), to(#e94f35));
   background-image: -webkit-linear-gradient(left, #fd0 0%, #e94f35 100%);
   background-image:      -o-linear-gradient(left, #fd0 0%, #e94f35 100%);
@@ -6850,7 +6872,14 @@ abbr[title] {
   background-repeat: repeat-x;
 }
 
-.jcu-bg--gradient-green-reverse {
+.jcu-bg--gradient-green-45deg {
+  background-image: -webkit-linear-gradient(45deg, #d6e040, #00a651);
+  background-image:      -o-linear-gradient(45deg, #d6e040, #00a651);
+  background-image:         linear-gradient(45deg, #d6e040, #00a651);
+  background-repeat: repeat-x;
+}
+
+.jcu-bg--gradient-green-rev {
   background-image: -webkit-gradient(linear, left top, right top, from(#d6e040), to(#00a651));
   background-image: -webkit-linear-gradient(left, #d6e040 0%, #00a651 100%);
   background-image:      -o-linear-gradient(left, #d6e040 0%, #00a651 100%);
@@ -6868,7 +6897,14 @@ abbr[title] {
   background-repeat: repeat-x;
 }
 
-.jcu-bg--gradient-red-reverse {
+.jcu-bg--gradient-red-45deg {
+  background-image: -webkit-linear-gradient(45deg, #ec008c, #9d1619);
+  background-image:      -o-linear-gradient(45deg, #ec008c, #9d1619);
+  background-image:         linear-gradient(45deg, #ec008c, #9d1619);
+  background-repeat: repeat-x;
+}
+
+.jcu-bg--gradient-red-rev {
   background-image: -webkit-gradient(linear, left top, right top, from(#ec008c), to(#9d1619));
   background-image: -webkit-linear-gradient(left, #ec008c 0%, #9d1619 100%);
   background-image:      -o-linear-gradient(left, #ec008c 0%, #9d1619 100%);
