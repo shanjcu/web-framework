@@ -37,21 +37,29 @@
     <header class="navbar navbar-light navbar-static-top bd-navbar" role="banner">
   
 
-  <div class="clearfix">
-    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
-      &#9776;
-    </button>
-    <a class="navbar-brand hidden-sm-up" href="/">
-      JCU Web Framework
-    </a>
-  </div>
-  <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
-    <nav class="nav navbar-nav">
-      <a class="nav-item nav-link " href="/">JCU Web Framework</a>
-      <a class="nav-item nav-link active" href="/jcu-customisations/introduction/">Documentation</a>
-      <a class="nav-item nav-link " href="/examples/">Examples</a>
-    </nav>
-  </div>
+  <nav>
+    <div class="clearfix">
+      <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <a class="navbar-brand hidden-sm-up" href="/">
+        JCU Web Framework
+      </a>
+    </div>
+    <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-item nav-link " href="/">JCU Web Framework</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link active" href="/jcu-customisations/introduction/">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/examples/">Examples</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 
@@ -71,1040 +79,1089 @@
       <div class="row jcu-content">
         <div class="container-fluid">
           <div class="col-md-3 col-md-push-9 bd-sidebar">
-            <div class="bd-sidebar">
+            <form class="bd-search hidden-sm-down">
+  <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
+  <div class="dropdown-menu bd-search-results" id="search-results"></div>
+</form>
 
-  <form class="bd-search hidden-sm-down">
-    <input type="text" class="form-control" id="search-input" placeholder="Search..." autocomplete="off">
-    <div class="dropdown-menu bd-search-results" id="search-results"></div>
-  </form>
+<nav class="bd-links" id="docsNavbarContent">
+  
+  
+  
+  
 
-  <nav class="bd-links" id="docsNavbarContent">
+  
+
+  <div class="bd-toc-item ">
     
+        <a class="bd-toc-link" href="/jcu-customisations/introduction">
       
-      
-      
+        JCU Customisations
+      </a>
 
-      
-
-      <div class="bd-toc-item ">
+      <ul class="nav bd-sidenav">
         
-          <a class="bd-toc-link" href="/jcu-customisations/introduction">
+          
+          
+
+          
+
+          <li class="active bd-sidenav-active">
+            <a href="/jcu-customisations/introduction">
+              Introduction
+            </a>
+
+            
+          </li>
         
-          JCU Customisations
-        </a>
-
-        <ul class="nav bd-sidenav">
           
-            
-            
-
-            
-
-            <li class="active bd-sidenav-active">
-              <a href="/jcu-customisations/introduction">
-                Introduction
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/application-theming">
-                Application Theming
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/jcu-customisations/application-theming">
+              Application Theming
+            </a>
 
             
-
-            <li class="">
-              <a href="/jcu-customisations/coding-guide">
-                Coding Guide
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/jcu-customisations/layout">
-                Layout
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/typography">
-                Typography
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/jcu-customisations/coding-guide">
+              Coding Guide
+            </a>
 
             
-
-            <li class="">
-              <a href="/jcu-customisations/themes">
-                Themes
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/jcu-customisations/iconography">
-                Iconography
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/jcu-customisations/layout">
+              Layout
+            </a>
 
             
-
-            <li class="">
-              <a href="/jcu-customisations/navs">
-                Navs
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/jcu-customisations/accordion">
-                Accordion
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/overlay">
-                Overlay
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/jcu-customisations/typography">
+              Typography
+            </a>
 
             
-
-            <li class="">
-              <a href="/jcu-customisations/card">
-                Card
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/jcu-customisations/utilities">
-                Utilities
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/campus-stack">
-                Campus Stack
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/jcu-customisations/themes">
+              Themes
+            </a>
 
             
-
-            <li class="">
-              <a href="/jcu-customisations/header">
-                Header
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/jcu-customisations/exposition">
-                Exposition
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/toolbar">
-                Toolbar
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/jcu-customisations/iconography">
+              Iconography
+            </a>
 
             
-
-            <li class="">
-              <a href="/jcu-customisations/explorer">
-                Explorer
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/jcu-customisations/section-navigator">
-                Section Navigator
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/content">
-                Content
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/jcu-customisations/dropdowns">
+              Dropdowns
+            </a>
 
             
-
-            <li class="">
-              <a href="/jcu-customisations/footer">
-                Footer
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/jcu-customisations/colophon">
-                Colophon
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/styling">
-                Styling
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/jcu-customisations/navs">
+              Navs
+            </a>
 
             
-
-            <li class="">
-              <a href="/jcu-customisations/building">
-                Building
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/jcu-customisations/useful-resources">
-                Useful Resources
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/jcu-customisations/to-do">
-                To Do
-              </a>
-
-              
-            </li>
           
-        </ul>
-      </div>
+
+          <li class="">
+            <a href="/jcu-customisations/accordion">
+              Accordion
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/overlay">
+              Overlay
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/card">
+              Card
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/utilities">
+              Utilities
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/campus-stack">
+              Campus Stack
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/header">
+              Header
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/exposition">
+              Exposition
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/toolbar">
+              Toolbar
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/explorer">
+              Explorer
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/section-navigator">
+              Section Navigator
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/content">
+              Content
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/footer">
+              Footer
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/colophon">
+              Colophon
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/styling">
+              Styling
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/building">
+              Building
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/useful-resources">
+              Useful Resources
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/jcu-customisations/to-do">
+              To Do
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+  
+  
+
+  
+
+  <div class="bd-toc-item active">
     
+        <a class="bd-toc-link" href="/getting-started/introduction">
       
-      
-      
+        Getting started
+      </a>
 
-      
-
-      <div class="bd-toc-item active">
+      <ul class="nav bd-sidenav">
         
-          <a class="bd-toc-link" href="/getting-started/introduction">
+          
+          
+
+          
+
+          <li class="active bd-sidenav-active">
+            <a href="/getting-started/introduction">
+              Introduction
+            </a>
+
+            
+          </li>
         
-          Getting started
-        </a>
-
-        <ul class="nav bd-sidenav">
           
-            
-            
-
-            
-
-            <li class="active bd-sidenav-active">
-              <a href="/getting-started/introduction">
-                Introduction
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/getting-started/download">
-                Download
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/getting-started/download">
+              Download
+            </a>
 
             
-
-            <li class="">
-              <a href="/getting-started/browsers-devices">
-                Browsers & devices
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/getting-started/options">
-                Options
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/getting-started/flexbox">
-                Flexbox
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/getting-started/contents">
+              Contents
+            </a>
 
             
-
-            <li class="">
-              <a href="/getting-started/build-tools">
-                Build tools
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/getting-started/best-practices">
-                Best practices
-              </a>
-
-              
-            </li>
           
-        </ul>
-      </div>
+
+          
+
+          <li class="">
+            <a href="/getting-started/browsers-devices">
+              Browsers & devices
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/javascript">
+              JavaScript
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/options">
+              Options
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/flexbox">
+              Flexbox
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/build-tools">
+              Build tools
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/best-practices">
+              Best practices
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/getting-started/accessibility">
+              Accessibility
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+  
+  
+
+  
+
+  <div class="bd-toc-item ">
     
+        <a class="bd-toc-link" href="/layout/overview">
       
-      
-      
+        Layout
+      </a>
 
-      
-
-      <div class="bd-toc-item ">
+      <ul class="nav bd-sidenav">
         
-          <a class="bd-toc-link" href="/layout/overview">
+          
+          
+
+          
+
+          <li class="">
+            <a href="/layout/overview">
+              Overview
+            </a>
+
+            
+          </li>
         
-          Layout
-        </a>
-
-        <ul class="nav bd-sidenav">
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/layout/overview">
-                Overview
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/layout/grid">
-                Grid
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/layout/grid">
+              Grid
+            </a>
 
             
-
-            <li class="">
-              <a href="/layout/media-object">
-                Media object
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/layout/responsive-utilities">
-                Responsive utilities
-              </a>
-
-              
-            </li>
           
-        </ul>
-      </div>
+
+          
+
+          <li class="">
+            <a href="/layout/media-object">
+              Media object
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/layout/responsive-utilities">
+              Responsive utilities
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+  
+  
+
+  
+
+  <div class="bd-toc-item ">
     
+        <a class="bd-toc-link" href="/content/reboot">
       
-      
-      
+        Content
+      </a>
 
-      
-
-      <div class="bd-toc-item ">
+      <ul class="nav bd-sidenav">
         
-          <a class="bd-toc-link" href="/content/reboot">
+          
+          
+
+          
+
+          <li class="">
+            <a href="/content/reboot">
+              Reboot
+            </a>
+
+            
+          </li>
         
-          Content
-        </a>
-
-        <ul class="nav bd-sidenav">
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/content/reboot">
-                Reboot
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/content/typography">
-                Typography
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/content/typography">
+              Typography
+            </a>
 
             
-
-            <li class="">
-              <a href="/content/code">
-                Code
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/content/images">
-                Images
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/content/tables">
-                Tables
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/content/code">
+              Code
+            </a>
 
             
-
-            <li class="">
-              <a href="/content/figures">
-                Figures
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-        </ul>
-      </div>
+          
+
+          
+
+          <li class="">
+            <a href="/content/images">
+              Images
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/content/tables">
+              Tables
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/content/figures">
+              Figures
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+  
+  
+
+  
+
+  <div class="bd-toc-item ">
     
+        <a class="bd-toc-link" href="/components/buttons">
       
-      
-      
+        Components
+      </a>
 
-      
-
-      <div class="bd-toc-item ">
+      <ul class="nav bd-sidenav">
         
-          <a class="bd-toc-link" href="/components/buttons">
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/buttons">
+              Buttons
+            </a>
+
+            
+          </li>
         
-          Components
-        </a>
-
-        <ul class="nav bd-sidenav">
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/components/buttons">
-                Buttons
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/components/button-group">
-                Button group
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/components/button-group">
+              Button group
+            </a>
 
             
-
-            <li class="">
-              <a href="/components/button-dropdown">
-                Button dropdown
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/components/forms">
-                Forms
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/components/input-group">
-                Input group
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/components/button-dropdown">
+              Button dropdown
+            </a>
 
             
-
-            <li class="">
-              <a href="/components/dropdowns">
-                Dropdowns
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/components/jumbotron">
-                Jumbotron
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/components/label">
-                Label
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/components/forms">
+              Forms
+            </a>
 
             
-
-            <li class="">
-              <a href="/components/alerts">
-                Alerts
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/components/card">
-                Card
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/components/navs">
-                Navs
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/components/input-group">
+              Input group
+            </a>
 
             
-
-            <li class="">
-              <a href="/components/navbar">
-                Navbar
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/components/breadcrumb">
-                Breadcrumb
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/components/pagination">
-                Pagination
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/components/dropdowns">
+              Dropdowns
+            </a>
 
             
-
-            <li class="">
-              <a href="/components/progress">
-                Progress
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/components/list-group">
-                List group
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/components/modal">
-                Modal
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/components/jumbotron">
+              Jumbotron
+            </a>
 
             
-
-            <li class="">
-              <a href="/components/scrollspy">
-                Scrollspy
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/components/tooltips">
-                Tooltips
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/components/popovers">
-                Popovers
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/components/label">
+              Label
+            </a>
 
             
-
-            <li class="">
-              <a href="/components/collapse">
-                Collapse
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/components/carousel">
-                Carousel
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/components/utilities">
-                Utilities
-              </a>
-
-              
-            </li>
           
-        </ul>
-      </div>
+
+          <li class="">
+            <a href="/components/alerts">
+              Alerts
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/card">
+              Card
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/navs">
+              Navs
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/navbar">
+              Navbar
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/breadcrumb">
+              Breadcrumb
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/pagination">
+              Pagination
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/progress">
+              Progress
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/list-group">
+              List group
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/modal">
+              Modal
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/scrollspy">
+              Scrollspy
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/tooltips">
+              Tooltips
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/popovers">
+              Popovers
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/collapse">
+              Collapse
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/carousel">
+              Carousel
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/components/utilities">
+              Utilities
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+  
+  
+
+  
+
+  <div class="bd-toc-item ">
     
+        <a class="bd-toc-link" href="/about/history">
       
-      
-      
+        About
+      </a>
 
-      
-
-      <div class="bd-toc-item ">
+      <ul class="nav bd-sidenav">
         
-          <a class="bd-toc-link" href="/about/history">
+          
+          
+
+          
+
+          <li class="">
+            <a href="/about/history">
+              History
+            </a>
+
+            
+          </li>
         
-          About
-        </a>
-
-        <ul class="nav bd-sidenav">
           
-            
-            
-
-            
-
-            <li class="">
-              <a href="/about/history">
-                History
-              </a>
-
-              
-            </li>
           
-            
-            
 
-            
-
-            <li class="">
-              <a href="/about/accessibility">
-                Accessibility
-              </a>
-
-              
-            </li>
           
-            
-            
+
+          <li class="">
+            <a href="/about/team">
+              Team
+            </a>
 
             
-
-            <li class="">
-              <a href="/about/license">
-                License
-              </a>
-
-              
-            </li>
+          </li>
+        
           
-        </ul>
-      </div>
+          
+
+          
+
+          <li class="">
+            <a href="/about/brand">
+              Brand
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="/about/license">
+              License
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+  
+  
+
+  
+
+  <div class="bd-toc-item ">
     
+        <a class="bd-toc-link" href="/migration/">
       
-      
-      
+        Migration
+      </a>
 
-      
-
-      <div class="bd-toc-item ">
+      <ul class="nav bd-sidenav">
         
-          <a class="bd-toc-link" href="/migration/">
-        
-          Migration
-        </a>
-
-        <ul class="nav bd-sidenav">
-          
-        </ul>
-      </div>
-    
-  </nav>
-</div>
+      </ul>
+    </div>
+  
+</nav>
 
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
@@ -1137,9 +1194,10 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span></code></pre></figure>
 
-<p>Add our JavaScript plugins and jQuery near the end of your pages, right before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag. Be sure to place jQuery first as our code depends on it.</p>
+<p>Add our JavaScript plugins, jQuery, and Tether near the end of your pages, right before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag. Be sure to place jQuery and Tether first, as our code depends on them.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-MWq1Lnqj72tmjGdOKuNBn3E0gj3vWfy/1EmR5TVL8d8nGvwgy32YkCpKpTUhwBVv"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
 <p>And that’s it—you’re on your way to a fully Bootstrapped site. If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
@@ -1170,8 +1228,9 @@
   <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
 
-    <span class="c">&lt;!-- jQuery first, then Bootstrap JS. --&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="c">&lt;!-- jQuery first, then Tether, then Bootstrap JS. --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-MWq1Lnqj72tmjGdOKuNBn3E0gj3vWfy/1EmR5TVL8d8nGvwgy32YkCpKpTUhwBVv"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
     <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span></code></pre></figure>
@@ -1201,7 +1260,7 @@
 
 <h3 id="box-sizing">Box-sizing</h3>
 
-<p>For more straightforward sizing in CSS, we switch the global <code class="highlighter-rouge">box-sizing</code> value from <code class="highlighter-rouge">content-box</code> to <code class="highlighter-rouge">border-box</code>. This ensures <code class="highlighter-rouge">padding</code> does not affect the final computed width of an element, but it can cause problems with some third party software like including Google Maps and Google Custom Search Engine.</p>
+<p>For more straightforward sizing in CSS, we switch the global <code class="highlighter-rouge">box-sizing</code> value from <code class="highlighter-rouge">content-box</code> to <code class="highlighter-rouge">border-box</code>. This ensures <code class="highlighter-rouge">padding</code> does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.</p>
 
 <p>On the rare occasion you need to override it, use something like the following:</p>
 

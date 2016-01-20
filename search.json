@@ -200,14 +200,14 @@
     
         {
             "title" : "Dropdowns",
-            "url"   : "/components/dropdowns/"
+            "url"   : "/jcu-customisations/dropdowns/"
         } ,
     
 
     
         {
             "title" : "Dropdowns",
-            "url"   : "/jcu-customisations/dropdowns/"
+            "url"   : "/components/dropdowns/"
         } ,
     
 
@@ -410,14 +410,14 @@
     
         {
             "title" : "Navs",
-            "url"   : "/components/navs/"
+            "url"   : "/jcu-customisations/navs/"
         } ,
     
 
     
         {
             "title" : "Navs",
-            "url"   : "/jcu-customisations/navs/"
+            "url"   : "/components/navs/"
         } ,
     
 
