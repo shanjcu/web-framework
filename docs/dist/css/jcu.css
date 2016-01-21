@@ -6341,7 +6341,12 @@ abbr[title] {
 
 .img-fluid[src$=".svg"], .carousel-inner > .carousel-item > img[src$=".svg"],
 .carousel-inner > .carousel-item > a > img[src$=".svg"] {
-  height: 100%;
+  width: 100%\9;
+}
+
+_:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carousel-item > img[src$=".svg"], :root
+.carousel-inner > .carousel-item > a > img[src$=".svg"] {
+  width: 100%;
 }
 
 .b-a-0 {
@@ -7085,6 +7090,7 @@ abbr[title] {
 }
 
 .jcu-campus-stack li {
+  color: #2d2d2d;
   border-color: #2d2d2d;
 }
 
@@ -7105,6 +7111,7 @@ abbr[title] {
 }
 
 .jcu-campus-stack--color li {
+  color: #176fc1;
   border-color: #176fc1;
 }
 
@@ -7121,6 +7128,7 @@ abbr[title] {
 }
 
 .jcu-campus-stack--inverse li {
+  color: #fff;
   border-color: #fff;
 }
 
