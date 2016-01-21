@@ -33,6 +33,9 @@ If you have suggestions, please get in touch.
 
 * Build process:
 
+  * Minification for CSS actually produces a *larger* file than originally
+    provided.
+
   * Run base templates and CSS styles through WCAG2AAA / Section508 checker or
     linter
 
