@@ -15,6 +15,12 @@ footer of the main website, but can be re-used if necessary.
 
 ## Examples
 
+{% callout info %}
+Any of the following examples can be scaled using CSS.  For example, to make a
+small campus stack, you can utilise the built-in `.small` class attached to the
+list tag.
+{% endcallout %}
+
 ### Mono
 
 The standard, mono-coloured stack:
