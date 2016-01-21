@@ -301,6 +301,17 @@ module.exports = function (grunt) {
       }
     },
 
+    image: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: '.',
+          src: ['images/**/*.{png,jpg,gif,svg}'],
+          dest: 'dist/'
+        }]
+      }
+    },
+
     // TODO Fix this so files are correctly configured
     copy: {
       components: {
@@ -308,7 +319,6 @@ module.exports = function (grunt) {
         {expand: true, cwd: 'scss/components/open-sans-fontface', src: ['fonts/**/*'], dest: 'dist/css/'},
         {expand: true, cwd: 'scss/components/webhostinghub-glyphs', src: ['font/**/*'], dest: 'dist/'},
         {expand: true, cwd: 'scss/components/', src: ['**/*'], dest: 'dist/css/components'},
-        {expand: true, cwd: '.', src: ['images/**/*'], dest: 'dist/'}
         ]
       },
       docs: {
@@ -497,7 +507,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['copy:components', 'sass-compile', 'postcss:core', 'csscomb:dist', 'cssmin:core', 'cssmin:docs']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
+  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js', 'dist-images']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'test']);
@@ -541,7 +551,10 @@ module.exports = function (grunt) {
     });
   });
 
-  // JCU custom tasks
+  // JCU customisations
+  grunt.loadNpmTasks('grunt-image');
+  // dist-images: copy and optimise images in one hit
+  grunt.registerTask('dist-images', ['image']);
   // Publish: builds docs, runs Jekyll, and pushes onto Bitbucket Server
   grunt.registerTask('jcu-publish', ['jekyll:github', 'buildcontrol:pages']);
 };

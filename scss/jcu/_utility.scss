@@ -1,7 +1,7 @@
 //
 // Fixes: resolve SVG scaling issue on IE and Edge
 //
-.img-fluid[src$=".svg"] { height: 100%; }
+.img-fluid[src$=".svg"] { width: 100% \9; }
 
 //
 // Borders: utilities like Bootstrap's spacing (eg m-a-0)
