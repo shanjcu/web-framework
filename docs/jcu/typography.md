@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Typography customisations
-group: jcu-customisations
+group: jcu
 ---
 
 ## Contents
@@ -41,7 +41,7 @@ group: jcu-customisations
 
 A border is present between each list item, and not present on the first or last
 item in a list.  This is extended to create the [Campus
-Stack]({{ site.baseurl }}/jcu-customisations/campus-stack).
+Stack]({{ site.baseurl }}/jcu/campus-stack).
 
 {% example html %}
 <ul class="list-bordered">

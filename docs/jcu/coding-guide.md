@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Coding Guide
-group: jcu-customisations
+group: jcu
 ---
 
 {% callout info %}
@@ -48,7 +48,7 @@ In order to test accessibility, we use a number of different tools:
   elements where `pa11y` reports warnings.
 
 For how to use these tools in practice, see
-[Accessibility testing]({{ site.baseurl }}/jcu-customisations/building/#accessibility-testing).
+[Accessibility testing]({{ site.baseurl }}/jcu/building/#accessibility-testing).
 
 ### Coding guide
 
@@ -66,9 +66,9 @@ For how to use these tools in practice, see
 * All components are given names that describe their purpose, rather than being
   arbitrary or specifically dictating their position.  This also has the added
   benefit of making components easily identifiable and discussable.  For
-  example, the [Exposition]({{ site.baseurl }}/jcu-customisations/exposition)
+  example, the [Exposition]({{ site.baseurl }}/jcu/exposition)
   component sets the theme for the page with a background image and the
-  [Explorer]({{ site.baseurl }}/jcu-customisations/explorer) component consists of
+  [Explorer]({{ site.baseurl }}/jcu/explorer) component consists of
   the way in which users can navigate and *explore* a content-rich site.
 
 * All custom variables and classes in code should follow Bootstrap's lead

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Content
-group: jcu-customisations
+group: jcu
 ---
 
 *Header* is a specific JCU component for the display and representation of

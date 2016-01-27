@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Toolbar
-group: jcu-customisations
+group: jcu
 ---
 
 *Toolbar* is a is the top-level navigation bar that is fixed to the top of all

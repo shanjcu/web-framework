@@ -1,8 +1,8 @@
 ---
 layout: docs
 title: Application Theming
-group: jcu-customisations
-redirect_from: "/jcu-customisations/"
+group: jcu
+redirect_from: "/jcu/"
 ---
 
 Different applications require different approaches to making them consistent

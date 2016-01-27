@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Navs
-group: jcu-customisations
+group: jcu
 ---
 
 Navigation component customisations that are built upon the standard

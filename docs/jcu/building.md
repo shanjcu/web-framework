@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Building
-group: jcu-customisations
+group: jcu
 ---
 
 {% callout info %}

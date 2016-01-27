@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Explorer
-group: jcu-customisations
+group: jcu
 ---
 
 *Explorer* is the heading menu which allows visitors to interactively

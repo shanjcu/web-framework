@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: JCU Content
-group: jcu-customisations
+group: jcu
 ---
 
 *Content* is a specific JCU component for the display and representation of

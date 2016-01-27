@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Section Navigator
-group: jcu-customisations
+group: jcu
 ---
 
 *Section Navigator* is an amalgam of a navbar, consisting of the current

@@ -1,12 +1,12 @@
 ---
 layout: docs
 title: Overlay
-group: jcu-customisations
+group: jcu
 ---
 
 *Overlay* is a custom JCU component for colouring and design of
 content that's designed to be placed on top of something else.  This may be a
-[JCU Card]({{ site.baseurl}}/jcu-customisations/card), a coloured background,
+[JCU Card]({{ site.baseurl}}/jcu/card), a coloured background,
 or a situation where you need to distinguish between layers of content.
 
 ## Contents
@@ -20,7 +20,7 @@ or a situation where you need to distinguish between layers of content.
 **Heads up!** All examples here are shown with a background.  The background
 image is for illustration purposes only and does not form part of this
 component.  If you're looking to use background images yourself, however, see
-[Utilities]({{ site.baseurl }}/jcu-customisations/utilities) components.
+[Utilities]({{ site.baseurl }}/jcu/utilities) components.
 {% endcallout %}
 
 ### Standard
@@ -71,7 +71,7 @@ contrast, especially against multicoloured backgrounds or background images.
 Once you have an overlay, then add mix-in classes
 accordingly to change the style of overlay or colour and opacity.
 For full details about the colour palette, see
-[Backgrounds]({{ site.baseurl }}/jcu-customisations/utilities/#backgrounds).
+[Backgrounds]({{ site.baseurl }}/jcu/utilities/#backgrounds).
 
 <div class="jcu-bg-examples jcu-bg--green-leaf-swirl">
   <div class="jcu-overlay jcu-bg--red-50pc">

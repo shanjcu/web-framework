@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Colophon
-group: jcu-customisations
+group: jcu
 ---
 
 *Colophon*, as it is in publishing, is a way of conveying the publication

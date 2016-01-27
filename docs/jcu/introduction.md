@@ -1,8 +1,8 @@
 ---
 layout: docs
 title: Introduction
-group: jcu-customisations
-redirect_from: "/jcu-customisations/"
+group: jcu
+redirect_from: "/jcu/"
 ---
 
 This is the common web front-end framework for James Cook University and is used

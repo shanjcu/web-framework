@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: To Do
-group: jcu-customisations
+group: jcu
 ---
 
 This is a *living style guide* and as such will always be a work-in-progress.

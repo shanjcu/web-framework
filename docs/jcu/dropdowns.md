@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Dropdowns
-group: jcu-customisations
+group: jcu
 ---
 
 These are minor customisations that can be applied to Bootstrap's

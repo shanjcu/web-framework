@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Accordion
-group: jcu-customisations
+group: jcu
 ---
 
 This is a customisation of the standard Bootstrap

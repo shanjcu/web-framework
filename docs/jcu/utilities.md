@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Utility classes
-group: jcu-customisations
+group: jcu
 ---
 
 This framework includes various utilities—classes with a single purpose. They're

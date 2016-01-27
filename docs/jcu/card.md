@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Card
-group: jcu-customisations
+group: jcu
 ---
 
 ## Contents
@@ -13,7 +13,7 @@ group: jcu-customisations
 
 Overlay Cards are customised Bootstrap Cards with specialised styling and
 animation.  They rely upon [Overlay](
-{{ site.baseurl }}/jcu-customisations/overlay), another JCU component, for
+{{ site.baseurl }}/jcu/overlay), another JCU component, for
 colouring and design of short content that's placed on top of something else
 (typically an image).
 
@@ -24,7 +24,7 @@ documentation about these and other aspects to Cards.
 
 The `.jcu-overlay-card` modifier adjusts positioning and adds transition
 effects, as the examples show. The `.jcu-overlay` classes, sourced from
-[Overlay]({{ site.baseurl }}/jcu-customisations/overlay), style and colourise
+[Overlay]({{ site.baseurl }}/jcu/overlay), style and colourise
 just the overlay inside the cards.
 
 {% callout warning %}

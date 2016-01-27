@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Layout
-group: jcu-customisations
+group: jcu
 ---
 
 In order to achieve the page layouts and designs, the framework implements

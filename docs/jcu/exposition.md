@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Exposition
-group: jcu-customisations
+group: jcu
 ---
 
 *Exposition* sets the tone and describes the content or intent of the given page

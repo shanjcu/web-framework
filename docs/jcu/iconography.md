@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Iconography
-group: jcu-customisations
+group: jcu
 ---
 
 Iconography is provided care of the [WebHostingHub

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Themes
-group: jcu-customisations
+group: jcu
 ---
 
 *Themes* are overarching colour schemes which can be applied to content on sites

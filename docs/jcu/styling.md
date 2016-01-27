@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Styling for JCU
-group: jcu-customisations
+group: jcu
 ---
 
 ## Contents
@@ -31,7 +31,7 @@ consistent across browsers.
 ## Theming an application
 
 See [Application
-Theming]({{ site.baseurl }}/jcu-customisations/application-theming) for
+Theming]({{ site.baseurl }}/jcu/application-theming) for
 details on how to apply these styles to your own projects.
 
 ## Extending or reusing

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Useful Resources
-group: jcu-customisations
+group: jcu
 ---
 
 Here's some more reading materials and resources that are relevant to the use of

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Campus Stack
-group: jcu-customisations
+group: jcu
 ---
 
 *Campus Stack* is a simple component for visually listing the JCU campuses,

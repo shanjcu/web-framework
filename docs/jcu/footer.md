@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Footer
-group: jcu-customisations
+group: jcu
 ---
 
 *Footer* is a JCU specific component.
