@@ -4,13 +4,13 @@
     <loc>https://web.jcu.io/getting-started/accessibility/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/accordion/</loc>
+    <loc>https://web.jcu.io/jcu/accordion/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/alerts/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/application-theming/</loc>
+    <loc>https://web.jcu.io/jcu/application-theming/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/extend/approach/</loc>
@@ -34,7 +34,7 @@
     <loc>https://web.jcu.io/getting-started/build-tools/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/building/</loc>
+    <loc>https://web.jcu.io/jcu/building/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/button-dropdown/</loc>
@@ -46,13 +46,13 @@
     <loc>https://web.jcu.io/components/buttons/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/campus-stack/</loc>
+    <loc>https://web.jcu.io/jcu/campus-stack/</loc>
+  </url>
+  <url>
+    <loc>https://web.jcu.io/jcu/card/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/card/</loc>
-  </url>
-  <url>
-    <loc>https://web.jcu.io/jcu-customisations/card/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/carousel/</loc>
@@ -61,16 +61,16 @@
     <loc>https://web.jcu.io/content/code/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/coding-guide/</loc>
+    <loc>https://web.jcu.io/jcu/coding-guide/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/collapse/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/colophon/</loc>
+    <loc>https://web.jcu.io/jcu/colophon/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/content/</loc>
+    <loc>https://web.jcu.io/jcu/content/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/getting-started/contents/</loc>
@@ -79,16 +79,16 @@
     <loc>https://web.jcu.io/getting-started/download/</loc>
   </url>
   <url>
+    <loc>https://web.jcu.io/jcu/dropdowns/</loc>
+  </url>
+  <url>
     <loc>https://web.jcu.io/components/dropdowns/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/dropdowns/</loc>
+    <loc>https://web.jcu.io/jcu/explorer/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/explorer/</loc>
-  </url>
-  <url>
-    <loc>https://web.jcu.io/jcu-customisations/exposition/</loc>
+    <loc>https://web.jcu.io/jcu/exposition/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/content/figures/</loc>
@@ -97,7 +97,7 @@
     <loc>https://web.jcu.io/getting-started/flexbox/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/footer/</loc>
+    <loc>https://web.jcu.io/jcu/footer/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/forms/</loc>
@@ -106,7 +106,7 @@
     <loc>https://web.jcu.io/layout/grid/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/header/</loc>
+    <loc>https://web.jcu.io/jcu/header/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/about/history/</loc>
@@ -115,7 +115,7 @@
     <loc>https://web.jcu.io/extend/icon-fonts/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/iconography/</loc>
+    <loc>https://web.jcu.io/jcu/iconography/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/content/images/</loc>
@@ -133,10 +133,10 @@
     <loc>https://web.jcu.io/components/input-group/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/introduction/</loc>
+    <loc>https://web.jcu.io/getting-started/introduction/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/getting-started/introduction/</loc>
+    <loc>https://web.jcu.io/jcu/introduction/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/getting-started/javascript/</loc>
@@ -148,7 +148,7 @@
     <loc>https://web.jcu.io/components/label/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/layout/</loc>
+    <loc>https://web.jcu.io/jcu/layout/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/about/license/</loc>
@@ -169,16 +169,16 @@
     <loc>https://web.jcu.io/components/navbar/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/components/navs/</loc>
+    <loc>https://web.jcu.io/jcu/navs/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/navs/</loc>
+    <loc>https://web.jcu.io/components/navs/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/getting-started/options/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/overlay/</loc>
+    <loc>https://web.jcu.io/jcu/overlay/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/layout/overview/</loc>
@@ -202,10 +202,10 @@
     <loc>https://web.jcu.io/components/scrollspy/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/section-navigator/</loc>
+    <loc>https://web.jcu.io/jcu/section-navigator/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/styling/</loc>
+    <loc>https://web.jcu.io/jcu/styling/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/content/tables/</loc>
@@ -214,13 +214,13 @@
     <loc>https://web.jcu.io/about/team/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/themes/</loc>
+    <loc>https://web.jcu.io/jcu/themes/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/to-do/</loc>
+    <loc>https://web.jcu.io/jcu/to-do/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/toolbar/</loc>
+    <loc>https://web.jcu.io/jcu/toolbar/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/tooltips/</loc>
@@ -232,16 +232,16 @@
     <loc>https://web.jcu.io/content/typography/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/typography/</loc>
+    <loc>https://web.jcu.io/jcu/typography/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/useful-resources/</loc>
+    <loc>https://web.jcu.io/jcu/useful-resources/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/utilities/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu-customisations/utilities/</loc>
+    <loc>https://web.jcu.io/jcu/utilities/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/dist/css/components/open-sans-fontface/index.html</loc>

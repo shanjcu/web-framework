@@ -25,7 +25,7 @@
     
         {
             "title" : "Accordion",
-            "url"   : "/jcu-customisations/accordion/"
+            "url"   : "/jcu/accordion/"
         } ,
     
 
@@ -39,7 +39,7 @@
     
         {
             "title" : "Application Theming",
-            "url"   : "/jcu-customisations/application-theming/"
+            "url"   : "/jcu/application-theming/"
         } ,
     
 
@@ -88,7 +88,7 @@
     
         {
             "title" : "Building",
-            "url"   : "/jcu-customisations/building/"
+            "url"   : "/jcu/building/"
         } ,
     
 
@@ -116,14 +116,14 @@
     
         {
             "title" : "Campus Stack",
-            "url"   : "/jcu-customisations/campus-stack/"
+            "url"   : "/jcu/campus-stack/"
         } ,
     
 
     
         {
             "title" : "Card",
-            "url"   : "/jcu-customisations/card/"
+            "url"   : "/jcu/card/"
         } ,
     
 
@@ -151,7 +151,7 @@
     
         {
             "title" : "Coding Guide",
-            "url"   : "/jcu-customisations/coding-guide/"
+            "url"   : "/jcu/coding-guide/"
         } ,
     
 
@@ -165,14 +165,14 @@
     
         {
             "title" : "Colophon",
-            "url"   : "/jcu-customisations/colophon/"
+            "url"   : "/jcu/colophon/"
         } ,
     
 
     
         {
             "title" : "Content",
-            "url"   : "/jcu-customisations/header/"
+            "url"   : "/jcu/header/"
         } ,
     
 
@@ -200,14 +200,14 @@
     
         {
             "title" : "Dropdowns",
-            "url"   : "/jcu-customisations/dropdowns/"
+            "url"   : "/components/dropdowns/"
         } ,
     
 
     
         {
             "title" : "Dropdowns",
-            "url"   : "/components/dropdowns/"
+            "url"   : "/jcu/dropdowns/"
         } ,
     
 
@@ -221,14 +221,14 @@
     
         {
             "title" : "Explorer",
-            "url"   : "/jcu-customisations/explorer/"
+            "url"   : "/jcu/explorer/"
         } ,
     
 
     
         {
             "title" : "Exposition",
-            "url"   : "/jcu-customisations/exposition/"
+            "url"   : "/jcu/exposition/"
         } ,
     
 
@@ -256,7 +256,7 @@
     
         {
             "title" : "Footer",
-            "url"   : "/jcu-customisations/footer/"
+            "url"   : "/jcu/footer/"
         } ,
     
 
@@ -291,7 +291,7 @@
     
         {
             "title" : "Iconography",
-            "url"   : "/jcu-customisations/iconography/"
+            "url"   : "/jcu/iconography/"
         } ,
     
 
@@ -312,21 +312,21 @@
     
         {
             "title" : "Introduction",
-            "url"   : "/getting-started/introduction/"
+            "url"   : "/jcu/introduction/"
         } ,
     
 
     
         {
             "title" : "Introduction",
-            "url"   : "/jcu-customisations/introduction/"
+            "url"   : "/getting-started/introduction/"
         } ,
     
 
     
         {
             "title" : "JCU Content",
-            "url"   : "/jcu-customisations/content/"
+            "url"   : "/jcu/content/"
         } ,
     
 
@@ -361,7 +361,7 @@
     
         {
             "title" : "Layout",
-            "url"   : "/jcu-customisations/layout/"
+            "url"   : "/jcu/layout/"
         } ,
     
 
@@ -410,21 +410,21 @@
     
         {
             "title" : "Navs",
-            "url"   : "/jcu-customisations/navs/"
-        } ,
-    
-
-    
-        {
-            "title" : "Navs",
             "url"   : "/components/navs/"
         } ,
     
 
     
         {
+            "title" : "Navs",
+            "url"   : "/jcu/navs/"
+        } ,
+    
+
+    
+        {
             "title" : "Overlay",
-            "url"   : "/jcu-customisations/overlay/"
+            "url"   : "/jcu/overlay/"
         } ,
     
 
@@ -480,14 +480,14 @@
     
         {
             "title" : "Section Navigator",
-            "url"   : "/jcu-customisations/section-navigator/"
+            "url"   : "/jcu/section-navigator/"
         } ,
     
 
     
         {
             "title" : "Styling for JCU",
-            "url"   : "/jcu-customisations/styling/"
+            "url"   : "/jcu/styling/"
         } ,
     
 
@@ -508,21 +508,21 @@
     
         {
             "title" : "Themes",
-            "url"   : "/jcu-customisations/themes/"
+            "url"   : "/jcu/themes/"
         } ,
     
 
     
         {
             "title" : "To Do",
-            "url"   : "/jcu-customisations/to-do/"
+            "url"   : "/jcu/to-do/"
         } ,
     
 
     
         {
             "title" : "Toolbar",
-            "url"   : "/jcu-customisations/toolbar/"
+            "url"   : "/jcu/toolbar/"
         } ,
     
 
@@ -550,14 +550,14 @@
     
         {
             "title" : "Typography customisations",
-            "url"   : "/jcu-customisations/typography/"
+            "url"   : "/jcu/typography/"
         } ,
     
 
     
         {
             "title" : "Useful Resources",
-            "url"   : "/jcu-customisations/useful-resources/"
+            "url"   : "/jcu/useful-resources/"
         } ,
     
 
@@ -571,7 +571,7 @@
     
         {
             "title" : "Utility classes",
-            "url"   : "/jcu-customisations/utilities/"
+            "url"   : "/jcu/utilities/"
         } ,
     
 
