@@ -90,12 +90,12 @@
 #     - title: Approach
 #     - title: Icon fonts
 
-- title: About
-  pages:
-    - title: History
-    - title: Team
-    - title: Brand
-    - title: License
+#- title: About
+#  pages:
+#    - title: History
+#    - title: Team
+#    - title: Brand
+#    - title: License
     #- title: Translations
 
 - title: Migration
