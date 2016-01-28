@@ -321,6 +321,8 @@ module.exports = function (grunt) {
         {expand: true, cwd: 'scss/components/', src: ['**/*'], dest: 'dist/css/components'},
         ]
       },
+      favicon: {src: 'images/favicon.ico', dest: 'dist/'},
+      docs_favicon: {src: 'dist/images/favicon.ico', dest: 'docs/favicon.ico'},
       docs: {
         expand: true,
         cwd: 'dist/',
@@ -527,7 +529,7 @@ module.exports = function (grunt) {
   grunt.registerTask('lint-docs-css', ['scsslint:docs']);
   grunt.registerTask('docs-js', ['uglify:docsJs']);
   grunt.registerTask('lint-docs-js', ['jscs:assets']);
-  grunt.registerTask('docs', ['lint-docs-css', 'docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);
+  grunt.registerTask('docs', ['lint-docs-css', 'docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'copy:docs_favicon']);
   grunt.registerTask('docs-github', ['jekyll:github']);
 
   grunt.registerTask('prep-release', ['dist', 'docs', 'docs-github', 'compress']);
@@ -554,7 +556,7 @@ module.exports = function (grunt) {
   // JCU customisations
   grunt.loadNpmTasks('grunt-image');
   // dist-images: copy and optimise images in one hit
-  grunt.registerTask('dist-images', ['image']);
+  grunt.registerTask('dist-images', ['image', 'copy:favicon']);
   // Publish: builds docs, runs Jekyll, and pushes onto Bitbucket Server
   grunt.registerTask('jcu-publish', ['jekyll:github', 'buildcontrol:pages']);
 };
