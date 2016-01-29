@@ -84,8 +84,8 @@
 }
 
 .input-group-transparent {
-  margin-bottom: $spacer-y;
-  border-bottom: (3 * $input-btn-border-width) solid $input-group-addon-border-color;
+  margin-bottom: 1rem;
+  border-bottom: .3rem solid white;
 }
 
 .input-group-transparent > .form-control,
