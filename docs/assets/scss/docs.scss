@@ -27,8 +27,10 @@
 @import "../../../scss/mixins";
 
 // Local docs variables
+// These colours aren't purple, we just leave the variable name to save merging
+// and resolving conflicts later
 $bd-purple:         $brand-primary;
-$bd-purple-bright:  lighten(saturate($bd-purple, 5%), 15%);
+$bd-purple-bright:  lighten(saturate($brand-primary, 5%), 15%);
 $bd-purple-light:   lighten($brand-primary, 15%);
 $bd-graphite:       #2a2730;
 $bd-graphite-light: lighten($bd-graphite, 40%);
@@ -51,7 +53,7 @@ $bd-info:           #5bc0de;
 @import "footer";
 @import "component-examples";
 @import "responsive-tests";
-//@import "buttons";
+@import "buttons";
 @import "callouts";
 @import "examples";
 //@import "team";
