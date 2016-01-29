@@ -7616,24 +7616,25 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
   margin-left: 1.5rem;
 }
 
-.jcu-section-navigator .navbar-dark .navbar-nav .active {
+.jcu-section-navigator .navbar-nav .active {
   position: relative;
   margin-left: -1rem;
   background-color: #565656;
 }
 
-.jcu-section-navigator .navbar-dark .navbar-nav .active .nav-link {
+.jcu-section-navigator .navbar-nav .active .nav-link {
   padding-left: 1rem;
+  font-weight: bold;
 }
 
-.jcu-section-navigator .navbar-dark .navbar-nav .active .nav-link:focus, .jcu-section-navigator .navbar-dark .navbar-nav .active .nav-link:hover {
+.jcu-section-navigator .navbar-nav .active .nav-link:focus, .jcu-section-navigator .navbar-nav .active .nav-link:hover {
   color: inherit;
   text-decoration: underline;
   background-color: inherit;
   border-top-right-radius: 0;
 }
 
-.jcu-section-navigator .navbar-dark .navbar-nav .active::after {
+.jcu-section-navigator .navbar-nav .active::after {
   position: absolute;
   top: 0;
   left: 100%;
@@ -7647,7 +7648,7 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
   border-left-color: #565656;
 }
 
-.jcu-section-navigator .navbar-dark .navbar-nav .nav-link {
+.jcu-section-navigator .navbar-nav .nav-link {
   padding-top: .25rem;
   padding-right: .75rem;
   padding-left: .75rem;
