@@ -312,12 +312,12 @@ module.exports = function (grunt) {
       }
     },
 
-    // TODO Fix this so files are correctly configured
+    // TODO Forced to use `font/` due to hardcoded CSS in webhostinghub-glyphs
     copy: {
       components: {
         files: [
-        {expand: true, cwd: 'scss/components/open-sans-fontface', src: ['fonts/**/*'], dest: 'dist/css/'},
-        {expand: true, cwd: 'scss/components/webhostinghub-glyphs', src: ['font/**/*'], dest: 'dist/'},
+        {expand: true, cwd: 'scss/components/open-sans-fontface/fonts', src: ['**/*'], dest: 'dist/font/open-sans/'},
+        {expand: true, cwd: 'scss/components/webhostinghub-glyphs/font', src: ['**/*'], dest: 'dist/font/'},
         {expand: true, cwd: 'scss/components/', src: ['**/*'], dest: 'dist/css/components'},
         ]
       },

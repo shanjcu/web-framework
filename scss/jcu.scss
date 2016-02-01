@@ -42,7 +42,12 @@ $jcu-explorer-height-sm: (((.5rem + $border-width-rem) * 2 + $jcu-icon-font-size
 @import "jcu/footer";
 @import "jcu/colophon";
 
+//
 // Third party components
+//
+
+// Relative to final CSS file
+$OpenSansPath: "../font/open-sans";
 @import "components/open-sans-fontface/open-sans.scss";
 @import "components/yamm3/yamm/_yamm.scss";
 @import "components/webhostinghub-glyphs/css/webhostinghub-glyphs.css";
