@@ -46,7 +46,7 @@
     .nav-link {
       // Line up with padding for breadcrumbs
       padding-left: $breadcrumb-padding-x;
-      font-weight: bold;
+      font-weight: 600;
       @include hover-focus {
         color: inherit;
         text-decoration: underline;
