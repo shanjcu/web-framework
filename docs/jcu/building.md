@@ -91,11 +91,15 @@ automatically available.  Our Gruntfile adds the following commands and tasks:
 
 ## Branches and structure
 
-* Latest stable version is always located in ``jcu-master`` branch
-* Development changes take place on the ``jcu-develop`` branch
-* Features and developments should branch off ``jcu-develop``
-* Versioning should follow SemVer
-* Fixes can be made via pull request from other users to the ``develop`` branch
+* Latest stable version is always located in `master` branch
+* Development changes take place on the `develop` branch
+* Features and developments should branch off `develop`
+* Fixes can be made via pull request to the `develop` branch
+* Releases are tagged using SemVer (for example, `v4.0.0`)
+
+This branching model follows that of
+[Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow),
+following Bootstrap's lead for version numbers.
 
 ## Making changes
 
