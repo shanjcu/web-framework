@@ -13,7 +13,7 @@ Bootstrap includes a handful of JavaScript to help bring some of our components 
 
 ## Individual or compiled
 
-Plugins can be included individually (using Bootstrap's individual `*.js` files), or all at once using `bootstrap.js` or the minified `bootstrap.min.js` (don't include both).
+Plugins can be included individually (using Bootstrap's individual `*.js` files), or all at once using `jcu.js` or the minified `jcu.min.js` (don't include both).
 
 ## Dependencies
 

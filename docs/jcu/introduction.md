@@ -59,7 +59,7 @@ cloning from Git, are available too.
    depends on it:
 
    ~~~ html
-   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jcu.min.js"></script>
    ~~~
 
 And that's it — you're on your way to a fully Bootstrapped site. If you're

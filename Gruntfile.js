@@ -421,7 +421,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'ssh://git@github.com/jcu-placeholder/web-framework.git',
+          remote: 'ssh://git@github.com/jcu/web-framework.git',
           branch: 'gh-pages'
         }
       }

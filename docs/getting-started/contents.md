@@ -15,13 +15,13 @@ Once downloaded, unzip the compressed folder and you'll see something like this:
 {% highlight bash %}
 bootstrap/
 ├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   └── bootstrap.min.css.map
+│   ├── jcu.css
+│   ├── jcu.css.map
+│   ├── jcu.min.css
+│   └── jcu.min.css.map
 └── js/
-    ├── bootstrap.js
-    └── bootstrap.min.js
+    ├── jcu.js
+    └── jcu.min.js
 {% endhighlight %}
 
 This is the most basic form of Bootstrap: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developer.chrome.com/devtools/docs/css-preprocessors) (`bootstrap.*.map`) are available for use with certain browsers' developer tools.
