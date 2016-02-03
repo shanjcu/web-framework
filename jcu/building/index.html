@@ -1144,12 +1144,12 @@ choice is configured with support for EditorConfig; there are many
 <a href="http://editorconfig.org/#download">plugins</a> available.</p>
   </li>
   <li>
-    <p>Visit the <a href="https://github.com/jcu/web-framework">web framework repository</a> repository and clone
+    <p>Visit the <a href="https://github.com/jcu-placeholder/web-framework">web framework repository</a> repository and clone
 it.  You’ll find clone URLs at the top-left side of the page.  Ensure that
 you clone the repository <em>recursively</em>, which ensures that third-party
 submodules are also obtained.  For those using a terminal, run:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>git clone --recursive https://github.com/jcu/web-framework
+    <div class="highlighter-rouge"><pre class="highlight"><code>git clone --recursive https://github.com/jcu-placeholder/web-framework
 </code></pre>
     </div>
   </li>
@@ -1216,12 +1216,16 @@ automatically available.  Our Gruntfile adds the following commands and tasks:</
 <h2 id="branches-and-structure">Branches and structure</h2>
 
 <ul>
-  <li>Latest stable version is always located in <code class="highlighter-rouge">jcu-master</code> branch</li>
-  <li>Development changes take place on the <code class="highlighter-rouge">jcu-develop</code> branch</li>
-  <li>Features and developments should branch off <code class="highlighter-rouge">jcu-develop</code></li>
-  <li>Versioning should follow SemVer</li>
-  <li>Fixes can be made via pull request from other users to the <code class="highlighter-rouge">develop</code> branch</li>
+  <li>Latest stable version is always located in <code class="highlighter-rouge">master</code> branch</li>
+  <li>Development changes take place on the <code class="highlighter-rouge">develop</code> branch</li>
+  <li>Features and developments should branch off <code class="highlighter-rouge">develop</code></li>
+  <li>Fixes can be made via pull request to the <code class="highlighter-rouge">develop</code> branch</li>
+  <li>Releases are tagged using SemVer (for example, <code class="highlighter-rouge">v4.0.0</code>)</li>
 </ul>
+
+<p>This branching model follows that of
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow</a>,
+following Bootstrap’s lead for version numbers.</p>
 
 <h2 id="making-changes">Making changes</h2>
 
@@ -1538,7 +1542,7 @@ new features will need to be drawn in from time to time.</p>
   <div class="container">
     <div class="col-sm-8">
       <ul class="bd-footer-links">
-        <li><a href="https://github.com/jcu/web-framework">Source Code</a></li>
+        <li><a href="https://github.com/jcu-placeholder/web-framework">Source Code</a></li>
         <li><a href="https://web.jcu.io">Hosted Documentation</a></li>
         <li><a href="/examples/">Examples</a></li>
         <li><a href="/about/history/">About</a></li>
