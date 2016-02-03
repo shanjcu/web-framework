@@ -17,7 +17,7 @@ on the type of application.
 
 <a class="btn btn-outline-primary" href="{{ site.download.dist }}">Download
 latest release</a>
-<a class="btn btn-outline-primary" href="{{ site.baseurl }}/releases">See all
+<a class="btn btn-outline-primary" href="{{ site.download.releases }}">See all
 versions</a>
 
 Releases are simply fully compiled zip archives, containing all the necessary
