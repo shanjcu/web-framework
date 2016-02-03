@@ -7,6 +7,3 @@
 [submodule "scss/components/open-sans-fontface"]
 	path = scss/components/open-sans-fontface
 	url = https://github.com/FontFaceKit/open-sans.git
-[submodule "assets"]
-	path = assets
-	url = ssh://git@git.jcu.edu.au/webstyle/jcu-assets.git
