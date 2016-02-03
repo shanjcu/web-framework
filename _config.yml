@@ -25,12 +25,12 @@ gems:
 
 # Custom vars
 current_version:  4.0.0-alpha.2
-repo:             https://git.jcu.edu.au/bitbucket/projects/WEBSTYLE/repos/jcu-web-framework
+repo:             https://github.com/jcu/web-framework
 slack:            https://bootstrap-slack.herokuapp.com
 
 download:
-  source:         https://git.jcu.edu.au/bitbucket/plugins/servlet/archive/projects/WEBSTYLE/repos/jcu-web-framework
-  dist:           https://web.jcu.io/releases/bootstrap-4.0.0-alpha.2-dist.zip
+  source:         https://github.com/jcu-placeholder/web-framework/archive/master.zip
+  dist:           https://github.com/jcu/web-framework/releases
 
 blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com

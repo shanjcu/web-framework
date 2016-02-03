@@ -5,9 +5,7 @@ examples for use by the University community. Based upon
 [Bootstrap](http://getbootstrap.com), this framework makes for faster and easier
 web development, and aims to foster consistency between web projects.
 
-To get started, check out
-[JCU Web Framework
-documentation](https://git.jcu.edu.au/stash/pages/WEBSTYLE/jcu-web-framework/gh-pages/browse/)
+To get started, check out the [documentation](https://web.jcu.io).
 
 ## Table of contents
 
