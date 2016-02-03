@@ -146,24 +146,24 @@
 .portraits a:nth-child(3n):hover img {
   -webkit-box-shadow: 0 0 1rem black;
           box-shadow: 0 0 1rem black;
-  -webkit-transform: scale(1.2) rotate(10deg);
-      -ms-transform: scale(1.2) rotate(10deg);
-       -o-transform: scale(1.2) rotate(10deg);
-          transform: scale(1.2) rotate(10deg);
+  -webkit-transform: scale(1.6) rotate(10deg);
+      -ms-transform: scale(1.6) rotate(10deg);
+       -o-transform: scale(1.6) rotate(10deg);
+          transform: scale(1.6) rotate(10deg);
 }
 .portraits a:nth-child(3n+1):hover img {
   -webkit-box-shadow: 0 0 1rem black;
           box-shadow: 0 0 1rem black;
-  -webkit-transform: scale(1.2) rotate(-12deg);
-      -ms-transform: scale(1.2) rotate(-12deg);
-       -o-transform: scale(1.2) rotate(-12deg);
-          transform: scale(1.2) rotate(-12deg);
+  -webkit-transform: scale(1.6) rotate(-12deg);
+      -ms-transform: scale(1.6) rotate(-12deg);
+       -o-transform: scale(1.6) rotate(-12deg);
+          transform: scale(1.6) rotate(-12deg);
 }
 .portraits a:nth-child(3n+2):hover img {
   -webkit-box-shadow: 0 0 1rem black;
           box-shadow: 0 0 1rem black;
-  -webkit-transform: scale(1.2) rotate(8deg);
-      -ms-transform: scale(1.2) rotate(8deg);
-       -o-transform: scale(1.2) rotate(8deg);
-          transform: scale(1.2) rotate(8deg);
+  -webkit-transform: scale(1.6) rotate(8deg);
+      -ms-transform: scale(1.6) rotate(8deg);
+       -o-transform: scale(1.6) rotate(8deg);
+          transform: scale(1.6) rotate(8deg);
 }

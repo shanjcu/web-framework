@@ -120,6 +120,19 @@
           
 
           <li class="">
+            <a href="/jcu/download">
+              Download
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
             <a href="/jcu/application-theming">
               Application Theming
             </a>
@@ -465,19 +478,6 @@
           <li class="active bd-sidenav-active">
             <a href="/getting-started/introduction">
               Introduction
-            </a>
-
-            
-          </li>
-        
-          
-          
-
-          
-
-          <li class="">
-            <a href="/getting-started/download">
-              Download
             </a>
 
             
@@ -1096,47 +1096,45 @@
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
             <h1 class="bd-title" id="content">Introduction</h1>
-            <p>This is the common web front-end framework for James Cook University and is used
-by the University’s various web applications.  The JCU Web Framework utilises
+            <p>This is the web front-end framework for James Cook University and is used
+by various web applications at JCU.  The JCU Web Framework builds upon
 <a href="http://getbootstrap.com">Bootstrap</a>, a popular framework for building
 responsive, mobile-first sites and applications.</p>
 
-<p>This a set of reusable resources for web applications and a fully-documented
-<em>living style guide</em> which aims to provide the simplest starting point for any
-new and existing JCU-themed projects on the web.  The documentation features
-worked examples of the following:</p>
+<p>This <em>living style guide</em> features reusable components for web applications and 
+provides a starting point for theming JCU projects on the web.  The
+documentation features worked examples of:</p>
 
 <ul>
   <li>All Bootstrap standard components</li>
   <li>Demonstrations of styles fitting in with JCU’s branding guides</li>
-  <li>Customised components</li>
+  <li>Customised components, including brand imagery</li>
   <li>Third party libraries (iconography, fonts)</li>
+  <li>Interactive page templates</li>
 </ul>
 
-<p>This is a work-in-progress configuration and things may change as better tools
-and processes/workflow are determined.  No two web applications or products are
-the same and how an application owner or vendor themes their app will almost
-always vary.  Bootstrap was selected as the framework as its ubiquitous nature
-means that software products and vendors likely already have a theming story
-involving Bootstrap, if they don’t already use Bootstrap by default.</p>
+<p>No two web applications are identical and how an application owner or vendor
+themes an app will also.  Bootstrap was selected as the base for this project as
+its ubiquitous nature means that software products and vendors are likely to
+already have a theming story involving Bootstrap, if they don’t already use
+Bootstrap by default.</p>
 
 <p>Here’s how to quickly get started with the assets and a template starter page.</p>
-
-<h2 id="contents">Contents</h2>
-
-<ul id="markdown-toc">
-  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#quick-start" id="markdown-toc-quick-start">Quick start</a></li>
-</ul>
 
 <h2 id="quick-start">Quick start</h2>
 
 <p>In this quick start, we’ll focus on the fundamentals of including the assets in
 a static HTML page.</p>
 
+<div class="bd-callout bd-callout-info">
+<p><strong>Heads up!</strong> Various <a href="/jcu/download">download options</a>, including
+cloning from Git, are available too.</p>
+</div>
+
 <ol>
   <li>
-    <p>Download the source files zip, taking note of the version used.</p>
+    <p>Download the <a href="https://web.jcu.io/releases/bootstrap-4.0.0-alpha.2-dist.zip">latest release zip</a>, taking note of
+the version used.</p>
   </li>
   <li>
     <p>Unzip the files.</p>
@@ -1165,14 +1163,16 @@ depends on it:</p>
   </li>
 </ol>
 
-<p>And that’s it — you’re on your way to a fully Bootstrapped site. If you’re at
-all unsure about the general page structure, HTML5 doctype, or how to make your
-application responsive, see the main <a href="/getting-started/introduction">Bootstrap
-Introduction</a> for more details.</p>
+<p>And that’s it — you’re on your way to a fully Bootstrapped site. If you’re
+unsure about the general page structure, see the main <a href="/getting-started/introduction/#starter-tempate">Bootstrap
+Introduction</a>
+for an example page template.</p>
 
-<p>Your application is likely a lot more complicated, by the fundamentals remain the
-same – you need to serve CSS/JavaScript/images and link these into your pages.
-For more theming strategies, see <a href="/application-theming">Application Theming</a>.</p>
+<p>Your application is probably more complex, but the fundamentals remain
+the same: you need to serve the framework’s assets (CSS, JavaScript, images,
+fonts) and add these to your pages.</p>
+
+<p><a class="btn btn-outline-primary" href="/application-theming">Learn about application theming</a></p>
 
           </div>
         </div>
@@ -1181,15 +1181,19 @@ For more theming strategies, see <a href="/application-theming">Application Them
 
     <footer class="bd-footer text-muted" role="contentinfo">
   <div class="container">
-    <ul class="bd-footer-links">
-      <li><a href="https://git.jcu.edu.au/stash/projects/WEBSTYLE/repos/jcu-web-framework">Source Code</a></li>
-      <li><a href="https://web.jcu.io">Hosted Documentation</a></li>
-      <li><a href="/examples/">Examples</a></li>
-      <li><a href="/about/history/">About</a></li>
-    </ul>
-    <p>Designed by and built on top of Bootstrap by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
-    <p>Currently based off Bootstrap v4.0.0-alpha.2.</p>
-    <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
+    <div class="col-sm-8">
+      <ul class="bd-footer-links">
+        <li><a href="https://git.jcu.edu.au/bitbucket/projects/WEBSTYLE/repos/jcu-web-framework">Source Code</a></li>
+        <li><a href="https://web.jcu.io">Hosted Documentation</a></li>
+        <li><a href="/examples/">Examples</a></li>
+        <li><a href="/about/history/">About</a></li>
+      </ul>
+      <p>Created and developed  by <a href="http://github.com/davidjb" target="_blank">@davidjb</a>.</p>
+      <p>Currently based upon Bootstrap v4.0.0-alpha.2.</p>
+      <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
+      <p>&copy; James Cook University and respective owners, where appropriate. Trademarks and branding used with permission.</p>
+      <p>Content, including text, imagery and styles are drawn from publicly available sources and used to illustrate functionality present.</p>
+    </div>
   </div>
 </footer>
 

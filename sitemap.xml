@@ -79,6 +79,9 @@
     <loc>https://web.jcu.io/getting-started/download/</loc>
   </url>
   <url>
+    <loc>https://web.jcu.io/jcu/download/</loc>
+  </url>
+  <url>
     <loc>https://web.jcu.io/jcu/dropdowns/</loc>
   </url>
   <url>
@@ -124,10 +127,10 @@
     <loc>https://web.jcu.io/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/examples/</loc>
+    <loc>https://web.jcu.io/extend/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/extend/</loc>
+    <loc>https://web.jcu.io/examples/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/input-group/</loc>
@@ -169,10 +172,10 @@
     <loc>https://web.jcu.io/components/navbar/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu/navs/</loc>
+    <loc>https://web.jcu.io/components/navs/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/components/navs/</loc>
+    <loc>https://web.jcu.io/jcu/navs/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/getting-started/options/</loc>
@@ -229,10 +232,10 @@
     <loc>https://web.jcu.io/about/translations/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/content/typography/</loc>
+    <loc>https://web.jcu.io/jcu/typography/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu/typography/</loc>
+    <loc>https://web.jcu.io/content/typography/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/jcu/useful-resources/</loc>

@@ -199,6 +199,13 @@
 
     
         {
+            "title" : "Download",
+            "url"   : "/jcu/download/"
+        } ,
+    
+
+    
+        {
             "title" : "Dropdowns",
             "url"   : "/components/dropdowns/"
         } ,
@@ -312,14 +319,14 @@
     
         {
             "title" : "Introduction",
-            "url"   : "/jcu/introduction/"
+            "url"   : "/getting-started/introduction/"
         } ,
     
 
     
         {
             "title" : "Introduction",
-            "url"   : "/getting-started/introduction/"
+            "url"   : "/jcu/introduction/"
         } ,
     
 
@@ -564,14 +571,14 @@
     
         {
             "title" : "Utility classes",
-            "url"   : "/components/utilities/"
+            "url"   : "/jcu/utilities/"
         } ,
     
 
     
         {
             "title" : "Utility classes",
-            "url"   : "/jcu/utilities/"
+            "url"   : "/components/utilities/"
         } ,
     
 
