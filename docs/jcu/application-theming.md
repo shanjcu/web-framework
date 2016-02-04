@@ -18,7 +18,7 @@ in touch!
 
 ## Approaches
 
-### Editable source
+### Static sites or editable source
 
 If JCU has created the application or otherwise has full control over the
 underlying source code (such as Coldfusion apps or the Research Portfolio), then
@@ -35,6 +35,17 @@ it's a matter of customising the application to suit.  The general guide is to:
 
 To update to a newer version of the JCU Web Framework, replace the framework
 files and follow any instructions in the Upgrading documentation.
+
+{% callout info %}
+If you're working with static files and trying things locally, note that
+Firefox does not allow relative includes for font-face in CSS.  This means
+that fonts and iconography is unlikely to load.  See the [relevant
+bug](https://bugzilla.mozilla.org/show_bug.cgi?id=760436) for details.
+
+Use `about:config` to change `security.fileuri.strict_origin_policy`
+temporarily to `false` to relax this restriction and reload your page.
+{% endcallout %}
+
 
 ### Open source
 
@@ -84,10 +95,3 @@ It is possible to utilise fonts from [Google
 Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans), however.
 If utlising this over the standard font inclusions, ensure you include all fonts
 from `400` to `700`.
-
-### Notes
-
-* Firefox does not allow relative includes for font-face in CSS.
-  See https://bugzilla.mozilla.org/show_bug.cgi?id=760436 for details.
-  Use `about:config` to change `security.fileuri.strict_origin_policy`
-  temporarily to `false`.
