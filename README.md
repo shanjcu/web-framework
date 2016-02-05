@@ -62,8 +62,8 @@ jcu-web-framework/
 │   ├── jcu.min.css
 │   └── jcu.min.css.map
 ├── js/
-│   ├── bootstrap.js
-│   └── jcu.min.css.map
+│   ├── jcu.js
+│   └── jcu.min.js
 ├── images/
 │   ├── *.{svg,jpg,ico}
 │   └── ...

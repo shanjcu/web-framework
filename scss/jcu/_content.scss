@@ -8,13 +8,13 @@
   background-color: $jcu-content-bg-color;
 
   @media print {
-    a:link:after,
-    a:visited:after {
+    a:link::after,
+    a:visited::after {
       font-size: 90%;
       content: " (" attr(href) ") ";
     }
 
-    a[href^="/"]:after {
+    a[href^="/"]::after {
       content: " (#{$jcu-content-link-print-prefix}" attr(href) ") ";
     }
   }
