@@ -7683,12 +7683,12 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
 }
 
 @media print {
-  .jcu-content a:link:after,
-  .jcu-content a:visited:after {
+  .jcu-content a:link::after,
+  .jcu-content a:visited::after {
     font-size: 90%;
     content: " (" attr(href) ") ";
   }
-  .jcu-content a[href^="/"]:after {
+  .jcu-content a[href^="/"]::after {
     content: " (https://www.jcu.edu.au" attr(href) ") ";
   }
 }
