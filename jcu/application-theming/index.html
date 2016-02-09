@@ -1100,26 +1100,49 @@
 with the rest of the University’s online presence.</p>
 
 <p>Completed the theming of an application and want your notes featured here?  Get
-in touch!</p>
+in touch or send a pull request with your changes.</p>
 
 <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
   <li><a href="#approaches" id="markdown-toc-approaches">Approaches</a>    <ul>
-      <li><a href="#static-sites-or-editable-source" id="markdown-toc-static-sites-or-editable-source">Static sites or editable source</a></li>
-      <li><a href="#open-source" id="markdown-toc-open-source">Open source</a></li>
-      <li><a href="#closed-source-or-vendor-hosted" id="markdown-toc-closed-source-or-vendor-hosted">Closed source or vendor-hosted</a></li>
-      <li><a href="#using-cdn-hosted-resources" id="markdown-toc-using-cdn-hosted-resources">Using CDN-hosted resources</a></li>
+      <li><a href="#cdn-hosted-resources-span-classlabel-label-successeasiestspan" id="markdown-toc-cdn-hosted-resources-span-classlabel-label-successeasiestspan">CDN-hosted resources <span class="label label-success">Easiest</span></a></li>
+      <li><a href="#static-sites-or-editable-source-span-classlabel-label-infoeasy-mediumspan" id="markdown-toc-static-sites-or-editable-source-span-classlabel-label-infoeasy-mediumspan">Static sites or editable source <span class="label label-info">Easy-Medium</span></a></li>
+      <li><a href="#open-source-span-classlabel-label-infoeasy-mediumspan" id="markdown-toc-open-source-span-classlabel-label-infoeasy-mediumspan">Open source <span class="label label-info">Easy-Medium</span></a></li>
+      <li><a href="#vendor-hosted-span-classlabel-label-warningmedium-hardspan" id="markdown-toc-vendor-hosted-span-classlabel-label-warningmedium-hardspan">Vendor-hosted <span class="label label-warning">Medium-Hard</span></a></li>
+      <li><a href="#closed-source-span-classlabel-label-dangerhardspan" id="markdown-toc-closed-source-span-classlabel-label-dangerhardspan">Closed source <span class="label label-danger">Hard</span></a></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="approaches">Approaches</h2>
 
-<h3 id="static-sites-or-editable-source">Static sites or editable source</h3>
+<h3 id="cdn-hosted-resources-span-classlabel-label-successeasiestspan">CDN-hosted resources <span class="label label-success">Easiest</span></h3>
 
-<p>If JCU has created the application or otherwise has full control over the
+<div class="bd-callout bd-callout-warning">
+<p>This is provided by <a href="https://rawgit.com">Rawgit.com</a> and whilst free, provides
+no uptime or support guarantees. If you’re using this approach, let us know
+on <a href="https://github.com/jcu/web-framework/issues/8">issue #8</a> so we can track
+interest in an official CDN option.</p>
+</div>
+
+<p>For single-page web applications (such as static sites), it’s possible to use
+CDN-hosted resources to avoid needing to download anything.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.rawgit.com/jcu/web-framework/v4.0.0-alpha.2/dist/css/jcu.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-Jw7VGxqdaRpeFUZvHvo4N8C71eVc2QXATAtYK3bN48tFuzVwmhRnGTnNHIu5wQXo"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.rawgit.com/jcu/web-framework/v4.0.0-alpha.2/dist/js/jcu.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<p>If using the JavaScript resources above, ensure you have jQuery and Tether
+available on your page.  If you’re looking to load these over CDN as well, use
+the following:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-MWq1Lnqj72tmjGdOKuNBn3E0gj3vWfy/1EmR5TVL8d8nGvwgy32YkCpKpTUhwBVv"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<h3 id="static-sites-or-editable-source-span-classlabel-label-infoeasy-mediumspan">Static sites or editable source <span class="label label-info">Easy-Medium</span></h3>
+
+<p>Your application was created in-house or you otherwise have full control over the
 underlying source code (such as Coldfusion apps or the Research Portfolio), then
 it’s a matter of customising the application to suit.  The general guide is to:</p>
 
@@ -1151,7 +1174,7 @@ bug</a> for details.</p>
 temporarily to <code class="highlighter-rouge">false</code> to relax this restriction and reload your page.</p>
 </div>
 
-<h3 id="open-source">Open source</h3>
+<h3 id="open-source-span-classlabel-label-infoeasy-mediumspan">Open source <span class="label label-info">Easy-Medium</span></h3>
 
 <p>If the application you’re working with is open source, then you will be able to
 modify its implementation to suit.  Since Bootstrap is a very common web
@@ -1176,13 +1199,12 @@ more information.</p>
   </li>
 </ol>
 
-<h3 id="closed-source-or-vendor-hosted">Closed source or vendor-hosted</h3>
+<h3 id="vendor-hosted-span-classlabel-label-warningmedium-hardspan">Vendor-hosted <span class="label label-warning">Medium-Hard</span></h3>
 
-<p>Refer to your application vendor for details on what customisations are
-possible.  In some applications, you may be able to upload templates and
-transform the underlying application or consider using a middleware technology
-such as XSLT in front of the given application to transform on-the-fly.  In
-general, you want to ask your vendor for:</p>
+<p>If your application is hosted by a vendor, refer to your application
+documentation for information on what theming customisations are possible.</p>
+
+<p>In general, you want to ask your vendor for:</p>
 
 <ul>
   <li>Technologies being used</li>
@@ -1192,21 +1214,25 @@ general, you want to ask your vendor for:</p>
 </ul>
 
 <p>Once you have these details in hand, you can make a well-informed decision about
-the easiest way forward.</p>
+the easiest way forward.  If your application is hosted, but is actually
+open source (such as a Wordpress blog), then you may have more success than a
+remotely-hosted, closed source product.</p>
+
+<h3 id="closed-source-span-classlabel-label-dangerhardspan">Closed source <span class="label label-danger">Hard</span></h3>
+
+<p>Closed source applications are entirely dependent on the software developer or
+vendor for features and support.  Consult your application and developer to
+determine whether it has the ability to be themed and what this extends to.</p>
 
 <p>In applications where theming options are otherwise limited, you may only be
 able customise specific colours, logos, or so forth, rather than underlying HTML
 templates.  In this case, use your best judgement to reach a compromise that
-looks as close to JCU as possible.</p>
+looks as close to JCU as possible.  Resources such as images can be obtained
+from a JCU Web Framework release package.</p>
 
-<h3 id="using-cdn-hosted-resources">Using CDN-hosted resources</h3>
-
-<p>At this stage, we do not have a CDN system available for theming resources.</p>
-
-<p>It is possible to utilise fonts from <a href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans">Google
-Fonts</a>, however.
-If utlising this over the standard font inclusions, ensure you include all fonts
-from <code class="highlighter-rouge">400</code> to <code class="highlighter-rouge">700</code>.</p>
+<p>Another option may be to implement a middleware technology (such as XSLT or
+an XSLT wrapper such as <a href="http://diazo.org">Diazo</a>) on top of your application
+and to transform the HTML on-the-fly.</p>
 
           </div>
         </div>
