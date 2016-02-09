@@ -20,13 +20,6 @@ in touch or send a pull request with your changes.
 
 ### CDN-hosted resources <span class="label label-success">Easiest</span>
 
-{% callout warning %}
-This is provided by [Rawgit.com](https://rawgit.com) and whilst free, provides
-no uptime or support guarantees. If you're using this approach, let us know
-on [issue #8](https://github.com/jcu/web-framework/issues/8) so we can track
-interest in an official CDN option.
-{% endcallout %}
-
 For single-page web applications (such as static sites), it's possible to use
 CDN-hosted resources to avoid needing to download anything.
 
@@ -34,6 +27,13 @@ CDN-hosted resources to avoid needing to download anything.
   <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
   <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
 {% endhighlight %}
+
+{% callout warning %}
+**Heads up!** This is provided by [Rawgit.com](https://rawgit.com) and whilst
+free, provides no uptime or support guarantees. If you're using this approach,
+let us know on [issue #8](https://github.com/jcu/web-framework/issues/8) so we
+can track interest in an official CDN option.
+{% endcallout %}
 
 If using the JavaScript resources above, ensure you have jQuery and Tether
 available on your page.  If you're looking to load these over CDN as well, use
