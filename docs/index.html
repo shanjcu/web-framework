@@ -21,16 +21,24 @@ title: "JCU Web Framework &middot; The mobile-first and responsive front-end fra
 
     <div class="row">
       <div class="col-sm-6 m-b-3">
-        <h4>Download as a package</h4>
-        <p>When you just need to include compiled CSS and JS. Perfect for simpler projects or static sites.</p>
+        <h3 class=".h4">Package Download</h3>
+        <p>When you want a local copy of compiled CSS and JS. Perfect for simpler projects or static sites.</p>
         <a class="btn btn-bs btn-outline" href="{{ site.baseurl }}/jcu/download/#release-packages">Download latest release</a>
       </div>
       <div class="col-sm-6 m-b-3">
-        <h4>Via Git</h4>
+        <h3 class=".h4">Via Git</h3>
         <p>Includes source SCSS and JavaScript files, Gruntfile and source documentation. Easiest for versioning.</p>
         <p>
           <a class="btn btn-bs btn-outline" href="{{ site.baseurl }}/jcu/download/#from-git">Clone from Git</a>
         </p>
+      </div>
+      <div class="col-sm-12 m-b-3">
+        <h3 class=".h4"><abbr title="Content Distribution Network">CDN</abbr></h3>
+        <p>When you just want to include compiled CSS and JS, use our CDN, thanks to <a href="https://keycdn.com">KeyCDN</a>.</p>
+        {% highlight html %}
+<link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
+<script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+        {% endhighlight %}
       </div>
     </div>
 

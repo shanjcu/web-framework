@@ -39,10 +39,10 @@ themes:           http://themes.getbootstrap.com
 
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
-  css:            https://cdn.rawgit.com/jcu/web-framework/v4.0.0-alpha.2/dist/css/jcu.min.css
-  css_hash:       "sha384-Jw7VGxqdaRpeFUZvHvo4N8C71eVc2QXATAtYK3bN48tFuzVwmhRnGTnNHIu5wQXo"
-  js:             https://cdn.rawgit.com/jcu/web-framework/v4.0.0-alpha.2/dist/js/jcu.min.js
-  js_hash:        "sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+  css:            https://cdn.web.jcu.io/4.0.0-alpha.2/css/jcu.min.css
+  css_hash:       "sha384-Npet4Pvh7wzx+b2x7+KUOimgVdxolJzoHf62QYWGGgVDEdch1fpsdHWLMfGzZtfe"
+  js:             https://cdn.web.jcu.io/4.0.0-alpha.2/js/jcu.min.js
+  js_hash:        "sha384-TYTt6lPd3LgArESaCPBLxt/gpeS1QeSeh6lP6sF8RRb+B40YFo2hr2zL5licoEMX"
   jquery:         https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
   jquery_hash:    "sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx"
   tether:         https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js

@@ -303,7 +303,8 @@ otherwise can change significantly between versions.
 1. Once fully tested, make a note in the change log, commit the results and push
    to the server.
 
-1. Rebuild the main documentation and push to the server in one go by running:
+1. Rebuild the main documentation, push to the server and deploy to CDN in one
+   go by running:
 
    ~~~ shell
    grunt prep-release jcu-publish
@@ -366,3 +367,13 @@ those using a terminal; adapt them to your own environment.
 
 It is rare that these components will need to be updated, though bug fixes and
 new features will need to be drawn in from time to time.
+
+## Cleaning up the CDN
+
+If old directories need to be cleaned up on the CDN, use the following `rsync`
+command.  This includes only the given directory (`dir_to_delete`) and its
+contents inside the given target location on the CDN.
+
+~~~ shell
+rsync -arv --delete --include='/dir_to_delete/***' --exclude='*' $(mktemp -d)/ jcu0@rsync.keycdn.com:zones/jcu/
+~~~
