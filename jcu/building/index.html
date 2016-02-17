@@ -1125,6 +1125,7 @@ tools installed on your system.</p>
   </li>
   <li><a href="#updating-bootstrap-versions" id="markdown-toc-updating-bootstrap-versions">Updating Bootstrap versions</a></li>
   <li><a href="#updating-third-party-components" id="markdown-toc-updating-third-party-components">Updating third-party components</a></li>
+  <li><a href="#cleaning-up-the-cdn" id="markdown-toc-cleaning-up-the-cdn">Cleaning up the CDN</a></li>
 </ul>
 
 <h2 id="getting-started">Getting started</h2>
@@ -1459,7 +1460,8 @@ padding to <code class="highlighter-rouge">.dropdown-menu</code>)</li>
 to the server.</p>
   </li>
   <li>
-    <p>Rebuild the main documentation and push to the server in one go by running:</p>
+    <p>Rebuild the main documentation, push to the server and deploy to CDN in one
+go by running:</p>
 
     <div class="highlighter-rouge"><pre class="highlight"><code>grunt prep-release jcu-publish
 </code></pre>
@@ -1533,6 +1535,16 @@ and what effect it has.</p>
 <p>It is rare that these components will need to be updated, though bug fixes and
 new features will need to be drawn in from time to time.</p>
 
+<h2 id="cleaning-up-the-cdn">Cleaning up the CDN</h2>
+
+<p>If old directories need to be cleaned up on the CDN, use the following <code class="highlighter-rouge">rsync</code>
+command.  This includes only the given directory (<code class="highlighter-rouge">dir_to_delete</code>) and its
+contents inside the given target location on the CDN.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>rsync -arv --delete --include<span class="o">=</span><span class="s1">'/dir_to_delete/***'</span> --exclude<span class="o">=</span><span class="s1">'*'</span> <span class="k">$(</span>mktemp -d<span class="k">)</span>/ jcu0@rsync.keycdn.com:zones/jcu/
+</code></pre>
+</div>
+
           </div>
         </div>
       </div>
@@ -1551,7 +1563,8 @@ new features will need to be drawn in from time to time.</p>
       <p>Currently based upon Bootstrap v4.0.0-alpha.2.</p>
       <p>Original code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.  Documentation &copy; <a href="https://github.com/orgs/twbs/people">Bootstrap core team</a> and <a href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.</p>
       <p>&copy; James Cook University and respective owners, where appropriate. Trademarks and branding used with permission.</p>
-      <p>Content, including text, imagery and styles, are drawn from publicly available sources and used to illustrate functionality present. Confirm licensing requirements are met before re-use.</p>
+      <p class="p-b-2">Content, including text, imagery and styles, are drawn from publicly available sources and used to illustrate functionality present. Confirm licensing requirements are met before re-use.</p>
+      <p>CDN hosting kindly provided by <a href="https://keycdn.com">KeyCDN</a>.</p>
     </div>
   </div>
 </footer>
