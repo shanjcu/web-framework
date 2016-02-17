@@ -64,7 +64,7 @@ Root-relative URLs can be prefixed for easier understanding by using CSS code
 such as this, adjusting the prefix to fit your system:
 
 {% highlight css %}
-.jcu-content a[href^="/"]:after {
+.jcu-content a[href^="/"]::after {
   content: " (https://www.jcu.edu.au" attr(href) ") ";
 }
 {% endhighlight %}

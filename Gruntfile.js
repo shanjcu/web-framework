@@ -444,6 +444,16 @@ module.exports = function (grunt) {
           }
         ]
       }
+    },
+
+    rsync: {
+      keycdn: {
+        options: {
+          args: ["-avz", "--chmod=u=rwX,g=rX"],
+          src: "dist/*",
+          dest: "jcu0@rsync.keycdn.com:zones/jcu/<%= pkg.version %>/"
+        }
+      }
     }
 
   });
@@ -532,7 +542,7 @@ module.exports = function (grunt) {
   grunt.registerTask('docs', ['lint-docs-css', 'docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'copy:docs_favicon']);
   grunt.registerTask('docs-github', ['jekyll:github']);
 
-  grunt.registerTask('prep-release', ['dist', 'docs', 'docs-github', 'compress']);
+  grunt.registerTask('prep-release', ['dist', 'docs', 'docs-github', 'compress', 'jcu-cdn']);
 
   // Publish to GitHub
   grunt.registerTask('publish', ['buildcontrol:pages']);
@@ -557,6 +567,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-image');
   // dist-images: copy and optimise images in one hit
   grunt.registerTask('dist-images', ['image', 'copy:favicon']);
-  // Publish: builds docs, runs Jekyll, and pushes onto Bitbucket Server
+  // Publish: builds docs, runs Jekyll, and pushes onto GitHub Pages
   grunt.registerTask('jcu-publish', ['jekyll:github', 'buildcontrol:pages']);
+  // CDN: pushes current release onto our CDN hosting
+  grunt.registerTask('jcu-cdn', ['rsync:keycdn']);
 };
