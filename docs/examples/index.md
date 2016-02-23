@@ -13,27 +13,33 @@ implementation of customisations and components.
 <div class="row bd-examples">
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-content-page/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-content-page/screenshot.jpg" alt="">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-content-page/screenshot.jpg" alt="Screenshot of CMS page">
     </a>
     <h4>Content page layout</h4>
   </div>
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-login/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-login/screenshot.jpg" alt="">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-login/screenshot.jpg" alt="Screenshot of login page">
     </a>
     <h4>Login screen layout</h4>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-brochure/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-brochure/screenshot.jpg" alt="Screenshot of brochureware example">
+    </a>
+    <h4>JCU Brochureware</h4>
   </div>
   <div class="clearfix hidden-sm-up"></div>
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-app-cover/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app-cover/screenshot.jpg" alt="">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app-cover/screenshot.jpg" alt="Screenshot of app cover page">
     </a>
     <h4>App cover layout</h4>
   </div>
   <div class="clearfix hidden-sm-down"></div>
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-app-page/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app-page/screenshot.jpg" alt="">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app-page/screenshot.jpg" alt="Screenshot of app page">
     </a>
     <h4>App page layout</h4>
   </div>
