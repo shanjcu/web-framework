@@ -1099,8 +1099,8 @@
             <p>Different applications require different approaches to making them consistent
 with the rest of the University’s online presence.</p>
 
-<p>Completed the theming of an application and want your notes featured here?  Get
-in touch or send a pull request with your changes.</p>
+<p>If you have completed the theming of an application, we’d like to feature your
+notes here. Get in touch or send a pull request with your changes.</p>
 
 <h2 id="contents">Contents</h2>
 
@@ -1120,25 +1120,12 @@ in touch or send a pull request with your changes.</p>
 
 <h3 id="cdn-hosted-resources-span-classlabel-label-successeasiestspan">CDN-hosted resources <span class="label label-success">Easiest</span></h3>
 
-<p>For single-page web applications (such as static sites), it’s possible to use
-CDN-hosted resources to avoid needing to download anything.</p>
+<p>If you’re just looking to include a release version of the JCU Web Framework
+in your app or pages, use our Content Distribution Network (CDN)-hosted
+resources and avoid needing to download anything.  This approach involves
+placing suitable HTML tags into your page and that’s it.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.web.jcu.io/4.0.0-alpha.2/css/jcu.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-Npet4Pvh7wzx+b2x7+KUOimgVdxolJzoHf62QYWGGgVDEdch1fpsdHWLMfGzZtfe"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.web.jcu.io/4.0.0-alpha.2/js/jcu.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-TYTt6lPd3LgArESaCPBLxt/gpeS1QeSeh6lP6sF8RRb+B40YFo2hr2zL5licoEMX"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
-
-<div class="bd-callout bd-callout-warning">
-<p><strong>Heads up!</strong> This is provided by <a href="https://rawgit.com">Rawgit.com</a> and whilst
-free, provides no uptime or support guarantees. If you’re using this approach,
-let us know on <a href="https://github.com/jcu/web-framework/issues/8">issue #8</a> so we
-can track interest in an official CDN option.</p>
-</div>
-
-<p>If using the JavaScript resources above, ensure you have jQuery and Tether
-available on your page.  If you’re looking to load these over CDN as well, use
-the following:</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-MWq1Lnqj72tmjGdOKuNBn3E0gj3vWfy/1EmR5TVL8d8nGvwgy32YkCpKpTUhwBVv"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+<p><a class="btn btn-outline-primary" href="/jcu/download/#cdn-hosted-resources">Learn how to use our CDN</a></p>
 
 <h3 id="static-sites-or-editable-source-span-classlabel-label-infoeasy-mediumspan">Static sites or editable source <span class="label label-info">Easy-Medium</span></h3>
 
@@ -1148,21 +1135,25 @@ it’s a matter of customising the application to suit.  The general guide is to
 
 <ol>
   <li>
-    <p>Download or clone the source files and host them beside your application.</p>
+    <p>Include the JCU Web Framework resources in your page following one of the
+options on the <a href="/jcu/download/">Download</a> page.</p>
   </li>
   <li>
     <p>Customise the source of your application to be Bootstrap-compatible.  For
-instance, <code class="highlighter-rouge">&lt;button&gt;</code> elements would become <code class="highlighter-rouge">&lt;button class="btn"&gt;</code> and so
+instance, <code class="highlighter-rouge">&lt;button&gt;</code> elements become <code class="highlighter-rouge">&lt;button class="btn"&gt;</code> and so
 forth.</p>
   </li>
   <li>
-    <p>Follow the guide you’re currently reading until all aspects of your
+    <p>Follow the documentation you’re currently reading until all aspects of your
 application are adjusted or themed accordingly.</p>
   </li>
 </ol>
 
+<p>You can also make use of any <a href="/examples/">examples</a> provided
+as base templates.</p>
+
 <p>To update to a newer version of the JCU Web Framework, replace the framework
-files and follow any instructions in the Upgrading documentation.</p>
+files and follow any instructions in the <a href="/migration/">Migration documentation</a>.</p>
 
 <div class="bd-callout bd-callout-info">
 <p>If you’re working with static files and trying things locally, note that
@@ -1187,7 +1178,7 @@ available.  The general guide, if Bootstrap is used, is to:</p>
     <p>Locate how the application is serving its resources.</p>
   </li>
   <li>
-    <p>Customise them to feature the JCU web framework instead of stock Bootstrap
+    <p>Customise them to feature the JCU Web Framework instead of stock Bootstrap
 resources.</p>
   </li>
   <li>

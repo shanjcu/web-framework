@@ -1096,13 +1096,14 @@
           </div>
           <div class="col-md-9 col-md-pull-3 bd-content">
             <h1 class="bd-title" id="content">Download</h1>
-            <p>The framework can be deployed to systems in a number of different ways depending
-on the type of application.</p>
+            <p>The framework can be downloaded or accessed in a number of different ways depending
+on the type of application being themed.</p>
 
 <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#cdn-hosted-resources" id="markdown-toc-cdn-hosted-resources">CDN-hosted resources</a></li>
   <li><a href="#release-packages" id="markdown-toc-release-packages">Release packages</a></li>
   <li><a href="#from-git" id="markdown-toc-from-git">From Git</a>    <ul>
       <li><a href="#releases-from-git" id="markdown-toc-releases-from-git">Releases from Git</a></li>
@@ -1110,6 +1111,25 @@ on the type of application.</p>
     </ul>
   </li>
 </ul>
+
+<h2 id="cdn-hosted-resources">CDN-hosted resources</h2>
+
+<p>You can utilise our Content Distribution Network (CDN)-hosted resources to
+style your web application or site and avoid needing to download anything.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.web.jcu.io/4.0.0-alpha.2/css/jcu.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-Npet4Pvh7wzx+b2x7+KUOimgVdxolJzoHf62QYWGGgVDEdch1fpsdHWLMfGzZtfe"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.web.jcu.io/4.0.0-alpha.2/js/jcu.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-TYTt6lPd3LgArESaCPBLxt/gpeS1QeSeh6lP6sF8RRb+B40YFo2hr2zL5licoEMX"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<p>Upgrading to a new release version is a matter of updating the included URLs
+and following any applicable <a href="/migration/">Migration</a>
+documentation.</p>
+
+<p>If using the JavaScript resources above, ensure you have jQuery and Tether
+available on your page.  If your page or application doesn’t already have
+them, you can also load these using CDN as well, via the following:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-MWq1Lnqj72tmjGdOKuNBn3E0gj3vWfy/1EmR5TVL8d8nGvwgy32YkCpKpTUhwBVv"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
 <h2 id="release-packages">Release packages</h2>
 

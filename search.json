@@ -14,8 +14,6 @@
     
 
     
-
-    
         {
             "title" : "Accessibility",
             "url"   : "/getting-started/accessibility/"
@@ -193,21 +191,14 @@
     
         {
             "title" : "Download",
-            "url"   : "/getting-started/download/"
-        } ,
-    
-
-    
-        {
-            "title" : "Download",
             "url"   : "/jcu/download/"
         } ,
     
 
     
         {
-            "title" : "Dropdowns",
-            "url"   : "/components/dropdowns/"
+            "title" : "Download",
+            "url"   : "/getting-started/download/"
         } ,
     
 
@@ -215,6 +206,13 @@
         {
             "title" : "Dropdowns",
             "url"   : "/jcu/dropdowns/"
+        } ,
+    
+
+    
+        {
+            "title" : "Dropdowns",
+            "url"   : "/components/dropdowns/"
         } ,
     
 
@@ -571,14 +569,14 @@
     
         {
             "title" : "Utility classes",
-            "url"   : "/jcu/utilities/"
+            "url"   : "/components/utilities/"
         } ,
     
 
     
         {
             "title" : "Utility classes",
-            "url"   : "/components/utilities/"
+            "url"   : "/jcu/utilities/"
         } ,
     
 
