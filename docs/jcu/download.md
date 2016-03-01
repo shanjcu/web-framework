@@ -4,14 +4,36 @@ title: Download
 group: jcu
 ---
 
-The framework can be deployed to systems in a number of different ways depending
-on the type of application.
+The framework can be downloaded or accessed in a number of different ways depending
+on the type of application being themed.
 
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
+## CDN-hosted resources
+
+You can utilise our Content Distribution Network (CDN)-hosted resources to
+style your web application or site and avoid needing to download anything.
+
+{% highlight html %}
+  <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
+  <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+{% endhighlight %}
+
+Upgrading to a new release version is a matter of updating the included URLs
+and following any applicable [Migration]({{ site.baseurl }}/migration/)
+documentation.
+
+If using the JavaScript resources above, ensure you have jQuery and Tether
+available on your page.  If your page or application doesn't already have
+them, you can also load these using CDN as well, via the following:
+
+{% highlight html %}
+  <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
+  <script src="{{ site.cdn.tether }}" integrity="{{ site.cdn.tether_hash }}" crossorigin="anonymous"></script>
+{% endhighlight %}
 
 ## Release packages
 

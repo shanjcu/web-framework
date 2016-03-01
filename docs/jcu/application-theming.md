@@ -2,14 +2,13 @@
 layout: docs
 title: Application Theming
 group: jcu
-redirect_from: "/jcu/"
 ---
 
 Different applications require different approaches to making them consistent
 with the rest of the University's online presence.
 
-Completed the theming of an application and want your notes featured here?  Get
-in touch or send a pull request with your changes.
+If you have completed the theming of an application, we'd like to feature your
+notes here. Get in touch or send a pull request with your changes.
 
 ## Contents
 
@@ -20,29 +19,14 @@ in touch or send a pull request with your changes.
 
 ### CDN-hosted resources <span class="label label-success">Easiest</span>
 
-For single-page web applications (such as static sites), it's possible to use
-CDN-hosted resources to avoid needing to download anything.
+If you're just looking to include a release version of the JCU Web Framework
+in your app or pages, use our Content Distribution Network (CDN)-hosted
+resources and avoid needing to download anything.  This approach involves
+placing suitable HTML tags into your page and that's it.
 
-{% highlight html %}
-  <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
-  <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
-{% endhighlight %}
+<a class="btn btn-outline-primary" href="{{ site.baseurl
+}}/jcu/download/#cdn-hosted-resources">Learn how to use our CDN</a>
 
-{% callout warning %}
-**Heads up!** This is provided by [Rawgit.com](https://rawgit.com) and whilst
-free, provides no uptime or support guarantees. If you're using this approach,
-let us know on [issue #8](https://github.com/jcu/web-framework/issues/8) so we
-can track interest in an official CDN option.
-{% endcallout %}
-
-If using the JavaScript resources above, ensure you have jQuery and Tether
-available on your page.  If you're looking to load these over CDN as well, use
-the following:
-
-{% highlight html %}
-  <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
-  <script src="{{ site.cdn.tether }}" integrity="{{ site.cdn.tether_hash }}" crossorigin="anonymous"></script>
-{% endhighlight %}
 
 ### Static sites or editable source <span class="label label-info">Easy-Medium</span>
 
@@ -50,17 +34,21 @@ Your application was created in-house or you otherwise have full control over th
 underlying source code (such as Coldfusion apps or the Research Portfolio), then
 it's a matter of customising the application to suit.  The general guide is to:
 
-1. Download or clone the source files and host them beside your application.
+1. Include the JCU Web Framework resources in your page following one of the
+   options on the [Download]({{ site.baseurl }}/jcu/download/) page.
 
 1. Customise the source of your application to be Bootstrap-compatible.  For
-   instance, `<button>` elements would become `<button class="btn">` and so
+   instance, `<button>` elements become `<button class="btn">` and so
    forth.
 
-1. Follow the guide you're currently reading until all aspects of your
+1. Follow the documentation you're currently reading until all aspects of your
    application are adjusted or themed accordingly.
 
+You can also make use of any [examples]({{ site.baseurl }}/examples/) provided
+as base templates.
+
 To update to a newer version of the JCU Web Framework, replace the framework
-files and follow any instructions in the Upgrading documentation.
+files and follow any instructions in the [Migration documentation]({{ site.baseurl }}/migration/).
 
 {% callout info %}
 If you're working with static files and trying things locally, note that
@@ -83,7 +71,7 @@ available.  The general guide, if Bootstrap is used, is to:
 
 1. Locate how the application is serving its resources.
 
-1. Customise them to feature the JCU web framework instead of stock Bootstrap
+1. Customise them to feature the JCU Web Framework instead of stock Bootstrap
    resources.
 
 1. Adjust the application's templates and remaining code to fit the JCU web
