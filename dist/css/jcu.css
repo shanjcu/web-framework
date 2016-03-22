@@ -7743,7 +7743,7 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
 }
 
 .jcu-footer__legal .list-inline-item:not(:last-child)::after {
-  margin-left: 1rem;
+  margin-left: .5rem;
   content: "";
   border-left: 1px solid #797979;
 }
