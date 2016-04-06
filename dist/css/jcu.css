@@ -6113,20 +6113,56 @@ abbr[title] {
   border-bottom: 0 none;
 }
 
-.jcu-theme--blue h2, .jcu-theme--blue h3, .jcu-theme--blue h4, .jcu-theme--blue h5, .jcu-theme--blue h6, .jcu-theme--blue .lead {
-  color: #339;
+.jcu-theme--blue h1, .jcu-theme--blue .h1 {
+  color: #00adef;
 }
 
-.jcu-theme--orange h2, .jcu-theme--orange h3, .jcu-theme--orange h4, .jcu-theme--orange h5, .jcu-theme--orange h6, .jcu-theme--orange .lead {
-  color: #f33;
+.jcu-theme--blue h2, .jcu-theme--blue .h2 {
+  color: #0d5589;
 }
 
-.jcu-theme--green h2, .jcu-theme--green h3, .jcu-theme--green h4, .jcu-theme--green h5, .jcu-theme--green h6, .jcu-theme--green .lead {
-  color: #096;
+.jcu-theme--blue h3, .jcu-theme--blue h4, .jcu-theme--blue h5, .jcu-theme--blue h6,
+.jcu-theme--blue .h3, .jcu-theme--blue .h4, .jcu-theme--blue .h5, .jcu-theme--blue .h6 {
+  color: #264ca3;
 }
 
-.jcu-theme--red h2, .jcu-theme--red h3, .jcu-theme--red h4, .jcu-theme--red h5, .jcu-theme--red h6, .jcu-theme--red .lead {
-  color: #900;
+.jcu-theme--orange h1, .jcu-theme--orange .h1 {
+  color: #f79212;
+}
+
+.jcu-theme--orange h2, .jcu-theme--orange .h2 {
+  color: #a64819;
+}
+
+.jcu-theme--orange h3, .jcu-theme--orange h4, .jcu-theme--orange h5, .jcu-theme--orange h6,
+.jcu-theme--orange .h3, .jcu-theme--orange .h4, .jcu-theme--orange .h5, .jcu-theme--orange .h6 {
+  color: #f04338;
+}
+
+.jcu-theme--green h1, .jcu-theme--green .h1 {
+  color: #98d321;
+}
+
+.jcu-theme--green h2, .jcu-theme--green .h2 {
+  color: #408224;
+}
+
+.jcu-theme--green h3, .jcu-theme--green h4, .jcu-theme--green h5, .jcu-theme--green h6,
+.jcu-theme--green .h3, .jcu-theme--green .h4, .jcu-theme--green .h5, .jcu-theme--green .h6 {
+  color: #23aa4a;
+}
+
+.jcu-theme--red h1, .jcu-theme--red .h1 {
+  color: #ed1a4e;
+}
+
+.jcu-theme--red h2, .jcu-theme--red .h2 {
+  color: #d00;
+}
+
+.jcu-theme--red h3, .jcu-theme--red h4, .jcu-theme--red h5, .jcu-theme--red h6,
+.jcu-theme--red .h3, .jcu-theme--red .h4, .jcu-theme--red .h5, .jcu-theme--red .h6 {
+  color: #8e191e;
 }
 
 .dropdown-menu {
