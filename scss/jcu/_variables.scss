@@ -38,6 +38,13 @@ $jcu-gradient-orange:            rgb(233,79,53), rgb(255,221,0) !default;
 $jcu-gradient-green:             rgb(0,166,81), rgb(214,224,64) !default;
 $jcu-gradient-red:               rgb(157,22,25), rgb(236,0,140) !default;
 
+$jcu-typography-themes: (
+  'blue':   (#00adef, #0d5589, #264ca3),
+  'orange': (#f79212, #a64819, #f04338),
+  'green':  (#98d321, #408224, #23aa4a),
+  'red':    (#ed1a4e, #dd0000, #8e191e)
+) !default;
+
 $jcu-bg-opacities:               (25, 50, 75, 90, 100) !default;
 $jcu-bg-colors: (
   'pink': rgb(236, 0, 140),

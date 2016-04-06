@@ -1,15 +1,11 @@
 //
 // Themes: the various JCU theme colours applied to a page.
 //
-@mixin jcu-theme-headings($name, $color) {
+@each $name, $gradient in $jcu-typography-themes {
   .jcu-theme--#{$name} {
-    h2, h3, h4, h5, h6, .lead {
-      color: $color;
-    }
+    h1, .h1 { color: nth($gradient, 1); }
+    h2, .h2 { color: nth($gradient, 2); }
+    h3, h4, h5, h6,
+    .h3, .h4, .h5, .h6 { color: nth($gradient, 3); }
   }
 }
-
-@include jcu-theme-headings('blue', #339);
-@include jcu-theme-headings('orange', #f33);
-@include jcu-theme-headings('green', #096);
-@include jcu-theme-headings('red', #900);
