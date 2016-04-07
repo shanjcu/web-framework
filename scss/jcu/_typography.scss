@@ -44,7 +44,7 @@ abbr[title] {
 
 @mixin list-bordered($padding-y) {
   @extend .list-unstyled;
-  li {
+  > li {
     padding-top: $padding-y;
     padding-bottom: $padding-y;
     border-bottom: $border-width solid $gray-light;
