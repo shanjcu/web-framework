@@ -157,11 +157,6 @@ documentation from Bootstrap.
 
 ### Gradients
 
-{% callout warning %}
-At this stage, the gradient backgrounds do not feature transparencies for
-accessibility reasons.
-{% endcallout %}
-
 <div class="jcu-bg-examples jcu-bg-examples--inverse">
   <div class="jcu-bg--gradient-blue">.jcu-bg--gradient-blue</div>
   <div class="jcu-bg--gradient-blue-rev">.jcu-bg--gradient-blue-rev</div>

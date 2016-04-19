@@ -56,22 +56,17 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"] { width: 100%;  }
 
 @each $name, $gradient in $jcu-bg-gradients {
   .jcu-bg--#{$name} {
-    @include gradient-horizontal(nth($gradient, 1), nth($gradient, 2));
+    @include gradient-horizontal(rgba(nth($gradient, 1), .95), rgba(nth($gradient, 2), .95));
   }
 
   .jcu-bg--#{$name}-45deg {
-    @include gradient-directional(nth($gradient, 2), nth($gradient, 1), 45deg);
+    @include gradient-directional(rgba(nth($gradient, 2), .95), rgba(nth($gradient, 1), .95), 45deg);
   }
 
   .jcu-bg--#{$name}-rev {
-    @include gradient-horizontal(nth($gradient, 2), nth($gradient, 1));
+    @include gradient-horizontal(rgba(nth($gradient, 2), .95), rgba(nth($gradient, 1), .95));
   }
 
-  // Style guide says transparency should be at 90% when overlaid on images.
-  // Disabled for accessibility reasons at present.
-  //.jcu-bg--#{$name}-90pc {
-  //  @include gradient-horizontal(rgba(nth($gradient, 1), .9), rgba(nth($gradient, 2), .9));
-  //}
 }
 
 @each $name, $filename in $jcu-bg-images {
