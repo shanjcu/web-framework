@@ -88,6 +88,8 @@ automatically available.  Our Gruntfile adds the following commands and tasks:
 | Task | Description |
 | --- | --- |
 | `grunt jcu-publish` | Builds documentation via Jekyll for hosting, and uploads to the `gh-pages` branch in the repo. |
+| `grunt jcu-cdn` | Push the current dist release to the CDN hosting using Rsync. |
+| `grunt dist-images` | `grunt dist-images` optimises images in the `/images` directory, placing the results in `/dist/images`. This is incorporated as part of `grunt dist` and doesn't need to be run directly.  **Uses [grunt-image](https://github.com/1000ch/grunt-image), which uses various image optimisers under the hood.** |
 
 ## Branches and structure
 
