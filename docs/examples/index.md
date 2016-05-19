@@ -12,38 +12,51 @@ implementation of customisations and components.
 
 <div class="row bd-examples">
   <div class="col-xs-6 col-md-4">
-    <a href="{{ site.baseurl }}/examples/jcu-content-page/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-content-page/screenshot.jpg" alt="Screenshot of CMS page">
+    <a href="{{ site.baseurl }}/examples/jcu-landing/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-landing/screenshot.jpg" alt="Screenshot of single-page landing example">
     </a>
-    <h4>Content page layout</h4>
+    <h4>Landing</h4>
+    <p>Fully responsive one-page self-contained scrolling site or landing page.</p>
   </div>
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-login/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-login/screenshot.jpg" alt="Screenshot of login page">
     </a>
-    <h4>Login screen layout</h4>
+    <h4>Utility</h4>
+    <p>Basic utilitarian layout, suitable for login pages or information messages.</p>
   </div>
   <div class="clearfix hidden-md-up"></div><!-- Clear shown for sm and down -->
-  <div class="col-xs-6 col-md-4">
-    <a href="{{ site.baseurl }}/examples/jcu-brochure/">
-      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-brochure/screenshot.jpg" alt="Screenshot of brochureware example">
-    </a>
-    <h4>JCU Brochureware</h4>
-  </div>
-  <div class="clearfix hidden-sm-down"></div><!-- Clear shown for md and up -->
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-app-cover/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app-cover/screenshot.jpg" alt="Screenshot of app cover page">
     </a>
-    <h4>App cover layout</h4>
+    <h4>App cover</h4>
+    <p>Fixed background design with central focal point.</p>
+  </div>
+  <div class="clearfix hidden-sm-down"></div><!-- Clear shown for md and up -->
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-content-page/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-content-page/screenshot.jpg" alt="Screenshot of CMS page">
+    </a>
+    <h4>Content page</h4>
+    <p>JCU Web Framework-based template that closely resembles the design of the CMS.</p>
   </div>
   <div class="clearfix hidden-md-up"></div><!-- Clear shown for sm and down -->
+  <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/jcu-brochure/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-brochure/screenshot.jpg" alt="Screenshot of brochure layout">
+    </a>
+    <h4>Brochureware <small class="label label-primary">Work in progress</small></h4>
+    <p>Engaging overview layout for a specific course, degree or research area.</p>
+  </div>
   <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/jcu-app-page/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/examples/jcu-app-page/screenshot.jpg" alt="Screenshot of app page">
     </a>
-    <h4>App page layout</h4>
+    <h4>App page <small class="label label-primary">Coming soon!</small></h4>
+    <p>Application or dashboard design for intranet or extranet applications.</p>
   </div>
+  <div class="clearfix hidden-sm-down"></div><!-- Clear shown for md and up -->
 </div>
 
 ## Framework
