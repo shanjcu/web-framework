@@ -2262,20 +2262,20 @@ fieldset[disabled] a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #004c99;
+  background-color: #004d99;
   border-color: #00478f;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #004c99;
+  background-color: #004d99;
   border-color: #00478f;
 }
 
 .btn-primary:active, .btn-primary.active,
 .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #004c99;
+  background-color: #004d99;
   background-image: none;
   border-color: #00478f;
 }
@@ -2421,7 +2421,7 @@ fieldset[disabled] a.btn {
 .open > .btn-success.dropdown-toggle.focus {
   color: #fff;
   background-color: #1d4003;
-  border-color: #0b1801;
+  border-color: #0b1901;
 }
 
 .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success:disabled:focus, .btn-success:disabled.focus {
@@ -3844,12 +3844,12 @@ input[type="button"].btn-block {
 @media (min-width: 544px) {
   .card-deck {
     display: table;
+    width: 100%;
     table-layout: fixed;
     border-spacing: 1.25rem 0;
   }
   .card-deck .card {
     display: table-cell;
-    width: 1%;
     vertical-align: top;
   }
   .card-deck-wrapper {
@@ -4015,7 +4015,7 @@ a.label:focus, a.label:hover {
 }
 
 .label-default[href]:focus, .label-default[href]:hover {
-  background-color: #5f5f5f;
+  background-color: #606060;
 }
 
 .label-primary {
@@ -4023,7 +4023,7 @@ a.label:focus, a.label:hover {
 }
 
 .label-primary[href]:focus, .label-primary[href]:hover {
-  background-color: #004c99;
+  background-color: #004d99;
 }
 
 .label-success {
@@ -5360,7 +5360,7 @@ button.close {
 }
 
 a.bg-primary:focus, a.bg-primary:hover {
-  background-color: #004c99 !important;
+  background-color: #004d99 !important;
 }
 
 .bg-success {
@@ -5851,7 +5851,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #004c99;
+  color: #004d99;
 }
 
 .text-success {
@@ -7239,7 +7239,7 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
 
 @media (max-width: 767px) {
   .body--has-explorer .jcu-header--marketing {
-    height: 8.875rem;
+    height: 9.8125rem;
     padding-right: 0;
     padding-left: 0;
   }
@@ -7440,7 +7440,7 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
 
 @media (max-width: 767px) {
   .body--has-toolbar.body--has-explorer {
-    padding-top: 7.995rem;
+    padding-top: 7.0575rem;
   }
 }
 
@@ -7451,7 +7451,7 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
 }
 
 .body--has-toolbar.body--has-explorer .jcu-explorer__toggleable.in {
-  height: calc(100vh - 7.995rem);
+  height: calc(100vh - 7.0575rem);
 }
 
 .navbar--jcu-explorer {
@@ -7569,7 +7569,7 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
 .navbar--jcu-explorer .navbar-toggler {
   padding-right: 0;
   padding-left: 0;
-  font-size: 2.625rem;
+  font-size: 2rem;
   line-height: 1.5;
   color: #fff;
 }
@@ -7580,7 +7580,7 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
 }
 
 .jcu-explorer__toggleable.in {
-  height: calc(100vh - 5.125rem);
+  height: calc(100vh - 4.1875rem);
   overflow-y: auto;
 }
 
@@ -7757,8 +7757,7 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"], :root .carousel-inner > .carous
 }
 
 .jcu-footer__social {
-  margin-left: .5rem;
-  font-size: 2.625rem;
+  font-size: 2rem;
   text-align: center;
 }
 
