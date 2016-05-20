@@ -7,11 +7,11 @@
     color: $color;
 
     &:first-child {
-      border-top: 1px solid $color;
+      border-top: $jcu-campus-stack-border-width solid $color;
     }
 
     &:last-child {
-      border-bottom: 1px solid $color;
+      border-bottom: $jcu-campus-stack-border-width solid $color;
     }
   }
 
@@ -22,8 +22,8 @@
 
 .jcu-campus-stack {
   display: inline-block;
-  @include list-bordered(.25em);
-  @include jcu-campus-stack($gray-dark);
+  @include list-bordered($jcu-campus-stack-spacing);
+  @include jcu-campus-stack($jcu-campus-stack-default);
 
   li {
     padding-top: 0;
@@ -32,12 +32,11 @@
 }
 
 .jcu-campus-stack--color {
-  // Colour matches the JCU shield
-  @include jcu-campus-stack(#176fc1);
+  @include jcu-campus-stack($jcu-campus-stack-color);
 }
 
 .jcu-campus-stack--inverse {
-  @include jcu-campus-stack($jcu-brand-primary-inverse);
+  @include jcu-campus-stack($jcu-campus-stack-inverse);
 }
 
 
