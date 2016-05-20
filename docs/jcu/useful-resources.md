@@ -15,7 +15,10 @@ the JCU Web Framework.
 
 ## Tools
 
-* [CSSArrowPlease: Easy CSS-powered box arrows](http://cssarrowplease.com/)
+* [CSSArrowPlease](http://cssarrowplease.com/): Easy CSS-powered box arrows
+* [Animate.css](https://daneden.github.io/animate.css/) - CSS3 effects
+* [TextInputEffects](http://tympanus.net/Development/TextInputEffects/) - text
+  input interactions
 
 ## Guides and tutorials
 

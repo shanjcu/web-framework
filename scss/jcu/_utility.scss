@@ -5,6 +5,17 @@
 _:-ms-fullscreen, :root .img-fluid[src$=".svg"] { width: 100%;  }
 
 //
+// Opacity
+//
+.opaque {
+  opacity: 1;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+//
 // Borders: utilities like Bootstrap's spacing (eg m-a-0)
 //
 .b-a-0 { border: 0 none !important; }
