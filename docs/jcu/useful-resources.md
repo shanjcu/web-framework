@@ -4,8 +4,9 @@ title: Useful Resources
 group: jcu
 ---
 
-Here's some more reading materials and resources that are relevant to the use of
-the JCU Web Framework.
+Various reading materials and resources that are relevant to the use of
+the JCU Web Framework and web development in general.  Suggestions are
+welcome.
 
 ## Frameworks and libraries
 
@@ -29,6 +30,10 @@ the JCU Web Framework.
   * [MDN HTML Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories)
 
 * W3C:
+
+  * [ARIA in HTML Practical Guide](https://w3c.github.io/aria-in-html/)
+
+    * [ARIA roles/properties not in HTML](https://w3c.github.io/aria-in-html/#html5na)
 
   * [HTML5 Implicit ARIA roles and elements](http://www.w3.org/TR/html5/dom.html#aria-usage-note)
     \- an extremely useful resource for knowing what roles are implied automatically.
