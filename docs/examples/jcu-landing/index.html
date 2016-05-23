@@ -26,7 +26,7 @@
     <link href="css/animate.min.css" rel="stylesheet">
   </head>
 
-  <body id="page-top" role="document">
+  <body class="landing-page" id="page-top" role="document">
 
     <a class="sr-only sr-only-focusable" href="#main">
       <div class="container-fluid bg-inverse text-inverse p-y-1">
@@ -37,14 +37,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top">
       <div class="container">
-        <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#main-nav">
+        <button class="navbar-toggler pull-xs-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#main-nav">
           &#9776;
         </button>
         <a class="navbar-brand page-scroll" href="#page-top">
           <img class="brand-img" src="../../dist/images/jcua-logo-mono-reversed.svg" alt="James Cook University Logo">
           <div class="h1 site-title">Fletcherview <span class="scroll-hidden"><br>Research <br>Station</span></div>
         </a>
-        <div class="collapse navbar-toggleable-sm" id="main-nav">
+        <div class="collapse navbar-toggleable navbar-toggleable-md" id="main-nav">
           <ul class="nav navbar-nav pull-md-right text-uppercase">
             <li class="nav-item">
               <a class="nav-link" href="#">Discover</a>
@@ -56,7 +56,7 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn btn-primary" href="#">Plan a Trip</a>
+              <a class="nav-link btn btn-primary" href="content.html">Plan a Trip</a>
             </li>
           </ul>
         </div>
@@ -64,11 +64,11 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro content-section jcu-bg--cover" id="intro">
+    <header class="intro jcu-bg--cover" id="intro">
       <div class="intro-body">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-10 col-lg-6">
               <h1 class="page-title animated transparent" id="page-title" data-animation="fadeInLeft" data-delay="250"><span class="sr-only">Fletcherview Research Station: </span>See into the heart of Queensland's beef industry.</h1>
               <p class="lead animated transparent" data-animation="fadeInUp" data-delay="500">Fletcherview Research Station is a 1960 hectare working cattle ranch in the Australian outback, 98 kilometres south-west of Townsville.</p>
             </div>
@@ -231,7 +231,7 @@
       <div class="container m-b-3">
         <div class="row m-b-1">
           <div class="col-md-8 col-md-offset-2 text-xs-center">
-            <h2 class="h1">Go further <br><span class="lead">to James Cook University's research classrooms</span></h2>
+            <h2 class="h1">Go further <br><span class="lead">Experience James Cook University's research environments</span></h2>
             <hr />
           </div>
         </div>
@@ -258,7 +258,7 @@
           </div><!-- /.col-sm-4 -->
           <div class="col-sm-4 animated" data-animation="fadeInUp" data-delay="500">
             <div class="text-xs-center">
-              <a href=#">
+              <a href="#">
                 <img class="center-block img-fluid img-circle" src="./img/classroom-outback.jpg" alt="Cow in the outback">
                 <p class="h4">Fletcherview Research Station</p>
               </a>
@@ -267,10 +267,7 @@
             </div>
           </div><!-- /.col-sm-4 -->
         </div><!-- /.row -->
-        <div class="row">
-          <hr>
-        </div>
-        <div class="row m-b-1 research-enablers animated" data-animation="fadeIn" data-delay="250">
+        <div class="row m-b-1 research-enablers animated" data-animation="fadeIn" data-delay="1000">
           <div class="col-sm-8 col-sm-offset-2">
             <div class="col-lg-4">
               <a href="#">
@@ -376,7 +373,7 @@
         'use strict';
 
         function collapseNavbar() {
-          if ($('.navbar').offset().top > 50) {
+          if ($('.navbar-custom').offset().top > 50) {
             $('.navbar-fixed-top').addClass('navbar-collapsed');
           } else {
             $('.navbar-fixed-top').removeClass('navbar-collapsed');

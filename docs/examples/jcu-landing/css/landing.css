@@ -77,9 +77,13 @@ a {
   line-height: 1rem;
 }
 
-.navbar-toggleable-sm.in,
-.navbar-toggleable-sm.collapsing {
+.navbar-toggleable.in,
+.navbar-toggleable.collapsing {
   clear: both;
+}
+
+.navbar-toggleable.in {
+  background: rgba(0,0,0,.9);
 }
 
 .nav-link.btn {
@@ -143,11 +147,21 @@ a {
   background-image: url(../img/A21W1282-cattle-muster.jpg);
 }
 
-.intro .intro-body {
+.intro-body {
   display: table-cell;
-  padding-top: 30vh;
+  padding-top: 20vh;
   vertical-align: middle;
   background-color: rgba(0,0,0,.4);
+}
+
+@media(max-height:512px) {
+  .intro-body {
+    padding-top: 7rem;
+  }
+}
+
+.landing-page .intro {
+  margin-bottom: 3rem;
 }
 
 .page-title {
@@ -156,11 +170,15 @@ a {
 
 @media(min-width:768px) {
   .intro {
-    height: 100%;
     padding: 0;
   }
 
-  .intro .intro-body {
+  .landing-page .intro {
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .landing-page .intro-body {
     padding-top: 40vh;
   }
 
