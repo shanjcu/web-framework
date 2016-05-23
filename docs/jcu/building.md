@@ -302,8 +302,8 @@ otherwise can change significantly between versions.
       * Modification to existing classes or structure (such as addition of extra
         padding to `.dropdown-menu`)
 
-1. Once fully tested, make a note in the change log, commit the results and push
-   to the server.
+1. Once fully tested, make a note in the change log (`CHANGELOG.md`), commit
+   the results and push to the server.
 
 1. Rebuild the main documentation, push to the server and deploy to CDN in one
    go by running:
