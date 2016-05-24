@@ -383,11 +383,26 @@ new features will need to be drawn in from time to time.
   change all versions across all different files, including JS, CSS, package
   files and documentation.
 
-* Follow instructions from https://www.srihash.org/ to generate an SRI hash of
-  the production minified versions of CSS and JS:
+* Follow instructions from [SRIHash.org](https://www.srihash.org/) to generate
+  an SRI hash of the production minified versions of CSS and JS:
 
       openssl dgst -sha384 -binary dist/css/jcu.min.css | openssl base64 -A
       openssl dgst -sha384 -binary dist/js/jcu.min.js | openssl base64 -A
+
+* Change the documentation `_config.yml` to reflect these SRI changes and
+  rebuild the documentation with:
+
+      grunt docs
+
+* Commit the results of the version change and documentation update.
+
+* Create the new release with, this will create a zip file, upload to CDN and
+  release the new documentation in one hit.
+
+      grunt prep-release jcu-publish
+
+* Now upload the final zip file to GitHub in the releases area and you are
+  done!
 
 ## Cleaning up the CDN
 
