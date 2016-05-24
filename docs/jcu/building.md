@@ -370,6 +370,25 @@ those using a terminal; adapt them to your own environment.
 It is rare that these components will need to be updated, though bug fixes and
 new features will need to be drawn in from time to time.
 
+## Releasing a new JCU Web Framework version
+
+* Complete testing, commit all existing changes and run the final build for
+  this new version with:
+  ``grunt dist docs``
+
+* Commit any final changes from this command and ensure you are in a clean Git checkout.
+
+* Run `node grunt/change-version.js [old-version] [new-version]` at the root
+  of the repository. Do not include `v` in the version numbering.  This will
+  change all versions across all different files, including JS, CSS, package
+  files and documentation.
+
+* Follow instructions from https://www.srihash.org/ to generate an SRI hash of
+  the production minified versions of CSS and JS:
+
+      openssl dgst -sha384 -binary dist/css/jcu.min.css | openssl base64 -A
+      openssl dgst -sha384 -binary dist/js/jcu.min.js | openssl base64 -A
+
 ## Cleaning up the CDN
 
 If old directories need to be cleaned up on the CDN, use the following `rsync`
