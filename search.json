@@ -191,21 +191,14 @@
     
         {
             "title" : "Download",
-            "url"   : "/jcu/download/"
-        } ,
-    
-
-    
-        {
-            "title" : "Download",
             "url"   : "/getting-started/download/"
         } ,
     
 
     
         {
-            "title" : "Dropdowns",
-            "url"   : "/jcu/dropdowns/"
+            "title" : "Download",
+            "url"   : "/jcu/download/"
         } ,
     
 
@@ -213,6 +206,13 @@
         {
             "title" : "Dropdowns",
             "url"   : "/components/dropdowns/"
+        } ,
+    
+
+    
+        {
+            "title" : "Dropdowns",
+            "url"   : "/jcu/dropdowns/"
         } ,
     
 
