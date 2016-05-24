@@ -1,7 +1,8 @@
 {
   "name": "jcu",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "description": "The HTML, CSS, and JS framework for building responsive, mobile-first web projects with University styling",
   "version": "4.0.0-alpha.2",
+  "private": true,
   "keywords": [
     "css",
     "sass",
@@ -11,8 +12,8 @@
     "framework",
     "web"
   ],
-  "homepage": "http://getbootstrap.com",
-  "author": "Twitter, Inc.",
+  "homepage": "https://web.jcu.io",
+  "author": "James Cook University",
   "scripts": {
     "change-version": "node grunt/change-version.js",
     "test": "grunt test"
@@ -22,12 +23,12 @@
   "main": "./dist/js/npm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/jcu/web-framework.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/jcu/web-framework/issues"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel-eslint": "^4.1.3",

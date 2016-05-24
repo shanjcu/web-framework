@@ -37,6 +37,9 @@ customizer](https://github.com/gustavohenke/webhostinghub-glyphs) licensed under
 MIT licensing. [Original font](http://www.webhostinghub.com/glyphs/#howToUse) is
 licensed under the SIL Open Font License.
 
+Bootstrap source code licensed under the MIT Licence, see the
+`bootstrap-LICENSE` file in this repository for details.
+
 
 ## Quick start
 
