@@ -16,7 +16,7 @@
 
 <!-- Bootstrap core CSS -->
 
-  <link href="/dist/css/jcu.min.css" rel="stylesheet">
+  <link href="/dist/css/jcu.css" rel="stylesheet">
 
 
 <!-- Documentation extras -->
@@ -1122,7 +1122,7 @@
 
 <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets to load our CSS.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.web.jcu.io/1.0.0-beta.1/css/jcu.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-valFRKl+0g0tWrYJQwXPaf4oRFo9hOu7BssvfScVX9wdvvA+NjYtnAFm3sqP7LFy"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.web.jcu.io/1.0.0-beta.1/css/jcu.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-yvalFRKl+0g0tWrYJQwXPaf4oRFo9hOu7BssvfScVX9wdvvA+NjYtnAFm3sqP7LF"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <p>Add our JavaScript plugins, jQuery, and Tether near the end of your pages, right before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag. Be sure to place jQuery and Tether first, as our code depends on them.</p>
 
@@ -1153,7 +1153,7 @@
     <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-ua-compatible"</span> <span class="na">content=</span><span class="s">"ie=edge"</span><span class="nt">&gt;</span>
 
     <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.web.jcu.io/1.0.0-beta.1/css/jcu.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-valFRKl+0g0tWrYJQwXPaf4oRFo9hOu7BssvfScVX9wdvvA+NjYtnAFm3sqP7LFy"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.web.jcu.io/1.0.0-beta.1/css/jcu.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-yvalFRKl+0g0tWrYJQwXPaf4oRFo9hOu7BssvfScVX9wdvvA+NjYtnAFm3sqP7LF"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/head&gt;</span>
   <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
@@ -1253,11 +1253,19 @@
 <script src="/assets/js/vendor/tether.min.js"></script>
 
 
-  <script src="/dist/js/jcu.min.js"></script>
+  <script src="/dist/js/jcu.js"></script>
 
 
 
-  <script src="/assets/js/docs.min.js"></script>
+  
+    <script src="/../assets/js/vendor/anchor.min.js"></script>
+  
+    <script src="/../assets/js/vendor/clipboard.min.js"></script>
+  
+    <script src="/../assets/js/vendor/holder.min.js"></script>
+  
+    <script src="/../assets/js/src/application.js"></script>
+  
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
