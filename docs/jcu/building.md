@@ -394,15 +394,32 @@ new features will need to be drawn in from time to time.
 
       grunt docs
 
-* Commit the results of the version change and documentation update.
+* Commit the results of the version change and documentation update, ensuring
+  you also update the `CHANGELOG.md` file with the relevant date.
 
 * Create the new release with, this will create a zip file, upload to CDN and
   release the new documentation in one hit.
 
       grunt prep-release jcu-publish
 
-* Now upload the final zip file to GitHub in the releases area and you are
-  done!
+  If there are any final changes to be committed, commit them and publish the
+  docs pages again with:
+
+      grunt buildcontrol:pages
+
+* Tag the current commit with the given version number:
+
+      git tag v1.0.0-beta.1
+      git push --tags
+
+* Push all remaining changes to GitHub after a final merge into `master`:
+
+      git checkout master
+      git merge -s recursive -X theirs develop
+      git push origin master develop
+
+* Now upload the final zip file to GitHub in the releases area, typing in the
+  given tag version, publish the release and you are done!
 
 ## Cleaning up the CDN
 
