@@ -4,17 +4,22 @@ title: Useful Resources
 group: jcu
 ---
 
-Here's some more reading materials and resources that are relevant to the use of
-the JCU Web Framework.
+Various reading materials and resources that are relevant to the use of
+the JCU Web Framework and web development in general.  Suggestions are
+welcome.
 
 ## Frameworks and libraries
 
 * [Bootstrap Official Site](http://getbootstrap.com)
 * [Building Bootstrap (Documentation)](http://v4-alpha.getbootstrap.com/getting-started/build-tools/)
+* [Bootstrap v4 Cheatsheet](http://hackerthemes.com/bootstrap-cheatsheet)
 
 ## Tools
 
-* [CSSArrowPlease: Easy CSS-powered box arrows](http://cssarrowplease.com/)
+* [CSSArrowPlease](http://cssarrowplease.com/): Easy CSS-powered box arrows
+* [Animate.css](https://daneden.github.io/animate.css/) - CSS3 effects
+* [TextInputEffects](http://tympanus.net/Development/TextInputEffects/) - text
+  input interactions
 
 ## Guides and tutorials
 
@@ -25,6 +30,10 @@ the JCU Web Framework.
   * [MDN HTML Content categories](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories)
 
 * W3C:
+
+  * [ARIA in HTML Practical Guide](https://w3c.github.io/aria-in-html/)
+
+    * [ARIA roles/properties not in HTML](https://w3c.github.io/aria-in-html/#html5na)
 
   * [HTML5 Implicit ARIA roles and elements](http://www.w3.org/TR/html5/dom.html#aria-usage-note)
     \- an extremely useful resource for knowing what roles are implied automatically.

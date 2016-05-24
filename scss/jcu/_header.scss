@@ -24,7 +24,6 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 // Banner-style contents are vertically centred & expand on larger displays
 .jcu-header--banner {
   @include media-breakpoint-up(md) {
-    margin-top: $spacer-y;
     padding-bottom: ($spacer-y * 3);
     padding-top: ($spacer-y * 3);
   }

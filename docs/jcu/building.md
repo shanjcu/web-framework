@@ -88,6 +88,8 @@ automatically available.  Our Gruntfile adds the following commands and tasks:
 | Task | Description |
 | --- | --- |
 | `grunt jcu-publish` | Builds documentation via Jekyll for hosting, and uploads to the `gh-pages` branch in the repo. |
+| `grunt jcu-cdn` | Push the current dist release to the CDN hosting using Rsync. |
+| `grunt dist-images` | `grunt dist-images` optimises images in the `/images` directory, placing the results in `/dist/images`. This is incorporated as part of `grunt dist` and doesn't need to be run directly.  **Uses [grunt-image](https://github.com/1000ch/grunt-image), which uses various image optimisers under the hood.** |
 
 ## Branches and structure
 
@@ -222,13 +224,13 @@ otherwise can change significantly between versions.
    ~~~ shell
    cd jcu-web-framework
    git remote add upstream https://github.com/twbs/bootstrap.git
-   git fetch upstream
+   git fetch --no-tags upstream
    ~~~
 
 1. Fetch the latest changes from the `upstream` remote.  In a terminal, this is:
 
    ~~~ shell
-   git fetch upstream
+   git fetch --no-tags upstream
    ~~~
 
 1. Determine the version you wish to update to and attempt the merge,
@@ -300,8 +302,8 @@ otherwise can change significantly between versions.
       * Modification to existing classes or structure (such as addition of extra
         padding to `.dropdown-menu`)
 
-1. Once fully tested, make a note in the change log, commit the results and push
-   to the server.
+1. Once fully tested, make a note in the change log (`CHANGELOG.md`), commit
+   the results and push to the server.
 
 1. Rebuild the main documentation, push to the server and deploy to CDN in one
    go by running:
@@ -367,6 +369,40 @@ those using a terminal; adapt them to your own environment.
 
 It is rare that these components will need to be updated, though bug fixes and
 new features will need to be drawn in from time to time.
+
+## Releasing a new JCU Web Framework version
+
+* Complete testing, commit all existing changes and run the final build for
+  this new version with:
+  ``grunt dist docs``
+
+* Commit any final changes from this command and ensure you are in a clean Git checkout.
+
+* Run `node grunt/change-version.js [old-version] [new-version]` at the root
+  of the repository. Do not include `v` in the version numbering.  This will
+  change all versions across all different files, including JS, CSS, package
+  files and documentation.
+
+* Follow instructions from [SRIHash.org](https://www.srihash.org/) to generate
+  an SRI hash of the production minified versions of CSS and JS:
+
+      openssl dgst -sha384 -binary dist/css/jcu.min.css | openssl base64 -A
+      openssl dgst -sha384 -binary dist/js/jcu.min.js | openssl base64 -A
+
+* Change the documentation `_config.yml` to reflect these SRI changes and
+  rebuild the documentation with:
+
+      grunt docs
+
+* Commit the results of the version change and documentation update.
+
+* Create the new release with, this will create a zip file, upload to CDN and
+  release the new documentation in one hit.
+
+      grunt prep-release jcu-publish
+
+* Now upload the final zip file to GitHub in the releases area and you are
+  done!
 
 ## Cleaning up the CDN
 

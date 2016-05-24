@@ -13,13 +13,21 @@ down while allowing for quick and easy development.
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
+## Opacity control
+
+Configure the opacity of a given element.  This is styled in such a way that
+browsers can animate the property when its value changes.
+
+* `.opaque`: make an element fully visible with `opacity: 1`
+* `.transparent`: make an element invisible with `opacity: 0`
+
 ## Borders
 
 This small utility follows on the [spacing
 utilities]({{ site.baseurl }}/components/utilities/#spacing) provided by the
 core framework.
 
-* `.b-a-0`: configure all borders (indicated by the `a`) to be none (indicated
+* `.b-a-0`: configure all borders (indicated by the `b-a`) to be none (indicated
   the `0`)
 
 ## Backgrounds
@@ -156,11 +164,6 @@ documentation from Bootstrap.
 </div>
 
 ### Gradients
-
-{% callout warning %}
-At this stage, the gradient backgrounds do not feature transparencies for
-accessibility reasons.
-{% endcallout %}
 
 <div class="jcu-bg-examples jcu-bg-examples--inverse">
   <div class="jcu-bg--gradient-blue">.jcu-bg--gradient-blue</div>

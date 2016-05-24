@@ -37,13 +37,16 @@ customizer](https://github.com/gustavohenke/webhostinghub-glyphs) licensed under
 MIT licensing. [Original font](http://www.webhostinghub.com/glyphs/#howToUse) is
 licensed under the SIL Open Font License.
 
+Bootstrap source code licensed under the MIT Licence, see the
+`bootstrap-LICENSE` file in this repository for details.
+
 
 ## Quick start
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/jcu-eresearch/jcu-web-framework/archive/v4.0.0-alpha.2.zip)
-- Clone the repo: `git clone https://github.com/jcu-eresearch/jcu-web-framework.git`
+- [Download the latest release.](https://github.com/jcu/web-framework/releases)
+- Clone the repo: `git clone https://github.com/jcu/web-framework.git`
 
 Read the [online documentation](https://web.jcu.io) for information on the
 framework contents, templates and examples, and more.
@@ -85,9 +88,9 @@ fonts for use in typography and as iconography.
 ## Bugs and feature requests
 
 Found a bug or have a feature request? Search for existing and closed issues on
-our [issue tracker](https://github.com/jcu-eresearch/jcu-web-framework/issues).
+our [issue tracker](https://github.com/jcu/web-framework/issues).
 If your problem or idea is not addressed yet, [please open a new
-issue](https://github.com/jcu-eresearch/jcu-web-framework/issues/new).
+issue](https://github.com/jcu/web-framework/issues/new).
 
 
 ## Documentation
@@ -107,9 +110,9 @@ compatibility, Bootstrap is maintained under [the Semantic Versioning
 guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to
 those rules whenever possible.
 
-See [the Releases section of our GitHub
-project](https://github.com/jcu-eresearch/jcu-web-framework/releases) for changelogs for each
-release version.
+See [the
+CHANGELOG](https://github.com/jcu/web-framework/blob/master/CHANGELOG.md) for
+changes between versions.
 
 ## Developers
 

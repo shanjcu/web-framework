@@ -4,14 +4,13 @@
 .jcu-content {
   padding-top: $spacer-y;
   padding-bottom: $spacer-y;
-  margin-bottom: $spacer-y;
   background-color: $jcu-content-bg-color;
 
   @media print {
     a:link::after,
     a:visited::after {
-      font-size: 90%;
       content: " (" attr(href) ") ";
+      font-size: 90%;
     }
 
     a[href^="/"]::after {
