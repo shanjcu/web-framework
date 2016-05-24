@@ -1,7 +1,7 @@
 {
   "name": "jcu",
   "description": "The HTML, CSS, and JS framework for building responsive, mobile-first web projects with University styling",
-  "version": "4.0.0-alpha.2",
+  "version": "1.0.0-beta.1",
   "private": true,
   "keywords": [
     "css",

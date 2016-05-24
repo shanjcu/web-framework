@@ -224,13 +224,13 @@ otherwise can change significantly between versions.
    ~~~ shell
    cd jcu-web-framework
    git remote add upstream https://github.com/twbs/bootstrap.git
-   git fetch upstream
+   git fetch --no-tags upstream
    ~~~
 
 1. Fetch the latest changes from the `upstream` remote.  In a terminal, this is:
 
    ~~~ shell
-   git fetch upstream
+   git fetch --no-tags upstream
    ~~~
 
 1. Determine the version you wish to update to and attempt the merge,

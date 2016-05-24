@@ -13,7 +13,7 @@
 })(this, function (exports, module) {
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.0.0-alpha.2): util.js
+   * Bootstrap (v1.0.0-beta.1): util.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
