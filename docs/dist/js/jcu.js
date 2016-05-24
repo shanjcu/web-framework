@@ -1,7 +1,6 @@
 /*!
- * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * JCU Web Framework v1.0.0-beta.1 (https://web.jcu.io)
+ * Copyright 2015-2016 James Cook University
  */
 
 if (typeof jQuery === 'undefined') {
