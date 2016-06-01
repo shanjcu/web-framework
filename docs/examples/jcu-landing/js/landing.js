@@ -3,16 +3,26 @@
 (function($) {
   'use strict';
 
-  // Animation support
-  // Requires Animate.css, jquery.appear and jquery.countTo
+  // Appear-on-scroll Animation Support
+  //
+  // Requires:
+  // Animate.css - https://daneden.github.io/animate.css/
+  // jquery.appear - https://github.com/bas2k/jquery.appear/
+  // jquery.countTo - https://github.com/mhuggins/jquery-countTo/
   //
   // Define animation blocks like so:
-  // <div class="animated" data-animation="fadeInDown" data-delay="1"></div>
+  //
+  //     <div class="animated" data-animation="fadeInDown" data-delay="1"></div>
   //
   // Count to a number using this inside .animated like this:
-  // <div class="animated counter">
-  //   <span class="timer" data-from="0" data-to="4800">4800</span>
-  // </div>
+  //
+  //     <div class="animated counter">
+  //       <span class="timer" data-from="0" data-to="4800">4800</span>
+  //     </div>
+  //
+  // The block will animate when it is scrolled into view.
+
+  // Stop animations on small screens
   if ($(window).width() < 768) {
     $('.animated').removeClass('animated transparent');
   }
@@ -37,6 +47,8 @@
       animate(element, animation);
     }
   }, {accY: -150});
+
+
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $('a.page-scroll').bind('click', function(event) {
