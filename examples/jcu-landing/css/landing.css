@@ -29,7 +29,9 @@ a {
 
 .navbar-brand .brand-img {
   display: inline-block;
-  height: 3.5rem;
+  height: 4rem;
+  margin-top: .5rem;
+  margin-bottom: .75rem;
   vertical-align: middle;
   -webkit-transition: .3s ease-in-out;
        -o-transition: .3s ease-in-out;
@@ -47,29 +49,7 @@ a {
 .navbar-custom.navbar-collapsed .brand-img {
   position: static;
   top: auto;
-  height: 3rem;
-  margin: .25rem;
-}
-
-.site-title {
-  display: inline-block;
-  padding-left: .5rem;
-  margin-bottom: 0;
-  margin-left: .5rem;
-  font-size: 1rem;
-  color: #fff;
-  vertical-align: middle;
-  border-left: 1px solid #fff;
-}
-
-.navbar-collapsed .site-title {
-  padding-left: 0;
-  line-height: .9;
-  border-left: 0 none;
-}
-
-.navbar-collapsed .scroll-hidden {
-  display: none;
+  height: 3.5rem;
 }
 
 .navbar-collapsed .navbar-nav .nav-link {
