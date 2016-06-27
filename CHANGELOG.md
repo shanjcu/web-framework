@@ -1,5 +1,9 @@
 # Changes
 
+## 1.0.0-beta.2 (unreleased)
+
+* Add fixed backgrounds to Landing examples
+
 ## 1.0.0-beta.1 (2016-05-24)
 
 * Correct versioning from being based on Bootstrap to being our own
