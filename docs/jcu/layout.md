@@ -38,7 +38,8 @@ fluid container that possesses a specific maximum width.
 
 ### Flexbox
 
-Flexbox, or the Flexible Box Layout Module, is a method of positioning elements
+[Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout),
+or the Flexible Box Layout Module, is a method of positioning elements
 in horizontal or vertical stacks.  This positioning module resolves many issues
 around floating elements, absolute positioning and scripting hacks to achieve
 its results.  Browser support is [steadily
