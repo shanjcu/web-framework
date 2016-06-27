@@ -125,6 +125,7 @@ a {
   color: #fff;
   background-color: #000;
   background-image: url(../img/A21W1282-cattle-muster.jpg);
+  background-attachment: fixed;
 }
 
 .intro-body {
@@ -238,6 +239,7 @@ a {
   background-color: #000;
   background-image: url(../img/CM1B7786-bush-sky.jpg);
   background-position: bottom;
+  background-attachment: fixed;
 }
 
 .discover-section > .container-fluid {
