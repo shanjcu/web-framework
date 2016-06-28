@@ -81,7 +81,7 @@
     // Get the marker's lat and long from the DOM
     var mapData = $(mapElement).data();
     mapMarker = new google.maps.LatLng(
-      parseFloat(mapData.markerLat), parseFloat(mapData.markerLgn));
+      parseFloat(mapData.markerLat), parseFloat(mapData.markerLng));
 
     // Basic options for a simple Google Map`
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions

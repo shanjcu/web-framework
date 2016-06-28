@@ -2,6 +2,7 @@
 
 ## 1.0.0-beta.2 (unreleased)
 
+* Fix typo in Landing examples JS
 * Add fixed backgrounds to Landing examples
 
 ## 1.0.0-beta.1 (2016-05-24)
