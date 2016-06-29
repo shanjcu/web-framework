@@ -2,6 +2,7 @@
 
 ## 1.0.0-beta.2 (unreleased)
 
+* Add CDN information about image resources
 * Fix typo in Landing examples JS
 * Add fixed backgrounds to Landing examples
 

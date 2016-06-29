@@ -22,7 +22,9 @@ notes here. Get in touch or send a pull request with your changes.
 If you're just looking to include a release version of the JCU Web Framework
 in your app or pages, use our Content Distribution Network (CDN)-hosted
 resources and avoid needing to download anything.  This approach involves
-placing suitable HTML tags into your page and that's it.
+placing suitable HTML tags into your page and that's it.  If you want to use
+resources like images and logos from the CDN, you can do that as well just by
+linking to appropriate resource.
 
 <a class="btn btn-outline-primary" href="{{ site.baseurl
 }}/jcu/download/#cdn-hosted-resources">Learn how to use our CDN</a>

@@ -39,6 +39,7 @@ expo:             http://expo.getbootstrap.com
 themes:           http://themes.getbootstrap.com
 
 cdn:
+  base:            https://cdn.web.jcu.io/1.0.0-beta.1
   # See https://www.srihash.org for info on how to generate the hashes
   css:            https://cdn.web.jcu.io/1.0.0-beta.1/css/jcu.min.css
   css_hash:       "sha384-yvalFRKl+0g0tWrYJQwXPaf4oRFo9hOu7BssvfScVX9wdvvA+NjYtnAFm3sqP7LF"

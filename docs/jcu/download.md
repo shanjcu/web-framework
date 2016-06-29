@@ -17,6 +17,8 @@ on the type of application being themed.
 You can utilise our Content Distribution Network (CDN)-hosted resources to
 style your web application or site and avoid needing to download anything.
 
+### CSS & JS
+
 {% highlight html %}
   <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
   <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
@@ -34,6 +36,19 @@ them, you can also load these using CDN as well, via the following:
   <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
   <script src="{{ site.cdn.tether }}" integrity="{{ site.cdn.tether_hash }}" crossorigin="anonymous"></script>
 {% endhighlight %}
+
+### Images and other resources
+
+It is also possible to reference any of the images or other content located on
+the CDN as well, like so:
+
+{% example html %}
+<img src="{{ site.cdn.base}}/images/jcua-logo-campus-stack-full-colour.svg">
+{% endexample %}
+
+Relative paths refer to the content located in the `dist/` directory. You can
+determine the path to content on the CDN by viewing
+<{{ site.repo }}/tree/master/dist>.
 
 ## Release packages
 
