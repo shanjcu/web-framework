@@ -1103,7 +1103,11 @@ on the type of application being themed.</p>
 
 <ul id="markdown-toc">
   <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#cdn-hosted-resources" id="markdown-toc-cdn-hosted-resources">CDN-hosted resources</a></li>
+  <li><a href="#cdn-hosted-resources" id="markdown-toc-cdn-hosted-resources">CDN-hosted resources</a>    <ul>
+      <li><a href="#css--js" id="markdown-toc-css--js">CSS &amp; JS</a></li>
+      <li><a href="#images-and-other-resources" id="markdown-toc-images-and-other-resources">Images and other resources</a></li>
+    </ul>
+  </li>
   <li><a href="#release-packages" id="markdown-toc-release-packages">Release packages</a></li>
   <li><a href="#from-git" id="markdown-toc-from-git">From Git</a>    <ul>
       <li><a href="#releases-from-git" id="markdown-toc-releases-from-git">Releases from Git</a></li>
@@ -1116,6 +1120,8 @@ on the type of application being themed.</p>
 
 <p>You can utilise our Content Distribution Network (CDN)-hosted resources to
 style your web application or site and avoid needing to download anything.</p>
+
+<h3 id="css--js">CSS &amp; JS</h3>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.web.jcu.io/1.0.0-beta.1/css/jcu.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-yvalFRKl+0g0tWrYJQwXPaf4oRFo9hOu7BssvfScVX9wdvvA+NjYtnAFm3sqP7LF"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.web.jcu.io/1.0.0-beta.1/js/jcu.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-GXpe6UW5FXR+By2fTo2YeI+yVoY1QGkZdZpppWl3qboYFMqHL7zFEq+X6hRoB1gH"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
@@ -1130,6 +1136,20 @@ them, you can also load these using CDN as well, via the following:</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-MWq1Lnqj72tmjGdOKuNBn3E0gj3vWfy/1EmR5TVL8d8nGvwgy32YkCpKpTUhwBVv"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<h3 id="images-and-other-resources">Images and other resources</h3>
+
+<p>It is also possible to reference any of the images or other content located on
+the CDN as well, like so:</p>
+
+<div class="bd-example" data-example-id="">
+<img src="https://cdn.web.jcu.io/1.0.0-beta.1/images/jcua-logo-campus-stack-full-colour.svg" />
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://cdn.web.jcu.io/1.0.0-beta.1/images/jcua-logo-campus-stack-full-colour.svg"</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>Relative paths refer to the content located in the <code class="highlighter-rouge">dist/</code> directory. You can
+determine the path to content on the CDN by viewing
+<a href="https://github.com/jcu/web-framework/tree/master/dist">https://github.com/jcu/web-framework/tree/master/dist</a>.</p>
 
 <h2 id="release-packages">Release packages</h2>
 
