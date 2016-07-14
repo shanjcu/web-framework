@@ -128,6 +128,10 @@ a {
   background-attachment: fixed;
 }
 
+.layout-content .intro {
+  background-attachment: scroll;
+}
+
 .intro-body {
   display: table-cell;
   padding-top: 20vh;
@@ -141,7 +145,7 @@ a {
   }
 }
 
-.landing-page .intro {
+.layout-landing .intro {
   margin-bottom: 3rem;
 }
 
@@ -154,12 +158,12 @@ a {
     padding: 0;
   }
 
-  .landing-page .intro {
+  .layout-landing .intro {
     height: 100%;
     margin-bottom: 5rem;
   }
 
-  .landing-page .intro-body {
+  .layout-landing .intro-body {
     padding-top: 40vh;
   }
 
@@ -245,6 +249,32 @@ a {
 .discover-section > .container-fluid {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.key-steps {
+  counter-reset: step-counter;
+  margin-left: 3.5rem;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.key-step {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.key-steps .key-step::before {
+  content: counter(step-counter, decimal);
+  counter-increment: step-counter;
+  position: absolute;
+  left: -1.2em;
+  font-size: 5em;
+  font-weight: 500;
+  line-height: 0.4;
+  width: 1em;
+  text-align: right;
+  top: 0.5rem;
 }
 
 .canvas-map {
