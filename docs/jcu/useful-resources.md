@@ -20,6 +20,8 @@ welcome.
 * [Animate.css](https://daneden.github.io/animate.css/) - CSS3 effects
 * [TextInputEffects](http://tympanus.net/Development/TextInputEffects/) - text
   input interactions
+* [CSS Loading Spinners](http://stephanwagner.me/only-css-loading-spinner) - lightweight
+  pure-CSS animations for loading spinners
 
 ## Guides and tutorials
 
