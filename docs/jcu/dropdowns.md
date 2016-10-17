@@ -18,7 +18,7 @@ These are minor customisations that can be applied to Bootstrap's
 
 [YAMM (Yet Another Megamenu)](https://github.com/geedmo/yamm3) for Bootstrap is
 a small add-on to the Bootstrap framework that adds the ability to use the
-standard grid layout without dropdown menus.
+standard grid layout within dropdown menus.
 
 For the most up-to-date examples, consult the [official YAMM
 documentation](https://geedmo.github.io/yamm3/).
