@@ -71,4 +71,4 @@ Your application is probably more complex, but the fundamentals remain
 the same: you need to serve the framework's assets (CSS, JavaScript, images,
 fonts) and add these to your pages.
 
-<a class="btn btn-outline-primary" href="{{ site.baseurl }}/application-theming">Learn about application theming</a>
+<a class="btn btn-outline-primary" href="{{ site.baseurl }}/jcu/application-theming">Learn about application theming</a>
