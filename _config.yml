@@ -11,7 +11,7 @@ permalink:        pretty
 # Server
 source:           docs
 destination:      _gh_pages
-host:             0.0.0.0
+host:             10.139.47.132
 port:             9001
 baseurl:          ""
 url:              https://web.jcu.io

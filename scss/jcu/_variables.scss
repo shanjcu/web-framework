@@ -120,9 +120,9 @@ $jcu-dropdown-text-color:        #fff !default;
 // Warning: avoid customising these values. They extend upon Bootstrap's
 // defaults and are designed to all work together.
 $jcu-zindex-base:                990 !default;
-$jcu-zindex-exposition:          -1000 !default;
+
 $jcu-zindex-page-title:          1010 !default;
-$jcu-zindex-explorer:            1020 !default;
+
 
 // Navbar
 $navbar-dark-color:              rgba(255,255,255,.8) !default;
@@ -139,12 +139,7 @@ $nav-tabs-active-link-hover-color:        #fff !default;
 $nav-tabs-active-link-hover-bg:           $brand-primary !default;
 $nav-tabs-active-link-hover-border-color: $brand-primary !default;
 
-// Cards
-// Reference: .uber-accordion
-$card-cap-bg:                    $gray-dark !default;
-$jcu-card-cap-color:             #fff !default;
-$jcu-card-overlay-font-color:    #fff !default;
-$jcu-card-overlay-min-height:    6rem !default;
+
 
 // Modals
 $jcu-modal-header-color:         #fff !default;
@@ -162,11 +157,7 @@ $breadcrumb-active-color:        $gray !default;
 // Transitions
 $jcu-fade-transition-speed:      .3s !default;
 
-// Themes
-$jcu-typography-themes:          ('blue':   (#00adef, #0d5589, #264ca3),
-                                  'orange': (#f79212, #a64819, #f04338),
-                                  'green':  (#98d321, #408224, #23aa4a),
-                                  'red':    (#ed1a4e, #dd0000, #8e191e)) !default;
+
 
 // Iconography
 $jcu-icon-font-family:           'webhostinghub-glyphs' !default;
@@ -180,23 +171,15 @@ $jcu-campus-stack-default:       $gray-dark !default;
 $jcu-campus-stack-color:         #176fc1 !default; // Colour matches the JCU shield
 $jcu-campus-stack-inverse:       $jcu-brand-primary-inverse !default;
 
-// Toolbar
-$jcu-toolbar-font-size:          .85rem !default; //Replicate $font-size-sm
-$jcu-toolbar-line-height:        1.1 !default;
-$jcu-toolbar-line-height-sm:     2.2 !default;
 
-// Exposition
-$jcu-exposition-background:      #000 !default;
-$jcu-exposition-max-height:      50rem !default;
+
+
 
 // Header
 $jcu-header-height:              17rem !default;
 $jcu-header-height-sm:           14rem !default;
 
-// Explorer
-$jcu-explorer-color:             $jcu-brand-primary-inverse !default;
-$jcu-explorer-active-color:      $brand-primary !default;
-$jcu-explorer-content-color:     $body-color !default;
+
 
 // Content
 $jcu-content-bg-color:           #fff !default;

@@ -238,8 +238,8 @@ a {
 .discover-section {
   background-color: #000;
   background-image: url(../img/CM1B7786-bush-sky.jpg);
-  background-position: bottom;
   background-attachment: fixed;
+  background-position: bottom;
 }
 
 .discover-section > .container-fluid {
