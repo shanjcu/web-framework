@@ -1,8 +1,7 @@
 {
-  "name": "jcu",
-  "description": "The HTML, CSS, and JS framework for building responsive, mobile-first web projects with University styling",
-  "version": "1.0.0-beta.1",
-  "private": true,
+  "name": "bootstrap",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "version": "4.0.0-beta.2",
   "keywords": [
     "css",
     "sass",
@@ -12,93 +11,195 @@
     "framework",
     "web"
   ],
-  "homepage": "https://web.jcu.io",
-  "author": "James Cook University",
+  "homepage": "https://getbootstrap.com",
+  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
+  "contributors": [
+    "Twitter, Inc."
+  ],
   "scripts": {
-    "change-version": "node grunt/change-version.js",
-    "test": "grunt test"
+    "bundlesize": "bundlesize",
+    "css": "npm-run-all --parallel css-lint* css-compile* --sequential css-prefix* css-minify*",
+    "css-main": "npm-run-all --parallel css-lint css-compile --sequential css-prefix css-minify",
+    "css-docs": "npm-run-all --parallel css-lint-docs css-compile-docs --sequential css-prefix-docs css-minify-docs",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap.scss dist/css/bootstrap.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-grid.scss dist/css/bootstrap-grid.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-reboot.scss dist/css/bootstrap-reboot.css",
+    "css-compile-docs": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 assets/scss/docs.scss assets/css/docs.min.css",
+    "css-lint": "stylelint --config build/.stylelintrc --syntax scss \"scss/**/*.scss\"",
+    "css-lint-docs": "stylelint --config build/.stylelintrc --syntax scss \"assets/scss/*.scss\" && stylelint --config docs/4.0/examples/.stylelintrc \"docs/**/*.css\"",
+    "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\"",
+    "css-prefix-docs": "postcss --config build/postcss.config.js --replace \"assets/css/docs.min.css\" \"docs/**/*.css\"",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap.min.css dist/css/bootstrap.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-grid.min.css dist/css/bootstrap-grid.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/bootstrap-reboot.min.css dist/css/bootstrap-reboot.css",
+    "css-minify-docs": "cleancss --level 1 --source-map --source-map-inline-sources --output assets/css/docs.min.css assets/css/docs.min.css",
+    "js": "npm-run-all js-lint* js-compile js-minify",
+    "js-main": "npm-run-all js-lint js-compile js-minify",
+    "js-docs": "npm-run-all js-lint-docs js-minify-docs",
+    "js-lint": "eslint js/ && eslint --config js/tests/.eslintrc.json --env node build/",
+    "js-lint-docs": "eslint --config js/tests/.eslintrc.json assets/js/ docs/ sw.js",
+    "js-compile": "npm-run-all --parallel js-compile-*",
+    "js-compile-standalone": "rollup --environment BUNDLE:false --config build/rollup.config.js --sourcemap",
+    "js-compile-bundle": "rollup --environment BUNDLE:true --config build/rollup.config.js --sourcemap",
+    "js-compile-plugins": "cross-env PLUGINS=true babel js/src/ --out-dir js/dist/ --source-maps",
+    "js-minify": "npm-run-all --parallel js-minify-*",
+    "js-minify-standalone": "uglifyjs --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.js.map,includeSources,url=bootstrap.min.js.map\" --output dist/js/bootstrap.min.js dist/js/bootstrap.js",
+    "js-minify-bundle": "uglifyjs --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.bundle.js.map,includeSources,url=bootstrap.bundle.min.js.map\" --output dist/js/bootstrap.bundle.min.js dist/js/bootstrap.bundle.js",
+    "js-minify-docs": "uglifyjs --mangle --comments \"/^!/\" --output assets/js/docs.min.js assets/js/vendor/anchor.min.js assets/js/vendor/clipboard.min.js assets/js/vendor/holder.min.js assets/js/src/application.js assets/js/src/pwa.js",
+    "js-test": "phantomjs ./node_modules/qunit-phantomjs-runner/runner.js js/tests/index.html 60",
+    "js-test-cloud": "ruby -r webrick -e \"s = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd, :Logger => WEBrick::Log.new('/dev/null'), :AccessLog => []); trap('INT') { s.shutdown }; s.start\" & node build/saucelabs-unit-test.js",
+    "docs": "npm-run-all --parallel css-docs js-docs --sequential docs-compile docs-lint",
+    "docs-compile": "bundle exec jekyll build",
+    "postdocs-compile": "npm run docs-workbox-precache",
+    "docs-github": "shx echo \"github: true\" > twbsconfig.yml && npm run docs-compile -- --config _config.yml,twbsconfig.yml && shx rm ./twbsconfig.yml",
+    "docs-lint": "npm-run-all docs-lint-*",
+    "docs-lint-htmllint": "htmllint --rc build/.htmllintrc \"_gh_pages/**/*.html\" \"js/tests/**/*.html\"",
+    "docs-lint-vnu-jar": "node build/vnu-jar.js",
+    "docs-serve": "bundle exec jekyll serve",
+    "docs-upload-preview": "build/upload-preview.sh",
+    "docs-workbox-precache": "node build/workbox.js",
+    "maintenance-dependencies": "ncu -a -x jquery && npm update && bundle update && shx echo 'Manually update assets/js/vendor/*, js/tests/vendor/* and .travis.yml'",
+    "release-version": "node build/change-version.js",
+    "release-zip": "cd dist/ && zip -r9 bootstrap-$npm_package_version-dist.zip * && shx mv bootstrap-$npm_package_version-dist.zip ..",
+    "dist": "npm-run-all --parallel css js",
+    "test": "npm-run-all dist js-test docs-compile docs-lint bundlesize",
+    "watch": "npm-run-all --parallel watch-css watch-js",
+    "watch-css": "nodemon --ignore js/ --ignore dist/ -e scss -x \"npm run css\"",
+    "watch-js": "nodemon --ignore scss/ --ignore js/dist/ --ignore dist/ -e js -x \"npm run js-compile\""
   },
   "style": "dist/css/bootstrap.css",
   "sass": "scss/bootstrap.scss",
-  "main": "./dist/js/npm",
+  "main": "dist/js/bootstrap",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jcu/web-framework.git"
+    "url": "git+https://github.com/twbs/bootstrap.git"
   },
   "bugs": {
     "url": "https://github.com/jcu/web-framework/issues"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {
+    "jquery": "1.9.1 - 3",
+    "popper.js": "^1.12.6"
+  },
   "devDependencies": {
-    "autoprefixer": "^6.0.3",
-    "babel-eslint": "^4.1.3",
-    "btoa": "~1.1.2",
-    "glob": "~6.0.1",
-    "grunt": "~0.4.5",
-    "grunt-babel": "^5.0.3",
-    "grunt-build-control": "~0.6.0",
-    "grunt-contrib-clean": "~0.7.0",
-    "grunt-contrib-compress": "~0.14.0",
-    "grunt-contrib-concat": "~0.5.1",
-    "grunt-contrib-connect": "~0.11.2",
-    "grunt-contrib-copy": "~0.8.1",
-    "grunt-contrib-cssmin": "~0.14.0",
-    "grunt-contrib-qunit": "~0.7.0",
-    "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-uglify": "~0.11.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-csscomb": "~3.1.0",
-    "grunt-eslint": "^17.1.0",
-    "grunt-exec": "~0.4.6",
-    "grunt-html": "~5.0.0",
-    "grunt-image": "^1.2.1",
-    "grunt-jekyll": "~0.4.2",
-    "grunt-jscs": "~2.5.0",
-    "grunt-line-remover": "0.0.2",
-    "grunt-postcss": "^0.7.0",
-    "grunt-rsync": "^1.0.1",
-    "grunt-sass": "^1.0.0",
-    "grunt-saucelabs": "~8.6.1",
-    "grunt-scss-lint": "^0.3.8",
-    "grunt-stamp": "^0.1.0",
-    "is-travis": "^1.0.0",
-    "load-grunt-tasks": "~3.4.0",
-    "markdown-it": "^5.0.0",
-    "mq4-hover-shim": "^0.3.0",
-    "npm-shrinkwrap": "^200.1.0",
-    "shelljs": "^0.5.3",
-    "time-grunt": "^1.2.1"
+    "@babel/cli": "7.0.0-beta.31",
+    "@babel/core": "7.0.0-beta.31",
+    "@babel/preset-env": "7.0.0-beta.31",
+    "autoprefixer": "^7.1.2",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
+    "bundlesize": "^0.15.2",
+    "clean-css-cli": "^4.1.6",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.2.0",
+    "eslint-plugin-compat": "^2.0.1",
+    "htmllint-cli": "^0.0.6",
+    "jsunitsaucelabs": "^1.2.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "phantomjs-prebuilt": "^2.1.14",
+    "popper.js": "^1.12.6",
+    "postcss-cli": "^4.1.0",
+    "qunit-phantomjs-runner": "^2.3.0",
+    "qunitjs": "^2.4.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "4.0.0-beta.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "shelljs": "^0.7.8",
+    "shx": "^0.2.2",
+    "stylelint": "^8.1.1",
+    "stylelint-config-recommended-scss": "^2.0.0",
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-order": "^0.7.0",
+    "stylelint-scss": "^2.1.0",
+    "uglify-js": "^3.0.24",
+    "vnu-jar": "^17.11.1",
+    "workbox-build": "^2.0.1"
   },
   "engines": {
-    "node": ">=0.10.1"
+    "node": ">=6"
   },
   "files": [
+    ".babelrc",
+    ".eslintignore",
+    "Gemfile",
     "dist",
-    "grunt/*.js",
-    "grunt/*.json",
-    "js/*.js",
-    "scss/**/*.scss",
-    "Gruntfile.js",
-    "LICENSE"
+    "build",
+    "js/.eslintrc.json",
+    "js/**/*.js",
+    "js/**/*.js.map",
+    "scss/**/*.scss"
+  ],
+  "browserslist": [
+    "Chrome >= 45",
+    "Firefox ESR",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ],
+  "bundlesize": [
+    {
+      "path": "./dist/css/bootstrap-grid.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-grid.min.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-reboot.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap-reboot.min.css",
+      "maxSize": "5 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap.css",
+      "maxSize": "25 kB"
+    },
+    {
+      "path": "./dist/css/bootstrap.min.css",
+      "maxSize": "20 kB"
+    },
+    {
+      "path": "./dist/js/bootstrap.bundle.js",
+      "maxSize": "45 kB"
+    },
+    {
+      "path": "./dist/js/bootstrap.bundle.min.js",
+      "maxSize": "25 kB"
+    },
+    {
+      "path": "./dist/js/bootstrap.js",
+      "maxSize": "20 kB"
+    },
+    {
+      "path": "./dist/js/bootstrap.min.js",
+      "maxSize": "15 kB"
+    }
   ],
   "jspm": {
+    "registry": "npm",
     "main": "js/bootstrap",
-    "ignore": [
-      "dist/js/npm"
-    ],
     "directories": {
       "lib": "dist"
     },
     "shim": {
       "js/bootstrap": {
         "deps": [
-          "jquery"
+          "jquery",
+          "popper.js"
         ],
         "exports": "$"
       }
     },
-    "dependencies": {
-      "jquery": "*"
+    "dependencies": {},
+    "peerDependencies": {
+      "jquery": "^3.0.0",
+      "popper.js": "^1.12.6"
     }
   }
 }
