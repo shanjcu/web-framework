@@ -44,3 +44,7 @@ twbsconfig.yml
 
 # Folders to ignore
 node_modules
+
+dist/
+docs/dist/
+
