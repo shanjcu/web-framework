@@ -4,21 +4,21 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 
-//
+// 
 // Color system
 //
 
 // stylelint-disable
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-100: #fafafa !default;
+$gray-200: #f5f5f5 !default;
+$gray-300: #e0e0e0 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-700: #424242 !default;
+$gray-800: #303030 !default;
+$gray-900: #212121 !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -34,16 +34,24 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #007bff !default;
+$blue:    #0066cc !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #f40057 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$yellow:  #ffc400 !default;
+$green:   #aeea00 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+$blue-light: #5c93ff !default;
+$blue-dark: #003d9a !default;
+$yellow-light: #fff64f !default;
+$yellow-dark: #c79400 !default;
+$secondary-light-red: #ff5983 !default;
+$secondary-dark-red: #ba002f !default;
+$secondary-light-green: #e3ff54 !default;
+$secondary-dark-green: #79b700 !default;
 
 $colors: () !default;
 $colors: map-merge((
@@ -59,17 +67,33 @@ $colors: map-merge((
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  "blue-light": $blue-light,
+  "blue-dark": $blue-dark,
+  "yellow-light": $yellow-light,
+  "yellow-dark": $yellow-dark,
+  "G-50": $gray-100,
+  "G-100": $gray-200,
+  "G-300": $gray-300,
+  "G-800": $gray-700,
+  "G-900": $gray-900,
+  "secondary-light-red": $secondary-light-red,
+  "secondary-dark-red": $secondary-dark-red,
+  "secondary-light-green": $secondary-light-green,
+  "secondary-dark-green": $secondary-dark-green
 ), $colors);
 
+
+
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     $yellow !default;
 $success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
+$info:          $yellow-dark !default;
+$warning:       $yellow-light !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$light:         $blue-light !default;
+$dark:          $blue-dark !default;
+      
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -201,9 +225,9 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-200 !default;
 
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-sm:            .2rem !default;
+$border-radius:               .15rem !default;
+$border-radius-lg:            .15rem !default;
+$border-radius-sm:            .15rem !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;
@@ -244,7 +268,7 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:        inherit !default;
+$headings-font-family: "Lora", "georgia", "Times New Roman", "times", serif !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
