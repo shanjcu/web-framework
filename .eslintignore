@@ -1,3 +1,9 @@
 **/*.min.js
 **/vendor/*
 **/dist/*
+
+#paths below ignoring eslint erros so that bootstrap can be built
+
+docs/examples/jcu-landing/js/jquery.appear.js
+docs/examples/jcu-landing/js/jquery.countTo.js
+docs/examples/jcu-landing/js/landing.js
