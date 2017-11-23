@@ -43,7 +43,7 @@
     &::after {
       position: absolute;
       right: $font-size-base;
-      font-family: "WebHostingHub-Glyphs";
+      font-family: WebHostingHub-Glyphs;
       // Calculate line-height for icon font to be even with ::before text
       line-height: $line-height + .25;
       content: "\e39c";

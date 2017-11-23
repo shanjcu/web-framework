@@ -17,7 +17,7 @@ on the type of application being themed.
 You can utilise our Content Distribution Network (CDN)-hosted resources to
 style your web application or site and avoid needing to download anything.
 
-### CSS & JS
+### CSS and JS
 
 {% highlight html %}
   <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
@@ -43,7 +43,7 @@ It is also possible to reference any of the images or other content located on
 the CDN as well, like so:
 
 {% example html %}
-<img src="{{ site.cdn.base}}/images/jcua-logo-campus-stack-full-colour.svg">
+<img src="{{ site.cdn.base}}/images/jcua-logo-campus-stack-full-colour.svg" alt="JCU Australia logo">
 {% endexample %}
 
 Relative paths refer to the content located in the `dist/` directory. You can

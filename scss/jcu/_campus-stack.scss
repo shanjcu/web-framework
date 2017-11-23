@@ -3,9 +3,8 @@
 //
 @mixin jcu-campus-stack($color) {
   li {
-    border-color: $color;
     color: $color;
-
+    border-color: $color;
     &:first-child {
       border-top: $jcu-campus-stack-border-width solid $color;
     }

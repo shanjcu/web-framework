@@ -14,7 +14,7 @@ a {
 
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255,255,255,.3);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
 .navbar-custom .navbar-toggler {
@@ -34,7 +34,7 @@ a {
   transition: .3s ease-in-out;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .navbar-brand .brand-img {
     position: relative;
     top: -.6rem;
@@ -59,7 +59,7 @@ a {
 }
 
 .navbar-toggleable.in {
-  background: rgba(0,0,0,.9);
+  background: rgba(0, 0, 0, .9);
 }
 
 .nav-link.btn {
@@ -76,8 +76,8 @@ a {
 .navbar-custom .navbar-nav .nav-link:hover,
 .navbar-custom .navbar-nav .nav-link:focus,
 .navbar-custom .navbar-nav .nav-link:active {
-  color: rgba(255,255,255,.8);
-  background-color: rgba(0,0,0,.4);
+  color: rgba(255, 255, 255, .8);
+  background-color: rgba(0, 0, 0, .4);
 }
 
 .navbar-collapsed .navbar-nav .nav-link:hover,
@@ -87,7 +87,7 @@ a {
 }
 
 .navbar-custom .navbar-nav .active .nav-link {
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255, 255, 255, .3);
 }
 
 .navbar-custom .navbar-nav .active .nav-link:hover {
@@ -97,16 +97,16 @@ a {
 .navbar-custom,
 .navbar-custom.navbar-collapsed {
   padding: 0;
-  background-color: rgba(0,0,0,.9);
-  border-bottom: 1px solid rgba(255,255,255,.3);
+  background-color: rgba(0, 0, 0, .9);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .navbar-custom {
     padding: 1.5rem 0;
     background-color: transparent;
     border-bottom: 0;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
   }
 }
 
@@ -116,7 +116,7 @@ a {
   height: auto;
   color: #fff;
   background-color: #000;
-  background-image: url(../img/A21W1282-cattle-muster.jpg);
+  background-image: url("../img/A21W1282-cattle-muster.jpg");
   background-attachment: fixed;
 }
 
@@ -124,10 +124,10 @@ a {
   display: table-cell;
   padding-top: 20vh;
   vertical-align: middle;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0, 0, 0, .4);
 }
 
-@media(max-height:512px) {
+@media (max-height: 512px) {
   .intro-body {
     padding-top: 7rem;
   }
@@ -141,7 +141,7 @@ a {
   font-weight: 400;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .intro {
     padding: 0;
   }
@@ -160,6 +160,7 @@ a {
   }
 }
 
+/* stylelint-disable declaration-no-important */
 .btn-circle {
   width: 5rem;
   height: 5rem;
@@ -173,15 +174,16 @@ a {
   border-radius: 100% !important;
   transition: background .3s ease-in-out;
 }
+/* stylelint-enable */
 
 .btn-circle:hover,
 .btn-circle:focus {
   color: #fff;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .text-inverse hr {
-  border-top-color: rgba(255,255,255,.4);
+  border-top-color: rgba(255, 255, 255, .4);
 }
 
 .content-section {
@@ -189,7 +191,7 @@ a {
   overflow: hidden;
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
   .content-section {
     margin-bottom: 5rem;
   }
@@ -206,7 +208,7 @@ a {
   font-weight: 600;
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
   .explore-section .card-title {
     font-size: 1.7rem;
   }
@@ -227,7 +229,7 @@ a {
 
 .discover-section {
   background-color: #000;
-  background-image: url(../img/CM1B7786-bush-sky.jpg);
+  background-image: url("../img/CM1B7786-bush-sky.jpg");
   background-attachment: fixed;
   background-position: bottom;
 }
@@ -246,10 +248,10 @@ a {
 }
 
 .location-callout .btn {
-  box-shadow: 0 0 .5rem rgba(255,255,255,.2);
+  box-shadow: 0 0 .5rem rgba(255, 255, 255, .2);
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
   .map-section {
     position: relative;
     padding: 5rem;
@@ -265,10 +267,12 @@ a {
     height: 50rem;
   }
 
+  /* stylelint-disable declaration-no-important */
   .canvas-map[style] {
     /* Avoid position bug on resize, Maps adds inline position:relative */
     position: absolute !important;
   }
+  /* stylelint-enable */
 
   .location-callout {
     padding-right: 0;
@@ -289,7 +293,7 @@ a {
   margin-bottom: 1rem;
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
   .research-classrooms .col-sm-4 {
     padding-right: 3rem;
     padding-left: 3rem;
@@ -315,7 +319,7 @@ a {
   padding-left: .5rem;
   font-size: .95rem;
   line-height: 1;
-  border-left: 1px solid rgba(0,102,204,.3);
+  border-left: 1px solid rgba(0, 102, 204, .3);
 }
 
 /* Footer */

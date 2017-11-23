@@ -1,9 +1,11 @@
 //
 // Fixes: resolve SVG scaling issue on IE 9-10 and Edge
 //
-.img-fluid[src$=".svg"] { width: 100%\9;  }
-_:-ms-fullscreen, :root .img-fluid[src$=".svg"] { width: 100%;  }
-
+.img-fluid[src$=".svg"] { width: 100%\9; }
+//stylelint-disable selector-no-id, selector-type-no-unknown, selector-no-vendor-prefix
+_:-ms-fullscreen,
+:root .img-fluid[src$=".svg"] { width: 100%; }
+//stylelint-enable
 //
 // Opacity
 //
@@ -15,10 +17,6 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"] { width: 100%;  }
   opacity: 0;
 }
 
-//
-// Borders: utilities like Bootstrap's spacing (eg m-a-0)
-//
-.b-a-0 { border: 0 none !important; }
 
 //
 // Background: utilities for specifying backgrounds
@@ -32,9 +30,10 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"] { width: 100%;  }
     $color: #000;
     $text-shadow-color: #fff;
   }
-  background-color: $background-color;
   color: $color;
   text-shadow: $text-shadow-color 0 0 .5em;
+  background-color: $background-color;
+
 }
 
 .jcu-overlay--inverse {
@@ -47,8 +46,8 @@ _:-ms-fullscreen, :root .img-fluid[src$=".svg"] { width: 100%;  }
 }
 
 .jcu-bg-cover {
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 @each $name, $color in $jcu-bg-colors {

@@ -9,10 +9,11 @@
   @media print {
     a:link::after,
     a:visited::after {
-      content: " (" attr(href) ") ";
       font-size: 90%;
+      content: " (" attr(href) ") ";
     }
 
+    //stylelint-disable-next-line selector-no-qualifying-type 
     a[href^="/"]::after {
       content: " (#{$jcu-content-link-print-prefix}" attr(href) ") ";
     }

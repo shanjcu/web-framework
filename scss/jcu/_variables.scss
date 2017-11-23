@@ -29,7 +29,7 @@ $gray-800: #303030 !default;
 $gray-900: #212121 !default;
 
 //Primary Colour:
-$blue:    #0066cc !default;
+$blue:    #06c !default;
 $blue-light: #5c93ff !default;
 $blue-dark: #003d9a !default;
 
@@ -60,8 +60,10 @@ $border-radius-lg:            .15rem !default;
 $border-radius-sm:            .15rem !default;
 
 //Bootstrap Fonts
+//stylelint-disable selector-no-id, value-keyword-case
 $font-family-sans-serif: "Source Sans Pro",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $headings-font-family: "Lora", "georgia", "Times New Roman", "times", serif !default;
+//stylelint-enable
 
 // Colors
 //
@@ -77,10 +79,10 @@ $brand-primary:                  #06c !default;    // From top-level search and 
 $brand-success:                  #429306 !default; // Courses page
 
 $jcu-brand-primary-inverse:      #fff !default;
-$jcu-gradient-blue:              rgb(46,49,146), rgb(0,190,228) !default;
-$jcu-gradient-orange:            rgb(233,79,53), rgb(255,221,0) !default;
-$jcu-gradient-green:             rgb(0,166,81), rgb(214,224,64) !default;
-$jcu-gradient-red:               rgb(157,22,25), rgb(236,0,140) !default;
+$jcu-gradient-blue:              rgb(46, 49, 146), rgb(0, 190, 228) !default;
+$jcu-gradient-orange:            rgb(233, 79, 53), rgb(255, 221, 0) !default;
+$jcu-gradient-green:             rgb(0, 166, 81), rgb(214, 224, 64) !default;
+$jcu-gradient-red:               rgb(157, 22, 25), rgb(236, 0, 140) !default;
 
 // Options
 //
@@ -126,7 +128,7 @@ $grid-gutter-width:              1.25rem !default;
 // Most were not defined in original Squiz theme; approximately equal to
 // defaults from Firefox
 
-$font-family-sans-serif:         'Open Sans', sans-serif !default;
+$font-family-sans-serif:         "Open Sans", sans-serif !default;
 
 $font-size-root:                 16px !default;
 $font-size-h1:                   1.9rem !default;
@@ -169,9 +171,9 @@ $jcu-zindex-page-title:          1010 !default;
 
 
 // Navbar
-$navbar-dark-color:              rgba(255,255,255,.8) !default;
-$navbar-dark-hover-color:        rgba(255,255,255,.6) !default;
-$navbar-dark-active-color:       rgba(255,255,255,1) !default;
+$navbar-dark-color:              rgba(255, 255, 255, .8) !default;
+$navbar-dark-hover-color:        rgba(255, 255, 255, .6) !default;
+$navbar-dark-active-color:       rgba(255, 255, 255, 1) !default;
 $navbar-inverse-color:           $gray-dark !default;
 $navbar-inverse-toggle-hover-bg: $gray !default;
 $navbar-inverse-link-active-bg:  $gray !default;
@@ -182,7 +184,6 @@ $jcu-navbar-nav-link-padding:    .5rem !default;
 $nav-tabs-active-link-hover-color:        #fff !default;
 $nav-tabs-active-link-hover-bg:           $brand-primary !default;
 $nav-tabs-active-link-hover-border-color: $brand-primary !default;
-
 
 
 // Modals
@@ -202,12 +203,6 @@ $breadcrumb-active-color:        $gray !default;
 $jcu-fade-transition-speed:      .3s !default;
 
 
-
-// Iconography
-$jcu-icon-font-family:           'webhostinghub-glyphs' !default;
-$jcu-icon-font-size:             1.5rem !default;
-$jcu-icon-font-size-lg:          2rem !default;
-
 // Campus Stack
 $jcu-campus-stack-border-width:  1px !default;
 $jcu-campus-stack-spacing:       .25em !default;
@@ -216,18 +211,14 @@ $jcu-campus-stack-color:         #176fc1 !default; // Colour matches the JCU shi
 $jcu-campus-stack-inverse:       $jcu-brand-primary-inverse !default;
 
 
-
-
-
 // Header
 $jcu-header-height:              17rem !default;
 $jcu-header-height-sm:           14rem !default;
 
 
-
 // Content
 $jcu-content-bg-color:           #fff !default;
-$jcu-content-link-print-prefix:  'https://www.jcu.edu.au' !default;
+$jcu-content-link-print-prefix:  "https://www.jcu.edu.au" !default;
 
 // Footer
 $jcu-footer-text-color:          $body-color !default;
@@ -238,68 +229,68 @@ $jcu-footer-border:              $jcu-footer-border-width dotted $jcu-footer-bor
 // Utilities
 $jcu-bg-opacities:               (25, 50, 75, 90, 100) !default;
 $jcu-bg-colors: (
-  'pink': rgb(236, 0, 140),
-  'red': rgb(227, 31, 38),
-  'red-dark': rgb(157, 22, 27),
-  'orange': rgb(247, 147, 30),
-  'yellow': rgb(253, 185, 19),
-  'green-light': rgb(214, 224, 64),
-  'green': rgb(13, 177, 75),
-  'blue-light': rgb(0, 190, 228),
-  'blue': rgb(0, 102, 179),
-  'blue-dark': rgb(46, 49, 146),
-  'black': rgb(0, 0, 0),
-  'gray': $gray,
-  'gray-light': $gray-light,
-  'gray-lighter': $gray-lighter,
-  'white': rgb(255, 255, 255)
+  "pink": rgb(236, 0, 140),
+  "red": rgb(227, 31, 38),
+  "red-dark": rgb(157, 22, 27),
+  "orange": rgb(247, 147, 30),
+  "yellow": rgb(253, 185, 19),
+  "green-light": rgb(214, 224, 64),
+  "green": rgb(13, 177, 75),
+  "blue-light": rgb(0, 190, 228),
+  "blue": rgb(0, 102, 179),
+  "blue-dark": rgb(46, 49, 146),
+  "black": rgb(0, 0, 0),
+  "gray": $gray,
+  "gray-light": $gray-light,
+  "gray-lighter": $gray-lighter,
+  "white": rgb(255, 255, 255)
 ) !default;
 
 $jcu-bg-gradients: (
-  'gradient-blue':   $jcu-gradient-blue,
-  'gradient-orange': $jcu-gradient-orange,
-  'gradient-green':  $jcu-gradient-green,
-  'gradient-red':    $jcu-gradient-red,
+  "gradient-blue":   $jcu-gradient-blue,
+  "gradient-orange": $jcu-gradient-orange,
+  "gradient-green":  $jcu-gradient-green,
+  "gradient-red":    $jcu-gradient-red,
 ) !default;
 
 // Image paths are relative to the base SCSS file
 $jcu-bg-images: (
-  'blue-buildings': 'BlueBuildings.jpg',
-  'blue-fish': 'BlueFish.jpg',
-  'blue-globe': 'BlueGlobe.jpg',
-  'blue-molecules': 'BlueMolecules.jpg',
-  'blue-purple-fibre-optic': 'BluePurpleFibreOptic.jpg',
-  'blue-skyscraper': 'BlueSkyscraper.jpg',
-  'fossil': 'BrownFossil.jpg',
-  'brown-green-yellow-grass': 'BrownGreenYellowGrass.jpg',
-  'brown-outback-road': 'BrownOutbackRoad.jpg',
-  'didgeridoo': 'Didgeridoo.jpg',
-  'eucalyptus-flower': 'EucalyptusFlower.jpg',
-  'green-fern': 'GreenFern.jpg',
-  'green-grass': 'GreenGrass.jpg',
-  'green-leaf-swirl': 'GreenLeafSwirl.jpg',
-  'green-rainforest': 'GreenRainforest.jpg',
-  'green-outback': 'GreenOutback.jpg',
-  'green-yellow-fibre-optic': 'GreenYellowFibreOptic.jpg',
-  'iot-circuit-board': 'IOTCircuitBoard.jpg',
-  'jigsaw': 'Jigsaw.jpg',
-  'law-books': 'LawBooks.jpg',
-  'multicolor-fibre-optic': 'MultiColourFibreOptic.jpg',
-  'multicolor-fabric': 'MulticolouredFabric.jpg',
-  'orange-flower': 'OrangeFlower.jpg',
-  'pink-sunset': 'PinkSunset.jpg',
-  'pink-waterdrops': 'PinkWaterdrops.jpg',
-  'rv-james-kirby': 'RVJamesKirby.jpg',
-  'red-blood-cells': 'RedBloodCells.jpg',
-  'red-fibre-optic': 'RedFibreOptic.jpg',
-  'red-flower': 'RedFlower.jpg',
-  'red-sand': 'RedSand.jpg',
-  'silver-gears': 'SilverGears.jpg',
-  'sunset-windmill': 'SunsetWindmill.jpg',
-  'tropics-map': 'TropicsMap.jpg',
-  'turtle-and-reef': 'TurtleandReef.jpg',
-  'vet-horses': 'VetHorses.jpg',
-  'yellow-savannah': 'YellowSavannah.jpg',
-  'yellow-shell': 'YellowShell.jpg',
-  'yellow-sunflower': 'YellowSunflower.jpg',
+  "blue-buildings": "BlueBuildings.jpg",
+  "blue-fish": "BlueFish.jpg",
+  "blue-globe": "BlueGlobe.jpg",
+  "blue-molecules": "BlueMolecules.jpg",
+  "blue-purple-fibre-optic": "BluePurpleFibreOptic.jpg",
+  "blue-skyscraper": "BlueSkyscraper.jpg",
+  "fossil": "BrownFossil.jpg",
+  "brown-green-yellow-grass": "BrownGreenYellowGrass.jpg",
+  "brown-outback-road": "BrownOutbackRoad.jpg",
+  "didgeridoo": "Didgeridoo.jpg",
+  "eucalyptus-flower": "EucalyptusFlower.jpg",
+  "green-fern": "GreenFern.jpg",
+  "green-grass": "GreenGrass.jpg",
+  "green-leaf-swirl": "GreenLeafSwirl.jpg",
+  "green-rainforest": "GreenRainforest.jpg",
+  "green-outback": "GreenOutback.jpg",
+  "green-yellow-fibre-optic": "GreenYellowFibreOptic.jpg",
+  "iot-circuit-board": "IOTCircuitBoard.jpg",
+  "jigsaw": "Jigsaw.jpg",
+  "law-books": "LawBooks.jpg",
+  "multicolor-fibre-optic": "MultiColourFibreOptic.jpg",
+  "multicolor-fabric": "MulticolouredFabric.jpg",
+  "orange-flower": "OrangeFlower.jpg",
+  "pink-sunset": "PinkSunset.jpg",
+  "pink-waterdrops": "PinkWaterdrops.jpg",
+  "rv-james-kirby": "RVJamesKirby.jpg",
+  "red-blood-cells": "RedBloodCells.jpg",
+  "red-fibre-optic": "RedFibreOptic.jpg",
+  "red-flower": "RedFlower.jpg",
+  "red-sand": "RedSand.jpg",
+  "silver-gears": "SilverGears.jpg",
+  "sunset-windmill": "SunsetWindmill.jpg",
+  "tropics-map": "TropicsMap.jpg",
+  "turtle-and-reef": "TurtleandReef.jpg",
+  "vet-horses": "VetHorses.jpg",
+  "yellow-savannah": "YellowSavannah.jpg",
+  "yellow-shell": "YellowShell.jpg",
+  "yellow-sunflower": "YellowSunflower.jpg",
 ) !default;

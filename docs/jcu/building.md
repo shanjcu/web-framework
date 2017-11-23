@@ -57,7 +57,7 @@ Desktop](https://desktop.github.com/)) to help you manage the code.
    npm install
    ~~~
 
-   <a name="a11y-install"></a>Optionally, if you'd like to carry out
+   Optionally, if you'd like to carry out
    accessibility testing, install these additional tools (noting that
    administrative or `sudo` access may be required):
 
@@ -173,8 +173,8 @@ pa11y](http://cruft.io/posts/accessibility-testing-with-pa11y/).
 To test the framework's pages:
 
 1. Ensure that you've followed the instructions for [Getting
-   started](#getting-started) and that you have installed the [accessibility
-   tools](#a11y-install).
+   started](#getting-started) and that you have installed the accessibility
+   tools.
 
 1. Start a documentation server running with:
 

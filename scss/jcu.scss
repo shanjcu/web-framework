@@ -18,7 +18,6 @@ $border-width-rem: ($border-width / $font-size-root) * 1rem;
 $c-select-padding-y: .375rem;
 
 
-
 // Core CSS and layout
 @import "jcu/layout";
 @import "jcu/typography";
@@ -33,7 +32,6 @@ $c-select-padding-y: .375rem;
 // Parts of pages
 @import "jcu/campus-stack";
 @import "jcu/header";
-
 
 
 @import "jcu/content";

@@ -9,10 +9,10 @@
   // Workaround for full width container when printed
   .col-pr-12 {
     position: relative;
-    min-height: 1px;
-    padding-left: ($grid-gutter-width / 2);
-    padding-right: ($grid-gutter-width / 2);
     width: 100%;
+    min-height: 1px;
+    padding-right: ($grid-gutter-width / 2);
+    padding-left: ($grid-gutter-width / 2);
   }
 }
 
@@ -44,10 +44,12 @@
   @include flex-items(flex-end);
 }
 
+// stylelint-disable selector-no-id, declaration-no-important  
 .visible-print-flex {
   display: none !important;
 
   @media print {
     display: flex !important;
   }
+  // stylelint-enable 
 }
