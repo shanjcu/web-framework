@@ -31,11 +31,11 @@
 
 }
 
-.jcu-campus-stack--color {
+.jcu-campus-stack-color {
   @include jcu-campus-stack($jcu-campus-stack-color);
 }
 
-.jcu-campus-stack--inverse {
+.jcu-campus-stack-inverse {
   @include jcu-campus-stack($jcu-campus-stack-inverse);
 }
 

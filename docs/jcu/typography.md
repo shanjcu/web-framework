@@ -30,7 +30,7 @@ group: jcu
 ### Blocks
 
 {% example html %}
-<div class="block--dotted">
+<div class="block-dotted">
   <h3>Contact details</h3>
   <p>To RSVP, please visit <a href="http://web.jcu.io">http://web.jcu.io</a>.</p>
   <p>For further information, please contact <a href="mailto:example@jcu.edu.au">example@jcu.edu.au</a>.</p>

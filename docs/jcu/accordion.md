@@ -20,7 +20,7 @@ documentation and other types of collapsible components.
 <div class="jcu-accordion" role="tablist" aria-multiselectable="true">
   <div class="card">
     <div class="card-header" id="headingOne" role="tab">
-      <a class="jcu-accordion__toggle" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+      <a class="jcu-accordion-toggle" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
         Heading
       </a>
     </div>
@@ -32,7 +32,7 @@ documentation and other types of collapsible components.
   </div>
   <div class="card">
     <div class="card-header" id="headingTwo" role="tab">
-      <a class="jcu-accordion__toggle collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="true" aria-controls="collapseOne">
+      <a class="jcu-accordion-toggle collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="true" aria-controls="collapseOne">
         Heading2
       </a>
     </div>
@@ -44,7 +44,7 @@ documentation and other types of collapsible components.
   </div>
   <div class="card">
     <div class="card-header" id="headingThree" role="tab">
-      <a class="jcu-accordion__toggle collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="true" aria-controls="collapseThree">
+      <a class="jcu-accordion-toggle collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="true" aria-controls="collapseThree">
         Heading3
       </a>
     </div>

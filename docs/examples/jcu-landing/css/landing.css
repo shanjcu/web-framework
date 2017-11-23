@@ -319,11 +319,11 @@ a {
 }
 
 /* Footer */
-.jcu-footer__brand-img {
+.jcu-footer-brand-img {
   height: 5rem;
 }
 
-.jcu-footer__social--dark a {
+.jcu-footer-social-dark a {
   display: block;
   padding: .25em;
   margin-bottom: .5rem;
@@ -332,8 +332,8 @@ a {
   border-radius: 50%;
 }
 
-.jcu-footer__social--dark a:hover,
-.jcu-footer__social--dark a:focus {
+.jcu-footer-social-dark a:hover,
+.jcu-footer-social-dark a:focus {
   color: #000;
   background: #fff;
 }

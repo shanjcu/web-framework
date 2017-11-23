@@ -29,7 +29,7 @@ results in just a fixed-width container at different breakpoints.  This is a
 fluid container that possesses a specific maximum width.
 
 {% example html %}
-<div class="container-fluid container-fluid--max-width">
+<div class="container-fluid container-fluid-max-width">
   <p>This container is fluid, but only until the max-width limit.  You probably
   won't see any effect in this example.</p>
 </div>
@@ -51,25 +51,25 @@ the grid system:
 
 {% example html %}
 <div class="row flex-items-start">
-  <div class="col-xs-4 jcu-bg--black"><h1>Aligned</h1></div>
-  <div class="col-xs-4 jcu-bg--blue"><h3>to the</h3></div>
-  <div class="col-xs-4 jcu-bg--green"><h6>top</h6></div>
+  <div class="col-xs-4 jcu-bg-black"><h1>Aligned</h1></div>
+  <div class="col-xs-4 jcu-bg-blue"><h3>to the</h3></div>
+  <div class="col-xs-4 jcu-bg-green"><h6>top</h6></div>
 </div>
 {% endexample %}
 
 {% example html %}
 <div class="row flex-items-center">
-  <div class="col-xs-4 jcu-bg--black"><h1>Containers</h1></div>
-  <div class="col-xs-4 jcu-bg--blue"><h3>are vertically</h3></div>
-  <div class="col-xs-4 jcu-bg--green"><h6>centred</h6></div>
+  <div class="col-xs-4 jcu-bg-black"><h1>Containers</h1></div>
+  <div class="col-xs-4 jcu-bg-blue"><h3>are vertically</h3></div>
+  <div class="col-xs-4 jcu-bg-green"><h6>centred</h6></div>
 </div>
 {% endexample %}
 
 {% example html %}
 <div class="row flex-items-end">
-  <div class="col-xs-4 jcu-bg--black"><h1>Algined</h1></div>
-  <div class="col-xs-4 jcu-bg--blue"><h3>to the</h3></div>
-  <div class="col-xs-4 jcu-bg--green"><h6>bottom</h6></div>
+  <div class="col-xs-4 jcu-bg-black"><h1>Algined</h1></div>
+  <div class="col-xs-4 jcu-bg-blue"><h3>to the</h3></div>
+  <div class="col-xs-4 jcu-bg-green"><h6>bottom</h6></div>
 </div>
 {% endexample %}
 

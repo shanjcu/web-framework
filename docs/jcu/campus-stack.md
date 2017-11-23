@@ -38,7 +38,7 @@ The standard, mono-coloured stack:
 The colour stack:
 
 {% example html %}
-<ul class="jcu-campus-stack jcu-campus-stack--color">
+<ul class="jcu-campus-stack jcu-campus-stack-color">
   <li><a href="#">Cairns</a></li>
   <li><a href="#">Singapore</a></li>
   <li><a href="#">Townsville</a></li>
@@ -49,8 +49,8 @@ The colour stack:
 
 The inverted stack, for use on coloured backgrounds:
 
-<div class="bd-example jcu-bg--gradient-blue">
-  <ul class="jcu-campus-stack jcu-campus-stack--inverse">
+<div class="bd-example jcu-bg-gradient-blue">
+  <ul class="jcu-campus-stack jcu-campus-stack-inverse">
     <li><a href="#">Cairns</a></li>
     <li><a href="#">Singapore</a></li>
     <li><a href="#">Townsville</a></li>
@@ -58,7 +58,7 @@ The inverted stack, for use on coloured backgrounds:
 </div>
 
 {% highlight html %}
-<ul class="jcu-campus-stack jcu-campus-stack--inverse">
+<ul class="jcu-campus-stack jcu-campus-stack-inverse">
   <li><a href="#">Cairns</a></li>
   <li><a href="#">Singapore</a></li>
   <li><a href="#">Townsville</a></li>

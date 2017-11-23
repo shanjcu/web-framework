@@ -22,7 +22,7 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 }
 
 // Banner-style contents are vertically centred & expand on larger displays
-.jcu-header--banner {
+.jcu-header-banner {
   @include media-breakpoint-up(md) {
     padding-bottom: ($spacer-y * 3);
     padding-top: ($spacer-y * 3);
@@ -38,7 +38,7 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
   height: $jcu-header-height;
   padding-top: $spacer;
 
-  .jcu-header__page-title {
+  .jcu-header-page-title {
     position: absolute;
     top: ($jcu-header-height * .65);
     z-index: $jcu-zindex-base;
@@ -64,7 +64,7 @@ $jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm
 }
 
 // Page title has responsive font sizing
-.jcu-header__page-title {
+.jcu-header-page-title {
   margin-top: $spacer-y;
   margin-bottom: $spacer-y;
   color: #fff;

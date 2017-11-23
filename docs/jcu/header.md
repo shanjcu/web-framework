@@ -31,7 +31,7 @@ it:
 <header class="container jcu-header">
   <div class="row">
     <div class="col-xs-12">
-      <h1 class="jcu-header__page-title">ResearchOnline@JCU</h1>
+      <h1 class="jcu-header-page-title">ResearchOnline@JCU</h1>
     </div>
   </div>
 </header>
@@ -47,15 +47,15 @@ This example shows adding a background image for additional context or vibrancy
 to a given site or page.
 
 {% example html %}
-<header class="container jcu-header jcu-header--banner jcu-bg--blue-fish">
-  <div class="row jcu-bg--black-50pc">
+<header class="container jcu-header jcu-header-banner jcu-bg-blue-fish">
+  <div class="row jcu-bg-black-50pc">
     <div class="col-xs-6">
       <a class="jcu-brand" href="https://www.jcu.edu.au">
         <img class="img-fluid" src="{{ site.baseurl }}/dist/images/jcua-logo-mono-reversed.svg" alt="JCU Australia logo">
       </a>
     </div>
     <div class="col-xs-6 text-xs-right">
-      <h1 class="jcu-header__page-title" id="page-title2"><a href="#">Site title</a></h1>
+      <h1 class="jcu-header-page-title" id="page-title2"><a href="#">Site title</a></h1>
     </div>
   </div>
 </header>

@@ -17,12 +17,12 @@
 }
 
 // Fluid-width container, but only until max-width
-.container-fluid--max-width {
+.container-fluid-max-width {
   max-width: $jcu-container-fluid-max-width;
 }
 
 // Ensure dropdown fluid container is shown with max-width applied
-.yamm > .container-fluid--max-width {
+.yamm > .container-fluid-max-width {
   position: relative;
 }
 
