@@ -16,7 +16,25 @@
 * flexContainer.html and flexContainer.css added as an example webpage using the customised  colours, grays, fonts & borders from Bootstrap 4 beta 2
 * package.json has been reverted to an earlier version, so that the build process will fail. This will allow all htmllint problems to be corrected.
 * Updated code base to include html, style and javascript lint changes from lastest version of Boostrap
-    
+
+* Cleanup
+
+  * Removed JCU override for `container-max-widths`; we use Bootstrap's
+    defaults again
+  * Removed `.container-fluid-max-width`; this is no longer used
+
+* Migration from Bootstrap `v4.0.0-alpha.2` to `v4.0.0-beta.2`:
+
+  * Removed `.flex-items-{start,center,end}` layout utilities.  See Flex utility
+    for replacements if you were previously using these classes.
+  * Removed `.col-pr-12` and `.visible-print-flex`; see Display/Print utilities
+    for alternatives.
+  * Use default spacing and line-height for `.lead`
+  * Removed `.text-inverse` utility; this is now `.text-light` from core
+    Bootstrap
+  * Replaced usage of `.bg-inverse` with `.bg-dark`
+  * Removed `.b-a-0`; this is now `.border-0` from core Bootstrap
+
 ## 1.0.0-beta.1 (2016-05-24)
 
 * Correct versioning from being based on Bootstrap to being our own

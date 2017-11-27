@@ -21,15 +21,6 @@ browsers can animate the property when its value changes.
 * `.opaque`: make an element fully visible with `opacity: 1`
 * `.transparent`: make an element invisible with `opacity: 0`
 
-## Borders
-
-This small utility follows on the [spacing
-utilities]({{ site.baseurl }}/components/utilities/#spacing) provided by the
-core framework.
-
-* `.b-a-0`: configure all borders (indicated by the `b-a`) to be none (indicated
-  the `0`)
-
 ## Backgrounds
 
 You can use any of the following colours and opacities and mix them into any

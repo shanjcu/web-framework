@@ -1,10 +1,7 @@
 //
 // Typography: customised text-centric components
 //
-.lead {
-  margin-bottom: ($spacer-y * 2);
-  line-height: 1.3;
-}
+
 
 // Links default to primary colour so ensure distinct styling
 .text-primary a {
@@ -21,14 +18,6 @@
   white-space: normal !important;
 }
 //stylelint-enable
-
-.text-inverse {
-  color: $gray-lightest;
-
-  @include hover-focus {
-    color: $gray-lightest;
-  }
-}
 
 .block-dotted {
   padding-top: $spacer-y;

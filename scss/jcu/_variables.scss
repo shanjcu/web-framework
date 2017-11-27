@@ -104,19 +104,6 @@ $border-width:                   1px !default;
 $body-bg:                        $gray-lighter !default;
 $body-color:                     $gray-dark !default; // Squiz uses browser default
 
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-$jcu-container-fluid-max-width:  1050px !default;
-$container-max-widths: (
-  sm: 576px,
-  md: 720px,
-  lg: 940px,
-  xl: $jcu-container-fluid-max-width
-) !default;
-
-
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.

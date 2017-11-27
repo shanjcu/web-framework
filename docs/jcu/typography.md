@@ -14,12 +14,6 @@ group: jcu
 ### Text
 
 {% example html %}
-<div class="bg-inverse text-inverse">
-  <p>.text-inverse inverts text for dark backgrounds</p>
-</div>
-{% endexample %}
-
-{% example html %}
 <div class="row">
   <div class="col-xs-3">
     <button class="btn btn-primary text-wrap">.text-wrap forces wrapping, especially on buttons</button>
