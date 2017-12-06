@@ -29,7 +29,7 @@
   }
 
   .row {
-    @include flex-items(center);
+    align-items: center;
   }
 }
 
