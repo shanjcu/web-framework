@@ -32,7 +32,7 @@
       right: ($font-size-base * (1 + .75 + 1));
       font-size: $font-size-sm;
       // Calculate line-height for smaller font to be even with headings
-      line-height: $line-height + .5;
+      line-height: $line-height-base + .5;
       content: "Hide";
     }
 
@@ -45,7 +45,7 @@
       right: $font-size-base;
       font-family: WebHostingHub-Glyphs;
       // Calculate line-height for icon font to be even with ::before text
-      line-height: $line-height + .25;
+      line-height: $line-height-base + .25;
       content: "\e39c";
     }
 
