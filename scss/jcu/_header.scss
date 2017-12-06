@@ -2,9 +2,6 @@
 // Header: upper portion of page layouts (branding, navigation, title)
 //
 
-// Shorter height as the Explorer has fixed positioning
-$jcu-header-height-explorer-sm: ($jcu-header-height-sm - $jcu-explorer-height-sm);
-
 .jcu-brand {
   @extend .navbar-brand;
 }
