@@ -20,9 +20,9 @@
 //stylelint-enable
 
 .block-dotted {
-  padding-top: $spacer-y;
-  padding-bottom: $spacer-y;
-  margin-bottom: $spacer-y;
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+  margin-bottom: $spacer;
   border-top: $border-width dotted $gray-light;
   border-bottom: $border-width dotted $gray-light;
 }

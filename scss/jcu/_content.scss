@@ -2,8 +2,8 @@
 // Content: body content with features and styles befitting the CMS block
 //
 .jcu-content {
-  padding-top: $spacer-y;
-  padding-bottom: $spacer-y;
+  padding-top: $spacer;
+  padding-bottom: $spacer;
   background-color: $jcu-content-bg-color;
 
   @media print {
@@ -13,7 +13,7 @@
       content: " (" attr(href) ") ";
     }
 
-    //stylelint-disable-next-line selector-no-qualifying-type 
+    //stylelint-disable-next-line selector-no-qualifying-type
     a[href^="/"]::after {
       content: " (#{$jcu-content-link-print-prefix}" attr(href) ") ";
     }
