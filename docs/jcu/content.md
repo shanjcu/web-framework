@@ -41,18 +41,6 @@ it:
 </div>
 {% endexample %}
 
-### Short Content
-
-If you're working on a page with a very short amount of content, and displaying
-an Exposition, you may need the *Content* component to cover a certain minimum
-height such that the final page looks correct.  To achieve this, add
-`.jcu-content--short-content`:
-
-{% example html %}
-<div class="jcu-content jcu-content--short-content">
-  <p>This is just one line of content.</p>
-</div>
-{% endexample %}
 
 ### Printing
 
