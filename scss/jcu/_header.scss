@@ -56,13 +56,6 @@
   }
 }
 
-@include media-breakpoint-down(sm) {
-  .body--has-explorer .jcu-header--marketing {
-    height: $jcu-header-height-explorer-sm;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
 
 // Page title has responsive font sizing
 .jcu-header-page-title {
