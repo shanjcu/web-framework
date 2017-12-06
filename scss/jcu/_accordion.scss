@@ -30,7 +30,7 @@
       position: absolute;
       // Position to the right of (chevron + chevron width + padding)
       right: ($font-size-base * (1 + .75 + 1));
-      font-size: $font-size-xs;
+      font-size: $font-size-sm;
       // Calculate line-height for smaller font to be even with headings
       line-height: $line-height + .5;
       content: "Hide";
