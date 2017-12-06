@@ -66,7 +66,7 @@ _:-ms-fullscreen,
 
 @each $name, $gradient in $jcu-bg-gradients {
   .jcu-bg-#{$name} {
-    @include gradient-horizontal(rgba(nth($gradient, 1), .95), rgba(nth($gradient, 2), .95));
+    @include gradient-x(rgba(nth($gradient, 1), .95), rgba(nth($gradient, 2), .95));
   }
 
   .jcu-bg-#{$name}-45deg {
@@ -74,7 +74,7 @@ _:-ms-fullscreen,
   }
 
   .jcu-bg-#{$name}-rev {
-    @include gradient-horizontal(rgba(nth($gradient, 2), .95), rgba(nth($gradient, 1), .95));
+    @include gradient-x(rgba(nth($gradient, 2), .95), rgba(nth($gradient, 1), .95));
   }
 
 }
