@@ -43,7 +43,7 @@
     top: ($jcu-header-height * .65);
     z-index: $jcu-zindex-base;
     padding: .3em;
-    margin-left: $spacer-x * 2;
+    margin-left: $spacer * 2;
     background-color: rgba(0, 0, 0, .2);
 
     @media print {
