@@ -45,7 +45,7 @@
 }
 
 .jcu-footer__legal .list-inline-item:not(:last-child)::after {
-  margin-left: ($spacer-x / 2);
+  margin-left: ($spacer / 2);
   content: "";
   border-left: $jcu-footer-border-width solid $gray-light;
 }
