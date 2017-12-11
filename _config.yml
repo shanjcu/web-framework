@@ -50,9 +50,10 @@ social_image_path:  /assets/brand/bootstrap-social.png
 social_logo_path:   /assets/brand/bootstrap-social-logo.png
 
 # Custom variables
-current_version:      4.0.0-beta.2
+current_version:      2.0.0
+#The current_ruby_version refers to the github twbs/boostrap v4-dev branch version
 current_ruby_version: 4.0.0.beta2
-docs_version:         4.0
+docs_version:         2.0
 repo:                 "https://github.com/twbs/bootstrap"
 slack:                "https://bootstrap-slack.herokuapp.com"
 blog:                 "https://blog.getbootstrap.com"
