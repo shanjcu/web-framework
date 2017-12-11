@@ -47,21 +47,24 @@ $jcu-light-red: #ff5983 !default;
 $jcu-dark-red: #ba002f !default;
 
 $colors: () !default;
-$colors: map-merge((
-  "jcu-blue-light": $jcu-blue-light,
-  "jcu-blue-dark": $jcu-blue-dark,
-  "jcu-yellow-light": $jcu-yellow-light,
-  "jcu-yellow-dark": $jcu-yellow-dark,
-  "jcu-gray-50": $gray-100,
-  "jcu-gray-100": $gray-200,
-  "jcu-gray-300": $gray-300,
-  "jcu-gray-800": $gray-700,
-  "jcu-gray-900": $gray-900,
-  "jcu-light-red": $jcu-light-red,
-  "jcu-dark-red": $jcu-dark-red,
-  "jcu-light-green": $jcu-light-green,
-  "jcu-dark-green": $jcu-dark-green
-), $colors);
+$colors: map-merge(
+  (
+    "jcu-blue-light": $jcu-blue-light,
+    "jcu-blue-dark": $jcu-blue-dark,
+    "jcu-yellow-light": $jcu-yellow-light,
+    "jcu-yellow-dark": $jcu-yellow-dark,
+    "jcu-gray-50": $gray-100,
+    "jcu-gray-100": $gray-200,
+    "jcu-gray-300": $gray-300,
+    "jcu-gray-800": $gray-700,
+    "jcu-gray-900": $gray-900,
+    "jcu-light-red": $jcu-light-red,
+    "jcu-dark-red": $jcu-dark-red,
+    "jcu-light-green": $jcu-light-green,
+    "jcu-dark-green": $jcu-dark-green
+  ),
+  $colors
+);
 
 
 //Bootstrap Theme Variables:
@@ -207,7 +210,7 @@ $breadcrumb-active-color:        $gray !default;
 $jcu-fade-transition-speed:      .3s !default;
 
 // Iconography
-$jcu-icon-font-family:           'webhostinghub-glyphs' !default;
+$jcu-icon-font-family:           "webhostinghub-glyphs" !default;
 $jcu-icon-font-size:             1.5rem !default;
 $jcu-icon-font-size-lg:          2rem !default;
 
