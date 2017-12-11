@@ -30,29 +30,46 @@ $gray-900: #212121 !default;
 
 //Primary Colour:
 $blue:    #06c !default;
-$blue-light: #5c93ff !default;
-$blue-dark: #003d9a !default;
+$jcu-blue-light: #5c93ff !default;
+$jcu-blue-dark: #003d9a !default;
 
 //Secondary Colour:
 $yellow:  #ffc400 !default;
-$yellow-light: #fff64f !default;
-$yellow-dark: #c79400 !default;
+$jcu-yellow-light: #fff64f !default;
+$jcu-yellow-dark: #c79400 !default;
 
 //Tertiary Colour:
 $green:   #aeea00 !default;
-$secondary-light-green: #e3ff54 !default;
-$secondary-dark-green: #79b700 !default;
+$jcu-light-green: #e3ff54 !default;
+$jcu-dark-green: #79b700 !default;
 $red:     #f40057 !default;
-$secondary-light-red: #ff5983 !default;
-$secondary-dark-red: #ba002f !default;
+$jcu-light-red: #ff5983 !default;
+$jcu-dark-red: #ba002f !default;
+
+$colors: () !default;
+$colors: map-merge((
+  "jcu-blue-light": $jcu-blue-light,
+  "jcu-blue-dark": $jcu-blue-dark,
+  "jcu-yellow-light": $jcu-yellow-light,
+  "jcu-yellow-dark": $jcu-yellow-dark,
+  "jcu-gray-50": $gray-100,
+  "jcu-gray-100": $gray-200,
+  "jcu-gray-300": $gray-300,
+  "jcu-gray-800": $gray-700,
+  "jcu-gray-900": $gray-900,
+  "jcu-light-red": $jcu-light-red,
+  "jcu-dark-red": $jcu-dark-red,
+  "jcu-light-green": $jcu-light-green,
+  "jcu-dark-green": $jcu-dark-green
+), $colors);
 
 
 //Bootstrap Theme Variables:
 $secondary:     $yellow !default;
-$info:          $yellow-dark !default;
-$warning:       $yellow-light !default;
-$light:         $blue-light !default;
-$dark:          $blue-dark !default;
+$info:          $jcu-yellow-dark !default;
+$warning:       $jcu-yellow-light !default;
+$light:         $jcu-blue-light !default;
+$dark:          $jcu-blue-dark !default;
 
 //Bootstrap Borders:
 $border-radius:               .15rem !default;
