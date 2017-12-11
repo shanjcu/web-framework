@@ -1,7 +1,8 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "4.0.0-beta.2",
+  "name": "james-cook-university-web-framework",
+  "description": "The HTML, CSS, and JS framework for building responsive, mobile-first web projects with University styling",
+  "version": "2.0.0",
+  "private": true,
   "keywords": [
     "css",
     "sass",
@@ -11,11 +12,8 @@
     "framework",
     "web"
   ],
-  "homepage": "https://getbootstrap.com",
-  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
-  "contributors": [
-    "Twitter, Inc."
-  ],
+  "homepage": "https://web.jcu.io",
+  "author": "James Cook University",
   "scripts": {
     "bundlesize": "bundlesize",
     "css": "npm-run-all --parallel css-lint* css-compile* --sequential css-prefix* css-minify*",
@@ -64,11 +62,11 @@
     "watch-js": "nodemon --ignore scss/ --ignore js/dist/ --ignore dist/ -e js -x \"npm run js-compile\""
   },
   "style": "dist/css/bootstrap.css",
-  "sass": "scss/bootstrap.scss",
+  "sass": "scss/jcu.scss",
   "main": "dist/js/bootstrap",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/jcu/web-framework.git"
   },
   "bugs": {
     "url": "https://github.com/jcu/web-framework/issues"
