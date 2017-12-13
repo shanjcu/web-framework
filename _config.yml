@@ -54,8 +54,8 @@ current_version:      2.0.0
 #The current_ruby_version refers to the github twbs/boostrap v4-dev branch version
 current_ruby_version: 4.0.0.beta2
 docs_version:         2.0
-repo:                 "https://github.com/twbs/bootstrap"
-slack:                "https://bootstrap-slack.herokuapp.com"
+repo:                 "https://github.com/jcu/web-framework"
+slack:                "https://jcu-web.slack.com/"
 blog:                 "https://blog.getbootstrap.com"
 expo:                 "https://expo.getbootstrap.com"
 jobs:                 "https://jobs.getbootstrap.com"
