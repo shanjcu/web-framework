@@ -158,9 +158,9 @@ $lead-font-weight:               400 !default;
 
 // Dropdowns: menu container and contents.
 // Reference: .toolbarmenu
-$dropdown-bg:                    #3f3f3f !default;
-$dropdown-border-color:          transparent !default;
-$dropdown-border-width:          0 !default;
+$dropdown-bg:                    #fff !default;
+$dropdown-border-color:          rgba(#000, .15) !default;
+$dropdown-border-width:          1px !default;
 $dropdown-divider-bg:            #707070 !default;
 $dropdown-link-color:            #fff !default;
 $dropdown-link-hover-color:      darken($dropdown-link-color, 5%) !default;
