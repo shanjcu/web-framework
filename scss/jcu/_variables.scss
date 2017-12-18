@@ -23,10 +23,11 @@
 //Grays:
 $gray-100: #fafafa !default;
 $gray-200: #f5f5f5 !default;
-$gray-300: #e0e0e0 !default;
+$gray-300: #eee !default;
 $gray-700: #424242 !default;
 $gray-800: #303030 !default;
 $gray-900: #212121 !default;
+$black: #000 !default;
 
 //Primary Colour:
 $blue:    #06c !default;
@@ -40,11 +41,11 @@ $jcu-yellow-dark: #c79400 !default;
 
 //Tertiary Colour:
 $green:   #aeea00 !default;
-$jcu-light-green: #e3ff54 !default;
+$jcu-light-green: #e4ff54 !default;
 $jcu-dark-green: #79b700 !default;
-$red:     #f40057 !default;
-$jcu-light-red: #ff5983 !default;
-$jcu-dark-red: #ba002f !default;
+$pink:     #f50057 !default;
+$jcu-light-pink: #ff5983 !default;
+$jcu-dark-pink: #bb002f !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -55,13 +56,15 @@ $colors: map-merge(
     "jcu-yellow-dark": $jcu-yellow-dark,
     "jcu-gray-50": $gray-100,
     "jcu-gray-100": $gray-200,
-    "jcu-gray-300": $gray-300,
+    "jcu-gray-200": $gray-300,
+    "jcu-gray-700": $gray-700,
     "jcu-gray-800": $gray-700,
     "jcu-gray-900": $gray-900,
-    "jcu-light-red": $jcu-light-red,
-    "jcu-dark-red": $jcu-dark-red,
+    "jcu-light-pink": $jcu-light-pink,
+    "jcu-dark-pink": $jcu-dark-pink,
     "jcu-light-green": $jcu-light-green,
-    "jcu-dark-green": $jcu-dark-green
+    "jcu-dark-green": $jcu-dark-green,
+    "jcu-black": $black
   ),
   $colors
 );
@@ -256,6 +259,7 @@ $jcu-bg-colors: (
   "gray-lighter": $gray-lighter,
   "white": rgb(255, 255, 255)
 ) !default;
+
 
 $jcu-bg-gradients: (
   "gradient-blue":   $jcu-gradient-blue,

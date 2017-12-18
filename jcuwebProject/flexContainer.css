@@ -3,11 +3,11 @@
 * {box-sizing: border-box;}
 
 .flexContainerRowJcuWeb {
-	display: flex;
-	flex-direction: row;
-	margin: 30px;
-	justify-content: flex-start; /*X-AXIS*/
-	align-items: flex-start; /*Y-AXIS*/
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  justify-content: flex-start; /*X-AXIS*/
+  align-items: flex-start; /*Y-AXIS*/
 }
 
  h2, h4, h5{
@@ -15,11 +15,11 @@
  }
 
 .flexItem1 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--primary);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--primary);
 }
 
 
@@ -37,11 +37,11 @@
 
 
 .flexItem3 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--dark);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--dark);
 
 }
 
@@ -49,71 +49,71 @@
 
 
 .flexItem4 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--secondary);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--secondary);
 
 }
 
 
 
 .flexItem5 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--warning);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--warning);
 
 }
 
 
 
 .flexItem6 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--info);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--info);
 
 }
 
 
 
 .flexItem7 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-gray-50);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-gray-50);
 
 }
 
 .flexItem8 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-gray-100);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-gray-100);
 
 }
 
 .flexItem9 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-gray-300);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-gray-200);
 
 }
 
 .flexItem10 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-gray-800);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-gray-800);
 
 
 }
@@ -129,11 +129,11 @@
 
 
 .flexItem11 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--gray-dark);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--gray-dark);
 
 }
 
@@ -148,11 +148,11 @@
 
 
 .flexItem12 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-gray-900);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-gray-900);
 
 }
 
@@ -167,64 +167,80 @@
 
 
 .flexItem13 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--success);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--green);
 
 }
 
 .flexItem14 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-light-green);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-light-green);
 
 }
 
 .flexItem15 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-dark-green);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-dark-green);
 
 }
 
 
 
 .flexItem16 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--danger);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--pink);
 
 }
 
 .flexItem17 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-light-red);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-light-pink);
 
 }
 
 .flexItem18 {
-	margin: 10px;
-	height: 90px;
-	width: 260px;
-	border: thin solid black;
-	background-color: var(--jcu-dark-red);
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-dark-pink);
 
 }
 
+.flexItem19 {
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--white);
 
+}
+
+.flexItem20 {
+  margin: 10px;
+  height: 90px;
+  width: 260px;
+  border: thin solid black;
+  background-color: var(--jcu-black);
+
+}
 
 .row {
-	border: thin solid black;
+  border: thin solid black;
 }
 
