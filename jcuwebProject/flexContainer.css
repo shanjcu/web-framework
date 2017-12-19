@@ -29,7 +29,7 @@
  height: 90px;
  width: 260px;
  border: thin solid black;
- background-color: var(--light);
+ background-color: var(--jcu-blue-light);
 
 }
 
@@ -41,7 +41,7 @@
   height: 90px;
   width: 260px;
   border: thin solid black;
-  background-color: var(--dark);
+  background-color: var(--jcu-blue-dark);
 
 }
 
@@ -64,7 +64,7 @@
   height: 90px;
   width: 260px;
   border: thin solid black;
-  background-color: var(--warning);
+  background-color: var(--jcu-yellow-light);
 
 }
 
@@ -75,7 +75,7 @@
   height: 90px;
   width: 260px;
   border: thin solid black;
-  background-color: var(--info);
+  background-color: var(--jcu-yellow-dark);
 
 }
 
@@ -113,17 +113,13 @@
   height: 90px;
   width: 260px;
   border: thin solid black;
-  background-color: var(--jcu-gray-800);
+  background-color: var(--jcu-gray-700);
 
 
 }
 
 
-.flexItem10 h4 {
-  color: white;
-}
-
-.flexItem10 h5 {
+.flexItem10 h4, .flexItem10 h5 {
   color: white;
 }
 
@@ -133,18 +129,13 @@
   height: 90px;
   width: 260px;
   border: thin solid black;
-  background-color: var(--gray-dark);
+  background-color: var(--jcu-gray-800);
 
 }
 
-.flexItem11 h4 {
+.flexItem11 h4, .flexItem11 h5  {
   color: white;
 }
-
-.flexItem11 h5 {
-  color: white;
-}
-
 
 
 .flexItem12 {
@@ -156,14 +147,9 @@
 
 }
 
-.flexItem12 h4 {
+.flexItem12 h4, .flexItem12 h5 {
   color: white;
 }
-
-.flexItem12 h5 {
-  color: white;
-}
-
 
 
 .flexItem13 {
@@ -238,6 +224,10 @@
   border: thin solid black;
   background-color: var(--jcu-black);
 
+}
+
+.flexItem20 h4, .flexItem20 h5{
+  color: white;
 }
 
 .row {
