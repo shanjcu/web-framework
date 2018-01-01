@@ -1,0 +1,30 @@
+
+#jcuNav {
+  background-color: var(--white);
+  height: 85px;
+  border: thin solid black;
+}
+
+#jcuHeader {
+  background-color: var(--jcu-blue-dark);
+  height: 320px;
+  border: thin solid black;
+}
+
+#jcuBread {
+ background-color: var(--jcu-gray-200);
+ border: thin solid black;
+}
+
+#jcuMain {
+  background-color: var(--jcu-gray-50);
+  height: 1143px;
+  border: thin solid black;
+}
+
+#jcuFooter {
+  background-color: var(--primary);
+  height: 96px;
+  border: thin solid black;
+}
+
