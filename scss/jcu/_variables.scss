@@ -98,10 +98,6 @@ $gray-dark:                      #2d2d2d !default; //Approx 80% black
 $gray:                           #565656 !default;
 $gray-light:                     #797979 !default;
 $gray-lighter:                   #e7e7e7 !default;
-$gray-lightest:                  #f7f7f9 !default;
-
-$brand-primary:                  #06c !default;    // From top-level search and buttons
-$brand-success:                  #429306 !default; // Courses page
 
 $jcu-brand-primary-inverse:      #fff !default;
 $jcu-gradient-blue:              rgb(46, 49, 146), rgb(0, 190, 228) !default;
@@ -207,7 +203,7 @@ $breadcrumb-active-color:        $gray !default;
 $jcu-fade-transition-speed:      .3s !default;
 
 // Iconography
-$jcu-icon-font-family:           "webhostinghub-glyphs" !default;
+//$jcu-icon-font-family:           "webhostinghub-glyphs" !default;
 $jcu-icon-font-size:             1.5rem !default;
 $jcu-icon-font-size-lg:          2rem !default;
 
@@ -221,7 +217,6 @@ $jcu-campus-stack-inverse:       $jcu-brand-primary-inverse !default;
 
 // Header
 $jcu-header-height:              17rem !default;
-$jcu-header-height-sm:           14rem !default;
 
 
 // Content

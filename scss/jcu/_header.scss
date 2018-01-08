@@ -41,7 +41,6 @@
   .jcu-header-page-title {
     position: absolute;
     top: ($jcu-header-height * .65);
-    z-index: $jcu-zindex-base;
     padding: .3em;
     margin-left: $spacer * 2;
     background-color: rgba(0, 0, 0, .2);
