@@ -71,7 +71,9 @@ $colors: map-merge(
 
 
 //Bootstrap Theme Variables:
+$primary:       $blue !default;
 $secondary:     $yellow !default;
+$success:       $green !default;
 $info:          $jcu-yellow-dark !default;
 $warning:       $jcu-yellow-light !default;
 $light:         $jcu-blue-light !default;
@@ -140,13 +142,12 @@ $grid-gutter-width:              1.25rem !default;
 
 $font-family-sans-serif:         "Open Sans", sans-serif !default;
 
-$font-size-root:                 16px !default;
-$font-size-h1:                   1.9rem !default;
-$font-size-h2:                   1.7rem !default;
-$font-size-h3:                   1.5rem !default;
-$font-size-h4:                   1.25rem !default;
-$font-size-h5:                   1rem !default;
-$font-size-h6:                   .9rem !default;
+$h1-font-size:                  1.9rem !default;
+$h2-font-size:                  1.7rem !default;
+$h3-font-size:                   1.5rem !default;
+$h4-font-size:                   1.25rem !default;
+$h5-font-size:                   1rem !default;
+$h6-font-size:                   .9rem !default;
 
 $display1-weight:                400 !default;
 $display2-weight:                400 !default;
@@ -169,31 +170,24 @@ $dropdown-link-color:            #fff !default;
 $dropdown-link-hover-color:      darken($dropdown-link-color, 5%) !default;
 $dropdown-link-hover-bg:         lighten($dropdown-bg, 20%) !default;
 $dropdown-header-color:          #ababab !default;
-$jcu-dropdown-text-color:        #fff !default;
 
 // Z-index master list
 //
 // Warning: avoid customising these values. They extend upon Bootstrap's
 // defaults and are designed to all work together.
-$jcu-zindex-base:                990 !default;
-
-$jcu-zindex-page-title:          1010 !default;
 
 
 // Navbar
 $navbar-dark-color:              rgba(255, 255, 255, .8) !default;
 $navbar-dark-hover-color:        rgba(255, 255, 255, .6) !default;
 $navbar-dark-active-color:       rgba(255, 255, 255, 1) !default;
-$navbar-inverse-color:           $gray-dark !default;
-$navbar-inverse-toggle-hover-bg: $gray !default;
-$navbar-inverse-link-active-bg:  $gray !default;
 $jcu-navbar-nav-link-padding:    .5rem !default;
 
 // Navs
 // Reference: .tabs
-$nav-tabs-active-link-hover-color:        #fff !default;
-$nav-tabs-active-link-hover-bg:           $brand-primary !default;
-$nav-tabs-active-link-hover-border-color: $brand-primary !default;
+$nav-tabs-link-active-color:        #fff !default;
+$nav-tabs-link-active-bg:           $primary !default;
+$nav-tabs-link-active-border-color: $primary !default;
 
 
 // Modals

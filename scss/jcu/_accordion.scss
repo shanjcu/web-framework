@@ -15,7 +15,7 @@
     width: 100%;
     padding: $card-spacer-y $card-spacer-x;
     color: $jcu-brand-primary-inverse;
-    background-color: $brand-primary;
+    background-color: $primary;
     transition: background-color $jcu-fade-transition-speed;
 
     @include hover-focus {

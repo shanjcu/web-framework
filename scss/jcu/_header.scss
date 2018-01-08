@@ -61,17 +61,17 @@
 .jcu-header-page-title {
   margin-top: $spacer;
   margin-bottom: $spacer;
-  font-size: $font-size-h3;
+  font-size: $h3-font-size;
   font-weight: 600;
   color: #fff;
   text-shadow: 0 0 .5em $gray-dark;
 
   @include media-breakpoint-up(md) {
-    font-size: $font-size-h1;
+    font-size: $h1-font-size;
   }
 
   @media print {
-    font-size: $font-size-h1;
+    font-size: $h1-font-size;
     color: $gray-dark;
     background-color: #fff;
   }
