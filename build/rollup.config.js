@@ -7,7 +7,7 @@ const pkg     = require(path.resolve(__dirname, '../package.json'))
 const BUNDLE  = process.env.BUNDLE === 'true'
 const year    = new Date().getFullYear()
 
-let fileDest  = 'bootstrap.js'
+let fileDest  = 'jcu.js'
 const external  = ['jquery', 'popper.js']
 const plugins = [
   babel({
@@ -26,7 +26,7 @@ const globals = {
 }
 
 if (BUNDLE) {
-  fileDest = 'bootstrap.bundle.js'
+  fileDest = 'jcu.bundle.js'
   // remove last entry in external array to bundle Popper
   external.pop()
   delete globals['popper.js']
