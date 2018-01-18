@@ -174,10 +174,16 @@ $dropdown-header-color:          #ababab !default;
 
 
 // Navbar
+$jcu-navbar-brand-width:         161px;
+$jcu-navbar-brand-height:        85px;
+$navbar-light-color:             $primary !default;
+$jcu-navbar-light-toggler-iconclose-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7 L26 23  M4 23 L26 7'/%3E%3C/svg%3E"), "#", "%23") !default;
+
 $navbar-dark-color:              rgba(255, 255, 255, .8) !default;
 $navbar-dark-hover-color:        rgba(255, 255, 255, .6) !default;
 $navbar-dark-active-color:       rgba(255, 255, 255, 1) !default;
 $jcu-navbar-nav-link-padding:    .5rem !default;
+
 
 // Navs
 // Reference: .tabs

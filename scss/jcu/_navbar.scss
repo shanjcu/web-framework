@@ -5,3 +5,23 @@
 .navbar-nav .nav-link {
   padding: $jcu-navbar-nav-link-padding;
 }
+
+.navbar-light {
+
+  // New JCU icon created for the expanded .navbar-toggler (as opposed to .collapsed)
+  .navbar-toggler-icon {
+    background-image: $jcu-navbar-light-toggler-iconclose-bg;
+  }
+
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: $navbar-light-toggler-icon-bg;
+  }
+}
+
+// JCU Navbar brand picture  dimensions
+.navbar-brand img {
+  width: $jcu-navbar-brand-width;
+  height: $jcu-navbar-brand-height;
+}
+
+

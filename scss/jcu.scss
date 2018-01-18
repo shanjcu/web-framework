@@ -3,6 +3,9 @@
  * Copyright 2016 James Cook University.
  */
 
+// The str-replace function is required to populate the jcu/_variables variable $jcu-navbar-light-toggler-iconclose-bg:
+@import "functions";
+
 // Core variables, customise core theme
 @import "jcu/variables";
 
