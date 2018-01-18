@@ -448,9 +448,9 @@ module.exports = function (grunt) {
     rsync: {
       keycdn: {
         options: {
-          args: ["-avz", "--chmod=u=rwX,g=rX"],
+          args: ["-rtvz", "--chmod=D2755,F644"],
           src: "dist/*",
-          dest: "jcu0@rsync.keycdn.com:zones/jcu/<%= pkg.version %>/"
+          dest: "jcu0@rsync.keycdn.com:jcu/<%= pkg.version %>/"
         }
       }
     }
