@@ -1,0 +1,61 @@
+.navbar-brand img {
+  width: 161px;
+  height: 85px;
+}
+
+.bg-light {
+  background-color: white !Important;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: blue;
+}
+
+
+/*.navbar-light .navbar-toggler {
+  border: white;
+}*/
+
+/*.navbar-light .navbar-toggler.collapsed .navbar-toggler-icon{
+  border: thin solid red;
+}
+
+.navbar-light .navbar-toggler .navbar-toggler-icon{
+  border: thin solid blue;
+
+}*/
+
+
+.container {
+
+
+  border: thin solid black;
+}
+.row {
+  height: 200px;
+  border: thin solid black;
+}
+
+.col-1 {
+
+border: thin solid black;
+height: 40px;
+
+}
+
+.col {
+  border: thin solid black;
+}
+
+
+#test {
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: blue;
+
+}
