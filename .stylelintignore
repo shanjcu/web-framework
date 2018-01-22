@@ -1,2 +1,7 @@
+**/*.min.css
+**/dist/
+**/vendor/
+/_gh_pages/
+
 docs/examples/jcu-landing/css/animate.min.css
 docs/2.0/examples/jcu-landing/css/animate.min.css

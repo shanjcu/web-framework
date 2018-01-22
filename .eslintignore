@@ -1,6 +1,8 @@
 **/*.min.js
-**/vendor/*
-**/dist/*
+**/dist/
+**/vendor/
+/_gh_pages/
+/package.js
 
 #paths below ignoring eslint erros so that bootstrap can be built
 
