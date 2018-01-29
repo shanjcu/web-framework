@@ -46,7 +46,9 @@
     } else {
       animate(element, animation)
     }
-  }, { accY: -150 })
+  }, {
+    accY: -150
+  })
 
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -69,10 +71,8 @@
   // Google Maps
   var map = null
   var mapMarker = null
-
   // When the window has finished loading create our google map below
   google.maps.event.addDomListener(window, 'load', function () {
-
     // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map')
