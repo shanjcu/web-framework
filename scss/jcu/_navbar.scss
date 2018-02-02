@@ -16,6 +16,16 @@
   .navbar-toggler.collapsed .navbar-toggler-icon {
     background-image: $navbar-light-toggler-icon-bg;
   }
+
+  // JCU Navbar menu button border and outline style
+  /* stylelint-disable selector-no-qualifying-type */
+  button.navbar-toggler {
+    border-color: $jcu-navbar-button-border-color;
+    outline: $jcu-navbar-button-outline;
+  }
+  /* stylelint-enable */
+
+
 }
 
 // JCU Navbar brand picture  dimensions
@@ -24,4 +34,9 @@
   height: $jcu-navbar-brand-height;
 }
 
-
+// JCU Navbar background colour
+.navbar-light.bg-light {
+  /* stylelint-disable declaration-no-important  */
+  background-color: $jcu-navbar-background-color !important;
+  /* stylelint-enable  */
+}
