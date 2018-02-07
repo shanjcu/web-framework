@@ -5,7 +5,7 @@ group: jcu
 redirect_from: "/jcu/"
 prev_url: ../
 prev_name: previous
-next_url: ../../functional-patterns/
+next_url: ../colours/
 next_name: next
 ---
 

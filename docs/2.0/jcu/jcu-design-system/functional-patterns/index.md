@@ -3,8 +3,10 @@ layout: docs
 title: Functional patterns
 group: jcu
 redirect_from: "/jcu/"
-prev_url: ../perceptual-patterns/typography
+prev_url: ../
 prev_name: previous
+next_url: ../functional-patterns/buttons
+next_name: next
 ---
 
 
