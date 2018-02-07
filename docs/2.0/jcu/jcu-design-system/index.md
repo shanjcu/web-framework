@@ -3,7 +3,7 @@ layout: docs
 title: JCU Design System
 group: jcu
 redirect_from: "/jcu/"
-next_url: perceptual
+next_url: ../jcu-design-system/perceptual-patterns/
 next_name: next
 ---
 
@@ -29,7 +29,9 @@ These five principles are the foundation of our Design System.
 
 
 ## Approach
-The JCU design system is built on two types of design patterns: perceptual and functional. [Perceptual patterns]({{site.baseurl}}{% link docs/2.0/jcu/jcu-design-system/perceptual.md%}) are descriptive styles that express and communicate the personality of the product visually, such as colour, typography, iconography, shapes and animations. [Function patterns]({{site.baseurl}}{% link docs/2.0/jcu/jcu-design-system/functional.md %})  are represented as the concrete modules of the interface, such as a button, a header, a form element, a menu. 
+The JCU design system is built on two types of design patterns: perceptual and functional. [Perceptual patterns]({{site.baseurl}}{% link docs/2.0/jcu/jcu-design-system/perceptual-patterns/index.md%}) are descriptive styles that express and communicate the personality of the product visually, such as colour, typography, iconography, shapes and animations. [Function patterns]({{site.baseurl}}{% link docs/2.0/jcu/jcu-design-system/functional-patterns/index.md %})  are represented as the concrete modules of the interface, such as a button, a header, a form element, a menu. 
+
+
 
 
 

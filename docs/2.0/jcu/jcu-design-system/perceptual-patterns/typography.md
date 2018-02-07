@@ -3,9 +3,9 @@ layout: docs
 title: Typography
 group: jcu
 redirect_from: "/jcu/"
-prev_url: ../perceptual
+prev_url: ../
 prev_name: previous
-next_url: ../functional
+next_url: ../../functional-patterns/
 next_name: next
 ---
 
@@ -34,3 +34,5 @@ font-family: 'Source Sans Pro', sans-serif;
 ```css
 font-family: 'Lora', serif;
 ```
+
+

@@ -5,7 +5,7 @@ group: jcu
 redirect_from: "/jcu/"
 prev_url: ../
 prev_name: previous
-next_url: ../typography
+next_url: ../perceptual-patterns/typography
 next_name: next
 ---
 
@@ -34,3 +34,5 @@ Our brand identity reflects on the perceptual patterns as the following:
 * Generally large type size with a focus on readability
 * Shapes, spaces, sizes, animations and imagery are based on the golden ratio and Fibonacci proportions
 * Mostly square and occasionally triangular shapes and textures.
+
+

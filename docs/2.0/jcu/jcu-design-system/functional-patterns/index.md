@@ -3,7 +3,7 @@ layout: docs
 title: Functional patterns
 group: jcu
 redirect_from: "/jcu/"
-prev_url: ../typography
+prev_url: ../perceptual-patterns/typography
 prev_name: previous
 ---
 
@@ -14,3 +14,6 @@ Functional patterns are the tangible building blocks of the interface. Their pur
 #### “What are the behaviours we need to encourage at this stage of the user  journey? What are the patterns that can support those behaviours? Where  else on the site do they exist and how do they work there? If it’s a new pattern, how does it contribute to the whole system?”
 
 ***Examples of functional patterns:*** tabs, accordions, videos, event list, slideshows, progress indicators, summary cards, testimonials etc.
+
+
+
