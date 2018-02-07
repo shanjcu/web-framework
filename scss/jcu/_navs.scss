@@ -10,3 +10,15 @@
 .tab-pane {
   padding: ($spacer / 2);
 }
+
+//JCU Design system docs page navigation
+.jcuDocsNav {
+
+  .nav {
+    background-color: $primary;
+  }
+
+  .nav-link {
+    color: $white;
+  }
+}

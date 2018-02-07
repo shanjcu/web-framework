@@ -30,45 +30,43 @@
           <!--{% include ads.html %}-->
           {{ content }}
 
-<div id="jcuDocsNav">
+        <div class="jcuDocsNav">
 
-  <ul class="nav nav-pills justify-content-center nav-fill">
+          <nav  class="nav nav-fill">
+            {% if page.prev_url %}
+            <li class="nav-item ">
+              <a  class="nav-link " href="{{page.prev_url}}">&laquo; {{page.prev_name}}</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#"> &nbsp; </a>
+            </li>
+            {% else %}
+            <li class="nav-item ">
+              <a class="nav-link " href="#"> &nbsp; </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="#"> &nbsp; </a>
+            </li>
+            {% endif %}
 
-    {% if page.prev_url %}
-      <li class="nav-item ">
-        <a class="nav-link active" href="{{page.prev_url}}">&laquo; {{page.prev_name}}</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="#"> &nbsp; </a>
-      </li>
-    {% else %}
-      <li class="nav-item ">
-        <a class="nav-link disabled" href="#">&laquo; previous</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="#"> &nbsp; </a>
-      </li>
-    {% endif %}
+            {% if page.next_url %}
+            <li class="nav-item ">
+              <a class="nav-link" href="#"> &nbsp; </a>
+            </li>
+            <li class="nav-item ">
+              <a  class="nav-link " href="{{page.next_url}}"> {{page.next_name}} &raquo;</a>
+            </li>
+            {% else %}
+            <li class="nav-item ">
+              <a class="nav-link" href="#"> &nbsp; </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#"> &nbsp; </a>
+            </li>
+            {% endif %}
+          </nav>
 
-    {% if page.next_url %}
-      <li class="nav-item ">
-        <a class="nav-link" href="#"> &nbsp; </a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link active" href="{{page.next_url}}"> {{page.next_name}} &raquo;</a>
-      </li>
-    {% else %}
-      <li class="nav-item ">
-        <a class="nav-link" href="#"> &nbsp; </a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link disabled" href="#"> next &raquo;</a>
-      </li>
-    {% endif %}
-
-  </ul>
-
-</div>
+        </div>
 
 
 

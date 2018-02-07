@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Perceptual patterns
+title: Typography
 group: jcu
 redirect_from: "/jcu/"
 prev_url: ../patterns
