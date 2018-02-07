@@ -18,12 +18,14 @@ Examples of perceptual patterns: tone of voice, typography, colour palette, layo
 Our brand identity supports the University’s strategic intent of, “A brighter future for life in the tropics, worldwide.” 
 The brand personality traits that underpin our visual identity are: outgoing, bright, direct, results-oriented and articulate. 
 For the JCU brand this means:
-* Outgoing: Worldly, adventurous 
-* Bright: Vibrant, optimistic 
-* Direct: No-nonsense, down-to-earth 
-* Results-oriented: Helpful, hands-on, practical, realistic. We get things done 
-* Articulate: Clear, compelling
+* **Outgoing:** Worldly, adventurous 
+* **Bright:** Vibrant, optimistic 
+* **Direct:** No-nonsense, down-to-earth 
+* **Results-oriented:** Helpful, hands-on, practical, realistic. We get things done 
+* **Articulate:** Clear, compelling
+
 Overarching the brand identity is the golden ratio and the Fibonacci spiral, ever-present and inspiring form in nature, serving as a visual metaphor for JCU branding. 
+
 Our brand identity reflects on the perceptual patterns as the following:
 * Positive and encouraging tone of voice
 * Relevant, informative and contextual (practical, realistic) images

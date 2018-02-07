@@ -3,7 +3,7 @@ layout: docs
 title: JCU Design System
 group: jcu
 redirect_from: "/jcu/"
-next_url: patterns
+next_url: perceptual
 next_name: next
 ---
 
@@ -18,16 +18,21 @@ We created this pattern library with several goals in mind:
 The library directly reflects the JCU platform and uses the same underlying CSS and markup to display the elements and rules that make up the interface. It is a “living document” and should be updated when the code underlying the feature changes or when a new pattern is introduced.
 The JCU design system builds upon both Bootstrap and Google Material Design, popular frameworks for building responsive, mobile-first sites and applications.
 
+
 ## Design Principles
 These five principles are the foundation of our Design System.
-* Start with user needs: talk to users and identifying their needs. Don’t make assumptions.
-* Design with data: do research and analyze data. Let data drive decision-making, not hunches or guesswork.
-* Iterate. Then iterate again: start small, prototype, test with actual users and iterate. Iteration reduces risk. It makes big failures unlikely and turns small failures into lessons. The design must improve over time as we continue to learn, use and evolve the language.
-* Build for inclusion: accessible design is good design. It means prioritizing performance and accessibility over flashy features, clarity of message over bold experimental design.
-* Be consistent, not uniform: use the same language and the same design patterns wherever possible. This helps people get familiar with our webiste, but when this isn’t possible we should make sure our approach is consistent. 
+* **Start with user needs:** talk to users and identifying their needs. Don’t make assumptions.
+* **Design with data:** do research and analyze data. Let data drive decision-making, not hunches or guesswork.
+* **Iterate. Then iterate again:** start small, prototype, test with actual users and iterate. Iteration reduces risk. It makes big failures unlikely and turns small failures into lessons. The design must improve over time as we continue to learn, use and evolve the language.
+* **Build for inclusion:** accessible design is good design. It means prioritizing performance and accessibility over flashy features, clarity of message over bold experimental design.
+* **Be consistent, not uniform:** use the same language and the same design patterns wherever possible. This helps people get familiar with our webiste, but when this isn’t possible we should make sure our approach is consistent. 
+
 
 ## Approach
-The JCU design system is built on two types of design patterns: perceptual and functional. Perceptual patterns are descriptive styles that express and communicate the personality of the product visually, such as colour, typography, iconography, shapes and animations. Functional patterns are represented as the concrete modules of the interface, such as a button, a header, a form element, a menu. 
+The JCU design system is built on two types of design patterns: perceptual and functional. [Perceptual patterns]({{site.baseurl}}{% link docs/2.0/jcu/jcu-design-system/perceptual.md%}) are descriptive styles that express and communicate the personality of the product visually, such as colour, typography, iconography, shapes and animations. [Function patterns]({{site.baseurl}}{% link docs/2.0/jcu/jcu-design-system/functional.md %})  are represented as the concrete modules of the interface, such as a button, a header, a form element, a menu. 
+
+
+
 
 
 
