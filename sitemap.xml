@@ -49,10 +49,10 @@
     <loc>https://web.jcu.io/jcu/campus-stack/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/components/card/</loc>
+    <loc>https://web.jcu.io/jcu/card/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu/card/</loc>
+    <loc>https://web.jcu.io/components/card/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/carousel/</loc>
@@ -76,10 +76,10 @@
     <loc>https://web.jcu.io/getting-started/contents/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/getting-started/download/</loc>
+    <loc>https://web.jcu.io/jcu/download/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu/download/</loc>
+    <loc>https://web.jcu.io/getting-started/download/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/components/dropdowns/</loc>
@@ -136,10 +136,10 @@
     <loc>https://web.jcu.io/components/input-group/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/getting-started/introduction/</loc>
+    <loc>https://web.jcu.io/jcu/introduction/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu/introduction/</loc>
+    <loc>https://web.jcu.io/getting-started/introduction/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/getting-started/javascript/</loc>
@@ -172,10 +172,10 @@
     <loc>https://web.jcu.io/components/navbar/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/components/navs/</loc>
+    <loc>https://web.jcu.io/jcu/navs/</loc>
   </url>
   <url>
-    <loc>https://web.jcu.io/jcu/navs/</loc>
+    <loc>https://web.jcu.io/components/navs/</loc>
   </url>
   <url>
     <loc>https://web.jcu.io/getting-started/options/</loc>
@@ -248,118 +248,118 @@
   </url>
   <url>
     <loc>https://web.jcu.io/dist/css/components/open-sans-fontface/index.html</loc>
-    <lastmod>2016-05-24T15:47:23+10:00</lastmod>
+    <lastmod>2018-02-09T15:52:50+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/dist/css/components/webhostinghub-glyphs/demo.html</loc>
-    <lastmod>2016-05-24T15:47:23+10:00</lastmod>
+    <lastmod>2018-02-09T15:52:50+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/dist/css/components/webhostinghub-glyphs/index.html</loc>
-    <lastmod>2016-05-24T15:47:23+10:00</lastmod>
+    <lastmod>2018-02-09T15:52:50+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/dist/css/components/yamm3/index.html</loc>
-    <lastmod>2016-05-24T15:47:23+10:00</lastmod>
+    <lastmod>2018-02-09T15:52:50+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/album/index.html</loc>
-    <lastmod>2016-05-24T15:47:21+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/blog/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/carousel/index.html</loc>
-    <lastmod>2016-05-24T15:47:21+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/cover/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/dashboard/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/grid/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-app-cover/index.html</loc>
-    <lastmod>2016-06-27T12:36:03+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-app-page/index.html</loc>
-    <lastmod>2016-06-27T12:36:03+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-brochure/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-content-page/index.html</loc>
-    <lastmod>2016-06-27T12:36:03+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-landing/content.html</loc>
-    <lastmod>2016-06-27T12:36:03+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-landing/index.html</loc>
-    <lastmod>2016-06-28T10:45:24+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jcu-login/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/jumbotron/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/justified-nav/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/narrow-jumbotron/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/navbar-top-fixed/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/navbar-top/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/navbar/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/offcanvas/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/signin/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/starter-template/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/sticky-footer-navbar/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/sticky-footer/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
   <url>
     <loc>https://web.jcu.io/examples/tooltip-viewport/index.html</loc>
-    <lastmod>2016-05-24T15:47:22+10:00</lastmod>
+    <lastmod>2018-02-09T15:45:46+10:00</lastmod>
   </url>
 </urlset>
